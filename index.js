@@ -1,3 +1,3 @@
-import FandomVideoPlayIcon from './src/FandomVideoPlayIcon';
-
-export FandomVideoPlayIcon;
+// import FandomVideoPlayIcon from './src/FandomVideoPlayIcon';
+//
+// export FandomVideoPlayIcon;
