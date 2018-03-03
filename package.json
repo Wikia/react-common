@@ -15,7 +15,8 @@
     "lint": "yarn lint.js && yarn lint.css",
     "lint.js": "eslint .",
     "lint.css": "stylelint \"components/*.css\"",
-    "lint.css.fix": "stylelint \"components/*.css\" --fix"
+    "lint.css.fix": "stylelint \"components/*.css\" --fix",
+    "test": "yarn lint"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
