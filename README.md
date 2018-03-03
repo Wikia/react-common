@@ -1,4 +1,5 @@
 ![Travis](https://img.shields.io/travis/Wikia/react-design-system/master.svg?style=flat-square)
+![Release](https://img.shields.io/github/release/Wikia/react-design-system.svg?style=flat-square)
 
 **WARNING**: This project is in *very* early stage of the development. Be aware!
 
