@@ -1,0 +1,14 @@
+{
+  "extends": "fandom",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "indent": ["error", 2, {"VariableDeclarator": 1, "SwitchCase": 1}],
+    "no-tabs": 1,
+    "no-underscore-dangle": 0,
+    "no-unused-vars": 0,
+    "react/jsx-filename-extension": 0,
+    "require-jsdoc": 0
+  }
+}
