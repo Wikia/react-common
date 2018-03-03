@@ -1,4 +1,4 @@
-![ALPHA VERSION](http://cdn.akamai.steamstatic.com/steam/apps/426240/extras/Warning.png)
+[![TravisCi](https://travis-ci.org/Wikia/react-design-system.svg?branch=master)](https://travis-ci.org/Wikia/react-design-system)
 
 **WARNING**: This project is in *very* early stage of the development. Be aware!
 
