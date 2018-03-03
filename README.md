@@ -1,4 +1,4 @@
-[![TravisCi](https://travis-ci.org/Wikia/react-design-system.svg?branch=master)](https://travis-ci.org/Wikia/react-design-system)
+![Travis](https://img.shields.io/travis/Wikia/react-design-system/master.svg?style=flat-square)
 
 **WARNING**: This project is in *very* early stage of the development. Be aware!
 
