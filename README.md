@@ -8,7 +8,7 @@ Reusable React components based on https://github.com/Wikia/design-system
 ## Usage
 
 ```js
-import FandomVideoPlayIcon from 'react-design-system/src/FandomVideoPlayIcon';
+import FandomVideoPlayIcon from 'react-design-system/components/icons/FandomVideoPlayIcon';
 ```
 
 ## Rules

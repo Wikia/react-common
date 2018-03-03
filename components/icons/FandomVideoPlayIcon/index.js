@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import colors from '../../../utils/colors';
 import './styles.css';
 
 const FandomVideoPlayIcon = ({
@@ -8,12 +9,7 @@ const FandomVideoPlayIcon = ({
   className,
   color,
   shadowColor,
-  size,
 }) => {
-  const style = {
-    height: size,
-    width: size,
-  };
   const classes = [
     className === false ? '' : className,
   ];
@@ -21,7 +17,6 @@ const FandomVideoPlayIcon = ({
   return (
     <svg
       className={`fandom-video-play-icon ${classes.join(' ')}`}
-      style={style}
       viewBox="0 0 180 180"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -62,18 +57,19 @@ const FandomVideoPlayIcon = ({
 
 FandomVideoPlayIcon.propTypes = {
   backgroundColor: PropTypes.string,
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])]),
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([false]),
+  ]),
   color: PropTypes.string,
   shadowColor: PropTypes.string,
-  size: PropTypes.number,
 };
 
 FandomVideoPlayIcon.defaultProps = {
   backgroundColor: '#fff',
   className: false,
-  color: '#00d6d6',
+  color: colors.FANDOM_COLOR_AQUA,
   shadowColor: '#000',
-  size: 60,
 };
 
 export default FandomVideoPlayIcon;
