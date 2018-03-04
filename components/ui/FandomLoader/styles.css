@@ -1,0 +1,29 @@
+@keyframes loader-rotator {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loader-dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.fandom-loader {
+	display: inline-flex;
+}
+
+.fandom-loader .wds-spinner {
+	animation: loader-rotator .5s linear infinite;
+	transform: translateZ(0);
+}
+
+.fandom-loader .wds-spinner__stroke {
+	-webkit-backface-visibility: hidden;
+	animation: loader-dash 1.25s linear infinite alternate-reverse;
+}
