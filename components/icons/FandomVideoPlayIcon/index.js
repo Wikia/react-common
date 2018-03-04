@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import colors from '../../../utils/colors';
+
 import './styles.css';
 
+/**
+ * Video Play icon
+ */
 const FandomVideoPlayIcon = ({
   backgroundColor,
   className,
-  iconSize,
   color,
+  iconSize,
   shadowColor,
 }) => {
   const classes = [
@@ -63,10 +67,25 @@ const FandomVideoPlayIcon = ({
 };
 
 FandomVideoPlayIcon.propTypes = {
+  /**
+   * Background color
+   */
   backgroundColor: PropTypes.string,
+  /**
+   * Additional class name
+   */
   className: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])]),
+  /**
+   * Main color
+   */
   color: PropTypes.string,
+  /**
+   * Icon size
+   */
   iconSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Shadow color
+   */
   shadowColor: PropTypes.string,
 };
 

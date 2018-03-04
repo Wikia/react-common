@@ -12,21 +12,30 @@
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "lint": "yarn lint.js && yarn lint.css",
-    "lint.js": "eslint .",
-    "lint.css": "stylelint \"components/*.css\"",
+    "build": "styleguidist build",
     "lint.css.fix": "stylelint \"components/*.css\" --fix",
-    "test": "yarn lint"
+    "lint.css": "stylelint \"components/*.css\"",
+    "lint.js": "eslint .",
+    "lint": "yarn lint.js && yarn lint.css",
+    "test": "yarn lint",
+    "watch": "styleguidist server"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.3.0",
     "eslint-config-fandom": "git://github.com/Wikia/eslint-config-fandom.git#2.0.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "react-styleguidist": "^6.2.6",
     "stylelint": "^8.1.1",
     "stylelint-config-fandom": "git://github.com/Wikia/stylelint-config-fandom.git#0.0.1",
     "stylelint-order": "^0.7.0",
-    "stylelint-scss": "^2.1.0"
+    "stylelint-scss": "^2.1.0",
+    "webpack": "3"
   }
 }
