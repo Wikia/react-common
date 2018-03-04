@@ -1,4 +1,4 @@
-Standalone:
+Defaults:
 ```js
 <FandomVideoPlayIcon />
 ```
@@ -11,6 +11,7 @@ Custom size:
 Custom color:
 ```js
 <div>
-  <FandomVideoPlayIcon color={'red'} />
+  <FandomVideoPlayIcon color={'blue'} />
+  <FandomVideoPlayIcon color={'#f00'}  backgroundColor={'#fee'}  shadowColor={'#300'} />
 </div>
 ```

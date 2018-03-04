@@ -6,6 +6,10 @@ module.exports = {
   components: 'components/**/*.js',
   sections: [
     {
+      name: 'UI',
+      components: 'components/ui/**/*.js',
+    },
+    {
       name: 'Icons',
       components: 'components/icons/**/*.js',
     },
