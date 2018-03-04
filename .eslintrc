@@ -9,6 +9,7 @@
     "no-underscore-dangle": 0,
     "no-unused-vars": 0,
     "react/jsx-filename-extension": 0,
-    "require-jsdoc": 0
+    "require-jsdoc": 0,
+    "valid-jsdoc": 0
   }
 }
