@@ -1,10 +1,23 @@
 module.exports = {
+  theme: {
+    color: {
+      link: '#00acac',
+      linkHover: '#008989',
+    },
+    fontFamily: {
+      base: 'Rubik, Helvetica, Arial, sans-serif',
+    },
+  },
+  template: './styleguide/index.html',
   // skipComponentsWithoutExample: true,
   // verbose: true,
   // showUsage: true,
   styleguideDir: './docs/',
   components: 'components/**/*.js',
   sections: [
+    {
+      content: 'README.md',
+    },
     {
       name: 'UI',
       components: 'components/ui/**/*.js',
