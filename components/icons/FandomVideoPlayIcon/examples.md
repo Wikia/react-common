@@ -5,8 +5,10 @@ Defaults:
 
 Custom size:
 ```js
-<FandomVideoPlayIcon size={20} />
-<FandomVideoPlayIcon size={'35px'} />
+<div>
+  <FandomVideoPlayIcon size={20} />
+  <FandomVideoPlayIcon size={'35px'} />
+</div>
 ```
 
 Custom color:
