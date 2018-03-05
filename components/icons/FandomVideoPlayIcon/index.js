@@ -12,7 +12,7 @@ const FandomVideoPlayIcon = ({
   backgroundColor,
   className,
   color,
-  iconSize,
+  size,
   shadowColor,
 }) => {
   const classes = [
@@ -20,8 +20,8 @@ const FandomVideoPlayIcon = ({
   ];
 
   const style = {
-    height: iconSize,
-    width: iconSize,
+    height: size,
+    width: size,
   };
 
   return (
@@ -82,7 +82,7 @@ FandomVideoPlayIcon.propTypes = {
   /**
    * Icon size
    */
-  iconSize: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * Shadow color
    */
@@ -93,7 +93,7 @@ FandomVideoPlayIcon.defaultProps = {
   backgroundColor: '#fff',
   className: false,
   color: colors.FANDOM_COLOR_AQUA,
-  iconSize: 90,
+  size: 90,
   shadowColor: '#000',
 };
 
