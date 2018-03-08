@@ -13,10 +13,13 @@
   },
   "scripts": {
     "build": "styleguidist build",
-    "lint.css.fix": "stylelint \"components/*.css\" --fix",
-    "lint.css": "stylelint \"components/*.css\"",
-    "lint.js": "eslint .",
+    "lint:fix": "stylelint \"components/*.css\" --fix",
+    "lint:css": "stylelint \"components/*.css\"",
+    "lint:js": "eslint .",
     "lint": "yarn lint.js && yarn lint.css",
+    "release:breaking": "git checkout master && git pull && yarn version --new-version major && git push --follow-tags",
+    "release:feature": "git checkout master && git pull && yarn version --new-version minor && git push --follow-tags",
+    "release:fix": "git checkout master && git pull && yarn version --new-version patch && git push --follow-tags",
     "test": "yarn lint",
     "watch": "styleguidist server"
   },
