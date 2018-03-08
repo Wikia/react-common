@@ -19,12 +19,12 @@ module.exports = {
       content: 'README.md',
     },
     {
-      name: 'UI',
-      components: 'components/ui/**/*.js',
-    },
-    {
       name: 'Icons',
       components: 'components/icons/**/*.js',
+    },
+    {
+      name: 'UI',
+      components: 'components/ui/**/*.js',
     },
   ],
   getExampleFilename(componentPath) {
