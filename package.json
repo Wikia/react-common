@@ -18,9 +18,9 @@
     "lint:js": "eslint .",
     "lint": "yarn lint.js && yarn lint.css",
     "release": "yarn release:patch",
-    "release:major": "git checkout master && git pull && yarn version --new-version major && git push --follow-tags",
-    "release:minor": "git checkout master && git pull && yarn version --new-version minor && git push --follow-tags",
-    "release:patch": "git checkout master && git pull && yarn version --new-version patch && git push --follow-tags",
+    "release:major": "git checkout master && git pull && yarn build && yarn version --new-version major && git push --follow-tags",
+    "release:minor": "git checkout master && git pull && yarn build && yarn version --new-version minor && git push --follow-tags",
+    "release:patch": "git checkout master && git pull && yarn build && yarn version --new-version patch && git push --follow-tags",
     "test": "yarn lint",
     "watch": "styleguidist server"
   },
