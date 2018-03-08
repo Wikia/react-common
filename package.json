@@ -16,7 +16,7 @@
     "lint:fix": "stylelint \"components/*.css\" --fix",
     "lint:css": "stylelint \"components/*.css\"",
     "lint:js": "eslint .",
-    "lint": "yarn lint.js && yarn lint.css",
+    "lint": "yarn lint:js && yarn lint:css",
     "release": "yarn release:patch",
     "release:major": "git checkout master && git pull && yarn build && yarn version --new-version major && git push --follow-tags",
     "release:minor": "git checkout master && git pull && yarn build && yarn version --new-version minor && git push --follow-tags",
