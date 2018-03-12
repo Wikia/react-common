@@ -5,7 +5,10 @@ Defaults:
 
 Custom size:
 ```js
-<FandomLoader size={'78'} stroke={'6'}/>
+<div>
+	<FandomLoader size={'78'} stroke={'6'}/>
+	<FandomLoader size={70} stroke={2}/>
+</div>
 ```
 
 Custom color:
