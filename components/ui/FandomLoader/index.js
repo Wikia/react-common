@@ -14,10 +14,6 @@ const FandomLoader = ({
   size,
   stroke,
 }) => {
-  const classes = [
-    className === false ? '' : className,
-  ];
-
   const style = {
     width: size,
     height: size,
@@ -28,7 +24,7 @@ const FandomLoader = ({
   const dash = 2 * Math.PI * r;
 
   return (
-    <div className={`fandom-loader ${classes}`} style={style}>
+    <div className={`fandom-loader ${className}`} style={style}>
       <svg
         className="wds-spinner"
         width={size}
@@ -57,15 +53,15 @@ FandomLoader.propTypes = {
   /**
    * Additional class name
    */
-  className: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])]),
+  className: PropTypes.string,
   /**
    * Loader size
    */
-  size: PropTypes.number,
+  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * Stroke width
    */
-  stroke: PropTypes.number,
+  stroke: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /**
    * Stroke color
    */
@@ -73,7 +69,7 @@ FandomLoader.propTypes = {
 };
 
 FandomLoader.defaultProps = {
-  className: false,
+  className: '',
   size: 30,
   stroke: 2,
   color: colors.WDS_COLOR_LINK,
