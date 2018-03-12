@@ -29,11 +29,9 @@ The only requirement is Webpack configuration capable of transforming Babel code
 ```
 
 ## Contribution
-- ES6 React components with [`prop-types`](https://github.com/facebook/prop-types).
-- general [Fandom's JavaScript](https://github.com/Wikia/eslint-config-fandom) rules apply
-- Use `.js` extension
-- use 2 spaces for JSX files (there's [`.editorconfig`](https://github.com/Wikia/react-design-system/blob/master/.editorconfig) file)
-- Use function syntax if possible
+- ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.
+- general [Fandom's JavaScript](https://github.com/Wikia/eslint-config-fandom) rules apply (with the exception of whitespaces, check [`.editorconfig`](https://github.com/Wikia/react-design-system/blob/master/.editorconfig) file)
+- Use function syntax if possible, use nesting and flat files.
 
 ## TODO (before version 1.0.0)
 - Finish documentation
