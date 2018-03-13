@@ -1,8 +1,10 @@
 {
   "extends": "fandom",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
+  "plugins": ["jest"],
   "rules": {
     "indent": ["error", 2, {"VariableDeclarator": 1, "SwitchCase": 1}],
     "no-tabs": 1,

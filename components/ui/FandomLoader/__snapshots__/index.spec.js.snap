@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FandomLoader renders correctly with custom colors (named color) 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={14}
+        stroke="red"
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`FandomLoader renders correctly with custom colors (rgb) 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={14}
+        stroke="rgb(0,0,255)"
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`FandomLoader renders correctly with custom colors (short hex) 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={14}
+        stroke="#0f0"
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`FandomLoader renders correctly with custom size (number) 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": "20",
+      "width": "20",
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height="20"
+    viewBox="0 0 20 20"
+    width="20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(10, 10)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={9}
+        stroke="#00b7e0"
+        strokeDasharray={56.548667764616276}
+        strokeDashoffset={56.548667764616276}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`FandomLoader renders correctly with custom size (string) 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": "78",
+      "width": "78",
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height="78"
+    viewBox="0 0 78 78"
+    width="78"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(39, 39)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={36}
+        stroke="#00b7e0"
+        strokeDasharray={226.1946710584651}
+        strokeDashoffset={226.1946710584651}
+        strokeLinecap="round"
+        strokeWidth="6"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`FandomLoader renders correctly with default values 1`] = `
+<div
+  className="fandom-loader "
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    className="wds-spinner"
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        className="wds-spinner__stroke"
+        fill="none"
+        r={14}
+        stroke="#00b7e0"
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
