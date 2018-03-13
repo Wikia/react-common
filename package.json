@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "styleguidist build",
+    "build:watch": "styleguidist server",
     "lint:css": "stylelint \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.css\" --fix",
     "lint:js": "eslint .",
@@ -25,7 +26,7 @@
     "test:jest": "jest",
     "test:coverage": "jest --coverage",
     "test": "yarn lint && yarn test:jest && yarn test:coverage",
-    "watch": "styleguidist server"
+    "watch": ""
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
