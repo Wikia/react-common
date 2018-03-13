@@ -41,5 +41,13 @@ The easiest way is to run the full suite:
 ```
 It will run `eslint` and `jest`, and will output `jest --coverage` report.
 
+There's a command for watching tests:
+```js static
+> yarn test:watch
+```
+
+**NOTE**: You can read more about Jest here: https://facebook.github.io/jest/
+
+
 ## TODO (before version 1.0.0)
 - Finish documentation
