@@ -7,6 +7,6 @@ cache:
     - node_modules
 script:
   - yarn lint
-  - yarn test:coverage --runInBand
-  - yarn test:jest --runInBand
   - yarn build
+  - yarn test:run --runInBand
+  - yarn test:coverage --runInBand
