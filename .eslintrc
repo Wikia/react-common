@@ -1,8 +1,10 @@
 {
   "extends": "fandom",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
+  "plugins": ["jest"],
   "rules": {
     "indent": ["error", 2, {"VariableDeclarator": 1, "SwitchCase": 1}],
     "no-tabs": 1,
@@ -10,6 +12,16 @@
     "no-unused-vars": 0,
     "react/jsx-filename-extension": 0,
     "require-jsdoc": 0,
-    "valid-jsdoc": 0
+    "valid-jsdoc": 0,
+    "jest/consistent-test-it": "error",
+    "jest/no-disabled-tests": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-hooks": "warn",
+    "jest/no-identical-title": "error",
+    "jest/no-jest-import": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-describe": "error",
+    "jest/valid-expect-in-promise": "error",
+    "jest/valid-expect": "error"
   }
 }

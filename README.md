@@ -32,7 +32,22 @@ The only requirement is Webpack configuration capable of transforming Babel code
 - ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.
 - general [Fandom's JavaScript](https://github.com/Wikia/eslint-config-fandom) rules apply (with the exception of whitespaces, check [`.editorconfig`](https://github.com/Wikia/react-design-system/blob/master/.editorconfig) file)
 - Use function syntax if possible, use nesting and flat files.
+- 100% jest coverage and no regressions
+
+### Tests
+The easiest way is to run the full suite:
+```js static
+> yarn test
+```
+It will run `eslint` and `jest`, and will output `jest --coverage` report.
+
+There's a command for watching tests:
+```js static
+> yarn test:watch
+```
+
+**NOTE**: You can read more about Jest here: https://facebook.github.io/jest/
+
 
 ## TODO (before version 1.0.0)
 - Finish documentation
-- Testing environment
