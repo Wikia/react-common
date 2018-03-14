@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FandomVideoPlayIcon renders correctly with custom colors 1`] = `
+exports[`VideoPlayIcon renders correctly with custom colors 1`] = `
 <svg
   className="fandom-video-play-icon "
   style={
@@ -71,7 +71,7 @@ exports[`FandomVideoPlayIcon renders correctly with custom colors 1`] = `
 </svg>
 `;
 
-exports[`FandomVideoPlayIcon renders correctly with custom size (number) 1`] = `
+exports[`VideoPlayIcon renders correctly with custom size (number) 1`] = `
 <svg
   className="fandom-video-play-icon "
   style={
@@ -142,7 +142,7 @@ exports[`FandomVideoPlayIcon renders correctly with custom size (number) 1`] = `
 </svg>
 `;
 
-exports[`FandomVideoPlayIcon renders correctly with custom size (string, px) 1`] = `
+exports[`VideoPlayIcon renders correctly with custom size (string, px) 1`] = `
 <svg
   className="fandom-video-play-icon "
   style={
@@ -213,7 +213,7 @@ exports[`FandomVideoPlayIcon renders correctly with custom size (string, px) 1`]
 </svg>
 `;
 
-exports[`FandomVideoPlayIcon renders correctly with default values 1`] = `
+exports[`VideoPlayIcon renders correctly with default values 1`] = `
 <svg
   className="fandom-video-play-icon "
   style={

@@ -6,9 +6,9 @@ import colors from '../../../utils/colors';
 import './styles.css';
 
 /**
- * Fandom Loader
+ * Loader
  */
-const FandomLoader = ({
+const Loader = ({
   className,
   color,
   size,
@@ -49,7 +49,7 @@ const FandomLoader = ({
   );
 };
 
-FandomLoader.propTypes = {
+Loader.propTypes = {
   /**
    * Additional class name
    */
@@ -68,11 +68,11 @@ FandomLoader.propTypes = {
   color: PropTypes.string,
 };
 
-FandomLoader.defaultProps = {
+Loader.defaultProps = {
   className: '',
   size: 30,
   stroke: 2,
   color: colors.WDS_COLOR_LINK,
 };
 
-export default FandomLoader;
+export default Loader;

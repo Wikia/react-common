@@ -1,57 +1,49 @@
+const fs = require('fs');
 const path = require('path');
+const {theme, styles} = require('./styleguide/styles.js');
+const pkg = require('./package.json');
+const schema = require('./components.json');
+
+function resolve(...paths) {
+  return fs.realpathSync(path.join(__dirname, ...paths));
+}
+
+function getSections() {
+  return schema.map(({name, content, components}) => {
+    const section = {
+      name,
+      content,
+    };
+
+    if (components) {
+      section.components = () => components.map(
+        componentName => resolve('src/components', componentName, 'index.js')
+      );
+    }
+
+    return section;
+  });
+}
 
 module.exports = {
-  theme: {
-    color: {
-      link: '#00acac',
-      linkHover: '#008989',
-    },
-    fontFamily: {
-      base: 'Rubik, Helvetica, Arial, sans-serif',
-    },
-    fontSize: {
-      base: 14,
-      text: 15,
-      small: 13,
-      h1: 36,
-      h2: 24,
-      h3: 18,
-      h4: 16,
-      h5: 15,
-      h6: 15,
-    },
-  },
+  title: `react-design-system v${pkg.version}`,
   template: './styleguide/index.html',
+  theme,
+  styles,
   // skipComponentsWithoutExample: true,
   // verbose: true,
   // showUsage: true,
   styleguideDir: './docs/',
-  components: 'components/**/index.js',
-  sections: [
-    {
-      content: 'README.md',
-    },
-    {
-      name: 'Icons',
-      components: 'components/icons/[A-Z]*/index.js',
-    },
-    {
-      name: 'UI',
-      components: 'components/ui/[A-Z]*/index.js',
-    },
-    {
-      name: 'Other',
-      components: 'components/[A-Z]*/index.js',
-    },
-  ],
+  components: 'src/components/**/index.js',
+  sections: getSections(),
   getExampleFilename(componentPath) {
-    return componentPath.replace(/index\.jsx?$/, 'examples.md');
+    return componentPath.replace(/index\.jsx?$/, 'README.md');
   },
   getComponentPathLine(componentPath) {
     const name = path.basename(path.dirname(componentPath));
     const dir = path.dirname(componentPath);
 
-    return `import ${name} from '${dir}';`;
+    return `import {${name}} from '${pkg.name}';`;
   },
   webpackConfig: {
     module: {

@@ -1,0 +1,18 @@
+[
+  {
+    "content": "README.md"
+  },
+  {
+    "name": "UI",
+    "components": [
+      "ExpandableText",
+      "Loader"
+    ]
+  },
+  {
+    "name": "Icons",
+    "components": [
+      "VideoPlayIcon"
+    ]
+  }
+]

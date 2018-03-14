@@ -8,7 +8,7 @@ import './styles.css';
 /**
  * Video Play icon
  */
-const FandomVideoPlayIcon = ({
+const VideoPlayIcon = ({
   backgroundColor,
   className,
   color,
@@ -62,7 +62,7 @@ const FandomVideoPlayIcon = ({
   );
 };
 
-FandomVideoPlayIcon.propTypes = {
+VideoPlayIcon.propTypes = {
   /**
    * Background color
    */
@@ -85,7 +85,7 @@ FandomVideoPlayIcon.propTypes = {
   shadowColor: PropTypes.string,
 };
 
-FandomVideoPlayIcon.defaultProps = {
+VideoPlayIcon.defaultProps = {
   backgroundColor: '#fff',
   className: '',
   color: colors.FANDOM_COLOR_AQUA,
@@ -93,4 +93,4 @@ FandomVideoPlayIcon.defaultProps = {
   shadowColor: '#000',
 };
 
-export default FandomVideoPlayIcon;
+export default VideoPlayIcon;
