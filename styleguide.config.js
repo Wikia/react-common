@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   theme: {
     color: {
@@ -24,22 +26,32 @@ module.exports = {
   // verbose: true,
   // showUsage: true,
   styleguideDir: './docs/',
-  components: 'components/**/*.js',
+  components: 'components/**/index.js',
   sections: [
     {
       content: 'README.md',
     },
     {
       name: 'Icons',
-      components: 'components/icons/**/*.js',
+      components: 'components/icons/[A-Z]*/index.js',
     },
     {
       name: 'UI',
-      components: 'components/ui/**/*.js',
+      components: 'components/ui/[A-Z]*/index.js',
+    },
+    {
+      name: 'Other',
+      components: 'components/[A-Z]*/index.js',
     },
   ],
   getExampleFilename(componentPath) {
     return componentPath.replace(/index\.jsx?$/, 'examples.md');
+  },
+  getComponentPathLine(componentPath) {
+    const name = path.basename(path.dirname(componentPath));
+    const dir = path.dirname(componentPath);
+
+    return `import ${name} from '${dir}';`;
   },
   webpackConfig: {
     module: {

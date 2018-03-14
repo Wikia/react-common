@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpendableText renders correctly with default values 1`] = `
+<span
+  className="expandable-text "
+>
+  Lorem ipsum dolor amet swag unicorn hammock neutra narwhal salvia normcore PBR&B austin meh single-o
+  <span>
+    …
+     
+    <button
+      className="expandable-text__expand "
+      onClick={[Function]}
+    >
+      EXPAND
+    </button>
+  </span>
+</span>
+`;
+
+exports[`ExpendableText renders correctly with default values 2`] = `
+<span
+  className="expandable-text "
+>
+  Lorem ipsum
+</span>
+`;
+
+exports[`ExpendableText renders correctly with different params 1`] = `
+<span
+  className="expandable-text "
+>
+  Lorem
+  <span>
+    …
+     
+    <button
+      className="expandable-text__expand "
+      onClick={[Function]}
+    >
+      MORE
+    </button>
+  </span>
+</span>
+`;
+
+exports[`ExpendableText renders correctly with different params 2`] = `
+<span
+  className="expandable-text "
+>
+  Lorem ipsum dolor amet swag unicorn hammock neutra
+  <span>
+    …
+     
+    <button
+      className="expandable-text__expand "
+      onClick={[Function]}
+    >
+      MOREMORE
+    </button>
+  </span>
+</span>
+`;
+
+exports[`ExpendableText renders correctly with different params 3`] = `
+<span
+  className="expandable-text "
+>
+  Lorem ipsum dolor amet swag unicorn hammock neutra narwhal salvia normcore PBR&B austin meh single-origin coffee cold-pressed before they sold out. Kale chips truffaut heirloom, intelligentsia shoreditch lomo irony affogato franzen vaporware blue bottle hella wolf. Bushwick keffiyeh squid whatever ethical af tumeric glossier 3 wolf moon copper mug offal deep v woke cold-pressed. Tilde live-edge jean shorts portland beard knausgaard, butcher tote bag photo booth vape hexagon shaman humblebrag lomo keffiyeh. Meditation offal mumblecore bushwick, normcore cardigan kitsch fanny pack banh mi disrupt lo-fi.
+</span>
+`;
