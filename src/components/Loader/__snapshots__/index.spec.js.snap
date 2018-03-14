@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FandomLoader renders correctly with custom colors (named color) 1`] = `
+exports[`Loader renders correctly with custom colors (named color) 1`] = `
 <div
   className="fandom-loader "
   style={
@@ -35,7 +35,7 @@ exports[`FandomLoader renders correctly with custom colors (named color) 1`] = `
 </div>
 `;
 
-exports[`FandomLoader renders correctly with custom colors (rgb) 1`] = `
+exports[`Loader renders correctly with custom colors (rgb) 1`] = `
 <div
   className="fandom-loader "
   style={
@@ -70,7 +70,7 @@ exports[`FandomLoader renders correctly with custom colors (rgb) 1`] = `
 </div>
 `;
 
-exports[`FandomLoader renders correctly with custom colors (short hex) 1`] = `
+exports[`Loader renders correctly with custom colors (short hex) 1`] = `
 <div
   className="fandom-loader "
   style={
@@ -105,7 +105,7 @@ exports[`FandomLoader renders correctly with custom colors (short hex) 1`] = `
 </div>
 `;
 
-exports[`FandomLoader renders correctly with custom size (number) 1`] = `
+exports[`Loader renders correctly with custom size (number) 1`] = `
 <div
   className="fandom-loader "
   style={
@@ -140,7 +140,7 @@ exports[`FandomLoader renders correctly with custom size (number) 1`] = `
 </div>
 `;
 
-exports[`FandomLoader renders correctly with custom size (string) 1`] = `
+exports[`Loader renders correctly with custom size (string) 1`] = `
 <div
   className="fandom-loader "
   style={
@@ -175,7 +175,7 @@ exports[`FandomLoader renders correctly with custom size (string) 1`] = `
 </div>
 `;
 
-exports[`FandomLoader renders correctly with default values 1`] = `
+exports[`Loader renders correctly with default values 1`] = `
 <div
   className="fandom-loader "
   style={
