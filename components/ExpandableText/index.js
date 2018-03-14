@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {makeShortText} from './helper';
+import makeShortText from './helper';
 
 import './styles.css';
 
