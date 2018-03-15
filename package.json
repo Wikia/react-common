@@ -14,6 +14,7 @@
   "scripts": {
     "build:watch": "styleguidist server",
     "build": "styleguidist build",
+    "coverage": "jest --coverage",
     "lint:css": "stylelint \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.css\" --fix",
     "lint:js": "eslint .",
@@ -22,11 +23,10 @@
     "release:minor": "git checkout master && git pull && yarn build && git add . && yarn version --new-version minor && git push --follow-tags",
     "release:patch": "git checkout master && git pull && yarn build && git add . && yarn version --new-version patch && git push --follow-tags",
     "release": "yarn release:patch",
-    "test:coverage": "jest --coverage",
     "test:run": "jest",
     "test:watch": "jest --watchAll",
     "test:watch:notify": "jest --watchAll --notify",
-    "test": "yarn lint && yarn test:run && yarn test:coverage",
+    "test": "yarn lint && yarn test:run && yarn coverage",
     "watch": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch\"",
     "watch:notify": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch:notify\""
   },
