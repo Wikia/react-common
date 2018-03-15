@@ -9,4 +9,4 @@ script:
   - yarn lint
   - yarn build
   - yarn test:run --runInBand
-  - yarn test:coverage --runInBand
+  - yarn coverage --runInBand

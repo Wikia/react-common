@@ -27,6 +27,17 @@ test('ExpendableText renders correctly with default values', () => {
   expect(expandableText2.toJSON()).toMatchSnapshot();
 });
 
+test('ExpendableText lifecycle works', () => {
+  const expandableText = shallow(
+    <ExpendableText text={veryLongText} characterLimit={100} expandLabel={'EXPAND'} />,
+  );
+  // trigger prop change
+  expandableText.setProps({
+    text: shortText,
+  });
+  expect(expandableText.text()).toEqual(shortText);
+});
+
 test('ExpendableText renders correctly with different params', () => {
   const expandableText1 = renderer.create(
     <ExpendableText text={veryLongText} characterLimit={5} expandLabel={'MORE'} />,
@@ -43,7 +54,6 @@ test('ExpendableText renders correctly with different params', () => {
   );
   expect(expandableText3.toJSON()).toMatchSnapshot();
 });
-
 
 test('ExpendableText expands', () => {
   const expandableText = shallow(
