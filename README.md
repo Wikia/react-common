@@ -1,5 +1,6 @@
 # react-design-system
 [![Travis](https://img.shields.io/travis/Wikia/react-design-system/master.svg?style=flat-square)](https://travis-ci.org/Wikia/react-design-system)
+[![Coveralls](https://img.shields.io/coveralls/github/Wikia/react-design-system/master.svg?style=flat-square)](https://coveralls.io/github/Wikia/react-design-system)
 [![Package](https://img.shields.io/github/release/Wikia/react-design-system.svg?style=flat-square)](https://github.com/Wikia/react-design-system)
 [![Release](https://img.shields.io/github/package-json/v/Wikia/react-design-system.svg?style=flat-square)](https://github.com/Wikia/react-design-system/releases)
 [![Commits](https://img.shields.io/github/commits-since/Wikia/react-design-system/latest.svg?style=flat-square)](https://github.com/Wikia/react-design-system/commits/master)
