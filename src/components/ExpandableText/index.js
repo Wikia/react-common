@@ -5,6 +5,14 @@ import makeShortText from './helper';
 
 import './styles.css';
 
+/**
+ * ExpandableText component can be used to temporarily limit text showed to the user.
+ * It has a button used to fully expand the text.
+ * If the source text is shorter than the limit the button do not show.
+ *
+ * Both button label and string used to ellipsis has to be configured.
+ * Button and the text itself can be syled with classes passed to the component.
+ */
 class ExpandableText extends React.Component {
   constructor(props) {
     super(props);

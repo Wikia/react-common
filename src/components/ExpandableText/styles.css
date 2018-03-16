@@ -4,6 +4,8 @@
 	border: 0;
 	cursor: pointer;
 	display: inline;
+	font: inherit;
+	line-height: inherit;
 	margin: 0;
 	padding: 0;
 }

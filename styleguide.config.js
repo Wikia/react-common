@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const {theme, styles} = require('./styleguide/styles.js');
+const webpackConfig = require('./styleguide/webpackConfig.js');
 const pkg = require('./package.json');
 const schema = require('./components.json');
 
@@ -30,9 +31,6 @@ module.exports = {
   template: './styleguide/index.html',
   theme,
   styles,
-  // skipComponentsWithoutExample: true,
-  // verbose: true,
-  // showUsage: true,
   styleguideDir: './docs/',
   components: 'src/components/**/index.js',
   sections: getSections(),
@@ -45,35 +43,5 @@ module.exports = {
 
     return `import {${name}} from '${pkg.name}';`;
   },
-  webpackConfig: {
-    module: {
-      rules: [
-        {
-          test: /\.jsx?$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-          options: {
-            plugins: ['babel-plugin-transform-object-rest-spread'],
-            presets: [require.resolve('babel-preset-react'), [
-              'env',
-              {
-                targets: {
-                  browsers: [
-                    'last 5 versions',
-                    '> 2%',
-                    'IE 11',
-                    'IE 10',
-                  ],
-                },
-              },
-            ]],
-          },
-        },
-        {
-          test: /\.css$/,
-          loader: 'style-loader!css-loader',
-        },
-      ],
-    },
-  },
+  webpackConfig,
 };

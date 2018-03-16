@@ -6,7 +6,9 @@ import colors from '../../../utils/colors';
 import './styles.css';
 
 /**
- * Loader
+ * Loader block component used to indicate loading state.
+ *
+ * Based on http://fandomdesignsystem.com/#/components/progress-indicators
  */
 const Loader = ({
   className,
