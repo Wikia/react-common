@@ -10,10 +10,12 @@ function resolve(...paths) {
 }
 
 function getSections() {
-  return schema.map(({name, content, components}) => {
+  return schema.map(({name, content, components, description, sections}) => {
     const section = {
-      name,
       content,
+      description,
+      name,
+      sections,
     };
 
     if (components) {

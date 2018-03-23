@@ -1,46 +1,46 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Loader from './index';
+import Spinner from './index';
 
-test('Loader renders correctly with default values', () => {
+test('Spinner renders correctly with default values', () => {
   const component = renderer.create(
-    <Loader />,
+    <Spinner />,
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Loader renders correctly with custom size (string)', () => {
+test('Spinner renders correctly with custom size (string)', () => {
   const component = renderer.create(
-    <Loader size={'78'} stroke={'6'} />
+    <Spinner size={'78'} stroke={'6'} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Loader renders correctly with custom size (number)', () => {
+test('Spinner renders correctly with custom size (number)', () => {
   const component = renderer.create(
-    <Loader size={'20'} />
+    <Spinner size={'20'} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Loader renders correctly with custom colors (named color)', () => {
+test('Spinner renders correctly with custom colors (named color)', () => {
   const component = renderer.create(
-    <Loader color={'red'} />
+    <Spinner color={'red'} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Loader renders correctly with custom colors (short hex)', () => {
+test('Spinner renders correctly with custom colors (short hex)', () => {
   const component = renderer.create(
-    <Loader color={'#0f0'} />
+    <Spinner color={'#0f0'} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Loader renders correctly with custom colors (rgb)', () => {
+test('Spinner renders correctly with custom colors (rgb)', () => {
   const component = renderer.create(
-    <Loader color={'rgb(0,0,255)'} />
+    <Spinner color={'rgb(0,0,255)'} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
