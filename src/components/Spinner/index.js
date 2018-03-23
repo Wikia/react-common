@@ -10,7 +10,7 @@ import './styles.css';
  *
  * Based on http://fandomdesignsystem.com/#/components/progress-indicators
  */
-const Loader = ({
+const Spinner = ({
   className,
   color,
   size,
@@ -26,7 +26,7 @@ const Loader = ({
   const dash = 2 * Math.PI * r;
 
   return (
-    <div className={`fandom-loader ${className}`} style={style}>
+    <div className={`fandom-spinner ${className}`} style={style}>
       <svg
         className="wds-spinner"
         width={size}
@@ -51,7 +51,7 @@ const Loader = ({
   );
 };
 
-Loader.propTypes = {
+Spinner.propTypes = {
   /**
    * Additional class name
    */
@@ -70,11 +70,11 @@ Loader.propTypes = {
   color: PropTypes.string,
 };
 
-Loader.defaultProps = {
+Spinner.defaultProps = {
   className: '',
   size: 30,
   stroke: 2,
   color: colors.WDS_COLOR_LINK,
 };
 
-export default Loader;
+export default Spinner;

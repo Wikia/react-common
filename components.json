@@ -1,12 +1,26 @@
 [
   {
-    "content": "README.md"
+    "name": "Documentation",
+    "sections": [
+      {
+        "name": "Introduction",
+        "content": "styleguide/INTRODUCTION.md"
+      },
+      {
+        "name": "Installation",
+        "content": "styleguide/INSTALLATION.md"
+      },
+      {
+        "name": "Contribution",
+        "content": "styleguide/CONTRIBUTION.md"
+      }
+    ]
   },
   {
-    "name": "UI",
+    "name": "Components",
     "components": [
       "ExpandableText",
-      "Loader"
+      "Spinner"
     ]
   },
   {
