@@ -19,6 +19,7 @@
   {
     "name": "Components",
     "components": [
+      "Button",
       "ExpandableText",
       "Spinner"
     ]

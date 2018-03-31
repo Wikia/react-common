@@ -1,4 +1,5 @@
 // UI
+export {default as Button} from './components/Button';
 export {default as ExpandableText} from './components/ExpandableText';
 export {default as Spinner} from './components/Spinner';
 
