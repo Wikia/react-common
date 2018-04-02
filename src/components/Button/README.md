@@ -7,15 +7,15 @@ Different styles:
 ```js
 <div>
 	<div>
-		<Button onClick={() => {alert('Clicked!')}} secondary>Secondary</Button>
-		<Button onClick={() => {alert('Clicked!')}} text>Text</Button>
-		<Button onClick={() => {alert('Clicked!')}} square>&hellip;</Button>
+		<Button secondary>Secondary</Button>
+		<Button text>Text</Button>
+		<Button square>&hellip;</Button>
 	</div>
 	<div>
-		<Button onClick={() => {alert('Clicked!')}} squished>Squished</Button>
+		<Button squished>Squished</Button>
 	</div>
 	<div>
-		<Button onClick={() => {alert('Clicked!')}} stretched>stretched</Button>
+		<Button stretched>stretched</Button>
 	</div>
 </div>
 ```
