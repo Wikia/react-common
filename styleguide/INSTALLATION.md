@@ -9,14 +9,9 @@ import {Button, VideoPlayIcon} from '@Wikia/react-design-system';
 ```
 
 ## Requirements
-The only requirement is Webpack configuration capable of transforming Babel code and including SCSS files:
-```json
-- babel
-- babel-plugin-transform-object-rest-spread
-- babel-preset-env
-- babel-preset-react
-- node-sass
-- postcss + autoprefixer
-- react
-- webpack
-```
+The only requirement is a Webpack configuration capable of transforming ES6 code and including SCSS files:
+- `babel` (+plugins: `babel-preset-react`, `babel-preset-env` and `babel-plugin-transform-object-rest-spread`)
+- `node-sass`
+- `postcss` with `autoprefixer` plugin
+- `react@16`
+- `webpack@3`

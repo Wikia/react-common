@@ -41,14 +41,41 @@ const Button = ({
 };
 
 Button.propTypes = {
+  /**
+   * @ignore
+   */
   children: PropTypes.node,
+  /**
+   * Additional class name
+   */
   className: PropTypes.string,
+  /**
+   * Disabled attribute for the `<button>`
+   */
   disabled: PropTypes.bool,
+  /**
+   * Secondary flag
+   */
   secondary: PropTypes.bool,
+  /**
+   * Square flag
+   */
   square: PropTypes.bool,
+  /**
+   * Squished flag
+   */
   squished: PropTypes.bool,
+  /**
+   * Stretched flag
+   */
   stretched: PropTypes.bool,
+  /**
+   * Text flag
+   */
   text: PropTypes.bool,
+  /**
+   * Callback for the `<button>`
+   */
   onClick: PropTypes.func,
 };
 

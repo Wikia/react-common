@@ -5,6 +5,20 @@
 - 100% coverage and no regressions
 - use [Jest](https://facebook.github.io/jest/) as a general testing framework and for testing component's rendering
 - use [Enzyme](https://github.com/airbnb/enzyme) for testing interactions
+- use [Sinon](http://sinonjs.org/) for testing callbacks
+
+## Step-by-step guide
+0. Assuming the new component's name is `ComponentA` all it's files will be in `/src/components/ComponentA/` directory.
+1. Create component in `ComponentA/index.js`.
+2. Add component to `/src/index.js`.
+3. Add component to `/components.json`.
+4. (optionally) create styles in `ComponentA/styles.s?css` and import them in `ComponentA/index.js`.
+5. Document the usage and props in JSDocs in `ComponentA/index.js`.
+6. Add example or examples in `ComponentA/README.md`.
+7. Add unit test in `ComponentA/index.spec.js`, aim for 100% coverage and all the test cases.
+8. Create new Pull Request.
+9. Code will be merged to `master` only if there are no regressions and after a successful CR.
+10. When the code is merged to `master`, release new version of the styleguide.
 
 ## Tests
 The easiest way is to run the full suite:
