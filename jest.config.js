@@ -1,6 +1,6 @@
 module.exports = {
   moduleNameMapper: {
-    '\\.(css|less)$': 'identity-obj-proxy',
+    '\\.(s?css)$': 'identity-obj-proxy',
   },
   setupTestFrameworkScriptFile: '<rootDir>/jest.setup.js',
 };

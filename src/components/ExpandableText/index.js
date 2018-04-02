@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import makeShortText from './helper';
 
-import './styles.css';
+import './styles.scss';
 
 /**
  * ExpandableText component can be used to temporarily limit text showed to the user.

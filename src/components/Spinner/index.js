@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import colors from '../../../utils/colors';
 
-import './styles.css';
+import './styles.scss';
 
 /**
  * Loader block component used to indicate loading state.
@@ -28,7 +28,6 @@ const Spinner = ({
   return (
     <div className={`fandom-spinner ${className}`} style={style}>
       <svg
-        className="wds-spinner"
         width={size}
         height={size}
         viewBox={`0 0 ${size} ${size}`}
@@ -36,7 +35,6 @@ const Spinner = ({
       >
         <g transform={`translate(${translate}, ${translate})`}>
           <circle
-            className="wds-spinner__stroke"
             fill="none"
             strokeWidth={stroke}
             strokeDasharray={dash}
