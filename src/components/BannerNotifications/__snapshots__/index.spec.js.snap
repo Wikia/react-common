@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BannerNotifications renders correctly 1`] = `null`;
+
+exports[`BannerNotifications renders correctly 2`] = `
+<div
+  className="wds-banner-notification__container"
+>
+  <div
+    className="wds-banner-notification wds-message"
+  >
+    <div
+      className="wds-banner-notification__icon"
+    >
+      <svg
+        className="wds-icon wds-icon-small"
+      >
+        <use
+          xlinkHref="#wds-icons-flag-small"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+    <span
+      className="wds-banner-notification__text"
+    >
+      this is a single message
+    </span>
+    <svg
+      className="wds-icon wds-icon-tiny wds-banner-notification__close"
+      onClick={[Function]}
+    >
+      <use
+        xlinkHref="#wds-icons-cross-tiny"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`BannerNotifications renders correctly 3`] = `
+<div
+  className="wds-banner-notification__container"
+>
+  <div
+    className="wds-banner-notification wds-message"
+  >
+    <div
+      className="wds-banner-notification__icon"
+    >
+      <svg
+        className="wds-icon wds-icon-small"
+      >
+        <use
+          xlinkHref="#wds-icons-flag-small"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+    <span
+      className="wds-banner-notification__text"
+    >
+      this is a message
+    </span>
+    <svg
+      className="wds-icon wds-icon-tiny wds-banner-notification__close"
+      onClick={[Function]}
+    >
+      <use
+        xlinkHref="#wds-icons-cross-tiny"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-banner-notification wds-success"
+  >
+    <div
+      className="wds-banner-notification__icon"
+    >
+      <svg
+        className="wds-icon wds-icon-small"
+      >
+        <use
+          xlinkHref="#wds-icons-checkmark-circle-small"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+    <span
+      className="wds-banner-notification__text"
+    >
+      this is a success
+    </span>
+    <svg
+      className="wds-icon wds-icon-tiny wds-banner-notification__close"
+      onClick={[Function]}
+    >
+      <use
+        xlinkHref="#wds-icons-cross-tiny"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-banner-notification wds-warning"
+  >
+    <div
+      className="wds-banner-notification__icon"
+    >
+      <svg
+        className="wds-icon wds-icon-small"
+      >
+        <use
+          xlinkHref="#wds-icons-alert-small"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+    <span
+      className="wds-banner-notification__text"
+    >
+      this is a warning
+    </span>
+    <svg
+      className="wds-icon wds-icon-tiny wds-banner-notification__close"
+      onClick={[Function]}
+    >
+      <use
+        xlinkHref="#wds-icons-cross-tiny"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-banner-notification wds-alert"
+  >
+    <div
+      className="wds-banner-notification__icon"
+    >
+      <svg
+        className="wds-icon wds-icon-small"
+      >
+        <use
+          xlinkHref="#wds-icons-error-small"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+    <span
+      className="wds-banner-notification__text"
+    >
+      this is an alert
+    </span>
+    <svg
+      className="wds-icon wds-icon-tiny wds-banner-notification__close"
+      onClick={[Function]}
+    >
+      <use
+        xlinkHref="#wds-icons-cross-tiny"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+</div>
+`;
