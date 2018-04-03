@@ -34,5 +34,10 @@ module.exports = {
     },
   },
   styles: {
+    StyleGuide: {
+      '@global body': {
+        fontFamily: 'Rubik, Helvetica, Arial, sans-serif',
+      },
+    },
   },
 };

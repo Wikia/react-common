@@ -17,17 +17,28 @@
     ]
   },
   {
-    "name": "Components",
+    "name": "DS Elements",
     "components": [
       "Button",
-      "ExpandableText",
       "Spinner"
+    ]
+  },
+  {
+    "name": "DS UI",
+    "components": [
+      "BannerNotifications"
     ]
   },
   {
     "name": "Icons",
     "components": [
       "VideoPlayIcon"
+    ]
+  },
+  {
+    "name": "Other",
+    "components": [
+      "ExpandableText"
     ]
   }
 ]
