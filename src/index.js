@@ -9,3 +9,4 @@ export {default as BannerNotifications} from './components/BannerNotifications';
 export {default as VideoPlayIcon} from './components/VideoPlayIcon';
 // Other UI
 export {default as ExpandableText} from './components/ExpandableText';
+export {default as Vignette} from './components/Vignette';
