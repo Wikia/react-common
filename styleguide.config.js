@@ -29,7 +29,7 @@ function getSections() {
 }
 
 module.exports = {
-  title: `react-design-system v${pkg.version}`,
+  title: `react-design-system`,
   template: './styleguide/index.html',
   theme,
   styles,
