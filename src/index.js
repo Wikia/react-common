@@ -1,5 +1,7 @@
 // Design System Elements
 export {default as Button} from './components/Button';
+export {default as Input} from './components/Input';
+export {default as Fieldset} from './components/Fieldset';
 export {default as Spinner} from './components/Spinner';
 // Design System UI
 export {default as BannerNotifications} from './components/BannerNotifications';

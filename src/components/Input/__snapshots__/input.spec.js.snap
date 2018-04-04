@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input lifecycle works 1`] = `
+<Input
+  autoFocus={false}
+  className=""
+  disabled={false}
+  hint={null}
+  hintClassName=""
+  id={null}
+  inputClassName=""
+  label="foo label"
+  labelClassName=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  status="normal"
+  tabIndex={0}
+  type="text"
+  value="foo"
+>
+  <div
+    className="wds-input"
+  >
+    <input
+      className="wds-input__field "
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+      type="text"
+      value="foo"
+    />
+    <label
+      className="wds-input__label "
+      htmlFor="foo"
+    >
+      foo label
+    </label>
+  </div>
+</Input>
+`;
+
+exports[`Input lifecycle works 2`] = `
+<Input
+  autoFocus={false}
+  className=""
+  disabled={false}
+  hint={null}
+  hintClassName=""
+  id={null}
+  inputClassName=""
+  label="foo label"
+  labelClassName=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  status="normal"
+  tabIndex={0}
+  type="text"
+  value="bar"
+>
+  <div
+    className="wds-input"
+  >
+    <input
+      className="wds-input__field "
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+      type="text"
+      value="bar"
+    />
+    <label
+      className="wds-input__label "
+      htmlFor="foo"
+    >
+      foo label
+    </label>
+  </div>
+</Input>
+`;
+
+exports[`Input lifecycle works 3`] = `
+<Input
+  autoFocus={false}
+  className=""
+  disabled={false}
+  hint={null}
+  hintClassName=""
+  id="bar"
+  inputClassName=""
+  label="foo label"
+  labelClassName=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  status="normal"
+  tabIndex={0}
+  type="text"
+  value="bar"
+>
+  <div
+    className="wds-input"
+  >
+    <input
+      className="wds-input__field "
+      disabled={false}
+      id="bar"
+      name="bar"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      tabIndex={0}
+      type="text"
+      value="bar"
+    />
+    <label
+      className="wds-input__label "
+      htmlFor="bar"
+    >
+      foo label
+    </label>
+  </div>
+</Input>
+`;
+
+exports[`Input renders correctly all the standard params 1`] = `
+<div
+  className="wds-input"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="input_label"
+    name="input_label"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value="foo"
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="input_label"
+  >
+    an input label
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly disabled 1`] = `
+<div
+  className="wds-input is-disabled is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={true}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    a disabled label
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with an error status and a hint 1`] = `
+<div
+  className="wds-input has-error"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value="bar"
+  />
+  <div
+    className="wds-input__hint "
+  >
+    an error occured
+  </div>
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input label
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with custom class names 1`] = `
+<div
+  className="wds-input is-empty general-class"
+>
+  <input
+    className="wds-input__field input-class"
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <label
+    className="wds-input__label label-class"
+    htmlFor="foo"
+  >
+    an input with custom classes
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with default values 1`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input label
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 1`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="text"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type text
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 2`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="number"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type number
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 3`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="email"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type email
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 4`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="search"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type search
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 5`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="tel"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type tel
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 6`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="url"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type url
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with different types 7`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={0}
+    type="password"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    an input with type password
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with tabIndex 1`] = `
+<div
+  className="wds-input is-empty"
+>
+  <input
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    tabIndex={-2}
+    type="text"
+    value=""
+  />
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    input with tabIndex
+  </label>
+</div>
+`;
