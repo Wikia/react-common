@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fieldset renders correctly with a children 1`] = `
+<div
+  className="wds-fieldset "
+>
+  <strong>
+    bold
+  </strong>
+   text
+</div>
+`;
+
+exports[`Fieldset renders correctly with default values 1`] = `
+<div
+  className="wds-fieldset "
+/>
+`;

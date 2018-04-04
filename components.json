@@ -20,6 +20,8 @@
     "name": "Design System Elements",
     "components": [
       "Button",
+      "Input",
+      "Fieldset",
       "Spinner"
     ]
   },
