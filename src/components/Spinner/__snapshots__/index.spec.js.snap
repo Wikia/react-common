@@ -22,7 +22,6 @@ exports[`Spinner renders correctly with custom colors (named color) 1`] = `
       <circle
         fill="none"
         r={14}
-        stroke="red"
         strokeDasharray={87.96459430051421}
         strokeDashoffset={87.96459430051421}
         strokeLinecap="round"
@@ -55,7 +54,6 @@ exports[`Spinner renders correctly with custom colors (rgb) 1`] = `
       <circle
         fill="none"
         r={14}
-        stroke="rgb(0,0,255)"
         strokeDasharray={87.96459430051421}
         strokeDashoffset={87.96459430051421}
         strokeLinecap="round"
@@ -88,7 +86,6 @@ exports[`Spinner renders correctly with custom colors (short hex) 1`] = `
       <circle
         fill="none"
         r={14}
-        stroke="#0f0"
         strokeDasharray={87.96459430051421}
         strokeDashoffset={87.96459430051421}
         strokeLinecap="round"
@@ -121,7 +118,6 @@ exports[`Spinner renders correctly with custom size (number) 1`] = `
       <circle
         fill="none"
         r={9}
-        stroke="#00b7e0"
         strokeDasharray={56.548667764616276}
         strokeDashoffset={56.548667764616276}
         strokeLinecap="round"
@@ -154,7 +150,6 @@ exports[`Spinner renders correctly with custom size (string) 1`] = `
       <circle
         fill="none"
         r={36}
-        stroke="#00b7e0"
         strokeDasharray={226.1946710584651}
         strokeDashoffset={226.1946710584651}
         strokeLinecap="round"
@@ -187,7 +182,6 @@ exports[`Spinner renders correctly with default values 1`] = `
       <circle
         fill="none"
         r={14}
-        stroke="#00b7e0"
         strokeDasharray={87.96459430051421}
         strokeDashoffset={87.96459430051421}
         strokeLinecap="round"

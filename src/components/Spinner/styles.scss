@@ -1,3 +1,6 @@
+// import variables
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
 @keyframes fandom-spinner-rotator {
 	from {
 		transform: rotate(0);
@@ -24,6 +27,7 @@
 			animation: fandom-spinner-dash 1.25s linear infinite alternate-reverse;
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
+			stroke: $wds-color-link;
 		}
 	}
 }

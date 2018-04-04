@@ -12,7 +12,6 @@ import './styles.scss';
  */
 const Spinner = ({
   className,
-  color,
   size,
   stroke,
 }) => {
@@ -40,7 +39,6 @@ const Spinner = ({
             strokeDasharray={dash}
             strokeDashoffset={dash}
             strokeLinecap="round"
-            stroke={color}
             r={r}
           />
         </g>
@@ -62,17 +60,12 @@ Spinner.propTypes = {
    * Stroke width
    */
   stroke: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  /**
-   * Stroke color
-   */
-  color: PropTypes.string,
 };
 
 Spinner.defaultProps = {
   className: '',
   size: 30,
   stroke: 2,
-  color: colors.WDS_COLOR_LINK,
 };
 
 export default Spinner;

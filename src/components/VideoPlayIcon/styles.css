@@ -1,7 +1,0 @@
-.fandom-video-play-icon .fandom-video-play-icon__circle {
-	transition: opacity 200ms ease-in-out;
-}
-
-.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
-	opacity: 1;
-}

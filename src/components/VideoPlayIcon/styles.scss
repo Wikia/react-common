@@ -1,0 +1,16 @@
+// import variables
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
+.fandom-video-play-icon {
+	&:hover &__circle {
+		opacity: 1;
+	}
+
+	&__circle {
+		transition: opacity 200ms ease-in-out;
+	}
+
+	&__triangle {
+		fill: $wds-fandom-color-aqua;
+	}
+}

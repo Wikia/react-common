@@ -17,20 +17,20 @@
     ]
   },
   {
-    "name": "DS Elements",
+    "name": "Design System Elements",
     "components": [
       "Button",
       "Spinner"
     ]
   },
   {
-    "name": "DS UI",
+    "name": "Design System UI",
     "components": [
       "BannerNotifications"
     ]
   },
   {
-    "name": "Icons",
+    "name": "Design System Icons",
     "components": [
       "VideoPlayIcon"
     ]

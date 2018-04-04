@@ -1,83 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VideoPlayIcon renders correctly with custom colors 1`] = `
-<svg
-  className="fandom-video-play-icon "
-  style={
-    Object {
-      "height": 90,
-      "width": 90,
-    }
-  }
-  viewBox="0 0 180 180"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
->
-  <defs>
-    <rect
-      height="150"
-      id="fandom-video-play-icon_b"
-      rx="75"
-      width="150"
-    />
-    <filter
-      filterUnits="objectBoundingBox"
-      height="130%"
-      id="fandom-video-play-icon_a"
-      width="130%"
-      x="-15%"
-      y="-15%"
-    >
-      <feOffset
-        in="SourceAlpha"
-        result="shadowOffsetOuter1"
-      />
-      <feGaussianBlur
-        in="shadowOffsetOuter1"
-        result="shadowBlurOuter1"
-        stdDeviation="7.5"
-      />
-      <feColorMatrix
-        in="shadowBlurOuter1"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
-      />
-    </filter>
-  </defs>
-  <g
-    fill="none"
-    fillRule="evenodd"
-  >
-    <g
-      className="fandom-video-play-icon__circle"
-      opacity=".9"
-      transform="rotate(90 75 90)"
-    >
-      <use
-        fill="#300"
-        filter="url(#fandom-video-play-icon_a)"
-        xlinkHref="#fandom-video-play-icon_b"
-      />
-      <use
-        fill="#fee"
-        xlinkHref="#fandom-video-play-icon_b"
-      />
-    </g>
-    <path
-      d="M80.87 58.006l34.32 25.523c3.052 2.27 3.722 6.635 1.496 9.748a6.91 6.91 0 0 1-1.497 1.527l-34.318 25.523c-3.053 2.27-7.332 1.586-9.558-1.527A7.07 7.07 0 0 1 70 114.69V63.643c0-3.854 3.063-6.977 6.84-6.977 1.449 0 2.86.469 4.03 1.34z"
-      fill="#f00"
-      fillRule="nonzero"
-    />
-  </g>
-</svg>
-`;
-
 exports[`VideoPlayIcon renders correctly with custom size (number) 1`] = `
 <svg
   className="fandom-video-play-icon "
   style={
     Object {
-      "height": "20",
-      "width": "20",
+      "height": 20,
+      "width": 20,
     }
   }
   viewBox="0 0 180 180"
@@ -134,8 +63,8 @@ exports[`VideoPlayIcon renders correctly with custom size (number) 1`] = `
       />
     </g>
     <path
+      className="fandom-video-play-icon__triangle"
       d="M80.87 58.006l34.32 25.523c3.052 2.27 3.722 6.635 1.496 9.748a6.91 6.91 0 0 1-1.497 1.527l-34.318 25.523c-3.053 2.27-7.332 1.586-9.558-1.527A7.07 7.07 0 0 1 70 114.69V63.643c0-3.854 3.063-6.977 6.84-6.977 1.449 0 2.86.469 4.03 1.34z"
-      fill="#00d6d6"
       fillRule="nonzero"
     />
   </g>
@@ -205,8 +134,8 @@ exports[`VideoPlayIcon renders correctly with custom size (string, px) 1`] = `
       />
     </g>
     <path
+      className="fandom-video-play-icon__triangle"
       d="M80.87 58.006l34.32 25.523c3.052 2.27 3.722 6.635 1.496 9.748a6.91 6.91 0 0 1-1.497 1.527l-34.318 25.523c-3.053 2.27-7.332 1.586-9.558-1.527A7.07 7.07 0 0 1 70 114.69V63.643c0-3.854 3.063-6.977 6.84-6.977 1.449 0 2.86.469 4.03 1.34z"
-      fill="#00d6d6"
       fillRule="nonzero"
     />
   </g>
@@ -276,8 +205,8 @@ exports[`VideoPlayIcon renders correctly with default values 1`] = `
       />
     </g>
     <path
+      className="fandom-video-play-icon__triangle"
       d="M80.87 58.006l34.32 25.523c3.052 2.27 3.722 6.635 1.496 9.748a6.91 6.91 0 0 1-1.497 1.527l-34.318 25.523c-3.053 2.27-7.332 1.586-9.558-1.527A7.07 7.07 0 0 1 70 114.69V63.643c0-3.854 3.063-6.977 6.84-6.977 1.449 0 2.86.469 4.03 1.34z"
-      fill="#00d6d6"
       fillRule="nonzero"
     />
   </g>

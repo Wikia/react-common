@@ -19,14 +19,7 @@ test('VideoPlayIcon renders correctly with custom size (string, px)', () => {
 
 test('VideoPlayIcon renders correctly with custom size (number)', () => {
   const component = renderer.create(
-    <VideoPlayIcon size={'20'} />
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-});
-
-test('VideoPlayIcon renders correctly with custom colors', () => {
-  const component = renderer.create(
-    <VideoPlayIcon color={'#f00'} backgroundColor={'#fee'} shadowColor={'#300'} />
+    <VideoPlayIcon size={20} />
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
