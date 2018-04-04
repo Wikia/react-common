@@ -14,9 +14,9 @@ test('Button renders correctly with default values', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Button renders correctly with a callback and a label', () => {
+test('Button renders correctly with a label', () => {
   const component = renderer.create(
-    <Button onClick={() => {}}>a button</Button>,
+    <Button>a button</Button>,
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
@@ -28,6 +28,16 @@ test('Button renders correctly with a children', () => {
     </Button>,
   );
   expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Button onClick is cliackable', () => {
+  const wrapper = shallow(
+    <Button>clickable</Button>
+  );
+
+  wrapper.find('button').simulate('click');
+
+  expect(true).toBe(true);
 });
 
 test('Button triggers onClick event', () => {

@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders correctly with a callback and a label 1`] = `
+exports[`Button renders correctly with a children 1`] = `
+<button
+  className="wds-button"
+  disabled={false}
+  onClick={[Function]}
+>
+  <strong>
+    bold
+  </strong>
+   text
+</button>
+`;
+
+exports[`Button renders correctly with a label 1`] = `
 <button
   className="wds-button"
   disabled={false}
@@ -10,22 +23,11 @@ exports[`Button renders correctly with a callback and a label 1`] = `
 </button>
 `;
 
-exports[`Button renders correctly with a children 1`] = `
-<button
-  className="wds-button"
-  disabled={false}
->
-  <strong>
-    bold
-  </strong>
-   text
-</button>
-`;
-
 exports[`Button renders correctly with custom types values 1`] = `
 <button
   className="wds-button"
   disabled={true}
+  onClick={[Function]}
 >
   disabled
 </button>
@@ -35,6 +37,7 @@ exports[`Button renders correctly with custom types values 2`] = `
 <button
   className="wds-button wds-is-secondary"
   disabled={false}
+  onClick={[Function]}
 >
   secondary
 </button>
@@ -44,6 +47,7 @@ exports[`Button renders correctly with custom types values 3`] = `
 <button
   className="wds-button wds-is-text"
   disabled={false}
+  onClick={[Function]}
 >
   text
 </button>
@@ -53,6 +57,7 @@ exports[`Button renders correctly with custom types values 4`] = `
 <button
   className="wds-button wds-is-square"
   disabled={false}
+  onClick={[Function]}
 >
   …
 </button>
@@ -62,6 +67,7 @@ exports[`Button renders correctly with custom types values 5`] = `
 <button
   className="wds-button wds-is-squished"
   disabled={false}
+  onClick={[Function]}
 >
   squished
 </button>
@@ -71,6 +77,7 @@ exports[`Button renders correctly with custom types values 6`] = `
 <button
   className="wds-button wds-is-secondary wds-is-squished"
   disabled={false}
+  onClick={[Function]}
 >
   secondary squished
 </button>
@@ -80,6 +87,7 @@ exports[`Button renders correctly with custom types values 7`] = `
 <button
   className="wds-button wds-is-stretched"
   disabled={false}
+  onClick={[Function]}
 >
   stretched
 </button>
@@ -89,6 +97,7 @@ exports[`Button renders correctly with custom types values 8`] = `
 <button
   className="wds-button custom-class"
   disabled={false}
+  onClick={[Function]}
 >
   with custom class name
 </button>
@@ -98,5 +107,6 @@ exports[`Button renders correctly with default values 1`] = `
 <button
   className="wds-button"
   disabled={false}
+  onClick={[Function]}
 />
 `;

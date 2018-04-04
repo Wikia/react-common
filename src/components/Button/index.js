@@ -11,7 +11,6 @@ const Button = ({
   secondary,
   stretched,
   square,
-  onClick,
   children,
   ...rest
 }) => {
@@ -24,14 +23,6 @@ const Button = ({
     stretched ? 'wds-is-stretched' : '',
     text ? 'wds-is-text' : '',
   ].filter(c => c).join(' ');
-
-  if (onClick) {
-    return (
-      <button className={classes} onClick={onClick} {...rest}>
-        {children}
-      </button>
-    );
-  }
 
   return (
     <button className={classes} {...rest}>
@@ -88,7 +79,7 @@ Button.defaultProps = {
   squished: false,
   stretched: false,
   text: false,
-  onClick: null,
+  onClick: () => {},
 };
 
 export default Button;
