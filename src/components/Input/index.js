@@ -57,6 +57,7 @@ class Input extends React.Component {
     return [
       'wds-input',
       this.props.disabled ? 'is-disabled' : null,
+      this.props.readonly ? 'is-readonly' : null,
       this.props.status === 'error' ? 'has-error' : null,
       statusClass,
       this.props.className,
@@ -97,6 +98,10 @@ class Input extends React.Component {
   }
 
   handleChange(event) {
+    if (this.props.readonly || this.props.disabled) {
+      return;
+    }
+
     const value = event.target.value;
 
     this.setState({
@@ -107,6 +112,10 @@ class Input extends React.Component {
   }
 
   handleFocus(event) {
+    if (this.props.readonly) {
+      return;
+    }
+
     this.setState({
       isFocused: true,
     });
@@ -121,7 +130,7 @@ class Input extends React.Component {
   }
 
   isAutoFocus() {
-    return this.props.autoFocus && !this.props.disabled;
+    return this.props.autoFocus && !this.props.disabled && !this.props.readonly;
   }
 
   autoFocus() {
@@ -145,6 +154,7 @@ class Input extends React.Component {
       onKeyUp: this.props.onKeyUp,
       onKeyDown: this.props.onKeyDown,
       onKeyPress: this.props.onKeyPress,
+      readOnly: this.props.readonly,
       disabled: this.props.disabled,
       tabIndex: this.props.tabIndex,
     };
@@ -236,6 +246,10 @@ Input.propTypes = {
    */
   disabled: PropTypes.bool,
   /**
+   * Readonly flag
+   */
+  readonly: PropTypes.bool,
+  /**
    * Callback for `onBlur` event
    */
   onBlur: PropTypes.func,
@@ -263,18 +277,19 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  autoFocus: false,
   className: '',
+  disabled: false,
+  hint: null,
   hintClassName: '',
+  id: null,
   inputClassName: '',
   labelClassName: '',
-  id: null,
-  type: 'text',
-  value: '',
-  hint: null,
+  readonly: false,
   status: 'normal',
   tabIndex: 0,
-  autoFocus: false,
-  disabled: false,
+  type: 'text',
+  value: '',
   onChange: () => {},
   onBlur: () => {},
   onFocus: () => {},

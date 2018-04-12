@@ -26,6 +26,13 @@ test('Input renders correctly disabled', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Input renders correctly readonly', () => {
+  const component = renderer.create(
+    <Input label="a readonly label" readonly />,
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 
 test('Input lifecycle works', () => {
   const component = mount(
@@ -172,7 +179,31 @@ test('Input can fire all callbacks', () => {
   wrapper.find('input').simulate('keypress');
 
   expect(mockOnChange.calledOnce).toBe(true);
+  expect(mockOnFocus.calledOnce).toBe(true);
   expect(mockOnBlur.calledOnce).toBe(true);
+  expect(mockOnKeyDown.calledOnce).toBe(true);
+  expect(mockOnKeyPress.calledOnce).toBe(true);
+  expect(mockOnKeyUp.calledOnce).toBe(true);
+});
+
+
+test('Input does not call onChange and onFocus callbacks on readonly', () => {
+  const mockOnChange = sinon.spy();
+  const mockOnFocus = sinon.spy();
+  const wrapper = shallow(
+    <Input
+      label="change test for readonly"
+      onChange={mockOnChange}
+      onFocus={mockOnFocus}
+      readonly
+    />
+  );
+
+  wrapper.find('input').simulate('change', {target: {value: 'newvalue'}});
+  wrapper.find('input').simulate('focus');
+
+  expect(mockOnChange.calledOnce).toBe(false);
+  expect(mockOnFocus.calledOnce).toBe(false);
 });
 
 test('Input can call focus and blur', () => {

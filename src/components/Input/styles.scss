@@ -81,4 +81,9 @@
 		border-bottom-style: dashed;
 		color: $wds-color-blue-gray;
 	}
+
+	&.is-readonly,
+	&.is-disabled {
+		cursor: not-allowed;
+	}
 }
