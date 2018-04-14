@@ -6,10 +6,8 @@ import PropTypes from 'prop-types';
  */
 const Button = ({
   className,
-  squished,
   text,
   secondary,
-  stretched,
   square,
   children,
   ...rest
@@ -19,8 +17,6 @@ const Button = ({
     className,
     secondary ? 'wds-is-secondary' : '',
     square ? 'wds-is-square' : '',
-    squished ? 'wds-is-squished' : '',
-    stretched ? 'wds-is-stretched' : '',
     text ? 'wds-is-text' : '',
   ].filter(c => c).join(' ');
 
@@ -53,14 +49,6 @@ Button.propTypes = {
    */
   square: PropTypes.bool,
   /**
-   * Squished flag
-   */
-  squished: PropTypes.bool,
-  /**
-   * Stretched flag
-   */
-  stretched: PropTypes.bool,
-  /**
    * Text flag
    */
   text: PropTypes.bool,
@@ -76,8 +64,6 @@ Button.defaultProps = {
   disabled: false,
   secondary: false,
   square: false,
-  squished: false,
-  stretched: false,
   text: false,
   onClick: () => {},
 };
