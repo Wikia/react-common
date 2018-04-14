@@ -65,9 +65,10 @@ exports[`Button renders correctly with custom types values 4`] = `
 
 exports[`Button renders correctly with custom types values 5`] = `
 <button
-  className="wds-button wds-is-squished"
+  className="wds-button"
   disabled={false}
   onClick={[Function]}
+  squished={true}
 >
   squished
 </button>
@@ -75,9 +76,10 @@ exports[`Button renders correctly with custom types values 5`] = `
 
 exports[`Button renders correctly with custom types values 6`] = `
 <button
-  className="wds-button wds-is-secondary wds-is-squished"
+  className="wds-button wds-is-secondary"
   disabled={false}
   onClick={[Function]}
+  squished={true}
 >
   secondary squished
 </button>
@@ -85,9 +87,10 @@ exports[`Button renders correctly with custom types values 6`] = `
 
 exports[`Button renders correctly with custom types values 7`] = `
 <button
-  className="wds-button wds-is-stretched"
+  className="wds-button"
   disabled={false}
   onClick={[Function]}
+  stretched={true}
 >
   stretched
 </button>
