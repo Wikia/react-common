@@ -65,39 +65,6 @@ exports[`Button renders correctly with custom types values 4`] = `
 
 exports[`Button renders correctly with custom types values 5`] = `
 <button
-  className="wds-button"
-  disabled={false}
-  onClick={[Function]}
-  squished={true}
->
-  squished
-</button>
-`;
-
-exports[`Button renders correctly with custom types values 6`] = `
-<button
-  className="wds-button wds-is-secondary"
-  disabled={false}
-  onClick={[Function]}
-  squished={true}
->
-  secondary squished
-</button>
-`;
-
-exports[`Button renders correctly with custom types values 7`] = `
-<button
-  className="wds-button"
-  disabled={false}
-  onClick={[Function]}
-  stretched={true}
->
-  stretched
-</button>
-`;
-
-exports[`Button renders correctly with custom types values 8`] = `
-<button
   className="wds-button custom-class"
   disabled={false}
   onClick={[Function]}

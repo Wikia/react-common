@@ -73,21 +73,6 @@ test('Button renders correctly with custom types values', () => {
   expect(component.toJSON()).toMatchSnapshot();
 
   component = renderer.create(
-    <Button squished>squished</Button>,
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-
-  component = renderer.create(
-    <Button secondary squished>secondary squished</Button>,
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-
-  component = renderer.create(
-    <Button stretched>stretched</Button>,
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-
-  component = renderer.create(
     <Button className="custom-class">with custom class name</Button>,
   );
   expect(component.toJSON()).toMatchSnapshot();
