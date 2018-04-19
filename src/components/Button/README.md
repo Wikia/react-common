@@ -6,6 +6,7 @@ Defaults:
 Different styles:
 ```js
 <div>
+	<Button href='#'>Link</Button>
 	<Button secondary>Secondary</Button>
 	<Button text>Text</Button>
 	<Button square>&hellip;</Button>

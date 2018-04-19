@@ -21,6 +21,13 @@ test('Button renders correctly with a label', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Button renders correctly as link', () => {
+  const component = renderer.create(
+    <Button href="some link">a link</Button>,
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('Button renders correctly with a children', () => {
   const component = renderer.create(
     <Button>

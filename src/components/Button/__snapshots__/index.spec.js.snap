@@ -1,5 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button renders correctly as link 1`] = `
+<a
+  className="wds-button"
+  disabled={false}
+  href="some link"
+  onClick={[Function]}
+>
+  a link
+</a>
+`;
+
 exports[`Button renders correctly with a children 1`] = `
 <button
   className="wds-button"
