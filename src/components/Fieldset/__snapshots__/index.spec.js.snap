@@ -16,3 +16,9 @@ exports[`Fieldset renders correctly with default values 1`] = `
   className="wds-fieldset "
 />
 `;
+
+exports[`Fieldset renders correctly with extra class name 1`] = `
+<div
+  className="wds-fieldset extra-class-name"
+/>
+`;

@@ -7,6 +7,9 @@ export {default as Spinner} from './components/Spinner';
 export {default as BannerNotifications} from './components/BannerNotifications';
 // Icons
 export {default as VideoPlayIcon} from './components/VideoPlayIcon';
+// Usefull flow components
+export {default as ContentWell} from './components/ContentWell';
+export {default as FandomContentWell} from './components/FandomContentWell';
 // Other UI
 export {default as ExpandableText} from './components/ExpandableText';
 export {default as Vignette} from './components/Vignette';
