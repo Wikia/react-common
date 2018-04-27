@@ -38,6 +38,13 @@
     ]
   },
   {
+    "name": "Design System Flow",
+    "components": [
+      "ContentWell",
+      "FandomContentWell"
+    ]
+  },
+  {
     "name": "Other",
     "components": [
       "Vignette",

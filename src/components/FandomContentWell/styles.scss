@@ -1,0 +1,6 @@
+@import "~design-system/dist/scss/wds-mixins/index.scss";
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
+.wds-fandom-content-well {
+	@include wds-content-well($use-xxlarge-breakpoint: false);
+}

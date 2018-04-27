@@ -1,27 +1,27 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Fieldset from './index';
+import ContentWell from './index';
 
-test('Fieldset renders correctly with default values', () => {
+test('ContentWell renders correctly with default values', () => {
   const component = renderer.create(
-    <Fieldset />,
+    <ContentWell />,
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Fieldset renders correctly with extra class name', () => {
+test('ContentWell renders correctly with extra class name', () => {
   const component = renderer.create(
-    <Fieldset className="extra-class-name" />,
+    <ContentWell className="extra-class-name" />,
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Fieldset renders correctly with a children', () => {
+test('ContentWell renders correctly with a children', () => {
   const component = renderer.create(
-    <Fieldset>
+    <ContentWell>
       <strong>bold</strong>&nbsp;text
-    </Fieldset>,
+    </ContentWell>,
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
