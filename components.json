@@ -47,6 +47,7 @@
   {
     "name": "Other",
     "components": [
+      "FandomBackgroundImage",
       "Vignette",
       "ExpandableText"
     ]

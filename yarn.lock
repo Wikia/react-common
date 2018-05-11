@@ -2290,9 +2290,9 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-"design-system@git://github.com/Wikia/design-system.git#11.0.0":
-  version "11.0.0"
-  resolved "git://github.com/Wikia/design-system.git#2c62c10d8c5bb8355d910c4b0fc82191f74876f9"
+"design-system@git://github.com/Wikia/design-system.git#12.0.0":
+  version "12.0.0"
+  resolved "git://github.com/Wikia/design-system.git#17f598b9c768c5eaa3b60fe105db3f0350e3c1f0"
 
 destroy@~1.0.4:
   version "1.0.4"
