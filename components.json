@@ -21,9 +21,15 @@
     "components": [
       "Button",
       "FloatingButton",
-      "Input",
-      "Fieldset",
+      "FloatingButtonGroup",
       "Spinner"
+    ]
+  },
+  {
+    "name": "Design System Form Elements",
+    "components": [
+      "Input",
+      "Fieldset"
     ]
   },
   {

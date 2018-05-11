@@ -44,7 +44,7 @@ test('FloatingButton renders correctly with a children', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('FloatingButton onClick is cliackable', () => {
+test('FloatingButton onClick is clickable', () => {
   const wrapper = shallow(
     <FloatingButton>A</FloatingButton>
   );
