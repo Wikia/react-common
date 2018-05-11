@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatingButtonGroup renders correctly empty 1`] = `
+<div
+  className="wds-floating-button-group"
+/>
+`;
+
+exports[`FloatingButtonGroup renders correctly with a child (horizontal) 1`] = `
+<div
+  className="wds-floating-button-group"
+>
+  <button
+    className="wds-floating-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    A
+  </button>
+</div>
+`;
+
+exports[`FloatingButtonGroup renders correctly with a child (vertical) 1`] = `
+<div
+  className="wds-floating-button-group"
+>
+  <button
+    className="wds-floating-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    A
+  </button>
+</div>
+`;

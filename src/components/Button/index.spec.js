@@ -37,7 +37,7 @@ test('Button renders correctly with a children', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('Button onClick is cliackable', () => {
+test('Button onClick is clickable', () => {
   const wrapper = shallow(
     <Button>clickable</Button>
   );
