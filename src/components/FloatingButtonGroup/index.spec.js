@@ -26,7 +26,7 @@ test('FloatingButtonGroup renders correctly with a child (horizontal)', () => {
 
 test('FloatingButtonGroup renders correctly with a child (vertical)', () => {
   const component = renderer.create(
-    <FloatingButtonGroup>
+    <FloatingButtonGroup vertical>
       <FloatingButton>A</FloatingButton>
     </FloatingButtonGroup>,
   );
