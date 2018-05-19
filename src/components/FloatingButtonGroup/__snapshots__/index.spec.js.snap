@@ -22,7 +22,7 @@ exports[`FloatingButtonGroup renders correctly with a child (horizontal) 1`] = `
 
 exports[`FloatingButtonGroup renders correctly with a child (vertical) 1`] = `
 <div
-  className="wds-floating-button-group"
+  className="wds-floating-button-group wds-is-vertical"
 >
   <button
     className="wds-floating-button"
