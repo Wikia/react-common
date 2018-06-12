@@ -1,7 +1,7 @@
 ### 1. Add it to your project
 | [Yarn](https://yarnpkg.com/en/) | [NPM](https://www.npmjs.com/) |
 | --- | --- |
-| `yarn add Wikia/react-design-system` | `npm install --save Wikia/react-design-system` |
+| `yarn add wikia/react-design-system` | `npm install --save wikia/react-design-system` |
 
 ### 2. Use it in the code
 ```js static
