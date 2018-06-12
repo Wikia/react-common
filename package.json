@@ -1,5 +1,5 @@
 {
-  "name": "@Wikia/react-design-system",
+  "name": "@wikia/react-design-system",
   "version": "0.4.11",
   "description": "Reusable React components based on Wikia's Design System",
   "main": "src/index.js",
