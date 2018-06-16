@@ -115,8 +115,7 @@ test('Input autoFocus works correctly', () => {
       autoFocus
     />
   );
-  expect(focusStub.calledOnce).toBe(true);
-  focusStub.reset();
+  expect(focusStub.callCount).toBe(1);
 
   // second `autoFocus` call, but `document.activeElement` will return input element
   const instance = component.instance();
@@ -126,15 +125,14 @@ test('Input autoFocus works correctly', () => {
   component.setProps({label: 'bar'});
 
   expect(inputFocusSpy.notCalled).toBe(true);
-  expect(focusStub.calledOnce).toBe(true);
-  focusStub.reset();
+  expect(focusStub.callCount).toBe(2);
 
   // third `autoFocus` call, but `document.activeElement` will return null
   activeElementStub.get(() => null);
   component.setProps({label: 'foo1'});
 
   expect(inputFocusSpy.calledOnce).toBe(true);
-  expect(focusStub.calledOnce).toBe(true);
+  expect(focusStub.callCount).toBe(3);
 });
 
 test('Input can fire all default callbacks', () => {
