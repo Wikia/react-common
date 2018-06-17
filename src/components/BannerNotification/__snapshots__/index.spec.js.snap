@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification renders correctly 1`] = `
+exports[`BannerNotification renders correctly 1`] = `
 <div
-  className="wds-banner-notification wds-message"
+  className="wds-banner-notification wds-message "
 >
   <div
     className="wds-banner-notification__icon"
@@ -33,9 +33,9 @@ exports[`Notification renders correctly 1`] = `
 </div>
 `;
 
-exports[`Notification renders correctly 2`] = `
+exports[`BannerNotification renders correctly 2`] = `
 <div
-  className="wds-banner-notification wds-success"
+  className="wds-banner-notification wds-success "
 >
   <div
     className="wds-banner-notification__icon"
@@ -66,9 +66,9 @@ exports[`Notification renders correctly 2`] = `
 </div>
 `;
 
-exports[`Notification renders correctly 3`] = `
+exports[`BannerNotification renders correctly 3`] = `
 <div
-  className="wds-banner-notification wds-warning"
+  className="wds-banner-notification wds-warning "
 >
   <div
     className="wds-banner-notification__icon"
@@ -99,9 +99,9 @@ exports[`Notification renders correctly 3`] = `
 </div>
 `;
 
-exports[`Notification renders correctly 4`] = `
+exports[`BannerNotification renders correctly 4`] = `
 <div
-  className="wds-banner-notification wds-alert"
+  className="wds-banner-notification wds-alert "
 >
   <div
     className="wds-banner-notification__icon"
@@ -129,5 +129,101 @@ exports[`Notification renders correctly 4`] = `
       xmlnsXlink="http://www.w3.org/1999/xlink"
     />
   </svg>
+</div>
+`;
+
+exports[`BannerNotification renders correctly without action 1`] = `
+<div
+  className="wds-banner-notification wds-message "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <svg
+      className="wds-icon wds-icon-small"
+    >
+      <use
+        xlinkHref="#wds-icons-flag-small"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <span
+    className="wds-banner-notification__text"
+  >
+    lorem ipsum - messge
+  </span>
+</div>
+`;
+
+exports[`BannerNotification renders correctly without action 2`] = `
+<div
+  className="wds-banner-notification wds-success "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <svg
+      className="wds-icon wds-icon-small"
+    >
+      <use
+        xlinkHref="#wds-icons-checkmark-circle-small"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <span
+    className="wds-banner-notification__text"
+  >
+    lorem ipsum - success
+  </span>
+</div>
+`;
+
+exports[`BannerNotification renders correctly without action 3`] = `
+<div
+  className="wds-banner-notification wds-warning "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <svg
+      className="wds-icon wds-icon-small"
+    >
+      <use
+        xlinkHref="#wds-icons-alert-small"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <span
+    className="wds-banner-notification__text"
+  >
+    lorem ipsum - warning
+  </span>
+</div>
+`;
+
+exports[`BannerNotification renders correctly without action 4`] = `
+<div
+  className="wds-banner-notification wds-alert "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <svg
+      className="wds-icon wds-icon-small"
+    >
+      <use
+        xlinkHref="#wds-icons-error-small"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </div>
+  <span
+    className="wds-banner-notification__text"
+  >
+    lorem ipsum - alert
+  </span>
 </div>
 `;
