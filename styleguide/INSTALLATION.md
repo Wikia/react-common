@@ -5,7 +5,7 @@
 
 ### 2. Use it in the code
 ```js static
-import {Button, VideoPlayIcon} from '@Wikia/react-design-system';
+import {Button, VideoPlayIcon} from '@wikia/react-design-system';
 ```
 
 ## Requirements

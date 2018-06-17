@@ -27,24 +27,35 @@ function getClassName(type) {
   }
 }
 
-const Notification = ({type, message, onClose}) => (
-  <div className={`wds-banner-notification ${getClassName(type)}`}>
+/**
+ * This is a single component used in `BannerNotifications` component.
+ */
+const BannerNotification = ({className, type, text, onClose}) => (
+  <div className={`wds-banner-notification ${getClassName(type)} ${className}`}>
     <div className="wds-banner-notification__icon">
       <svg className="wds-icon wds-icon-small">
         <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={getIcon(type)} />
       </svg>
     </div>
-    <span className="wds-banner-notification__text">{message}</span>
-    <svg className="wds-icon wds-icon-tiny wds-banner-notification__close" onClick={onClose}>
-      <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#wds-icons-cross-tiny" />
-    </svg>
+    <span className="wds-banner-notification__text">{text}</span>
+    {onClose && (
+      <svg className="wds-icon wds-icon-tiny wds-banner-notification__close" onClick={onClose}>
+        <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#wds-icons-cross-tiny" />
+      </svg>
+    )}
   </div>
 );
 
-Notification.propTypes = {
+BannerNotification.propTypes = {
+  className: PropTypes.string,
   type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired,
-  message: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
+  onClose: PropTypes.func,
 };
 
-export default Notification;
+BannerNotification.defaultProps = {
+  className: '',
+  onClose: null,
+};
+
+export default BannerNotification;

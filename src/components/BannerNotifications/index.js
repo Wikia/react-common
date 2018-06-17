@@ -1,34 +1,84 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Notification from './Notification';
+import BannerNotification from '../BannerNotification';
 
-const BannerNotifications = ({messages, onClose}) => {
-  if (messages.length === 0) {
-    return null;
+import messageType from './bannerNotificationsMessageType';
+
+/**
+ * Component used to create notifications. For full functionality it needs some
+ * app logic to handle the array of messages - adding/removing.
+ *
+ * See the following:
+ * - https://github.com/Wikia/f2/blob/master/frontend/react-app/curationTools/containers/Notifications.jsx
+ * - https://github.com/Wikia/f2/tree/master/frontend/react-app/curationTools/reducers/notifications
+ *
+ * The `messages` prop is an array of `bannerNotificationsMessageType` objects with the following props:
+ * - `id`: unique string that's send as the param of the `onClose` function
+ * - `type`: one of: `'alert'`, `'warning'`, `'success'` or `'message'`.
+ * - `text`: text that is going to be displayed on the notification
+ * - `permanent`: a boolean flag - if present the close button won't be displayed on the notification
+ *
+ * `bannerNotificationsMessageType` is exported along with `BannerNotification`
+ */
+class BannerNotifications extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClose = this.onClose.bind(this);
   }
 
-  return (
-    <div className="wds-banner-notification__container">
-      {messages.map(({message, type, id}) => (
-        <Notification
-          key={id}
-          message={message}
-          type={type}
-          onClose={() => { onClose(id); }}
-        />
-      ))}
-    </div>
-  );
-};
+  onClose(id) {
+    this.props.onClose(id);
+  }
+
+  renderNotification({text, type, id, permanent}) {
+    const props = {
+      key: id,
+      type,
+      text,
+    };
+
+    if (permanent) {
+      return <BannerNotification {...props} />;
+    }
+    return <BannerNotification {...props} onClose={() => this.onClose(id)} />;
+  }
+
+  render() {
+    const {className, messages} = this.props;
+
+    if (messages.length === 0) {
+      return null;
+    }
+
+    return (
+      <div className={`wds-banner-notification__container ${className}`}>
+        {messages.map(message => this.renderNotification(message))}
+      </div>
+    );
+  }
+}
 
 BannerNotifications.propTypes = {
-  messages: PropTypes.arrayOf(PropTypes.shape({
-    message: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired,
-    id: PropTypes.string.isRequired,
-  })).isRequired,
+  /**
+   * An additional class name
+   */
+  className: PropTypes.string,
+  /**
+   * An array of `bannerNotificationsMessageType` objects
+   * @type {bannerNotificationsMessageType}
+   */
+  messages: PropTypes.arrayOf(messageType).isRequired,
+  /**
+   * Action invoked when close button is clicked
+   * @type {[type]}
+   */
   onClose: PropTypes.func.isRequired,
+};
+
+BannerNotifications.defaultProps = {
+  className: '',
 };
 
 export default BannerNotifications;
