@@ -18,6 +18,8 @@
     "build": "styleguidist build",
     "coverage": "jest --coverage",
     "coveralls": "yarn coverage --runInBand && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "dev": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch\"",
+    "dev:notify": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch:notify\"",
     "lint:css": "stylelint \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.css\" --fix",
     "lint:js": "eslint .",
@@ -29,9 +31,7 @@
     "test:run": "jest",
     "test:watch": "jest --watchAll",
     "test:watch:notify": "jest --watchAll --notify",
-    "test": "yarn lint && yarn test:run && yarn coverage",
-    "watch": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch\"",
-    "watch:notify": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch:notify\""
+    "test": "yarn lint && yarn test:run && yarn coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

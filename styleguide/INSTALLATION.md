@@ -1,7 +1,9 @@
 ### 1. Add it to your project
+**This is not working yet, since the package wasn't published to npm, please use
+GitHub repository for now**
 | [Yarn](https://yarnpkg.com/en/) | [NPM](https://www.npmjs.com/) |
 | --- | --- |
-| `yarn add wikia/react-design-system` | `npm install --save wikia/react-design-system` |
+| `yarn add @wikia/react-design-system` | `npm install --save @wikia/react-design-system` |
 
 ### 2. Use it in the code
 ```js static
@@ -29,7 +31,7 @@ module: {
             test: /\.js$/,  // along with whatever other extensions you're transpiling from ES6
             include: [
                 // Your normal include paths here,
-                path.resolve(__dirname, '../node_modules/@Wikia/react-design-system'),
+                path.resolve(__dirname, '../node_modules/@wikia/react-design-system'),
             ],
             // ... everything else
 ```

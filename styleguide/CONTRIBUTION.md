@@ -20,6 +20,11 @@
 9. Code will be merged to `master` only if there are no regressions and after a successful CR.
 10. When the code is merged to `master`, release new version of the styleguide.
 
+## Development server
+```js static
+> yarn dev
+```
+
 ## Tests
 The easiest way is to run the full suite:
 ```js static
