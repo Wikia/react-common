@@ -59,6 +59,7 @@ class Input extends React.Component {
       this.props.disabled ? 'is-disabled' : null,
       this.props.readonly ? 'is-readonly' : null,
       this.props.status === 'error' ? 'has-error' : null,
+      this.props.resize ? 'is-resize' : null,
       statusClass,
       this.props.className,
     ].filter(c => c).join(' ');
@@ -83,6 +84,24 @@ class Input extends React.Component {
       'wds-input__hint',
       this.props.hintClassName,
     ].join(' ');
+  }
+
+  getSharedInputProps() {
+    return {
+      className: this.getInputClassName(),
+      id: this.state.id,
+      name: this.state.id,
+      value: this.state.value,
+      onChange: this.handleChange,
+      onBlur: this.handleBlur,
+      onFocus: this.handleFocus,
+      onKeyUp: this.props.onKeyUp,
+      onKeyDown: this.props.onKeyDown,
+      onKeyPress: this.props.onKeyPress,
+      readOnly: this.props.readonly,
+      disabled: this.props.disabled,
+      tabIndex: this.props.tabIndex,
+    };
   }
 
   focus() {
@@ -141,22 +160,27 @@ class Input extends React.Component {
     }
   }
 
-  renderInput() {
+  renderMultiline() {
     const props = {
-      className: this.getInputClassName(),
+      ...this.getSharedInputProps(),
+      rows: this.props.rows,
+    };
+
+    return (
+      <textarea ref={(input) => { this.input = input; }} {...props}>
+        {this.state.value}
+      </textarea>
+    );
+  }
+
+  renderInput() {
+    if (this.props.type === 'multiline') {
+      return this.renderMultiline();
+    }
+
+    const props = {
+      ...this.getSharedInputProps(),
       type: this.props.type,
-      id: this.state.id,
-      name: this.state.id,
-      value: this.state.value,
-      onChange: this.handleChange,
-      onBlur: this.handleBlur,
-      onFocus: this.handleFocus,
-      onKeyUp: this.props.onKeyUp,
-      onKeyDown: this.props.onKeyDown,
-      onKeyPress: this.props.onKeyPress,
-      readOnly: this.props.readonly,
-      disabled: this.props.disabled,
-      tabIndex: this.props.tabIndex,
     };
 
     return <input ref={(input) => { this.input = input; }} {...props} />;
@@ -211,9 +235,10 @@ Input.propTypes = {
    */
   id: PropTypes.string,
   /**
-   * Type of the input
+   * Type of the input.
+   * Use `multiline` for multi-line input (textarea).
    */
-  type: PropTypes.oneOf(['text', 'number', 'email', 'search', 'tel', 'url', 'password']),
+  type: PropTypes.oneOf(['text', 'number', 'email', 'search', 'tel', 'url', 'password', 'multiline']),
   /**
    * Value
    */
@@ -237,6 +262,18 @@ Input.propTypes = {
    * Tab Index
    */
   tabIndex: PropTypes.number,
+  /**
+   * Initial number of rows
+   *
+   * **Note**: This prop only makes sense for multiline inputs.
+   */
+  rows: PropTypes.number,
+  /**
+   * Can the textarea be resized by the user
+   *
+   * **Note**: This prop only makes sense for multiline inputs.
+   */
+  resize: PropTypes.bool,
   /**
    * Auto focus flag
    */
@@ -286,6 +323,8 @@ Input.defaultProps = {
   inputClassName: '',
   labelClassName: '',
   readonly: false,
+  resize: false,
+  rows: 2,
   status: 'normal',
   tabIndex: 0,
   type: 'text',

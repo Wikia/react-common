@@ -87,10 +87,34 @@ test('Input renders correctly with different types', () => {
       <Input
         label={`an input with type ${type}`}
         type={type}
+        value={`an input with value ${type}`}
       />,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
+});
+
+test('Input renders correctly with multiline', () => {
+  const component = renderer.create(
+    <Input
+      label="Textarea"
+      type="multiline"
+      rows={3}
+      value="this is multiline"
+    />,
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+
+  const component2 = renderer.create(
+    <Input
+      label="Textarea"
+      type="multiline"
+      rows={3}
+      value="this is multiline (with resize)"
+      resize
+    />,
+  );
+  expect(component2.toJSON()).toMatchSnapshot();
 });
 
 test('Input renders correctly with tabIndex', () => {

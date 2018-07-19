@@ -18,6 +18,8 @@ exports[`Input lifecycle works 1`] = `
   onKeyPress={[Function]}
   onKeyUp={[Function]}
   readonly={false}
+  resize={false}
+  rows={2}
   status="normal"
   tabIndex={0}
   type="text"
@@ -70,6 +72,8 @@ exports[`Input lifecycle works 2`] = `
   onKeyPress={[Function]}
   onKeyUp={[Function]}
   readonly={false}
+  resize={false}
+  rows={2}
   status="normal"
   tabIndex={0}
   type="text"
@@ -122,6 +126,8 @@ exports[`Input lifecycle works 3`] = `
   onKeyPress={[Function]}
   onKeyUp={[Function]}
   readonly={false}
+  resize={false}
+  rows={2}
   status="normal"
   tabIndex={0}
   type="text"
@@ -337,7 +343,7 @@ exports[`Input renders correctly with default values 1`] = `
 
 exports[`Input renders correctly with different types 1`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -353,7 +359,7 @@ exports[`Input renders correctly with different types 1`] = `
     readOnly={false}
     tabIndex={0}
     type="text"
-    value=""
+    value="an input with value text"
   />
   <label
     className="wds-input__label "
@@ -366,7 +372,7 @@ exports[`Input renders correctly with different types 1`] = `
 
 exports[`Input renders correctly with different types 2`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -382,7 +388,7 @@ exports[`Input renders correctly with different types 2`] = `
     readOnly={false}
     tabIndex={0}
     type="number"
-    value=""
+    value="an input with value number"
   />
   <label
     className="wds-input__label "
@@ -395,7 +401,7 @@ exports[`Input renders correctly with different types 2`] = `
 
 exports[`Input renders correctly with different types 3`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -411,7 +417,7 @@ exports[`Input renders correctly with different types 3`] = `
     readOnly={false}
     tabIndex={0}
     type="email"
-    value=""
+    value="an input with value email"
   />
   <label
     className="wds-input__label "
@@ -424,7 +430,7 @@ exports[`Input renders correctly with different types 3`] = `
 
 exports[`Input renders correctly with different types 4`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -440,7 +446,7 @@ exports[`Input renders correctly with different types 4`] = `
     readOnly={false}
     tabIndex={0}
     type="search"
-    value=""
+    value="an input with value search"
   />
   <label
     className="wds-input__label "
@@ -453,7 +459,7 @@ exports[`Input renders correctly with different types 4`] = `
 
 exports[`Input renders correctly with different types 5`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -469,7 +475,7 @@ exports[`Input renders correctly with different types 5`] = `
     readOnly={false}
     tabIndex={0}
     type="tel"
-    value=""
+    value="an input with value tel"
   />
   <label
     className="wds-input__label "
@@ -482,7 +488,7 @@ exports[`Input renders correctly with different types 5`] = `
 
 exports[`Input renders correctly with different types 6`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -498,7 +504,7 @@ exports[`Input renders correctly with different types 6`] = `
     readOnly={false}
     tabIndex={0}
     type="url"
-    value=""
+    value="an input with value url"
   />
   <label
     className="wds-input__label "
@@ -511,7 +517,7 @@ exports[`Input renders correctly with different types 6`] = `
 
 exports[`Input renders correctly with different types 7`] = `
 <div
-  className="wds-input is-empty"
+  className="wds-input"
 >
   <input
     className="wds-input__field "
@@ -527,13 +533,75 @@ exports[`Input renders correctly with different types 7`] = `
     readOnly={false}
     tabIndex={0}
     type="password"
-    value=""
+    value="an input with value password"
   />
   <label
     className="wds-input__label "
     htmlFor="foo"
   >
     an input with type password
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with multiline 1`] = `
+<div
+  className="wds-input"
+>
+  <textarea
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    readOnly={false}
+    rows={3}
+    tabIndex={0}
+    value="this is multiline"
+  >
+    this is multiline
+  </textarea>
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    Textarea
+  </label>
+</div>
+`;
+
+exports[`Input renders correctly with multiline 2`] = `
+<div
+  className="wds-input is-resize"
+>
+  <textarea
+    className="wds-input__field "
+    disabled={false}
+    id="foo"
+    name="foo"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyPress={[Function]}
+    onKeyUp={[Function]}
+    readOnly={false}
+    rows={3}
+    tabIndex={0}
+    value="this is multiline (with resize)"
+  >
+    this is multiline (with resize)
+  </textarea>
+  <label
+    className="wds-input__label "
+    htmlFor="foo"
+  >
+    Textarea
   </label>
 </div>
 `;
