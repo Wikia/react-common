@@ -20,6 +20,7 @@
     "name": "Design System Elements",
     "components": [
       "Button",
+      "ButtonGroup",
       "FloatingButton",
       "FloatingButtonGroup",
       "Spinner"
