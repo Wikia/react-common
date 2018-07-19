@@ -28,3 +28,13 @@ A non-empty input with the error state:
 ```js
 <Input label="Some input" value="lorem ipsum" status="error" hint="Need something else" />
 ```
+
+An non-empty textarea:
+```js
+<Input label="Multiline input" value="This is a value" type="multiline" rows="3" />
+```
+
+An resizeable textarea:
+```js
+<Input label="Multiline resizeable textarea" value="This is a value" type="multiline" rows="2" resize />
+```

@@ -13,13 +13,21 @@
 		border-bottom: 1px solid $wds-color-blue-gray;
 		color: $wds-color-dark-blue-gray;
 		font-size: $wds-typescale-size-base;
-		line-height: 1rem;
+		line-height: 1em;
 		padding: 0;
 		padding-bottom: 2px;
 		resize: none;
 		width: 100%;
 
 		&:focus { outline: 0; }
+	}
+
+	&.is-resize &__field {
+		resize: vertical;
+	}
+
+	textarea.wds-input__field {
+		line-height: 1.5em;
 	}
 
 	&__label {
