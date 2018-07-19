@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup renders correctly 1`] = `
+<div
+  className="wds-button-group"
+>
+  <button
+    className="wds-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className="wds-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className="wds-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    3
+  </button>
+</div>
+`;
