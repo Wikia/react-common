@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-design-system",
-  "version": "0.4.20",
+  "version": "0.4.21",
   "description": "Reusable React components based on Wikia's Design System",
   "main": "src/index.js",
   "repository": "git@github.com:Wikia/react-design-system.git",
