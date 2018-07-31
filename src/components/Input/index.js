@@ -169,8 +169,12 @@ class Input extends React.Component {
   handleAutoResize() {
     // height has to be reset first because if not it keeps increasing every time user will type a character
     // setting actual height must be done in setState callback, because React might optimize this into one setState call
+    // scrollHeight includes padding, we need to compensate this
+    // keep value in sync with padding-bottom in .wds-input__field styles
+    const BOTTOM_PADDING = 2;
+
     this.setState({dynamicTextareaHeight: 'auto'}, () => {
-      this.setState({dynamicTextareaHeight: `${this.input.scrollHeight}px`});
+      this.setState({dynamicTextareaHeight: `${this.input.scrollHeight - BOTTOM_PADDING}px`});
     });
 
     // to prevent scroll jumping
@@ -180,12 +184,11 @@ class Input extends React.Component {
   renderMultiline() {
     const props = {
       ...this.getSharedInputProps(),
+      rows: this.props.rows,
     };
 
     if (this.isAutoResize()) {
       props.onInput = this.handleAutoResize;
-    } else {
-      props.rows = this.props.rows;
     }
 
     if (this.state.dynamicTextareaHeight) {
@@ -291,7 +294,7 @@ Input.propTypes = {
   /**
    * Initial number of rows
    *
-   * **Note**: This prop only makes sense for multiline inputs.  Does not work when `resize="auto"` is set
+   * **Note**: This prop only makes sense for multiline inputs.
    */
   rows: PropTypes.number,
   /**

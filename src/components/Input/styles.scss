@@ -15,6 +15,7 @@
 		font-size: $wds-typescale-size-base;
 		line-height: 1em;
 		padding: 0;
+		// keep value in sync with `BOTTOM_PADDING` from Input component
 		padding-bottom: 2px;
 		resize: none;
 		width: 100%;

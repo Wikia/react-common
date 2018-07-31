@@ -140,9 +140,14 @@ test('Input autoresizing works correctly', () => {
 
   expect(component).toMatchSnapshot();
 
-  const textrea = component.find('textarea');
+  const textarea = component.find('textarea');
 
-  textrea.simulate('input', {target: {value: 'This is value to test \n if autoresizing works'}});
+  // because scrollHeight is a getter
+  Object.defineProperty(textarea.getDOMNode(), 'scrollHeight', {
+    value: 100,
+  });
+
+  textarea.simulate('input', {target: {value: 'This is value to test \n if autoresizing works'}});
 
   expect(component).toMatchSnapshot();
 });
