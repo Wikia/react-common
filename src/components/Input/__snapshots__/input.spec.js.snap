@@ -41,6 +41,7 @@ exports[`Input autoresizing works correctly 1`] = `
       onKeyPress={[Function]}
       onKeyUp={[Function]}
       readOnly={false}
+      rows={2}
       tabIndex={0}
       value="This is some value"
     >
@@ -97,9 +98,10 @@ exports[`Input autoresizing works correctly 2`] = `
       onKeyPress={[Function]}
       onKeyUp={[Function]}
       readOnly={false}
+      rows={2}
       style={
         Object {
-          "height": "0px",
+          "height": "98px",
         }
       }
       tabIndex={0}

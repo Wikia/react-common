@@ -43,3 +43,8 @@ An autoresizeable textarea:
 ```js
 <Input label="Multiline autoresizeable textarea" value="This is a value" type="multiline" resize="auto" />
 ```
+
+An autoresizeable textarea with custom initial number of rows:
+```js
+<Input label="Multiline autoresizeable textarea" value="This is a value" type="multiline" resize="auto" rows="1" />
+```
