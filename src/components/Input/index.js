@@ -183,7 +183,7 @@ class Input extends React.Component {
     };
 
     if (this.isAutoResize()) {
-      props.onInput = this.handleAutoResize
+      props.onInput = this.handleAutoResize;
     } else {
       props.rows = this.props.rows;
     }
