@@ -1,5 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Input autoresizing works correctly 1`] = `
+<Input
+  autoFocus={false}
+  className=""
+  disabled={false}
+  hint={null}
+  hintClassName=""
+  id={null}
+  inputClassName=""
+  label="Autoresize"
+  labelClassName=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  readonly={false}
+  resize="auto"
+  rows={2}
+  status="normal"
+  tabIndex={0}
+  type="multiline"
+  value="This is some value"
+>
+  <div
+    className="wds-input"
+  >
+    <textarea
+      className="wds-input__field "
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onInput={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      readOnly={false}
+      tabIndex={0}
+      value="This is some value"
+    >
+      This is some value
+    </textarea>
+    <label
+      className="wds-input__label "
+      htmlFor="foo"
+    >
+      Autoresize
+    </label>
+  </div>
+</Input>
+`;
+
+exports[`Input autoresizing works correctly 2`] = `
+<Input
+  autoFocus={false}
+  className=""
+  disabled={false}
+  hint={null}
+  hintClassName=""
+  id={null}
+  inputClassName=""
+  label="Autoresize"
+  labelClassName=""
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyPress={[Function]}
+  onKeyUp={[Function]}
+  readonly={false}
+  resize="auto"
+  rows={2}
+  status="normal"
+  tabIndex={0}
+  type="multiline"
+  value="This is some value"
+>
+  <div
+    className="wds-input"
+  >
+    <textarea
+      className="wds-input__field "
+      disabled={false}
+      id="foo"
+      name="foo"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onInput={[Function]}
+      onKeyDown={[Function]}
+      onKeyPress={[Function]}
+      onKeyUp={[Function]}
+      readOnly={false}
+      style={
+        Object {
+          "height": "0px",
+        }
+      }
+      tabIndex={0}
+      value="This is some value"
+    >
+      This is some value
+    </textarea>
+    <label
+      className="wds-input__label "
+      htmlFor="foo"
+    >
+      Autoresize
+    </label>
+  </div>
+</Input>
+`;
+
 exports[`Input lifecycle works 1`] = `
 <Input
   autoFocus={false}
