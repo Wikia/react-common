@@ -20,11 +20,13 @@ class Input extends React.Component {
       id,
       isEmpty: value.length === 0,
       isFocused: false,
+      dynamicTextareaHeight: null,
     };
 
     this.handleBlur = this.handleBlur.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleFocus = this.handleFocus.bind(this);
+    this.handleAutoResize = this.handleAutoResize.bind(this);
   }
 
   componentDidMount() {
@@ -59,10 +61,10 @@ class Input extends React.Component {
       this.props.disabled ? 'is-disabled' : null,
       this.props.readonly ? 'is-readonly' : null,
       this.props.status === 'error' ? 'has-error' : null,
-      this.props.resize ? 'is-resize' : null,
+      typeof this.props.resize === 'boolean' && this.props.resize ? 'is-resize' : null,
       statusClass,
       this.props.className,
-    ].filter(c => c).join(' ');
+    ].filter(Boolean).join(' ');
   }
 
   getInputClassName() {
@@ -152,6 +154,10 @@ class Input extends React.Component {
     return this.props.autoFocus && !this.props.disabled && !this.props.readonly;
   }
 
+  isAutoResize() {
+    return this.props.resize === 'auto' && !this.props.disabled && !this.props.readonly;
+  }
+
   autoFocus() {
     if (this.isAutoFocus() && this.input) {
       if (document.activeElement !== this.input) {
@@ -160,11 +166,31 @@ class Input extends React.Component {
     }
   }
 
+  handleAutoResize() {
+    // height has to be reset first because if not it keeps increasing every time user will type a character
+    // setting actual height must be done in setState callback, because React might optimize this into one setState call
+    this.setState({dynamicTextareaHeight: 'auto'}, () => {
+      this.setState({dynamicTextareaHeight: `${this.input.scrollHeight}px`});
+    });
+
+    // to prevent scroll jumping
+    this.input.scrollTop = this.input.scrollHeight;
+  }
+
   renderMultiline() {
     const props = {
       ...this.getSharedInputProps(),
-      rows: this.props.rows,
     };
+
+    if (this.isAutoResize()) {
+      props.onInput = this.handleAutoResize
+    } else {
+      props.rows = this.props.rows;
+    }
+
+    if (this.state.dynamicTextareaHeight) {
+      props.style = {height: this.state.dynamicTextareaHeight};
+    }
 
     return (
       <textarea ref={(input) => { this.input = input; }} {...props}>
@@ -265,15 +291,16 @@ Input.propTypes = {
   /**
    * Initial number of rows
    *
-   * **Note**: This prop only makes sense for multiline inputs.
+   * **Note**: This prop only makes sense for multiline inputs.  Does not work when `resize="auto"` is set
    */
   rows: PropTypes.number,
   /**
    * Can the textarea be resized by the user
+   * Use `auto` to adjust textarea height automatically
    *
    * **Note**: This prop only makes sense for multiline inputs.
    */
-  resize: PropTypes.bool,
+  resize: PropTypes.oneOf(['auto', true, false]),
   /**
    * Auto focus flag
    */

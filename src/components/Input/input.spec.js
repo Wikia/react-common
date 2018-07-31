@@ -128,6 +128,25 @@ test('Input renders correctly with tabIndex', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Input autoresizing works correctly', () => {
+  const component = mount(
+    <Input
+      label="Autoresize"
+      resize="auto"
+      type="multiline"
+      value="This is some value"
+    />,
+  );
+
+  expect(component).toMatchSnapshot();
+
+  const textrea = component.find('textarea');
+
+  textrea.simulate('input', {target: {value: 'This is value to test \n if autoresizing works'}});
+
+  expect(component).toMatchSnapshot();
+});
+
 test('Input autoFocus works correctly', () => {
   const activeElementStub = sinon.stub(document, 'activeElement').get(() => null);
   const focusStub = sinon.spy(Input.prototype, 'autoFocus');
@@ -157,6 +176,29 @@ test('Input autoFocus works correctly', () => {
 
   expect(inputFocusSpy.calledOnce).toBe(true);
   expect(focusStub.callCount).toBe(3);
+});
+
+test('Input handleAutoResize works correctly', () => {
+  const autoResizeStub = sinon.spy(Input.prototype, 'handleAutoResize');
+
+  const component = mount(
+    <Input
+      label="Autoresize"
+      resize="auto"
+      type="multiline"
+      value="This is some value"
+    />
+  );
+
+  expect(autoResizeStub.callCount).toBe(0);
+
+  component.find('textarea').simulate('input', {target: {value: 'This is value to test \n if autoresizing works'}});
+
+  expect(autoResizeStub.callCount).toBe(1);
+
+  component.find('textarea').simulate('input', {target: {value: 'This \n this \n again'}});
+
+  expect(autoResizeStub.callCount).toBe(2);
 });
 
 test('Input can fire all default callbacks', () => {

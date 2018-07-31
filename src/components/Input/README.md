@@ -38,3 +38,8 @@ An resizeable textarea:
 ```js
 <Input label="Multiline resizeable textarea" value="This is a value" type="multiline" rows="2" resize />
 ```
+
+An autoresizeable textarea:
+```js
+<Input label="Multiline autoresizeable textarea" value="This is a value" type="multiline" resize="auto" />
+```
