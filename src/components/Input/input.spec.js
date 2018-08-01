@@ -66,6 +66,13 @@ test('Input renders correctly with an error status and a hint', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Input renders correctly with a placeholder', () => {
+  const component = renderer.create(
+    <Input placeholder="That's a placeholder" />,
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('Input renders correctly with custom class names', () => {
   const component = renderer.create(
     <Input
