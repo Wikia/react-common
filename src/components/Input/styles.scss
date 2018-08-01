@@ -10,12 +10,13 @@
 
 	&__field {
 		border: 0;
+		// keep value in sync with `BOTTOM_BORDER_WIDTH` from Input component
 		border-bottom: 1px solid $wds-color-blue-gray;
+		box-sizing: border-box;
 		color: $wds-color-dark-blue-gray;
 		font-size: $wds-typescale-size-base;
 		line-height: 1em;
 		padding: 0;
-		// keep value in sync with `BOTTOM_PADDING` from Input component
 		padding-bottom: 2px;
 		resize: none;
 		width: 100%;

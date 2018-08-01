@@ -103,6 +103,7 @@ class Input extends React.Component {
       readOnly: this.props.readonly,
       disabled: this.props.disabled,
       tabIndex: this.props.tabIndex,
+      placeholder: this.props.placeholder,
     };
   }
 
@@ -169,12 +170,12 @@ class Input extends React.Component {
   handleAutoResize() {
     // height has to be reset first because if not it keeps increasing every time user will type a character
     // setting actual height must be done in setState callback, because React might optimize this into one setState call
-    // scrollHeight includes padding, we need to compensate this
-    // keep value in sync with padding-bottom in .wds-input__field styles
-    const BOTTOM_PADDING = 2;
+    // scrollHeight includes padding but not border, we need to compensate this to avoid slight height change
+    // keep value in sync with bottom-border in .wds-input__field styles
+    const BOTTOM_BORDER_WIDTH = 1;
 
     this.setState({dynamicTextareaHeight: 'auto'}, () => {
-      this.setState({dynamicTextareaHeight: `${this.input.scrollHeight - BOTTOM_PADDING}px`});
+      this.setState({dynamicTextareaHeight: `${this.input.scrollHeight + BOTTOM_BORDER_WIDTH}px`});
     });
 
     // to prevent scroll jumping
@@ -278,11 +279,29 @@ Input.propTypes = {
   /**
    * Label that we want to display.
    */
-  label: PropTypes.string.isRequired,
+  label: (props, propName) => {
+    if (props.placeholder && props[propName]) {
+      return new Error(`Prop ${propName} is not used when placeholder is set`);
+    }
+
+    if (!props.placeholder && !props[propName]) {
+      return new Error(`Prop ${propName} is required when placeholder is not set`);
+    }
+
+    if (typeof props[propName] !== 'string') {
+      return new Error(`Prop ${propName} is not a string`);
+    }
+
+    return null;
+  },
   /**
    * Hint to display
    */
   hint: PropTypes.string,
+  /**
+   * Placeholder to display
+   */
+  placeholder: PropTypes.string,
   /**
    * Status
    */
@@ -347,7 +366,9 @@ Input.defaultProps = {
   autoFocus: false,
   className: '',
   disabled: false,
+  label: '',
   hint: null,
+  placeholder: null,
   hintClassName: '',
   id: null,
   inputClassName: '',

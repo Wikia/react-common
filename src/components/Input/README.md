@@ -24,6 +24,11 @@ Readonly input:
 <Input label="Readonly input" value="lorem ipsum" readonly />
 ```
 
+Input with placeholder:
+```js
+<Input placeholder="lorem ipsum" />
+```
+
 A non-empty input with the error state:
 ```js
 <Input label="Some input" value="lorem ipsum" status="error" hint="Need something else" />
@@ -31,12 +36,12 @@ A non-empty input with the error state:
 
 An non-empty textarea:
 ```js
-<Input label="Multiline input" value="This is a value" type="multiline" rows="3" />
+<Input label="Multiline input" value="This is a value" type="multiline" rows={3} />
 ```
 
 An resizeable textarea:
 ```js
-<Input label="Multiline resizeable textarea" value="This is a value" type="multiline" rows="2" resize />
+<Input label="Multiline resizeable textarea" value="This is a value" type="multiline" rows={3} resize />
 ```
 
 An autoresizeable textarea:
@@ -46,5 +51,5 @@ An autoresizeable textarea:
 
 An autoresizeable textarea with custom initial number of rows:
 ```js
-<Input label="Multiline autoresizeable textarea" value="This is a value" type="multiline" resize="auto" rows="1" />
+<Input label="Multiline autoresizeable textarea" value="This is a value" type="multiline" resize="auto" rows={1} />
 ```
