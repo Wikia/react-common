@@ -279,18 +279,20 @@ Input.propTypes = {
   /**
    * Label that we want to display.
    */
-  label: function(props, propName) {
-    if (props['placeholder'] && props[propName]) {
+  label: (props, propName) => {
+    if (props.placeholder && props[propName]) {
       return new Error(`Prop ${propName} is not used when placeholder is set`);
     }
 
-    if (!props['placeholder'] && !props[propName]) {
+    if (!props.placeholder && !props[propName]) {
       return new Error(`Prop ${propName} is required when placeholder is not set`);
     }
 
     if (typeof props[propName] !== 'string') {
       return new Error(`Prop ${propName} is not a string`);
     }
+
+    return null;
   },
   /**
    * Hint to display
