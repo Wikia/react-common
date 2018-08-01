@@ -11,6 +11,16 @@ jest.mock('lodash.uniqueid');
 uniqueId.mockImplementation(() => 'foo');
 
 /* eslint-disable no-console */
+function testPropTypeError(Component, props, expectedError) {
+  const stub = sinon.stub(console, 'error');
+
+  renderer.create(<Component {...props} />);
+
+  expect(stub.calledOnce).toEqual(true);
+  expect(stub.calledWithMatch(sinon.match(new RegExp(expectedError)))).toEqual(true);
+
+  console.error.restore();
+}
 
 test('Input renders correctly with default values', () => {
   const component = renderer.create(
@@ -71,6 +81,22 @@ test('Input renders correctly with a placeholder', () => {
     <Input placeholder="That's a placeholder" />,
   );
   expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Input throws error when rendered with a placeholder and label', () => {
+  testPropTypeError(
+    Input,
+    {label: 'Label', placeholder: 'Placeholder'},
+    'Prop label is not used when placeholder is set'
+  );
+});
+
+test('Input throws error when rendered without a placeholder or label', () => {
+  testPropTypeError(Input, {}, 'Prop label is required when placeholder is not set');
+});
+
+test('Input throws error when rendered with invalid label', () => {
+  testPropTypeError(Input, {label: 100}, 'Prop label is not a string');
 });
 
 test('Input renders correctly with custom class names', () => {
