@@ -20,6 +20,9 @@
 9. Code will be merged to `master` only if there are no regressions and after a successful CR.
 10. When the code is merged to `master`, release new version of the styleguide.
 
+## HOCS
+0. TODO: Add steps for hocs
+
 ## Development server
 ```js static
 > yarn dev
