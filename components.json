@@ -54,6 +54,12 @@
     ]
   },
   {
+    "name": "Higher Order Components (hocs)",
+    "hocs": [
+      "withTimeoutFallback"
+    ]
+  },
+  {
     "name": "Other",
     "components": [
       "FandomBackgroundImage",

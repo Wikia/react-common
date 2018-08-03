@@ -1,5 +1,5 @@
 Defaults:
-```js
+```js static
 const Spinner = props => (<div> ...spinner </div>)
 const SpinnerWithTimeout = withTimeoutFallback(Spinner);
 
@@ -8,8 +8,9 @@ const SpinnerWithTimeout = withTimeoutFallback(Spinner);
 ```
 
 Custom Fallback and Timeout:
-```js
+```js static
 const Spinner = props => (<div> ...spinner </div>)
+const Fallback = props => (<div> Error Loading </div>)
 const SpinnerWithTimeout withTimeoutFallback(Spinner);
 const options = {timeout: 10000, FallbackComponent: Fallback};
 const SpinnerWithTimeout = withTimeoutFallback(Spinner, options);

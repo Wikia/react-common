@@ -24,4 +24,4 @@ export {default as bannerNotificationsMessageType}
   from './components/BannerNotifications/bannerNotificationsMessageType';
 
 // hocs
-export {default as withTimeoutFallback} from './hoc/withTimeoutFallback';
+export {default as withTimeoutFallback} from './hocs/withTimeoutFallback';

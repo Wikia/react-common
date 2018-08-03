@@ -11,22 +11,25 @@ const DEFAULT_OPTIONS = {
 const TIMER_INTERVAL = 100;
 
 // TODO: CAKE-3226 Consider adding to react design system
-function withTimeoutComponent(Component, opts) {
+function withTimeoutFallback(Component, opts) {
   const options = {...DEFAULT_OPTIONS, ...opts};
   const FallbackComponent = options.FallbackComponent;
 
   class TimeoutComponent extends React.PureComponent {
     static propTypes = {
       children: PropTypes.node,
-    };
+    }
 
     static defaultProps = {
-      children: '',
-    };
+      children: null,
+    }
 
-    state = {
-      time: 0,
-    };
+    constructor(props) {
+      super(props);
+      this.state = {
+        timer: 0,
+      };
+    }
 
     componentDidMount() {
       this.timerID = setInterval(
@@ -63,4 +66,4 @@ function withTimeoutComponent(Component, opts) {
   return TimeoutComponent;
 }
 
-export default withTimeoutComponent;
+export default withTimeoutFallback;
