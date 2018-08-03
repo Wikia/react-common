@@ -5,3 +5,8 @@
 
 // import wds-button
 @import "~design-system/dist/scss/wds-components/_buttons.scss";
+
+.wds-button.wds-is-fullwidth {
+	box-sizing: border-box;
+	width: 100%;
+}
