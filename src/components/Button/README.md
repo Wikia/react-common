@@ -12,3 +12,8 @@ Different styles:
 	<Button square>&hellip;</Button>
 </div>
 ```
+
+Full width:
+```js
+<Button fullwidth>WIDE WIDE WIDE</Button>
+```

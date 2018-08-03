@@ -11,6 +11,16 @@ exports[`Button renders correctly as link 1`] = `
 </a>
 `;
 
+exports[`Button renders correctly fullwidth button 1`] = `
+<button
+  className="wds-button wds-is-fullwidth"
+  disabled={false}
+  onClick={[Function]}
+>
+  a WIDE button
+</button>
+`;
+
 exports[`Button renders correctly with a children 1`] = `
 <button
   className="wds-button"

@@ -11,6 +11,7 @@ const Button = ({
   text,
   secondary,
   square,
+  fullwidth,
   children,
   ...rest
 }) => {
@@ -20,6 +21,7 @@ const Button = ({
     secondary ? 'wds-is-secondary' : '',
     square ? 'wds-is-square' : '',
     text ? 'wds-is-text' : '',
+    fullwidth ? 'wds-is-fullwidth' : '',
   ].filter(c => c).join(' ');
 
   if (href) {
@@ -60,6 +62,10 @@ Button.propTypes = {
    */
   text: PropTypes.bool,
   /**
+   * Full width flag
+   */
+  fullwidth: PropTypes.bool,
+  /**
    * Callback for the `<button>`
    */
   onClick: PropTypes.func,
@@ -69,6 +75,7 @@ Button.defaultProps = {
   children: null,
   className: '',
   disabled: false,
+  fullwidth: false,
   href: null,
   secondary: false,
   square: false,
