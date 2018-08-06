@@ -29,7 +29,7 @@ function getSections() {
         hocName =>
           ({
             name: hocName,
-            content: `src/hocs/${hocName}/Readme.md`,
+            content: `src/hocs/${hocName}/README.md`,
           })
       );
     }
