@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alternate fallback component 1`] = `
+<TimeoutComponent>
+  <FakeSpinner>
+    <div>
+       ...spinner 
+    </div>
+  </FakeSpinner>
+</TimeoutComponent>
+`;
+
+exports[`Alternate fallback component 2`] = `
+<TimeoutComponent>
+  <FallbackComponent>
+    <div>
+       Alt Fallback 
+    </div>
+  </FallbackComponent>
+</TimeoutComponent>
+`;
+
+exports[`Default Spinner with timeout 1`] = `
+<TimeoutComponent>
+  <FakeSpinner>
+    <div>
+       ...spinner 
+    </div>
+  </FakeSpinner>
+</TimeoutComponent>
+`;
+
+exports[`Default Spinner with timeout 2`] = `
+<TimeoutComponent>
+  <DefaultFallback>
+    <span>
+      Error loading
+    </span>
+  </DefaultFallback>
+</TimeoutComponent>
+`;
+
+exports[`Default spinner with shorter timeout 1`] = `
+<TimeoutComponent>
+  <FakeSpinner>
+    <div>
+       ...spinner 
+    </div>
+  </FakeSpinner>
+</TimeoutComponent>
+`;
+
+exports[`Default spinner with shorter timeout 2`] = `
+<TimeoutComponent>
+  <DefaultFallback>
+    <span>
+      Error loading
+    </span>
+  </DefaultFallback>
+</TimeoutComponent>
+`;
+
+exports[`Timer unmounts 1`] = `
+<TimeoutComponent>
+  <FakeSpinner>
+    <div>
+       ...spinner 
+    </div>
+  </FakeSpinner>
+</TimeoutComponent>
+`;
+
+exports[`Timer unmounts 2`] = `
+<TimeoutComponent>
+  <DefaultFallback>
+    <span>
+      Error loading
+    </span>
+  </DefaultFallback>
+</TimeoutComponent>
+`;
