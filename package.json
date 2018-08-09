@@ -11,7 +11,8 @@
     "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-svg-loader": "^2.1.0"
   },
   "scripts": {
     "build:watch": "styleguidist server",
