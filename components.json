@@ -43,6 +43,7 @@
   {
     "name": "Design System Icons",
     "components": [
+      "Icon",
       "VideoPlayIcon"
     ]
   },
