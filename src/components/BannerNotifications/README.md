@@ -1,6 +1,9 @@
 By default it renders nothing:
 ```js
-<BannerNotifications messages={[]} onClick={() => {}} />
+<div>
+	<IconSprite />
+	<BannerNotifications messages={[]} onClick={() => {}} />
+</div>
 ```
 
 But with proper data it can display all the messages:

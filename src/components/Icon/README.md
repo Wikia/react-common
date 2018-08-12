@@ -7,7 +7,10 @@ The `name` attribute of the component refers to the icon's DS name.
 Standard icon:
 
 ```
-<Icon name="menu" />
+<div>
+	<IconSprite />
+	<Icon name="menu" />
+</div>
 ```
 
 Small or tiny icon:

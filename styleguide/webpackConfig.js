@@ -28,7 +28,12 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        exclude: /node_modules/,
         loader: 'react-svg-loader',
+      },
+      {
+        test: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
+        loader: 'raw-loader',
       },
     ],
   },
