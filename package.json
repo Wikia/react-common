@@ -8,13 +8,10 @@
   "private": true,
   "dependencies": {
     "design-system": "git://github.com/Wikia/design-system.git#12.0.0",
-    "file-loader": "^1.1.11",
     "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.1",
-    "raw-loader": "^0.5.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-svg-loader": "^2.1.0"
+    "react-dom": "^16.2.0"
   },
   "scripts": {
     "build:watch": "styleguidist server",
@@ -57,6 +54,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
     "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
     "react-styleguidist": "^6.5.1",
     "react-test-renderer": "^16.2.0",
     "sass-loader": "^6.0.7",
