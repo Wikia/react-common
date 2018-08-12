@@ -8,7 +8,7 @@ import './styles.scss';
  *
  * **NOTE**: This icon is using `IconSprite` component.
  */
-const Icon = ({name, className}) => {
+const Icon = ({name, className, ...props}) => {
   const classes = [
     'wds-icon',
     className,
@@ -17,7 +17,7 @@ const Icon = ({name, className}) => {
   ].filter(c => c).join(' ');
 
   return (
-    <svg className={classes}>
+    <svg className={classes} {...props}>
       <use xlinkHref={`#wds-icons-${name}`} />
     </svg>
   );

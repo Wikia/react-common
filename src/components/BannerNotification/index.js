@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import Icon from '../Icon';
+
 import './styles.scss';
 
-function getIcon(type) {
+function getIconName(type) {
   switch (type) {
     case ('alert'):
-      return '#wds-icons-error-small';
+      return 'error-small';
     case ('warning'):
-      return '#wds-icons-alert-small';
+      return 'alert-small';
     case ('success'):
-      return '#wds-icons-checkmark-circle-small';
+      return 'checkmark-circle-small';
     default:
-      return '#wds-icons-flag-small';
+      return 'flag-small';
   }
 }
 
@@ -34,16 +37,10 @@ function getClassName(type) {
 const BannerNotification = ({className, type, text, onClose}) => (
   <div className={`wds-banner-notification ${getClassName(type)} ${className}`}>
     <div className="wds-banner-notification__icon">
-      <svg className="wds-icon wds-icon-small">
-        <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={getIcon(type)} />
-      </svg>
+      <Icon name={getIconName(type)} />
     </div>
     <span className="wds-banner-notification__text">{text}</span>
-    {onClose && (
-      <svg className="wds-icon wds-icon-tiny wds-banner-notification__close" onClick={onClose}>
-        <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="#wds-icons-cross-tiny" />
-      </svg>
-    )}
+    {onClose && <Icon name="cross-tiny" className="wds-banner-notification__close" onClick={onClose} />}
   </div>
 );
 
