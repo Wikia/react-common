@@ -1,6 +1,7 @@
 ### 1. Add it to your project
 **This is not working yet, since the package wasn't published to npm, please use
 GitHub repository for now**
+
 | [Yarn](https://yarnpkg.com/en/) | [NPM](https://www.npmjs.com/) |
 | --- | --- |
 | `yarn add @wikia/react-design-system` | `npm install --save @wikia/react-design-system` |
@@ -15,8 +16,8 @@ The only requirement is a Webpack configuration capable of transforming ES6 code
 - `babel` (+plugins: `babel-preset-react`, `babel-preset-env` and `babel-plugin-transform-object-rest-spread`)
 - `node-sass`
 - `postcss` with `autoprefixer` plugin
-- `react@16`
-- `webpack@3`
+- `react@16.3`
+- `webpack@4`
 
 ### Webpack config
 Ensure that your webpack config understands where this package is, and how to resolve node modules so that Wikia's `design-system` package can be found.
