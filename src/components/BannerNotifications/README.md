@@ -1,7 +1,7 @@
 By default it renders nothing:
 ```js
 <div>
-	<IconSprite />
+	<IconSprite /><!-- add sprite so we can see icons in this example -->
 	<BannerNotifications messages={[]} onClick={() => {}} />
 </div>
 ```
@@ -30,5 +30,8 @@ const messages4 = [
     text: 'this is an alert',
     id: '4',
   },
-];<BannerNotifications messages={messages4} onClose={() => {}} />
+];<div>
+	<IconSprite /><!-- add sprite so we can see icons in this example -->
+	<BannerNotifications messages={messages4} onClose={() => {}} />
+</div>
 ```
