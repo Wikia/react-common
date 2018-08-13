@@ -1,6 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow} from 'enzyme';
+import {
+  shallow,
+  mount
+} from 'enzyme';
 import sinon from 'sinon';
 
 import BannerNotification from './index';
@@ -54,11 +57,11 @@ test('BannerNotification renders correctly without action', () => {
 
 test('BannerNotification onClose hander is invoked', () => {
   const mockOnClick = sinon.spy();
-  const wrapper = shallow(
+  const wrapper = mount(
     <BannerNotification type={'message'} text={'lorem ipsum - messge'} onClose={mockOnClick} />
   );
 
-  wrapper.find('.wds-banner-notification__close').simulate('click');
+  wrapper.find('.wds-banner-notification__close').at(0).simulate('click');
 
   expect(mockOnClick.calledOnce).toBe(true);
 });

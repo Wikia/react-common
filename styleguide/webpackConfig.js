@@ -26,6 +26,10 @@ module.exports = {
         test: /\.s?css$/,
         loader: 'style-loader!css-loader!sass-loader',
       },
+      {
+        test: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
+        loader: 'raw-loader',
+      },
     ],
   },
 };

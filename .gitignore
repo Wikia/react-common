@@ -59,3 +59,6 @@ typings/
 
 # IDEA
 .idea/
+
+# Miscellaneous cache files
+.DS_Store
