@@ -1,9 +1,7 @@
 By default it renders nothing:
 ```js
-<div>
-	<IconSprite /><!-- add sprite so we can see icons in this example -->
-	<BannerNotifications messages={[]} onClick={() => {}} />
-</div>
+<IconSprite />{ /* add sprite so we can see icons in this example */ }
+<BannerNotifications messages={[]} onClick={() => {}} />
 ```
 
 But with proper data it can display all the messages:
@@ -31,7 +29,7 @@ const messages4 = [
     id: '4',
   },
 ];<div>
-	<IconSprite /><!-- add sprite so we can see icons in this example -->
+	<IconSprite />{ /* add sprite so we can see icons in this example */ }
 	<BannerNotifications messages={messages4} onClose={() => {}} />
 </div>
 ```
