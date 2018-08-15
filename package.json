@@ -22,7 +22,7 @@
     "dev:notify": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn build:watch\" \"yarn test:watch:notify\"",
     "lint:css": "stylelint \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.css\" --fix",
-    "lint:js": "eslint .",
+    "lint:js": "eslint --cache .",
     "lint": "yarn lint:js && yarn lint:css",
     "release:major": "git checkout master && git pull && yarn build && git add . && yarn version --new-version major && git push --follow-tags",
     "release:minor": "git checkout master && git pull && yarn build && git add . && yarn version --new-version minor && git push --follow-tags",
