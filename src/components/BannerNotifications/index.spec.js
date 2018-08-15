@@ -61,6 +61,6 @@ test('BannerNotifications onClose hander is invoked', () => {
     <BannerNotifications messages={messages1} onClose={mockOnClick} />
   );
 
-  wrapper.find('.wds-banner-notification__close').simulate('click');
+  wrapper.find('.wds-banner-notification__close').at(0).simulate('click');
   expect(mockOnClick.withArgs('1').calledOnce).toBe(true);
 });

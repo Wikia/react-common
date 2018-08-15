@@ -62,3 +62,6 @@ typings/
 
 # Visual Studio
 .vscode/
+
+# Miscellaneous cache files
+.DS_Store

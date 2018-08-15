@@ -4,6 +4,7 @@ const {theme, styles} = require('./styleguide/styles.js');
 const webpackConfig = require('./styleguide/webpackConfig.js');
 const pkg = require('./package.json');
 const schema = require('./components.json');
+const templateBody = require('./styleguide/template');
 
 function resolve(...paths) {
   return fs.realpathSync(path.join(__dirname, ...paths));
@@ -40,7 +41,17 @@ function getSections() {
 
 module.exports = {
   title: `react-design-system`,
-  template: './styleguide/index.html',
+  template: {
+    head: {
+      links: [{
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Rubik:400,700',
+      }],
+    },
+    body: {
+      raw: templateBody,
+    },
+  },
   theme,
   styles,
   styleguideDir: './docs/',

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component renders 1`] = `
+<svg
+  className="wds-icon"
+>
+  <use
+    xlinkHref="#wds-icons-share"
+  />
+</svg>
+`;
+
+exports[`Icon component renders with a tiny icon 1`] = `
+<svg
+  className="wds-icon wds-icon-tiny"
+>
+  <use
+    xlinkHref="#wds-icons-cross-tiny"
+  />
+</svg>
+`;
+
+exports[`Icon component renders with an additional CSS class 1`] = `
+<svg
+  className="wds-icon trashy-icon"
+>
+  <use
+    xlinkHref="#wds-icons-trash"
+  />
+</svg>
+`;
+
+exports[`Icon component renders with small icon 1`] = `
+<svg
+  className="wds-icon wds-icon-small"
+>
+  <use
+    xlinkHref="#wds-icons-arrow-small"
+  />
+</svg>
+`;
