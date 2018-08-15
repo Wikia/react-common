@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import withTimeoutFallback from '../../hocs/withTimeoutFallback';
 
 import './styles.scss';
 
@@ -66,4 +67,4 @@ Spinner.defaultProps = {
   stroke: 2,
 };
 
-export default Spinner;
+export default withTimeoutFallback(Spinner, {timeout: 30000});
