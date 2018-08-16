@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const {theme, styles} = require('./styleguide/styles.js');
-const webpackConfig = require('./styleguide/webpackConfig.js');
+const webpackConfig = require('./styleguide/webpack.config.js');
 const pkg = require('./package.json');
 const schema = require('./components.json');
 const templateBody = require('./styleguide/template');
