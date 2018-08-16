@@ -31,7 +31,7 @@
     "test:run": "jest",
     "test:watch": "jest --watchAll",
     "test:watch:notify": "jest --watchAll --notify",
-    "test": "yarn lint && yarn test:run && yarn coverage"
+    "test": "yarn lint && yarn coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
