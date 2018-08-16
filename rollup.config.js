@@ -1,7 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import sass from 'rollup-plugin-sass';
-import string from 'rollup-plugin-string';
+import string from 'rollup-plugin-string/dist/rollup-plugin-string';
 
 import pkg from './package.json';
 
@@ -19,9 +19,10 @@ export default {
     },
   ],
   external: [
-    'react',
-    'prop-types',
+    'design-system',
     'lodash.uniqueid',
+    'prop-types',
+    'react',
   ],
   plugins: [
     string({
@@ -33,7 +34,6 @@ export default {
     sass({
       output: 'dist/styles.css',
     }),
-    // commonjs(),
     babel({
       babelrc: false,
       exclude: 'node_modules/**',
@@ -41,7 +41,6 @@ export default {
         'babel-plugin-transform-object-rest-spread',
         'external-helpers',
       ],
-      // externalHelpers: true,
       presets: [
         'babel-preset-react',
         ['env', {
