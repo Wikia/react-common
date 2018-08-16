@@ -1,8 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Spinner renders correctly with additional classname 1`] = `
+<div
+  className="fandom-spinner custom-class or-multiple-classes"
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        fill="none"
+        r={14}
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner renders correctly with custom block  1`] = `
+<div
+  className="fandom-spinner is-block"
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        fill="none"
+        r={14}
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
 exports[`Spinner renders correctly with custom colors (named color) 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
   style={
     Object {
       "height": 30,
@@ -34,7 +98,7 @@ exports[`Spinner renders correctly with custom colors (named color) 1`] = `
 
 exports[`Spinner renders correctly with custom colors (rgb) 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
   style={
     Object {
       "height": 30,
@@ -66,7 +130,39 @@ exports[`Spinner renders correctly with custom colors (rgb) 1`] = `
 
 exports[`Spinner renders correctly with custom colors (short hex) 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
+  style={
+    Object {
+      "height": 30,
+      "width": 30,
+    }
+  }
+>
+  <svg
+    height={30}
+    viewBox="0 0 30 30"
+    width={30}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      transform="translate(15, 15)"
+    >
+      <circle
+        fill="none"
+        r={14}
+        strokeDasharray={87.96459430051421}
+        strokeDashoffset={87.96459430051421}
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner renders correctly with custom inline  1`] = `
+<div
+  className="fandom-spinner is-inline"
   style={
     Object {
       "height": 30,
@@ -98,7 +194,7 @@ exports[`Spinner renders correctly with custom colors (short hex) 1`] = `
 
 exports[`Spinner renders correctly with custom size (number) 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
   style={
     Object {
       "height": "20",
@@ -130,7 +226,7 @@ exports[`Spinner renders correctly with custom size (number) 1`] = `
 
 exports[`Spinner renders correctly with custom size (string) 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
   style={
     Object {
       "height": "78",
@@ -162,7 +258,7 @@ exports[`Spinner renders correctly with custom size (string) 1`] = `
 
 exports[`Spinner renders correctly with default values 1`] = `
 <div
-  className="fandom-spinner "
+  className="fandom-spinner"
   style={
     Object {
       "height": 30,

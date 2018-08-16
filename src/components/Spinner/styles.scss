@@ -30,4 +30,21 @@
 			stroke: $wds-color-link;
 		}
 	}
+
+	&.is-block {
+		display: block;
+		left: auto;
+		margin: auto;
+		position: relative;
+	}
+
+	&.is-inline {
+		height: 1em;
+		left: 0;
+		margin: 0;
+		position: static;
+		top: 0;
+		width: auto;
+	}
+
 }
