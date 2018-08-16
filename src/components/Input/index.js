@@ -100,6 +100,7 @@ class Input extends React.Component {
       onKeyUp: this.props.onKeyUp,
       onKeyDown: this.props.onKeyDown,
       onKeyPress: this.props.onKeyPress,
+      onPaste: this.props.onPaste,
       readOnly: this.props.readonly,
       disabled: this.props.disabled,
       tabIndex: this.props.tabIndex,
@@ -360,6 +361,10 @@ Input.propTypes = {
    * Callback for `onKeyUp` event
    */
   onKeyUp: PropTypes.func,
+  /**
+   * Callback for `onPaste` event
+   */
+  onPaste: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -386,6 +391,7 @@ Input.defaultProps = {
   onKeyDown: () => {},
   onKeyPress: () => {},
   onKeyUp: () => {},
+  onPaste: () => {},
 };
 
 export default Input;
