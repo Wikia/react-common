@@ -250,6 +250,7 @@ test('Input can fire all default callbacks', () => {
   wrapper.find('input').simulate('keyup');
   wrapper.find('input').simulate('keydown');
   wrapper.find('input').simulate('keypress');
+  wrapper.find('input').simulate('paste');
 
   expect(true).toBe(true);
 });
@@ -261,6 +262,7 @@ test('Input can fire all callbacks', () => {
   const mockOnKeyDown = sinon.spy();
   const mockOnKeyPress = sinon.spy();
   const mockOnKeyUp = sinon.spy();
+  const mockOnPaste = sinon.spy();
   const wrapper = shallow(
     <Input
       label="callbacks test (real-world)"
@@ -270,6 +272,7 @@ test('Input can fire all callbacks', () => {
       onKeyDown={mockOnKeyDown}
       onKeyPress={mockOnKeyPress}
       onKeyUp={mockOnKeyUp}
+      onPaste={mockOnPaste}
     />
   );
 
@@ -279,6 +282,7 @@ test('Input can fire all callbacks', () => {
   wrapper.find('input').simulate('keyup');
   wrapper.find('input').simulate('keydown');
   wrapper.find('input').simulate('keypress');
+  wrapper.find('input').simulate('paste');
 
   expect(mockOnChange.calledOnce).toBe(true);
   expect(mockOnFocus.calledOnce).toBe(true);
@@ -286,6 +290,7 @@ test('Input can fire all callbacks', () => {
   expect(mockOnKeyDown.calledOnce).toBe(true);
   expect(mockOnKeyPress.calledOnce).toBe(true);
   expect(mockOnKeyUp.calledOnce).toBe(true);
+  expect(mockOnPaste.calledOnce).toBe(true);
 });
 
 
