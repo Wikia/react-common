@@ -1,25 +1,4 @@
-.expandable-text__expand {
-  /* unstyle button */
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline;
-  font: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-}
-.expandable-text__expand:active {
-  outline: 0;
-}.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
-  opacity: 1;
-}
-.fandom-video-play-icon__circle {
-  transition: opacity 200ms ease-in-out;
-}
-.fandom-video-play-icon__triangle {
-  fill: #00d6d6;
-}.wds-fieldset {
+.wds-fieldset {
   background-color: #fff;
   border: 0;
   display: flex;
@@ -65,65 +44,6 @@
   position: static;
   top: 0;
   width: auto;
-}.wds-fandom-content-well {
-  box-sizing: border-box;
-}
-@media only screen and (max-width: 767px) {
-  .wds-fandom-content-well {
-    margin: 0 18px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .wds-fandom-content-well {
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .wds-fandom-content-well {
-    width: 732px;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .wds-fandom-content-well {
-    width: 988px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .wds-fandom-content-well {
-    width: 1244px;
-  }
-}.wds-content-well {
-  box-sizing: border-box;
-}
-@media only screen and (max-width: 767px) {
-  .wds-content-well {
-    margin: 0 18px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .wds-content-well {
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .wds-content-well {
-    width: 732px;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .wds-content-well {
-    width: 988px;
-  }
-}
-@media only screen and (min-width: 1280px) and (max-width: 1499px) {
-  .wds-content-well {
-    width: 1244px;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .wds-content-well {
-    width: 1464px;
-  }
 }.wds-input {
   margin: 30px 0 18px;
   position: relative;
@@ -203,50 +123,6 @@
 }
 .wds-input.is-readonly, .wds-input.is-disabled {
   cursor: not-allowed;
-}.wds-banner-notification {
-  background-color: #fff;
-  color: #999;
-  display: flex;
-  transition: opacity 0.4s;
-}
-.wds-banner-notification.wds-is-transparent {
-  opacity: 0;
-}
-.wds-banner-notification__container {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-}
-.wds-banner-notification__icon {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  width: 48px;
-}
-.wds-alert .wds-banner-notification__icon {
-  background-color: #d71035;
-}
-.wds-warning .wds-banner-notification__icon {
-  background-color: #dfec24;
-}
-.wds-success .wds-banner-notification__icon {
-  background-color: #4cda9a;
-}
-.wds-message .wds-banner-notification__icon {
-  background-color: #460084;
-}
-.wds-banner-notification__text {
-  color: #666;
-  flex: 1;
-  font-size: 14px;
-  line-height: 1.29;
-  padding: 13px 12px;
-}
-.wds-banner-notification__close {
-  cursor: pointer;
-  padding: 18px;
-}
-.wds-banner-notification + .wds-banner-notification .wds-banner-notification__close, .wds-banner-notification + .wds-banner-notification .wds-banner-notification__text {
-  border-top: 1px solid #ccc;
 }.wds-button-group {
   align-items: stretch;
   display: inline-flex;
@@ -810,6 +686,130 @@ button.wds-button, a.wds-button {
 .wds-button.wds-is-fullwidth {
   box-sizing: border-box;
   width: 100%;
+}.expandable-text__expand {
+  /* unstyle button */
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.expandable-text__expand:active {
+  outline: 0;
+}.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
+  opacity: 1;
+}
+.fandom-video-play-icon__circle {
+  transition: opacity 200ms ease-in-out;
+}
+.fandom-video-play-icon__triangle {
+  fill: #00d6d6;
+}.wds-fandom-content-well {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .wds-fandom-content-well {
+    margin: 0 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wds-fandom-content-well {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wds-fandom-content-well {
+    width: 732px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wds-fandom-content-well {
+    width: 988px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .wds-fandom-content-well {
+    width: 1244px;
+  }
+}.wds-content-well {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .wds-content-well {
+    margin: 0 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wds-content-well {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wds-content-well {
+    width: 732px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wds-content-well {
+    width: 988px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1499px) {
+  .wds-content-well {
+    width: 1244px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .wds-content-well {
+    width: 1464px;
+  }
+}.wds-banner-notification {
+  background-color: #fff;
+  color: #999;
+  display: flex;
+  transition: opacity 0.4s;
+}
+.wds-banner-notification.wds-is-transparent {
+  opacity: 0;
+}
+.wds-banner-notification__container {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.wds-banner-notification__icon {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 48px;
+}
+.wds-alert .wds-banner-notification__icon {
+  background-color: #d71035;
+}
+.wds-warning .wds-banner-notification__icon {
+  background-color: #dfec24;
+}
+.wds-success .wds-banner-notification__icon {
+  background-color: #4cda9a;
+}
+.wds-message .wds-banner-notification__icon {
+  background-color: #460084;
+}
+.wds-banner-notification__text {
+  color: #666;
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.29;
+  padding: 13px 12px;
+}
+.wds-banner-notification__close {
+  cursor: pointer;
+  padding: 18px;
+}
+.wds-banner-notification + .wds-banner-notification .wds-banner-notification__close, .wds-banner-notification + .wds-banner-notification .wds-banner-notification__text {
+  border-top: 1px solid #ccc;
 }.wds-icon {
   fill: currentColor;
   height: 24px;
