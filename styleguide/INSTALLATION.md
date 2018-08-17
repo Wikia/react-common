@@ -10,7 +10,7 @@ GitHub repository for now**
 Make sure you include the CSS in your styles.
 
 ```scss static
-@include "~@wikia/react-design-system/dist/styles.css";
+@include "~@wikia/react-design-system/dist/index.css";
 ```
 
 ### 3. Use it in the code
