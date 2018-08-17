@@ -62,3 +62,6 @@ typings/
 
 # Miscellaneous cache files
 .DS_Store
+
+# build
+# dist/

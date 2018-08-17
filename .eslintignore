@@ -1,3 +1,4 @@
-docs/**
 coverage/**
+dist/**
+docs/**
 styleguide/template.js
