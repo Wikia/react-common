@@ -10,9 +10,7 @@ export {default as FloatingButtonGroup} from './components/FloatingButtonGroup';
 export {default as BannerNotification} from './components/BannerNotification';
 export {default as BannerNotifications} from './components/BannerNotifications';
 
-// Icons
-export {default as IconSprite} from './components/IconSprite';
-export {default as Icon} from './components/Icon';
+// Lite Icons
 export {default as VideoPlayIcon} from './components/VideoPlayIcon';
 // Usefull flow components
 export {default as ContentWell} from './components/ContentWell';

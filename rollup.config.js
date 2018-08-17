@@ -5,16 +5,21 @@ import string from 'rollup-plugin-string/dist/rollup-plugin-string';
 
 import pkg from './package.json';
 
-export default {
-  input: 'src/index.js',
+const buildConfig = ({
+  input,
+  outputCjs,
+  outputEs,
+  outputCss,
+}) => ({
+  input,
   output: [
     {
-      file: pkg.main,
+      file: outputCjs,
       format: 'cjs',
       name: 'react-design-system',
     },
     {
-      file: pkg.module,
+      file: outputEs,
       format: 'es',
     },
   ],
@@ -32,7 +37,7 @@ export default {
       module: true,
     }),
     sass({
-      output: 'dist/styles.css',
+      output: outputCss,
     }),
     babel({
       babelrc: false,
@@ -42,8 +47,7 @@ export default {
         'external-helpers',
       ],
       presets: [
-        'babel-preset-react',
-        ['env', {
+        'babel-preset-react', ['env', {
           modules: false,
           targets: {
             browsers: [
@@ -57,4 +61,19 @@ export default {
       ],
     }),
   ],
-};
+});
+
+export default [
+  buildConfig({
+    input: 'src/index.js',
+    outputCjs: pkg.main,
+    outputEs: pkg.module,
+    outputCss: pkg.style,
+  }),
+  buildConfig({
+    input: 'src/icons.js',
+    outputCjs: pkg.mainIcons,
+    outputEs: pkg.moduleIcons,
+    outputCss: pkg.styleIcons,
+  }),
+];
