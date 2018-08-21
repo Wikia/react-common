@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-design-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reusable React components based on Wikia's Design System",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

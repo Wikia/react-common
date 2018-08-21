@@ -44,9 +44,14 @@ var objectWithoutProperties = function (obj, keys) {
 var Icon = function Icon(_ref) {
   var name = _ref.name,
       className = _ref.className,
-      props = objectWithoutProperties(_ref, ['name', 'className']);
+      small = _ref.small,
+      tiny = _ref.tiny,
+      props = objectWithoutProperties(_ref, ['name', 'className', 'small', 'tiny']);
 
-  var classes = ['wds-icon', className, /-small$/.test(name) ? 'wds-icon-small' : '', /-tiny$/.test(name) ? 'wds-icon-tiny' : ''].filter(function (c) {
+  var isSmall = small || /-small$/.test(name);
+  var isTiny = tiny || /-tiny$/.test(name);
+
+  var classes = ['wds-icon', className, isSmall ? 'wds-icon-small' : '', isTiny ? 'wds-icon-tiny' : ''].filter(function (c) {
     return c;
   }).join(' ');
 
@@ -59,17 +64,27 @@ var Icon = function Icon(_ref) {
 
 Icon.propTypes = {
   /**
-   * Icon name
+   * Icon name - both `-small` and `-tiny` prefix are also updating class name
    */
   name: PropTypes.string.isRequired,
   /**
    * Additional class name
    */
-  className: PropTypes.string
+  className: PropTypes.string,
+  /**
+   * `wds-icon-small` flag for the class name (but not for the icon name)
+   */
+  small: PropTypes.bool,
+  /**
+   * `wds-icon-tiny` flag for the class name (but not for the icon name)
+   */
+  tiny: PropTypes.bool
 };
 
 Icon.defaultProps = {
-  className: ''
+  className: '',
+  small: false,
+  tiny: false
 };
 
 // HEAVY icons
