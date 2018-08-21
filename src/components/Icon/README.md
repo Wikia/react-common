@@ -16,7 +16,10 @@ Standard icon:
 Small or tiny icon:
 
 ```
-<Icon name="cross-tiny" />
+<div>
+	<Icon name="cross-tiny" />
+	<Icon name="camera" tiny />
+</div>
 ```
 
 Add your own CSS class for styling:
