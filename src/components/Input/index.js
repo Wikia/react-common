@@ -44,7 +44,7 @@ class Input extends React.Component {
   }
 
   componentDidUpdate() {
-    this.autoFocus();
+    this.forceFocus();
   }
 
   getClassName() {
@@ -153,7 +153,11 @@ class Input extends React.Component {
   }
 
   isAutoFocus() {
-    return this.props.autoFocus && !this.props.disabled && !this.props.readonly;
+    return (this.props.autoFocus || this.props.forceFocus) && !this.props.disabled && !this.props.readonly;
+  }
+
+  isForceFocus() {
+    return this.props.forceFocus && !this.props.disabled && !this.props.readonly;
   }
 
   isAutoResize() {
@@ -162,6 +166,12 @@ class Input extends React.Component {
 
   autoFocus() {
     if (this.isAutoFocus() && this.input) {
+      this.input.focus();
+    }
+  }
+
+  forceFocus() {
+    if (this.isForceFocus() && this.input) {
       if (document.activeElement !== this.input) {
         this.input.focus();
       }
@@ -329,6 +339,10 @@ Input.propTypes = {
    */
   autoFocus: PropTypes.bool,
   /**
+   * Force focus flag
+   */
+  forceFocus: PropTypes.bool,
+  /**
    * Disabled flag
    */
   disabled: PropTypes.bool,
@@ -371,13 +385,14 @@ Input.defaultProps = {
   autoFocus: false,
   className: '',
   disabled: false,
-  label: '',
+  forceFocus: false,
   hint: null,
-  placeholder: null,
   hintClassName: '',
   id: null,
   inputClassName: '',
+  label: '',
   labelClassName: '',
+  placeholder: null,
   readonly: false,
   resize: false,
   rows: 2,
