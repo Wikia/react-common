@@ -8,12 +8,15 @@ import './styles.scss';
  *
  * **NOTE**: This icon is using `IconSprite` component.
  */
-const Icon = ({name, className, ...props}) => {
+const Icon = ({name, className, small, tiny, ...props}) => {
+  const isSmall = small || /-small$/.test(name);
+  const isTiny = tiny || /-tiny$/.test(name);
+
   const classes = [
     'wds-icon',
     className,
-    /-small$/.test(name) ? 'wds-icon-small' : '',
-    /-tiny$/.test(name) ? 'wds-icon-tiny' : '',
+    isSmall ? 'wds-icon-small' : '',
+    isTiny ? 'wds-icon-tiny' : '',
   ].filter(c => c).join(' ');
 
   return (
@@ -25,17 +28,27 @@ const Icon = ({name, className, ...props}) => {
 
 Icon.propTypes = {
   /**
-   * Icon name
+   * Icon name - both `-small` and `-tiny` prefix are also updating class name
    */
   name: PropTypes.string.isRequired,
   /**
    * Additional class name
    */
   className: PropTypes.string,
+  /**
+   * `wds-icon-small` flag for the class name (but not for the icon name)
+   */
+  small: PropTypes.bool,
+  /**
+   * `wds-icon-tiny` flag for the class name (but not for the icon name)
+   */
+  tiny: PropTypes.bool,
 };
 
 Icon.defaultProps = {
   className: '',
+  small: false,
+  tiny: false,
 };
 
 export default Icon;
