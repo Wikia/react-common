@@ -198,7 +198,38 @@ test('Input autoFocus works correctly', () => {
   );
   expect(focusStub.callCount).toBe(1);
 
-  // second `autoFocus` call, but `document.activeElement` will return input element
+  const instance = component.instance();
+
+  activeElementStub.get(() => instance.input);
+  component.unmount();
+  component.setProps({label: 'bar1'});
+  component.mount();
+  expect(focusStub.callCount).toBe(2);
+
+  component.unmount();
+  component.setProps({label: 'bar2'});
+  component.mount();
+  expect(focusStub.callCount).toBe(3);
+
+  focusStub.restore();
+});
+
+test('Input forceFocus works correctly', () => {
+  const activeElementStub = sinon.stub(document, 'activeElement').get(() => null);
+  const autoFocusStub = sinon.spy(Input.prototype, 'autoFocus');
+  const forceFocusStub = sinon.spy(Input.prototype, 'forceFocus');
+
+  // first `autoFocus` call on mount
+  const component = mount(
+    <Input
+      label="forceFocus"
+      forceFocus
+    />
+  );
+  // first call is autoFocus
+  expect(autoFocusStub.callCount).toBe(1);
+
+  // second `autoFocus` call (`forceFocus`), but `document.activeElement` will return input element
   const instance = component.instance();
   activeElementStub.get(() => instance.input);
   const inputFocusSpy = sinon.spy();
@@ -206,14 +237,17 @@ test('Input autoFocus works correctly', () => {
   component.setProps({label: 'bar'});
 
   expect(inputFocusSpy.notCalled).toBe(true);
-  expect(focusStub.callCount).toBe(2);
+  expect(forceFocusStub.callCount).toBe(1);
 
   // third `autoFocus` call, but `document.activeElement` will return null
   activeElementStub.get(() => null);
   component.setProps({label: 'foo1'});
 
   expect(inputFocusSpy.calledOnce).toBe(true);
-  expect(focusStub.callCount).toBe(3);
+  expect(forceFocusStub.callCount).toBe(2);
+
+  autoFocusStub.restore();
+  forceFocusStub.restore();
 });
 
 test('Input handleAutoResize works correctly', () => {
@@ -250,6 +284,7 @@ test('Input can fire all default callbacks', () => {
   wrapper.find('input').simulate('keyup');
   wrapper.find('input').simulate('keydown');
   wrapper.find('input').simulate('keypress');
+  wrapper.find('input').simulate('paste');
 
   expect(true).toBe(true);
 });
@@ -261,6 +296,7 @@ test('Input can fire all callbacks', () => {
   const mockOnKeyDown = sinon.spy();
   const mockOnKeyPress = sinon.spy();
   const mockOnKeyUp = sinon.spy();
+  const mockOnPaste = sinon.spy();
   const wrapper = shallow(
     <Input
       label="callbacks test (real-world)"
@@ -270,6 +306,7 @@ test('Input can fire all callbacks', () => {
       onKeyDown={mockOnKeyDown}
       onKeyPress={mockOnKeyPress}
       onKeyUp={mockOnKeyUp}
+      onPaste={mockOnPaste}
     />
   );
 
@@ -279,6 +316,7 @@ test('Input can fire all callbacks', () => {
   wrapper.find('input').simulate('keyup');
   wrapper.find('input').simulate('keydown');
   wrapper.find('input').simulate('keypress');
+  wrapper.find('input').simulate('paste');
 
   expect(mockOnChange.calledOnce).toBe(true);
   expect(mockOnFocus.calledOnce).toBe(true);
@@ -286,6 +324,7 @@ test('Input can fire all callbacks', () => {
   expect(mockOnKeyDown.calledOnce).toBe(true);
   expect(mockOnKeyPress.calledOnce).toBe(true);
   expect(mockOnKeyUp.calledOnce).toBe(true);
+  expect(mockOnPaste.calledOnce).toBe(true);
 });
 
 

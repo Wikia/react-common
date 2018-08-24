@@ -6,44 +6,29 @@ GitHub repository for now**
 | --- | --- |
 | `yarn add @wikia/react-design-system` | `npm install --save @wikia/react-design-system` |
 
-### 2. Use it in the code
+### 2. Include CSS
+Make sure you include the CSS in your styles.
+
+```scss static
+@import "~@wikia/react-design-system/dist/index.css";
+```
+
+### 3. Use it in the code
 ```js static
 import {Button, VideoPlayIcon} from '@wikia/react-design-system';
 ```
 
-## Requirements
-The only requirement is a Webpack configuration capable of transforming ES6 code and including SCSS files:
-- `babel` (+plugins: `babel-preset-react`, `babel-preset-env` and `babel-plugin-transform-object-rest-spread`)
-- `node-sass`
-- `postcss` with `autoprefixer` plugin
-- `react@16.3`
-- `webpack@4`
+### 4. Large imports
+Due to size of the DS SVG sprite, both `<IconSprite />` and `<Icon />` have been removed from the default library output and were put in the `icons` file.
 
-### Webpack config
-Ensure that your webpack config understands where this package is, and how to resolve node modules so that Wikia's `design-system` package can be found.
+In order to use them you need to include the following:
 
-Both examples below are intended to be illustrative only, and assume that you're already doing transpilation of ES6 and SCSS sources in your project.
-
-#### JavaScript Compilation
+#### JS
 ```js static
-module: {
-    rules: [
-        {
-            test: /\.js$/,  // along with whatever other extensions you're transpiling from ES6
-            include: [
-                // Your normal include paths here,
-                path.resolve(__dirname, '../node_modules/@wikia/react-design-system'),
-            ],
-            // ... everything else
+import {Icon, IconSprite} from '@wikia/react-design-system/dist/icons';
 ```
 
-#### Module Resolution
-```js static
-resolve: {
-    extensions: ['.js'],    // Along with whatever other extensions you're transpiling from ES6
-    modules: [
-        // Your normal module resolution here,
-        'node_modules'
-    ]
-},
+#### CSS
+```scss static
+@include "~@wikia/react-design-system/dist/icons.css";
 ```

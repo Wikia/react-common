@@ -13,6 +13,8 @@ const Spinner = ({
   className,
   size,
   stroke,
+  block,
+  inline,
 }) => {
   const style = {
     width: size,
@@ -22,9 +24,22 @@ const Spinner = ({
   const r = (size - stroke) / 2;
   const translate = r + (stroke / 2);
   const dash = 2 * Math.PI * r;
+  const classes = ['fandom-spinner'];
+
+  if (block) {
+    classes.push('is-block');
+  }
+
+  if (inline) {
+    classes.push('is-inline');
+  }
+
+  if (className) {
+    classes.push(className);
+  }
 
   return (
-    <div className={`fandom-spinner ${className}`} style={style}>
+    <div className={classes.join(' ')} style={style}>
       <svg
         width={size}
         height={size}
@@ -59,12 +74,22 @@ Spinner.propTypes = {
    * Stroke width
    */
   stroke: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /**
+   * Display block and center
+   */
+  block: PropTypes.bool,
+  /**
+   * Display contentinline based on line height
+   */
+  inline: PropTypes.bool,
 };
 
 Spinner.defaultProps = {
   className: '',
   size: 30,
   stroke: 2,
+  block: false,
+  inline: false,
 };
 
 export default withTimeoutFallback(Spinner, {timeout: 30000});

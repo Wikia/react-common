@@ -10,6 +10,26 @@ exports[`Icon component renders 1`] = `
 </svg>
 `;
 
+exports[`Icon component renders with a small icon (via attribute) 1`] = `
+<svg
+  className="wds-icon wds-icon-small"
+>
+  <use
+    xlinkHref="#wds-icons-cross"
+  />
+</svg>
+`;
+
+exports[`Icon component renders with a tiny icon (via attribute) 1`] = `
+<svg
+  className="wds-icon wds-icon-tiny"
+>
+  <use
+    xlinkHref="#wds-icons-cross"
+  />
+</svg>
+`;
+
 exports[`Icon component renders with a tiny icon 1`] = `
 <svg
   className="wds-icon wds-icon-tiny"

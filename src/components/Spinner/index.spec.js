@@ -44,3 +44,24 @@ test('Spinner renders correctly with custom colors (rgb)', () => {
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
+
+test('Spinner renders correctly with custom inline ', () => {
+  const component = renderer.create(
+    <Spinner inline />
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Spinner renders correctly with custom block ', () => {
+  const component = renderer.create(
+    <Spinner block />
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Spinner renders correctly with additional classname', () => {
+  const component = renderer.create(
+    <Spinner className="custom-class or-multiple-classes" />
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
