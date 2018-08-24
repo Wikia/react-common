@@ -9,13 +9,14 @@ const FallbackComponent = () => (<div> Alt Fallback </div>);
 
 test('Default Spinner with timeout', () => {
   const clock = sinon.useFakeTimers();
-  const SpinnerWithTimeout = withTimeoutFallback(FakeSpinner, {timeout: 100});
+  const SpinnerWithTimeout = withTimeoutFallback(FakeSpinner);
 
   const component = mount(
     <SpinnerWithTimeout />,
   );
   expect(component).toMatchSnapshot();
-  clock.tick(10001);
+  clock.tick(10000);
+  clock.tick(100);
   component.update();
   expect(component).toMatchSnapshot();
 });
@@ -31,8 +32,6 @@ test('Default spinner with shorter timeout', () => {
   expect(component).toMatchSnapshot();
   clock.tick(100);
   clock.tick(100);
-  clock.tick(100);
-  clock.tick(100);
   component.update();
   expect(component).toMatchSnapshot();
 });
@@ -45,7 +44,8 @@ test('Timer unmounts', () => {
     <SpinnerWithTimeout />,
   );
   expect(component).toMatchSnapshot();
-  clock.tick(10001);
+  clock.tick(100);
+  clock.tick(100);
   component.update();
   expect(component).toMatchSnapshot();
   component.unmount();
@@ -60,8 +60,6 @@ test('Alternate fallback component', () => {
   );
 
   expect(component).toMatchSnapshot();
-  clock.tick(100);
-  clock.tick(100);
   clock.tick(100);
   clock.tick(100);
   component.update();
