@@ -10,7 +10,6 @@ const DEFAULT_OPTIONS = {
 
 const TIMER_INTERVAL = 100;
 
-// TODO: CAKE-3226 Consider adding to react design system
 function withTimeoutFallback(Component, opts) {
   const options = {...DEFAULT_OPTIONS, ...opts};
   const FallbackComponent = options.FallbackComponent;

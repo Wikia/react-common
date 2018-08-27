@@ -22,7 +22,7 @@
 
 ## HOCS
 0. Higher order components (hoc) can be added by following the guide 
-Note:The one difference will be to use `js static` in the readme to prevent rendering as stylegudist doesn't have access to the hoc
+Note: The one difference will be to use `js static` in the readme to prevent rendering as styleguidist doesn't have access to the hoc
   
 
 ## Development server
