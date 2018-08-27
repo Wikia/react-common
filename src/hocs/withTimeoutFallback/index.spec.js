@@ -64,4 +64,8 @@ test('Alternate fallback component', () => {
   clock.tick(100);
   component.update();
   expect(component).toMatchSnapshot();
+
+  // allow unmouunt of hoc
+  clock.tick(100);
+  clock.tick(100);
 });
