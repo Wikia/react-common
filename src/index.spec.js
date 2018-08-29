@@ -6,5 +6,5 @@ import components from './index';
 const foo = 'foo';
 
 test('importing index.js works', () => {
-  expect(foo).toEqual('foo');
+    expect(foo).toEqual('foo');
 });

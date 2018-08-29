@@ -6,5 +6,5 @@ import icons from './icons';
 const foo = 'foo';
 
 test('importing icons.js works', () => {
-  expect(foo).toEqual('foo');
+    expect(foo).toEqual('foo');
 });
