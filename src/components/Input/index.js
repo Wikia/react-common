@@ -12,7 +12,7 @@ class Input extends React.Component {
     constructor(props) {
         super(props);
 
-        const value = props.value;
+        const { value } = props;
         const id = props.id || generateId();
 
         this.state = {
@@ -48,63 +48,84 @@ class Input extends React.Component {
     }
 
     getClassName() {
+        const {
+            disabled, readonly, status, resize, className,
+        } = this.props;
+
+        const { isEmpty, isFocused } = this.state;
+
         let statusClass = null;
 
-        if (this.state.isFocused) {
+        if (isFocused) {
             statusClass = 'is-focused';
-        } else if (this.state.isEmpty) {
+        } else if (isEmpty) {
             statusClass = 'is-empty';
         }
 
         return [
             'wds-input',
-            this.props.disabled ? 'is-disabled' : null,
-            this.props.readonly ? 'is-readonly' : null,
-            this.props.status === 'error' ? 'has-error' : null,
-            typeof this.props.resize === 'boolean' && this.props.resize ? 'is-resize' : null,
+            disabled ? 'is-disabled' : null,
+            readonly ? 'is-readonly' : null,
+            status === 'error' ? 'has-error' : null,
+            typeof resize === 'boolean' && resize ? 'is-resize' : null,
             statusClass,
-            this.props.className,
-        ].filter(Boolean).join(' ');
+            className,
+        ]
+            .filter(Boolean)
+            .join(' ');
     }
 
     getInputClassName() {
-        return [
-            'wds-input__field',
-            this.props.inputClassName,
-        ].join(' ');
+        const { inputClassName } = this.props;
+
+        return ['wds-input__field', inputClassName].join(' ');
     }
 
     getLabelClassName() {
-        return [
-            'wds-input__label',
-            this.props.labelClassName,
-        ].join(' ');
+        const { labelClassName } = this.props;
+
+        return ['wds-input__label', labelClassName].join(' ');
     }
 
     getHintClassName() {
-        return [
-            'wds-input__hint',
-            this.props.hintClassName,
-        ].join(' ');
+        const { hintClassName } = this.props;
+
+        return ['wds-input__hint', hintClassName].join(' ');
     }
 
     getSharedInputProps() {
+        const {
+            id,
+            value,
+        } = this.state;
+
+        const {
+            disabled,
+            onKeyDown,
+            onKeyPress,
+            onKeyUp,
+            onPaste,
+            placeholder,
+            readonly,
+            tabIndex,
+        } = this.props;
+
         return {
             className: this.getInputClassName(),
-            id: this.state.id,
-            name: this.state.id,
-            value: this.state.value,
+            id,
+            name: id,
+            value,
             onChange: this.handleChange,
             onBlur: this.handleBlur,
             onFocus: this.handleFocus,
-            onKeyUp: this.props.onKeyUp,
-            onKeyDown: this.props.onKeyDown,
-            onKeyPress: this.props.onKeyPress,
-            onPaste: this.props.onPaste,
-            readOnly: this.props.readonly,
-            disabled: this.props.disabled,
-            tabIndex: this.props.tabIndex,
-            placeholder: this.props.placeholder,
+            onKeyUp,
+            onKeyDown,
+            onKeyPress,
+            onPaste,
+            readOnly: readonly,
+            disabled,
+            tabIndex,
+            placeholder,
         };
     }
 
@@ -121,47 +142,61 @@ class Input extends React.Component {
     }
 
     handleChange(event) {
-        if (this.props.readonly || this.props.disabled) {
+        const { readonly, disabled, onChange } = this.props;
+
+        if (readonly || disabled) {
             return;
         }
 
-        const value = event.target.value;
+        const { value } = event.target;
 
         this.setState({
             value,
             isEmpty: value.length === 0,
         });
-        this.props.onChange(value, event);
+        onChange(value, event);
     }
 
     handleFocus(event) {
-        if (this.props.readonly) {
+        const { readonly, onFocus } = this.props;
+
+        if (readonly) {
             return;
         }
 
         this.setState({
             isFocused: true,
         });
-        this.props.onFocus(event);
+        onFocus(event);
     }
 
     handleBlur(event) {
+        const { onBlur } = this.props;
+
         this.setState({
             isFocused: false,
         });
-        this.props.onBlur(event);
+        onBlur(event);
     }
 
     isAutoFocus() {
-        return (this.props.autoFocus || this.props.forceFocus) && !this.props.disabled && !this.props.readonly;
+        const {
+            autoFocus, forceFocus, disabled, readonly,
+        } = this.props;
+
+        return (autoFocus || forceFocus) && !disabled && !readonly;
     }
 
     isForceFocus() {
-        return this.props.forceFocus && !this.props.disabled && !this.props.readonly;
+        const { forceFocus, disabled, readonly } = this.props;
+
+        return forceFocus && !disabled && !readonly;
     }
 
     isAutoResize() {
-        return this.props.resize === 'auto' && !this.props.disabled && !this.props.readonly;
+        const { resize, disabled, readonly } = this.props;
+
+        return resize === 'auto' && !disabled && !readonly;
     }
 
     autoFocus() {
@@ -179,10 +214,10 @@ class Input extends React.Component {
     }
 
     handleAutoResize() {
-    // height has to be reset first because if not it keeps increasing every time user will type a character
-    // setting actual height must be done in setState callback, because React might optimize this into one setState call
-    // scrollHeight includes padding but not border, we need to compensate this to avoid slight height change
-    // keep value in sync with bottom-border in .wds-input__field styles
+        // height has to be reset first because if not it keeps increasing every time user will type a character
+        // setting actual height must be done in setState callback, because React might optimize this into one setState call
+        // scrollHeight includes padding but not border, we need to compensate this to avoid slight height change
+        // keep value in sync with bottom-border in .wds-input__field styles
         const BOTTOM_BORDER_WIDTH = 1;
 
         this.setState({ dynamicTextareaHeight: 'auto' }, () => {
@@ -194,53 +229,76 @@ class Input extends React.Component {
     }
 
     renderMultiline() {
+        const { rows } = this.props;
+
+        const { dynamicTextareaHeight, value } = this.state;
+
         const props = {
             ...this.getSharedInputProps(),
-            rows: this.props.rows,
+            rows,
         };
 
         if (this.isAutoResize()) {
             props.onInput = this.handleAutoResize;
         }
 
-        if (this.state.dynamicTextareaHeight) {
-            props.style = { height: this.state.dynamicTextareaHeight };
+        if (dynamicTextareaHeight) {
+            props.style = { height: dynamicTextareaHeight };
         }
 
         return (
-            <textarea ref={(input) => { this.input = input; }} {...props}>
-                {this.state.value}
+            <textarea
+                ref={(input) => {
+                    this.input = input;
+                }}
+                {...props}
+            >
+                {value}
             </textarea>
         );
     }
 
     renderInput() {
-        if (this.props.type === 'multiline') {
+        const { type } = this.props;
+
+        if (type === 'multiline') {
             return this.renderMultiline();
         }
 
         const props = {
             ...this.getSharedInputProps(),
-            type: this.props.type,
+            type,
         };
 
-        return <input ref={(input) => { this.input = input; }} {...props} />;
+        return (
+            <input
+                ref={(input) => {
+                    this.input = input;
+                }}
+                {...props}
+            />
+        );
     }
 
     renderLabel() {
+        const { id } = this.state;
+        const { label } = this.props;
+
         return (
-            <label className={this.getLabelClassName()} htmlFor={this.state.id}>
-                {this.props.label}
+            <label className={this.getLabelClassName()} htmlFor={id}>
+                {label}
             </label>
         );
     }
 
     renderHint() {
-        if (!this.props.hint) {
+        const { hint } = this.props;
+
+        if (!hint) {
             return null;
         }
 
-        return <div className={this.getHintClassName()}>{this.props.hint}</div>;
+        return <div className={this.getHintClassName()}>{hint}</div>;
     }
 
     render() {
@@ -256,50 +314,53 @@ class Input extends React.Component {
 
 Input.propTypes = {
     /**
-   * Additional class name for the component
-   */
+     * Additional class name for the component
+     */
     autoFocus: PropTypes.bool,
     /**
-   * Additional class name for the hint
-   */
+     * Additional class name for the hint
+     */
     className: PropTypes.string,
     /**
-   * Additional class name for the input
-   */
+     * Additional class name for the input
+     */
     disabled: PropTypes.bool,
     /**
-   * Additional class name for the label
-   */
+     * Additional class name for the label
+     */
     forceFocus: PropTypes.bool,
     /**
-   * ID of the element - by default it's generated automatically
-   */
+     * ID of the element - by default it's generated automatically
+     */
     hint: PropTypes.string,
     /**
-   * Type of the input.
-   * Use `multiline` for multi-line input (textarea).
-   */
+     * Type of the input.
+     * Use `multiline` for multi-line input (textarea).
+     */
     hintClassName: PropTypes.string,
     /**
-   * Value
-   */
+     * Value
+     */
     id: PropTypes.string,
     /**
-   * Label that we want to display.
-   */
+     * Label that we want to display.
+     */
     inputClassName: PropTypes.string,
     /**
-   * Hint to display
-   */
+     * Hint to display
+     */
     label: (props, propName) => {
+        // eslint-disable-next-line react/destructuring-assignment
         if (props.placeholder && props[propName]) {
             return new Error(`Prop ${propName} is not used when placeholder is set`);
         }
 
+        // eslint-disable-next-line react/destructuring-assignment
         if (!props.placeholder && !props[propName]) {
             return new Error(`Prop ${propName} is required when placeholder is not set`);
         }
 
+        // eslint-disable-next-line react/destructuring-assignment
         if (typeof props[propName] !== 'string') {
             return new Error(`Prop ${propName} is not a string`);
         }
@@ -307,78 +368,75 @@ Input.propTypes = {
         return null;
     },
     /**
-   * Placeholder to display
-   */
+     * Placeholder to display
+     */
     labelClassName: PropTypes.string,
     /**
-   * Status
-   */
+     * Status
+     */
     onBlur: PropTypes.func,
     /**
-   * Tab Index
-   */
+     * Tab Index
+     */
     onChange: PropTypes.func,
     /**
-   * Initial number of rows
-   *
-   * **Note**: This prop only makes sense for multiline inputs.
-   */
+     * Initial number of rows
+     *
+     * **Note**: This prop only makes sense for multiline inputs.
+     */
     onFocus: PropTypes.func,
     /**
-   * Can the textarea be resized by the user
-   * Use `auto` to adjust textarea height automatically
-   *
-   * **Note**: This prop only makes sense for multiline inputs.
-   */
+     * Can the textarea be resized by the user
+     * Use `auto` to adjust textarea height automatically
+     *
+     * **Note**: This prop only makes sense for multiline inputs.
+     */
     onKeyDown: PropTypes.func,
     /**
-   * Auto focus flag
-   */
+     * Auto focus flag
+     */
     onKeyPress: PropTypes.func,
     /**
-   * Force focus flag
-   */
+     * Force focus flag
+     */
     onKeyUp: PropTypes.func,
     /**
-   * Disabled flag
-   */
+     * Disabled flag
+     */
     onPaste: PropTypes.func,
     /**
-   * Readonly flag
-   */
+     * Readonly flag
+     */
     placeholder: PropTypes.string,
     /**
-   * Callback for `onBlur` event
-   */
+     * Callback for `onBlur` event
+     */
     readonly: PropTypes.bool,
     /**
-   * Callback for `onChange` event - will be called whenever the value chnages
-   * with `callback(value, event)`.
-   */
+     * Callback for `onChange` event - will be called whenever the value chnages
+     * with `callback(value, event)`.
+     */
     resize: PropTypes.oneOf(['auto', true, false]),
     /**
-   * Callback for `onFocus` event
-   */
+     * Callback for `onFocus` event
+     */
     rows: PropTypes.number,
     /**
-   * Callback for `onKeyDown` event
-   */
+     * Callback for `onKeyDown` event
+     */
     status: PropTypes.oneOf(['normal', 'error']),
     /**
-   * Callback for `onKeyPress` event
-   */
+     * Callback for `onKeyPress` event
+     */
     tabIndex: PropTypes.number,
     /**
-   * Callback for `onKeyUp` event
-   */
+     * Callback for `onKeyUp` event
+     */
     type: PropTypes.oneOf(['text', 'number', 'email', 'search', 'tel', 'url', 'password', 'multiline']),
     /**
-   * Callback for `onPaste` event
-   */
-    value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]),
+     * Callback for `onPaste` event
+     */
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Input.defaultProps = {

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// eslint-disable-next-line no-restricted-imports
 import Icon from '../Icon';
 
 import './styles.scss';

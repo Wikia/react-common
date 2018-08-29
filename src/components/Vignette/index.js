@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import { getVignetteParams, getUuid } from './helper';
 
-const vignetteUrl = '';
-
 /**
  * Vignette helper for getting scaled/resized images from Static Image Assets service.
  *

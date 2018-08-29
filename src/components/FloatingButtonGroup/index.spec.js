@@ -1,8 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import sinon from 'sinon';
 
+// eslint-disable-next-line no-restricted-imports
 import FloatingButton from '../FloatingButton';
 
 import FloatingButtonGroup from './index';

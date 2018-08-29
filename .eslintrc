@@ -70,7 +70,7 @@
     "react/sort-prop-types": "error",
     "jsx-a11y/alt-text": [2, {
       "elements": ["img", "object", "area", "input[type=\"image\"]"],
-      "img": ["Image", "Vignette"]
+      "img": ["Image"]
     }],
     "jest/consistent-test-it": "error",
     "jest/no-disabled-tests": "error",
@@ -81,7 +81,9 @@
     "jest/prefer-to-have-length": "warn",
     "jest/valid-describe": "error",
     "jest/valid-expect-in-promise": "error",
-    "jest/valid-expect": "error"
+    "jest/valid-expect": "error",
+    "react/button-has-type": 0,
+    "jsx-a11y/label-has-for": 0,
   },
   "plugins": [
     "react",

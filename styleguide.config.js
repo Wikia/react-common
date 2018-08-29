@@ -55,7 +55,6 @@ module.exports = {
     },
     getComponentPathLine(componentPath) {
         const name = path.basename(path.dirname(componentPath));
-        const dir = path.dirname(componentPath);
 
         return `import {${name}} from '${pkg.name}';`;
     },

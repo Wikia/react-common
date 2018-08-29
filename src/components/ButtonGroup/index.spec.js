@@ -1,8 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
-import sinon from 'sinon';
 
+// eslint-disable-next-line no-restricted-imports
 import Button from '../Button';
 
 import ButtonGroup from './index';

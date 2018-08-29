@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// eslint-disable-next-line no-restricted-imports
 import BannerNotification from '../BannerNotification';
 
 import messageType from './bannerNotificationsMessageType';
@@ -29,7 +30,9 @@ class BannerNotifications extends React.Component {
     }
 
     onClose(id) {
-        this.props.onClose(id);
+        const { onClose } = this.props;
+
+        onClose(id);
     }
 
     renderNotification({
