@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// eslint-disable-next-line no-restricted-imports
 import BannerNotification from '../BannerNotification';
 
 import messageType from './bannerNotificationsMessageType';
@@ -22,63 +23,67 @@ import messageType from './bannerNotificationsMessageType';
  * `bannerNotificationsMessageType` is exported along with `BannerNotification`
  */
 class BannerNotifications extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.onClose = this.onClose.bind(this);
-  }
-
-  onClose(id) {
-    this.props.onClose(id);
-  }
-
-  renderNotification({text, type, id, permanent}) {
-    const props = {
-      key: id,
-      type,
-      text,
-    };
-
-    if (permanent) {
-      return <BannerNotification {...props} />;
-    }
-    return <BannerNotification {...props} onClose={() => this.onClose(id)} />;
-  }
-
-  render() {
-    const {className, messages} = this.props;
-
-    if (messages.length === 0) {
-      return null;
+        this.onClose = this.onClose.bind(this);
     }
 
-    return (
-      <div className={`wds-banner-notification__container ${className}`}>
-        {messages.map(message => this.renderNotification(message))}
-      </div>
-    );
-  }
+    onClose(id) {
+        const { onClose } = this.props;
+
+        onClose(id);
+    }
+
+    renderNotification({
+        text, type, id, permanent,
+    }) {
+        const props = {
+            key: id,
+            type,
+            text,
+        };
+
+        if (permanent) {
+            return <BannerNotification {...props} />;
+        }
+        return <BannerNotification {...props} onClose={() => this.onClose(id)} />;
+    }
+
+    render() {
+        const { className, messages } = this.props;
+
+        if (messages.length === 0) {
+            return null;
+        }
+
+        return (
+            <div className={`wds-banner-notification__container ${className}`}>
+                {messages.map(message => this.renderNotification(message))}
+            </div>
+        );
+    }
 }
 
 BannerNotifications.propTypes = {
-  /**
+    /**
    * An additional class name
    */
-  className: PropTypes.string,
-  /**
+    className: PropTypes.string,
+    /**
    * An array of `bannerNotificationsMessageType` objects
    * @type {bannerNotificationsMessageType}
    */
-  messages: PropTypes.arrayOf(messageType).isRequired,
-  /**
+    messages: PropTypes.arrayOf(messageType).isRequired,
+    /**
    * Action invoked when close button is clicked
    * @type {[type]}
    */
-  onClose: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired,
 };
 
 BannerNotifications.defaultProps = {
-  className: '',
+    className: '',
 };
 
 export default BannerNotifications;

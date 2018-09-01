@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 import ExpendableText from './index';
 
@@ -16,51 +16,51 @@ shaman humblebrag lomo keffiyeh. Meditation offal mumblecore bushwick,
 normcore cardigan kitsch fanny pack banh mi disrupt lo-fi.`.replace(/\n/mg, ' ');
 
 test('ExpendableText renders correctly with default values', () => {
-  const expandableText1 = renderer.create(
-    <ExpendableText text={veryLongText} characterLimit={100} expandLabel={'EXPAND'} />,
-  );
-  expect(expandableText1.toJSON()).toMatchSnapshot();
+    const expandableText1 = renderer.create(
+        <ExpendableText text={veryLongText} characterLimit={100} expandLabel="EXPAND" />,
+    );
+    expect(expandableText1.toJSON()).toMatchSnapshot();
 
-  const expandableText2 = renderer.create(
-    <ExpendableText text={shortText} characterLimit={100} expandLabel={'EXPAND'} />,
-  );
-  expect(expandableText2.toJSON()).toMatchSnapshot();
+    const expandableText2 = renderer.create(
+        <ExpendableText text={shortText} characterLimit={100} expandLabel="EXPAND" />,
+    );
+    expect(expandableText2.toJSON()).toMatchSnapshot();
 });
 
 test('ExpendableText lifecycle works', () => {
-  const expandableText = shallow(
-    <ExpendableText text={veryLongText} characterLimit={100} expandLabel={'EXPAND'} />,
-  );
-  // trigger prop change
-  expandableText.setProps({
-    text: shortText,
-  });
-  expect(expandableText.text()).toEqual(shortText);
+    const expandableText = shallow(
+        <ExpendableText text={veryLongText} characterLimit={100} expandLabel="EXPAND" />,
+    );
+    // trigger prop change
+    expandableText.setProps({
+        text: shortText,
+    });
+    expect(expandableText.text()).toEqual(shortText);
 });
 
 test('ExpendableText renders correctly with different params', () => {
-  const expandableText1 = renderer.create(
-    <ExpendableText text={veryLongText} characterLimit={5} expandLabel={'MORE'} />,
-  );
-  expect(expandableText1.toJSON()).toMatchSnapshot();
+    const expandableText1 = renderer.create(
+        <ExpendableText text={veryLongText} characterLimit={5} expandLabel="MORE" />,
+    );
+    expect(expandableText1.toJSON()).toMatchSnapshot();
 
-  const expandableText2 = renderer.create(
-    <ExpendableText text={veryLongText} characterLimit={50} expandLabel={'MOREMORE'} />,
-  );
-  expect(expandableText2.toJSON()).toMatchSnapshot();
+    const expandableText2 = renderer.create(
+        <ExpendableText text={veryLongText} characterLimit={50} expandLabel="MOREMORE" />,
+    );
+    expect(expandableText2.toJSON()).toMatchSnapshot();
 
-  const expandableText3 = renderer.create(
-    <ExpendableText text={veryLongText} characterLimit={5000} expandLabel={'X'} />,
-  );
-  expect(expandableText3.toJSON()).toMatchSnapshot();
+    const expandableText3 = renderer.create(
+        <ExpendableText text={veryLongText} characterLimit={5000} expandLabel="X" />,
+    );
+    expect(expandableText3.toJSON()).toMatchSnapshot();
 });
 
 test('ExpendableText expands', () => {
-  const expandableText = shallow(
-    <ExpendableText text={veryLongText} characterLimit={50} expandLabel={'MORE'} />,
-  );
+    const expandableText = shallow(
+        <ExpendableText text={veryLongText} characterLimit={50} expandLabel="MORE" />,
+    );
 
-  // trigger expand
-  expandableText.find('button').simulate('click');
-  expect(expandableText.text()).toEqual(veryLongText);
+    // trigger expand
+    expandableText.find('button').simulate('click');
+    expect(expandableText.text()).toEqual(veryLongText);
 });

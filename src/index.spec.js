@@ -1,10 +1,9 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-
+// we're checking here if we can import the index
+// eslint-disable-next-line no-unused-vars
 import components from './index';
 
 const foo = 'foo';
 
 test('importing index.js works', () => {
-  expect(foo).toEqual('foo');
+    expect(foo).toEqual('foo');
 });
