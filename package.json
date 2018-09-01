@@ -12,8 +12,7 @@
     "dist"
   ],
   "repository": "git@github.com:Wikia/react-design-system.git",
-  "license": "PRIVATE",
-  "private": true,
+  "license": "Apache-2.0",
   "dependencies": {
     "design-system": "git://github.com/Wikia/design-system.git#12.0.0",
     "lodash.uniqueid": "^4.0.1",
