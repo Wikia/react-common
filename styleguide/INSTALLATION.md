@@ -1,6 +1,6 @@
 ### 1. Add it to your project
-**This is not working yet, since the package wasn't published to npm, please use
-GitHub repository for now**
+
+Package is available on npm: [@wikia/react-design-system](https://www.npmjs.com/package/@wikia/react-design-system)
 
 | [Yarn](https://yarnpkg.com/en/) | [NPM](https://www.npmjs.com/) |
 | --- | --- |
@@ -19,6 +19,9 @@ import {Button, VideoPlayIcon} from '@wikia/react-design-system';
 ```
 
 ### 4. Large imports
+
+**NOTE**: This will be changed/fixed in the near future.
+
 Due to size of the DS SVG sprite, both `<IconSprite />` and `<Icon />` have been removed from the default library output and were put in the `icons` file.
 
 In order to use them you need to include the following:

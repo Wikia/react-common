@@ -11,8 +11,4 @@ Reusable React components based (mostly) on https://github.com/Wikia/design-syst
 
 **WARNING**: This project is in an early stage of the development. Be aware!
 
-All the documentation available on [live site](https://wikia.github.io/react-design-system/) or in the following files:
-
-- [introduction](styleguide/INTRODUCTION.md)
-- [installation](styleguide/INSTALLATION.md)
-- [contribution](styleguide/CONTRIBUTION.md)
+All the documentation available on [live site](https://wikia.github.io/react-design-system/).

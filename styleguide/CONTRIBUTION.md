@@ -1,8 +1,7 @@
 ## General guidelines
 - ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.
-- general [Fandom's JavaScript](https://github.com/Wikia/eslint-config-fandom) rules apply (with the exception of whitespaces, check [`.editorconfig`](https://github.com/Wikia/react-design-system/blob/master/.editorconfig) file)
 - Use function syntax if possible, use nesting and flat files.
-- 100% coverage and no regressions
+- 100% lint and coverage and no regressions
 - use [Jest](https://facebook.github.io/jest/) as a general testing framework and for testing component's rendering
 - use [Enzyme](https://github.com/airbnb/enzyme) for testing interactions
 - use [Sinon](http://sinonjs.org/) for testing callbacks
