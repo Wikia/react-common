@@ -1,10 +1,6 @@
 ### 1. Add it to your project
 
-Package is available on npm: [@wikia/react-design-system](https://www.npmjs.com/package/@wikia/react-design-system)
-
-| [Yarn](https://yarnpkg.com/en/) | [NPM](https://www.npmjs.com/) |
-| --- | --- |
-| `yarn add @wikia/react-design-system` | `npm install --save @wikia/react-design-system` |
+...
 
 ### 2. Include CSS
 Make sure you include the CSS in your styles.

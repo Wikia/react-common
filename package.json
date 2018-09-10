@@ -12,7 +12,7 @@
     "dist"
   ],
   "repository": "git@github.com:Wikia/react-design-system.git",
-  "license": "Apache-2.0",
+  "license": "UNLICENSED",
   "dependencies": {
     "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.1",
