@@ -59,7 +59,4 @@ module.exports = {
         return `import {${name}} from '${pkg.name}';`;
     },
     webpackConfig,
-    require: [
-        path.join(__dirname, 'node_modules/design-system/dist/css/styles.css'),
-    ],
 };
