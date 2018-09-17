@@ -39,9 +39,6 @@
     "test": "yarn lint && yarn coverage"
   },
   "devDependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
     "@babel/core": "^7.0.1",
     "@babel/plugin-external-helpers": "^7.0.0",
     "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
@@ -68,7 +65,10 @@
     "lodash.uniqueid": "^4.0.1",
     "node-sass": "^4.9.3",
     "postcss-modules": "^1.3.2",
+    "prop-types": "^15.6.2",
     "raw-loader": "^0.5.1",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
     "react-styleguidist": "^7.3.8",
     "react-test-renderer": "^16.5.1",
     "rollup": "^0.66.0",
