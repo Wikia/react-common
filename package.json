@@ -13,6 +13,7 @@
   ],
   "repository": "git@github.com:Wikia/react-design-system.git",
   "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "lodash.uniqueid": "^4.0.1",
     "prop-types": "^15.6.1",
