@@ -11,6 +11,7 @@
   ],
   "repository": "git@github.com:Wikia/react-design-system.git",
   "license": "UNLICENSED",
+  "private": true,
   "peerDependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
