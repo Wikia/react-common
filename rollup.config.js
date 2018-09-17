@@ -43,11 +43,11 @@ const buildConfig = ({
             babelrc: false,
             exclude: 'node_modules/**',
             plugins: [
-                'babel-plugin-transform-object-rest-spread',
-                'external-helpers',
+                '@babel/plugin-syntax-object-rest-spread',
+                '@babel/external-helpers',
             ],
             presets: [
-                'babel-preset-react', ['env', {
+                '@babel/preset-react', ['@babel/preset-env', {
                     modules: false,
                     targets: {
                         browsers: [
