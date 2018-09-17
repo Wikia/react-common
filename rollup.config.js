@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import sass from 'rollup-plugin-sass';
+import commonjs from 'rollup-plugin-commonjs';
 import string from 'rollup-plugin-string/dist/rollup-plugin-string';
 
 import pkg from './package.json';
@@ -16,16 +17,10 @@ const buildConfig = ({
         {
             file: outputCjs,
             format: 'cjs',
-            name: 'react-design-system',
-        },
-        {
-            file: outputEs,
-            format: 'es',
         },
     ],
     external: [
         'design-system',
-        'lodash.uniqueid',
         'prop-types',
         'react',
     ],
@@ -43,11 +38,11 @@ const buildConfig = ({
             babelrc: false,
             exclude: 'node_modules/**',
             plugins: [
-                'babel-plugin-transform-object-rest-spread',
-                'external-helpers',
+                '@babel/plugin-syntax-object-rest-spread',
+                '@babel/external-helpers',
             ],
             presets: [
-                'babel-preset-react', ['env', {
+                '@babel/preset-react', ['@babel/preset-env', {
                     modules: false,
                     targets: {
                         browsers: [
@@ -60,6 +55,7 @@ const buildConfig = ({
                 }],
             ],
         }),
+        commonjs(),
     ],
 });
 
@@ -67,13 +63,11 @@ export default [
     buildConfig({
         input: 'src/index.js',
         outputCjs: pkg.main,
-        outputEs: pkg.module,
         outputCss: pkg.style,
     }),
     buildConfig({
         input: 'src/icons.js',
         outputCjs: pkg.mainIcons,
-        outputEs: pkg.moduleIcons,
         outputCss: pkg.styleIcons,
     }),
 ];
