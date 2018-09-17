@@ -16,11 +16,6 @@ const buildConfig = ({
         {
             file: outputCjs,
             format: 'cjs',
-            name: 'react-design-system',
-        },
-        {
-            file: outputEs,
-            format: 'es',
         },
     ],
     external: [
@@ -67,13 +62,11 @@ export default [
     buildConfig({
         input: 'src/index.js',
         outputCjs: pkg.main,
-        outputEs: pkg.module,
         outputCss: pkg.style,
     }),
     buildConfig({
         input: 'src/icons.js',
         outputCjs: pkg.mainIcons,
-        outputEs: pkg.moduleIcons,
         outputCss: pkg.styleIcons,
     }),
 ];
