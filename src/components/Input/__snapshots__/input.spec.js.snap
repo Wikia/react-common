@@ -432,7 +432,7 @@ exports[`Input renders correctly with a placeholder 1`] = `
 
 exports[`Input renders correctly with an error status and a hint 1`] = `
 <div
-  className="wds-input has-error"
+  className="wds-input has-error has-hint"
 >
   <input
     className="wds-input__field "

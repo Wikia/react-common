@@ -51,7 +51,12 @@ class Input extends React.Component {
 
     getClassName() {
         const {
-            disabled, readonly, status, resize, className,
+            disabled,
+            readonly,
+            status,
+            resize,
+            className,
+            hint,
         } = this.props;
 
         const { isEmpty, isFocused } = this.state;
@@ -70,6 +75,7 @@ class Input extends React.Component {
             readonly ? 'is-readonly' : null,
             status === 'error' ? 'has-error' : null,
             typeof resize === 'boolean' && resize ? 'is-resize' : null,
+            hint ? 'has-hint' : null,
             statusClass,
             className,
         ]
