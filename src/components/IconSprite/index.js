@@ -1,6 +1,7 @@
 import React from 'react';
 
-import * as sprite from 'design-system/dist/svg/sprite.svg'; // eslint-disable-line import/no-extraneous-dependencies
+// eslint-disable-next-line import/no-extraneous-dependencies
+import * as sprite from 'design-system/dist/svg/sprite.svg';
 
 const IconSprite = () => (
     // eslint-disable-next-line react/no-danger
