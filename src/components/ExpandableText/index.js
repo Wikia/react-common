@@ -14,86 +14,120 @@ import './styles.scss';
  * Button and the text itself can be syled with classes passed to the component.
  */
 class ExpandableText extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.handleExpandClick = this.handleExpandClick.bind(this);
+        this.handleExpandClick = this.handleExpandClick.bind(this);
 
-    const text = makeShortText(props.text, props.characterLimit);
-    this.state = {
-      isExpandable: text.length < props.text.length,
-      isExpanded: false,
-      text,
-    };
-  }
+        const shortText = makeShortText(props.text, props.characterLimit);
 
-  componentWillReceiveProps(newProps) {
-    const text = makeShortText(newProps.text, newProps.characterLimit);
-    this.setState({
-      isExpandable: text.length < newProps.text.length,
-      isExpanded: false,
-      text,
-    });
-  }
+        this.state = {
+            isExpandable: shortText.length < props.text.length,
+            isExpanded: false,
+            shortText,
+        };
+    }
 
-  handleExpandClick() {
-    this.setState({
-      isExpandable: false,
-      isExpanded: true,
-    });
-  }
+    componentWillReceiveProps(newProps) {
+        const shortText = makeShortText(newProps.text, newProps.characterLimit);
 
-  render() {
-    const expandBlock = (<span>
-      {this.props.ellipsis}&nbsp;
-      <button
-        className={`expandable-text__expand ${this.props.expandClassName}`}
-        onClick={this.handleExpandClick}
-      >
-        {this.props.expandLabel}
-      </button>
-    </span>);
+        this.setState({
+            isExpandable: shortText.length < newProps.text.length,
+            isExpanded: false,
+            shortText,
+        });
+    }
 
-    return (
-      <span className={`expandable-text ${this.props.className}`}>
-        {this.state.isExpanded ? this.props.text : this.state.text}
-        {this.state.isExpandable && expandBlock}
-      </span>
-    );
-  }
+    handleExpandClick() {
+        this.setState({
+            isExpandable: false,
+            isExpanded: true,
+        });
+    }
+
+    renderExpandBlock() {
+        const {
+            ellipsis,
+            expandLabel,
+            expandClassName,
+        } = this.props;
+
+        return (
+            <span>
+                {ellipsis}
+                &nbsp;
+                <button
+                    className={`expandable-text__expand ${expandClassName}`}
+                    onClick={this.handleExpandClick}
+                >
+                    {expandLabel}
+                </button>
+            </span>
+        );
+    }
+
+    renderText() {
+        const {
+            text,
+        } = this.props;
+
+        const {
+            isExpanded,
+            shortText,
+        } = this.state;
+
+        return isExpanded ? text : shortText;
+    }
+
+    render() {
+        const {
+            className,
+        } = this.props;
+
+        const {
+            isExpandable,
+        } = this.state;
+
+        return (
+            <span className={`expandable-text ${className}`}>
+                {this.renderText()}
+                {isExpandable && this.renderExpandBlock()}
+            </span>
+        );
+    }
 }
 
 ExpandableText.propTypes = {
-  /**
+    /**
    * Additional class name
    */
-  className: PropTypes.string,
-  /**
+    characterLimit: PropTypes.number.isRequired,
+    /**
    * Character limit
    */
-  characterLimit: PropTypes.number.isRequired,
-  /**
+    className: PropTypes.string,
+    /**
    * Ellipsis (defaults to `&hellip;`)
    */
-  ellipsis: PropTypes.string,
-  /**
+    ellipsis: PropTypes.string,
+    /**
    * Additional class name for the expand button
    */
-  expandClassName: PropTypes.string,
-  /**
+    expandClassName: PropTypes.string,
+    /**
    * Label used on the expand button
    */
-  expandLabel: PropTypes.string.isRequired,
-  /**
+    expandLabel: PropTypes.string.isRequired,
+    /**
    * Full text to display
    */
-  text: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
 };
 
 ExpandableText.defaultProps = {
-  className: '',
-  ellipsis: '\u2026',
-  expandClassName: '',
+    className: '',
+    ellipsis: '\u2026',
+    expandClassName: '',
 };
 
 export default ExpandableText;

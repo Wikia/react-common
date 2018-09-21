@@ -6,32 +6,32 @@ import './styles.scss';
  * Button group component
  */
 const ButtonGroup = ({
-  className,
-  children,
-  ...rest
-}) => {
-  const classes = [
-    'wds-button-group',
     className,
-  ].filter(c => c).join(' ');
+    children,
+    ...rest
+}) => {
+    const classes = [
+        'wds-button-group',
+        className,
+    ].filter(c => c).join(' ');
 
-  return <div className={classes} {...rest}>{children}</div>;
+    return <div className={classes} {...rest}>{children}</div>;
 };
 
 ButtonGroup.propTypes = {
-  /**
+    /**
    * @ignore
    */
-  children: PropTypes.node,
-  /**
+    children: PropTypes.node,
+    /**
    * Additional class name
    */
-  className: PropTypes.string,
+    className: PropTypes.string,
 };
 
 ButtonGroup.defaultProps = {
-  children: null,
-  className: '',
+    children: null,
+    className: '',
 };
 
 export default ButtonGroup;
