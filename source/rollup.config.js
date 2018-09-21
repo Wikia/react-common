@@ -15,7 +15,7 @@ const buildConfig = ({
     input,
     output: [
         {
-            file: outputCjs,
+            file: `../${outputCjs}`,
             format: 'cjs',
         },
     ],
@@ -32,7 +32,7 @@ const buildConfig = ({
             module: true,
         }),
         sass({
-            output: outputCss,
+            output: `../${outputCss}`,
         }),
         babel({
             babelrc: false,

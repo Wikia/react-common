@@ -1,4 +1,17 @@
-.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
+.expandable-text__expand {
+  /* unstyle button */
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.expandable-text__expand:active {
+  outline: 0;
+}.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
   opacity: 1;
 }
 .fandom-video-play-icon__circle {
@@ -52,6 +65,33 @@
   position: static;
   top: 0;
   width: auto;
+}.wds-fandom-content-well {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .wds-fandom-content-well {
+    margin: 0 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wds-fandom-content-well {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wds-fandom-content-well {
+    width: 732px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wds-fandom-content-well {
+    width: 988px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .wds-fandom-content-well {
+    width: 1244px;
+  }
 }.wds-content-well {
   box-sizing: border-box;
 }
@@ -788,46 +828,6 @@ button.wds-button, a.wds-button {
 .wds-button.wds-is-fullwidth {
   box-sizing: border-box;
   width: 100%;
-}.expandable-text__expand {
-  /* unstyle button */
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline;
-  font: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-}
-.expandable-text__expand:active {
-  outline: 0;
-}.wds-fandom-content-well {
-  box-sizing: border-box;
-}
-@media only screen and (max-width: 767px) {
-  .wds-fandom-content-well {
-    margin: 0 18px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .wds-fandom-content-well {
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .wds-fandom-content-well {
-    width: 732px;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .wds-fandom-content-well {
-    width: 988px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .wds-fandom-content-well {
-    width: 1244px;
-  }
 }.wds-icon {
   fill: currentColor;
   height: 24px;

@@ -24,7 +24,7 @@ function getSections() {
 
         if (components) {
             section.components = () => components.map(
-                componentName => resolve('src/components', componentName, 'index.js')
+                componentName => resolve('components', componentName, 'index.js')
             );
         }
 
@@ -47,8 +47,8 @@ module.exports = {
     },
     theme,
     styles,
-    styleguideDir: './docs/',
-    components: 'src/components/**/index.js',
+    styleguideDir: '../docs/',
+    components: 'components/**/index.js',
     sections: getSections(),
     getExampleFilename(componentPath) {
         return componentPath.replace(/index\.jsx?$/, 'README.md');
