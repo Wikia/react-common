@@ -510,7 +510,8 @@ function (_React$Component) {
           readonly = _this$props.readonly,
           status = _this$props.status,
           resize = _this$props.resize,
-          className = _this$props.className;
+          className = _this$props.className,
+          hint = _this$props.hint;
       var _this$state = this.state,
           isEmpty = _this$state.isEmpty,
           isFocused = _this$state.isFocused;
@@ -522,7 +523,7 @@ function (_React$Component) {
         statusClass = 'is-empty';
       }
 
-      return ['wds-input', disabled ? 'is-disabled' : null, readonly ? 'is-readonly' : null, status === 'error' ? 'has-error' : null, typeof resize === 'boolean' && resize ? 'is-resize' : null, statusClass, className].filter(Boolean).join(' ');
+      return ['wds-input', disabled ? 'is-disabled' : null, readonly ? 'is-readonly' : null, status === 'error' ? 'has-error' : null, typeof resize === 'boolean' && resize ? 'is-resize' : null, hint ? 'has-hint' : null, statusClass, className].filter(Boolean).join(' ');
     }
   }, {
     key: "getInputClassName",
