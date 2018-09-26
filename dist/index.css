@@ -1,4 +1,17 @@
-.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
+.expandable-text__expand {
+  /* unstyle button */
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.expandable-text__expand:active {
+  outline: 0;
+}.fandom-video-play-icon:hover .fandom-video-play-icon__circle {
   opacity: 1;
 }
 .fandom-video-play-icon__circle {
@@ -883,19 +896,6 @@ button.wds-button, a.wds-button {
 .wds-button.wds-is-fullwidth {
   box-sizing: border-box;
   width: 100%;
-}.expandable-text__expand {
-  /* unstyle button */
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline;
-  font: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-}
-.expandable-text__expand:active {
-  outline: 0;
 }.wds-icon {
   fill: currentColor;
   height: 24px;
