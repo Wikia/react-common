@@ -15,7 +15,7 @@ const buildConfig = ({
     input,
     output: [
         {
-            file: outputCjs,
+            file: `../${outputCjs}`,
             format: 'cjs',
         },
     ],
@@ -32,14 +32,13 @@ const buildConfig = ({
             module: true,
         }),
         sass({
-            output: outputCss,
+            output: `../${outputCss}`,
         }),
         babel({
             babelrc: false,
             exclude: 'node_modules/**',
             plugins: [
                 '@babel/plugin-syntax-object-rest-spread',
-                '@babel/external-helpers',
             ],
             presets: [
                 '@babel/preset-react', ['@babel/preset-env', {
