@@ -1,19 +1,12 @@
 {
   "name": "@wikia/react-design-system",
-  "version": "2.0.1",
+  "version": "2.1.3",
   "description": "Wikia's reusable React parts",
   "license": "UNLICENSED",
   "private": true,
-  "main": "dist/index.js",
-  "style": "dist/index.css",
-  "mainIcons": "dist/icons.js",
-  "styleIcons": "dist/icons.css",
-  "files": [
-    "dist"
-  ],
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
   }
 }

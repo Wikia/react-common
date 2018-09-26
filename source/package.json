@@ -12,17 +12,13 @@
   "repository": "git@github.com:Wikia/react-design-system.git",
   "license": "UNLICENSED",
   "private": true,
-  "peerDependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
-  },
   "scripts": {
     "clean": "rimraf ../dist",
     "styleguide:watch": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "lib:build": "yarn clean && rollup -c",
-    "build": "yarn lib:build && yarn styleguide:build",
+    "build": "yarn lib:build && yarn styleguide:build && yarn package:build",
+    "package:build": "node ./tasks/build-package.js",
     "coverage": "jest --coverage",
     "coveralls": "yarn coverage --runInBand && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dev": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn styleguide:watch\" \"yarn test:watch\"",
@@ -39,7 +35,7 @@
     "test:watch": "jest --watchAll --notify",
     "test": "yarn lint && yarn coverage"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.0.1",
     "@babel/plugin-external-helpers": "^7.0.0",
     "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
