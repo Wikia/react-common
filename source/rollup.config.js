@@ -39,7 +39,6 @@ const buildConfig = ({
             exclude: 'node_modules/**',
             plugins: [
                 '@babel/plugin-syntax-object-rest-spread',
-                '@babel/external-helpers',
             ],
             presets: [
                 '@babel/preset-react', ['@babel/preset-env', {
