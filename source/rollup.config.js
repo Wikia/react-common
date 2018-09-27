@@ -1,19 +1,30 @@
+import glob from 'glob';
+import rimraf from 'rimraf';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import sass from 'rollup-plugin-sass';
 import commonjs from 'rollup-plugin-commonjs';
 import string from 'rollup-plugin-string/dist/rollup-plugin-string';
 
-import pkg from './package.json';
+const sourceDirectories = [
+    'components',
+];
 
-const buildConfig = ({
-    input,
-    outputCjs,
-}) => ({
-    input,
+const sources = [];
+sourceDirectories.forEach(
+    directory => glob.sync(`${directory}/*`, {}).forEach(file => sources.push(file))
+);
+
+// remove existing files
+sourceDirectories.forEach(
+    directory => rimraf.sync(`../${directory}`)
+);
+
+const buildConfig = path => ({
+    input: `${path}/index.js`,
     output: [
         {
-            file: `../${outputCjs}`,
+            file: `../${path}.js`,
             format: 'cjs',
         },
     ],
@@ -57,13 +68,6 @@ const buildConfig = ({
     ],
 });
 
-export default [
-    buildConfig({
-        input: 'src/index.js',
-        outputCjs: pkg.main,
-    }),
-    buildConfig({
-        input: 'src/icons.js',
-        outputCjs: pkg.mainIcons,
-    }),
-];
+export default sources.map(
+    source => buildConfig(source),
+);
