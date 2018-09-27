@@ -9,7 +9,6 @@ import pkg from './package.json';
 const buildConfig = ({
     input,
     outputCjs,
-    outputCss,
 }) => ({
     input,
     output: [
@@ -31,7 +30,7 @@ const buildConfig = ({
             module: true,
         }),
         sass({
-            output: `../${outputCss}`,
+            output: true,
             // insert: true,
         }),
         babel({
@@ -62,11 +61,9 @@ export default [
     buildConfig({
         input: 'src/index.js',
         outputCjs: pkg.main,
-        outputCss: pkg.style,
     }),
     buildConfig({
         input: 'src/icons.js',
         outputCjs: pkg.mainIcons,
-        outputCss: pkg.styleIcons,
     }),
 ];
