@@ -9,7 +9,6 @@ import pkg from './package.json';
 const buildConfig = ({
     input,
     outputCjs,
-    outputEs,
     outputCss,
 }) => ({
     input,
@@ -33,6 +32,7 @@ const buildConfig = ({
         }),
         sass({
             output: `../${outputCss}`,
+            // insert: true,
         }),
         babel({
             babelrc: false,

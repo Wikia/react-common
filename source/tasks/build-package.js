@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
+import fs from 'fs';
 
 // read source file
-const source = require('../package.json');
+// eslint-disable-next-line
+import source from '../package';
 
 console.log(`Updating ${source.name} to version ${source.version}:`);
 
