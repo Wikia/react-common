@@ -9,19 +9,19 @@
 - use [Enzyme](https://github.com/airbnb/enzyme) for testing interactions
 - use [Sinon](http://sinonjs.org/) for testing callbacks
 
-## Step-by-step guide
+## Step-by-step guide for components
 
-1. Assuming the new component's name is `ComponentA` all it's files will be in `/src/components/ComponentA/` directory.
+1. Assuming the new component's name is `ComponentA` all it's files will be in `/source/components/ComponentA/` directory.
 2. Create component in `ComponentA/index.js`.
 3. Add component to `/src/index.js`.
-4. Add component to `/components.json`.
+4. Add component to `/config/styleguide.config.json`.
 5. (optionally) create styles in `ComponentA/styles.s?css` and import them in `ComponentA/index.js`.
 6. Document the usage and props in JSDocs in `ComponentA/index.js`.
 7. Add example or examples in `ComponentA/README.md`.
 8. Add unit test in `ComponentA/index.spec.js`, aim for 100% coverage and all the test cases.
 9. Create new Pull Request.
 10. Code will be merged to `master` only if there are no regressions and after a successful CR.
-11. When the code is merged to `master`, release new version of the styleguide.
+11. When the code is merged to `master`, release new version of the styleguide with one of the release commands.
 
 ## Development server
 
@@ -34,16 +34,35 @@
 The easiest way is to run the full suite:
 
 ```js static
-> yarn test
+> yarn ci
 ```
 
-It will run `eslint` and `jest`, and will output `jest --coverage` report.
+It will run linting (ESLint, Stylelint), Jest and will output coverage report.
 
-There's a command for watching tests:
+### Watch
+
+There's a command for watching Jest tests:
 
 ```js static
 > yarn test:watch
 ```
+
+## Build
+
+Running the build is as simple as:
+
+```js static
+> yarn build
+```
+
+This will run few build commands in sequence:
+
+1. Remove every generated file and directory from the root directory (equivalent of `yarn clean`).
+2. Build the library outputting built ES5 files to the root (`yarn lib:build`).
+3. Build the `docs/`  in the root directory; it contains the build styleguide that will appear on the GitHub pages (`yarn styleguide:build`).
+4. Build the `package.json` in the root directory (`yarn package:build`).
+5. Build the `README.md` in the root directory and in all auto generated directories (`yarn readme:build`).
+
 
 ## Release
 

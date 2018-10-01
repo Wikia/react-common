@@ -10,14 +10,18 @@ const babelConfig = require('./babel.config');
 
 const sources = [];
 config.sourceDirectories.forEach(
-    directory => glob.sync(`${directory}/*`, {}).forEach(file => sources.push(file))
+    // glob only dirs
+    directory => glob.sync(`${directory}/*/`, {}).forEach(
+        // drop the '/' from the end
+        file => sources.push(file.substring(0, file.length - 1))
+    )
 );
 
-const buildConfig = path => ({
-    input: `${path}/index.js`,
+const buildConfig = file => ({
+    input: `${file}/index.js`,
     output: [
         {
-            file: `${config.outputDir}/${path}.js`,
+            file: `${config.outputDir}/${file}.js`,
             format: 'cjs',
         },
     ],
