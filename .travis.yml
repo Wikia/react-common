@@ -7,7 +7,4 @@ cache:
 script:
   - cd source
   - yarn
-  - yarn lint
-  - yarn build
-  - yarn test:run --runInBand
-  - yarn coveralls
+  - yarn ci

@@ -1,21 +1,14 @@
-#!/usr/bin/env node
+const fs = require('fs');
 
-import fs from 'fs';
+const config = require('../config/config');
 
 // read source file
-// eslint-disable-next-line
-import source from '../package';
+const source = require('../package.json');
 
 console.log(`Updating ${source.name} to version ${source.version}:`);
 
 // those dependencies will end up in `peerDependencies`
-const dependencies = [
-    'prop-types',
-    'react',
-    'react-dom',
-];
-
-const peerDependencies = dependencies.map(
+const peerDependencies = config.externalDependencies.map(
     dependency => `"${dependency}": "${source.dependencies[dependency]}"`
 ).join(',\n    ');
 

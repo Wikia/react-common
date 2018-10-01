@@ -4,15 +4,15 @@
     "sections": [
       {
         "name": "Introduction",
-        "content": "styleguide/INTRODUCTION.md"
+        "content": "../docs/PREAMBULE.md"
       },
       {
         "name": "Installation",
-        "content": "styleguide/INSTALLATION.md"
+        "content": "../docs/INSTALLATION.md"
       },
       {
         "name": "Contribution",
-        "content": "styleguide/CONTRIBUTION.md"
+        "content": "../docs/CONTRIBUTION.md"
       }
     ]
   },
