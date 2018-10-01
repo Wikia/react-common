@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "yarn clean && yarn lib:build && yarn styleguide:build && yarn package:build",
+    "build": "yarn clean && yarn lib:build && yarn styleguide:build && yarn package:build && yarn readme:build",
     "clean": "node ./scripts/clean.js",
     "coveralls": "yarn test --runInBand && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dev": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn styleguide:watch\" \"yarn test:watch\"",
@@ -15,6 +15,7 @@
     "lint:css": "stylelint \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.css\" --fix",
     "lint:js": "eslint --cache .",
+    "readme:build": "node ./scripts/build-readme.js",
     "package:build": "node ./scripts/build-package.json.js",
     "release": "yarn release:patch",
     "release:major": "git checkout master && git pull && yarn build && git add .. && yarn version --new-version major && git push --follow-tags",
