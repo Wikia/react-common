@@ -1,0 +1,82 @@
+.wds-input {
+  margin: 30px 0 18px;
+  position: relative;
+}
+.wds-input:first-of-type {
+  margin-top: 18px;
+}
+.wds-input__field {
+  border: 0;
+  border-bottom: 1px solid #c5ced9;
+  box-sizing: border-box;
+  color: #39424d;
+  font-size: 16px;
+  line-height: 1em;
+  padding: 0;
+  padding-bottom: 2px;
+  resize: none;
+  width: 100%;
+}
+.wds-input__field:focus {
+  outline: 0;
+}
+.wds-input.is-resize .wds-input__field {
+  resize: vertical;
+}
+.wds-input textarea.wds-input__field {
+  line-height: 1.5em;
+}
+.wds-input__label {
+  color: #c5ced9;
+  font-size: 12px;
+  left: 0;
+  line-height: 0.75rem;
+  pointer-events: none;
+  position: absolute;
+  top: -16px;
+  transition: 0.2s ease all;
+}
+.wds-input__hint {
+  color: #c5ced9;
+  font-size: 12px;
+  line-height: 0.75rem;
+  margin-top: 6px;
+}
+.wds-input.is-empty > .wds-input__field {
+  border-bottom-color: #c5ced9;
+  color: #c5ced9;
+}
+.wds-input.is-empty > .wds-input__field ~ .wds-input__label {
+  font-size: 16px;
+  line-height: 1rem;
+  top: 0;
+}
+.wds-input.is-empty > .wds-input__hint {
+  color: #c5ced9;
+}
+.wds-input.is-focused > .wds-input__field {
+  border-color: #39424d;
+}
+.wds-input.is-focused > .wds-input__hint {
+  color: #39424d;
+}
+.wds-input.has-error > .wds-input__label {
+  color: #d71035;
+}
+.wds-input.has-error > .wds-input__field {
+  border-bottom-color: #d71035;
+}
+.wds-input.has-error > .wds-input__hint {
+  color: #d71035;
+}
+.wds-input.is-disabled > .wds-input__field {
+  border-bottom-color: #c5ced9;
+  border-bottom-style: dashed;
+  color: #c5ced9;
+}
+.wds-input.is-readonly, .wds-input.is-disabled {
+  cursor: not-allowed;
+}
+.wds-input.has-hint {
+  margin-bottom: 0;
+}
