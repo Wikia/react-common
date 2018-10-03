@@ -1,8 +1,6 @@
 const { exec } = require('child_process');
 
-let { version } = require('../package.json');
-
-version = `${version}-test2`;
+const { version } = require('../package.json');
 
 console.log(`Creating tag for version ${version}.`);
 
