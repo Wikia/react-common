@@ -4,7 +4,7 @@ const { version } = require('../package.json');
 
 console.log(`Creating tag for version ${version}.`);
 
-const command = `git tag -m "${version}" -a ${version} -s`;
+const command = `git commit -m "${version}" && git tag -m "${version}" -a ${version} -s`;
 
 exec(command, (error, stdout, stderr) => {
     if (error) {
