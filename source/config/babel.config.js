@@ -2,6 +2,7 @@ module.exports = {
     babelrc: false,
     exclude: 'node_modules/**',
     plugins: [
+        '@babel/plugin-proposal-class-properties',
         '@babel/plugin-syntax-object-rest-spread',
     ],
     presets: [

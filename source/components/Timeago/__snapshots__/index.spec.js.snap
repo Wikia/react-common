@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Timeago component 1`] = `
+<time
+  dateTime="Tue Jul 17 2018 23:58:43 GMT+0000"
+>
+  2mo
+</time>
+`;
