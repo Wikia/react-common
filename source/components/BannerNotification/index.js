@@ -42,11 +42,7 @@ const BannerNotification = ({
         <div className="wds-banner-notification__icon">
             <Icon name={getIconName(type)} />
         </div>
-        {allowHtml ? (
-            <span className="wds-banner-notification__text" dangerouslySetInnerHTML={{__html: text}} />
-        ) : (
-            <span className="wds-banner-notification__text">{text}</span>
-        )}
+        <span className="wds-banner-notification__text">{allowHtml ? children : text}</span>
         {onClose && <Icon name="cross-tiny" className="wds-banner-notification__close" onClick={onClose} />}
     </div>
 );
@@ -62,6 +58,7 @@ BannerNotification.propTypes = {
 BannerNotification.defaultProps = {
     className: '',
     onClose: null,
+    text: '',
 };
 
 export default BannerNotification;
