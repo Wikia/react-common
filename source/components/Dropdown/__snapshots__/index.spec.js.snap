@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown renders correctly with DropdownToggle and DropdownContent 1`] = `
+<div
+  className="wds-dropdown"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown__toggle"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content"
+  >
+    Content
+  </div>
+</div>
+`;
+
+exports[`Dropdown renders correctly with default values 1`] = `
+<div
+  className="wds-dropdown"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+/>
+`;

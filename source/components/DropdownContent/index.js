@@ -6,12 +6,12 @@ import classNames from 'classnames';
  * Basic DropdownContent component
  */
 const DropdownContent = ({
-                             children,
-                             dropdownLeftAligned,
-                             dropdownRightAligned,
-                             scrollable,
-                             isLevel2
-                         }) => {
+     children,
+     dropdownLeftAligned,
+     dropdownRightAligned,
+     scrollable,
+     isLevel2
+ }) => {
     const className = classNames({
         'wds-dropdown__content': true,
         'wds-is-left-aligned': dropdownLeftAligned,
