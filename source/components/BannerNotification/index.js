@@ -58,6 +58,7 @@ BannerNotification.propTypes = {
 BannerNotification.defaultProps = {
     className: '',
     onClose: null,
+    text: '',
 };
 
 export default BannerNotification;
