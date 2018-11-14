@@ -326,7 +326,6 @@ DropdownToggle.defaultProps = {
   isLevel2: false
 };
 
-var isTouchDevice = 'ontouchstart' in window;
 /**
  * Basic Dropdown component
  */
@@ -343,7 +342,8 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).call(this, props));
     _this.state = {
-      isClicked: false
+      isClicked: false,
+      isTouchDevice: window && 'ontouchstart' in window
     };
     _this.onMouseLeave = _this.onMouseLeave.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
@@ -360,7 +360,7 @@ function (_React$Component) {
         'wds-no-chevron': this.props.noChevron,
         'wds-has-dark-shadow': this.props.hasDarkShadow,
         'wds-dropdown-level-2': this.props.isLevel2,
-        'wds-is-touch-device': isTouchDevice
+        'wds-is-touch-device': this.state.isTouchDevice
       });
       return React.createElement("div", {
         className: className,
@@ -372,7 +372,7 @@ function (_React$Component) {
   }, {
     key: "onClick",
     value: function onClick(e) {
-      if (isTouchDevice) {
+      if (this.state.isTouchDevice) {
         this.setState('isClicked', !this.isClicked);
         e.preventDefault();
       }
@@ -380,7 +380,7 @@ function (_React$Component) {
   }, {
     key: "onMouseLeave",
     value: function onMouseLeave() {
-      if (isTouchDevice) {
+      if (this.state.isTouchDevice) {
         this.set('isClicked', false);
       }
     }

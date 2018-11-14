@@ -6,8 +6,6 @@ import DropdownToggle from '../DropdownToggle/index';
 
 import './styles.scss';
 
-const isTouchDevice = ('ontouchstart' in window);
-
 /**
  * Basic Dropdown component
  */
@@ -17,6 +15,7 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
+            isTouchDevice: window && ('ontouchstart' in window)
         };
 
         this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -31,7 +30,7 @@ class Dropdown extends React.Component {
             'wds-no-chevron': this.props.noChevron,
             'wds-has-dark-shadow': this.props.hasDarkShadow,
             'wds-dropdown-level-2': this.props.isLevel2,
-            'wds-is-touch-device': isTouchDevice,
+            'wds-is-touch-device': this.state.isTouchDevice,
         });
 
         return (
@@ -42,14 +41,14 @@ class Dropdown extends React.Component {
     }
 
     onClick(e) {
-        if (isTouchDevice) {
+        if (this.state.isTouchDevice) {
             this.setState('isClicked', !this.isClicked);
             e.preventDefault();
         }
     }
 
     onMouseLeave() {
-        if (isTouchDevice) {
+        if (this.state.isTouchDevice) {
             this.set('isClicked', false);
         }
     }
