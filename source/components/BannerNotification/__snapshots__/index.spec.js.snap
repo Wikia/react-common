@@ -124,6 +124,40 @@ exports[`BannerNotification renders correctly 4`] = `
 </div>
 `;
 
+exports[`BannerNotification renders correctly 5`] = `
+<div
+  className="wds-banner-notification wds-message "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <svg
+      className="wds-icon wds-icon-small"
+    >
+      <use
+        xlinkHref="#wds-icons-flag-small"
+      />
+    </svg>
+  </div>
+  <span
+    className="wds-banner-notification__text"
+  >
+    <em>
+      Note
+    </em>
+    : this is html.
+  </span>
+  <svg
+    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+    onClick={[Function]}
+  >
+    <use
+      xlinkHref="#wds-icons-cross-tiny"
+    />
+  </svg>
+</div>
+`;
+
 exports[`BannerNotification renders correctly without action 1`] = `
 <div
   className="wds-banner-notification wds-message "
