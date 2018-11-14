@@ -247,7 +247,8 @@ BannerNotification.propTypes = {
 };
 BannerNotification.defaultProps = {
   className: '',
-  onClose: null
+  onClose: null,
+  text: ''
 };
 
 var messageType = PropTypes.shape({

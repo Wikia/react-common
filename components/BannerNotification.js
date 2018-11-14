@@ -178,7 +178,8 @@ BannerNotification.propTypes = {
 };
 BannerNotification.defaultProps = {
   className: '',
-  onClose: null
+  onClose: null,
+  text: ''
 };
 
 module.exports = BannerNotification;
