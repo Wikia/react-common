@@ -15,10 +15,12 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
-            isTouchDevice: window && ('ontouchstart' in window)
+            isTouchDevice: typeof window !== 'undefined' && ('ontouchstart' in window)
         };
 
+        this.onClick = this.onClick.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.onMouseEnter = this.onMouseEnter.bind(this);
     }
 
     render() {
@@ -49,7 +51,13 @@ class Dropdown extends React.Component {
 
     onMouseLeave() {
         if (this.state.isTouchDevice) {
-            this.set('isClicked', false);
+            this.setState('isClicked', false);
+        }
+    }
+
+    onMouseEnter() {
+        if (this.state.isTouchDevice) {
+            this.setState('isClicked', false);
         }
     }
 }

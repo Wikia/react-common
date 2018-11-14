@@ -4,6 +4,7 @@ exports[`Dropdown renders correctly with DropdownToggle and DropdownContent 1`] 
 <div
   className="wds-dropdown"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -32,6 +33,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
 <div
   className="wds-dropdown"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 />
 `;

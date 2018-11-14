@@ -343,9 +343,11 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).call(this, props));
     _this.state = {
       isClicked: false,
-      isTouchDevice: window && 'ontouchstart' in window
+      isTouchDevice: typeof window !== 'undefined' && 'ontouchstart' in window
     };
+    _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onMouseLeave = _this.onMouseLeave.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.onMouseEnter = _this.onMouseEnter.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
@@ -381,7 +383,14 @@ function (_React$Component) {
     key: "onMouseLeave",
     value: function onMouseLeave() {
       if (this.state.isTouchDevice) {
-        this.set('isClicked', false);
+        this.setState('isClicked', false);
+      }
+    }
+  }, {
+    key: "onMouseEnter",
+    value: function onMouseEnter() {
+      if (this.state.isTouchDevice) {
+        this.setState('isClicked', false);
       }
     }
   }]);
