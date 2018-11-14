@@ -36,7 +36,7 @@ function getClassName(type) {
  * This is a single component used in `BannerNotifications` component.
  */
 const BannerNotification = ({
-    className, type, text, onClose, allowHtml, children,
+    allowHtml, children, className, onClose, text, type,
 }) => (
     <div className={`wds-banner-notification ${getClassName(type)} ${className}`}>
         <div className="wds-banner-notification__icon">
@@ -49,13 +49,16 @@ const BannerNotification = ({
 
 BannerNotification.propTypes = {
     allowHtml: PropTypes.bool,
+    children: PropTypes.node,
     className: PropTypes.string,
     onClose: PropTypes.func,
-    text: PropTypes.string.isRequired,
+    text: PropTypes.string,
     type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired,
 };
 
 BannerNotification.defaultProps = {
+    allowHtml: false,
+    children: '',
     className: '',
     onClose: null,
     text: '',
