@@ -220,7 +220,9 @@ var BannerNotification = function BannerNotification(_ref) {
   var className = _ref.className,
       type = _ref.type,
       text = _ref.text,
-      onClose = _ref.onClose;
+      onClose = _ref.onClose,
+      allowHtml = _ref.allowHtml,
+      children = _ref.children;
   return React.createElement("div", {
     className: "wds-banner-notification ".concat(getClassName(type), " ").concat(className)
   }, React.createElement("div", {
@@ -229,7 +231,7 @@ var BannerNotification = function BannerNotification(_ref) {
     name: getIconName(type)
   })), React.createElement("span", {
     className: "wds-banner-notification__text"
-  }, text), onClose && React.createElement(Icon, {
+  }, allowHtml ? children : text), onClose && React.createElement(Icon, {
     name: "cross-tiny",
     className: "wds-banner-notification__close",
     onClick: onClose
@@ -237,6 +239,7 @@ var BannerNotification = function BannerNotification(_ref) {
 };
 
 BannerNotification.propTypes = {
+  allowHtml: PropTypes.bool,
   className: PropTypes.string,
   onClose: PropTypes.func,
   text: PropTypes.string.isRequired,
