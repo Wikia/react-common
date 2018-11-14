@@ -43,7 +43,7 @@ const BannerNotification = ({
             <Icon name={getIconName(type)} />
         </div>
         {allowHtml ? (
-            <span className="wds-banner-notification__text" dangerouslySetInnerHTML={text} />
+            <span className="wds-banner-notification__text" dangerouslySetInnerHTML={{__html: text}} />
         ) : (
             <span className="wds-banner-notification__text">{text}</span>
         )}
