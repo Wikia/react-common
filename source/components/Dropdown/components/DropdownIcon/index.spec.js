@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 
 import DropdownIcon from './index';
-import Icon from '../Icon/index';
+import Icon from '../../../Icon';
 
 /* eslint-disable no-alert */
 

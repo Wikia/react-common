@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from '../Icon/index';
+import Icon from '../../../Icon';
 
 /**
  * Basic DropdownIcon component
@@ -16,6 +16,9 @@ const DropdownIcon = ({
 };
 
 DropdownIcon.propTypes = {
+    /**
+     * Is it a nested dropdown
+     */
     isLevel2: PropTypes.bool
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import DropdownIcon from '../DropdownIcon/index';
+import DropdownIcon from '../DropdownIcon';
 
 /**
  * Basic DropdownToggle component
@@ -24,7 +24,13 @@ const DropdownToggle = ({
 };
 
 DropdownToggle.propTypes = {
+    /**
+     * Dropdown toggle content
+     */
     children: PropTypes.node,
+    /**
+     * Is it a nested dropdown
+     */
     isLevel2: PropTypes.bool
 };
 

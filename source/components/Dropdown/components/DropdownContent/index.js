@@ -29,10 +29,25 @@ const DropdownContent = ({
 };
 
 DropdownContent.propTypes = {
+    /**
+     * React Component to display as content
+     */
     children: PropTypes.node,
+    /**
+     * Should content be left-aligned with the dropdown toggle
+     */
     dropdownLeftAligned: PropTypes.bool,
+    /**
+     * Should content be right-aligned with the dropdown toggle
+     */
     dropdownRightAligned: PropTypes.bool,
+    /**
+     * Should content be scrollable
+     */
     scrollable: PropTypes.bool,
+    /**
+     * Is it a nested dropdown
+     */
     isLevel2: PropTypes.bool,
 };
 

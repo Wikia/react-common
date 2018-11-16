@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
@@ -347,35 +345,55 @@ function (_React$Component) {
     };
     _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onMouseLeave = _this.onMouseLeave.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onMouseEnter = _this.onMouseEnter.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(Dropdown, [{
     key: "render",
     value: function render() {
-      var children = this.props.children;
+      var _this$props = this.props,
+          children = _this$props.children,
+          toggle = _this$props.toggle,
+          dropdownLeftAligned = _this$props.dropdownLeftAligned,
+          dropdownRightAligned = _this$props.dropdownRightAligned,
+          isLevel2 = _this$props.isLevel2,
+          hasShadow = _this$props.hasShadow,
+          noChevron = _this$props.noChevron,
+          hasDarkShadow = _this$props.hasDarkShadow,
+          isActive = _this$props.isActive,
+          contentScrollable = _this$props.contentScrollable;
+      var _this$state = this.state,
+          isClicked = _this$state.isClicked,
+          isTouchDevice = _this$state.isTouchDevice;
       var className = classnames({
         'wds-dropdown': true,
-        'wds-is-active': this.state.isClicked || this.props.isActive,
-        'wds-has-shadow': this.props.hasShadow,
-        'wds-no-chevron': this.props.noChevron,
-        'wds-has-dark-shadow': this.props.hasDarkShadow,
-        'wds-dropdown-level-2': this.props.isLevel2,
-        'wds-is-touch-device': this.state.isTouchDevice
+        'wds-is-active': isClicked || isActive,
+        'wds-has-shadow': hasShadow,
+        'wds-no-chevron': noChevron,
+        'wds-has-dark-shadow': hasDarkShadow,
+        'wds-dropdown-level-2': isLevel2,
+        'wds-is-touch-device': isTouchDevice
       });
       return React.createElement("div", {
         className: className,
         onClick: this.onClick,
-        onMouseLeave: this.onMouseLeave,
-        onMouseEnter: this.onMouseEnter
-      }, children);
+        onMouseLeave: this.onMouseLeave
+      }, React.createElement(DropdownToggle, {
+        isLevel2: isLevel2
+      }, toggle), React.createElement(DropdownContent, {
+        dropdownLeftAligned: dropdownLeftAligned,
+        dropdownRightAligned: dropdownRightAligned,
+        isLevel2: isLevel2,
+        scrollable: contentScrollable
+      }, children));
     }
   }, {
     key: "onClick",
     value: function onClick(e) {
       if (this.state.isTouchDevice) {
-        this.setState('isClicked', !this.isClicked);
+        this.setState({
+          isClicked: !this.isClicked
+        });
         e.preventDefault();
       }
     }
@@ -383,14 +401,9 @@ function (_React$Component) {
     key: "onMouseLeave",
     value: function onMouseLeave() {
       if (this.state.isTouchDevice) {
-        this.setState('isClicked', false);
-      }
-    }
-  }, {
-    key: "onMouseEnter",
-    value: function onMouseEnter() {
-      if (this.state.isTouchDevice) {
-        this.setState('isClicked', false);
+        this.setState({
+          isClicked: false
+        });
       }
     }
   }]);
@@ -403,16 +416,21 @@ Dropdown.propTypes = {
   hasShadow: PropTypes.bool,
   noChevron: PropTypes.bool,
   hasDarkShadow: PropTypes.bool,
-  isLevel2: PropTypes.bool
+  isLevel2: PropTypes.bool,
+  dropdownLeftAligned: PropTypes.bool,
+  dropdownRightAligned: PropTypes.bool,
+  contentScrollable: PropTypes.bool,
+  toggle: PropTypes.node.isRequired
 };
 Dropdown.defaultProps = {
   children: null,
   hasShadow: false,
   noChevron: false,
   hasDarkShadow: false,
+  dropdownLeftAligned: false,
+  dropdownRightAligned: false,
+  contentScrollable: false,
   isLevel2: false
 };
 
-exports.default = Dropdown;
-exports.DropdownToggle = DropdownToggle;
-exports.DropdownContent = DropdownContent;
+module.exports = Dropdown;
