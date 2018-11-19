@@ -86,6 +86,33 @@ class Select extends React.Component {
             .join(' ');
     }
 
+    getValueFromProps() {
+        const { value, options } = this.props;
+
+        if (!value) {
+            return undefined;
+        }
+
+        let valuesWithLabels = value;
+        if (!(value instanceof Array)) {
+            valuesWithLabels = [value];
+        }
+
+        valuesWithLabels = valuesWithLabels
+            .map(v => options.find(o => o.value === v))
+            .filter(Boolean);
+
+        if (valuesWithLabels.length === 0) {
+            return undefined;
+        }
+
+        if (this.props.multi) {
+            return valuesWithLabels;
+        }
+
+        return valuesWithLabels[0];
+    }
+
     render() {
         return (
             <ReactSelect
@@ -104,6 +131,7 @@ class Select extends React.Component {
                 onFocus={this.onFocus}
                 onInputChange={this.onTextInputChange}
                 options={this.props.options}
+                value={this.getValueFromProps()}
                 components={{
                     LoadingIndicator: Spinner,
                     IndicatorSeparator: null,
@@ -173,6 +201,13 @@ Select.propTypes = {
      * whether or not to allow text searching
      */
     searchable: PropTypes.bool,
+    /**
+     * when using as controlled input, the currently selected values
+     */
+    value: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.any),
+        PropTypes.any,
+    ]),
 };
 
 Select.defaultProps = {
@@ -189,6 +224,7 @@ Select.defaultProps = {
     options: [],
     placeholder: 'Select...',
     searchable: true,
+    value: undefined,
 };
 
 export default Select;
