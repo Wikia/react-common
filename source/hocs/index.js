@@ -5,4 +5,4 @@
  */
 
 // eslint-disable-next-line
-export { default as withTimeoutFallback } from './hocs/withTimeoutFallback';
+export { default as withTimeoutFallback } from './withTimeoutFallback';
