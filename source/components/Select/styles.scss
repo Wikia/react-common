@@ -1,0 +1,11 @@
+.fandom-select {
+	&--is-loading {
+		.fandom-select__dropdown-indicator {
+			display: none;
+		}
+
+		.fandom-spinner {
+			margin-right: 10px;
+		}
+	}
+}
