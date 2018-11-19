@@ -23,7 +23,8 @@
       "ButtonGroup",
       "FloatingButton",
       "FloatingButtonGroup",
-      "Spinner"
+      "Spinner",
+      "Dropdown"
     ]
   },
   {
