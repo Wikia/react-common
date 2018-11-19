@@ -1,12 +1,31 @@
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
 .fandom-select {
+	$bottom-border-size: 1px;
+
 	&__indicators {
 		.fandom-spinner {
-			margin-right: 10px;
+			margin: 0 10px;
 		}
 	}
 
 	&__control {
 		border: none !important;
 		box-shadow: none !important;
+
+		&--is-focused {
+			.fandom-select__value-container {
+				border-bottom-color: $wds-color-black;
+			}
+		}
+	}
+
+	&__value-container {
+		border-bottom: $bottom-border-size solid $wds-color-light-gray;
+	}
+
+	&__input {
+		position: relative;
+		top: $bottom-border-size;
 	}
 }
