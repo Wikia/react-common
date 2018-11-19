@@ -66,6 +66,7 @@
     "raw-loader": "^0.5.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
+    "react-select": "^2.1.1",
     "react-styleguidist": "^7.3.8",
     "react-test-renderer": "^16.5.2",
     "rimraf": "^2.6.2",
