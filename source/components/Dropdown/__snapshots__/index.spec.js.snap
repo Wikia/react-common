@@ -7,7 +7,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="wds-dropdown__toggle"
+    className="wds-dropdown__toggle "
   >
     <span>
       Toggle
@@ -37,7 +37,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="wds-dropdown__toggle"
+    className="wds-dropdown__toggle "
   >
     <span>
       Toggle

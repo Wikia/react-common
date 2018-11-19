@@ -2,7 +2,7 @@
 
 exports[`DropdownToggle renders correctly with Text inside 1`] = `
 <div
-  className="wds-dropdown__toggle"
+  className="wds-dropdown__toggle "
 >
   <span>
     Content
@@ -19,7 +19,7 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
 
 exports[`DropdownToggle renders correctly with a component inside 1`] = `
 <div
-  className="wds-dropdown__toggle"
+  className="wds-dropdown__toggle "
 >
   <span>
     <span>
@@ -38,7 +38,7 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
 
 exports[`DropdownToggle renders correctly with default values 1`] = `
 <div
-  className="wds-dropdown__toggle"
+  className="wds-dropdown__toggle "
 >
   <span />
   <svg
@@ -53,7 +53,7 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
 
 exports[`DropdownToggle renders correctly with default values for level 2 1`] = `
 <div
-  className="wds-dropdown__toggle wds-dropdown-level-2__toggle"
+  className="wds-dropdown__toggle wds-dropdown-level-2__toggle "
 >
   <span />
   <svg

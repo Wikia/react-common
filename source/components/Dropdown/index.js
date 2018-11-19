@@ -56,6 +56,9 @@ class Dropdown extends React.Component {
             hasDarkShadow,
             isActive,
             contentScrollable,
+            toggleAttrs,
+            toggleClasses,
+            shouldNotWrapToggle
         } = this.props;
 
         const {
@@ -83,6 +86,9 @@ class Dropdown extends React.Component {
             >
                 <DropdownToggle
                     isLevel2={isLevel2}
+                    attrs={toggleAttrs}
+                    classes={toggleClasses}
+                    shouldNotWrap={shouldNotWrapToggle}
                 >
                     {toggle}
                 </DropdownToggle>
@@ -140,6 +146,18 @@ Dropdown.propTypes = {
      * React Component to display as a dropdown toggle
      */
     toggle: PropTypes.node.isRequired,
+    /**
+     * HTML classes to add to toggle
+     */
+    toggleClasses: PropTypes.string,
+    /**
+     * HTML attributes to add to toggle
+     */
+    toggleAttrs: PropTypes.object,
+    /**
+     * Removes span around element passed in the "toggle" prop
+     */
+    shouldNotWrapToggle: PropTypes.bool,
 };
 
 Dropdown.defaultProps = {
@@ -152,6 +170,9 @@ Dropdown.defaultProps = {
     contentScrollable: false,
     isLevel2: false,
     isActive: false,
+    toggleClasses: '',
+    toggleAttrs: {},
+    shouldNotWrapToggle: false
 };
 
 export default Dropdown;
