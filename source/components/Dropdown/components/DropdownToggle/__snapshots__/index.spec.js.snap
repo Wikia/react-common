@@ -1,20 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DropdownToggle  1`] = `
-<div
-  className="wds-dropdown__toggle"
->
-  <span />
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
-</div>
-`;
-
 exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
 <div
   className="wds-dropdown__toggle wds-dropdown-level-2__toggle"

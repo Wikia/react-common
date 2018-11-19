@@ -40,13 +40,6 @@ test('DropdownToggle renders correctly when shouldNotWrap is set', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('DropdownToggle ', () => {
-    const component = renderer.create(
-        <DropdownToggle />,
-    );
-    expect(component.toJSON()).toMatchSnapshot();
-});
-
 test('DropdownToggle renders correctly with Text inside', () => {
     const component = renderer.create(
         <DropdownToggle>Content</DropdownToggle>
