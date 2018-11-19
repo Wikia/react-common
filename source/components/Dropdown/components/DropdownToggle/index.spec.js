@@ -12,6 +12,13 @@ test('DropdownToggle renders correctly with default values', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('DropdownToggle renders correctly with default values for level 2', () => {
+    const component = renderer.create(
+        <DropdownToggle isLevel2 />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('DropdownToggle renders correctly with Text inside', () => {
     const component = renderer.create(
         <DropdownToggle>Content</DropdownToggle>

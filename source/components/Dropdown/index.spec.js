@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import {
-   shallow,
+    shallow,
 } from 'enzyme';
 
 import Dropdown from './index';
@@ -10,7 +10,7 @@ import Dropdown from './index';
 
 test('Dropdown renders correctly with default values', () => {
     const component = renderer.create(
-        <Dropdown toggle="Toggle"/>,
+        <Dropdown toggle="Toggle" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
@@ -36,7 +36,7 @@ test('Dropdown sets isClicked on click on touch device', () => {
     });
 
     wrapper.find('.wds-dropdown').simulate('click', {
-        preventDefault: () => {}
+        preventDefault: () => {},
     });
 
     expect(wrapper.state('isClicked')).toEqual(true);
@@ -54,7 +54,7 @@ test('Dropdown does not set isClicked on click on non-touch device', () => {
     });
 
     wrapper.find('.wds-dropdown').simulate('click', {
-        preventDefault: () => {}
+        preventDefault: () => {},
     });
 
     expect(wrapper.state('isClicked')).toEqual(false);

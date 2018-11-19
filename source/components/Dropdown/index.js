@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
 import DropdownContent from './components/DropdownContent';
 import DropdownToggle from './components/DropdownToggle';
 
@@ -15,11 +16,32 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
-            isTouchDevice: typeof window !== 'undefined' && ('ontouchstart' in window)
+            isTouchDevice: typeof window !== 'undefined' && ('ontouchstart' in window),
         };
 
         this.onClick = this.onClick.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+    }
+
+    onClick(e) {
+        const { isTouchDevice } = this.state;
+
+        if (isTouchDevice) {
+            this.setState({
+                isClicked: !this.isClicked,
+            });
+            e.preventDefault();
+        }
+    }
+
+    onMouseLeave() {
+        const { isTouchDevice } = this.state;
+
+        if (isTouchDevice) {
+            this.setState({
+                isClicked: false,
+            });
+        }
     }
 
     render() {
@@ -33,12 +55,14 @@ class Dropdown extends React.Component {
             noChevron,
             hasDarkShadow,
             isActive,
-            contentScrollable
+            contentScrollable,
         } = this.props;
+
         const {
             isClicked,
             isTouchDevice,
         } = this.state;
+
         const className = classNames({
             'wds-dropdown': true,
             'wds-is-active': isClicked || isActive,
@@ -50,43 +74,28 @@ class Dropdown extends React.Component {
         });
 
         return (
+            // TODO: Fix a11y
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <div
                 className={className}
                 onClick={this.onClick}
                 onMouseLeave={this.onMouseLeave}
+            >
+                <DropdownToggle
+                    isLevel2={isLevel2}
                 >
-                    <DropdownToggle
-                        isLevel2={isLevel2}
-                    >
-                        {toggle}
-                    </DropdownToggle>
-                    <DropdownContent
-                        dropdownLeftAligned={dropdownLeftAligned}
-                        dropdownRightAligned={dropdownRightAligned}
-                        isLevel2={isLevel2}
-                        scrollable={contentScrollable}
-                    >
-                        {children}
-                    </DropdownContent>
+                    {toggle}
+                </DropdownToggle>
+                <DropdownContent
+                    dropdownLeftAligned={dropdownLeftAligned}
+                    dropdownRightAligned={dropdownRightAligned}
+                    isLevel2={isLevel2}
+                    scrollable={contentScrollable}
+                >
+                    {children}
+                </DropdownContent>
             </div>
         );
-    }
-
-    onClick(e) {
-        if (this.state.isTouchDevice) {
-            this.setState({
-                isClicked: !this.isClicked
-            });
-            e.preventDefault();
-        }
-    }
-
-    onMouseLeave() {
-        if (this.state.isTouchDevice) {
-            this.setState({
-                isClicked: false
-            });
-        }
     }
 }
 
@@ -98,31 +107,35 @@ Dropdown.propTypes = {
     /**
      * Whether or not dropdown should have a slight drop shadow
      */
-    hasShadow: PropTypes.bool,
+    contentScrollable: PropTypes.bool,
     /**
      * Hides chevron in dropdown toggle
      */
-    noChevron: PropTypes.bool,
+    dropdownLeftAligned: PropTypes.bool,
     /**
      * Whether or not dropdown should have a drop shadow (darker than the one produced by hasShadow)
      */
-    hasDarkShadow: PropTypes.bool,
+    dropdownRightAligned: PropTypes.bool,
     /**
      * Is it a nested dropdown
      */
-    isLevel2: PropTypes.bool,
+    hasDarkShadow: PropTypes.bool,
     /**
      * Should dropdown content be left-aligned with the dropdown toggle
      */
-    dropdownLeftAligned: PropTypes.bool,
+    hasShadow: PropTypes.bool,
+    /**
+     * is active
+     */
+    isActive: PropTypes.bool,
     /**
      * Should dropdown content be right-aligned with the dropdown toggle
      */
-    dropdownRightAligned: PropTypes.bool,
+    isLevel2: PropTypes.bool,
     /**
      * Should dropdown content be scrollable
      */
-    contentScrollable: PropTypes.bool,
+    noChevron: PropTypes.bool,
     /**
      * React Component to display as a dropdown toggle
      */
@@ -138,6 +151,7 @@ Dropdown.defaultProps = {
     dropdownRightAligned: false,
     contentScrollable: false,
     isLevel2: false,
+    isActive: false,
 };
 
 export default Dropdown;

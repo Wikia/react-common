@@ -6,18 +6,18 @@ import classNames from 'classnames';
  * Basic DropdownContent component
  */
 const DropdownContent = ({
-     children,
-     dropdownLeftAligned,
-     dropdownRightAligned,
-     scrollable,
-     isLevel2
- }) => {
+    children,
+    dropdownLeftAligned,
+    dropdownRightAligned,
+    scrollable,
+    isLevel2,
+}) => {
     const className = classNames({
         'wds-dropdown__content': true,
         'wds-is-left-aligned': dropdownLeftAligned,
         'wds-is-right-aligned': dropdownRightAligned,
         'wds-is-not-scrollable': !scrollable,
-        'wds-dropdown-level-2__content': isLevel2
+        'wds-dropdown-level-2__content': isLevel2,
     });
 
     return (
@@ -25,7 +25,6 @@ const DropdownContent = ({
             {children}
         </div>
     );
-
 };
 
 DropdownContent.propTypes = {
@@ -44,11 +43,11 @@ DropdownContent.propTypes = {
     /**
      * Should content be scrollable
      */
-    scrollable: PropTypes.bool,
+    isLevel2: PropTypes.bool,
     /**
      * Is it a nested dropdown
      */
-    isLevel2: PropTypes.bool,
+    scrollable: PropTypes.bool,
 };
 
 DropdownContent.defaultProps = {
