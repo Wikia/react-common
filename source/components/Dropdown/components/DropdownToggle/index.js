@@ -15,11 +15,14 @@ const DropdownToggle = ({
     attrs,
     shouldNotWrap
 }) => {
-    const className = classNames({
+    let className = classNames({
         'wds-dropdown__toggle': true,
-        'wds-dropdown-level-2__toggle': isLevel2,
-        [classes]: true,
+        'wds-dropdown-level-2__toggle': isLevel2
     });
+
+    if (classes) {
+        className += ` ${classes}`;
+    }
 
     const iconClassName = isLevel2
         ? 'wds-dropdown-chevron'
