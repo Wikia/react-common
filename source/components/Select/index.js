@@ -4,7 +4,9 @@ import ReactSelect from 'react-select';
 
 // eslint-disable-next-line no-restricted-imports
 import Spinner from '../Spinner';
+
 import './styles.scss';
+import IndicatorsContainer from './IndicatorsContainer';
 
 export function createOption(value, label) {
     return { value, label };
@@ -79,11 +81,7 @@ class Select extends React.Component {
     }
 
     getRootClassName() {
-        return [
-            'fandom-select',
-            this.props.className,
-            this.props.loading ? 'fandom-select--is-loading' : false,
-        ]
+        return ['fandom-select', this.props.className]
             .filter(Boolean)
             .join(' ');
     }
@@ -109,6 +107,7 @@ class Select extends React.Component {
                 components={{
                     LoadingIndicator: Spinner,
                     IndicatorSeparator: null,
+                    IndicatorsContainer,
                 }}
             />
         );

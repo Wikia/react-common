@@ -1,9 +1,5 @@
 .fandom-select {
-	&--is-loading {
-		.fandom-select__dropdown-indicator {
-			display: none;
-		}
-
+	&__indicators {
 		.fandom-spinner {
 			margin-right: 10px;
 		}
