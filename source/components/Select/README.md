@@ -9,3 +9,11 @@ Basic usage:
     ]}
 />
 ```
+
+Loading indicator:
+```js
+<Select
+    placeholder="Loading..."
+    loading
+/>
+```

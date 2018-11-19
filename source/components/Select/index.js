@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactSelect from 'react-select';
 
+// eslint-disable-next-line no-restricted-imports
+import Spinner from '../Spinner';
+import './styles.scss';
+
 export function createOption(value, label) {
     return { value, label };
 }
@@ -25,8 +29,8 @@ function callWithValues(func, values, isMulti) {
 }
 
 /**
- * A select input. For post-interaction events the signature is `onX(value, label)` for single-value selects, and
- * `onX([{value, label}, ...])` for multi-select
+ * A select input. For post-interaction events (`onBlur`, `onChange`) the signature is `onX(value, label)`
+ * for single-value selects, and `onX([{value, label}, ...])` for multi-select
  */
 class Select extends React.Component {
     constructor(props) {
@@ -75,7 +79,11 @@ class Select extends React.Component {
     }
 
     getRootClassName() {
-        return ['fandom-select', this.props.className]
+        return [
+            'fandom-select',
+            this.props.className,
+            this.props.loading ? 'fandom-select--is-loading' : false,
+        ]
             .filter(Boolean)
             .join(' ');
     }
@@ -98,6 +106,10 @@ class Select extends React.Component {
                 onFocus={this.onFocus}
                 onInputChange={this.onTextInputChange}
                 options={this.props.options}
+                components={{
+                    LoadingIndicator: Spinner,
+                    IndicatorSeparator: null,
+                }}
             />
         );
     }
@@ -153,7 +165,7 @@ Select.propTypes = {
     options: PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string.isRequired,
         value: PropTypes.any.isRequired,
-    })).isRequired,
+    })),
     /**
      * Placeholder text used when no value is selected
      */
@@ -175,6 +187,7 @@ Select.defaultProps = {
     onFocus: undefined,
     onNoOptions: 'No Options',
     onTextInputChange: undefined,
+    options: [],
     placeholder: 'Select...',
     searchable: true,
 };
