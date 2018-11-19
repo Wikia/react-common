@@ -51,7 +51,7 @@ DropdownToggle.propTypes = {
     /**
      * HTML attributes
      */
-    attrs: PropTypes.obj,
+    attrs: PropTypes.object,
     /**
      * Is it a nested dropdown
      */
