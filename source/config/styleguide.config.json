@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Documentation",
+    "sections": [
+      {
+        "name": "Introduction",
+        "content": "../docs/PREAMBULE.md"
+      },
+      {
+        "name": "Installation",
+        "content": "../docs/INSTALLATION.md"
+      },
+      {
+        "name": "Contribution",
+        "content": "../docs/CONTRIBUTION.md"
+      }
+    ]
+  },
+  {
+    "name": "Design System Elements",
+    "components": [
+      "Button",
+      "ButtonGroup",
+      "FloatingButton",
+      "FloatingButtonGroup",
+      "Spinner",
+      "Dropdown"
+    ]
+  },
+  {
+    "name": "Design System Form Elements",
+    "components": [
+      "Input",
+      "Fieldset"
+    ]
+  },
+  {
+    "name": "Design System UI",
+    "components": [
+      "BannerNotification",
+      "BannerNotifications"
+    ]
+  },
+  {
+    "name": "Design System Icons",
+    "components": [
+      "IconSprite",
+      "Icon",
+      "VideoPlayIcon"
+    ]
+  },
+  {
+    "name": "Design System Flow",
+    "components": [
+      "ContentWell",
+      "FandomContentWell"
+    ]
+  },
+  {
+    "name": "Higher Order Components (hocs)",
+    "hocs": [
+      "withTimeoutFallback"
+    ]
+  },
+  {
+    "name": "Other",
+    "components": [
+      "FandomBackgroundImage",
+      "Vignette",
+      "Timeago",
+      "ExpandableText"
+    ]
+  }
+]

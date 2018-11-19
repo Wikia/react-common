@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownContent renders correctly with Text inside 1`] = `
+<div
+  className="wds-dropdown__content"
+>
+  Content
+</div>
+`;
+
+exports[`DropdownContent renders correctly with a component inside 1`] = `
+<div
+  className="wds-dropdown__content"
+>
+  <div>
+    Content
+  </div>
+</div>
+`;
+
+exports[`DropdownContent renders correctly with default values 1`] = `
+<div
+  className="wds-dropdown__content"
+/>
+`;

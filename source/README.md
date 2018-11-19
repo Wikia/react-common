@@ -1,4 +1,3 @@
-
 # @Wikia/react-design-system
 
 [![Travis](https://img.shields.io/travis/Wikia/react-design-system/master.svg?style=flat-square)](https://travis-ci.org/Wikia/react-design-system)
@@ -6,12 +5,8 @@
 
 Wikia's reusable React parts.
 
-The following directories and files are auto-generated from the files in [source](./source) directory:
+All the source code lives in this directory.
 
-* [components](./components)
-* [hocs](./hocs)
-* [docs](./docs)
-* [README.md](./README.md)
-* [package.json](./package.json)
+Build process is building ES5 versions of the components and other files in parent directory, along with `package.json` and `README.md` files.
 
-Look in [source](./source) for details.
+Ideally the build will happen only when there's new release, but for now it has to live on the Github.
