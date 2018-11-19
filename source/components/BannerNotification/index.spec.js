@@ -30,6 +30,15 @@ test('BannerNotification renders correctly', () => {
         <BannerNotification type="alert" text="lorem ipsum - alert" onClose={noop} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
+
+    /* eslint-disable */
+    component = renderer.create(
+        <BannerNotification type="message" onClose={noop}>
+            <em>Note</em>: this is html.
+        </BannerNotification>,
+    );
+    /* eslint-enable */
+    expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('BannerNotification renders correctly without action', () => {

@@ -220,7 +220,8 @@ var BannerNotification = function BannerNotification(_ref) {
   var className = _ref.className,
       type = _ref.type,
       text = _ref.text,
-      onClose = _ref.onClose;
+      onClose = _ref.onClose,
+      children = _ref.children;
   return React.createElement("div", {
     className: "wds-banner-notification ".concat(getClassName(type), " ").concat(className)
   }, React.createElement("div", {
@@ -229,7 +230,7 @@ var BannerNotification = function BannerNotification(_ref) {
     name: getIconName(type)
   })), React.createElement("span", {
     className: "wds-banner-notification__text"
-  }, text), onClose && React.createElement(Icon, {
+  }, children || text), onClose && React.createElement(Icon, {
     name: "cross-tiny",
     className: "wds-banner-notification__close",
     onClick: onClose
@@ -237,14 +238,28 @@ var BannerNotification = function BannerNotification(_ref) {
 };
 
 BannerNotification.propTypes = {
+  /**
+   * @ignore
+   */
+  children: PropTypes.node,
+
+  /**
+   * An additional class name
+   */
   className: PropTypes.string,
   onClose: PropTypes.func,
-  text: PropTypes.string.isRequired,
+
+  /**
+   * Text to display if there are no children.
+   */
+  text: PropTypes.string,
   type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired
 };
 BannerNotification.defaultProps = {
+  children: null,
   className: '',
-  onClose: null
+  onClose: null,
+  text: ''
 };
 
 var messageType = PropTypes.shape({
