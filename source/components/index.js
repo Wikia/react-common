@@ -23,6 +23,7 @@ export { default as ContentWell } from './ContentWell';
 export { default as FandomContentWell } from './FandomContentWell';
 // Other UI
 export { default as ExpandableText } from './ExpandableText';
+export { default as Timeago } from './Timeago';
 export { default as Vignette } from './Vignette';
 
 // custom types

@@ -9,8 +9,8 @@ console.log(`Updating ${source.name} to version ${source.version}:`);
 
 // those dependencies will end up in `peerDependencies`
 const peerDependencies = config.externalDependencies.map(
-    dependency => `"${dependency}": "${source.dependencies[dependency]}"`
-).join(',\n    ');
+    dependency => source.dependencies[dependency] && `"${dependency}": "${source.dependencies[dependency]}"`
+).filter(x => x).join(',\n    ');
 
 // output relevant data to the new file
 const template = `{
