@@ -29,9 +29,13 @@
 		top: $bottom-border-size;
 	}
 
-	&__dropdown-indicator svg {
-		height: 24px;
-		width: 24px;
+	&__dropdown-indicator {
+		padding: 0 !important;
+
+		svg {
+			height: 24px;
+			width: 24px;
+		}
 	}
 
 	.default-dropdown-indicator.is-focused {
