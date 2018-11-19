@@ -13,7 +13,8 @@ const DropdownToggle = ({
     children,
     classes,
     attrs,
-    shouldNotWrap
+    shouldNotWrap,
+    iconName
 }) => {
     let className = classNames({
         'wds-dropdown__toggle': true,
@@ -33,7 +34,7 @@ const DropdownToggle = ({
     return (
         <div className={className} {...attrs}>
             {toggleElement}
-            <Icon name="menu-control-tiny" className={`wds-icon wds-icon-tiny ${iconClassName}`} />
+            <Icon name={iconName} className={`wds-icon wds-icon-tiny ${iconClassName}`} />
         </div>
     );
 };
@@ -59,6 +60,10 @@ DropdownToggle.propTypes = {
      * Is it a nested dropdown
      */
     shouldNotWrap: PropTypes.bool,
+    /**
+     * Name of the icon displayed next to the toggle
+     */
+    iconName: PropTypes.string,
 };
 
 DropdownToggle.defaultProps = {
@@ -66,7 +71,8 @@ DropdownToggle.defaultProps = {
     isLevel2: false,
     classes: '',
     attrs: {},
-    shouldNotWrap: false
+    shouldNotWrap: false,
+    iconName: 'menu-control-tiny',
 };
 
 export default DropdownToggle;

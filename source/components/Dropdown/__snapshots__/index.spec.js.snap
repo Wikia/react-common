@@ -13,10 +13,10 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
       Toggle
     </span>
     <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-null"
       />
     </svg>
   </div>
@@ -43,10 +43,10 @@ exports[`Dropdown renders correctly with default values 1`] = `
       Toggle
     </span>
     <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-null"
       />
     </svg>
   </div>

@@ -55,3 +55,12 @@ test('DropdownToggle renders correctly with a component inside', () => {
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
+
+test('DropdownToggle renders correctly with a component inside', () => {
+    const component = renderer.create(
+        <DropdownToggle iconName="different-icon">
+            <span>Content</span>
+        </DropdownToggle>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});

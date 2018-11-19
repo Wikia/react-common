@@ -298,7 +298,8 @@ var DropdownToggle = function DropdownToggle(_ref) {
       children = _ref.children,
       classes = _ref.classes,
       attrs = _ref.attrs,
-      shouldNotWrap = _ref.shouldNotWrap;
+      shouldNotWrap = _ref.shouldNotWrap,
+      iconName = _ref.iconName;
   var className = classnames({
     'wds-dropdown__toggle': true,
     'wds-dropdown-level-2__toggle': isLevel2
@@ -313,7 +314,7 @@ var DropdownToggle = function DropdownToggle(_ref) {
   return React.createElement("div", _extends({
     className: className
   }, attrs), toggleElement, React.createElement(Icon, {
-    name: "menu-control-tiny",
+    name: iconName,
     className: "wds-icon wds-icon-tiny ".concat(iconClassName)
   }));
 };
@@ -342,14 +343,20 @@ DropdownToggle.propTypes = {
   /**
    * Is it a nested dropdown
    */
-  shouldNotWrap: PropTypes.bool
+  shouldNotWrap: PropTypes.bool,
+
+  /**
+   * Name of the icon displayed next to the toggle
+   */
+  iconName: PropTypes.string
 };
 DropdownToggle.defaultProps = {
   children: null,
   isLevel2: false,
   classes: '',
   attrs: {},
-  shouldNotWrap: false
+  shouldNotWrap: false,
+  iconName: 'menu-control-tiny'
 };
 
 /**
@@ -415,7 +422,8 @@ function (_React$Component) {
           contentScrollable = _this$props.contentScrollable,
           toggleAttrs = _this$props.toggleAttrs,
           toggleClasses = _this$props.toggleClasses,
-          shouldNotWrapToggle = _this$props.shouldNotWrapToggle;
+          shouldNotWrapToggle = _this$props.shouldNotWrapToggle,
+          toggleIconName = _this$props.toggleIconName;
       var _this$state = this.state,
           isClicked = _this$state.isClicked,
           isTouchDevice = _this$state.isTouchDevice;
@@ -438,7 +446,8 @@ function (_React$Component) {
           isLevel2: isLevel2,
           attrs: toggleAttrs,
           classes: toggleClasses,
-          shouldNotWrap: shouldNotWrapToggle
+          shouldNotWrap: shouldNotWrapToggle,
+          iconName: toggleIconName
         }, toggle), React.createElement(DropdownContent, {
           dropdownLeftAligned: dropdownLeftAligned,
           dropdownRightAligned: dropdownRightAligned,
@@ -516,7 +525,12 @@ Dropdown.propTypes = {
   /**
    * Removes span around element passed in the "toggle" prop
    */
-  shouldNotWrapToggle: PropTypes.bool
+  shouldNotWrapToggle: PropTypes.bool,
+
+  /**
+   * Cutomizes icon in dropdown toggle
+   */
+  toggleIconName: PropTypes.string
 };
 Dropdown.defaultProps = {
   children: null,
@@ -530,7 +544,8 @@ Dropdown.defaultProps = {
   isActive: false,
   toggleClasses: '',
   toggleAttrs: {},
-  shouldNotWrapToggle: false
+  shouldNotWrapToggle: false,
+  toggleIconName: null
 };
 
 module.exports = Dropdown;

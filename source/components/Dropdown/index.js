@@ -58,7 +58,8 @@ class Dropdown extends React.Component {
             contentScrollable,
             toggleAttrs,
             toggleClasses,
-            shouldNotWrapToggle
+            shouldNotWrapToggle,
+            toggleIconName
         } = this.props;
 
         const {
@@ -89,6 +90,7 @@ class Dropdown extends React.Component {
                     attrs={toggleAttrs}
                     classes={toggleClasses}
                     shouldNotWrap={shouldNotWrapToggle}
+                    iconName={toggleIconName}
                 >
                     {toggle}
                 </DropdownToggle>
@@ -158,6 +160,10 @@ Dropdown.propTypes = {
      * Removes span around element passed in the "toggle" prop
      */
     shouldNotWrapToggle: PropTypes.bool,
+    /**
+     * Cutomizes icon in dropdown toggle
+     */
+    toggleIconName: PropTypes.string,
 };
 
 Dropdown.defaultProps = {
@@ -172,7 +178,8 @@ Dropdown.defaultProps = {
     isActive: false,
     toggleClasses: '',
     toggleAttrs: {},
-    shouldNotWrapToggle: false
+    shouldNotWrapToggle: false,
+    toggleIconName: null,
 };
 
 export default Dropdown;

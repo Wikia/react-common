@@ -50,6 +50,25 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
 </div>
 `;
 
+exports[`DropdownToggle renders correctly with a component inside 2`] = `
+<div
+  className="wds-dropdown__toggle"
+>
+  <span>
+    <span>
+      Content
+    </span>
+  </span>
+  <svg
+    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+  >
+    <use
+      xlinkHref="#wds-icons-different-icon"
+    />
+  </svg>
+</div>
+`;
+
 exports[`DropdownToggle renders correctly with additional attrs 1`] = `
 <div
   attr1={true}
