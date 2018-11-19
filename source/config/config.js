@@ -3,6 +3,7 @@ module.exports = {
     styleguideDir: 'docs',
     sourceDirectories: [
         'components',
+        'hocs',
     ],
     externalDependencies: [
         'date-fns',

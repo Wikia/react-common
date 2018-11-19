@@ -10,6 +10,7 @@ export { default as ButtonGroup } from './ButtonGroup';
 export { default as Input } from './Input';
 export { default as Fieldset } from './Fieldset';
 export { default as Spinner } from './Spinner';
+export { default as Dropdown } from './Spinner';
 export { default as FloatingButton } from './FloatingButton';
 export { default as FloatingButtonGroup } from './FloatingButtonGroup';
 // Design System UI

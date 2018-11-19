@@ -60,6 +60,9 @@ typings/
 # IDEA
 .idea/
 
+# Visual Studio
+.vscode/
+
 # Miscellaneous cache files
 .DS_Store
 

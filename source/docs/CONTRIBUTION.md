@@ -23,6 +23,13 @@
 10. Code will be merged to `master` only if there are no regressions and after a successful CR.
 11. When the code is merged to `master`, release new version of the styleguide with one of the release commands.
 
+
+### HOCS
+
+1. Higher order components (hoc) can be added by following the guide
+
+**Note**: The one difference will be to use `js static` in the readme to prevent rendering as styleguidist doesn't have access to the hoc
+
 ## Development server
 
 ```js static

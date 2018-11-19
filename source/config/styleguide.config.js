@@ -15,7 +15,12 @@ function resolve(...paths) {
 
 function getSections() {
     return schema.map(({
-        name, content, components, description, sections,
+        name,
+        content,
+        components,
+        description,
+        sections,
+        hocs,
     }) => {
         const section = {
             content,
@@ -27,6 +32,15 @@ function getSections() {
         if (components) {
             section.components = () => components.map(
                 componentName => resolve('../components', componentName, 'index.js')
+            );
+        }
+
+        if (hocs) {
+            section.sections = hocs.map(
+                hocName => ({
+                    name: hocName,
+                    content: resolve('../hocs', hocName, 'README.md'),
+                })
             );
         }
 
