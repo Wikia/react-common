@@ -28,4 +28,13 @@
 		position: relative;
 		top: $bottom-border-size;
 	}
+
+	&__dropdown-indicator svg {
+		height: 24px;
+		width: 24px;
+	}
+
+	.default-dropdown-indicator.is-focused {
+		transform: rotate(180deg);
+	}
 }

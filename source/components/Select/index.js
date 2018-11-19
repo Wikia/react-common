@@ -7,6 +7,7 @@ import Spinner from '../Spinner';
 
 import './styles.scss';
 import IndicatorsContainer from './IndicatorsContainer';
+import { SearchDropdownIndicator, DefaultDropdownIndicator } from './DropdownIndicator';
 
 export function createOption(value, label) {
     return { value, label };
@@ -118,6 +119,7 @@ class Select extends React.Component {
             <ReactSelect
                 ref={this.selectRef}
                 autoFocus={this.props.autoFocus}
+                blurInputOnSelect
                 className={this.getRootClassName()}
                 classNamePrefix="fandom-select"
                 isDisabled={this.props.disabled || this.props.loading}
@@ -135,6 +137,7 @@ class Select extends React.Component {
                 components={{
                     LoadingIndicator: Spinner,
                     IndicatorSeparator: null,
+                    DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
                     IndicatorsContainer,
                 }}
             />
