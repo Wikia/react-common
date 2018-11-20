@@ -170,6 +170,11 @@ Dropdown.propTypes = {
     isLevel2: PropTypes.bool,
 
     /**
+     * if the top of nested dropdown content should be positioned at the same height as toggle
+     */
+    isStickedToParent: PropTypes.bool,
+
+    /**
      * Hides chevron in dropdown toggle
      */
     noChevron: PropTypes.bool,
@@ -199,11 +204,6 @@ Dropdown.propTypes = {
      * Customizes icon in dropdown toggle
      */
     toggleIconName: PropTypes.string,
-
-    /**
-     * if the top of nested dropdown content should be positioned at the same height as toggle
-     */
-    isStickedToParent: PropTypes.bool,
 };
 
 Dropdown.defaultProps = {
