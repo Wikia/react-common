@@ -42,6 +42,7 @@ class Select extends React.Component {
     }
 
     onBlur() {
+        console.log('blur', this.selectRef.current.select.getCommonProps().getValue());
         if (!this.props.onBlur || !this.selectRef.current) {
             return;
         }
@@ -50,7 +51,8 @@ class Select extends React.Component {
     }
 
     onChange(values) {
-        callWithValues(this.props.onChange, values, this.props.multi);
+        const valuesAsArray = this.props.multi ? values : [values];
+        callWithValues(this.props.onChange, valuesAsArray, this.props.multi);
     }
 
     onFocus() {
@@ -117,6 +119,7 @@ class Select extends React.Component {
                 blurInputOnSelect
                 className={this.getRootClassName()}
                 classNamePrefix="fandom-select"
+                controlShouldRenderValue={this.props.multi ? this.props.multiValueRender : true}
                 isDisabled={this.props.disabled || this.props.loading}
                 isLoading={this.props.loading}
                 isMulti={this.props.multi}
@@ -162,6 +165,10 @@ Select.propTypes = {
      * whether or not multiple values are allowed
      */
     multi: PropTypes.bool,
+    /**
+     * whether or not the component should render values when `multi=true`
+     */
+    multiValueRender: PropTypes.bool,
     /**
      * called when the input is blurred `onBlur(val, label)`
      */
@@ -215,6 +222,7 @@ Select.defaultProps = {
     disabled: false,
     loading: false,
     multi: false,
+    multiValueRender: true,
     onBlur: undefined,
     onChange: undefined,
     onFocus: undefined,
