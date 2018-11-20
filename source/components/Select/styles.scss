@@ -12,6 +12,10 @@
 			border-radius: 0;
 			box-shadow: none;
 			min-height: 0;
+
+			&--is-disabled {
+				background-color: inherit;
+			}
 		}
 
 		&__value-container {
