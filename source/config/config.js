@@ -12,5 +12,6 @@ module.exports = {
         'prop-types',
         'react',
         'react-dom',
+        'react-select',
     ],
 };
