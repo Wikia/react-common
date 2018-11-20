@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactSelect from 'react-select';
 
-// eslint-disable-next-line no-restricted-imports
-import Spinner from '../Spinner';
-
 import './styles.scss';
 import IndicatorsContainer from './IndicatorsContainer';
 import SelectContainer from './SelectContainer';
-import { SearchDropdownIndicator, DefaultDropdownIndicator } from './DropdownIndicator';
+import { DefaultDropdownIndicator, SearchDropdownIndicator } from './DropdownIndicator';
+import LoadingIndicator from './LoadingIndicator';
 
 export function createOption(value, label) {
     return { value, label };
@@ -32,10 +30,6 @@ function callWithValues(func, values, isMulti) {
     func(value, label);
 }
 
-/**
- * A select input. For post-interaction events (`onBlur`, `onChange`) the signature is `onX(value, label)`
- * for single-value selects, and `onX([{value, label}, ...])` for multi-select
- */
 class Select extends React.Component {
     constructor(props) {
         super(props);
@@ -136,9 +130,9 @@ class Select extends React.Component {
                 options={this.props.options}
                 value={this.getValueFromProps()}
                 components={{
-                    LoadingIndicator: Spinner,
                     IndicatorSeparator: null,
                     DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
+                    LoadingIndicator,
                     IndicatorsContainer,
                     SelectContainer,
                 }}

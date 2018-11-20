@@ -1,3 +1,6 @@
+A select input. For post-interaction events (`onBlur`, `onChange`) the signature is `onX(value, label)`
+for single-value selects, and `onX([{value, label}, ...])` for multi-select
+
 Basic usage:
 ```js
 <Select
