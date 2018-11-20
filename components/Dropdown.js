@@ -301,7 +301,7 @@ var DropdownToggle = function DropdownToggle(_ref) {
       shouldNotWrap = _ref.shouldNotWrap,
       iconName = _ref.iconName;
   var className = classnames({
-    'wds-dropdown__toggle': true,
+    'wds-dropdown__toggle': !isLevel2,
     'wds-dropdown-level-2__toggle': isLevel2
   });
 
@@ -311,24 +311,33 @@ var DropdownToggle = function DropdownToggle(_ref) {
 
   var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
   var toggleElement = shouldNotWrap ? children : React.createElement("span", null, children);
-  return React.createElement("div", _extends({
-    className: className
-  }, attrs), toggleElement, React.createElement(Icon, {
+  var dropdownToggleBody = React.createElement(React.Fragment, null, toggleElement, React.createElement(Icon, {
     name: iconName,
     className: "wds-icon wds-icon-tiny ".concat(iconClassName)
   }));
+
+  if (isLevel2) {
+    return React.createElement("a", _extends({
+      className: className
+    }, attrs), dropdownToggleBody);
+  }
+
+  return React.createElement("div", _extends({
+    className: className
+  }, attrs), dropdownToggleBody);
 };
 
 DropdownToggle.propTypes = {
   /**
+   * HTML attributes
+   */
+  // eslint-disable-next-line react/forbid-prop-types
+  attrs: PropTypes.object,
+
+  /**
    * Dropdown toggle content
    */
   children: PropTypes.node,
-
-  /**
-   * Is it a nested dropdown
-   */
-  isLevel2: PropTypes.bool,
 
   /**
    * HTML classes
@@ -336,19 +345,19 @@ DropdownToggle.propTypes = {
   classes: PropTypes.string,
 
   /**
-   * HTML attributes
+   * Name of the icon displayed next to the toggle
    */
-  attrs: PropTypes.object,
+  iconName: PropTypes.string,
 
   /**
    * Is it a nested dropdown
    */
-  shouldNotWrap: PropTypes.bool,
+  isLevel2: PropTypes.bool,
 
   /**
-   * Name of the icon displayed next to the toggle
+   * Is it a nested dropdown
    */
-  iconName: PropTypes.string
+  shouldNotWrap: PropTypes.bool
 };
 DropdownToggle.defaultProps = {
   children: null,
@@ -428,7 +437,7 @@ function (_React$Component) {
           isClicked = _this$state.isClicked,
           isTouchDevice = _this$state.isTouchDevice;
       var className = classnames({
-        'wds-dropdown': true,
+        'wds-dropdown': !isLevel2,
         'wds-is-active': isClicked || isActive,
         'wds-has-shadow': hasShadow,
         'wds-no-chevron': noChevron,
@@ -436,24 +445,36 @@ function (_React$Component) {
         'wds-dropdown-level-2': isLevel2,
         'wds-is-touch-device': isTouchDevice
       });
-      return (// TODO: Fix a11y
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+      var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
+        isLevel2: isLevel2,
+        attrs: toggleAttrs,
+        classes: toggleClasses,
+        shouldNotWrap: shouldNotWrapToggle,
+        iconName: toggleIconName
+      }, toggle), React.createElement(DropdownContent, {
+        dropdownLeftAligned: dropdownLeftAligned,
+        dropdownRightAligned: dropdownRightAligned,
+        isLevel2: isLevel2,
+        scrollable: contentScrollable
+      }, children));
+
+      if (isLevel2) {
+        return (// TODO: Fix a11y
+          // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
+          React.createElement("li", {
+            className: className,
+            onClick: this.onClick,
+            onMouseLeave: this.onMouseLeave
+          }, dropdownBody)
+        );
+      }
+
+      return (// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
         React.createElement("div", {
           className: className,
           onClick: this.onClick,
           onMouseLeave: this.onMouseLeave
-        }, React.createElement(DropdownToggle, {
-          isLevel2: isLevel2,
-          attrs: toggleAttrs,
-          classes: toggleClasses,
-          shouldNotWrap: shouldNotWrapToggle,
-          iconName: toggleIconName
-        }, toggle), React.createElement(DropdownContent, {
-          dropdownLeftAligned: dropdownLeftAligned,
-          dropdownRightAligned: dropdownRightAligned,
-          isLevel2: isLevel2,
-          scrollable: contentScrollable
-        }, children))
+        }, dropdownBody)
       );
     }
   }]);
@@ -508,24 +529,25 @@ Dropdown.propTypes = {
   noChevron: PropTypes.bool,
 
   /**
+   * Removes span around element passed in the "toggle" prop
+   */
+  shouldNotWrapToggle: PropTypes.bool,
+
+  /**
    * React Component to display as a dropdown toggle
    */
   toggle: PropTypes.node.isRequired,
 
   /**
-   * HTML classes to add to toggle
-   */
-  toggleClasses: PropTypes.string,
-
-  /**
    * HTML attributes to add to toggle
    */
+  // eslint-disable-next-line react/forbid-prop-types
   toggleAttrs: PropTypes.object,
 
   /**
-   * Removes span around element passed in the "toggle" prop
+   * HTML classes to add to toggle
    */
-  shouldNotWrapToggle: PropTypes.bool,
+  toggleClasses: PropTypes.string,
 
   /**
    * Cutomizes icon in dropdown toggle
@@ -545,7 +567,7 @@ Dropdown.defaultProps = {
   toggleClasses: '',
   toggleAttrs: {},
   shouldNotWrapToggle: false,
-  toggleIconName: null
+  toggleIconName: 'menu-control-tiny'
 };
 
 module.exports = Dropdown;
