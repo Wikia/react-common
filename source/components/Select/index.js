@@ -42,7 +42,6 @@ class Select extends React.Component {
     }
 
     onBlur() {
-        console.log('blur', this.selectRef.current.select.getCommonProps().getValue());
         if (!this.props.onBlur || !this.selectRef.current) {
             return;
         }
