@@ -6,11 +6,10 @@ Use `Select.createOption` to create options to feed to the `options` prop.
 Basic usage:
 ```js
 <Select
-    onBlur={(val, label) => console.log(val, label) }
     options={[
-        {value: 1, label: "label 1"},
-        {value: 2, label: "label 2"},
-        {value: 3, label: "label 3"},
+        Select.createOption(1, "label 1"),
+        Select.createOption(2, "label 2"),
+        Select.createOption(3, "label 3"),
     ]}
 />
 ```
@@ -20,9 +19,9 @@ Non-searchable:
 <Select
     searchable={false}
     options={[
-        {value: 1, label: "label 1"},
-        {value: 2, label: "label 2"},
-        {value: 3, label: "label 3"},
+        Select.createOption(1, "label 1"),
+        Select.createOption(2, "label 2"),
+        Select.createOption(3, "label 3"),
     ]}
 />
 ```
@@ -40,11 +39,11 @@ Multi-select
 <Select
     multi
     options={[
-        {value: 1, label: "label 1"},
-        {value: 2, label: "label 2"},
-        {value: 3, label: "label 3"},
-        {value: 4, label: "label 4"},
-        {value: 5, label: "label 5"},
+        Select.createOption(1, "label 1"),
+        Select.createOption(2, "label 2"),
+        Select.createOption(3, "label 3"),
+        Select.createOption(4, "label 4"),
+        Select.createOption(5, "label 5"),
     ]}
 />
 ```
@@ -72,11 +71,11 @@ class ControlledMultiInput extends React.Component {
                 onChange={this.onChange}
                 value={this.state.values}
                 options={[
-                    {value: 1, label: "label 1"},
-                    {value: 2, label: "label 2"},
-                    {value: 3, label: "label 3"},
-                    {value: 4, label: "label 4"},
-                    {value: "five", label: "label 5"},
+                    Select.createOption(1, "label 1"),
+                    Select.createOption(2, "label 2"),
+                    Select.createOption(3, "label 3"),
+                    Select.createOption(4, "label 4"),
+                    Select.createOption("five", "label 5"),
                 ]}
             />
         );
@@ -108,9 +107,9 @@ class ControlledSingleInput extends React.Component {
                 onChange={this.onChange}
                 value={this.state.value}
                 options={[
-                    {value: 1, label: "label 1"},
-                    {value: 2, label: "label 2"},
-                    {value: 3, label: "label 3"},
+                    Select.createOption(1, "label 1"),
+                    Select.createOption(2, "label 2"),
+                    Select.createOption(3, "label 3"),
                 ]}
             />
         );
