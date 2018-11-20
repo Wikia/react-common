@@ -20,6 +20,7 @@ function callWithValues(func, values, isMulti) {
 
     if (values.length === 0) {
         func(null, null);
+        return;
     }
 
     const { value, label } = values[0];

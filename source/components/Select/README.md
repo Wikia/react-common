@@ -6,6 +6,7 @@ Use `Select.createOption` to create options to feed to the `options` prop.
 Basic usage:
 ```js
 <Select
+    onBlur={(val, label) => console.log(val, label) }
     options={[
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
