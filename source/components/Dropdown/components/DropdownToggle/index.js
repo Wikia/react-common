@@ -17,7 +17,7 @@ const DropdownToggle = ({
     iconName
 }) => {
     let className = classNames({
-        'wds-dropdown__toggle': true,
+        'wds-dropdown__toggle': !isLevel2,
         'wds-dropdown-level-2__toggle': isLevel2
     });
 
@@ -31,12 +31,22 @@ const DropdownToggle = ({
 
     const toggleElement = shouldNotWrap ? children : <span>{children}</span>;
 
-    return (
-        <div className={className} {...attrs}>
+    const dropdownToggleBody = (
+        <React.Fragment>
             {toggleElement}
             <Icon name={iconName} className={`wds-icon wds-icon-tiny ${iconClassName}`} />
-        </div>
+        </React.Fragment>
     );
+
+    if (isLevel2) {
+        return <a className={className} {...attrs}>
+            {dropdownToggleBody}
+        </a>
+    } else {
+        return <div className={className} {...attrs}>
+            {dropdownToggleBody}
+        </div>;
+    }
 };
 
 DropdownToggle.propTypes = {

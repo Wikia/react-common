@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
-<div
-  className="wds-dropdown__toggle wds-dropdown-level-2__toggle"
+<a
+  className="wds-dropdown-level-2__toggle"
 >
   <svg
     className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
@@ -11,7 +11,7 @@ exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
       xlinkHref="#wds-icons-menu-control-tiny"
     />
   </svg>
-</div>
+</a>
 `;
 
 exports[`DropdownToggle renders correctly with Text inside 1`] = `
@@ -70,9 +70,9 @@ exports[`DropdownToggle renders correctly with a component inside 2`] = `
 `;
 
 exports[`DropdownToggle renders correctly with additional attrs 1`] = `
-<div
+<a
   attr1={true}
-  className="wds-dropdown__toggle wds-dropdown-level-2__toggle"
+  className="wds-dropdown-level-2__toggle"
 >
   <span />
   <svg
@@ -82,12 +82,12 @@ exports[`DropdownToggle renders correctly with additional attrs 1`] = `
       xlinkHref="#wds-icons-menu-control-tiny"
     />
   </svg>
-</div>
+</a>
 `;
 
 exports[`DropdownToggle renders correctly with additional classNames 1`] = `
-<div
-  className="wds-dropdown__toggle wds-dropdown-level-2__toggle first-class second-class"
+<a
+  className="wds-dropdown-level-2__toggle first-class second-class"
 >
   <span />
   <svg
@@ -97,7 +97,7 @@ exports[`DropdownToggle renders correctly with additional classNames 1`] = `
       xlinkHref="#wds-icons-menu-control-tiny"
     />
   </svg>
-</div>
+</a>
 `;
 
 exports[`DropdownToggle renders correctly with default values 1`] = `
@@ -116,8 +116,8 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
 `;
 
 exports[`DropdownToggle renders correctly with default values for level 2 1`] = `
-<div
-  className="wds-dropdown__toggle wds-dropdown-level-2__toggle"
+<a
+  className="wds-dropdown-level-2__toggle"
 >
   <span />
   <svg
@@ -127,5 +127,5 @@ exports[`DropdownToggle renders correctly with default values for level 2 1`] = 
       xlinkHref="#wds-icons-menu-control-tiny"
     />
   </svg>
-</div>
+</a>
 `;

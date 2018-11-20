@@ -24,7 +24,7 @@ class Dropdown extends React.Component {
     }
 
     onClick(e) {
-        const { isTouchDevice } = this.state;
+        const {isTouchDevice} = this.state;
 
         if (isTouchDevice) {
             this.setState({
@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
     }
 
     onMouseLeave() {
-        const { isTouchDevice } = this.state;
+        const {isTouchDevice} = this.state;
 
         if (isTouchDevice) {
             this.setState({
@@ -68,7 +68,7 @@ class Dropdown extends React.Component {
         } = this.state;
 
         const className = classNames({
-            'wds-dropdown': true,
+            'wds-dropdown': !isLevel2,
             'wds-is-active': isClicked || isActive,
             'wds-has-shadow': hasShadow,
             'wds-no-chevron': noChevron,
@@ -77,14 +77,8 @@ class Dropdown extends React.Component {
             'wds-is-touch-device': isTouchDevice,
         });
 
-        return (
-            // TODO: Fix a11y
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-            <div
-                className={className}
-                onClick={this.onClick}
-                onMouseLeave={this.onMouseLeave}
-            >
+        const dropdownBody = (
+            <React.Fragment>
                 <DropdownToggle
                     isLevel2={isLevel2}
                     attrs={toggleAttrs}
@@ -102,8 +96,33 @@ class Dropdown extends React.Component {
                 >
                     {children}
                 </DropdownContent>
-            </div>
+            </React.Fragment>
         );
+
+        if (isLevel2) {
+            // TODO: Fix a11y
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+            return (
+                <li
+                    className={className}
+                    onClick={this.onClick}
+                    onMouseLeave={this.onMouseLeave}
+                >
+                    {dropdownBody}
+                </li>
+            );
+        } else {
+            return (
+                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+                <div
+                    className={className}
+                    onClick={this.onClick}
+                    onMouseLeave={this.onMouseLeave}
+                >
+                    {dropdownBody}
+                </div>
+            );
+        }
     }
 }
 
@@ -179,7 +198,7 @@ Dropdown.defaultProps = {
     toggleClasses: '',
     toggleAttrs: {},
     shouldNotWrapToggle: false,
-    toggleIconName: null,
+    toggleIconName: 'menu-control-tiny',
 };
 
 export default Dropdown;

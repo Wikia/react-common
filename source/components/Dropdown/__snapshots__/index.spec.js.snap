@@ -1,6 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Dropdown level2 renders correctly with default values 1`] = `
+<li
+  className="wds-dropdown-level-2"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <a
+    className="wds-dropdown-level-2__toggle"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </a>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
+  />
+</li>
+`;
+
 exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
+<div
+  className="wds-dropdown"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown__toggle"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and children 1`] = `
 <div
   className="wds-dropdown"
   onClick={[Function]}
@@ -16,7 +72,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
     >
       <use
-        xlinkHref="#wds-icons-null"
+        xlinkHref="#wds-icons-my-icon-name"
       />
     </svg>
   </div>
@@ -43,10 +99,10 @@ exports[`Dropdown renders correctly with default values 1`] = `
       Toggle
     </span>
     <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-null"
+        xlinkHref="#wds-icons-menu-control-tiny"
       />
     </svg>
   </div>

@@ -15,9 +15,25 @@ test('Dropdown renders correctly with default values', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Dropdown level2 renders correctly with default values', () => {
+    const component = renderer.create(
+        <Dropdown toggle="Toggle" isLevel2 />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('Dropdown renders correctly with DropdownToggle and children', () => {
     const component = renderer.create(
         <Dropdown toggle="Toggle">
+            <div>Content</div>
+        </Dropdown>,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Dropdown renders correctly with DropdownToggle, toggleIconName and children', () => {
+    const component = renderer.create(
+        <Dropdown toggle="Toggle" toggleIconName="my-icon-name">
             <div>Content</div>
         </Dropdown>,
     );
