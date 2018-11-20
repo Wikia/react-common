@@ -50,7 +50,7 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
 </div>
 `;
 
-exports[`DropdownToggle renders correctly with a component inside 2`] = `
+exports[`DropdownToggle renders correctly with a component inside and custom icon name 1`] = `
 <div
   className="wds-dropdown__toggle"
 >

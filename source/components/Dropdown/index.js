@@ -60,6 +60,7 @@ class Dropdown extends React.Component {
             toggleClasses,
             shouldNotWrapToggle,
             toggleIconName,
+            isStickedToParent,
         } = this.props;
 
         const {
@@ -75,6 +76,7 @@ class Dropdown extends React.Component {
             'wds-has-dark-shadow': hasDarkShadow,
             'wds-dropdown-level-2': isLevel2,
             'wds-is-touch-device': isTouchDevice,
+            'wds-is-sticked-to-parent': isStickedToParent,
         });
 
         const dropdownBody = (
@@ -131,59 +133,77 @@ Dropdown.propTypes = {
      * React Component to display as the Dropdown Content
      */
     children: PropTypes.node,
+
     /**
-     * Whether or not dropdown should have a slight drop shadow
+     * Should dropdown content be scrollable
      */
     contentScrollable: PropTypes.bool,
-    /**
-     * Hides chevron in dropdown toggle
-     */
-    dropdownLeftAligned: PropTypes.bool,
-    /**
-     * Whether or not dropdown should have a drop shadow (darker than the one produced by hasShadow)
-     */
-    dropdownRightAligned: PropTypes.bool,
-    /**
-     * Is it a nested dropdown
-     */
-    hasDarkShadow: PropTypes.bool,
+
     /**
      * Should dropdown content be left-aligned with the dropdown toggle
      */
+    dropdownLeftAligned: PropTypes.bool,
+
+    /**
+     * Should dropdown content be right-aligned with the dropdown toggle
+     */
+    dropdownRightAligned: PropTypes.bool,
+
+    /**
+     * Whether or not dropdown should have a drop shadow (darker than the one produced by hasShadow)
+     */
+    hasDarkShadow: PropTypes.bool,
+
+    /**
+     * Whether or not dropdown should have a slight drop shadow
+     */
     hasShadow: PropTypes.bool,
+
     /**
      * is active
      */
     isActive: PropTypes.bool,
+
     /**
-     * Should dropdown content be right-aligned with the dropdown toggle
+     * Is it a nested dropdown
      */
     isLevel2: PropTypes.bool,
+
     /**
-     * Should dropdown content be scrollable
+     * Hides chevron in dropdown toggle
      */
     noChevron: PropTypes.bool,
+
     /**
      * Removes span around element passed in the "toggle" prop
      */
     shouldNotWrapToggle: PropTypes.bool,
+
     /**
      * React Component to display as a dropdown toggle
      */
     toggle: PropTypes.node.isRequired,
+
     /**
      * HTML attributes to add to toggle
      */
     // eslint-disable-next-line react/forbid-prop-types
     toggleAttrs: PropTypes.object,
+
     /**
      * HTML classes to add to toggle
      */
     toggleClasses: PropTypes.string,
+
     /**
-     * Cutomizes icon in dropdown toggle
+     * Customizes icon in dropdown toggle
      */
     toggleIconName: PropTypes.string,
+
+    /**
+     * if the top of nested dropdown content should be positioned at the same height as toggle
+     */
+    isStickedToParent: PropTypes.bool,
 };
 
 Dropdown.defaultProps = {
@@ -200,6 +220,7 @@ Dropdown.defaultProps = {
     toggleAttrs: {},
     shouldNotWrapToggle: false,
     toggleIconName: 'menu-control-tiny',
+    isStickedToParent: false,
 };
 
 export default Dropdown;
