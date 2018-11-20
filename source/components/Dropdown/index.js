@@ -24,7 +24,7 @@ class Dropdown extends React.Component {
     }
 
     onClick(e) {
-        const {isTouchDevice} = this.state;
+        const { isTouchDevice } = this.state;
 
         if (isTouchDevice) {
             this.setState({
@@ -35,7 +35,7 @@ class Dropdown extends React.Component {
     }
 
     onMouseLeave() {
-        const {isTouchDevice} = this.state;
+        const { isTouchDevice } = this.state;
 
         if (isTouchDevice) {
             this.setState({
@@ -59,7 +59,7 @@ class Dropdown extends React.Component {
             toggleAttrs,
             toggleClasses,
             shouldNotWrapToggle,
-            toggleIconName
+            toggleIconName,
         } = this.props;
 
         const {
@@ -100,9 +100,9 @@ class Dropdown extends React.Component {
         );
 
         if (isLevel2) {
-            // TODO: Fix a11y
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             return (
+                // TODO: Fix a11y
+                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
                 <li
                     className={className}
                     onClick={this.onClick}
@@ -111,18 +111,18 @@ class Dropdown extends React.Component {
                     {dropdownBody}
                 </li>
             );
-        } else {
-            return (
-                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-                <div
-                    className={className}
-                    onClick={this.onClick}
-                    onMouseLeave={this.onMouseLeave}
-                >
-                    {dropdownBody}
-                </div>
-            );
         }
+
+        return (
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+            <div
+                className={className}
+                onClick={this.onClick}
+                onMouseLeave={this.onMouseLeave}
+            >
+                {dropdownBody}
+            </div>
+        );
     }
 }
 
@@ -164,21 +164,22 @@ Dropdown.propTypes = {
      */
     noChevron: PropTypes.bool,
     /**
+     * Removes span around element passed in the "toggle" prop
+     */
+    shouldNotWrapToggle: PropTypes.bool,
+    /**
      * React Component to display as a dropdown toggle
      */
     toggle: PropTypes.node.isRequired,
     /**
+     * HTML attributes to add to toggle
+     */
+    // eslint-disable-next-line react/forbid-prop-types
+    toggleAttrs: PropTypes.object,
+    /**
      * HTML classes to add to toggle
      */
     toggleClasses: PropTypes.string,
-    /**
-     * HTML attributes to add to toggle
-     */
-    toggleAttrs: PropTypes.object,
-    /**
-     * Removes span around element passed in the "toggle" prop
-     */
-    shouldNotWrapToggle: PropTypes.bool,
     /**
      * Cutomizes icon in dropdown toggle
      */

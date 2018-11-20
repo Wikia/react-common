@@ -21,14 +21,14 @@ test('DropdownToggle renders correctly with default values for level 2', () => {
 
 test('DropdownToggle renders correctly with additional attrs', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 attrs={{attr1: true}}/>,
+        <DropdownToggle isLevel2 attrs={{ attr1: true }} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with additional classNames', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 classes="first-class second-class"/>,
+        <DropdownToggle isLevel2 classes="first-class second-class" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
@@ -56,7 +56,7 @@ test('DropdownToggle renders correctly with a component inside', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('DropdownToggle renders correctly with a component inside', () => {
+test('DropdownToggle renders correctly with a component inside and custom icon name', () => {
     const component = renderer.create(
         <DropdownToggle iconName="different-icon">
             <span>Content</span>

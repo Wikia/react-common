@@ -14,11 +14,11 @@ const DropdownToggle = ({
     classes,
     attrs,
     shouldNotWrap,
-    iconName
+    iconName,
 }) => {
     let className = classNames({
         'wds-dropdown__toggle': !isLevel2,
-        'wds-dropdown-level-2__toggle': isLevel2
+        'wds-dropdown-level-2__toggle': isLevel2,
     });
 
     if (classes) {
@@ -39,41 +39,46 @@ const DropdownToggle = ({
     );
 
     if (isLevel2) {
-        return <a className={className} {...attrs}>
-            {dropdownToggleBody}
-        </a>
-    } else {
-        return <div className={className} {...attrs}>
-            {dropdownToggleBody}
-        </div>;
+        return (
+            <a className={className} {...attrs}>
+                {dropdownToggleBody}
+            </a>
+        );
     }
+
+    return (
+        <div className={className} {...attrs}>
+            {dropdownToggleBody}
+        </div>
+    );
 };
 
 DropdownToggle.propTypes = {
+    /**
+     * HTML attributes
+     */
+    // eslint-disable-next-line react/forbid-prop-types
+    attrs: PropTypes.object,
     /**
      * Dropdown toggle content
      */
     children: PropTypes.node,
     /**
-     * Is it a nested dropdown
-     */
-    isLevel2: PropTypes.bool,
-    /**
      * HTML classes
      */
     classes: PropTypes.string,
     /**
-     * HTML attributes
+     * Name of the icon displayed next to the toggle
      */
-    attrs: PropTypes.object,
+    iconName: PropTypes.string,
+    /**
+     * Is it a nested dropdown
+     */
+    isLevel2: PropTypes.bool,
     /**
      * Is it a nested dropdown
      */
     shouldNotWrap: PropTypes.bool,
-    /**
-     * Name of the icon displayed next to the toggle
-     */
-    iconName: PropTypes.string,
 };
 
 DropdownToggle.defaultProps = {
