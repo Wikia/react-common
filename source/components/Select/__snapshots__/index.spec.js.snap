@@ -726,3 +726,15 @@ exports[`Select renders correctly 7`] = `
   </div>
 </div>
 `;
+
+exports[`Select renders correctly 8`] = `
+<div>
+  <svg
+    className="wds-icon default-dropdown-indicator is-focused"
+  >
+    <use
+      xlinkHref="#wds-icons-dropdown"
+    />
+  </svg>
+</div>
+`;

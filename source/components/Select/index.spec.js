@@ -6,6 +6,8 @@ import {
 } from 'enzyme';
 import sinon from 'sinon';
 
+import { DefaultDropdownIndicator } from './DropdownIndicator';
+
 import Select from './index';
 
 test('Select renders correctly', () => {
@@ -64,6 +66,15 @@ test('Select renders correctly', () => {
     expect(component.toJSON()).toMatchSnapshot();
 
     component = renderer.create(<Select loading />);
+    expect(component.toJSON()).toMatchSnapshot();
+
+    component = renderer.create(
+        <DefaultDropdownIndicator
+            cx={() => {}}
+            getStyles={() => {}}
+            isFocused
+        />
+    );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
@@ -182,4 +193,13 @@ test('onFocus tests', () => {
     wrapper = mount(<Select />);
     input = wrapper.find('.fandom-select__input input').at(0);
     input.simulate('focus');
+});
+
+test('onTextInputChange tests', () => {
+    const onTextInputChangeSpy = sinon.spy();
+    const wrapper = mount(<Select onTextInputChange={onTextInputChangeSpy} />);
+    const input = wrapper.find(components.Input).at(0).get(0);
+
+    input.props.onChange({ currentTarget: { value: '😀' } });
+    expect(onTextInputChangeSpy.withArgs('😀').calledOnce).toBe(true);
 });
