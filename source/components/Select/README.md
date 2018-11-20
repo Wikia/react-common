@@ -1,11 +1,12 @@
 A select input. For post-interaction events (`onBlur`, `onChange`) the signature is `onX(value, label)`
-for single-value selects, and `onX([{value, label}, ...])` for multi-select
+for single-value selects, and `onX([{value, label}, ...])` for multi-select.
+
+Use `Select.createOption` to create options to feed to the `options` prop.
 
 Basic usage:
 ```js
 <Select
     options={[
-        // use createOption(val, label) for these
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
         {value: 3, label: "label 3"},
@@ -18,7 +19,6 @@ Non-searchable:
 <Select
     searchable={false}
     options={[
-        // use createOption(val, label) for these
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
         {value: 3, label: "label 3"},
@@ -39,7 +39,6 @@ Multi-select
 <Select
     multi
     options={[
-        // use createOption(val, label) for these
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
         {value: 3, label: "label 3"},
@@ -55,7 +54,6 @@ Controlled multi-input
     multi
     value={[1, 2, "five"]}
     options={[
-        // use createOption(val, label) for these
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
         {value: 3, label: "label 3"},
@@ -70,7 +68,6 @@ Controlled single-input
 <Select
     value={1}
     options={[
-        // use createOption(val, label) for these
         {value: 1, label: "label 1"},
         {value: 2, label: "label 2"},
         {value: 3, label: "label 3"},

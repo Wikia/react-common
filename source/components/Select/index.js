@@ -8,10 +8,6 @@ import SelectContainer from './SelectContainer';
 import { DefaultDropdownIndicator, SearchDropdownIndicator } from './DropdownIndicator';
 import LoadingIndicator from './LoadingIndicator';
 
-export function createOption(value, label) {
-    return { value, label };
-}
-
 function callWithValues(func, values, isMulti) {
     if (!func) {
         return;
@@ -31,6 +27,10 @@ function callWithValues(func, values, isMulti) {
 }
 
 class Select extends React.Component {
+    static createOption(value, label) {
+        return { value, label };
+    }
+
     constructor(props) {
         super(props);
         this.selectRef = React.createRef();
