@@ -2,11 +2,12 @@
 
 .fandom-select {
 	$bottom-border-size: 1px;
+	$wrapper-top-bottom-padding: 5px;
 
-	&__indicators {
-		.fandom-spinner {
-			margin: 0 10px;
-		}
+	&__wrapper {
+		border: 1px solid $wds-color-light-gray;
+		border-radius: 4px;
+		padding: $wrapper-top-bottom-padding 10px;
 	}
 
 	&__control {
@@ -22,11 +23,18 @@
 
 	&__value-container {
 		border-bottom: $bottom-border-size solid $wds-color-light-gray;
+		padding: 0 !important;
 	}
 
 	&__input {
 		position: relative;
 		top: $bottom-border-size;
+	}
+
+	&__indicators {
+		.fandom-spinner {
+			margin: 0 10px;
+		}
 	}
 
 	&__dropdown-indicator {
@@ -40,5 +48,9 @@
 
 	.default-dropdown-indicator.is-focused {
 		transform: rotate(180deg);
+	}
+
+	&__menu {
+		margin-top: -$wrapper-top-bottom-padding !important;
 	}
 }

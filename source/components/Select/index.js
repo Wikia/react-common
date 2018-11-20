@@ -7,6 +7,7 @@ import Spinner from '../Spinner';
 
 import './styles.scss';
 import IndicatorsContainer from './IndicatorsContainer';
+import SelectContainer from './SelectContainer';
 import { SearchDropdownIndicator, DefaultDropdownIndicator } from './DropdownIndicator';
 
 export function createOption(value, label) {
@@ -139,6 +140,7 @@ class Select extends React.Component {
                     IndicatorSeparator: null,
                     DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
                     IndicatorsContainer,
+                    SelectContainer,
                 }}
             />
         );
