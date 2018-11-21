@@ -73,7 +73,7 @@ exports[`Select renders correctly 1`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
@@ -174,7 +174,7 @@ exports[`Select renders correctly 2`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ exports[`Select renders correctly 3`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
@@ -427,7 +427,7 @@ exports[`Select renders correctly 4`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
@@ -528,7 +528,7 @@ exports[`Select renders correctly 5`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
@@ -684,7 +684,7 @@ exports[`Select renders correctly 7`] = `
                 }
               }
             >
-
+              
             </div>
           </div>
         </div>
