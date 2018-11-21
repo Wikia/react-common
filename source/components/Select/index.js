@@ -132,6 +132,7 @@ class Select extends React.Component {
                 onInputChange={this.onTextInputChange}
                 options={this.props.options}
                 value={this.getValueFromProps()}
+                inputId="fandom-select-input"
                 components={{
                     IndicatorSeparator: null,
                     DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
