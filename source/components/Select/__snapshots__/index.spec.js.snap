@@ -38,7 +38,7 @@ exports[`Select renders correctly 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-2-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -73,7 +73,7 @@ exports[`Select renders correctly 1`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@ exports[`Select renders correctly 2`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-3-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -174,7 +174,7 @@ exports[`Select renders correctly 2`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -291,7 +291,7 @@ exports[`Select renders correctly 3`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-4-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -326,7 +326,7 @@ exports[`Select renders correctly 3`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -392,7 +392,7 @@ exports[`Select renders correctly 4`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-5-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -427,7 +427,7 @@ exports[`Select renders correctly 4`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -493,7 +493,7 @@ exports[`Select renders correctly 5`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-6-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -528,7 +528,7 @@ exports[`Select renders correctly 5`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -579,7 +579,7 @@ exports[`Select renders correctly 6`] = `
         </div>
         <input
           className="css-14uuagi"
-          id="react-select-7-input"
+          id="fandom-select-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -649,7 +649,7 @@ exports[`Select renders correctly 7`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={true}
-              id="react-select-8-input"
+              id="fandom-select-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -684,7 +684,7 @@ exports[`Select renders correctly 7`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
