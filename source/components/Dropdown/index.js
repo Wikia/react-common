@@ -44,6 +44,7 @@ class Dropdown extends React.Component {
 
     handleClick(shouldPreventDefault, e) {
         const { isTouchDevice, isClicked } = this.state;
+        const { onClose } = this.props;
 
         if (isTouchDevice) {
             this.setState({
@@ -56,7 +57,7 @@ class Dropdown extends React.Component {
             }
 
             if (isClicked === true) {
-                this.props.onClose();
+                onClose();
             }
         }
     }
@@ -194,6 +195,11 @@ Dropdown.propTypes = {
     noChevron: PropTypes.bool,
 
     /**
+     * HTML classes to add to toggle
+     */
+    onClose: PropTypes.func,
+
+    /**
      * React Component to display as a dropdown toggle
      */
     toggle: PropTypes.node.isRequired,
@@ -208,11 +214,6 @@ Dropdown.propTypes = {
      * HTML classes to add to toggle
      */
     toggleClassName: PropTypes.string,
-
-    /**
-     * HTML classes to add to toggle
-     */
-    onClose: PropTypes.func,
 };
 
 Dropdown.defaultProps = {
