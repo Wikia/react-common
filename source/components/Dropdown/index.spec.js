@@ -169,7 +169,7 @@ test('handleClick calls event methods when passed true as an argument', () => {
     expect(eventMock.stopPropagation.called).toBe(true);
 });
 
-test('handleClick calls onClose from props if dropdown is closing', () => {
+test('handleClick calls onClose from props if dropdown is closing on mobile', () => {
     const eventMock = { preventDefault: () => {}, stopPropagation: () => {} };
     const onCloseMock = sinon.spy();
     const component = shallow(
@@ -183,4 +183,20 @@ test('handleClick calls onClose from props if dropdown is closing', () => {
     component.instance().handleClick(true, eventMock);
 
     expect(onCloseMock.called).toBe(true);
+});
+
+test('handleClick does not call onClose from props if dropdown is closing on desktop', () => {
+    const eventMock = { preventDefault: () => {}, stopPropagation: () => {} };
+    const onCloseMock = sinon.spy();
+    const component = shallow(
+        <Dropdown toggle="Toggle" onClose={onCloseMock}>
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.setState({ isTouchDevice: false, isClicked: true });
+
+    component.instance().handleClick(true, eventMock);
+
+    expect(onCloseMock.called).toBe(false);
 });

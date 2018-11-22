@@ -72,8 +72,9 @@ DropdownToggle.propTypes = {
     /**
      * HTML attributes
      */
-    // eslint-disable-next-line react/forbid-prop-types
-    attrs: PropTypes.object,
+    attrs: PropTypes.shape({
+        href: PropTypes.string
+    }),
     /**
      * Dropdown toggle content
      */
@@ -100,7 +101,9 @@ DropdownToggle.defaultProps = {
     children: null,
     isLevel2: false,
     className: '',
-    attrs: {},
+    attrs: {
+        href: ''
+    },
     isTouchDevice: false,
 };
 

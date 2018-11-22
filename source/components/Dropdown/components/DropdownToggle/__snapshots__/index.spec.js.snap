@@ -3,6 +3,7 @@
 exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
 <div
   className="wds-dropdown-level-2__toggle"
+  href=""
   onClick={[Function]}
 />
 `;
@@ -10,6 +11,7 @@ exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
 exports[`DropdownToggle renders correctly with Text inside 1`] = `
 <div
   className="wds-dropdown__toggle"
+  href=""
   onClick={[Function]}
 >
   <span>
@@ -28,6 +30,7 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
 exports[`DropdownToggle renders correctly with a component inside 1`] = `
 <div
   className="wds-dropdown__toggle"
+  href=""
   onClick={[Function]}
 >
   <div>
@@ -39,6 +42,7 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
 exports[`DropdownToggle renders correctly with a function passed as toggle 1`] = `
 <div
   className="wds-dropdown__toggle"
+  href=""
   onClick={[Function]}
 >
   <div>
@@ -65,6 +69,7 @@ exports[`DropdownToggle renders correctly with additional attrs 1`] = `
 exports[`DropdownToggle renders correctly with additional classNames 1`] = `
 <div
   className="wds-dropdown-level-2__toggle"
+  href=""
   onClick={[Function]}
 />
 `;
@@ -72,6 +77,7 @@ exports[`DropdownToggle renders correctly with additional classNames 1`] = `
 exports[`DropdownToggle renders correctly with default values 1`] = `
 <div
   className="wds-dropdown__toggle"
+  href=""
   onClick={[Function]}
 />
 `;
@@ -79,6 +85,7 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
 exports[`DropdownToggle renders correctly with default values for level 2 1`] = `
 <div
   className="wds-dropdown-level-2__toggle"
+  href=""
   onClick={[Function]}
 />
 `;

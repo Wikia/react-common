@@ -207,8 +207,9 @@ Dropdown.propTypes = {
     /**
      * HTML attributes to add to toggle
      */
-    // eslint-disable-next-line react/forbid-prop-types
-    toggleAttrs: PropTypes.object,
+    toggleAttrs: PropTypes.shape({
+        href: PropTypes.string
+    }),
 
     /**
      * HTML classes to add to toggle
@@ -227,7 +228,9 @@ Dropdown.defaultProps = {
     isLevel2: false,
     isActive: false,
     toggleClassName: '',
-    toggleAttrs: {},
+    toggleAttrs: {
+        href: ''
+    },
     isStickedToParent: false,
     onClose: () => {},
 };
