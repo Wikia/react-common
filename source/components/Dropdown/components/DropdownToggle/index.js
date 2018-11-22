@@ -8,50 +8,69 @@ import Icon from '../../../Icon';
 /**
  * Basic DropdownToggle component
  */
-const DropdownToggle = ({
-    isLevel2,
-    children,
-    classes,
-    attrs,
-    shouldNotWrap,
-    iconName,
-}) => {
-    let className = classNames({
-        'wds-dropdown__toggle': !isLevel2,
-        'wds-dropdown-level-2__toggle': isLevel2,
-    });
+class DropdownToggle extends React.Component {
+    constructor(props) {
+        super(props);
 
-    if (classes) {
-        className += ` ${classes}`;
+        this.onClick = this.onClick.bind(this);
     }
 
-    const iconClassName = isLevel2
-        ? 'wds-dropdown-chevron'
-        : 'wds-dropdown__toggle-chevron';
+    render() {
+        const {
+            isLevel2,
+            toggleContent,
+            className,
+            attrs,
+        } = this.props;
 
-    const toggleElement = shouldNotWrap ? children : <span>{children}</span>;
+        let fullClassName = classNames([{
+            'wds-dropdown__toggle': !isLevel2,
+            'wds-dropdown-level-2__toggle': isLevel2,
+        }, className]);
 
-    const dropdownToggleBody = (
-        <React.Fragment>
-            {toggleElement}
-            <Icon name={iconName} className={`wds-icon wds-icon-tiny ${iconClassName}`} />
-        </React.Fragment>
-    );
+        const toggleContentComponent = DropdownToggle.getToggleContentComponent(toggleContent, isLevel2);
 
-    if (isLevel2) {
+        if (attrs.href) {
+            return (
+                <a onClick={this.onClick} className={fullClassName} {...attrs}>
+                    {toggleContentComponent}
+                </a>
+            );
+        }
+
         return (
-            <a className={className} {...attrs}>
-                {dropdownToggleBody}
-            </a>
+            <div className={fullClassName} {...attrs}>
+                {toggleContentComponent}
+            </div>
         );
     }
 
-    return (
-        <div className={className} {...attrs}>
-            {dropdownToggleBody}
-        </div>
-    );
-};
+    static getToggleContentComponent(toggleContent, isLevel2) {
+        const iconClassName = isLevel2
+            ? 'wds-dropdown-chevron'
+            : 'wds-dropdown__toggle-chevron';
+        const icon = <Icon name='menu-control-tiny' className={`wds-icon wds-icon-tiny ${iconClassName}`}/>;
+
+        if (typeof toggleContent === 'function') {
+            return toggleContent(icon);
+        } else if (typeof toggleContent === 'string') {
+            return (
+                <React.Fragment>
+                    <span>{toggleContent}</span>
+                    {icon}
+                </React.Fragment>
+            );
+        }
+
+        return toggleContent;
+    }
+
+    onClick(e) {
+        if (this.props.isTouchDevice) {
+            e.preventDefault();
+        }
+    }
+}
 
 DropdownToggle.propTypes = {
     /**
@@ -66,19 +85,15 @@ DropdownToggle.propTypes = {
     /**
      * HTML classes
      */
-    classes: PropTypes.string,
-    /**
-     * Name of the icon displayed next to the toggle
-     */
-    iconName: PropTypes.string,
+    className: PropTypes.string,
     /**
      * Is it a nested dropdown
      */
     isLevel2: PropTypes.bool,
     /**
-     * Is it a nested dropdown
+     * Whether or not the dropdown is displayed on touch device
      */
-    shouldNotWrap: PropTypes.bool,
+    isTouchDevice: PropTypes.bool
 };
 
 DropdownToggle.defaultProps = {
@@ -87,7 +102,7 @@ DropdownToggle.defaultProps = {
     classes: '',
     attrs: {},
     shouldNotWrap: false,
-    iconName: 'menu-control-tiny',
+    isTouchDevice: false
 };
 
 export default DropdownToggle;

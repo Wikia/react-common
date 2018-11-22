@@ -1,17 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
-<a
+<div
   className="wds-dropdown-level-2__toggle"
->
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
-</a>
+/>
 `;
 
 exports[`DropdownToggle renders correctly with Text inside 1`] = `
@@ -19,7 +11,7 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
   className="wds-dropdown__toggle"
 >
   <span>
-    Content
+    My toggle content
   </span>
   <svg
     className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
@@ -35,93 +27,65 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
 <div
   className="wds-dropdown__toggle"
 >
-  <span>
-    <span>
-      Content
-    </span>
-  </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div>
+    My toggle content
+  </div>
 </div>
 `;
 
-exports[`DropdownToggle renders correctly with a component inside and custom icon name 1`] = `
+exports[`DropdownToggle renders correctly with a function passed as toggle 1`] = `
 <div
   className="wds-dropdown__toggle"
 >
-  <span>
-    <span>
-      Content
-    </span>
-  </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
-  >
-    <use
-      xlinkHref="#wds-icons-different-icon"
-    />
-  </svg>
+  <div>
+    My toggle content 
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
 </div>
 `;
 
 exports[`DropdownToggle renders correctly with additional attrs 1`] = `
-<a
+<div
   attr1={true}
   className="wds-dropdown-level-2__toggle"
->
-  <span />
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
-</a>
+/>
 `;
 
 exports[`DropdownToggle renders correctly with additional classNames 1`] = `
-<a
-  className="wds-dropdown-level-2__toggle first-class second-class"
->
-  <span />
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
-</a>
+<div
+  className="wds-dropdown-level-2__toggle"
+/>
 `;
 
 exports[`DropdownToggle renders correctly with default values 1`] = `
 <div
   className="wds-dropdown__toggle"
->
-  <span />
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
-</div>
+/>
 `;
 
 exports[`DropdownToggle renders correctly with default values for level 2 1`] = `
-<a
+<div
   className="wds-dropdown-level-2__toggle"
+/>
+`;
+
+exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
+<a
+  className="wds-dropdown__toggle"
+  href="#"
+  onClick={[Function]}
 >
-  <span />
+  <span>
+    My toggle content
+  </span>
   <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
   >
     <use
       xlinkHref="#wds-icons-menu-control-tiny"

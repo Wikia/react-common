@@ -23,14 +23,13 @@ class Dropdown extends React.Component {
         this.onMouseLeave = this.onMouseLeave.bind(this);
     }
 
-    onClick(e) {
+    onClick() {
         const { isTouchDevice } = this.state;
 
         if (isTouchDevice) {
             this.setState({
                 isClicked: !this.isClicked,
             });
-            e.preventDefault();
         }
     }
 
@@ -57,10 +56,8 @@ class Dropdown extends React.Component {
             isActive,
             contentScrollable,
             toggleAttrs,
-            toggleClasses,
-            shouldNotWrapToggle,
-            toggleIconName,
             isStickedToParent,
+            toggleClassName,
         } = this.props;
 
         const {
@@ -84,12 +81,10 @@ class Dropdown extends React.Component {
                 <DropdownToggle
                     isLevel2={isLevel2}
                     attrs={toggleAttrs}
-                    classes={toggleClasses}
-                    shouldNotWrap={shouldNotWrapToggle}
-                    iconName={toggleIconName}
-                >
-                    {toggle}
-                </DropdownToggle>
+                    className={toggleClassName}
+                    isTouchDevice={this.state.isTouchDevice}
+                    toggleContent={toggle}
+                />
                 <DropdownContent
                     dropdownLeftAligned={dropdownLeftAligned}
                     dropdownRightAligned={dropdownRightAligned}
@@ -175,14 +170,9 @@ Dropdown.propTypes = {
     isStickedToParent: PropTypes.bool,
 
     /**
-     * Hides chevron in dropdown toggle
+     * Should chevron on the top of dropdown content be hidden
      */
     noChevron: PropTypes.bool,
-
-    /**
-     * Removes span around element passed in the "toggle" prop
-     */
-    shouldNotWrapToggle: PropTypes.bool,
 
     /**
      * React Component to display as a dropdown toggle
@@ -198,12 +188,7 @@ Dropdown.propTypes = {
     /**
      * HTML classes to add to toggle
      */
-    toggleClasses: PropTypes.string,
-
-    /**
-     * Customizes icon in dropdown toggle
-     */
-    toggleIconName: PropTypes.string,
+    toggleClassName: PropTypes.string,
 };
 
 Dropdown.defaultProps = {
@@ -216,10 +201,8 @@ Dropdown.defaultProps = {
     contentScrollable: false,
     isLevel2: false,
     isActive: false,
-    toggleClasses: '',
+    toggleClassName: '',
     toggleAttrs: {},
-    shouldNotWrapToggle: false,
-    toggleIconName: 'menu-control-tiny',
     isStickedToParent: false,
 };
 

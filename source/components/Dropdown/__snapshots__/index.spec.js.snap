@@ -6,7 +6,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}
 >
-  <a
+  <div
     className="wds-dropdown-level-2__toggle"
   >
     <span>
@@ -19,7 +19,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
         xlinkHref="#wds-icons-menu-control-tiny"
       />
     </svg>
-  </a>
+  </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
   />
@@ -69,10 +69,10 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
       Toggle
     </span>
     <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-my-icon-name"
+        xlinkHref="#wds-icons-menu-control-tiny"
       />
     </svg>
   </div>

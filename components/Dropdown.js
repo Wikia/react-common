@@ -293,39 +293,74 @@ Icon.defaultProps = {
  * Basic DropdownToggle component
  */
 
-var DropdownToggle = function DropdownToggle(_ref) {
-  var isLevel2 = _ref.isLevel2,
-      children = _ref.children,
-      classes = _ref.classes,
-      attrs = _ref.attrs,
-      shouldNotWrap = _ref.shouldNotWrap,
-      iconName = _ref.iconName;
-  var className = classnames({
-    'wds-dropdown__toggle': !isLevel2,
-    'wds-dropdown-level-2__toggle': isLevel2
-  });
+var DropdownToggle =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(DropdownToggle, _React$Component);
 
-  if (classes) {
-    className += " ".concat(classes);
+  function DropdownToggle(props) {
+    var _this;
+
+    _classCallCheck(this, DropdownToggle);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(DropdownToggle).call(this, props));
+    _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
   }
 
-  var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
-  var toggleElement = shouldNotWrap ? children : React.createElement("span", null, children);
-  var dropdownToggleBody = React.createElement(React.Fragment, null, toggleElement, React.createElement(Icon, {
-    name: iconName,
-    className: "wds-icon wds-icon-tiny ".concat(iconClassName)
-  }));
+  _createClass(DropdownToggle, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          isLevel2 = _this$props.isLevel2,
+          toggleContent = _this$props.toggleContent,
+          className = _this$props.className,
+          attrs = _this$props.attrs;
+      var fullClassName = classnames([{
+        'wds-dropdown__toggle': !isLevel2,
+        'wds-dropdown-level-2__toggle': isLevel2
+      }, className]);
+      var toggleContentComponent = DropdownToggle.getToggleContentComponent(toggleContent, isLevel2);
 
-  if (isLevel2) {
-    return React.createElement("a", _extends({
-      className: className
-    }, attrs), dropdownToggleBody);
-  }
+      if (attrs.href) {
+        return React.createElement("a", _extends({
+          onClick: this.onClick,
+          className: fullClassName
+        }, attrs), toggleContentComponent);
+      }
 
-  return React.createElement("div", _extends({
-    className: className
-  }, attrs), dropdownToggleBody);
-};
+      return React.createElement("div", _extends({
+        className: fullClassName
+      }, attrs), toggleContentComponent);
+    }
+  }, {
+    key: "onClick",
+    value: function onClick(e) {
+      if (this.props.isTouchDevice) {
+        e.preventDefault();
+      }
+    }
+  }], [{
+    key: "getToggleContentComponent",
+    value: function getToggleContentComponent(toggleContent, isLevel2) {
+      var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
+      var icon = React.createElement(Icon, {
+        name: "menu-control-tiny",
+        className: "wds-icon wds-icon-tiny ".concat(iconClassName)
+      });
+
+      if (typeof toggleContent === 'function') {
+        return toggleContent(icon);
+      } else if (typeof toggleContent === 'string') {
+        return React.createElement(React.Fragment, null, React.createElement("span", null, toggleContent), icon);
+      }
+
+      return toggleContent;
+    }
+  }]);
+
+  return DropdownToggle;
+}(React.Component);
 
 DropdownToggle.propTypes = {
   /**
@@ -342,12 +377,7 @@ DropdownToggle.propTypes = {
   /**
    * HTML classes
    */
-  classes: PropTypes.string,
-
-  /**
-   * Name of the icon displayed next to the toggle
-   */
-  iconName: PropTypes.string,
+  className: PropTypes.string,
 
   /**
    * Is it a nested dropdown
@@ -355,9 +385,9 @@ DropdownToggle.propTypes = {
   isLevel2: PropTypes.bool,
 
   /**
-   * Is it a nested dropdown
+   * Whether or not the dropdown is displayed on touch device
    */
-  shouldNotWrap: PropTypes.bool
+  isTouchDevice: PropTypes.bool
 };
 DropdownToggle.defaultProps = {
   children: null,
@@ -365,7 +395,7 @@ DropdownToggle.defaultProps = {
   classes: '',
   attrs: {},
   shouldNotWrap: false,
-  iconName: 'menu-control-tiny'
+  isTouchDevice: false
 };
 
 /**
@@ -394,14 +424,13 @@ function (_React$Component) {
 
   _createClass(Dropdown, [{
     key: "onClick",
-    value: function onClick(e) {
+    value: function onClick() {
       var isTouchDevice = this.state.isTouchDevice;
 
       if (isTouchDevice) {
         this.setState({
           isClicked: !this.isClicked
         });
-        e.preventDefault();
       }
     }
   }, {
@@ -430,10 +459,8 @@ function (_React$Component) {
           isActive = _this$props.isActive,
           contentScrollable = _this$props.contentScrollable,
           toggleAttrs = _this$props.toggleAttrs,
-          toggleClasses = _this$props.toggleClasses,
-          shouldNotWrapToggle = _this$props.shouldNotWrapToggle,
-          toggleIconName = _this$props.toggleIconName,
-          isStickedToParent = _this$props.isStickedToParent;
+          isStickedToParent = _this$props.isStickedToParent,
+          toggleClassName = _this$props.toggleClassName;
       var _this$state = this.state,
           isClicked = _this$state.isClicked,
           isTouchDevice = _this$state.isTouchDevice;
@@ -450,10 +477,10 @@ function (_React$Component) {
       var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
         isLevel2: isLevel2,
         attrs: toggleAttrs,
-        classes: toggleClasses,
-        shouldNotWrap: shouldNotWrapToggle,
-        iconName: toggleIconName
-      }, toggle), React.createElement(DropdownContent, {
+        className: toggleClassName,
+        isTouchDevice: this.state.isTouchDevice,
+        toggleContent: toggle
+      }), React.createElement(DropdownContent, {
         dropdownLeftAligned: dropdownLeftAligned,
         dropdownRightAligned: dropdownRightAligned,
         isLevel2: isLevel2,
@@ -531,14 +558,9 @@ Dropdown.propTypes = {
   isStickedToParent: PropTypes.bool,
 
   /**
-   * Hides chevron in dropdown toggle
+   * Should chevron on the top of dropdown content be hidden
    */
   noChevron: PropTypes.bool,
-
-  /**
-   * Removes span around element passed in the "toggle" prop
-   */
-  shouldNotWrapToggle: PropTypes.bool,
 
   /**
    * React Component to display as a dropdown toggle
@@ -554,12 +576,7 @@ Dropdown.propTypes = {
   /**
    * HTML classes to add to toggle
    */
-  toggleClasses: PropTypes.string,
-
-  /**
-   * Customizes icon in dropdown toggle
-   */
-  toggleIconName: PropTypes.string
+  toggleClassName: PropTypes.string
 };
 Dropdown.defaultProps = {
   children: null,
@@ -571,10 +588,8 @@ Dropdown.defaultProps = {
   contentScrollable: false,
   isLevel2: false,
   isActive: false,
-  toggleClasses: '',
+  toggleClassName: '',
   toggleAttrs: {},
-  shouldNotWrapToggle: false,
-  toggleIconName: 'menu-control-tiny',
   isStickedToParent: false
 };
 
