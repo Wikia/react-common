@@ -9,85 +9,91 @@ import DropdownToggle from './index';
 
 test('DropdownToggle renders correctly with default values', () => {
     const component = renderer.create(
-        <DropdownToggle />,
+        <DropdownToggle onClick={() => {}} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with default values for level 2', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 />,
+        <DropdownToggle isLevel2 onClick={() => {}} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with additional attrs', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 attrs={{ attr1: true }} />,
+        <DropdownToggle isLevel2 attrs={{ attr1: true }} onClick={() => {}} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with additional classNames', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 classes="first-class second-class" />,
+        <DropdownToggle isLevel2 classes="first-class second-class" onClick={() => {}} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly when shouldNotWrap is set', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 shouldNotWrap />,
+        <DropdownToggle isLevel2 shouldNotWrap onClick={() => {}} />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with Text inside', () => {
     const component = renderer.create(
-        <DropdownToggle toggleContent="My toggle content" />
+        <DropdownToggle toggleContent="My toggle content" onClick={() => {}} />
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with a component inside', () => {
     const component = renderer.create(
-        <DropdownToggle toggleContent={<div>My toggle content</div>} />
+        <DropdownToggle toggleContent={<div>My toggle content</div>} onClick={() => {}} />
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with a function passed as toggle', () => {
     const component = renderer.create(
-        <DropdownToggle toggleContent={(icon) => <div>My toggle content {icon}</div>} />
+        <DropdownToggle
+            toggleContent={icon => (
+                <div>
+                    My toggle content
+                    {icon}
+                </div>
+            )}
+            onClick={() => {}}
+        />
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with href passed in attrs', () => {
     const component = renderer.create(
-        <DropdownToggle toggleContent="My toggle content" attrs={{href: '#'}} />
+        <DropdownToggle
+            toggleContent="My toggle content"
+            attrs={{ href: '#' }}
+            onClick={() => {}}
+        />
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('DropdownToggle renders correctly with href passed in attrs', () => {
+test('DropdownToggle triggers onClick from props when clicked', () => {
+    const onClickMock = sinon.spy();
     const component = shallow(
-        <DropdownToggle toggleContent="My toggle content" attrs={{href: '#'}} isTouchDevice={true} />
+        <DropdownToggle
+            toggleContent="My toggle content"
+            attrs={{ href: '#' }}
+            isTouchDevice
+            onClick={onClickMock}
+        />
     );
-    const preventDefaultMock = sinon.spy();
 
-    component.simulate('click', { preventDefault: preventDefaultMock });
+    component.simulate('click');
 
-    expect(preventDefaultMock.called).toBe(true);
-});
-
-test('DropdownToggle renders correctly with href passed in attrs', () => {
-    const component = shallow(
-        <DropdownToggle toggleContent="My toggle content" attrs={{href: '#'}} isTouchDevice={false} />
-    );
-    const preventDefaultMock = sinon.spy();
-
-    component.simulate('click', { preventDefault: preventDefaultMock });
-
-    expect(preventDefaultMock.called).toBe(false);
+    expect(onClickMock.called).toBe(true);
 });

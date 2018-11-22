@@ -8,6 +8,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
 >
   <div
     className="wds-dropdown-level-2__toggle"
+    onClick={[Function]}
   >
     <span>
       Toggle
@@ -34,6 +35,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
 >
   <div
     className="wds-dropdown__toggle"
+    onClick={[Function]}
   >
     <span>
       Toggle
@@ -64,6 +66,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
 >
   <div
     className="wds-dropdown__toggle"
+    onClick={[Function]}
   >
     <span>
       Toggle
@@ -94,6 +97,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
 >
   <div
     className="wds-dropdown__toggle"
+    onClick={[Function]}
   >
     <span>
       Toggle

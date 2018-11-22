@@ -9,10 +9,27 @@ import Icon from '../../../Icon';
  * Basic DropdownToggle component
  */
 class DropdownToggle extends React.Component {
-    constructor(props) {
-        super(props);
+    static getToggleContentComponent(toggleContent, isLevel2) {
+        const iconClassName = isLevel2
+            ? 'wds-dropdown-chevron'
+            : 'wds-dropdown__toggle-chevron';
+        const icon = <Icon name="menu-control-tiny" className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+        let toggleContentComponent;
 
-        this.onClick = this.onClick.bind(this);
+        if (typeof toggleContent === 'function') {
+            toggleContentComponent = toggleContent(icon);
+        } else if (typeof toggleContent === 'string') {
+            toggleContentComponent = (
+                <React.Fragment>
+                    <span>{toggleContent}</span>
+                    {icon}
+                </React.Fragment>
+            );
+        } else {
+            toggleContentComponent = toggleContent;
+        }
+
+        return toggleContentComponent;
     }
 
     render() {
@@ -21,9 +38,10 @@ class DropdownToggle extends React.Component {
             toggleContent,
             className,
             attrs,
+            onClick,
         } = this.props;
 
-        let fullClassName = classNames([{
+        const fullClassName = classNames([{
             'wds-dropdown__toggle': !isLevel2,
             'wds-dropdown-level-2__toggle': isLevel2,
         }, className]);
@@ -32,43 +50,21 @@ class DropdownToggle extends React.Component {
 
         if (attrs.href) {
             return (
-                <a onClick={this.onClick} className={fullClassName} {...attrs}>
+                // TODO: Fix a11y
+                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+                <a onClick={onClick} className={fullClassName} {...attrs}>
                     {toggleContentComponent}
                 </a>
             );
         }
 
         return (
-            <div className={fullClassName} {...attrs}>
+            // TODO: Fix a11y
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+            <div onClick={onClick} className={fullClassName} {...attrs}>
                 {toggleContentComponent}
             </div>
         );
-    }
-
-    static getToggleContentComponent(toggleContent, isLevel2) {
-        const iconClassName = isLevel2
-            ? 'wds-dropdown-chevron'
-            : 'wds-dropdown__toggle-chevron';
-        const icon = <Icon name='menu-control-tiny' className={`wds-icon wds-icon-tiny ${iconClassName}`}/>;
-
-        if (typeof toggleContent === 'function') {
-            return toggleContent(icon);
-        } else if (typeof toggleContent === 'string') {
-            return (
-                <React.Fragment>
-                    <span>{toggleContent}</span>
-                    {icon}
-                </React.Fragment>
-            );
-        }
-
-        return toggleContent;
-    }
-
-    onClick(e) {
-        if (this.props.isTouchDevice) {
-            e.preventDefault();
-        }
     }
 }
 
@@ -93,16 +89,19 @@ DropdownToggle.propTypes = {
     /**
      * Whether or not the dropdown is displayed on touch device
      */
-    isTouchDevice: PropTypes.bool
+    isTouchDevice: PropTypes.bool,
+    /**
+     * Callback when toggle is clicked
+     */
+    onClick: PropTypes.func.isRequired,
 };
 
 DropdownToggle.defaultProps = {
     children: null,
     isLevel2: false,
-    classes: '',
+    className: '',
     attrs: {},
-    shouldNotWrap: false,
-    isTouchDevice: false
+    isTouchDevice: false,
 };
 
 export default DropdownToggle;

@@ -20,17 +20,16 @@ class Dropdown extends React.Component {
         };
 
         this.onClick = this.onClick.bind(this);
+        this.onToggleClicked = this.onToggleClicked.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
     }
 
     onClick() {
-        const { isTouchDevice } = this.state;
+        this.handleClick(false);
+    }
 
-        if (isTouchDevice) {
-            this.setState({
-                isClicked: !this.isClicked,
-            });
-        }
+    onToggleClicked(e) {
+        this.handleClick(true, e);
     }
 
     onMouseLeave() {
@@ -40,6 +39,21 @@ class Dropdown extends React.Component {
             this.setState({
                 isClicked: false,
             });
+        }
+    }
+
+    handleClick(shouldPreventDefault, e) {
+        const { isTouchDevice, isClicked } = this.state;
+
+        if (isTouchDevice) {
+            this.setState({
+                isClicked: !isClicked,
+            });
+
+            if (shouldPreventDefault) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
         }
     }
 
@@ -82,8 +96,9 @@ class Dropdown extends React.Component {
                     isLevel2={isLevel2}
                     attrs={toggleAttrs}
                     className={toggleClassName}
-                    isTouchDevice={this.state.isTouchDevice}
+                    isTouchDevice={isTouchDevice}
                     toggleContent={toggle}
+                    onClick={this.onToggleClicked}
                 />
                 <DropdownContent
                     dropdownLeftAligned={dropdownLeftAligned}
