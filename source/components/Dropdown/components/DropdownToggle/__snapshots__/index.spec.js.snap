@@ -42,7 +42,7 @@ exports[`DropdownToggle renders correctly with a function passed as toggle 1`] =
   onClick={[Function]}
 >
   <div>
-    My toggle content 
+    My toggle content
     <svg
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
