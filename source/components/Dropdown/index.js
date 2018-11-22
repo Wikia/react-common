@@ -54,6 +54,10 @@ class Dropdown extends React.Component {
                 e.preventDefault();
                 e.stopPropagation();
             }
+
+            if (isClicked === true) {
+                this.props.onClose();
+            }
         }
     }
 
@@ -204,6 +208,11 @@ Dropdown.propTypes = {
      * HTML classes to add to toggle
      */
     toggleClassName: PropTypes.string,
+
+    /**
+     * HTML classes to add to toggle
+     */
+    onClose: PropTypes.func,
 };
 
 Dropdown.defaultProps = {
@@ -219,6 +228,7 @@ Dropdown.defaultProps = {
     toggleClassName: '',
     toggleAttrs: {},
     isStickedToParent: false,
+    onClose: () => {},
 };
 
 export default Dropdown;
