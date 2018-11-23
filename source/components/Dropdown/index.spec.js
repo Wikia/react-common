@@ -23,6 +23,27 @@ test('Dropdown level2 renders correctly with default values', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Dropdown level2 renders correctly with href set', () => {
+    const component = renderer.create(
+        <Dropdown toggle="Toggle" isLevel2 attrs={{ href: '#' }} />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Dropdown level2 renders correctly with isStickedToParent set', () => {
+    const component = renderer.create(
+        <Dropdown toggle="Toggle" isLevel2 isStickedToParent />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Dropdown level2 renders correctly with isActive set', () => {
+    const component = renderer.create(
+        <Dropdown toggle="Toggle" isLevel2 isActive />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('Dropdown renders correctly with DropdownToggle and children', () => {
     const component = renderer.create(
         <Dropdown toggle="Toggle">
@@ -151,6 +172,21 @@ test('handleClick changes isClicked state on touch device', () => {
     component.instance().handleClick(true, eventMock);
 
     expect(component.state('isClicked')).toBe(true);
+});
+
+test('handleClick does not change isClicked state on non-touch device', () => {
+    const eventMock = { preventDefault: () => {}, stopPropagation: () => {} };
+    const component = shallow(
+        <Dropdown toggle="Toggle">
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.setState({ isTouchDevice: false });
+
+    component.instance().handleClick(true, eventMock);
+
+    expect(component.state('isClicked')).toBe(false);
 });
 
 test('handleClick calls event methods when passed true as an argument', () => {
