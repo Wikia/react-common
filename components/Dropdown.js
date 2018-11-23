@@ -366,8 +366,9 @@ DropdownToggle.propTypes = {
   /**
    * HTML attributes
    */
-  // eslint-disable-next-line react/forbid-prop-types
-  attrs: PropTypes.object,
+  attrs: PropTypes.shape({
+    href: PropTypes.string
+  }),
 
   /**
    * Dropdown toggle content
@@ -398,7 +399,9 @@ DropdownToggle.defaultProps = {
   children: null,
   isLevel2: false,
   className: '',
-  attrs: {},
+  attrs: {
+    href: ''
+  },
   isTouchDevice: false
 };
 
@@ -454,6 +457,7 @@ function (_React$Component) {
       var _this$state = this.state,
           isTouchDevice = _this$state.isTouchDevice,
           isClicked = _this$state.isClicked;
+      var onClose = this.props.onClose;
 
       if (isTouchDevice) {
         this.setState({
@@ -463,6 +467,10 @@ function (_React$Component) {
         if (shouldPreventDefault) {
           e.preventDefault();
           e.stopPropagation();
+        }
+
+        if (isClicked === true) {
+          onClose();
         }
       }
     }
@@ -586,6 +594,11 @@ Dropdown.propTypes = {
   noChevron: PropTypes.bool,
 
   /**
+   * HTML classes to add to toggle
+   */
+  onClose: PropTypes.func,
+
+  /**
    * React Component to display as a dropdown toggle
    */
   toggle: PropTypes.node.isRequired,
@@ -593,8 +606,9 @@ Dropdown.propTypes = {
   /**
    * HTML attributes to add to toggle
    */
-  // eslint-disable-next-line react/forbid-prop-types
-  toggleAttrs: PropTypes.object,
+  toggleAttrs: PropTypes.shape({
+    href: PropTypes.string
+  }),
 
   /**
    * HTML classes to add to toggle
@@ -612,8 +626,11 @@ Dropdown.defaultProps = {
   isLevel2: false,
   isActive: false,
   toggleClassName: '',
-  toggleAttrs: {},
-  isStickedToParent: false
+  toggleAttrs: {
+    href: ''
+  },
+  isStickedToParent: false,
+  onClose: function onClose() {}
 };
 
 module.exports = Dropdown;
