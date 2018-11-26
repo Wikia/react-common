@@ -1,0 +1,93 @@
+.fandom-select__wrapper {
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.fandom-select__wrapper .fandom-select__control {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 0;
+}
+.fandom-select__wrapper .fandom-select__control--is-disabled {
+  background-color: inherit;
+}
+.fandom-select__wrapper .fandom-select__value-container {
+  min-height: 27px;
+  padding: 0;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator {
+  padding: 0;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .default-dropdown-indicator {
+  height: 24px;
+  width: 24px;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .default-dropdown-indicator.is-focused {
+  transform: rotate(180deg);
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .search-dropdown-indicator {
+  height: 16px;
+  width: 16px;
+}
+.fandom-select__wrapper .fandom-select__menu {
+  border-top: 1px solid #1a1a1a;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+  z-index: 10000;
+}.wds-icon {
+  fill: currentColor;
+  height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+.wds-icon-small {
+  height: 18px;
+  min-width: 18px;
+  width: 18px;
+}
+.wds-icon-tiny {
+  height: 12px;
+  min-width: 12px;
+  width: 12px;
+}@keyframes fandom-spinner-rotator {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fandom-spinner-dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.fandom-spinner {
+  display: inline-flex;
+}
+.fandom-spinner > svg {
+  animation: fandom-spinner-rotator 0.5s linear infinite;
+  transform: translateZ(0);
+}
+.fandom-spinner > svg circle {
+  animation: fandom-spinner-dash 1.25s linear infinite alternate-reverse;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  stroke: #00b7e0;
+}
+.fandom-spinner.is-block {
+  display: block;
+  left: auto;
+  margin: auto;
+  position: relative;
+}
+.fandom-spinner.is-inline {
+  height: 1em;
+  left: 0;
+  margin: 0;
+  position: static;
+  top: 0;
+  width: auto;
+}

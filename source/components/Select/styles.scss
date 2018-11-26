@@ -1,0 +1,52 @@
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
+.fandom-select__wrapper {
+	border: 1px solid $wds-color-light-gray;
+	border-radius: 4px;
+	padding: 5px 10px;
+
+	// it's odd to have the separate selector here but it's needed for specificity to avoid !important
+	.fandom-select {
+		&__control {
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			min-height: 0;
+
+			&--is-disabled {
+				background-color: inherit;
+			}
+		}
+
+		&__value-container {
+			min-height: 27px;
+			padding: 0;
+		}
+
+		&__dropdown-indicator {
+			padding: 0;
+
+			> .default-dropdown-indicator {
+				height: 24px;
+				width: 24px;
+
+				&.is-focused {
+					transform: rotate(180deg);
+				}
+			}
+
+			> .search-dropdown-indicator {
+				height: 16px;
+				width: 16px;
+			}
+		}
+
+		&__menu {
+			border-top: 1px solid $wds-color-black;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			margin-top: 0;
+			z-index: $z-max;
+		}
+	}
+}

@@ -68,7 +68,8 @@
       "FandomBackgroundImage",
       "Vignette",
       "Timeago",
-      "ExpandableText"
+      "ExpandableText",
+      "Select"
     ]
   }
 ]
