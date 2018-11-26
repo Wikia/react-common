@@ -208,7 +208,7 @@ Dropdown.propTypes = {
      * HTML attributes to add to toggle
      */
     toggleAttrs: PropTypes.shape({
-        href: PropTypes.string
+        href: PropTypes.string,
     }),
 
     /**
@@ -229,7 +229,7 @@ Dropdown.defaultProps = {
     isActive: false,
     toggleClassName: '',
     toggleAttrs: {
-        href: ''
+        href: '',
     },
     isStickedToParent: false,
     onClose: null,

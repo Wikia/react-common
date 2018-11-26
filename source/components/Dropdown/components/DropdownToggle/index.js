@@ -73,7 +73,7 @@ DropdownToggle.propTypes = {
      * HTML attributes
      */
     attrs: PropTypes.shape({
-        href: PropTypes.string
+        href: PropTypes.string,
     }),
     /**
      * Dropdown toggle content
@@ -102,7 +102,7 @@ DropdownToggle.defaultProps = {
     isLevel2: false,
     className: '',
     attrs: {
-        href: ''
+        href: '',
     },
     isTouchDevice: false,
 };
