@@ -469,7 +469,7 @@ function (_React$Component) {
           e.stopPropagation();
         }
 
-        if (isClicked === true) {
+        if (isClicked === true && typeof onClose === 'function') {
           onClose();
         }
       }
@@ -630,7 +630,7 @@ Dropdown.defaultProps = {
     href: ''
   },
   isStickedToParent: false,
-  onClose: function onClose() {}
+  onClose: null
 };
 
 module.exports = Dropdown;

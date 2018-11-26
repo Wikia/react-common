@@ -56,7 +56,7 @@ class Dropdown extends React.Component {
                 e.stopPropagation();
             }
 
-            if (isClicked === true) {
+            if (isClicked === true && typeof onClose === 'function') {
                 onClose();
             }
         }
@@ -232,7 +232,7 @@ Dropdown.defaultProps = {
         href: ''
     },
     isStickedToParent: false,
-    onClose: () => {},
+    onClose: null,
 };
 
 export default Dropdown;

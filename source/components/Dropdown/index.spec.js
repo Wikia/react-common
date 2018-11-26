@@ -221,6 +221,24 @@ test('handleClick calls onClose from props if dropdown is closing on mobile', ()
     expect(onCloseMock.called).toBe(true);
 });
 
+test('handleClick calls default onClose if dropdown is closing on mobile', () => {
+    const eventMock = { preventDefault: () => {}, stopPropagation: () => {} };
+    const onCloseMock = sinon.spy();
+
+    Dropdown.defaultProps.onClose = onCloseMock;
+    const component = shallow(
+        <Dropdown toggle="Toggle">
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.setState({ isTouchDevice: true, isClicked: true });
+
+    component.instance().handleClick(true, eventMock);
+
+    expect(onCloseMock.called).toBe(true);
+});
+
 test('handleClick does not call onClose from props if dropdown is closing on desktop', () => {
     const eventMock = { preventDefault: () => {}, stopPropagation: () => {} };
     const onCloseMock = sinon.spy();
