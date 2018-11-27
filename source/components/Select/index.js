@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactSelect from 'react-select';
 
 import IndicatorsContainer from './IndicatorsContainer';
-import SelectContainer from './SelectContainer';
+import createSelectContainer from './createSelectContainer';
 import { DefaultDropdownIndicator, SearchDropdownIndicator } from './DropdownIndicator';
 import LoadingIndicator from './LoadingIndicator';
 
@@ -135,12 +135,6 @@ export default class Select extends React.Component {
         }
     }
 
-    getRootClassName() {
-        return ['fandom-select', this.props.className]
-            .filter(Boolean)
-            .join(' ');
-    }
-
     getValueFromProps() {
         const { value, options } = this.props;
 
@@ -169,13 +163,16 @@ export default class Select extends React.Component {
     }
 
     render() {
+        const className = 'fandom-select';
+
         return (
             <ReactSelect
                 ref={this.selectRef}
+                openMenuOnFocus
                 autoFocus={this.props.autoFocus}
                 blurInputOnSelect
-                className={this.getRootClassName()}
-                classNamePrefix="fandom-select"
+                className={className}
+                classNamePrefix={className}
                 controlShouldRenderValue={this.props.multi ? this.props.multiValueRender : true}
                 isDisabled={this.props.disabled || this.props.loading}
                 isLoading={this.props.loading}
@@ -195,7 +192,7 @@ export default class Select extends React.Component {
                     DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
                     LoadingIndicator,
                     IndicatorsContainer,
-                    SelectContainer,
+                    SelectContainer: createSelectContainer(className, this.props.className),
                 }}
             />
         );
