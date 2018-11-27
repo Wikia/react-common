@@ -15,12 +15,16 @@ function withTimeoutFallback(Component, opts) {
     const { FallbackComponent } = options;
 
     class TimeoutComponent extends React.PureComponent {
-        constructor(props) {
-            super(props);
+        static propTypes = {
+            children: PropTypes.node,
+        };
 
-            this.state = {
-                time: 0,
-            };
+        static defaultProps = {
+            children: null,
+        };
+
+        state = {
+            time: 0,
         }
 
         componentDidMount() {
@@ -55,14 +59,6 @@ function withTimeoutFallback(Component, opts) {
             return <Component {...this.props} />;
         }
     }
-
-    TimeoutComponent.propTypes = {
-        children: PropTypes.node,
-    };
-
-    TimeoutComponent.defaultProps = {
-        children: null,
-    };
 
     return TimeoutComponent;
 }

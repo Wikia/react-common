@@ -37,38 +37,24 @@ const Vignette = ({
 };
 
 Vignette.propTypes = {
-    /*
-   * Do we want to upscale image if needed?
-   */
+    /** Do we want to upscale image if needed? */
     allowUpscaling: PropTypes.bool,
-    /**
-   * Alt text
-   */
+    /** Alt text */
     alt: PropTypes.string,
-    /**
-   * Additional class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
-    /**
-   * Desired image height
-   */
+    /** Desired image height */
     height: PropTypes.number,
-    /**
-   * Either an URL to image or UUID.
-   */
+    /** Either an URL to image or UUID. */
     image: PropTypes.string.isRequired,
-    /**
-   * Desired image width
-   */
+    /** Desired image mode */
     method: PropTypes.oneOf([
         'auto',
         'scale',
         'thumbnail',
         'top-crop',
     ]),
-    /**
-   * Desired image mode
-   */
+    /** Desired image width */
     width: PropTypes.number,
 };
 

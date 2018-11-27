@@ -6,20 +6,16 @@ import './styles.scss';
 /**
  * ContentWell wraps `children` in `wds-content-well` CSS mixin.
  */
-const ContentWell = ({ className, children }) => (
-    <div className={`wds-content-well ${className}`}>
+const ContentWell = ({ className, children, ...rest }) => (
+    <div className={`wds-content-well ${className}`} {...rest}>
         {children}
     </div>
 );
 
 ContentWell.propTypes = {
-    /**
-   * @ignore
-   */
+    /** @ignore */
     children: PropTypes.node,
-    /**
-   * Additional class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
 };
 

@@ -29,6 +29,21 @@ function _createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
 function _extends() {
   _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -197,7 +212,7 @@ var Icon = function Icon(_ref) {
       className = _ref.className,
       small = _ref.small,
       tiny = _ref.tiny,
-      props = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
+      rest = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
 
   var isSmall = small || /-small$/.test(name);
   var isTiny = tiny || /-tiny$/.test(name);
@@ -206,30 +221,22 @@ var Icon = function Icon(_ref) {
   }).join(' ');
   return React.createElement("svg", _extends({
     className: classes
-  }, props), React.createElement("use", {
+  }, rest), React.createElement("use", {
     xlinkHref: "#wds-icons-".concat(name)
   }));
 };
 
 Icon.propTypes = {
-  /**
-  * Icon name - both `-small` and `-tiny` prefix are also updating class name
-  */
+  /** Additional class name */
   className: PropTypes.string,
 
-  /**
-  * Additional class name
-  */
+  /** name - both `-small` and `-tiny` prefix are also updating class name */
   name: PropTypes.string.isRequired,
 
-  /**
-  * `wds-icon-small` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-small` flag for the class name (but not for the icon name) */
   small: PropTypes.bool,
 
-  /**
-  * `wds-icon-tiny` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-tiny` flag for the class name (but not for the icon name) */
   tiny: PropTypes.bool
 };
 Icon.defaultProps = {
@@ -306,29 +313,19 @@ var Spinner = function Spinner(_ref) {
 };
 
 Spinner.propTypes = {
-  /**
-  * Additional class name
-  */
+  /** Display block and center */
   block: PropTypes.bool,
 
-  /**
-  * Loader size
-  */
+  /** Additional class name */
   className: PropTypes.string,
 
-  /**
-  * Stroke width
-  */
+  /** Display content inline based on line height */
   inline: PropTypes.bool,
 
-  /**
-  * Display block and center
-  */
+  /** Loader size */
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
-  /**
-  * Display contentinline based on line height
-  */
+  /** Stroke width */
   stroke: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 Spinner.defaultProps = {
@@ -387,59 +384,50 @@ function (_React$Component) {
     _classCallCheck(this, Select);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Select).call(this, props));
-    _this.selectRef = React.createRef();
-    _this.onRequestNoOptionsMessage = _this.onRequestNoOptionsMessage.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onBlur = _this.onBlur.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onChange = _this.onChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onFocus = _this.onFocus.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.onTextInputChange = _this.onTextInputChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    return _this;
-  }
 
-  _createClass(Select, [{
-    key: "onBlur",
-    value: function onBlur() {
-      if (!this.props.onBlur || !this.selectRef.current) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onBlur", function () {
+      if (!_this.props.onBlur || !_this.selectRef.current) {
         return;
       }
 
-      callWithValues(this.props.onBlur, this.selectRef.current.select.getCommonProps().getValue(), this.props.multi);
-    }
-  }, {
-    key: "onChange",
-    value: function onChange(values) {
-      var valuesAsArray = this.props.multi ? values : [values];
-      callWithValues(this.props.onChange, valuesAsArray, this.props.multi);
-    }
-  }, {
-    key: "onFocus",
-    value: function onFocus() {
-      if (!this.props.onFocus) {
+      callWithValues(_this.props.onBlur, _this.selectRef.current.select.getCommonProps().getValue(), _this.props.multi);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onChange", function (values) {
+      var valuesAsArray = _this.props.multi ? values : [values];
+      callWithValues(_this.props.onChange, valuesAsArray, _this.props.multi);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onFocus", function () {
+      if (!_this.props.onFocus) {
         return;
       }
 
-      this.props.onFocus();
-    }
-  }, {
-    key: "onRequestNoOptionsMessage",
-    value: function onRequestNoOptionsMessage(_ref) {
+      _this.props.onFocus();
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onRequestNoOptionsMessage", function (_ref) {
       var inputValue = _ref.inputValue;
-      var onNoOptions = this.props.onNoOptions;
+      var onNoOptions = _this.props.onNoOptions;
 
       if (typeof onNoOptions === 'function') {
         return onNoOptions(inputValue);
       }
 
       return onNoOptions;
-    }
-  }, {
-    key: "onTextInputChange",
-    value: function onTextInputChange(input) {
-      if (this.props.onTextInputChange) {
-        this.props.onTextInputChange(input);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTextInputChange", function (input) {
+      if (_this.props.onTextInputChange) {
+        _this.props.onTextInputChange(input);
       }
-    }
-  }, {
+    });
+
+    _this.selectRef = React.createRef();
+    return _this;
+  }
+
+  _createClass(Select, [{
     key: "getRootClassName",
     value: function getRootClassName() {
       return ['fandom-select', this.props.className].filter(Boolean).join(' ');
@@ -514,86 +502,57 @@ function (_React$Component) {
   return Select;
 }(React.Component);
 
-Select.propTypes = {
-  /**
-   * Focus the control when it is mounted
-   */
+_defineProperty(Select, "propTypes", {
+  /** Focus the control when it is mounted */
   autoFocus: PropTypes.bool,
 
-  /**
-   * Additional class for root element
-   */
+  /** Additional class for root element */
   className: PropTypes.string,
 
-  /**
-   * whether or not the input is disabled
-   */
+  /** whether or not the input is disabled */
   disabled: PropTypes.bool,
 
-  /**
-   * whether or not to show loading indicator
-   */
+  /** whether or not to show loading indicator */
   loading: PropTypes.bool,
 
-  /**
-   * whether or not multiple values are allowed
-   */
+  /** whether or not multiple values are allowed */
   multi: PropTypes.bool,
 
-  /**
-   * whether or not the component should render values when `multi=true`
-   */
+  /** whether or not the component should render values when `multi=true` */
   multiValueRender: PropTypes.bool,
 
-  /**
-   * called when the input is blurred `onBlur(val, label)`
-   */
+  /** called when the input is blurred `onBlur(val, label)` */
   onBlur: PropTypes.func,
 
-  /**
-   * called when the input is changed
-   */
+  /** called when the input is changed */
   onChange: PropTypes.func,
 
-  /**
-   * called when input is focused `onFocus()`
-   */
+  /** called when input is focused `onFocus()` */
   onFocus: PropTypes.func,
 
-  /**
-   * message when no options are present. If a `func`, the only argument is the input to the text input
-   */
+  /** message when no options are present. If a `func`, the only argument is the input to the text input */
   onNoOptions: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
 
-  /**
-   * fired when the search input is changed. `onTextInputChange(currentInput)`
-   */
+  /** fired when the search input is changed. `onTextInputChange(currentInput)` */
   onTextInputChange: PropTypes.func,
 
-  /**
-   * options to display. Use `createOption` exported from this module to create options
-   */
+  /** options to display. Use `createOption` exported from this module to create options */
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
     value: PropTypes.any.isRequired
   })),
 
-  /**
-   * Placeholder text used when no value is selected
-   */
+  /** Placeholder text used when no value is selected */
   placeholder: PropTypes.string,
 
-  /**
-   * whether or not to allow text searching
-   */
+  /** whether or not to allow text searching */
   searchable: PropTypes.bool,
 
-  /**
-   * when using as controlled input, the currently selected values
-   */
+  /** when using as controlled input, the currently selected values */
   value: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.any])
-};
-Select.defaultProps = {
+});
+
+_defineProperty(Select, "defaultProps", {
   autoFocus: false,
   className: '',
   disabled: false,
@@ -609,6 +568,6 @@ Select.defaultProps = {
   placeholder: 'Select...',
   searchable: true,
   value: undefined
-};
+});
 
 module.exports = Select;
