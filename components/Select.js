@@ -195,11 +195,14 @@ var IndicatorsContainer = function IndicatorsContainer(props) {
   return React.createElement(ReactSelect.components.IndicatorsContainer, props, spinner, isLoading ? null : dropdownIndicator, indicatorSeparator);
 };
 
-var SelectContainer = function SelectContainer(props) {
-  return React.createElement("div", {
-    className: "".concat(props.selectProps.classNamePrefix, "__wrapper")
-  }, React.createElement(ReactSelect.components.SelectContainer, props));
-};
+function createSelectContainer(classNamePrefix, customClassName) {
+  var className = ["".concat(classNamePrefix, "__wrapper"), customClassName].filter(Boolean).join(' ');
+  return function (props) {
+    return React.createElement("div", {
+      className: className
+    }, React.createElement(ReactSelect.components.SelectContainer, props));
+  };
+}
 
 /**
  * A single WDS icon.
@@ -386,7 +389,8 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Select).call(this, props));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onBlur", function () {
-      if (!_this.props.onBlur || !_this.selectRef.current) {
+      if (_this.preventBlur || !_this.selectRef.current) {
+        _this.preventBlur = false;
         return;
       }
 
@@ -394,8 +398,10 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onChange", function (values) {
+      _this.preventBlur = true;
       var valuesAsArray = _this.props.multi ? values : [values];
       callWithValues(_this.props.onChange, valuesAsArray, _this.props.multi);
+      callWithValues(_this.props.onBlur, valuesAsArray, _this.props.multi);
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onFocus", function () {
@@ -423,16 +429,14 @@ function (_React$Component) {
       }
     });
 
-    _this.selectRef = React.createRef();
+    _this.selectRef = React.createRef(); // react-select blur immediately follows change, but the updated value isn't available yet, so we're
+    // going to manually fire the onBlur handler on a change so that we can reliably pass the value
+
+    _this.preventBlur = false;
     return _this;
   }
 
   _createClass(Select, [{
-    key: "getRootClassName",
-    value: function getRootClassName() {
-      return ['fandom-select', this.props.className].filter(Boolean).join(' ');
-    }
-  }, {
     key: "getValueFromProps",
     value: function getValueFromProps() {
       var _this$props = this.props,
@@ -468,12 +472,14 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      var className = 'fandom-select';
       return React.createElement(ReactSelect__default, {
         ref: this.selectRef,
+        openMenuOnFocus: true,
         autoFocus: this.props.autoFocus,
         blurInputOnSelect: true,
-        className: this.getRootClassName(),
-        classNamePrefix: "fandom-select",
+        className: className,
+        classNamePrefix: className,
         controlShouldRenderValue: this.props.multi ? this.props.multiValueRender : true,
         isDisabled: this.props.disabled || this.props.loading,
         isLoading: this.props.loading,
@@ -493,7 +499,7 @@ function (_React$Component) {
           DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
           LoadingIndicator: LoadingIndicator,
           IndicatorsContainer: IndicatorsContainer,
-          SelectContainer: SelectContainer
+          SelectContainer: createSelectContainer(className, this.props.className)
         }
       });
     }

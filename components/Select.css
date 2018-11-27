@@ -1,9 +1,11 @@
 .fandom-select__wrapper {
+  background-color: #fff;
   border: 1px solid #999;
   border-radius: 4px;
   padding: 5px 10px;
 }
 .fandom-select__wrapper .fandom-select__control {
+  background-color: inherit;
   border: none;
   border-radius: 0;
   box-shadow: none;
