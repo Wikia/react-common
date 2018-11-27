@@ -10,7 +10,120 @@ function generateId() {
     return uniqueId('wds_input_');
 }
 
-class Input extends React.Component {
+export default class Input extends React.Component {
+    static propTypes = {
+        /** Auto focus flag */
+        autoFocus: PropTypes.bool,
+        /** Additional class name for the component */
+        className: PropTypes.string,
+        /** Disabled flag */
+        disabled: PropTypes.bool,
+        /** Force focus flag */
+        forceFocus: PropTypes.bool,
+        /** Hint to display */
+        hint: PropTypes.string,
+        /** Additional class name for the hint  */
+        hintClassName: PropTypes.string,
+        /** ID of the element - by default it's generated automatically */
+        id: PropTypes.string,
+        /** Additional class name for the input */
+        inputClassName: PropTypes.string,
+        /** Label that we want to display. */
+        label: (props, propName) => {
+            // eslint-disable-next-line react/destructuring-assignment
+            if (props.placeholder && props[propName]) {
+                return new Error(`Prop ${propName} is not used when placeholder is set`);
+            }
+
+            // eslint-disable-next-line react/destructuring-assignment
+            if (!props.placeholder && !props[propName]) {
+                return new Error(`Prop ${propName} is required when placeholder is not set`);
+            }
+
+            // eslint-disable-next-line react/destructuring-assignment
+            if (typeof props[propName] !== 'string') {
+                return new Error(`Prop ${propName} is not a string`);
+            }
+
+            return null;
+        },
+        /** Additional class name for the label */
+        labelClassName: PropTypes.string,
+        /** Callback for `onBlur` event */
+        onBlur: PropTypes.func,
+        /**
+         * Callback for `onChange` event - will be called whenever the value chnages
+         * with `callback(value, event)`.
+         */
+        onChange: PropTypes.func,
+        /** Callback for `onFocus` event */
+        onFocus: PropTypes.func,
+        /** Callback for `onKeyDown` event */
+        onKeyDown: PropTypes.func,
+        /** Callback for `onKeyPress` event */
+        onKeyPress: PropTypes.func,
+        /** Callback for `onKeyUp` event */
+        onKeyUp: PropTypes.func,
+        /** Callback for `onPaste` event */
+        onPaste: PropTypes.func,
+        /** Placeholder to display */
+        placeholder: PropTypes.string,
+        /** Readonly flag */
+        readonly: PropTypes.bool,
+        /**
+         * Can the textarea be resized by the user
+         * Use `auto` to adjust textarea height automatically
+         *
+         * **Note**: This prop only makes sense for multiline inputs.
+         */
+        resize: PropTypes.oneOf(['auto', true, false]),
+        /**
+         * Initial number of rows
+         *
+         * **Note**: This prop only makes sense for multiline inputs.
+         */
+        rows: PropTypes.number,
+        /** Status */
+        status: PropTypes.oneOf(['normal', 'error']),
+        /** Tab Index */
+        tabIndex: PropTypes.number,
+        /**
+         * Type of the input.
+         * Use `multiline` for multi-line input (textarea).
+         */
+        type: PropTypes.oneOf(['text', 'number', 'email', 'search', 'tel', 'url', 'password', 'multiline']),
+        /** Value */
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    }
+
+    static defaultProps = {
+        autoFocus: false,
+        className: '',
+        disabled: false,
+        forceFocus: false,
+        hint: null,
+        hintClassName: '',
+        id: null,
+        inputClassName: '',
+        label: '',
+        labelClassName: '',
+        placeholder: null,
+        readonly: false,
+        resize: false,
+        rows: 2,
+        status: 'normal',
+        tabIndex: 0,
+        type: 'text',
+        value: '',
+        onChange: () => {},
+        onBlur: () => {},
+        onFocus: () => {},
+        onKeyDown: () => {},
+        onKeyPress: () => {},
+        onKeyUp: () => {},
+        onPaste: () => {},
+    }
+
     constructor(props) {
         super(props);
 
@@ -24,11 +137,6 @@ class Input extends React.Component {
             isFocused: false,
             dynamicTextareaHeight: null,
         };
-
-        this.handleBlur = this.handleBlur.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-        this.handleFocus = this.handleFocus.bind(this);
-        this.handleAutoResize = this.handleAutoResize.bind(this);
     }
 
     componentDidMount() {
@@ -137,19 +245,7 @@ class Input extends React.Component {
         };
     }
 
-    focus() {
-        if (this.input && document.activeElement !== this.input) {
-            this.input.focus();
-        }
-    }
-
-    blur() {
-        if (this.input) {
-            this.input.blur();
-        }
-    }
-
-    handleChange(event) {
+    handleChange = (event) => {
         const { readonly, disabled, onChange } = this.props;
 
         if (readonly || disabled) {
@@ -165,7 +261,7 @@ class Input extends React.Component {
         onChange(value, event);
     }
 
-    handleFocus(event) {
+    handleFocus = (event) => {
         const { readonly, onFocus } = this.props;
 
         if (readonly) {
@@ -178,13 +274,44 @@ class Input extends React.Component {
         onFocus(event);
     }
 
-    handleBlur(event) {
+    handleBlur = (event) => {
         const { onBlur } = this.props;
 
         this.setState({
             isFocused: false,
         });
         onBlur(event);
+    }
+
+    handleAutoResize = () => {
+        this.doAutoResize();
+    }
+
+    doAutoResize() {
+        // height has to be reset first because if not it keeps increasing every time user will type a character
+        // setting actual height must be done in setState callback, because React might optimize this into one setState call
+        // scrollHeight includes padding but not border, we need to compensate this to avoid slight height change
+        // keep value in sync with bottom-border in .wds-input__field styles
+        const BOTTOM_BORDER_WIDTH = 1;
+
+        this.setState({ dynamicTextareaHeight: 'auto' }, () => {
+            this.setState({ dynamicTextareaHeight: `${this.input.scrollHeight + BOTTOM_BORDER_WIDTH}px` });
+        });
+
+        // to prevent scroll jumping
+        this.input.scrollTop = this.input.scrollHeight;
+    }
+
+    focus() {
+        if (this.input && document.activeElement !== this.input) {
+            this.input.focus();
+        }
+    }
+
+    blur() {
+        if (this.input) {
+            this.input.blur();
+        }
     }
 
     isAutoFocus() {
@@ -219,21 +346,6 @@ class Input extends React.Component {
                 this.input.focus();
             }
         }
-    }
-
-    handleAutoResize() {
-        // height has to be reset first because if not it keeps increasing every time user will type a character
-        // setting actual height must be done in setState callback, because React might optimize this into one setState call
-        // scrollHeight includes padding but not border, we need to compensate this to avoid slight height change
-        // keep value in sync with bottom-border in .wds-input__field styles
-        const BOTTOM_BORDER_WIDTH = 1;
-
-        this.setState({ dynamicTextareaHeight: 'auto' }, () => {
-            this.setState({ dynamicTextareaHeight: `${this.input.scrollHeight + BOTTOM_BORDER_WIDTH}px` });
-        });
-
-        // to prevent scroll jumping
-        this.input.scrollTop = this.input.scrollHeight;
     }
 
     renderMultiline() {
@@ -319,160 +431,3 @@ class Input extends React.Component {
         );
     }
 }
-
-Input.propTypes = {
-    /**
-     * Additional class name for the component
-     */
-    autoFocus: PropTypes.bool,
-    /**
-     * Additional class name for the hint
-     */
-    className: PropTypes.string,
-    /**
-     * Additional class name for the input
-     */
-    disabled: PropTypes.bool,
-    /**
-     * Additional class name for the label
-     */
-    forceFocus: PropTypes.bool,
-    /**
-     * ID of the element - by default it's generated automatically
-     */
-    hint: PropTypes.string,
-    /**
-     * Type of the input.
-     * Use `multiline` for multi-line input (textarea).
-     */
-    hintClassName: PropTypes.string,
-    /**
-     * Value
-     */
-    id: PropTypes.string,
-    /**
-     * Label that we want to display.
-     */
-    inputClassName: PropTypes.string,
-    /**
-     * Hint to display
-     */
-    label: (props, propName) => {
-        // eslint-disable-next-line react/destructuring-assignment
-        if (props.placeholder && props[propName]) {
-            return new Error(`Prop ${propName} is not used when placeholder is set`);
-        }
-
-        // eslint-disable-next-line react/destructuring-assignment
-        if (!props.placeholder && !props[propName]) {
-            return new Error(`Prop ${propName} is required when placeholder is not set`);
-        }
-
-        // eslint-disable-next-line react/destructuring-assignment
-        if (typeof props[propName] !== 'string') {
-            return new Error(`Prop ${propName} is not a string`);
-        }
-
-        return null;
-    },
-    /**
-     * Placeholder to display
-     */
-    labelClassName: PropTypes.string,
-    /**
-     * Status
-     */
-    onBlur: PropTypes.func,
-    /**
-     * Tab Index
-     */
-    onChange: PropTypes.func,
-    /**
-     * Initial number of rows
-     *
-     * **Note**: This prop only makes sense for multiline inputs.
-     */
-    onFocus: PropTypes.func,
-    /**
-     * Can the textarea be resized by the user
-     * Use `auto` to adjust textarea height automatically
-     *
-     * **Note**: This prop only makes sense for multiline inputs.
-     */
-    onKeyDown: PropTypes.func,
-    /**
-     * Auto focus flag
-     */
-    onKeyPress: PropTypes.func,
-    /**
-     * Force focus flag
-     */
-    onKeyUp: PropTypes.func,
-    /**
-     * Disabled flag
-     */
-    onPaste: PropTypes.func,
-    /**
-     * Readonly flag
-     */
-    placeholder: PropTypes.string,
-    /**
-     * Callback for `onBlur` event
-     */
-    readonly: PropTypes.bool,
-    /**
-     * Callback for `onChange` event - will be called whenever the value chnages
-     * with `callback(value, event)`.
-     */
-    resize: PropTypes.oneOf(['auto', true, false]),
-    /**
-     * Callback for `onFocus` event
-     */
-    rows: PropTypes.number,
-    /**
-     * Callback for `onKeyDown` event
-     */
-    status: PropTypes.oneOf(['normal', 'error']),
-    /**
-     * Callback for `onKeyPress` event
-     */
-    tabIndex: PropTypes.number,
-    /**
-     * Callback for `onKeyUp` event
-     */
-    type: PropTypes.oneOf(['text', 'number', 'email', 'search', 'tel', 'url', 'password', 'multiline']),
-    /**
-     * Callback for `onPaste` event
-     */
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-};
-
-Input.defaultProps = {
-    autoFocus: false,
-    className: '',
-    disabled: false,
-    forceFocus: false,
-    hint: null,
-    hintClassName: '',
-    id: null,
-    inputClassName: '',
-    label: '',
-    labelClassName: '',
-    placeholder: null,
-    readonly: false,
-    resize: false,
-    rows: 2,
-    status: 'normal',
-    tabIndex: 0,
-    type: 'text',
-    value: '',
-    onChange: () => {},
-    onBlur: () => {},
-    onFocus: () => {},
-    onKeyDown: () => {},
-    onKeyPress: () => {},
-    onKeyUp: () => {},
-    onPaste: () => {},
-};
-
-export default Input;

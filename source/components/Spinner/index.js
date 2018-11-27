@@ -61,25 +61,15 @@ const Spinner = ({
 };
 
 Spinner.propTypes = {
-    /**
-   * Additional class name
-   */
+    /** Display block and center */
     block: PropTypes.bool,
-    /**
-   * Loader size
-   */
+    /** Additional class name */
     className: PropTypes.string,
-    /**
-   * Stroke width
-   */
+    /** Display content inline based on line height */
     inline: PropTypes.bool,
-    /**
-   * Display block and center
-   */
+    /** Loader size */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    /**
-   * Display contentinline based on line height
-   */
+    /** Stroke width */
     stroke: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 

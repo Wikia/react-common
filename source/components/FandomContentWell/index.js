@@ -6,20 +6,16 @@ import './styles.scss';
 /**
  * FandomContentWell wraps `children` in `wds-content-well($use-xxlarge-breakpoint: false)` CSS mixin.
  */
-const FandomContentWell = ({ className, children }) => (
-    <div className={`wds-fandom-content-well ${className}`}>
+const FandomContentWell = ({ className, children, ...rest }) => (
+    <div className={`wds-fandom-content-well ${className}`} {...rest}>
         {children}
     </div>
 );
 
 FandomContentWell.propTypes = {
-    /**
-   * @ignore
-   */
+    /** @ignore */
     children: PropTypes.node,
-    /**
-   * Additional class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
 };
 

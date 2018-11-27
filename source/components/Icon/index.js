@@ -9,7 +9,7 @@ import './styles.scss';
  * **NOTE**: This icon is using `IconSprite` component.
  */
 const Icon = ({
-    name, className, small, tiny, ...props
+    name, className, small, tiny, ...rest
 }) => {
     const isSmall = small || /-small$/.test(name);
     const isTiny = tiny || /-tiny$/.test(name);
@@ -22,28 +22,20 @@ const Icon = ({
     ].filter(c => c).join(' ');
 
     return (
-        <svg className={classes} {...props}>
+        <svg className={classes} {...rest}>
             <use xlinkHref={`#wds-icons-${name}`} />
         </svg>
     );
 };
 
 Icon.propTypes = {
-    /**
-   * Icon name - both `-small` and `-tiny` prefix are also updating class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
-    /**
-   * Additional class name
-   */
+    /** name - both `-small` and `-tiny` prefix are also updating class name */
     name: PropTypes.string.isRequired,
-    /**
-   * `wds-icon-small` flag for the class name (but not for the icon name)
-   */
+    /** `wds-icon-small` flag for the class name (but not for the icon name) */
     small: PropTypes.bool,
-    /**
-   * `wds-icon-tiny` flag for the class name (but not for the icon name)
-   */
+    /** `wds-icon-tiny` flag for the class name (but not for the icon name) */
     tiny: PropTypes.bool,
 };
 

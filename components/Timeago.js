@@ -220,7 +220,6 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Timeago)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      // eslint-disable-next-line react/destructuring-assignment
       display: _this.props.datetime
     });
 
@@ -253,8 +252,8 @@ function (_React$Component) {
   return Timeago;
 }(React.Component);
 
-Timeago.propTypes = {
+_defineProperty(Timeago, "propTypes", {
   datetime: PropTypes.oneOfType([PropTypes.instanceOf(Date), PropTypes.string]).isRequired
-};
+});
 
 module.exports = Timeago;

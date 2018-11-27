@@ -86,30 +86,19 @@ var FloatingButton = function FloatingButton(_ref) {
 };
 
 FloatingButton.propTypes = {
-  /**
-  * @ignore
-  */
+  /** @ignore */
   children: PropTypes.node,
 
-  /**
-  * href attribute.
-  * FloatingButton uses `<a>` tag if it's present.
-  */
+  /** Additional class name */
   className: PropTypes.string,
 
-  /**
-  * Additional class name
-  */
+  /** Disabled attribute for the `<button>` */
   disabled: PropTypes.bool,
 
-  /**
-  * Disabled attribute for the `<button>`
-  */
+  /** href attribute - floatingButton uses `<a>` tag if it's present */
   href: PropTypes.string,
 
-  /**
-  * Callback for the `<button>`
-  */
+  /** Callback for the `<button>` */
   onClick: PropTypes.func
 };
 FloatingButton.defaultProps = {

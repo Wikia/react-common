@@ -22,17 +22,11 @@ const FloatingButtonGroup = ({
 };
 
 FloatingButtonGroup.propTypes = {
-    /**
-   * @ignore
-   */
+    /** @ignore */
     children: PropTypes.node,
-    /**
-   * Vertical flag fro the group
-   */
+    /** Additional class name */
     className: PropTypes.string,
-    /**
-   * Additional class name
-   */
+    /** Vertical flag for the group */
     vertical: PropTypes.bool,
 };
 

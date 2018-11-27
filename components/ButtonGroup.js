@@ -77,14 +77,10 @@ var ButtonGroup = function ButtonGroup(_ref) {
 };
 
 ButtonGroup.propTypes = {
-  /**
-  * @ignore
-  */
+  /** @ignore */
   children: PropTypes.node,
 
-  /**
-  * Additional class name
-  */
+  /** Additional class name */
   className: PropTypes.string
 };
 ButtonGroup.defaultProps = {

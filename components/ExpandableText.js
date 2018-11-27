@@ -27,6 +27,21 @@ function _createClass(Constructor, protoProps, staticProps) {
   return Constructor;
 }
 
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
     throw new TypeError("Super expression must either be null or a function");
@@ -98,7 +113,14 @@ function (_React$Component) {
     _classCallCheck(this, ExpandableText);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ExpandableText).call(this, props));
-    _this.handleExpandClick = _this.handleExpandClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleExpandClick", function () {
+      _this.setState({
+        isExpandable: false,
+        isExpanded: true
+      });
+    });
+
     var shortText = makeShortText(props.text, props.characterLimit);
     _this.state = {
       isExpandable: shortText.length < props.text.length,
@@ -116,14 +138,6 @@ function (_React$Component) {
         isExpandable: shortText.length < newProps.text.length,
         isExpanded: false,
         shortText: shortText
-      });
-    }
-  }, {
-    key: "handleExpandClick",
-    value: function handleExpandClick() {
-      this.setState({
-        isExpandable: false,
-        isExpanded: true
       });
     }
   }, {
@@ -161,41 +175,30 @@ function (_React$Component) {
   return ExpandableText;
 }(React.Component);
 
-ExpandableText.propTypes = {
-  /**
-  * Additional class name
-  */
+_defineProperty(ExpandableText, "propTypes", {
+  /** Additional class name */
   characterLimit: PropTypes.number.isRequired,
 
-  /**
-  * Character limit
-  */
+  /** Character limit */
   className: PropTypes.string,
 
-  /**
-  * Ellipsis (defaults to `&hellip;`)
-  */
+  /** Ellipsis (defaults to `&hellip;`) */
   ellipsis: PropTypes.string,
 
-  /**
-  * Additional class name for the expand button
-  */
+  /** Additional class name for the expand button */
   expandClassName: PropTypes.string,
 
-  /**
-  * Label used on the expand button
-  */
+  /** Label used on the expand button */
   expandLabel: PropTypes.string.isRequired,
 
-  /**
-  * Full text to display
-  */
+  /** Full text to display */
   text: PropTypes.string.isRequired
-};
-ExpandableText.defaultProps = {
+});
+
+_defineProperty(ExpandableText, "defaultProps", {
   className: '',
   ellipsis: "\u2026",
   expandClassName: ''
-};
+});
 
 module.exports = ExpandableText;
