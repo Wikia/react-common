@@ -1,6 +1,7 @@
 @import "~design-system/dist/scss/wds-variables/index.scss";
 
 .fandom-select__wrapper {
+	background-color: $wds-color-white;
 	border: 1px solid $wds-color-light-gray;
 	border-radius: 4px;
 	padding: 5px 10px;
@@ -8,6 +9,7 @@
 	// it's odd to have the separate selector here but it's needed for specificity to avoid !important
 	.fandom-select {
 		&__control {
+			background-color: inherit;
 			border: none;
 			border-radius: 0;
 			box-shadow: none;
