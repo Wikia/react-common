@@ -11,11 +11,17 @@ import buildDistanceInWordsLocale from './buildDistanceInWordsLocale';
  * It all happens after the component is mounted so it's safe to use this
  * component on the Back-End without messing up the hydration.
  */
-class Timeago extends React.Component {
+export default class Timeago extends React.Component {
     state = {
-        // eslint-disable-next-line react/destructuring-assignment
         display: this.props.datetime,
     };
+
+    static propTypes = {
+        datetime: PropTypes.oneOfType([
+            PropTypes.instanceOf(Date),
+            PropTypes.string,
+        ]).isRequired,
+    }
 
     componentDidMount() {
         const { datetime } = this.props;
@@ -40,12 +46,3 @@ class Timeago extends React.Component {
         );
     }
 }
-
-Timeago.propTypes = {
-    datetime: PropTypes.oneOfType([
-        PropTypes.instanceOf(Date),
-        PropTypes.string,
-    ]).isRequired,
-};
-
-export default Timeago;

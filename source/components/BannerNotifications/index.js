@@ -22,14 +22,21 @@ import messageType from './bannerNotificationsMessageType';
  *
  * `bannerNotificationsMessageType` is exported along with `BannerNotification`
  */
-class BannerNotifications extends React.Component {
-    constructor(props) {
-        super(props);
+export default class BannerNotifications extends React.Component {
+    static propTypes = {
+        /** An additional class name */
+        className: PropTypes.string,
+        /** An array of `bannerNotificationsMessageType` objects */
+        messages: PropTypes.arrayOf(messageType).isRequired,
+        /** Action invoked when close button is clicked */
+        onClose: PropTypes.func.isRequired,
+    };
 
-        this.onClose = this.onClose.bind(this);
-    }
+    static defaultProps = {
+        className: '',
+    };
 
-    onClose(id) {
+    onClose = (id) => {
         const { onClose } = this.props;
 
         onClose(id);
@@ -64,26 +71,3 @@ class BannerNotifications extends React.Component {
         );
     }
 }
-
-BannerNotifications.propTypes = {
-    /**
-   * An additional class name
-   */
-    className: PropTypes.string,
-    /**
-   * An array of `bannerNotificationsMessageType` objects
-   * @type {bannerNotificationsMessageType}
-   */
-    messages: PropTypes.arrayOf(messageType).isRequired,
-    /**
-   * Action invoked when close button is clicked
-   * @type {[type]}
-   */
-    onClose: PropTypes.func.isRequired,
-};
-
-BannerNotifications.defaultProps = {
-    className: '',
-};
-
-export default BannerNotifications;

@@ -128,15 +128,23 @@ function withTimeoutFallback(Component, opts) {
   function (_React$PureComponent) {
     _inherits(TimeoutComponent, _React$PureComponent);
 
-    function TimeoutComponent(props) {
+    function TimeoutComponent() {
+      var _getPrototypeOf2;
+
       var _this;
 
       _classCallCheck(this, TimeoutComponent);
 
-      _this = _possibleConstructorReturn(this, _getPrototypeOf(TimeoutComponent).call(this, props));
-      _this.state = {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(TimeoutComponent)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
         time: 0
-      };
+      });
+
       return _this;
     }
 
@@ -186,12 +194,14 @@ function withTimeoutFallback(Component, opts) {
     return TimeoutComponent;
   }(React.PureComponent);
 
-  TimeoutComponent.propTypes = {
+  _defineProperty(TimeoutComponent, "propTypes", {
     children: PropTypes.node
-  };
-  TimeoutComponent.defaultProps = {
+  });
+
+  _defineProperty(TimeoutComponent, "defaultProps", {
     children: null
-  };
+  });
+
   return TimeoutComponent;
 }
 

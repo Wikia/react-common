@@ -58,13 +58,9 @@ const VideoPlayIcon = ({
 };
 
 VideoPlayIcon.propTypes = {
-    /**
-   * Additional class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
-    /**
-   * Icon size
-   */
+    /** Icon size */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
