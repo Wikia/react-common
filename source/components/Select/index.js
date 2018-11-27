@@ -97,10 +97,14 @@ export default class Select extends React.Component {
         super(props);
 
         this.selectRef = React.createRef();
+        // react-select blur immediately follows change, but the updated value isn't available yet, so we're
+        // going to manually fire the onBlur handler on a change so that we can reliably pass the value
+        this.preventBlur = false;
     }
 
     onBlur = () => {
-        if (!this.props.onBlur || !this.selectRef.current) {
+        if (this.preventBlur || !this.selectRef.current) {
+            this.preventBlur = false;
             return;
         }
 
@@ -108,8 +112,10 @@ export default class Select extends React.Component {
     }
 
     onChange = (values) => {
+        this.preventBlur = true;
         const valuesAsArray = this.props.multi ? values : [values];
         callWithValues(this.props.onChange, valuesAsArray, this.props.multi);
+        callWithValues(this.props.onBlur, valuesAsArray, this.props.multi);
     }
 
     onFocus = () => {

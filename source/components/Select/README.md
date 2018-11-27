@@ -6,6 +6,8 @@ Use `Select.createOption` to create options to feed to the `options` prop.
 Basic usage:
 ```js
 <Select
+    onBlur={(val, label) => console.log('blur', val, label)}
+    onChange={(val, label) => console.log('change', val, label)}
     options={[
         Select.createOption(1, "label 1"),
         Select.createOption(2, "label 2"),
@@ -38,6 +40,8 @@ Multi-select
 ```js
 <Select
     multi
+    onBlur={(val) => console.log('blur', val)}
+    onChange={(val) => console.log('change', val)}
     options={[
         Select.createOption(1, "label 1"),
         Select.createOption(2, "label 2"),
