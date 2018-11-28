@@ -216,9 +216,7 @@ Dropdown.defaultProps = {
     isLevel2: false,
     isActive: false,
     toggleClassName: '',
-    toggleAttrs: {
-        href: '',
-    },
+    toggleAttrs: {},
     isStickedToParent: false,
     onClose: null,
 };
