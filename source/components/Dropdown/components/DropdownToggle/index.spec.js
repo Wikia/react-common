@@ -9,35 +9,35 @@ import DropdownToggle from './index';
 
 test('DropdownToggle renders correctly with default values', () => {
     const component = renderer.create(
-        <DropdownToggle onClick={() => {}} />,
+        <DropdownToggle onClick={() => {}} toggleContent="" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with default values for level 2', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 onClick={() => {}} />,
+        <DropdownToggle isLevel2 onClick={() => {}} toggleContent="" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with additional attrs', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 attrs={{ attr1: true }} onClick={() => {}} />,
+        <DropdownToggle isLevel2 attrs={{ attr1: true }} onClick={() => {}} toggleContent="" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly with additional classNames', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 classes="first-class second-class" onClick={() => {}} />,
+        <DropdownToggle isLevel2 classes="first-class second-class" onClick={() => {}} toggleContent="" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('DropdownToggle renders correctly when shouldNotWrap is set', () => {
     const component = renderer.create(
-        <DropdownToggle isLevel2 shouldNotWrap onClick={() => {}} />,
+        <DropdownToggle isLevel2 shouldNotWrap onClick={() => {}} toggleContent="" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });

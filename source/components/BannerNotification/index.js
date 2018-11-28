@@ -48,18 +48,12 @@ const BannerNotification = ({
 );
 
 BannerNotification.propTypes = {
-    /**
-     * @ignore
-     */
+    /** Children to display */
     children: PropTypes.node,
-    /**
-     * An additional class name
-     */
+    /** An additional class name */
     className: PropTypes.string,
     onClose: PropTypes.func,
-    /**
-     * Text to display if there are no children.
-     */
+    /** Text to display if there are no children. */
     text: PropTypes.string,
     type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired,
 };

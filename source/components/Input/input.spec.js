@@ -250,8 +250,8 @@ test('Input forceFocus works correctly', () => {
     forceFocusStub.restore();
 });
 
-test('Input handleAutoResize works correctly', () => {
-    const autoResizeStub = sinon.spy(Input.prototype, 'handleAutoResize');
+test('Input doAutoResize works correctly', () => {
+    const autoResizeStub = sinon.spy(Input.prototype, 'doAutoResize');
 
     const component = mount(
         <Input

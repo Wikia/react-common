@@ -28,8 +28,8 @@ class Dropdown extends React.Component {
         this.handleClick(false);
     }
 
-    onToggleClicked(e) {
-        this.handleClick(true, e);
+    onToggleClicked(event) {
+        this.handleClick(true, event);
     }
 
     onMouseLeave() {
@@ -42,7 +42,7 @@ class Dropdown extends React.Component {
         }
     }
 
-    handleClick(shouldPreventDefault, e) {
+    handleClick(shouldPreventDefault, event) {
         const { isTouchDevice, isClicked } = this.state;
         const { onClose } = this.props;
 
@@ -52,8 +52,8 @@ class Dropdown extends React.Component {
             });
 
             if (shouldPreventDefault) {
-                e.preventDefault();
-                e.stopPropagation();
+                event.preventDefault();
+                event.stopPropagation();
             }
 
             if (isClicked === true && typeof onClose === 'function') {
@@ -116,29 +116,17 @@ class Dropdown extends React.Component {
             </React.Fragment>
         );
 
-        if (isLevel2) {
-            return (
-                // TODO: Fix a11y
-                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
-                <li
-                    className={className}
-                    onClick={this.onClick}
-                    onMouseLeave={this.onMouseLeave}
-                >
-                    {dropdownBody}
-                </li>
-            );
-        }
+        const Component = isLevel2 ? 'li' : 'div';
 
         return (
             // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-            <div
+            <Component
                 className={className}
                 onClick={this.onClick}
                 onMouseLeave={this.onMouseLeave}
             >
                 {dropdownBody}
-            </div>
+            </Component>
         );
     }
 }

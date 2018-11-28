@@ -4,12 +4,20 @@ import PropTypes from 'prop-types';
 /**
  * An image background that can be used as a sample image.
  */
-const FandomBackgroundImage = ({ className, width }) => {
+const FandomBackgroundImage = ({ className, width, ...rest }) => {
     const height = Math.floor((width * 9.0) / 16.0);
 
     return (
     /* eslint-disable max-len */
-        <svg className={className} width={width} height={height} viewBox="0 0 322 182" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg
+            className={className}
+            width={width}
+            height={height}
+            viewBox="0 0 322 182"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            {...rest}
+        >
             <defs>
                 <path id="fandom-background-image-a" d="M0 0h322v181.125H0z" />
             </defs>
@@ -29,14 +37,9 @@ const FandomBackgroundImage = ({ className, width }) => {
 };
 
 FandomBackgroundImage.propTypes = {
-    /**
-   * Additional class name
-   */
+    /** Additional class name */
     className: PropTypes.string,
-
-    /**
-   * Image width
-   */
+    /** Image width */
     width: PropTypes.number,
 };
 

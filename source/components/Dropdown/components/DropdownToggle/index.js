@@ -9,7 +9,8 @@ import Icon from '../../../Icon';
  * Basic DropdownToggle component
  */
 class DropdownToggle extends React.Component {
-    static getToggleContentComponent(toggleContent, isLevel2) {
+    getToggleContentComponent() {
+        const { toggleContent, isLevel2 } = this.props;
         const iconClassName = isLevel2
             ? 'wds-dropdown-chevron'
             : 'wds-dropdown__toggle-chevron';
@@ -35,7 +36,6 @@ class DropdownToggle extends React.Component {
     render() {
         const {
             isLevel2,
-            toggleContent,
             className,
             attrs,
             onClick,
@@ -46,24 +46,15 @@ class DropdownToggle extends React.Component {
             'wds-dropdown-level-2__toggle': isLevel2,
         }, className]);
 
-        const toggleContentComponent = DropdownToggle.getToggleContentComponent(toggleContent, isLevel2);
-
-        if (attrs.href) {
-            return (
-                // TODO: Fix a11y
-                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-                <a onClick={onClick} className={fullClassName} {...attrs}>
-                    {toggleContentComponent}
-                </a>
-            );
-        }
+        const toggleContentComponent = this.getToggleContentComponent();
+        const Component = attrs.href ? 'a' : 'div';
 
         return (
             // TODO: Fix a11y
             // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-            <div onClick={onClick} className={fullClassName} {...attrs}>
+            <Component onClick={onClick} className={fullClassName} {...attrs} role="button">
                 {toggleContentComponent}
-            </div>
+            </Component>
         );
     }
 }
@@ -95,15 +86,21 @@ DropdownToggle.propTypes = {
      * Callback when toggle is clicked
      */
     onClick: PropTypes.func.isRequired,
+    /**
+     * Content of the toggle
+     */
+    toggleContent: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.string,
+        PropTypes.node
+    ]).isRequired,
 };
 
 DropdownToggle.defaultProps = {
     children: null,
     isLevel2: false,
     className: '',
-    attrs: {
-        href: '',
-    },
+    attrs: {},
     isTouchDevice: false,
 };
 

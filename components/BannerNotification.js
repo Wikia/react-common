@@ -70,7 +70,7 @@ var Icon = function Icon(_ref) {
       className = _ref.className,
       small = _ref.small,
       tiny = _ref.tiny,
-      props = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
+      rest = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
 
   var isSmall = small || /-small$/.test(name);
   var isTiny = tiny || /-tiny$/.test(name);
@@ -79,30 +79,22 @@ var Icon = function Icon(_ref) {
   }).join(' ');
   return React.createElement("svg", _extends({
     className: classes
-  }, props), React.createElement("use", {
+  }, rest), React.createElement("use", {
     xlinkHref: "#wds-icons-".concat(name)
   }));
 };
 
 Icon.propTypes = {
-  /**
-  * Icon name - both `-small` and `-tiny` prefix are also updating class name
-  */
+  /** Additional class name */
   className: PropTypes.string,
 
-  /**
-  * Additional class name
-  */
+  /** name - both `-small` and `-tiny` prefix are also updating class name */
   name: PropTypes.string.isRequired,
 
-  /**
-  * `wds-icon-small` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-small` flag for the class name (but not for the icon name) */
   small: PropTypes.bool,
 
-  /**
-  * `wds-icon-tiny` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-tiny` flag for the class name (but not for the icon name) */
   tiny: PropTypes.bool
 };
 Icon.defaultProps = {
@@ -169,20 +161,14 @@ var BannerNotification = function BannerNotification(_ref) {
 };
 
 BannerNotification.propTypes = {
-  /**
-   * @ignore
-   */
+  /** Children to display */
   children: PropTypes.node,
 
-  /**
-   * An additional class name
-   */
+  /** An additional class name */
   className: PropTypes.string,
   onClose: PropTypes.func,
 
-  /**
-   * Text to display if there are no children.
-   */
+  /** Text to display if there are no children. */
   text: PropTypes.string,
   type: PropTypes.oneOf(['alert', 'warning', 'success', 'message']).isRequired
 };

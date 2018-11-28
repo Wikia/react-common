@@ -10,6 +10,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
     className="wds-dropdown-level-2__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -38,6 +39,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
     className="wds-dropdown-level-2__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -66,6 +68,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
     className="wds-dropdown-level-2__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -94,6 +97,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
     className="wds-dropdown-level-2__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -122,6 +126,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
     className="wds-dropdown__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -154,6 +159,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
     className="wds-dropdown__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -186,6 +192,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
     className="wds-dropdown__toggle"
     href=""
     onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle

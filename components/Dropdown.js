@@ -248,7 +248,7 @@ var Icon = function Icon(_ref) {
       className = _ref.className,
       small = _ref.small,
       tiny = _ref.tiny,
-      props = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
+      rest = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
 
   var isSmall = small || /-small$/.test(name);
   var isTiny = tiny || /-tiny$/.test(name);
@@ -257,30 +257,22 @@ var Icon = function Icon(_ref) {
   }).join(' ');
   return React.createElement("svg", _extends({
     className: classes
-  }, props), React.createElement("use", {
+  }, rest), React.createElement("use", {
     xlinkHref: "#wds-icons-".concat(name)
   }));
 };
 
 Icon.propTypes = {
-  /**
-  * Icon name - both `-small` and `-tiny` prefix are also updating class name
-  */
+  /** Additional class name */
   className: PropTypes.string,
 
-  /**
-  * Additional class name
-  */
+  /** name - both `-small` and `-tiny` prefix are also updating class name */
   name: PropTypes.string.isRequired,
 
-  /**
-  * `wds-icon-small` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-small` flag for the class name (but not for the icon name) */
   small: PropTypes.bool,
 
-  /**
-  * `wds-icon-tiny` flag for the class name (but not for the icon name)
-  */
+  /** `wds-icon-tiny` flag for the class name (but not for the icon name) */
   tiny: PropTypes.bool
 };
 Icon.defaultProps = {
@@ -305,41 +297,11 @@ function (_React$Component) {
   }
 
   _createClass(DropdownToggle, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          isLevel2 = _this$props.isLevel2,
-          toggleContent = _this$props.toggleContent,
-          className = _this$props.className,
-          attrs = _this$props.attrs,
-          onClick = _this$props.onClick;
-      var fullClassName = classnames([{
-        'wds-dropdown__toggle': !isLevel2,
-        'wds-dropdown-level-2__toggle': isLevel2
-      }, className]);
-      var toggleContentComponent = DropdownToggle.getToggleContentComponent(toggleContent, isLevel2);
-
-      if (attrs.href) {
-        return (// TODO: Fix a11y
-          // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-          React.createElement("a", _extends({
-            onClick: onClick,
-            className: fullClassName
-          }, attrs), toggleContentComponent)
-        );
-      }
-
-      return (// TODO: Fix a11y
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-        React.createElement("div", _extends({
-          onClick: onClick,
-          className: fullClassName
-        }, attrs), toggleContentComponent)
-      );
-    }
-  }], [{
     key: "getToggleContentComponent",
-    value: function getToggleContentComponent(toggleContent, isLevel2) {
+    value: function getToggleContentComponent() {
+      var _this$props = this.props,
+          toggleContent = _this$props.toggleContent,
+          isLevel2 = _this$props.isLevel2;
       var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
       var icon = React.createElement(Icon, {
         name: "menu-control-tiny",
@@ -356,6 +318,30 @@ function (_React$Component) {
       }
 
       return toggleContentComponent;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          isLevel2 = _this$props2.isLevel2,
+          className = _this$props2.className,
+          attrs = _this$props2.attrs,
+          onClick = _this$props2.onClick;
+      var fullClassName = classnames([{
+        'wds-dropdown__toggle': !isLevel2,
+        'wds-dropdown-level-2__toggle': isLevel2
+      }, className]);
+      var toggleContentComponent = this.getToggleContentComponent();
+      var Component = attrs.href ? 'a' : 'div';
+      return (// TODO: Fix a11y
+        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+        React.createElement(Component, _extends({
+          onClick: onClick,
+          className: fullClassName
+        }, attrs, {
+          role: "button"
+        }), toggleContentComponent)
+      );
     }
   }]);
 
@@ -393,15 +379,18 @@ DropdownToggle.propTypes = {
   /**
    * Callback when toggle is clicked
    */
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+
+  /**
+   * Content of the toggle
+   */
+  toggleContent: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.node]).isRequired
 };
 DropdownToggle.defaultProps = {
   children: null,
   isLevel2: false,
   className: '',
-  attrs: {
-    href: ''
-  },
+  attrs: {},
   isTouchDevice: false
 };
 
@@ -437,8 +426,8 @@ function (_React$Component) {
     }
   }, {
     key: "onToggleClicked",
-    value: function onToggleClicked(e) {
-      this.handleClick(true, e);
+    value: function onToggleClicked(event) {
+      this.handleClick(true, event);
     }
   }, {
     key: "onMouseLeave",
@@ -453,7 +442,7 @@ function (_React$Component) {
     }
   }, {
     key: "handleClick",
-    value: function handleClick(shouldPreventDefault, e) {
+    value: function handleClick(shouldPreventDefault, event) {
       var _this$state = this.state,
           isTouchDevice = _this$state.isTouchDevice,
           isClicked = _this$state.isClicked;
@@ -465,8 +454,8 @@ function (_React$Component) {
         });
 
         if (shouldPreventDefault) {
-          e.preventDefault();
-          e.stopPropagation();
+          event.preventDefault();
+          event.stopPropagation();
         }
 
         if (isClicked === true && typeof onClose === 'function') {
@@ -517,20 +506,9 @@ function (_React$Component) {
         isLevel2: isLevel2,
         scrollable: contentScrollable
       }, children));
-
-      if (isLevel2) {
-        return (// TODO: Fix a11y
-          // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
-          React.createElement("li", {
-            className: className,
-            onClick: this.onClick,
-            onMouseLeave: this.onMouseLeave
-          }, dropdownBody)
-        );
-      }
-
+      var Component = isLevel2 ? 'li' : 'div';
       return (// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-        React.createElement("div", {
+        React.createElement(Component, {
           className: className,
           onClick: this.onClick,
           onMouseLeave: this.onMouseLeave
