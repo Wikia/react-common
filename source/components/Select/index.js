@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactSelect from 'react-select';
 
 import IndicatorsContainer from './IndicatorsContainer';
-import SelectContainer from './SelectContainer';
+import createSelectContainer from './createSelectContainer';
 import { DefaultDropdownIndicator, SearchDropdownIndicator } from './DropdownIndicator';
 import LoadingIndicator from './LoadingIndicator';
 
@@ -97,10 +97,14 @@ export default class Select extends React.Component {
         super(props);
 
         this.selectRef = React.createRef();
+        // react-select blur immediately follows change, but the updated value isn't available yet, so we're
+        // going to manually fire the onBlur handler on a change so that we can reliably pass the value
+        this.preventBlur = false;
     }
 
     onBlur = () => {
-        if (!this.props.onBlur || !this.selectRef.current) {
+        if (this.preventBlur || !this.selectRef.current) {
+            this.preventBlur = false;
             return;
         }
 
@@ -108,8 +112,10 @@ export default class Select extends React.Component {
     }
 
     onChange = (values) => {
+        this.preventBlur = true;
         const valuesAsArray = this.props.multi ? values : [values];
         callWithValues(this.props.onChange, valuesAsArray, this.props.multi);
+        callWithValues(this.props.onBlur, valuesAsArray, this.props.multi);
     }
 
     onFocus = () => {
@@ -133,12 +139,6 @@ export default class Select extends React.Component {
         if (this.props.onTextInputChange) {
             this.props.onTextInputChange(input);
         }
-    }
-
-    getRootClassName() {
-        return ['fandom-select', this.props.className]
-            .filter(Boolean)
-            .join(' ');
     }
 
     getValueFromProps() {
@@ -169,13 +169,16 @@ export default class Select extends React.Component {
     }
 
     render() {
+        const className = 'fandom-select';
+
         return (
             <ReactSelect
                 ref={this.selectRef}
+                openMenuOnFocus
                 autoFocus={this.props.autoFocus}
                 blurInputOnSelect
-                className={this.getRootClassName()}
-                classNamePrefix="fandom-select"
+                className={className}
+                classNamePrefix={className}
                 controlShouldRenderValue={this.props.multi ? this.props.multiValueRender : true}
                 isDisabled={this.props.disabled || this.props.loading}
                 isLoading={this.props.loading}
@@ -195,7 +198,7 @@ export default class Select extends React.Component {
                     DropdownIndicator: this.props.searchable ? SearchDropdownIndicator : DefaultDropdownIndicator,
                     LoadingIndicator,
                     IndicatorsContainer,
-                    SelectContainer,
+                    SelectContainer: createSelectContainer(className, this.props.className),
                 }}
             />
         );

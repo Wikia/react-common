@@ -203,3 +203,8 @@ test('onTextInputChange tests', () => {
     input.props.onChange({ currentTarget: { value: '😀' } });
     expect(onTextInputChangeSpy.withArgs('😀').calledOnce).toBe(true);
 });
+
+test('custom className is at root level', () => {
+    const wrapper = mount(<Select className="custom-select" />);
+    expect(wrapper.find('.fandom-select__wrapper.custom-select')).toHaveLength(1);
+});
