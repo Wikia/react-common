@@ -144,7 +144,6 @@ export default class Input extends React.Component {
         if (this.isAutoResize()) {
             this.handleAutoResize();
         }
-
     }
 
     componentWillReceiveProps(newProps) {
