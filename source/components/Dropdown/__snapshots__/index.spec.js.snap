@@ -1,5 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Dropdown level2 renders correctly with default values 1`] = `
+<li
+  className="wds-dropdown-level-2"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown-level-2__toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
+  />
+</li>
+`;
+
+exports[`Dropdown level2 renders correctly with href set 1`] = `
+<li
+  className="wds-dropdown-level-2"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown-level-2__toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
+  />
+</li>
+`;
+
+exports[`Dropdown level2 renders correctly with isActive set 1`] = `
+<li
+  className="wds-is-active wds-dropdown-level-2"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown-level-2__toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
+  />
+</li>
+`;
+
+exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
+<li
+  className="wds-dropdown-level-2 wds-is-sticked-to-parent"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown-level-2__toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
+  />
+</li>
+`;
+
 exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
 <div
   className="wds-dropdown"
@@ -8,6 +120,40 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
 >
   <div
     className="wds-dropdown__toggle"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      Toggle
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-menu-control-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and children 1`] = `
+<div
+  className="wds-dropdown"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown__toggle"
+    onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle
@@ -38,6 +184,8 @@ exports[`Dropdown renders correctly with default values 1`] = `
 >
   <div
     className="wds-dropdown__toggle"
+    onClick={[Function]}
+    role="button"
   >
     <span>
       Toggle

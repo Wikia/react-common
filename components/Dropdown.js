@@ -285,36 +285,113 @@ Icon.defaultProps = {
  * Basic DropdownToggle component
  */
 
-var DropdownToggle = function DropdownToggle(_ref) {
-  var isLevel2 = _ref.isLevel2,
-      children = _ref.children;
-  var className = classnames({
-    'wds-dropdown__toggle': true,
-    'wds-dropdown-level-2__toggle': isLevel2
-  });
-  var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
-  return React.createElement("div", {
-    className: className
-  }, React.createElement("span", null, children), React.createElement(Icon, {
-    name: "menu-control-tiny",
-    className: "wds-icon wds-icon-tiny ".concat(iconClassName)
-  }));
-};
+var DropdownToggle =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(DropdownToggle, _React$Component);
+
+  function DropdownToggle() {
+    _classCallCheck(this, DropdownToggle);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(DropdownToggle).apply(this, arguments));
+  }
+
+  _createClass(DropdownToggle, [{
+    key: "getToggleContentComponent",
+    value: function getToggleContentComponent() {
+      var _this$props = this.props,
+          toggleContent = _this$props.toggleContent,
+          isLevel2 = _this$props.isLevel2;
+      var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
+      var icon = React.createElement(Icon, {
+        name: "menu-control-tiny",
+        className: "wds-icon wds-icon-tiny ".concat(iconClassName)
+      });
+      var toggleContentComponent;
+
+      if (typeof toggleContent === 'function') {
+        toggleContentComponent = toggleContent(icon);
+      } else if (typeof toggleContent === 'string') {
+        toggleContentComponent = React.createElement(React.Fragment, null, React.createElement("span", null, toggleContent), icon);
+      } else {
+        toggleContentComponent = toggleContent;
+      }
+
+      return toggleContentComponent;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          isLevel2 = _this$props2.isLevel2,
+          className = _this$props2.className,
+          attrs = _this$props2.attrs,
+          onClick = _this$props2.onClick;
+      var fullClassName = classnames([{
+        'wds-dropdown__toggle': !isLevel2,
+        'wds-dropdown-level-2__toggle': isLevel2
+      }, className]);
+      var toggleContentComponent = this.getToggleContentComponent();
+      var Component = attrs.href ? 'a' : 'div';
+      return (// TODO: Fix a11y
+        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+        React.createElement(Component, _extends({
+          onClick: onClick,
+          className: fullClassName
+        }, attrs, {
+          role: "button"
+        }), toggleContentComponent)
+      );
+    }
+  }]);
+
+  return DropdownToggle;
+}(React.Component);
 
 DropdownToggle.propTypes = {
+  /**
+   * HTML attributes
+   */
+  attrs: PropTypes.shape({
+    href: PropTypes.string
+  }),
+
   /**
    * Dropdown toggle content
    */
   children: PropTypes.node,
 
   /**
+   * HTML classes
+   */
+  className: PropTypes.string,
+
+  /**
    * Is it a nested dropdown
    */
-  isLevel2: PropTypes.bool
+  isLevel2: PropTypes.bool,
+
+  /**
+   * Whether or not the dropdown is displayed on touch device
+   */
+  isTouchDevice: PropTypes.bool,
+
+  /**
+   * Callback when toggle is clicked
+   */
+  onClick: PropTypes.func.isRequired,
+
+  /**
+   * Content of the toggle
+   */
+  toggleContent: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.node]).isRequired
 };
 DropdownToggle.defaultProps = {
   children: null,
-  isLevel2: false
+  isLevel2: false,
+  className: '',
+  attrs: {},
+  isTouchDevice: false
 };
 
 /**
@@ -337,21 +414,20 @@ function (_React$Component) {
       isTouchDevice: typeof window !== 'undefined' && 'ontouchstart' in window
     };
     _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.onToggleClicked = _this.onToggleClicked.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onMouseLeave = _this.onMouseLeave.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
   _createClass(Dropdown, [{
     key: "onClick",
-    value: function onClick(e) {
-      var isTouchDevice = this.state.isTouchDevice;
-
-      if (isTouchDevice) {
-        this.setState({
-          isClicked: !this.isClicked
-        });
-        e.preventDefault();
-      }
+    value: function onClick() {
+      this.handleClick(false);
+    }
+  }, {
+    key: "onToggleClicked",
+    value: function onToggleClicked(event) {
+      this.handleClick(true, event);
     }
   }, {
     key: "onMouseLeave",
@@ -362,6 +438,29 @@ function (_React$Component) {
         this.setState({
           isClicked: false
         });
+      }
+    }
+  }, {
+    key: "handleClick",
+    value: function handleClick(shouldPreventDefault, event) {
+      var _this$state = this.state,
+          isTouchDevice = _this$state.isTouchDevice,
+          isClicked = _this$state.isClicked;
+      var onClose = this.props.onClose;
+
+      if (isTouchDevice) {
+        this.setState({
+          isClicked: !isClicked
+        });
+
+        if (shouldPreventDefault) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        if (isClicked === true && typeof onClose === 'function') {
+          onClose();
+        }
       }
     }
   }, {
@@ -377,33 +476,43 @@ function (_React$Component) {
           noChevron = _this$props.noChevron,
           hasDarkShadow = _this$props.hasDarkShadow,
           isActive = _this$props.isActive,
-          contentScrollable = _this$props.contentScrollable;
-      var _this$state = this.state,
-          isClicked = _this$state.isClicked,
-          isTouchDevice = _this$state.isTouchDevice;
+          contentScrollable = _this$props.contentScrollable,
+          toggleAttrs = _this$props.toggleAttrs,
+          isStickedToParent = _this$props.isStickedToParent,
+          toggleClassName = _this$props.toggleClassName;
+      var _this$state2 = this.state,
+          isClicked = _this$state2.isClicked,
+          isTouchDevice = _this$state2.isTouchDevice;
       var className = classnames({
-        'wds-dropdown': true,
+        'wds-dropdown': !isLevel2,
         'wds-is-active': isClicked || isActive,
         'wds-has-shadow': hasShadow,
         'wds-no-chevron': noChevron,
         'wds-has-dark-shadow': hasDarkShadow,
         'wds-dropdown-level-2': isLevel2,
-        'wds-is-touch-device': isTouchDevice
+        'wds-is-touch-device': isTouchDevice,
+        'wds-is-sticked-to-parent': isStickedToParent
       });
-      return (// TODO: Fix a11y
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-        React.createElement("div", {
+      var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
+        isLevel2: isLevel2,
+        attrs: toggleAttrs,
+        className: toggleClassName,
+        isTouchDevice: isTouchDevice,
+        toggleContent: toggle,
+        onClick: this.onToggleClicked
+      }), React.createElement(DropdownContent, {
+        dropdownLeftAligned: dropdownLeftAligned,
+        dropdownRightAligned: dropdownRightAligned,
+        isLevel2: isLevel2,
+        scrollable: contentScrollable
+      }, children));
+      var Component = isLevel2 ? 'li' : 'div';
+      return (// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+        React.createElement(Component, {
           className: className,
           onClick: this.onClick,
           onMouseLeave: this.onMouseLeave
-        }, React.createElement(DropdownToggle, {
-          isLevel2: isLevel2
-        }, toggle), React.createElement(DropdownContent, {
-          dropdownLeftAligned: dropdownLeftAligned,
-          dropdownRightAligned: dropdownRightAligned,
-          isLevel2: isLevel2,
-          scrollable: contentScrollable
-        }, children))
+        }, dropdownBody)
       );
     }
   }]);
@@ -418,27 +527,27 @@ Dropdown.propTypes = {
   children: PropTypes.node,
 
   /**
-   * Whether or not dropdown should have a slight drop shadow
+   * Should dropdown content be scrollable
    */
   contentScrollable: PropTypes.bool,
 
   /**
-   * Hides chevron in dropdown toggle
+   * Should dropdown content be left-aligned with the dropdown toggle
    */
   dropdownLeftAligned: PropTypes.bool,
 
   /**
-   * Whether or not dropdown should have a drop shadow (darker than the one produced by hasShadow)
+   * Should dropdown content be right-aligned with the dropdown toggle
    */
   dropdownRightAligned: PropTypes.bool,
 
   /**
-   * Is it a nested dropdown
+   * Whether or not dropdown should have a drop shadow (darker than the one produced by hasShadow)
    */
   hasDarkShadow: PropTypes.bool,
 
   /**
-   * Should dropdown content be left-aligned with the dropdown toggle
+   * Whether or not dropdown should have a slight drop shadow
    */
   hasShadow: PropTypes.bool,
 
@@ -448,19 +557,41 @@ Dropdown.propTypes = {
   isActive: PropTypes.bool,
 
   /**
-   * Should dropdown content be right-aligned with the dropdown toggle
+   * Is it a nested dropdown
    */
   isLevel2: PropTypes.bool,
 
   /**
-   * Should dropdown content be scrollable
+   * if the top of nested dropdown content should be positioned at the same height as toggle
+   */
+  isStickedToParent: PropTypes.bool,
+
+  /**
+   * Should chevron on the top of dropdown content be hidden
    */
   noChevron: PropTypes.bool,
 
   /**
+   * HTML classes to add to toggle
+   */
+  onClose: PropTypes.func,
+
+  /**
    * React Component to display as a dropdown toggle
    */
-  toggle: PropTypes.node.isRequired
+  toggle: PropTypes.node.isRequired,
+
+  /**
+   * HTML attributes to add to toggle
+   */
+  toggleAttrs: PropTypes.shape({
+    href: PropTypes.string
+  }),
+
+  /**
+   * HTML classes to add to toggle
+   */
+  toggleClassName: PropTypes.string
 };
 Dropdown.defaultProps = {
   children: null,
@@ -471,7 +602,13 @@ Dropdown.defaultProps = {
   dropdownRightAligned: false,
   contentScrollable: false,
   isLevel2: false,
-  isActive: false
+  isActive: false,
+  toggleClassName: '',
+  toggleAttrs: {
+    href: ''
+  },
+  isStickedToParent: false,
+  onClose: null
 };
 
 module.exports = Dropdown;
