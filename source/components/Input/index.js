@@ -223,7 +223,6 @@ export default class Input extends React.Component {
 
         const {
             disabled,
-            onClick,
             onKeyDown,
             onKeyPress,
             onKeyUp,
@@ -239,7 +238,7 @@ export default class Input extends React.Component {
             name: id,
             value,
             onChange: this.handleChange,
-            onClick,
+            onClick: this.handleClick,
             onBlur: this.handleBlur,
             onFocus: this.handleFocus,
             onKeyUp,
@@ -267,6 +266,16 @@ export default class Input extends React.Component {
             isEmpty: value.length === 0,
         });
         onChange(value, event);
+    }
+
+    handleClick = (event) => {
+        const { readonly, disabled, onClick } = this.props;
+
+        if (readonly || disabled) {
+            return;
+        }
+
+        onClick(event);
     }
 
     handleFocus = (event) => {

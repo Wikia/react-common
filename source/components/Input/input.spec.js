@@ -380,3 +380,35 @@ test('Input can call focus and blur', () => {
     expect(focusStub.calledOnce).toBe(true);
     expect(blurStub.calledOnce).toBe(true);
 });
+
+test('Input calls onClick', () => {
+    const clickSpy = sinon.spy();
+    const wrapper = mount(<Input onClick={clickSpy} />);
+
+    wrapper.find('input').simulate('click');
+
+    expect(clickSpy.calledOnce).toBe(true);
+});
+
+test('Input does not call onClick for disabled inputs', () => {
+    const clickSpy = sinon.spy();
+    const wrapper = mount(<Input onClick={clickSpy} disabled />);
+
+    wrapper.find('input').simulate('click');
+
+    expect(clickSpy.calledOnce).toBe(false);
+});
+
+test('Input does not call onClick for readonly inputs', () => {
+    const clickSpy = sinon.spy();
+    const wrapper = mount(<Input onClick={clickSpy} readonly />);
+
+    wrapper.find('input').simulate('click');
+
+    expect(clickSpy.calledOnce).toBe(false);
+});
+
+test('Input without onClick handler does not throw error', () => {
+    const wrapper = mount(<Input />);
+    wrapper.find('input').simulate('click');
+});
