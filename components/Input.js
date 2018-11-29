@@ -327,10 +327,23 @@ function (_React$Component) {
       onChange(value, event);
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleFocus", function (event) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleClick", function (event) {
       var _this$props2 = _this.props,
           readonly = _this$props2.readonly,
-          onFocus = _this$props2.onFocus;
+          disabled = _this$props2.disabled,
+          onClick = _this$props2.onClick;
+
+      if (readonly || disabled) {
+        return;
+      }
+
+      onClick(event);
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleFocus", function (event) {
+      var _this$props3 = _this.props,
+          readonly = _this$props3.readonly,
+          onFocus = _this$props3.onFocus;
 
       if (readonly) {
         return;
@@ -396,13 +409,13 @@ function (_React$Component) {
   }, {
     key: "getClassName",
     value: function getClassName() {
-      var _this$props3 = this.props,
-          disabled = _this$props3.disabled,
-          readonly = _this$props3.readonly,
-          status = _this$props3.status,
-          resize = _this$props3.resize,
-          className = _this$props3.className,
-          hint = _this$props3.hint;
+      var _this$props4 = this.props,
+          disabled = _this$props4.disabled,
+          readonly = _this$props4.readonly,
+          status = _this$props4.status,
+          resize = _this$props4.resize,
+          className = _this$props4.className,
+          hint = _this$props4.hint;
       var _this$state = this.state,
           isEmpty = _this$state.isEmpty,
           isFocused = _this$state.isFocused;
@@ -440,21 +453,22 @@ function (_React$Component) {
       var _this$state2 = this.state,
           id = _this$state2.id,
           value = _this$state2.value;
-      var _this$props4 = this.props,
-          disabled = _this$props4.disabled,
-          onKeyDown = _this$props4.onKeyDown,
-          onKeyPress = _this$props4.onKeyPress,
-          onKeyUp = _this$props4.onKeyUp,
-          onPaste = _this$props4.onPaste,
-          placeholder = _this$props4.placeholder,
-          readonly = _this$props4.readonly,
-          tabIndex = _this$props4.tabIndex;
+      var _this$props5 = this.props,
+          disabled = _this$props5.disabled,
+          onKeyDown = _this$props5.onKeyDown,
+          onKeyPress = _this$props5.onKeyPress,
+          onKeyUp = _this$props5.onKeyUp,
+          onPaste = _this$props5.onPaste,
+          placeholder = _this$props5.placeholder,
+          readonly = _this$props5.readonly,
+          tabIndex = _this$props5.tabIndex;
       return {
         className: this.getInputClassName(),
         id: id,
         name: id,
         value: value,
         onChange: this.handleChange,
+        onClick: this.handleClick,
         onBlur: this.handleBlur,
         onFocus: this.handleFocus,
         onKeyUp: onKeyUp,
@@ -504,20 +518,20 @@ function (_React$Component) {
   }, {
     key: "isAutoFocus",
     value: function isAutoFocus() {
-      var _this$props5 = this.props,
-          autoFocus = _this$props5.autoFocus,
-          forceFocus = _this$props5.forceFocus,
-          disabled = _this$props5.disabled,
-          readonly = _this$props5.readonly;
+      var _this$props6 = this.props,
+          autoFocus = _this$props6.autoFocus,
+          forceFocus = _this$props6.forceFocus,
+          disabled = _this$props6.disabled,
+          readonly = _this$props6.readonly;
       return (autoFocus || forceFocus) && !disabled && !readonly;
     }
   }, {
     key: "isForceFocus",
     value: function isForceFocus() {
-      var _this$props6 = this.props,
-          forceFocus = _this$props6.forceFocus,
-          disabled = _this$props6.disabled,
-          readonly = _this$props6.readonly;
+      var _this$props7 = this.props,
+          forceFocus = _this$props7.forceFocus,
+          disabled = _this$props7.disabled,
+          readonly = _this$props7.readonly;
       return forceFocus && !disabled && !readonly;
     }
   }, {
@@ -685,6 +699,9 @@ _defineProperty(Input, "propTypes", {
    */
   onChange: PropTypes.func,
 
+  /** called for `onClick` event */
+  onClick: PropTypes.func,
+
   /** Callback for `onFocus` event */
   onFocus: PropTypes.func,
 
@@ -757,6 +774,7 @@ _defineProperty(Input, "defaultProps", {
   type: 'text',
   value: '',
   onChange: function onChange() {},
+  onClick: function onClick() {},
   onBlur: function onBlur() {},
   onFocus: function onFocus() {},
   onKeyDown: function onKeyDown() {},
