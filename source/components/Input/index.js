@@ -141,6 +141,9 @@ export default class Input extends React.Component {
 
     componentDidMount() {
         this.autoFocus();
+        if (this.isAutoResize()) {
+            this.handleAutoResize();
+        }
     }
 
     componentWillReceiveProps(newProps) {
@@ -329,9 +332,9 @@ export default class Input extends React.Component {
     }
 
     isAutoResize() {
-        const { resize, disabled, readonly } = this.props;
+        const { resize } = this.props;
 
-        return resize === 'auto' && !disabled && !readonly;
+        return resize === 'auto';
     }
 
     autoFocus() {

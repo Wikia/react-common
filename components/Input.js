@@ -373,6 +373,10 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.autoFocus();
+
+      if (this.isAutoResize()) {
+        this.handleAutoResize();
+      }
     }
   }, {
     key: "componentWillReceiveProps",
@@ -519,11 +523,8 @@ function (_React$Component) {
   }, {
     key: "isAutoResize",
     value: function isAutoResize() {
-      var _this$props7 = this.props,
-          resize = _this$props7.resize,
-          disabled = _this$props7.disabled,
-          readonly = _this$props7.readonly;
-      return resize === 'auto' && !disabled && !readonly;
+      var resize = this.props.resize;
+      return resize === 'auto';
     }
   }, {
     key: "autoFocus",

@@ -334,7 +334,7 @@ function (_React$Component) {
       var toggleContentComponent = this.getToggleContentComponent();
       var Component = attrs.href ? 'a' : 'div';
       return (// TODO: Fix a11y
-        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+        // eslint-disable-next-line jsx-a11y/click-events-have-key-events
         React.createElement(Component, _extends({
           onClick: onClick,
           className: fullClassName
@@ -604,9 +604,7 @@ Dropdown.defaultProps = {
   isLevel2: false,
   isActive: false,
   toggleClassName: '',
-  toggleAttrs: {
-    href: ''
-  },
+  toggleAttrs: {},
   isStickedToParent: false,
   onClose: null
 };
