@@ -47,6 +47,11 @@ exports[`Input autoresizing works correctly 1`] = `
       placeholder={null}
       readOnly={false}
       rows={2}
+      style={
+        Object {
+          "height": "1px",
+        }
+      }
       tabIndex={0}
       value="This is some value"
     >

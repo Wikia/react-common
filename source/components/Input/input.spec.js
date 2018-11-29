@@ -262,15 +262,15 @@ test('Input doAutoResize works correctly', () => {
         />
     );
 
-    expect(autoResizeStub.callCount).toBe(0);
+    expect(autoResizeStub.callCount).toBe(1);
 
     component.find('textarea').simulate('input', { target: { value: 'This is value to test \n if autoresizing works' } });
 
-    expect(autoResizeStub.callCount).toBe(1);
+    expect(autoResizeStub.callCount).toBe(2);
 
     component.find('textarea').simulate('input', { target: { value: 'This \n this \n again' } });
 
-    expect(autoResizeStub.callCount).toBe(2);
+    expect(autoResizeStub.callCount).toBe(3);
 });
 
 test('Input can fire all default callbacks', () => {
