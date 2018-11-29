@@ -56,6 +56,8 @@ export default class Input extends React.Component {
          * with `callback(value, event)`.
          */
         onChange: PropTypes.func,
+        /** called for `onClick` event */
+        onClick: PropTypes.func,
         /** Callback for `onFocus` event */
         onFocus: PropTypes.func,
         /** Callback for `onKeyDown` event */
@@ -116,6 +118,7 @@ export default class Input extends React.Component {
         type: 'text',
         value: '',
         onChange: () => {},
+        onClick: () => {},
         onBlur: () => {},
         onFocus: () => {},
         onKeyDown: () => {},
@@ -220,6 +223,7 @@ export default class Input extends React.Component {
 
         const {
             disabled,
+            onClick,
             onKeyDown,
             onKeyPress,
             onKeyUp,
@@ -235,6 +239,7 @@ export default class Input extends React.Component {
             name: id,
             value,
             onChange: this.handleChange,
+            onClick,
             onBlur: this.handleBlur,
             onFocus: this.handleFocus,
             onKeyUp,
