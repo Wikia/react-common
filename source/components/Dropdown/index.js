@@ -16,12 +16,18 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
-            isTouchDevice: typeof window !== 'undefined' && ('ontouchstart' in window),
+            isTouchDevice: false,
         };
 
         this.onClick = this.onClick.bind(this);
         this.onToggleClicked = this.onToggleClicked.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+    }
+
+    componentDidMount() {
+        this.setState({
+            isTouchDevice: typeof window !== 'undefined' && ('ontouchstart' in window),
+        });
     }
 
     onClick() {
