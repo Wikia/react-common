@@ -411,7 +411,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).call(this, props));
     _this.state = {
       isClicked: false,
-      isTouchDevice: typeof window !== 'undefined' && 'ontouchstart' in window
+      isTouchDevice: false
     };
     _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onToggleClicked = _this.onToggleClicked.bind(_assertThisInitialized(_assertThisInitialized(_this)));
@@ -420,6 +420,13 @@ function (_React$Component) {
   }
 
   _createClass(Dropdown, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState({
+        isTouchDevice: typeof window !== 'undefined' && 'ontouchstart' in window
+      });
+    }
+  }, {
     key: "onClick",
     value: function onClick() {
       this.handleClick(false);
