@@ -46,11 +46,17 @@ test('Test.build works for instance of the same class', () => {
     expect(destination.foo).toEqual(undefined);
 });
 
-test('Test.build throws for instance of different class', () => {
+test('Test.build fails for instance of different class', () => {
     class Source extends Model({ bar: undefined }, 'SourceTest') {
     }
     const source = Source.build();
     const destination = Test.build(source);
+
+    expect(destination).toEqual(undefined);
+});
+
+test('Test.build fails for non-objects', () => {
+    const destination = Test.build('foo');
 
     expect(destination).toEqual(undefined);
 });
