@@ -2,12 +2,12 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import sinon from 'sinon';
-import uniqueId from 'lodash.uniqueid';
+import uniqueId from 'lodash/uniqueId';
 
 import Input from './index';
 
 // mock lodash's uniqueId
-jest.mock('lodash.uniqueid');
+jest.mock('lodash/uniqueId');
 uniqueId.mockImplementation(() => 'foo');
 
 /* eslint-disable no-console */

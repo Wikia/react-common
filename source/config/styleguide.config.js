@@ -21,6 +21,7 @@ function getSections() {
         description,
         sections,
         hocs,
+        models,
     }) => {
         const section = {
             content,
@@ -40,6 +41,15 @@ function getSections() {
                 hocName => ({
                     name: hocName,
                     content: resolve('../hocs', hocName, 'README.md'),
+                })
+            );
+        }
+
+        if (models) {
+            section.sections = models.map(
+                modelName => ({
+                    name: modelName,
+                    content: resolve('../models', modelName, 'README.md'),
                 })
             );
         }

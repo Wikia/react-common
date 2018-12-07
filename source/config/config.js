@@ -4,6 +4,7 @@ module.exports = {
     sourceDirectories: [
         'components',
         'hocs',
+        'models',
     ],
     externalDependencies: [
         'date-fns',
@@ -13,5 +14,6 @@ module.exports = {
         'react',
         'react-dom',
         'react-select',
+        'immutable',
     ],
 };
