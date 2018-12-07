@@ -29,6 +29,7 @@
       "error",
       "always-multiline"
     ],
+    "no-underscore-dangle": 0,
     "no-console": 0,
     "max-len": 0,
     "import/no-extraneous-dependencies": [

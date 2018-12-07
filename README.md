@@ -10,6 +10,7 @@ The following directories and files are auto-generated from the files in [source
 
 * [components](./components)
 * [hocs](./hocs)
+* [models](./models)
 * [docs](./docs)
 * [README.md](./README.md)
 * [package.json](./package.json)
