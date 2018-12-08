@@ -34,4 +34,3 @@ test('Loadable\'s setting incorrect state does nothing', () => {
     instance = instance._withLoadingState('foo');
     expect(instance.isLoadingUninitialized()).toEqual(true);
 });
-

@@ -38,7 +38,7 @@ export default function MyStoreReducer(state = MyModel.empty(), action = {}) {
 }
 ```
 
-### `Model.build(...)`
+## `Model.build(...)`
 
 This builds Model from POJO (or Model instance) param. If the param is anything but Object or Model it will return `undefined` instead.
 
@@ -51,7 +51,7 @@ const data = {
 const instance = MyStore.build(data);
 ```
 
-#### `Model.buildList(...)`
+### `Model.buildList(...)`
 
 This builds a immutable.js [List](https://facebook.github.io/immutable-js/docs/#/List) of Models from an array of POJO.
 
