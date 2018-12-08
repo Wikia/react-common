@@ -4,5 +4,5 @@
  * importable.
  */
 
-// eslint-disable-next-line
 export { default as Model } from './Model';
+export { default as Loadable } from './Loadable';
