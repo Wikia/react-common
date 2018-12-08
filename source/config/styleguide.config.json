@@ -65,7 +65,8 @@
   {
     "name": "Models",
     "models": [
-      "Model"
+      "Model",
+      "Loadable"
     ]
   },
   {
