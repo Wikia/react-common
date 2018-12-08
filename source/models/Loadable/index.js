@@ -14,7 +14,7 @@ const LOADABLE_MODEL_KEYS = Object.freeze({
 });
 
 const loadableSchema = {
-    [LOADABLE_MODEL_KEYS.loading]: LOADABLE_STATES.UNINITIALIZED,
+    [LOADABLE_MODEL_KEYS.state]: LOADABLE_STATES.UNINITIALIZED,
 };
 
 const LoadableModel = (defaultValues, name) => class extends Model({
@@ -49,6 +49,9 @@ const LoadableModel = (defaultValues, name) => class extends Model({
         return this._getLoadingState() === LOADABLE_STATES.ERROR;
     }
 
+    /**
+     * is loading completed or error?
+     */
     isLoadingFinished() {
         return this.isLoadingCompleted() || this.isLoadingError();
     }
