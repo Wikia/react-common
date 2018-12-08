@@ -38,7 +38,7 @@ export default function MyStoreReducer(state = MyModel.empty(), action = {}) {
 }
 ```
 
-## `Model.build(...)`
+### `Model.build(...)`
 
 This builds Model from POJO (or Model instance) param. If the param is anything but Object or Model it will return `undefined` instead.
 
