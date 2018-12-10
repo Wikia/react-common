@@ -4,7 +4,7 @@ module.exports = {
         '\\.(s?css)$': 'identity-obj-proxy',
         '\\.svg$': 'identity-obj-proxy',
     },
-    testURL: 'http://localhost',
+    testURL: 'http://127.0.0.1/',
     setupTestFrameworkScriptFile: '<rootDir>/config/jest.setup.js',
     snapshotSerializers: [
         'enzyme-to-json/serializer',
