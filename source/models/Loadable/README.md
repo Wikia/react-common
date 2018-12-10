@@ -1,4 +1,4 @@
-`Loadable` is a simple helper `Model` that's intended to keep a lodaing state and provide an API similar to FSM.
+`Loadable` is a simple helper `Model` that's intended to keep a loading state and provide an API similar to [Finite-state Machine](https://en.wikipedia.org/wiki/Finite-state_machine).
 
 The `Loadable`'s state can be in one of four different states:
 
