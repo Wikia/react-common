@@ -3,7 +3,7 @@ import { createMockStore } from 'redux-test-utils';
 import { mountWithStore } from 'enzyme-redux';
 
 import StoreModel from './StoreModel';
-import BannerNotifications from './component';
+import BannerNotifications from './Component';
 
 jest.mock('../../components/BannerNotifications', () => mockComponent('BannerNotifications'));
 
