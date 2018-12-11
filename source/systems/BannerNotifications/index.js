@@ -1,11 +1,8 @@
 /**
- * BannerNotifications system api:
- * - reducer
- * - Component
- * - actions
+ * BannerNotifications system api
  */
-export { default as reducer } from './reducer';
-export { default as Component } from './Component';
+export { default as BannerNotificationsStore } from './reducer';
+export { default as BannerNotificationsComponent } from './Component';
 export {
     addAlert,
     addWarning,

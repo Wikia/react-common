@@ -9,7 +9,7 @@ jest.mock('../../components/BannerNotifications', () => mockComponent('BannerNot
 
 test('BannerNotifications renders component', () => {
     const component = mountWithStore(<BannerNotifications />, createMockStore({
-        FandomBannerNotifications: StoreModel.empty(),
+        BannerNotificationsStore: StoreModel.empty(),
     }));
     expect(component.render()).toMatchSnapshot();
 });

@@ -996,7 +996,7 @@ _defineProperty(BannerNotifications, "defaultProps", {
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    messages: state.FandomBannerNotifications.getNotifications().toJS()
+    messages: state.BannerNotificationsStore.getNotifications().toJS()
   };
 };
 
@@ -1014,14 +1014,11 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 var Component = reactRedux.connect(mapStateToProps, mapDispatchToProps)(BannerNotifications);
 
 /**
- * BannerNotifications system api:
- * - reducer
- * - Component
- * - actions
+ * BannerNotifications system api
  */
 
-exports.reducer = reducer;
-exports.Component = Component;
+exports.BannerNotificationsStore = reducer;
+exports.BannerNotificationsComponent = Component;
 exports.addAlert = addAlert;
 exports.addWarning = addWarning;
 exports.addSuccess = addSuccess;

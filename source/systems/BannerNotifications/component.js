@@ -5,7 +5,7 @@ import BannerNotifications from '../../components/BannerNotifications';
 import { removeNotfication } from './actions';
 
 const mapStateToProps = state => ({
-    messages: state.FandomBannerNotifications.getNotifications().toJS(),
+    messages: state.BannerNotificationsStore.getNotifications().toJS(),
 });
 
 const mapDispatchToProps = dispatch => ({
