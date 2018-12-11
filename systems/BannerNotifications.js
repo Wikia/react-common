@@ -1015,13 +1015,11 @@ var Component = reactRedux.connect(mapStateToProps, mapDispatchToProps)(BannerNo
 
 /**
  * BannerNotifications system api:
- * - Store
  * - reducer
  * - Component
  * - actions
  */
 
-exports.Store = BannerNotificationsStoreModel;
 exports.reducer = reducer;
 exports.Component = Component;
 exports.addAlert = addAlert;

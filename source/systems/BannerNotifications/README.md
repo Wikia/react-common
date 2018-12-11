@@ -1,0 +1,96 @@
+This is system that controlls the state of site notifications, allows to add them via actions, and outputs them to a component.
+
+It supports plaintext messages and automatically handles dismissing actions when the &Cross; icon is clicked on the notification.
+
+## Requirements
+
+The BannerNotification system requires:
+
+- `redux` (and `react-redux`)
+- `immutable`
+
+## Installation
+
+There are few parts that need to be plugged into place:
+
+### Reducer
+
+The reducer need to be included in Redux.
+
+Example:
+
+```js static
+import { reducer as bannerNotificationReducer } from '@wikia/react-design-system/systems/BannerNotifications';
+import { combineReducers } from 'redux';
+
+const rootReducer = combineReducers({
+    bannerNotificationReducer,
+});
+
+export default rootReducer;
+```
+
+### Component
+
+The component that connects to the Redux state needs to be included on the page somewhere so the notifications are visible.
+
+```js static
+import React from 'react';
+import PropTypes from 'prop-types';
+import FandomContentWell from '@wikia/react-design-system/components/FandomContentWell';
+import { Component as BannerNotifications } from '@wikia/react-design-system/systems/BannerNotifications';
+
+class PageLayout extends React.Component {
+    static propTypes = {
+        children: PropTypes.node.isRequired,
+    }
+
+    render() {
+        return (
+            <FandomContentWell>
+                <BannerNotifications />
+                {children}
+            </FandomContentWell>
+        );
+    }
+}
+
+export default PageLayout;
+```
+
+## API
+
+BannerNotifications system exports few actions that should be used to add new notifications:
+
+- `addAlert(text, [id])`
+- `addWarning(text, [id])`
+- `addSuccess(text, [id])`
+- `addMessage(text, [id])`
+
+The `id` is optional and it's needed only when the notification needs to be manually removed. If omitted its value is assigned automatically.
+
+- `removeNotfication(id)`
+
+Types of notifications are shown in [components/BannerNotification](https://wikia.github.io/react-design-system/#bannernotification) section.
+
+Example usage in thunk:
+
+```js static
+import axios from 'axios';
+import { addAlert } from '@wikia/react-design-system/systems/BannerNotifications';
+
+export const loadData = () => (
+    async dispatch => {
+        try {
+            const response = await axios({
+                method: 'get',
+                url: `/api/get-data`,
+            });
+            //...
+        } catch (error) {
+            dispatch(addAlert('Error loading data from the server'));
+            console.error(error);
+        }
+    }
+);
+```
