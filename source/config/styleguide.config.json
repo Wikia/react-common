@@ -17,65 +17,52 @@
     ]
   },
   {
-    "name": "Design System Elements",
-    "components": [
-      "Button",
-      "ButtonGroup",
-      "FloatingButton",
-      "FloatingButtonGroup",
-      "Spinner",
-      "Dropdown"
-    ]
-  },
-  {
-    "name": "Design System Form Elements",
-    "components": [
-      "Input",
-      "Fieldset"
-    ]
-  },
-  {
-    "name": "Design System UI",
-    "components": [
-      "BannerNotification",
+    "name": "Systems",
+    "description": "Complete system that can be used in React apps",
+    "directory": "systems",
+    "items": [
       "BannerNotifications"
     ]
   },
   {
-    "name": "Design System Icons",
+    "name": "Components",
+    "description": "React components",
     "components": [
-      "IconSprite",
-      "Icon",
-      "VideoPlayIcon"
-    ]
-  },
-  {
-    "name": "Design System Flow",
-    "components": [
+      "BannerNotification",
+      "BannerNotifications",
+      "Button",
+      "ButtonGroup",
       "ContentWell",
-      "FandomContentWell"
+      "Dropdown",
+      "ExpandableText",
+      "FandomBackgroundImage",
+      "FandomContentWell",
+      "Fieldset",
+      "FloatingButton",
+      "FloatingButtonGroup",
+      "Icon",
+      "IconSprite",
+      "Input",
+      "Select",
+      "Spinner",
+      "Timeago",
+      "VideoPlayIcon",
+      "Vignette"
     ]
   },
   {
-    "name": "Higher Order Components (hocs)",
-    "hocs": [
+    "name": "Higher Order Components",
+    "directory": "hocs",
+    "items": [
       "withTimeoutFallback"
     ]
   },
   {
     "name": "Models",
-    "models": [
+    "description": "Wrappers for immutable.js Records.",
+    "directory": "models",
+    "items": [
       "Model"
-    ]
-  },
-  {
-    "name": "Other",
-    "components": [
-      "FandomBackgroundImage",
-      "Vignette",
-      "Timeago",
-      "ExpandableText",
-      "Select"
     ]
   }
 ]
