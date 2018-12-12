@@ -30,6 +30,8 @@ const LoadableModel = (defaultValues, name) => class extends Model({
             return this.set(LOADABLE_MODEL_KEYS.state, state);
         }
 
+        console.error(`LoadableModel._withLoadingState called with incorrect param: "${state}". Allowed states: ${LOADABLE_STATES_VALUES.join(', ')}.`);
+
         return this;
     }
 

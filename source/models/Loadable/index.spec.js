@@ -1,3 +1,5 @@
+import sinon from 'sinon';
+
 import LoadableModel from './index';
 
 class LoadableTestModel extends LoadableModel({}, 'LoadableTestModel') {
@@ -30,7 +32,13 @@ test('Loadable\'s setting and loading states works correctly', () => {
 test('Loadable\'s setting incorrect state does nothing', () => {
     let instance = LoadableTestModel.empty();
 
+    const consoleStub = sinon.stub(console, 'error');
+
     expect(instance.isLoadingUninitialized()).toEqual(true);
     instance = instance._withLoadingState('foo');
     expect(instance.isLoadingUninitialized()).toEqual(true);
+    expect(consoleStub.callCount).toEqual(1);
+    expect(consoleStub.getCall(0).args[0]).toMatch(/^LoadableModel\._withLoadingState called with incorrect param: "foo"/);
+
+    consoleStub.restore();
 });
