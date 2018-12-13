@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var immutable = require('immutable');
 
 function _classCallCheck(instance, Constructor) {
@@ -487,5 +485,4 @@ var LoadableModel = function LoadableModel(defaultValues, name) {
   );
 };
 
-exports.LOADABLE_STATES = LOADABLE_STATES;
-exports.default = LoadableModel;
+module.exports = LoadableModel;
