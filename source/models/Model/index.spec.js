@@ -7,28 +7,28 @@ const testSchema = {
     foo: undefined,
 };
 
-class Test extends Model(testSchema, 'Test') {
+class TestModel extends Model(testSchema, 'TestModel') {
 }
 
-test('Test.build works for undefined, false and null', () => {
-    const recordUndefined = Test.build();
-    const recordFalse = Test.build(false);
-    const recordNull = Test.build(null);
+test('TestModel.build works for undefined, false and null', () => {
+    const recordUndefined = TestModel.build();
+    const recordFalse = TestModel.build(false);
+    const recordNull = TestModel.build(null);
 
     expect(recordUndefined).toEqual(undefined);
     expect(recordFalse).toEqual(undefined);
     expect(recordNull).toEqual(undefined);
 });
 
-test('Test.empty returns empty object', () => {
-    const record = Test.empty();
-    const newTestInstance = new Test();
+test('TestModel.empty returns empty object', () => {
+    const record = TestModel.empty();
+    const newTestModelInstance = new TestModel();
 
-    expect(record).toEqual(newTestInstance);
+    expect(record).toEqual(newTestModelInstance);
 });
 
-test('Test.build works for object', () => {
-    const record = Test.build({
+test('TestModel.build works for object', () => {
+    const record = TestModel.build({
         id: 1,
     });
 
@@ -36,32 +36,32 @@ test('Test.build works for object', () => {
     expect(record.foo).toEqual(undefined);
 });
 
-test('Test.build works for instance of the same class', () => {
-    const source = Test.build({
+test('TestModel.build works for instance of the same class', () => {
+    const source = TestModel.build({
         id: 1,
     });
-    const destination = Test.build(source);
+    const destination = TestModel.build(source);
 
     expect(destination.id).toEqual(1);
     expect(destination.foo).toEqual(undefined);
 });
 
-test('Test.build fails for instance of different class', () => {
-    class Source extends Model({ bar: undefined }, 'SourceTest') {
+test('TestModel.build fails for instance of different class', () => {
+    class Source extends Model({ bar: undefined }, 'SourceTestModel') {
     }
     const source = Source.build();
-    const destination = Test.build(source);
+    const destination = TestModel.build(source);
 
     expect(destination).toEqual(undefined);
 });
 
-test('Test.build fails for non-objects', () => {
-    const destination = Test.build('foo');
+test('TestModel.build fails for non-objects', () => {
+    const destination = TestModel.build('foo');
 
     expect(destination).toEqual(undefined);
 });
 
-test('Test.buildList should know how to build a list', () => {
+test('TestModel.buildList should know how to build a list', () => {
     const data = [
         {
             id: 1,
@@ -72,16 +72,16 @@ test('Test.buildList should know how to build a list', () => {
             foo: 'bar',
         },
     ];
-    const recordList = Test.buildList(data);
+    const recordList = TestModel.buildList(data);
 
     expect(recordList).toBeInstanceOf(List);
     expect(recordList.size).toBe(2);
 });
 
-test('Test.buildList should return empty list for empty data', () => {
-    const recordsUndefined = Test.buildList();
-    const recordsFalse = Test.buildList(false);
-    const recordsNull = Test.buildList(null);
+test('TestModel.buildList should return empty list for empty data', () => {
+    const recordsUndefined = TestModel.buildList();
+    const recordsFalse = TestModel.buildList(false);
+    const recordsNull = TestModel.buildList(null);
 
     expect(recordsUndefined).toEqual(undefined);
     expect(recordsFalse).toEqual(undefined);
