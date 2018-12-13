@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-restricted-imports
 import Model from '../Model';
 
-export const LOADABLE_STATES = Object.freeze({
+const LOADABLE_STATES = Object.freeze({
     UNINITIALIZED: 'UNINITIALIZED',
     IN_PROGRESS: 'IN_PROGRESS',
     COMPLETED: 'COMPLETED',
