@@ -62,7 +62,8 @@
     "description": "Wrappers for immutable.js Records.",
     "directory": "models",
     "items": [
-      "Model"
+      "Model",
+      "Loadable"
     ]
   }
 ]

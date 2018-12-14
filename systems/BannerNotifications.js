@@ -1011,14 +1011,14 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   };
 };
 
-var Component = reactRedux.connect(mapStateToProps, mapDispatchToProps)(BannerNotifications);
+var BannerNotificationsComponent = reactRedux.connect(mapStateToProps, mapDispatchToProps)(BannerNotifications);
 
 /**
  * BannerNotifications system api
  */
 
 exports.BannerNotificationsStore = reducer;
-exports.BannerNotificationsComponent = Component;
+exports.BannerNotificationsComponent = BannerNotificationsComponent;
 exports.addAlert = addAlert;
 exports.addWarning = addWarning;
 exports.addSuccess = addSuccess;
