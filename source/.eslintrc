@@ -54,14 +54,7 @@
         "newlines-between": "always-and-inside-groups"
       }
     ],
-    "no-restricted-imports": [
-      "error",
-      {
-        "patterns": [
-          "../*"
-        ]
-      }
-    ],
+    "no-restricted-imports": 0,
     "class-methods-use-this": 0,
     "no-use-before-define": 0,
     "react/destructuring-assignment": 0,
@@ -92,5 +85,8 @@
     "import",
     "jsx-a11y",
     "jest"
-  ]
+  ],
+  "globals": {
+    "mockComponent": true
+  }
 }

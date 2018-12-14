@@ -5,6 +5,7 @@ module.exports = {
         'components',
         'hocs',
         'models',
+        'systems',
     ],
     externalDependencies: [
         'date-fns',
@@ -14,6 +15,7 @@ module.exports = {
         'react',
         'react-dom',
         'react-select',
+        'react-redux',
         'immutable',
     ],
 };

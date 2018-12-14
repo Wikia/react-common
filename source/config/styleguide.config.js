@@ -17,11 +17,11 @@ function getSections() {
     return schema.map(({
         name,
         content,
+        items,
         components,
+        directory,
         description,
         sections,
-        hocs,
-        models,
     }) => {
         const section = {
             content,
@@ -36,20 +36,11 @@ function getSections() {
             );
         }
 
-        if (hocs) {
-            section.sections = hocs.map(
-                hocName => ({
-                    name: hocName,
-                    content: resolve('../hocs', hocName, 'README.md'),
-                })
-            );
-        }
-
-        if (models) {
-            section.sections = models.map(
-                modelName => ({
-                    name: modelName,
-                    content: resolve('../models', modelName, 'README.md'),
+        if (items && directory) {
+            section.sections = items.map(
+                itemName => ({
+                    name: itemName,
+                    content: resolve(`../${directory}`, itemName, 'README.md'),
                 })
             );
         }
