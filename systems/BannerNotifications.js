@@ -1018,6 +1018,7 @@ var BannerNotificationsComponent = reactRedux.connect(mapStateToProps, mapDispat
  */
 
 exports.BannerNotificationsStore = reducer;
+exports.BannerNotificationsStoreModel = BannerNotificationsStoreModel;
 exports.BannerNotificationsComponent = BannerNotificationsComponent;
 exports.addAlert = addAlert;
 exports.addWarning = addWarning;
