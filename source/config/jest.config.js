@@ -10,6 +10,12 @@ module.exports = {
         'enzyme-to-json/serializer',
     ],
     collectCoverage: true,
+    collectCoverageFrom: [
+        'components/**/*.js',
+        'hocs/**/*.js',
+        'systems/**/*.js',
+        '**/*.spec.js',
+    ],
     coverageThreshold: {
         global: {
             branches: 100,

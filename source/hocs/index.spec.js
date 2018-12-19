@@ -1,6 +1,6 @@
 // we're checking here if we can import the index
 // eslint-disable-next-line no-unused-vars
-import hocs from './index';
+import all from './index';
 
 const foo = 'foo';
 

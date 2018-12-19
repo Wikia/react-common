@@ -1,0 +1,10 @@
+export { default as BadgeAdmin } from './BadgeAdmin';
+export { default as BadgeContentModerator } from './BadgeContentModerator';
+export { default as BadgeDiscussionModerator } from './BadgeDiscussionModerator';
+export { default as BadgeGlobalDiscussionsModerator } from './BadgeGlobalDiscussionsModerator';
+export { default as BadgeHelper } from './BadgeHelper';
+export { default as BadgeStaff } from './BadgeStaff';
+export { default as BadgeVstf } from './BadgeVstf';
+export { default as IconTiny } from './IconTiny';
+export { default as IconUser } from './IconUser';
+export { default as Icon } from './Icon';
