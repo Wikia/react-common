@@ -4,6 +4,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import sass from 'rollup-plugin-sass';
 import commonjs from 'rollup-plugin-commonjs';
 import string from 'rollup-plugin-string/dist/rollup-plugin-string';
+import svg from 'rollup-plugin-react-svg';
 
 const config = require('./config');
 const babelConfig = require('./babel.config');
@@ -35,6 +36,9 @@ const buildConfig = file => ({
         }),
         sass({
             output: true,
+        }),
+        svg({
+            exclude: 'node_modules/design-system/dist/svg/sprite.svg',
         }),
         babel(babelConfig),
         commonjs(),

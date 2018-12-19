@@ -14,6 +14,18 @@ module.exports = {
                 loader: 'style-loader!css-loader!sass-loader',
             },
             {
+                test: /\.svg$/,
+                exclude: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: babelConfig,
+                    }, {
+                        loader: 'react-svg-loader',
+                    },
+                ],
+            },
+            {
                 test: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
                 loader: 'raw-loader',
             },

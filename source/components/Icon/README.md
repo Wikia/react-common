@@ -2,6 +2,8 @@ This component uses the Design System icons listed at [https://fandomdesignsyste
 
 The `name` attribute of the component refers to the icon's DS name.
 
+**NOTICE**: This component requires `<IconSprite />` to work.
+
 ## Example usage
 
 Standard icon:

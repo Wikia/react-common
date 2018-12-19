@@ -51,6 +51,12 @@
     ]
   },
   {
+    "name": "Icons",
+    "components": [
+      "IconTest"
+    ]
+  },
+  {
     "name": "Higher Order Components",
     "directory": "hocs",
     "items": [
