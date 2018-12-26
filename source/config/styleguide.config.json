@@ -51,12 +51,6 @@
     ]
   },
   {
-    "name": "Icons",
-    "components": [
-      "IconTest"
-    ]
-  },
-  {
     "name": "Higher Order Components",
     "directory": "hocs",
     "items": [
@@ -71,5 +65,20 @@
       "Model",
       "Loadable"
     ]
+  },
+  {
+    "name": "Assets",
+    "description": "Logos and other assets",
+    "gallery": "assets"
+  },
+  {
+    "name": "Avatars",
+    "description": "Avatars and avatars' and badges",
+    "gallery": "avatars"
+  },
+  {
+    "name": "Icons",
+    "description": "Icons",
+    "gallery": "icons"
   }
 ]

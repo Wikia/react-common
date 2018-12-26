@@ -20,23 +20,28 @@ const sourceDir = 'design-system/dist/svg/';
 const ASSET_CATEGORIES = Object.freeze({
     'wds-icons': {
         directory: 'icons',
-        prefix: '',
+        prefix: 'Icon',
+        previewHeight: '30',
     },
     'wds-avatar-badges': {
         directory: 'avatars',
-        prefix: 'Badge',
+        prefix: 'AvatarBadge',
+        previewHeight: '16',
     },
     'wds-avatar': {
         directory: 'avatars',
-        prefix: '',
+        prefix: 'Avatar',
+        previewHeight: '30',
     },
     'wds-company-logo': {
         directory: 'assets',
         prefix: 'Logo',
+        previewHeight: '80',
     },
     'wds-company-store': {
         directory: 'assets',
-        prefix: '',
+        prefix: 'Store',
+        previewHeight: '50',
     },
 });
 
@@ -77,6 +82,7 @@ function convertAssetSource(assetFileName) {
     assets.push({
         category: categoryName,
         directory: category.directory,
+        height: category.previewHeight,
         from: assetFileName,
         to: componentName,
     });
@@ -93,9 +99,10 @@ glob.sync(`node_modules/${sourceDir}wds-*.svg`, {}).forEach(
  * (3)
  */
 function generateComponent(assetData) {
-    console.log(`Writing ${assetData.directory}/${assetData.to}`);
+    const componentName = `${assetData.directory}/${assetData.to}`;
+    console.log(`Writing ${componentName}`);
 
-    const outDirectory = `${__dirname}/../${assetData.directory}/${assetData.to}`;
+    const outDirectory = `${__dirname}/../${componentName}`;
     const fromFile = assetData.from.replace(/^node_modules\//, '');
 
     const jsxTemplate = `// This file is generated automatically via extract-assets-from-ds.js
@@ -103,6 +110,13 @@ export default from '${fromFile}';
 `;
     mkdirp.sync(outDirectory);
     fs.writeFileSync(`${outDirectory}/index.js`, jsxTemplate);
+
+    const readmeTemplate = `
+\`\`\`js
+<${assetData.to} height="${assetData.height}" />
+\`\`\`
+`;
+    fs.writeFileSync(`${outDirectory}/README.md`, readmeTemplate);
 }
 
 assets.forEach(asset => generateComponent(asset));
