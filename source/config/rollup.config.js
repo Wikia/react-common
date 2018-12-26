@@ -38,6 +38,17 @@ const buildConfig = file => ({
             output: true,
         }),
         svg({
+            svgo: {
+                plugins: [
+                    {
+                        cleanupIDs: {
+                            remove: false,
+                            prefix: `id-${file}-`,
+                            minify: true,
+                        },
+                    },
+                ],
+            },
             exclude: 'node_modules/design-system/dist/svg/sprite.svg',
         }),
         babel(babelConfig),
