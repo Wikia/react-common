@@ -22,6 +22,7 @@ function getSections() {
         directory,
         description,
         sections,
+        gallery,
     }) => {
         const section = {
             content,
@@ -44,6 +45,10 @@ function getSections() {
                 })
             );
         }
+
+        // if (gallery) {
+        //     section.components =
+        // }
 
         return section;
     });

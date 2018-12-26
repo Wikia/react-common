@@ -96,9 +96,10 @@ function generateComponent(assetData) {
     console.log(`Writing ${assetData.directory}/${assetData.to}`);
 
     const outDirectory = `${__dirname}/../${assetData.directory}/${assetData.to}`;
+    const fromFile = assetData.from.replace(/^node_modules\//, '');
 
     const jsxTemplate = `// This file is generated automatically via extract-assets-from-ds.js
-export default from '${sourceDir}${assetData.from}';
+export default from '${fromFile}';
 `;
     mkdirp.sync(outDirectory);
     fs.writeFileSync(`${outDirectory}/index.js`, jsxTemplate);
@@ -122,7 +123,9 @@ function generateReadmeAndTest(directory, components) {
     const componentTest = components.map(
         name => `export { default as ${name} } from './${name}';`
     );
-    fs.writeFileSync(`${outDirectory}/index.js`, componentTest.push('').join('\n'));
+    componentTest.push('');
+
+    fs.writeFileSync(`${outDirectory}/index.js`, componentTest.join('\n'));
 
     // generate test for including the components inside
     const indexSpecTemplate = `// we're checking here if we can import the index
