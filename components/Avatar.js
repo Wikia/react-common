@@ -19,7 +19,7 @@ DefaultAvatar.defaultProps = {
 var AvatarImage = function AvatarImage(_ref) {
   var src = _ref.src,
       alt = _ref.alt;
-  var className = "wds-avatar__image";
+  var className = 'wds-avatar__image';
   return src ? React.createElement("img", {
     src: src,
     alt: alt,
