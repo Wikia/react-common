@@ -1,0 +1,76 @@
+.wds-avatar {
+  display: inline-block;
+  position: relative;
+}
+.wds-avatar a {
+  height: 100%;
+  width: 100%;
+}
+
+.wds-avatar__image {
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.wds-avatar__inner-border {
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.wds-avatar__badge {
+  line-height: 0;
+  position: absolute;
+}
+.wds-avatar__badge svg {
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.wds-avatar {
+  height: 48px;
+  min-width: 48px;
+  width: 48px;
+}
+.wds-avatar a {
+  color: #bed1cf;
+}
+.wds-avatar a:hover {
+  color: #bed1cf;
+}
+.wds-avatar .wds-avatar__image {
+  background-color: #fff;
+  border: solid 3px #bed1cf;
+  fill: #bed1cf;
+}
+.wds-avatar .wds-avatar__image:hover {
+  border-color: #bed1cf;
+  fill: #bed1cf;
+}
+.wds-avatar .wds-avatar__inner-border:hover + .wds-avatar__image {
+  fill: #bed1cf;
+  border-color: #bed1cf;
+}
+.wds-avatar .wds-avatar__inner-border {
+  height: 42px;
+  min-width: 42px;
+  width: 42px;
+  border: solid 3px #fff;
+  left: 3px;
+  top: 3px;
+}
+.wds-avatar .wds-avatar__badge {
+  height: 20.1872px;
+  min-width: 20.1872px;
+  width: 20.1872px;
+  left: -4.4860444444px;
+  top: -5.7677714286px;
+}
+.wds-avatar svg.wds-avatar__image {
+  padding: 2px;
+}
