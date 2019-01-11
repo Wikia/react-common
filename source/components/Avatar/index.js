@@ -7,20 +7,18 @@ import Badge from './components/Badge';
 import './styles.scss';
 
 const getAvatarImage = (href, alt, src) => {
-    const avatarImage =  <AvatarImage alt={alt} src={src} />;
+    const avatarImage = <AvatarImage alt={alt} src={src} />;
     return href ? <a href={href}>{avatarImage}</a> : avatarImage;
 };
 
 const Avatar = ({
     href, alt, src, badge,
-}) => {
-    return (
-        <div className="wds-avatar">
-            {getAvatarImage(href, alt, src)}
-            {badge && <Badge badge={badge} />}
-        </div>
-    );
-};
+}) => (
+    <div className="wds-avatar">
+        {getAvatarImage(href, alt, src)}
+        {badge && <Badge badge={badge} />}
+    </div>
+);
 
 Avatar.propTypes = {
     /** Alt text for avatar */
@@ -29,8 +27,8 @@ Avatar.propTypes = {
     badge: PropTypes.oneOf(
         [
             'admin', 'content-moderator', 'discussion-moderator',
-            'global-discussions-moderator', 'helper', 'staff', 'vstf'
-        ]
+            'global-discussions-moderator', 'helper', 'staff', 'vstf',
+        ],
     ),
     /** Link to user's profile */
     href: PropTypes.string,
