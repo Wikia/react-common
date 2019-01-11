@@ -4,6 +4,12 @@ module.exports = {
     plugins: [
         '@babel/plugin-proposal-class-properties',
         '@babel/plugin-syntax-object-rest-spread',
+        [
+            "inline-react-svg",
+            {
+                "ignorePattern": /sprite\.svg$/,
+            }
+        ]
     ],
     presets: [
         '@babel/preset-react',

@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders 1`] = `
+<Avatar
+  alt="alt"
+  badge="admin"
+  href="href"
+  src="src"
+>
+  <div
+    className="wds-avatar"
+  >
+    <a
+      href="href"
+    >
+      <AvatarImage
+        alt="alt"
+        src="src"
+      >
+        <img
+          alt="alt"
+          className="wds-avatar__image"
+          src="src"
+          title="alt"
+        />
+      </AvatarImage>
+    </a>
+    <Badge
+      badge="admin"
+    >
+      <span
+        className="wds-avatar__badge"
+        title="Community Admin"
+      >
+        <_default>
+          <div />
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar renders when incorrect badgePermission is set 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="someIncorrectBadgePermission"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <div
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        />
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="someIncorrectBadgePermission"
+    />
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar renders with badge 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="admin"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <div
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        />
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="admin"
+    >
+      <span
+        className="wds-avatar__badge"
+        title="Community Admin"
+      >
+        <_default>
+          <div />
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar renders without href 1`] = `
+<Avatar
+  alt="alt"
+  src="src"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="alt"
+      src="src"
+    >
+      <img
+        alt="alt"
+        className="wds-avatar__image"
+        src="src"
+        title="alt"
+      />
+    </AvatarImage>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar renders without src 1`] = `
+<Avatar
+  alt="alt"
+  href="href"
+>
+  <div
+    className="wds-avatar"
+  >
+    <a
+      href="href"
+    >
+      <AvatarImage
+        alt="alt"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </AvatarImage>
+    </a>
+  </div>
+</Avatar>
+`;
