@@ -1,6 +1,6 @@
 Defaults:
 ```js
-<Avatar alt="alt" href="href" />
+<Avatar />
 ```
 
 Avatar with badges
