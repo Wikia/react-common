@@ -23,9 +23,18 @@ const Avatar = ({
 };
 
 Avatar.propTypes = {
+    /** Alt text for avatar */
     alt: PropTypes.string,
-    badge: PropTypes.string,
+    /** Badge to display for avatar. */
+    badge: PropTypes.oneOf(
+        [
+            'admin', 'content-moderator', 'discussion-moderator',
+            'global-discussions-moderator', 'helper', 'staff', 'vstf'
+        ]
+    ),
+    /** Link to user's profile */
     href: PropTypes.string,
+    /** Image src for avatar */
     src: PropTypes.string,
 };
 
