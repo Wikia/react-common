@@ -53,10 +53,12 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
       alt="User avatar"
     >
       <_default
-        alt="User avatar"
+        className="wds-avatar__image"
+        title="wds-avatar__image"
       >
         <div
-          alt="User avatar"
+          className="wds-avatar__image"
+          title="wds-avatar__image"
         />
       </_default>
     </AvatarImage>
@@ -79,10 +81,12 @@ exports[`Avatar renders with badge 1`] = `
       alt="User avatar"
     >
       <_default
-        alt="User avatar"
+        className="wds-avatar__image"
+        title="wds-avatar__image"
       >
         <div
-          alt="User avatar"
+          className="wds-avatar__image"
+          title="wds-avatar__image"
         />
       </_default>
     </AvatarImage>
@@ -140,10 +144,12 @@ exports[`Avatar renders without src 1`] = `
         alt="alt"
       >
         <_default
-          alt="alt"
+          className="wds-avatar__image"
+          title="wds-avatar__image"
         >
           <div
-            alt="alt"
+            className="wds-avatar__image"
+            title="wds-avatar__image"
           />
         </_default>
       </AvatarImage>
