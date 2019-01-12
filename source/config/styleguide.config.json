@@ -28,6 +28,7 @@
     "name": "Components",
     "description": "React components",
     "components": [
+      "Avatar",
       "BannerNotification",
       "BannerNotifications",
       "Button",

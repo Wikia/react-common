@@ -4,19 +4,17 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var React = _interopDefault(require('react'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsMenuControl = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
-
-  return React.createElement(
-    "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M21.293 6.293L12 15.586 2.707 6.293a.999.999 0 1 0-1.414 1.414l10 10a.997.997 0 0 0 1.414 0l10-10a.999.999 0 1 0-1.414-1.414" })
-  );
-});
-
 // This file is generated automatically via extract-assets-from-ds.js
+var _default = function _default(props) {
+  return React.createElement("svg", props, React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M21.293 6.293L12 15.586 2.707 6.293a.999.999 0 1 0-1.414 1.414l10 10a.997.997 0 0 0 1.414 0l10-10a.999.999 0 1 0-1.414-1.414"
+  }));
+};
 
-module.exports = wdsIconsMenuControl;
+_default.defaultProps = {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 24 24"
+};
+
+module.exports = _default;

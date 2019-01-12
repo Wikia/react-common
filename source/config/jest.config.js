@@ -2,7 +2,7 @@ module.exports = {
     rootDir: '..',
     moduleNameMapper: {
         '\\.(s?css)$': 'identity-obj-proxy',
-        '\\.svg$': 'identity-obj-proxy',
+        '\\.svg': '<rootDir>/mocks/fileMock.js',
     },
     testURL: 'http://localhost',
     setupTestFrameworkScriptFile: '<rootDir>/config/jest.setup.js',
