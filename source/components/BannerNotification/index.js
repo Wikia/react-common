@@ -1,21 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line no-restricted-imports
-import Icon from '../Icon';
+import IconCrossTiny from '../../icons/IconCrossTiny';
+import IconErrorSmall from '../../icons/IconErrorSmall';
+import IconAlertSmall from '../../icons/IconAlertSmall';
+import IconCheckmarkCircleSmall from '../../icons/IconCheckmarkCircleSmall';
+import IconFlagSmall from '../../icons/IconFlagSmall';
 
 import './styles.scss';
 
-function getIconName(type) {
+function getIcon(type) {
     switch (type) {
         case ('alert'):
-            return 'error-small';
+            return <IconErrorSmall className="wds-banner-notification__icon-mark" />;
         case ('warning'):
-            return 'alert-small';
+            return <IconAlertSmall className="wds-banner-notification__icon-mark" />;
         case ('success'):
-            return 'checkmark-circle-small';
+            return <IconCheckmarkCircleSmall className="wds-banner-notification__icon-mark" />;
         default:
-            return 'flag-small';
+            return <IconFlagSmall className="wds-banner-notification__icon-mark" />;
     }
 }
 
@@ -39,11 +42,9 @@ const BannerNotification = ({
     className, type, text, onClose, children,
 }) => (
     <div className={`wds-banner-notification ${getClassName(type)} ${className}`}>
-        <div className="wds-banner-notification__icon">
-            <Icon name={getIconName(type)} />
-        </div>
+        <div className="wds-banner-notification__icon">{getIcon(type)}</div>
         <span className="wds-banner-notification__text">{children || text}</span>
-        {onClose && <Icon name="cross-tiny" className="wds-banner-notification__close" onClick={onClose} />}
+        <IconCrossTiny className="wds-banner-notification__close" onClick={onClose} />
     </div>
 );
 

@@ -5,3 +5,15 @@
 
 // import wds-button
 @import "~design-system/dist/scss/wds-components/_banner-notification.scss";
+
+.wds-banner-notification__close {
+	fill: currentColor;
+	height: 12px;
+	width: 12px;
+}
+
+.wds-banner-notification__icon-mark {
+	fill: currentColor;
+	height: 18px;
+	width: 18px;
+}
