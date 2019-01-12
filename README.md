@@ -8,6 +8,7 @@ Wikia's reusable React parts.
 
 The following directories and files are auto-generated from the files in [source](./source) directory:
 
+* [avatars](./avatars)
 * [components](./components)
 * [hocs](./hocs)
 * [models](./models)
