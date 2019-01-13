@@ -68,14 +68,9 @@
     ]
   },
   {
-    "name": "Assets: Logos",
-    "description": "Logos and other assets",
+    "name": "Assets",
+    "description": "Logos, avatars and other assets",
     "gallery": "assets"
-  },
-  {
-    "name": "Assets: Avatars",
-    "description": "Avatars and avatars' and badges",
-    "gallery": "avatars"
   },
   {
     "name": "Assets: Icons",

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AvatarIconUser from '../../avatars/AvatarIconUser';
+import AvatarIconUser from '../../assets/AvatarIconUser';
 
 const AvatarImage = ({ src, alt }) => {
     const className = 'wds-avatar__image';

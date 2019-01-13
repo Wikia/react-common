@@ -5,11 +5,6 @@ module.exports = {
         '@babel/plugin-proposal-class-properties',
         '@babel/plugin-syntax-object-rest-spread',
         '@babel/plugin-proposal-export-default-from',
-        [
-            'inline-react-svg', {
-                ignorePattern: /sprite\.svg$/,
-            },
-        ],
     ],
     presets: [
         '@babel/preset-react',

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AvatarBadgeAdmin from '../../avatars/AvatarBadgeAdmin';
-import AvatarBadgeContentModerator from '../../avatars/AvatarBadgeContentModerator';
-import AvatarBadgeDiscussionModerator from '../../avatars/AvatarBadgeDiscussionModerator';
-import AvatarBadgeGlobalDiscussionsModerator from '../../avatars/AvatarBadgeGlobalDiscussionsModerator';
-import AvatarBadgeHelper from '../../avatars/AvatarBadgeHelper';
-import AvatarBadgeStaff from '../../avatars/AvatarBadgeStaff';
-import AvatarBadgeVstf from '../../avatars/AvatarBadgeVstf';
+import AvatarBadgeAdmin from '../../assets/AvatarBadgeAdmin';
+import AvatarBadgeContentModerator from '../../assets/AvatarBadgeContentModerator';
+import AvatarBadgeDiscussionModerator from '../../assets/AvatarBadgeDiscussionModerator';
+import AvatarBadgeGlobalDiscussionsModerator from '../../assets/AvatarBadgeGlobalDiscussionsModerator';
+import AvatarBadgeHelper from '../../assets/AvatarBadgeHelper';
+import AvatarBadgeStaff from '../../assets/AvatarBadgeStaff';
+import AvatarBadgeVstf from '../../assets/AvatarBadgeVstf';
 
 const Badge = ({ badge }) => {
     const badgeIcons = {
@@ -47,7 +47,7 @@ const Badge = ({ badge }) => {
             <span title={badgeIcon.title} className="wds-avatar__badge">
                 {badgeIcon.icon}
             </span>
-        ) : ''
+        ) : null
     );
 };
 

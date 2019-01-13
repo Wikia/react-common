@@ -2,7 +2,6 @@ module.exports = {
     outputDir: '..',
     styleguideDir: 'docs',
     sourceDirectories: [
-        'avatars',
         'components',
         'hocs',
         'models',
