@@ -6,11 +6,10 @@ module.exports = {
         '@babel/plugin-syntax-object-rest-spread',
         '@babel/plugin-proposal-export-default-from',
         [
-            "inline-react-svg",
-            {
-                "ignorePattern": /sprite\.svg$/,
-            }
-        ]
+            'inline-react-svg', {
+                ignorePattern: /sprite\.svg$/,
+            },
+        ],
     ],
     presets: [
         '@babel/preset-react',
