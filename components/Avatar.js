@@ -5,13 +5,14 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var React = _interopDefault(require('react'));
 var PropTypes = _interopDefault(require('prop-types'));
 
-var DefaultAvatar = function DefaultAvatar(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default = function _default(props) {
   return React.createElement("svg", props, React.createElement("path", {
     d: "M75 76.667c11.03 0 20-8.97 20-20V50c0-11.03-8.97-20-20-20s-20 8.97-20 20v6.667c0 11.03 8.97 20 20 20zm-16.667 6.666C45.467 83.333 35 93.8 35 106.667c0 1.84-.874 23.546.966 23.546 0 0 22.608 12.983 35.606 13.978 12.998.995 42.383-8.007 42.383-8.007 1.84 0 1.045-27.677 1.045-29.517 0-12.867-10.467-23.334-23.333-23.334H58.333z"
   }));
 };
 
-DefaultAvatar.defaultProps = {
+_default.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "6 6 138 138"
 };
@@ -25,7 +26,7 @@ var AvatarImage = function AvatarImage(_ref) {
     alt: alt,
     title: alt,
     className: className
-  }) : React.createElement(DefaultAvatar, {
+  }) : React.createElement(_default, {
     className: "wds-avatar__image",
     title: className
   });
@@ -40,7 +41,8 @@ AvatarImage.defaultProps = {
   src: undefined
 };
 
-var WdsAvatarBadgeAdmin = function WdsAvatarBadgeAdmin(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$1 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -53,12 +55,13 @@ var WdsAvatarBadgeAdmin = function WdsAvatarBadgeAdmin(props) {
   })));
 };
 
-WdsAvatarBadgeAdmin.defaultProps = {
+_default$1.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarBadgeContentModerator = function WdsAvatarBadgeContentModerator(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$2 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -71,12 +74,13 @@ var WdsAvatarBadgeContentModerator = function WdsAvatarBadgeContentModerator(pro
   })));
 };
 
-WdsAvatarBadgeContentModerator.defaultProps = {
+_default$2.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarBadgeDiscussionModerator = function WdsAvatarBadgeDiscussionModerator(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$3 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -89,12 +93,13 @@ var WdsAvatarBadgeDiscussionModerator = function WdsAvatarBadgeDiscussionModerat
   })));
 };
 
-WdsAvatarBadgeDiscussionModerator.defaultProps = {
+_default$3.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarGlobalDiscussionsModerator = function WdsAvatarGlobalDiscussionsModerator(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$4 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -107,12 +112,13 @@ var WdsAvatarGlobalDiscussionsModerator = function WdsAvatarGlobalDiscussionsMod
   })));
 };
 
-WdsAvatarGlobalDiscussionsModerator.defaultProps = {
+_default$4.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarBadgeHelper = function WdsAvatarBadgeHelper(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$5 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -128,12 +134,13 @@ var WdsAvatarBadgeHelper = function WdsAvatarBadgeHelper(props) {
   }))));
 };
 
-WdsAvatarBadgeHelper.defaultProps = {
+_default$5.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarBadgeStaff = function WdsAvatarBadgeStaff(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$6 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -146,12 +153,13 @@ var WdsAvatarBadgeStaff = function WdsAvatarBadgeStaff(props) {
   })));
 };
 
-WdsAvatarBadgeStaff.defaultProps = {
+_default$6.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
 
-var WdsAvatarBadgeVSTF = function WdsAvatarBadgeVSTF(props) {
+// This file is generated automatically via extract-assets-from-ds.js
+var _default$7 = function _default(props) {
   return React.createElement("svg", props, React.createElement("g", {
     fill: "none",
     fillRule: "evenodd"
@@ -164,7 +172,7 @@ var WdsAvatarBadgeVSTF = function WdsAvatarBadgeVSTF(props) {
   })));
 };
 
-WdsAvatarBadgeVSTF.defaultProps = {
+_default$7.defaultProps = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 18 18"
 };
@@ -173,31 +181,31 @@ var Badge = function Badge(_ref) {
   var badge = _ref.badge;
   var badgeIcons = {
     admin: {
-      icon: React.createElement(WdsAvatarBadgeAdmin, null),
+      icon: React.createElement(_default$1, null),
       title: 'Community Admin'
     },
     'content-moderator': {
-      icon: React.createElement(WdsAvatarBadgeContentModerator, null),
+      icon: React.createElement(_default$2, null),
       title: 'Content Moderator'
     },
     'discussion-moderator': {
-      icon: React.createElement(WdsAvatarBadgeDiscussionModerator, null),
+      icon: React.createElement(_default$3, null),
       title: 'Discussions Moderator'
     },
     'global-discussions-moderator': {
-      icon: React.createElement(WdsAvatarGlobalDiscussionsModerator, null),
+      icon: React.createElement(_default$4, null),
       title: 'Global Discussions Moderator'
     },
     helper: {
-      icon: React.createElement(WdsAvatarBadgeHelper, null),
+      icon: React.createElement(_default$5, null),
       title: 'FANDOM Helper'
     },
     staff: {
-      icon: React.createElement(WdsAvatarBadgeStaff, null),
+      icon: React.createElement(_default$6, null),
       title: 'FANDOM Staff'
     },
     vstf: {
-      icon: React.createElement(WdsAvatarBadgeVSTF, null),
+      icon: React.createElement(_default$7, null),
       title: 'VSTF'
     }
   };
