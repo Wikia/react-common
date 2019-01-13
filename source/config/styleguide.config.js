@@ -80,6 +80,9 @@ module.exports = {
     },
     theme,
     styles,
+    styleguideComponents: {
+        Wrapper: resolve('./styleguide.ExampleWrapper.js'),
+    },
     styleguideDir: `../${config.outputDir}/${config.styleguideDir}`,
     components: '../components/**/index.js',
     sections: getSections(),
