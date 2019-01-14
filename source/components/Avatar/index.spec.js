@@ -4,30 +4,19 @@ import sinon from 'sinon';
 
 import Avatar from './index';
 
-test('Avatar renders', () => {
+test('Avatar renders with default props', () => {
+    const component = mount(<Avatar />);
+    expect(component).toMatchSnapshot();
+});
+
+test('Avatar renders with props', () => {
     const props = {
         alt: 'alt',
         badge: 'admin',
+        className: 'class-name',
         href: 'href',
         src: 'src',
-    };
-    const component = mount(<Avatar {...props} />);
-    expect(component).toMatchSnapshot();
-});
-
-test('Avatar renders without href', () => {
-    const props = {
-        alt: 'alt',
-        src: 'src',
-    };
-    const component = mount(<Avatar {...props} />);
-    expect(component).toMatchSnapshot();
-});
-
-test('Avatar renders without src', () => {
-    const props = {
-        alt: 'alt',
-        href: 'href',
+        title: 'title',
     };
     const component = mount(<Avatar {...props} />);
     expect(component).toMatchSnapshot();

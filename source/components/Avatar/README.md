@@ -7,12 +7,12 @@ Avatar with badges
 
 ```js
 <div>
-    <Avatar alt="alt" badge="admin" href="href" />
-    <Avatar alt="alt" badge="content-moderator" href="href" />
-    <Avatar alt="alt" badge="discussion-moderator" href="href" />
-    <Avatar alt="alt" badge="global-discussions-moderator" href="href" />
-    <Avatar alt="alt" badge="helper" href="href" />
-    <Avatar alt="alt" badge="staff" href="href" />
-    <Avatar alt="alt" badge="vstf" href="href" />
+    <Avatar badge="admin" />
+    <Avatar badge="content-moderator" />
+    <Avatar badge="discussion-moderator" />
+    <Avatar badge="global-discussions-moderator" />
+    <Avatar badge="helper" />
+    <Avatar badge="staff" />
+    <Avatar badge="vstf" />
 </div>
 ```

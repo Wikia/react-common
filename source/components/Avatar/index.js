@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import AvatarImage from './AvatarImage';
 import Badge from './Badge';
@@ -12,9 +13,14 @@ const getAvatarImage = (href, alt, src) => {
 };
 
 const Avatar = ({
-    href, alt, src, badge,
+    alt,
+    badge,
+    className,
+    href,
+    src,
+    title,
 }) => (
-    <div className="wds-avatar">
+    <div className={classNames('wds-avatar', className)} title={title}>
         {getAvatarImage(href, alt, src)}
         {badge && <Badge badge={badge} />}
     </div>
@@ -30,17 +36,23 @@ Avatar.propTypes = {
             'global-discussions-moderator', 'helper', 'staff', 'vstf',
         ],
     ),
+    /** Additional class name */
+    className: PropTypes.string,
     /** Link to user's profile */
     href: PropTypes.string,
     /** Image src for avatar */
     src: PropTypes.string,
+    /** Title attribute for avatar */
+    title: PropTypes.string,
 };
 
 Avatar.defaultProps = {
     alt: 'User avatar',
     badge: undefined,
+    className: undefined,
     href: undefined,
     src: undefined,
+    title: undefined,
 };
 
 export default Avatar;
