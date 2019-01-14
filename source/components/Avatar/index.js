@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AvatarImage from './components/AvatarImage';
-import Badge from './components/Badge';
+import AvatarImage from './AvatarImage';
+import Badge from './Badge';
 
 import './styles.scss';
 

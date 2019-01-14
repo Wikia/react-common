@@ -66,5 +66,15 @@
       "Model",
       "Loadable"
     ]
+  },
+  {
+    "name": "Assets",
+    "description": "Logos, avatars and other assets",
+    "gallery": "assets"
+  },
+  {
+    "name": "Assets: Icons",
+    "description": "Icons",
+    "gallery": "icons"
   }
 ]

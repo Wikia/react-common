@@ -7,27 +7,19 @@ exports[`BannerNotification renders correctly 1`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-flag-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - messge
   </span>
-  <svg
-    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+  <div
+    className="wds-banner-notification__close"
     onClick={[Function]}
-  >
-    <use
-      xlinkHref="#wds-icons-cross-tiny"
-    />
-  </svg>
+  />
 </div>
 `;
 
@@ -38,27 +30,19 @@ exports[`BannerNotification renders correctly 2`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-checkmark-circle-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - success
   </span>
-  <svg
-    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+  <div
+    className="wds-banner-notification__close"
     onClick={[Function]}
-  >
-    <use
-      xlinkHref="#wds-icons-cross-tiny"
-    />
-  </svg>
+  />
 </div>
 `;
 
@@ -69,27 +53,19 @@ exports[`BannerNotification renders correctly 3`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-alert-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - warning
   </span>
-  <svg
-    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+  <div
+    className="wds-banner-notification__close"
     onClick={[Function]}
-  >
-    <use
-      xlinkHref="#wds-icons-cross-tiny"
-    />
-  </svg>
+  />
 </div>
 `;
 
@@ -100,27 +76,19 @@ exports[`BannerNotification renders correctly 4`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-error-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - alert
   </span>
-  <svg
-    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+  <div
+    className="wds-banner-notification__close"
     onClick={[Function]}
-  >
-    <use
-      xlinkHref="#wds-icons-cross-tiny"
-    />
-  </svg>
+  />
 </div>
 `;
 
@@ -131,13 +99,9 @@ exports[`BannerNotification renders correctly 5`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-flag-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
@@ -147,14 +111,10 @@ exports[`BannerNotification renders correctly 5`] = `
     </em>
     : this is html.
   </span>
-  <svg
-    className="wds-icon wds-banner-notification__close wds-icon-tiny"
+  <div
+    className="wds-banner-notification__close"
     onClick={[Function]}
-  >
-    <use
-      xlinkHref="#wds-icons-cross-tiny"
-    />
-  </svg>
+  />
 </div>
 `;
 
@@ -165,19 +125,19 @@ exports[`BannerNotification renders correctly without action 1`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-flag-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - messge
   </span>
+  <div
+    className="wds-banner-notification__close"
+    onClick={null}
+  />
 </div>
 `;
 
@@ -188,19 +148,19 @@ exports[`BannerNotification renders correctly without action 2`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-checkmark-circle-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - success
   </span>
+  <div
+    className="wds-banner-notification__close"
+    onClick={null}
+  />
 </div>
 `;
 
@@ -211,19 +171,19 @@ exports[`BannerNotification renders correctly without action 3`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-alert-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - warning
   </span>
+  <div
+    className="wds-banner-notification__close"
+    onClick={null}
+  />
 </div>
 `;
 
@@ -234,18 +194,18 @@ exports[`BannerNotification renders correctly without action 4`] = `
   <div
     className="wds-banner-notification__icon"
   >
-    <svg
-      className="wds-icon wds-icon-small"
-    >
-      <use
-        xlinkHref="#wds-icons-error-small"
-      />
-    </svg>
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
   </div>
   <span
     className="wds-banner-notification__text"
   >
     lorem ipsum - alert
   </span>
+  <div
+    className="wds-banner-notification__close"
+    onClick={null}
+  />
 </div>
 `;

@@ -12,27 +12,19 @@ exports[`BannerNotifications renders correctly 2`] = `
     <div
       className="wds-banner-notification__icon"
     >
-      <svg
-        className="wds-icon wds-icon-small"
-      >
-        <use
-          xlinkHref="#wds-icons-flag-small"
-        />
-      </svg>
+      <div
+        className="wds-banner-notification__icon-mark"
+      />
     </div>
     <span
       className="wds-banner-notification__text"
     >
       this is a single message
     </span>
-    <svg
-      className="wds-icon wds-banner-notification__close wds-icon-tiny"
+    <div
+      className="wds-banner-notification__close"
       onClick={[Function]}
-    >
-      <use
-        xlinkHref="#wds-icons-cross-tiny"
-      />
-    </svg>
+    />
   </div>
 </div>
 `;
@@ -47,27 +39,19 @@ exports[`BannerNotifications renders correctly 3`] = `
     <div
       className="wds-banner-notification__icon"
     >
-      <svg
-        className="wds-icon wds-icon-small"
-      >
-        <use
-          xlinkHref="#wds-icons-flag-small"
-        />
-      </svg>
+      <div
+        className="wds-banner-notification__icon-mark"
+      />
     </div>
     <span
       className="wds-banner-notification__text"
     >
       this is a message
     </span>
-    <svg
-      className="wds-icon wds-banner-notification__close wds-icon-tiny"
+    <div
+      className="wds-banner-notification__close"
       onClick={[Function]}
-    >
-      <use
-        xlinkHref="#wds-icons-cross-tiny"
-      />
-    </svg>
+    />
   </div>
   <div
     className="wds-banner-notification wds-success "
@@ -75,27 +59,19 @@ exports[`BannerNotifications renders correctly 3`] = `
     <div
       className="wds-banner-notification__icon"
     >
-      <svg
-        className="wds-icon wds-icon-small"
-      >
-        <use
-          xlinkHref="#wds-icons-checkmark-circle-small"
-        />
-      </svg>
+      <div
+        className="wds-banner-notification__icon-mark"
+      />
     </div>
     <span
       className="wds-banner-notification__text"
     >
       this is a success
     </span>
-    <svg
-      className="wds-icon wds-banner-notification__close wds-icon-tiny"
+    <div
+      className="wds-banner-notification__close"
       onClick={[Function]}
-    >
-      <use
-        xlinkHref="#wds-icons-cross-tiny"
-      />
-    </svg>
+    />
   </div>
   <div
     className="wds-banner-notification wds-warning "
@@ -103,27 +79,19 @@ exports[`BannerNotifications renders correctly 3`] = `
     <div
       className="wds-banner-notification__icon"
     >
-      <svg
-        className="wds-icon wds-icon-small"
-      >
-        <use
-          xlinkHref="#wds-icons-alert-small"
-        />
-      </svg>
+      <div
+        className="wds-banner-notification__icon-mark"
+      />
     </div>
     <span
       className="wds-banner-notification__text"
     >
       this is a warning
     </span>
-    <svg
-      className="wds-icon wds-banner-notification__close wds-icon-tiny"
+    <div
+      className="wds-banner-notification__close"
       onClick={[Function]}
-    >
-      <use
-        xlinkHref="#wds-icons-cross-tiny"
-      />
-    </svg>
+    />
   </div>
   <div
     className="wds-banner-notification wds-alert "
@@ -131,19 +99,19 @@ exports[`BannerNotifications renders correctly 3`] = `
     <div
       className="wds-banner-notification__icon"
     >
-      <svg
-        className="wds-icon wds-icon-small"
-      >
-        <use
-          xlinkHref="#wds-icons-error-small"
-        />
-      </svg>
+      <div
+        className="wds-banner-notification__icon-mark"
+      />
     </div>
     <span
       className="wds-banner-notification__text"
     >
       this is a permanent alert
     </span>
+    <div
+      className="wds-banner-notification__close"
+      onClick={null}
+    />
   </div>
 </div>
 `;

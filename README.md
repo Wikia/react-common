@@ -12,6 +12,8 @@ The following directories and files are auto-generated from the files in [source
 * [hocs](./hocs)
 * [models](./models)
 * [systems](./systems)
+* [assets](./assets)
+* [icons](./icons)
 * [docs](./docs)
 * [README.md](./README.md)
 * [package.json](./package.json)

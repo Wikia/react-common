@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
+const docgen = require('react-docgen');
+const glob = require('glob');
+
 const pkg = require('../package.json');
 
 const config = require('./config');
@@ -22,6 +25,7 @@ function getSections() {
         directory,
         description,
         sections,
+        gallery,
     }) => {
         const section = {
             content,
@@ -34,6 +38,18 @@ function getSections() {
             section.components = () => components.map(
                 componentName => resolve('../components', componentName, 'index.js')
             );
+        }
+
+        if (gallery) {
+            const assetComponents = [];
+
+            glob.sync(`${gallery}/*/index.js`, {}).forEach(
+                (file) => {
+                    assetComponents.push(resolve(`../${file}`));
+                }
+            );
+
+            section.components = () => assetComponents;
         }
 
         if (items && directory) {
@@ -75,8 +91,18 @@ module.exports = {
     },
     getComponentPathLine(componentPath) {
         const name = path.basename(path.dirname(componentPath));
+        const subPath = componentPath.replace(/^\.\.\//, '').replace(/\/index\.js$/, '');
 
-        return `import ${name} from '${pkg.name}/components/${name}';`;
+        return `import ${name} from '${pkg.name}/${subPath}';`;
+    },
+    propsParser(filePath, source, resolver, handlers) {
+        /**
+         * `react-docgen` cannot parse this fine syntax, so let's ignore it
+         */
+        if (source.indexOf('export default from') > -1) {
+            return {};
+        }
+        return docgen.parse(source, resolver, handlers);
     },
     webpackConfig,
 };

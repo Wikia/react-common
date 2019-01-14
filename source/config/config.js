@@ -6,6 +6,8 @@ module.exports = {
         'hocs',
         'models',
         'systems',
+        'assets',
+        'icons',
     ],
     externalDependencies: [
         'date-fns',
