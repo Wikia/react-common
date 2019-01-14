@@ -1,6 +1,5 @@
 By default it renders nothing:
 ```js
-<IconSprite />{ /* add sprite so we can see icons in this example */ }
 <BannerNotifications messages={[]} onClick={() => {}} />
 ```
 
@@ -29,7 +28,6 @@ const messages4 = [
     id: '4',
   },
 ];<div>
-	<IconSprite />{ /* add sprite so we can see icons in this example */ }
 	<BannerNotifications messages={messages4} onClose={() => {}} />
 </div>
 ```
