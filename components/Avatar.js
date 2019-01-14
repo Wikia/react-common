@@ -5,6 +5,59 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var React = _interopDefault(require('react'));
 var PropTypes = _interopDefault(require('prop-types'));
 
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var classnames = createCommonjsModule(function (module) {
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else {
+		window.classNames = classNames;
+	}
+}());
+});
+
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -246,12 +299,15 @@ var getAvatarImage = function getAvatarImage(href, alt, src) {
 };
 
 var Avatar = function Avatar(_ref) {
-  var href = _ref.href,
-      alt = _ref.alt,
+  var alt = _ref.alt,
+      badge = _ref.badge,
+      className = _ref.className,
+      href = _ref.href,
       src = _ref.src,
-      badge = _ref.badge;
+      title = _ref.title;
   return React.createElement("div", {
-    className: "wds-avatar"
+    className: classnames('wds-avatar', className),
+    title: title
   }, getAvatarImage(href, alt, src), badge && React.createElement(Badge, {
     badge: badge
   }));
@@ -264,17 +320,25 @@ Avatar.propTypes = {
   /** Badge to display for avatar. */
   badge: PropTypes.oneOf(['admin', 'content-moderator', 'discussion-moderator', 'global-discussions-moderator', 'helper', 'staff', 'vstf']),
 
+  /** Additional class name */
+  className: PropTypes.string,
+
   /** Link to user's profile */
   href: PropTypes.string,
 
   /** Image src for avatar */
-  src: PropTypes.string
+  src: PropTypes.string,
+
+  /** Title attribute for avatar */
+  title: PropTypes.string
 };
 Avatar.defaultProps = {
   alt: 'User avatar',
   badge: undefined,
+  className: undefined,
   href: undefined,
-  src: undefined
+  src: undefined,
+  title: undefined
 };
 
 module.exports = Avatar;
