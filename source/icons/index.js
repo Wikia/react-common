@@ -45,6 +45,7 @@ export { default as IconEmbed } from './IconEmbed';
 export { default as IconErrorSmall } from './IconErrorSmall';
 export { default as IconError } from './IconError';
 export { default as IconExploreTiny } from './IconExploreTiny';
+export { default as IconExternalLink } from './IconExternalLink';
 export { default as IconEyeCrossedSmall } from './IconEyeCrossedSmall';
 export { default as IconEyeCrossed } from './IconEyeCrossed';
 export { default as IconEyeSmall } from './IconEyeSmall';
