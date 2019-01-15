@@ -20,7 +20,7 @@ const Avatar = ({
     src,
     title,
 }) => (
-    <div className={classNames('wds-avatar', className)} title={title}>
+    <div className={classNames('wds-avatar', (!src ? 'is-default' : ''), className)} title={title}>
         {getAvatarImage(href, alt, src)}
         {badge && <Badge badge={badge} />}
     </div>

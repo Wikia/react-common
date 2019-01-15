@@ -9,7 +9,6 @@ export { default as AvatarIconTiny } from './AvatarIconTiny';
 export { default as AvatarIconUser } from './AvatarIconUser';
 export { default as AvatarIcon } from './AvatarIcon';
 export { default as LogoFandomHeart } from './LogoFandomHeart';
-export { default as LogoFandomPoweredByWikiaTwoLines } from './LogoFandomPoweredByWikiaTwoLines';
 export { default as LogoFandomWhite } from './LogoFandomWhite';
 export { default as LogoFandom } from './LogoFandom';
 export { default as LogoWikiaOrgWhite } from './LogoWikiaOrgWhite';
