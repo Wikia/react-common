@@ -38,7 +38,19 @@
   border-top-right-radius: 0;
   margin-top: 0;
   z-index: 10000;
-}.wds-icon {
+}/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-icon {
   fill: currentColor;
   height: 24px;
   min-width: 24px;

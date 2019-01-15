@@ -1,3 +1,21 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
 .wds-dropdown {
   display: inline-block;
   position: relative;
@@ -5,9 +23,6 @@
 .wds-dropdown__toggle {
   cursor: default;
   position: relative;
-}
-.wds-dropdown__toggle-chevron:not(:only-child) {
-  margin-left: 5px;
 }
 .wds-dropdown__content {
   background-color: #fff;
@@ -158,7 +173,19 @@
 }
 .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2.wds-is-active .wds-dropdown-level-2__content, .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2:not(.wds-is-touch-device):hover .wds-dropdown-level-2__content {
   display: block;
-}.wds-icon {
+}/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-icon {
   fill: currentColor;
   height: 24px;
   min-width: 24px;

@@ -1,3 +1,15 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
 .wds-avatar {
   display: inline-block;
   position: relative;
@@ -5,6 +17,13 @@
 .wds-avatar a {
   height: 100%;
   width: 100%;
+}
+.wds-avatar.is-default:before {
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
 }
 
 .wds-avatar__image {
@@ -14,12 +33,6 @@
   display: inline-block;
   border-radius: 50%;
   box-sizing: border-box;
-}
-
-.wds-avatar__inner-border {
-  border-radius: 50%;
-  box-sizing: border-box;
-  position: absolute;
 }
 
 .wds-avatar__badge {
@@ -52,11 +65,7 @@
   border-color: #bed1cf;
   fill: #bed1cf;
 }
-.wds-avatar .wds-avatar__inner-border:hover + .wds-avatar__image {
-  fill: #bed1cf;
-  border-color: #bed1cf;
-}
-.wds-avatar .wds-avatar__inner-border {
+.wds-avatar.is-default:before {
   height: 42px;
   min-width: 42px;
   width: 42px;
@@ -70,7 +79,4 @@
   width: 20.1872px;
   left: -4.4860444444px;
   top: -5.7677714286px;
-}
-.wds-avatar svg.wds-avatar__image {
-  padding: 2px;
 }

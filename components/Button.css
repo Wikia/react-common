@@ -1,3 +1,21 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
 .wds-button {
   color: #fff;
   background: none;
@@ -28,8 +46,8 @@
   background-color: #00b7e0;
 }
 .wds-button:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled), .wds-button:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled), .wds-button:not(.wds-is-text):not(.wds-is-secondary):active, .wds-button:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
-  background-color: #47ddff;
-  border-color: #47ddff;
+  background-color: #00647a;
+  border-color: #00647a;
 }
 .wds-button:not(.wds-is-text) {
   border-color: #00b7e0;
@@ -39,14 +57,14 @@
   color: #00b7e0;
 }
 .wds-button.wds-is-secondary:focus:not(:disabled), .wds-button.wds-is-secondary:hover:not(:disabled), .wds-button.wds-is-secondary:active, .wds-button.wds-is-secondary.wds-is-active {
-  border-color: #47ddff;
-  color: #47ddff;
+  border-color: #00647a;
+  color: #00647a;
 }
 .wds-button.wds-is-text {
   color: #00b7e0;
 }
 .wds-button.wds-is-text:focus:not(:disabled), .wds-button.wds-is-text:hover:not(:disabled), .wds-button.wds-is-text:active, .wds-button.wds-is-text.wds-is-active {
-  color: #47ddff;
+  color: #00647a;
 }
 button.wds-button, a.wds-button {
   cursor: pointer;
@@ -75,12 +93,15 @@ button.wds-button, a.wds-button {
 .wds-button.wds-is-text {
   border: 0;
 }
-.wds-button .wds-icon:first-child {
+.wds-button .wds-icon {
   align-self: center;
   pointer-events: none;
 }
-.wds-button .wds-icon:first-child:not(:only-child) {
+.wds-button .wds-icon:not(:only-child):first-child {
   margin-right: 6px;
+}
+.wds-button .wds-icon:not(:only-child):last-child {
+  margin-left: 6px;
 }
 .wds-button .wds-list {
   color: #1a1a1a;
@@ -157,8 +178,8 @@ button.wds-button, a.wds-button {
   background-color: #00c300;
 }
 .wds-button.wds-is-line-color:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled), .wds-button.wds-is-line-color:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled), .wds-button.wds-is-line-color:not(.wds-is-text):not(.wds-is-secondary):active, .wds-button.wds-is-line-color:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
-  background-color: #2aff2a;
-  border-color: #2aff2a;
+  background-color: #005d00;
+  border-color: #005d00;
 }
 .wds-button.wds-is-line-color:not(.wds-is-text) {
   border-color: #00c300;
@@ -168,14 +189,14 @@ button.wds-button, a.wds-button {
   color: #00c300;
 }
 .wds-button.wds-is-line-color.wds-is-secondary:focus:not(:disabled), .wds-button.wds-is-line-color.wds-is-secondary:hover:not(:disabled), .wds-button.wds-is-line-color.wds-is-secondary:active, .wds-button.wds-is-line-color.wds-is-secondary.wds-is-active {
-  border-color: #2aff2a;
-  color: #2aff2a;
+  border-color: #005d00;
+  color: #005d00;
 }
 .wds-button.wds-is-line-color.wds-is-text {
   color: #00c300;
 }
 .wds-button.wds-is-line-color.wds-is-text:focus:not(:disabled), .wds-button.wds-is-line-color.wds-is-text:hover:not(:disabled), .wds-button.wds-is-line-color.wds-is-text:active, .wds-button.wds-is-line-color.wds-is-text.wds-is-active {
-  color: #2aff2a;
+  color: #005d00;
 }
 .wds-button.wds-is-linkedin-color {
   color: #fff;
@@ -297,8 +318,8 @@ button.wds-button, a.wds-button {
   background-color: #f96900;
 }
 .wds-button.wds-is-odnoklassniki-color:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled), .wds-button.wds-is-odnoklassniki-color:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled), .wds-button.wds-is-odnoklassniki-color:not(.wds-is-text):not(.wds-is-secondary):active, .wds-button.wds-is-odnoklassniki-color:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
-  background-color: #ffa360;
-  border-color: #ffa360;
+  background-color: #933e00;
+  border-color: #933e00;
 }
 .wds-button.wds-is-odnoklassniki-color:not(.wds-is-text) {
   border-color: #f96900;
@@ -308,14 +329,14 @@ button.wds-button, a.wds-button {
   color: #f96900;
 }
 .wds-button.wds-is-odnoklassniki-color.wds-is-secondary:focus:not(:disabled), .wds-button.wds-is-odnoklassniki-color.wds-is-secondary:hover:not(:disabled), .wds-button.wds-is-odnoklassniki-color.wds-is-secondary:active, .wds-button.wds-is-odnoklassniki-color.wds-is-secondary.wds-is-active {
-  border-color: #ffa360;
-  color: #ffa360;
+  border-color: #933e00;
+  color: #933e00;
 }
 .wds-button.wds-is-odnoklassniki-color.wds-is-text {
   color: #f96900;
 }
 .wds-button.wds-is-odnoklassniki-color.wds-is-text:focus:not(:disabled), .wds-button.wds-is-odnoklassniki-color.wds-is-text:hover:not(:disabled), .wds-button.wds-is-odnoklassniki-color.wds-is-text:active, .wds-button.wds-is-odnoklassniki-color.wds-is-text.wds-is-active {
-  color: #ffa360;
+  color: #933e00;
 }
 .wds-button.wds-is-reddit-color {
   color: #fff;
@@ -409,8 +430,8 @@ button.wds-button, a.wds-button {
   background-color: #587ca3;
 }
 .wds-button.wds-is-vkontakte-color:not(.wds-is-text):not(.wds-is-secondary):focus:not(:disabled), .wds-button.wds-is-vkontakte-color:not(.wds-is-text):not(.wds-is-secondary):hover:not(:disabled), .wds-button.wds-is-vkontakte-color:not(.wds-is-text):not(.wds-is-secondary):active, .wds-button.wds-is-vkontakte-color:not(.wds-is-text):not(.wds-is-secondary).wds-is-active {
-  background-color: #344a61;
-  border-color: #344a61;
+  background-color: #99b0c8;
+  border-color: #99b0c8;
 }
 .wds-button.wds-is-vkontakte-color:not(.wds-is-text) {
   border-color: #587ca3;
@@ -420,14 +441,14 @@ button.wds-button, a.wds-button {
   color: #587ca3;
 }
 .wds-button.wds-is-vkontakte-color.wds-is-secondary:focus:not(:disabled), .wds-button.wds-is-vkontakte-color.wds-is-secondary:hover:not(:disabled), .wds-button.wds-is-vkontakte-color.wds-is-secondary:active, .wds-button.wds-is-vkontakte-color.wds-is-secondary.wds-is-active {
-  border-color: #344a61;
-  color: #344a61;
+  border-color: #99b0c8;
+  color: #99b0c8;
 }
 .wds-button.wds-is-vkontakte-color.wds-is-text {
   color: #587ca3;
 }
 .wds-button.wds-is-vkontakte-color.wds-is-text:focus:not(:disabled), .wds-button.wds-is-vkontakte-color.wds-is-text:hover:not(:disabled), .wds-button.wds-is-vkontakte-color.wds-is-text:active, .wds-button.wds-is-vkontakte-color.wds-is-text.wds-is-active {
-  color: #344a61;
+  color: #99b0c8;
 }
 .wds-button.wds-is-wykop-color {
   color: #fff;

@@ -306,7 +306,7 @@ var Avatar = function Avatar(_ref) {
       src = _ref.src,
       title = _ref.title;
   return React.createElement("div", {
-    className: classnames('wds-avatar', className),
+    className: classnames('wds-avatar', !src ? 'is-default' : '', className),
     title: title
   }, getAvatarImage(href, alt, src), badge && React.createElement(Badge, {
     badge: badge

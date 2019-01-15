@@ -1,3 +1,21 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
 .wds-banner-notification {
   background-color: #fff;
   color: #999;
@@ -37,6 +55,7 @@
   padding: 13px 12px;
 }
 .wds-banner-notification__close {
+  box-sizing: content-box;
   cursor: pointer;
   padding: 18px;
 }
