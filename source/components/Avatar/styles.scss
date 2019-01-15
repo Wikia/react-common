@@ -3,9 +3,4 @@
 @import "~design-system/dist/scss/wds-components/_avatar.scss";
 .wds-avatar {
 	@include wds-avatar(48px, $wds-fandom-color-middle-gray, $wds-fandom-color-middle-gray);
-
-	// svg is necessary here to differentiate between img (for user's avatar image) and svg (default avatar)
-	svg.wds-avatar__image {
-		padding: 2px;
-	}
 }
