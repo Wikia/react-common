@@ -318,7 +318,7 @@ Avatar.propTypes = {
   alt: PropTypes.string,
 
   /** Badge to display for avatar. */
-  badge: PropTypes.oneOf(['admin', 'content-moderator', 'discussion-moderator', 'global-discussions-moderator', 'helper', 'staff', 'vstf']),
+  badge: PropTypes.oneOf(['admin', 'content-moderator', 'discussion-moderator', 'sysop', 'global-discussions-moderator', 'helper', 'staff', 'vstf', '']),
 
   /** Additional class name */
   className: PropTypes.string,
