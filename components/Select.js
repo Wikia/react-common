@@ -44,24 +44,6 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
     throw new TypeError("Super expression must either be null or a function");
@@ -91,42 +73,6 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
 }
 
 function _assertThisInitialized(self) {
@@ -204,61 +150,50 @@ function createSelectContainer(classNamePrefix, customClassName) {
   };
 }
 
-/**
- * A single WDS icon.
- *
- * **NOTE**: This icon is using `IconSprite` component.
- */
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var Icon = function Icon(_ref) {
-  var name = _ref.name,
-      className = _ref.className,
-      small = _ref.small,
-      tiny = _ref.tiny,
-      rest = _objectWithoutProperties(_ref, ["name", "className", "small", "tiny"]);
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconMagnifyingGlass = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
-  var isSmall = small || /-small$/.test(name);
-  var isTiny = tiny || /-tiny$/.test(name);
-  var classes = ['wds-icon', className, isSmall ? 'wds-icon-small' : '', isTiny ? 'wds-icon-tiny' : ''].filter(function (c) {
-    return c;
-  }).join(' ');
-  return React.createElement("svg", _extends({
-    className: classes
-  }, rest), React.createElement("use", {
-    xlinkHref: "#wds-icons-".concat(name)
-  }));
-};
+  return React.createElement(
+    "svg",
+    _extends$1({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "g",
+      { fillRule: "evenodd" },
+      React.createElement("path", { d: "M21.747 20.524l-4.872-4.871a.864.864 0 1 0-1.222 1.222l4.871 4.872a.864.864 0 1 0 1.223-1.223z" }),
+      React.createElement("path", { d: "M3.848 10.763a6.915 6.915 0 0 1 6.915-6.915 6.915 6.915 0 0 1 6.915 6.915 6.915 6.915 0 0 1-6.915 6.915 6.915 6.915 0 0 1-6.915-6.915zm-1.729 0a8.643 8.643 0 0 0 8.644 8.644 8.643 8.643 0 0 0 8.644-8.644 8.643 8.643 0 0 0-8.644-8.644 8.643 8.643 0 0 0-8.644 8.644z" })
+    )
+  );
+});
 
-Icon.propTypes = {
-  /** Additional class name */
-  className: PropTypes.string,
+// This file is generated automatically via extract-assets-from-ds.js
 
-  /** name - both `-small` and `-tiny` prefix are also updating class name */
-  name: PropTypes.string.isRequired,
+var _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-  /** `wds-icon-small` flag for the class name (but not for the icon name) */
-  small: PropTypes.bool,
+function _objectWithoutProperties$2(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconDropdown = ((_ref) => {
+  let props = _objectWithoutProperties$2(_ref, ["styles"]);
 
-  /** `wds-icon-tiny` flag for the class name (but not for the icon name) */
-  tiny: PropTypes.bool
-};
-Icon.defaultProps = {
-  className: '',
-  small: false,
-  tiny: false
-};
+  return React.createElement(
+    "svg",
+    _extends$2({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    React.createElement("path", { d: "M7 8h10l-5 6z" })
+  );
+});
+
+// This file is generated automatically via extract-assets-from-ds.js
 
 var SearchDropdownIndicator = function SearchDropdownIndicator(props) {
-  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(Icon, {
-    className: "search-dropdown-indicator",
-    name: "magnifying-glass-small"
+  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconMagnifyingGlass, {
+    className: "search-dropdown-indicator"
   }));
 };
 var DefaultDropdownIndicator = function DefaultDropdownIndicator(props) {
   var className = ['default-dropdown-indicator', props.isFocused ? 'is-focused' : undefined].filter(Boolean).join(' ');
-  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(Icon, {
-    className: className,
-    name: "dropdown"
+  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconDropdown, {
+    className: className
   }));
 };
 
