@@ -2,14 +2,12 @@ import React from 'react';
 import { components } from 'react-select';
 
 // eslint-disable-next-line no-restricted-imports
-import Icon from '../Icon';
+import IconMagnifyingGlass from '../../icons/IconMagnifyingGlass';
+import IconDropdown from '../../icons/IconDropdown';
 
 export const SearchDropdownIndicator = props => (
     <components.DropdownIndicator {...props}>
-        <Icon
-            className="search-dropdown-indicator"
-            name="magnifying-glass-small"
-        />
+        <IconMagnifyingGlass className="search-dropdown-indicator" />
     </components.DropdownIndicator>
 );
 
@@ -23,10 +21,7 @@ export const DefaultDropdownIndicator = (props) => {
 
     return (
         <components.DropdownIndicator {...props}>
-            <Icon
-                className={className}
-                name="dropdown"
-            />
+            <IconDropdown className={className} />
         </components.DropdownIndicator>
     );
 };

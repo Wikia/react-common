@@ -87,13 +87,9 @@ exports[`Select renders correctly 1`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon search-dropdown-indicator wds-icon-small"
-          >
-            <use
-              xlinkHref="#wds-icons-magnifying-glass-small"
-            />
-          </svg>
+          <div
+            className="search-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -188,13 +184,9 @@ exports[`Select renders correctly 2`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon search-dropdown-indicator wds-icon-small"
-          >
-            <use
-              xlinkHref="#wds-icons-magnifying-glass-small"
-            />
-          </svg>
+          <div
+            className="search-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -340,13 +332,9 @@ exports[`Select renders correctly 3`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon search-dropdown-indicator wds-icon-small"
-          >
-            <use
-              xlinkHref="#wds-icons-magnifying-glass-small"
-            />
-          </svg>
+          <div
+            className="search-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -441,13 +429,9 @@ exports[`Select renders correctly 4`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon search-dropdown-indicator wds-icon-small"
-          >
-            <use
-              xlinkHref="#wds-icons-magnifying-glass-small"
-            />
-          </svg>
+          <div
+            className="search-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -542,13 +526,9 @@ exports[`Select renders correctly 5`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon search-dropdown-indicator wds-icon-small"
-          >
-            <use
-              xlinkHref="#wds-icons-magnifying-glass-small"
-            />
-          </svg>
+          <div
+            className="search-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -597,13 +577,9 @@ exports[`Select renders correctly 6`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
-          <svg
-            className="wds-icon default-dropdown-indicator"
-          >
-            <use
-              xlinkHref="#wds-icons-dropdown"
-            />
-          </svg>
+          <div
+            className="default-dropdown-indicator"
+          />
         </div>
       </div>
     </div>
@@ -729,12 +705,8 @@ exports[`Select renders correctly 7`] = `
 
 exports[`Select renders correctly 8`] = `
 <div>
-  <svg
-    className="wds-icon default-dropdown-indicator is-focused"
-  >
-    <use
-      xlinkHref="#wds-icons-dropdown"
-    />
-  </svg>
+  <div
+    className="default-dropdown-indicator is-focused"
+  />
 </div>
 `;
