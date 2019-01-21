@@ -20,7 +20,7 @@ The reducer/store need to be included in Redux.
 Example:
 
 ```js static
-import { BannerNotificationsStore } from '@wikia/react-design-system/systems/BannerNotifications';
+import { BannerNotificationsStore } from '@wikia/react-common/systems/BannerNotifications';
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
@@ -37,8 +37,8 @@ The component that connects to the Redux state needs to be included on the page 
 ```js static
 import React from 'react';
 import PropTypes from 'prop-types';
-import FandomContentWell from '@wikia/react-design-system/components/FandomContentWell';
-import { BannerNotificationsComponent } from '@wikia/react-design-system/systems/BannerNotifications';
+import FandomContentWell from '@wikia/react-common/components/FandomContentWell';
+import { BannerNotificationsComponent } from '@wikia/react-common/systems/BannerNotifications';
 
 class PageLayout extends React.Component {
     static propTypes = {
@@ -61,7 +61,7 @@ export default PageLayout;
 **NOTE**: Remember to also include styles!
 
 ```css static
-@import "~@wikia/react-design-system/systems/BannerNotifications.css";
+@import "~@wikia/react-common/systems/BannerNotifications.css";
 ```
 
 ## API
@@ -75,13 +75,13 @@ BannerNotifications system exports few actions that should be used to add new no
 
 The `id` is optional and it's needed only when the notification needs to be manually removed with `removeNotfication(id)` action. If omitted its value is assigned automatically.
 
-Types of notifications are shown in [components/BannerNotification](https://wikia.github.io/react-design-system/#bannernotification) section.
+Types of notifications are shown in [components/BannerNotification](https://wikia.github.io/react-common/#bannernotification) section.
 
 Example usage in thunk:
 
 ```js static
 import axios from 'axios';
-import { addAlert } from '@wikia/react-design-system/systems/BannerNotifications';
+import { addAlert } from '@wikia/react-common/systems/BannerNotifications';
 
 export const loadData = () => (
     async dispatch => {

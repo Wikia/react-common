@@ -3,7 +3,7 @@ Adds a component to display after a set time (accurate to the nearest 100ms)
 ## Usage
 
 ```js static
-import withTimeoutFallback from '@react-design-system/hocs/withTimeoutFallback';
+import withTimeoutFallback from '@react-common/hocs/withTimeoutFallback';
 
 const Spinner = props => (<div> ...spinner </div>)
 const SpinnerWithTimeout = withTimeoutFallback(Spinner);
@@ -15,7 +15,7 @@ const SpinnerWithTimeout = withTimeoutFallback(Spinner);
 Custom Fallback and Timeout:
 
 ```js static
-import withTimeoutFallback from '@react-design-system/hocs/withTimeoutFallback';
+import withTimeoutFallback from '@react-common/hocs/withTimeoutFallback';
 
 const Spinner = props => (<div> ...spinner </div>)
 const Fallback = props => (<div> Error Loading </div>)

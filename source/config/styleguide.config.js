@@ -66,7 +66,7 @@ function getSections() {
 }
 
 module.exports = {
-    title: 'react-design-system',
+    title: 'react-common',
     template: {
         head: {
             links: [{

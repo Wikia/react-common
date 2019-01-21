@@ -7,8 +7,8 @@
 ## 2. Use it in the code
 
 ```js static
-import Button from '@wikia/react-design-system/components/Button';
-import Icon from '@wikia/react-design-system/components/Button';
+import Button from '@wikia/react-common/components/Button';
+import Icon from '@wikia/react-common/components/Button';
 
 
 ...
@@ -27,6 +27,6 @@ import Icon from '@wikia/react-design-system/components/Button';
 Make sure you include the CSS in your styles.
 
 ```scss static
-@import "~@wikia/react-design-system/components/Icon.css";
-@import "~@wikia/react-design-system/components/Button.css";
+@import "~@wikia/react-common/components/Icon.css";
+@import "~@wikia/react-common/components/Button.css";
 ```

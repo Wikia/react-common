@@ -1,6 +1,6 @@
 {
-  "name": "@wikia/react-design-system",
-  "version": "2.8.4",
+  "name": "@wikia/react-common",
+  "version": "0.0.0",
   "description": "Wikia's reusable React parts",
   "license": "UNLICENSED",
   "private": true,
