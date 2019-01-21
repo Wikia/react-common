@@ -16,6 +16,7 @@
     "lint:css": "stylelint \"components/*.scss\" \"components/*.css\"",
     "lint:fix": "stylelint \"components/*.scss\" \"components/*.css\" --fix",
     "lint:js": "eslint --cache .",
+    "generate-icon-components": "node ./scripts/generate-icon-components.js",
     "extract-assets-from-ds": "node ./scripts/extract-assets-from-ds.js",
     "readme:build": "node ./scripts/build-readme.js",
     "package:build": "node ./scripts/build-package.json.js",

@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsPlay = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconPlaySvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M19.69 12.6L5.143 22.867a.722.722 0 0 1-.753.05.733.733 0 0 1-.391-.65V1.733c0-.274.15-.524.391-.65a.724.724 0 0 1 .753.05l14.545 10.266a.734.734 0 0 1 0 1.201z" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M3 5.476v13.047l16.308-6.524L3 5.476zM2 20.999c-.197 0-.393-.058-.561-.171a1.003 1.003 0 0 1-.439-.83v-16a1.001 1.001 0 0 1 1.372-.927l20 8a1 1 0 0 1 0 1.857l-20 8a1.007 1.007 0 0 1-.372.07z", id: "id-icons/IconPlay-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "play", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconPlay-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Play", fill: "#000", xlinkHref: "#id-icons/IconPlay-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsPlay;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconPlay = styled(IconPlaySvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconPlay.propTypes = {
+  size: PropTypes.number
+};
+IconPlay.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconPlay;

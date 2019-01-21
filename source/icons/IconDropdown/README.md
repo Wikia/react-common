@@ -1,4 +1,4 @@
 
 ```js
-<IconDropdown height="30" />
+<IconDropdown />
 ```

@@ -66,7 +66,7 @@ var AvatarIconUser = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "6 6 138 138" }, props),
+    _extends({ viewBox: "6 6 138 138" }, props),
     React.createElement("path", { d: "M75 76.667c11.03 0 20-8.97 20-20V50c0-11.03-8.97-20-20-20s-20 8.97-20 20v6.667c0 11.03 8.97 20 20 20zm-16.667 6.666C45.467 83.333 35 93.8 35 106.667c0 1.84-.874 23.546.966 23.546 0 0 22.608 12.983 35.606 13.978 12.998.995 42.383-8.007 42.383-8.007 1.84 0 1.045-27.677 1.045-29.517 0-12.867-10.467-23.334-23.333-23.334H58.333z" })
   );
 });
@@ -105,7 +105,7 @@ var AvatarBadgeAdmin = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$1({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -125,7 +125,7 @@ var AvatarBadgeContentModerator = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$2({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$2({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -145,7 +145,7 @@ var AvatarBadgeDiscussionModerator = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$3({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$3({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -165,7 +165,7 @@ var AvatarBadgeGlobalDiscussionsModerator = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$4({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$4({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -185,7 +185,7 @@ var AvatarBadgeHelper = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$5({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$5({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -210,7 +210,7 @@ var AvatarBadgeStaff = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$6({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$6({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },
@@ -230,7 +230,7 @@ var AvatarBadgeVstf = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$7({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
+    _extends$7({ viewBox: "0 0 18 18" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },

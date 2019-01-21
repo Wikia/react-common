@@ -1,2 +1,22 @@
-// This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-pencil.svg';
+// This file is generated automatically via generate-icon-components.js
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
+import IconPencilSvg from '../../_icons/24x24/pencil.svg';
+
+const IconPencil = styled(IconPencilSvg)`
+    fill: currentColor;
+    height: ${props => props.size}px;
+    width: ${props => props.size}px;
+`;
+
+IconPencil.propTypes = {
+    size: PropTypes.number,
+};
+
+IconPencil.defaultProps = {
+    size: 24,
+};
+
+// @component
+export default IconPencil;

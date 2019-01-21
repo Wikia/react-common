@@ -3,20 +3,57 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsParagraph = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconParagraphSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M13.93 12.888v6.79c0 .723.592 1.322 1.323 1.322a1.32 1.32 0 0 0 1.324-1.323V5.647h1.34c.72 0 1.32-.593 1.32-1.324 0-.736-.592-1.323-1.32-1.323h-9.26v.005h-.023v.007C6.044 3.19 4 5.337 4 7.96s2.045 4.77 4.634 4.95v6.767c0 .724.593 1.323 1.324 1.323a1.32 1.32 0 0 0 1.324-1.323V5.64h2.648v7.248z" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "g",
+      { id: "paragraph", fill: "none", fillRule: "evenodd" },
+      React.createElement("path", { d: "M7.5 12a5.5 5.5 0 0 1 0-11H12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H7.5zM11 3H7.5a3.5 3.5 0 0 0 0 7H11V3zm0 0c-1.333 0-1.333-2 0-2h11c1.333 0 1.333 2 0 2h-3v19c0 1.333-2 1.333-2 0V3h-4v19c0 1.333-2 1.333-2 0V3z", id: "Stroke-3", fill: "#000", fillRule: "nonzero" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsParagraph;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconParagraph = styled(IconParagraphSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconParagraph.propTypes = {
+  size: PropTypes.number
+};
+IconParagraph.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconParagraph;

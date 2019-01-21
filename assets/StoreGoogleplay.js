@@ -12,7 +12,7 @@ var wdsCompanyStoreGoogleplay = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 119 35" }, props),
+    _extends({ viewBox: "0 0 119 35" }, props),
     React.createElement(
       "defs",
       null,

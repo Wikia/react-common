@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsMenuControl = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconMenuControlSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M21.293 6.293L12 15.586 2.707 6.293a.999.999 0 1 0-1.414 1.414l10 10a.997.997 0 0 0 1.414 0l10-10a.999.999 0 1 0-1.414-1.414" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M12 19a.997.997 0 0 1-.707-.293l-11-11a.999.999 0 1 1 1.414-1.414L12 16.586 22.293 6.293a.999.999 0 1 1 1.414 1.414l-11 11A.997.997 0 0 1 12 19", id: "id-icons/IconMenuControl-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "dropdown1", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconMenuControl-a" })
+      ),
+      React.createElement("use", { id: "dropdown", fill: "#000", xlinkHref: "#id-icons/IconMenuControl-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsMenuControl;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconMenuControl = styled(IconMenuControlSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconMenuControl.propTypes = {
+  size: PropTypes.number
+};
+IconMenuControl.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconMenuControl;

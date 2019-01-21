@@ -3,25 +3,57 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsClipboard = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconClipboardSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "g",
-      { fillRule: "evenodd" },
-      React.createElement("path", { d: "M14.382 10.264l-3.42 3.388-1.37-1.257a.937.937 0 0 0-1.352.085 1.017 1.017 0 0 0 .082 1.399l2.03 1.86a.937.937 0 0 0 1.295-.025l4.058-4.018a1.017 1.017 0 0 0 .03-1.401.934.934 0 0 0-1.353-.031" }),
-      React.createElement("path", { d: "M19 20H5V4h3v2.497c0 .278.225.503.503.503H10a2 2 0 1 1 4 0h1.497A.503.503 0 0 0 16 6.497V4h3v16zm1.5-19h-17A1.5 1.5 0 0 0 2 2.5v19A1.5 1.5 0 0 0 3.5 23h17a1.5 1.5 0 0 0 1.5-1.5v-19A1.5 1.5 0 0 0 20.5 1z" })
+      { id: "clipboard", fill: "none", fillRule: "evenodd" },
+      React.createElement("path", { d: "M7 3V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1h5a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5zm0 2H3v16h18V5h-4v1a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5zm3 10.586l6.293-6.293a1 1 0 0 1 1.414 1.414l-7 7a.997.997 0 0 1-1.414 0l-3-3a1 1 0 0 1 1.414-1.414L10 15.586z", id: "Combined-Shape", fill: "#000", fillRule: "nonzero" })
     )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsClipboard;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconClipboard = styled(IconClipboardSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconClipboard.propTypes = {
+  size: PropTypes.number
+};
+IconClipboard.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconClipboard;

@@ -12,7 +12,7 @@ var wdsAvatarIconTiny = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ width: "12", height: "12", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends({ width: "12", height: "12" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },

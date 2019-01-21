@@ -1,4 +1,4 @@
 
 ```js
-<IconClock height="30" />
+<IconClock />
 ```

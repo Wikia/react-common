@@ -1,4 +1,4 @@
 
 ```js
-<IconPages height="30" />
+<IconPages />
 ```

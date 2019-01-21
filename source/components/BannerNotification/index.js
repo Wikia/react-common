@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import IconCrossTiny from '../../icons/IconCrossTiny';
-import IconErrorSmall from '../../icons/IconErrorSmall';
-import IconAlertSmall from '../../icons/IconAlertSmall';
-import IconCheckmarkCircleSmall from '../../icons/IconCheckmarkCircleSmall';
-import IconFlagSmall from '../../icons/IconFlagSmall';
+import IconCrossTiny from '../../legacy-icons/LegacyIconCrossTiny';
+import IconErrorSmall from '../../legacy-icons/LegacyIconErrorSmall';
+import IconAlertSmall from '../../legacy-icons/LegacyIconAlertSmall';
+import IconCheckmarkCircleSmall from '../../legacy-icons/LegacyIconCheckmarkCircleSmall';
+import IconFlagSmall from '../../legacy-icons/LegacyIconFlagSmall';
 
 import './styles.scss';
 

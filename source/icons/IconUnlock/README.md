@@ -1,4 +1,4 @@
 
 ```js
-<IconUnlock height="30" />
+<IconUnlock />
 ```

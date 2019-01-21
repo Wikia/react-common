@@ -1,4 +1,4 @@
 
 ```js
-<IconRefresh height="30" />
+<IconRefresh />
 ```

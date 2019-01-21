@@ -1,4 +1,4 @@
 
 ```js
-<IconCamera height="30" />
+<IconCamera />
 ```

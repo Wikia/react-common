@@ -1,4 +1,4 @@
 
 ```js
-<IconMap height="30" />
+<IconMap />
 ```

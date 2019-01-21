@@ -8,6 +8,7 @@ module.exports = {
         'systems',
         'assets',
         'icons',
+        'legacy-icons',
     ],
     externalDependencies: [
         'date-fns',
@@ -19,5 +20,6 @@ module.exports = {
         'react-select',
         'react-redux',
         'immutable',
+        'styled-components',
     ],
 };

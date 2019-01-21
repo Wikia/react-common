@@ -1,4 +1,4 @@
 
 ```js
-<IconClipboard height="30" />
+<IconClipboard />
 ```

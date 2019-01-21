@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsItalics = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconItalicsSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M6 24l.166-1.625 2.42-.232c.464-.032.53-.165.596-.663l2.652-18.96c.066-.498.034-.63-.43-.664l-2.32-.232L9.282 0h8.885l-.2 1.624-2.518.265c-.498.067-.532.133-.598.63l-2.685 18.929c-.066.53-.066.596.43.663l2.454.264L14.884 24H6z", fillRule: "evenodd" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2", id: "id-icons/IconItalics-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "italics", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconItalics-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Italics", fill: "#000", xlinkHref: "#id-icons/IconItalics-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsItalics;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconItalics = styled(IconItalicsSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconItalics.propTypes = {
+  size: PropTypes.number
+};
+IconItalics.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconItalics;

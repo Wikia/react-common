@@ -3,25 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsEyeCrossed = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconEyeCrossedSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M18.204 16.79l-3.497-3.497a3.003 3.003 0 0 0-4-4L7.59 6.176A10.632 10.632 0 0 1 12 5.22c4.4 0 8.347 2.711 9.934 6.781a10.636 10.636 0 0 1-3.73 4.79M12 18.78a10.674 10.674 0 0 1-9.933-6.78 10.63 10.63 0 0 1 3.73-4.79l3.496 3.496a3.004 3.004 0 0 0 4 4l3.118 3.117a10.633 10.633 0 0 1-4.411.957m11.944-6.449a1.008 1.008 0 0 0 0-.664A12.677 12.677 0 0 0 12 3.22c-2.104 0-4.121.523-5.904 1.463L2.707 1.293a.999.999 0 1 0-1.414 1.414L4.367 5.78a12.623 12.623 0 0 0-4.31 5.888.995.995 0 0 0 0 .664A12.676 12.676 0 0 0 12 20.782c2.105 0 4.122-.524 5.905-1.464l3.388 3.39a1 1 0 0 0 1.414-1.415l-3.073-3.073a12.628 12.628 0 0 0 4.31-5.888", id: "id-icons/IconEyeCrossed-a" })
+    ),
     React.createElement(
       "g",
-      { fillRule: "evenodd" },
-      React.createElement("path", { d: "M20.201 8.041l-4.228 4.228a3.981 3.981 0 0 1-3.703 3.703l-3.439 3.439A9.108 9.108 0 0 0 12 20c6.473 0 10.69-7.195 10.866-7.501a.996.996 0 0 0 .002-.995c-.081-.142-1.032-1.764-2.667-3.463zM5.647 17.624c.97-1.015 2.039-2.115 3.153-3.249A3.96 3.96 0 0 1 8 12c0-2.206 1.794-4 4-4a3.96 3.96 0 0 1 2.375.8 336.506 336.506 0 0 1 3.122-3.031C15.941 4.748 14.092 4 12 4 5.461 4 1.304 11.2 1.13 11.507a1 1 0 0 0 .002.989c.108.189 1.748 3.002 4.515 5.128z" }),
-      React.createElement("path", { d: "M3 22a.999.999 0 0 1-.707-1.707l18-18a.999.999 0 1 1 1.414 1.414l-18 18A.997.997 0 0 1 3 22z" })
+      { id: "eye-off", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconEyeCrossed-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Eye-Crossed", fill: "#000", xlinkHref: "#id-icons/IconEyeCrossed-a" })
     )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsEyeCrossed;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconEyeCrossed = styled(IconEyeCrossedSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconEyeCrossed.propTypes = {
+  size: PropTypes.number
+};
+IconEyeCrossed.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconEyeCrossed;

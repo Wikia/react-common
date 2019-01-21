@@ -1,4 +1,4 @@
 
 ```js
-<IconPencil height="30" />
+<IconPencil />
 ```

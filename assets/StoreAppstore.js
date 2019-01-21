@@ -12,7 +12,7 @@ var wdsCompanyStoreAppstore = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 119 35", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends({ viewBox: "0 0 119 35" }, props),
     React.createElement(
       "g",
       { fill: "none", fillRule: "evenodd" },

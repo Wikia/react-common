@@ -1,4 +1,4 @@
 
 ```js
-<IconMenuControl height="30" />
+<IconMenuControl />
 ```

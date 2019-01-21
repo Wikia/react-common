@@ -1,4 +1,4 @@
 
 ```js
-<IconNumberedList height="30" />
+<IconNumberedList />
 ```

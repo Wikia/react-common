@@ -1,4 +1,4 @@
 
 ```js
-<IconCheckmark height="30" />
+<IconCheckmark />
 ```

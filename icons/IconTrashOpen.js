@@ -3,21 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsTrashOpen = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconTrashOpenSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M11.797 11.848v6.77a.84.84 0 0 0 .833.846.84.84 0 0 0 .834-.846v-6.77a.84.84 0 0 0-.834-.846.84.84 0 0 0-.833.846m-3.334 0v6.77a.84.84 0 0 0 .834.846.84.84 0 0 0 .833-.846v-6.77a.84.84 0 0 0-.833-.846.84.84 0 0 0-.834.846m6.667 0v6.77a.84.84 0 0 0 .834.846.84.84 0 0 0 .834-.846v-6.77a.84.84 0 0 0-.834-.846.84.84 0 0 0-.833.846" }),
-    React.createElement("path", { d: "M9.166 3.225l4.83-1.314.414 1.565L9.58 4.79l-.414-1.565zm12.184-.761a.83.83 0 0 0-1.02-.598l-4.311 1.172-.628-2.383a.849.849 0 0 0-.389-.514.822.822 0 0 0-.632-.085L7.93 1.81a.848.848 0 0 0-.589 1.037l.629 2.382-5.352 1.455a.847.847 0 0 0-.59 1.036.835.835 0 0 0 1.021.6l2.08-.567V22.85a.84.84 0 0 0 .834.846h13.335a.84.84 0 0 0 .833-.846V7.616a.84.84 0 0 0-.833-.846.84.84 0 0 0-.834.846v14.387H6.796V7.616a.856.856 0 0 0-.06-.3l2.169-.59c.035.004.067.017.103.017a.828.828 0 0 0 .52-.186l5.796-1.578a.814.814 0 0 0 .642-.174L20.76 3.5a.847.847 0 0 0 .59-1.036z" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M20 8a1 1 0 0 0-1 1v12H5V10.763l15.406-6.847a1 1 0 0 0-.812-1.828l-15.95 7.09a.587.587 0 0 0-.097.043l-1.953.867a1 1 0 0 0 .812 1.828L3 11.65V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1M4.001 6a.987.987 0 0 0 .405-.086l9-4a1 1 0 0 0-.812-1.828l-9 4A1 1 0 0 0 4.001 6m11 5v6a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0m-4 1v5a1 1 0 1 0 2 0v-5a1 1 0 1 0-2 0m-4 1v4a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0", id: "id-icons/IconTrashOpen-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "trash-open", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconTrashOpen-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Trash-Open", fill: "#000", xlinkHref: "#id-icons/IconTrashOpen-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsTrashOpen;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconTrashOpen = styled(IconTrashOpenSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconTrashOpen.propTypes = {
+  size: PropTypes.number
+};
+IconTrashOpen.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconTrashOpen;

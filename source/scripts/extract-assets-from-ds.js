@@ -19,8 +19,8 @@ const sourceDir = 'design-system/dist/svg/';
 
 const ASSET_CATEGORIES = Object.freeze({
     'wds-icons': {
-        directory: 'icons',
-        prefix: 'Icon',
+        directory: 'legacy-icons',
+        prefix: 'LegacyIcon',
         previewHeight: '30',
     },
     'wds-avatar-badges': {

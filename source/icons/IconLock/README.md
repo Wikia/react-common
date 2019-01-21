@@ -1,4 +1,4 @@
 
 ```js
-<IconLock height="30" />
+<IconLock />
 ```

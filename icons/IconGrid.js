@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsGrid = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconGridSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M22.234 18h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467a.766.766 0 0 0 .766-.766v-3.468a.766.766 0 0 0-.766-.766m-8.5 0h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467a.766.766 0 0 0 .766-.766v-3.468a.766.766 0 0 0-.766-.766m-8.5 0H1.767a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467A.766.766 0 0 0 6 22.234v-3.468A.766.766 0 0 0 5.234 18m17-8.5h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467a.766.766 0 0 0 .766-.766v-3.468a.766.766 0 0 0-.766-.766m-8.5 0h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467a.766.766 0 0 0 .766-.766v-3.468a.766.766 0 0 0-.766-.766m-8.5 0H1.767a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467A.766.766 0 0 0 6 13.734v-3.468a.766.766 0 0 0-.766-.766m17-8.5h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467A.766.766 0 0 0 23 5.234V1.766A.766.766 0 0 0 22.234 1m-8.5 0h-3.467a.766.766 0 0 0-.767.766v3.468c0 .423.343.766.767.766h3.467a.766.766 0 0 0 .766-.766V1.766A.766.766 0 0 0 13.734 1M6 1.766v3.468A.766.766 0 0 1 5.234 6H1.767A.766.766 0 0 1 1 5.234V1.766C1 1.343 1.343 1 1.767 1h3.467c.423 0 .766.343.766.766" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M2 22h6.25v-6.25H2V22zm7.25 2H1a1 1 0 0 1-1-1v-8.25a1 1 0 0 1 1-1h8.25a1 1 0 0 1 1 1V23a1 1 0 0 1-1 1zm6.5-2H22v-6.25h-6.25V22zM23 24h-8.25a1 1 0 0 1-1-1v-8.25a1 1 0 0 1 1-1H23a1 1 0 0 1 1 1V23a1 1 0 0 1-1 1zM15.75 8.25H22V2h-6.25v6.25zm7.25 2h-8.25a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1H23a1 1 0 0 1 1 1v8.25a1 1 0 0 1-1 1zm-21-2h6.25V2H2v6.25zm7.25 2H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h8.25a1 1 0 0 1 1 1v8.25a1 1 0 0 1-1 1z", id: "id-icons/IconGrid-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "bento", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconGrid-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Grid", fill: "#000", xlinkHref: "#id-icons/IconGrid-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsGrid;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconGrid = styled(IconGridSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconGrid.propTypes = {
+  size: PropTypes.number
+};
+IconGrid.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconGrid;

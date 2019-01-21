@@ -1,4 +1,4 @@
 
 ```js
-<IconPause height="30" />
+<IconPause />
 ```

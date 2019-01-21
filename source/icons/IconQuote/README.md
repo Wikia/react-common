@@ -1,4 +1,4 @@
 
 ```js
-<IconQuote height="30" />
+<IconQuote />
 ```

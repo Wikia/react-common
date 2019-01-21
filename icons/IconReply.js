@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsReply = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconReplySvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M12 2c6.066 0 11 4.078 11 9.09 0 5.014-4.934 9.092-11 9.092-.919 0-1.843-.098-2.753-.292L4.09 21.935a.922.922 0 0 1-.895-.12.907.907 0 0 1-.356-.824l.483-4.313C1.822 15.088 1 13.118 1 11.091 1 6.078 5.934 2 12 2", fillRule: "evenodd" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M11 14c4.497 0 8.606 2.324 10.955 6.003.03-.331.045-.666.045-1.003 0-6.065-4.935-11-11-11a1 1 0 0 1-1-1V3.414L2.414 11 10 18.586V15a1 1 0 0 1 1-1m11.31 10h-.004a1.003 1.003 0 0 1-.94-.668A11.003 11.003 0 0 0 12 16.045V21a.999.999 0 0 1-1.707.707l-10-10a.999.999 0 0 1 0-1.414l10-10A1.002 1.002 0 0 1 12 1v5.038c6.703.513 12 6.13 12 12.962 0 1.498-.252 2.958-.75 4.339a1 1 0 0 1-.94.66", id: "id-icons/IconReply-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "reply", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconReply-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Reply-Arrow", fill: "#000", xlinkHref: "#id-icons/IconReply-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsReply;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconReply = styled(IconReplySvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconReply.propTypes = {
+  size: PropTypes.number
+};
+IconReply.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconReply;

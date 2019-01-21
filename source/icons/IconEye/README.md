@@ -1,4 +1,4 @@
 
 ```js
-<IconEye height="30" />
+<IconEye />
 ```

@@ -1,4 +1,4 @@
 
 ```js
-<IconActivity height="30" />
+<IconActivity />
 ```

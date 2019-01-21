@@ -39,6 +39,8 @@ const buildConfig = file => ({
         }),
         svg({
             svgo: {
+                jsx: true,
+                prettify: true,
                 plugins: [
                     {
                         cleanupIDs: {
@@ -47,6 +49,14 @@ const buildConfig = file => ({
                             minify: true,
                         },
                     },
+                    { collapseGroups: true },
+                    { removeDesc: true },
+                    { removeDoctype: true },
+                    { removeTitle: true },
+                    { removeUselessDefs: true },
+                    { removeUselessStrokeAndFill: true },
+                    { removeXMLNS: true },
+                    { removeXMLProcInst: true },
                 ],
             },
             exclude: 'node_modules/design-system/dist/svg/sprite.svg',

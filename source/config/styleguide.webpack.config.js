@@ -24,12 +24,11 @@ module.exports = () => {
                     exclude: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
                     use: [
                         {
-                            loader: 'babel-loader',
-                            options: babelConfig,
-                        }, {
                             loader: 'react-svg-loader',
                             options: {
                                 svgo: {
+                                    pretty: true,
+                                    jsx: true,
                                     plugins: [
                                         {
                                             cleanupIDs: {
@@ -38,6 +37,14 @@ module.exports = () => {
                                                 minify: true,
                                             },
                                         },
+                                        { collapseGroups: true },
+                                        { removeDesc: true },
+                                        { removeDoctype: true },
+                                        { removeTitle: true },
+                                        { removeUselessDefs: true },
+                                        { removeUselessStrokeAndFill: true },
+                                        { removeXMLNS: true },
+                                        { removeXMLProcInst: true },
                                     ],
                                 },
                             },

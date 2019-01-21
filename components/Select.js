@@ -158,7 +158,7 @@ var IconMagnifyingGlass = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
+    _extends$1({ viewBox: "0 0 24 24" }, props),
     React.createElement(
       "g",
       { fillRule: "evenodd" },
@@ -178,7 +178,7 @@ var IconDropdown = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$2({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends$2({ viewBox: "0 0 24 24" }, props),
     React.createElement("path", { d: "M7 8h10l-5 6z" })
   );
 });

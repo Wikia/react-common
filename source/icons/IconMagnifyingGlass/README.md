@@ -1,4 +1,4 @@
 
 ```js
-<IconMagnifyingGlass height="30" />
+<IconMagnifyingGlass />
 ```

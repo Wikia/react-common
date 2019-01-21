@@ -2,8 +2,8 @@ import React from 'react';
 import { components } from 'react-select';
 
 // eslint-disable-next-line no-restricted-imports
-import IconMagnifyingGlass from '../../icons/IconMagnifyingGlass';
-import IconDropdown from '../../icons/IconDropdown';
+import IconMagnifyingGlass from '../../legacy-icons/LegacyIconMagnifyingGlass';
+import IconDropdown from '../../legacy-icons/LegacyIconDropdown';
 
 export const SearchDropdownIndicator = props => (
     <components.DropdownIndicator {...props}>

@@ -1,4 +1,4 @@
 
 ```js
-<IconBold height="30" />
+<IconBold />
 ```

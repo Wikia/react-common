@@ -3,20 +3,57 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsHouse = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconHouseSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M22.664 10.126L12.662 1.25a.996.996 0 0 0-1.327.005l-10.003 9a.998.998 0 0 0-.264 1.104c.148.386.518.64.93.64h.005l1.989-.012V22c0 .553.446 1 .997 1H7.98a.998.998 0 0 0 .997-1v-4.5h5.983V22c0 .553.446 1 .997 1h2.992a.998.998 0 0 0 .997-1V11.888l2.062-.013a1 1 0 0 0 .655-1.75", fillRule: "evenodd" })
+    _extends$1({ width: "12", height: "12", viewBox: "0 0 12 12" }, props),
+    React.createElement(
+      "g",
+      { id: "home", fill: "none", fillRule: "evenodd" },
+      React.createElement("path", { d: "M9 10h1V6.414l-4-4-4 4V10h1V9c0-1.654 1.346-3 3-3s3 1.346 3 3v1zm2 2H8a1 1 0 0 1-1-1V9c0-.55-.449-1-1-1-.551 0-1 .45-1 1v2a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V6c0-.265.105-.52.293-.707l5-5a.999.999 0 0 1 1.414 0l5 5A.997.997 0 0 1 12 6v5a1 1 0 0 1-1 1z", id: "Fill-1", fill: "#000" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsHouse;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconHouse = styled(IconHouseSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconHouse.propTypes = {
+  size: PropTypes.number
+};
+IconHouse.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconHouse;

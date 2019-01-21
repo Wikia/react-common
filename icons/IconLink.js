@@ -3,20 +3,67 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var styled = _interopDefault(require('styled-components'));
+var PropTypes = _interopDefault(require('prop-types'));
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsLink = ((_ref) => {
-  let props = _objectWithoutProperties(_ref, ["styles"]);
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
+var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$1(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+var IconLinkSvg = ((_ref) => {
+  let props = _objectWithoutProperties$1(_ref, ["styles"]);
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M5 17h5c2.757 0 5-2.243 5-5a1 1 0 1 0-2 0c0 1.654-1.346 3-3 3H5c-1.654 0-3-1.346-3-3s1.346-3 3-3h2a1 1 0 1 0 0-2H5c-2.757 0-5 2.243-5 5s2.243 5 5 5zM19 7h-5c-2.757 0-5 2.243-5 5a1 1 0 1 0 2 0c0-1.654 1.346-3 3-3h5c1.654 0 3 1.346 3 3s-1.346 3-3 3h-2a1 1 0 1 0 0 2h2c2.757 0 5-2.243 5-5s-2.243-5-5-5z", fillRule: "evenodd" })
+    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { d: "M13.109 9.47a.999.999 0 0 0 0 1.414 5.28 5.28 0 0 1 0 7.458L12 19.45a5.28 5.28 0 0 1-7.459 0 5.28 5.28 0 0 1 0-7.458.999.999 0 1 0-1.414-1.414c-2.836 2.836-2.836 7.45 0 10.287a7.255 7.255 0 0 0 5.144 2.126 7.255 7.255 0 0 0 5.143-2.126l1.109-1.11a7.222 7.222 0 0 0 2.13-5.142c0-1.944-.756-3.77-2.13-5.144a.999.999 0 0 0-1.414 0m7.757-6.343c-2.836-2.836-7.45-2.836-10.287 0L9.47 4.236a7.224 7.224 0 0 0-2.13 5.143c0 1.943.756 3.769 2.13 5.144a.996.996 0 0 0 .707.292 1 1 0 0 0 .707-1.707 5.28 5.28 0 0 1 0-7.458l1.11-1.109a5.28 5.28 0 0 1 7.458 0 5.28 5.28 0 0 1 0 7.458.999.999 0 1 0 1.414 1.414c2.836-2.836 2.836-7.45 0-10.286", id: "id-icons/IconLink-a" })
+    ),
+    React.createElement(
+      "g",
+      { id: "link", fill: "none", fillRule: "evenodd" },
+      React.createElement(
+        "mask",
+        { id: "mask-2", fill: "#fff" },
+        React.createElement("use", { xlinkHref: "#id-icons/IconLink-a" })
+      ),
+      React.createElement("use", { id: "icons/24px/Link", fill: "#000", xlinkHref: "#id-icons/IconLink-a" })
+    )
   );
 });
 
-// This file is generated automatically via extract-assets-from-ds.js
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n    fill: currentColor;\n    height: ", "px;\n    width: ", "px;\n"]);
 
-module.exports = wdsIconsLink;
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var IconLink = styled(IconLinkSvg)(_templateObject(), function (props) {
+  return props.size;
+}, function (props) {
+  return props.size;
+});
+IconLink.propTypes = {
+  size: PropTypes.number
+};
+IconLink.defaultProps = {
+  size: 24
+}; // @component
+
+module.exports = IconLink;
