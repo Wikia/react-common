@@ -11,6 +11,7 @@ const DropdownContent = ({
     dropdownRightAligned,
     scrollable,
     isLevel2,
+    elementRef,
 }) => {
     const className = classNames({
         'wds-dropdown__content': true,
@@ -21,7 +22,7 @@ const DropdownContent = ({
     });
 
     return (
-        <div className={className}>
+        <div className={className} ref={elementRef}>
             {children}
         </div>
     );
@@ -40,6 +41,10 @@ DropdownContent.propTypes = {
      * Should content be right-aligned with the dropdown toggle
      */
     dropdownRightAligned: PropTypes.bool,
+    /**
+     * React ref to the content DOM element
+     */
+    elementRef: PropTypes.shape({current: PropTypes.instanceOf(Element)}).isRequired,
     /**
      * Should content be scrollable
      */

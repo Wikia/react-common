@@ -1,7 +1,7 @@
 Defaults:
 
 ```js
-<Dropdown toggle="Toggle dropdown">
+<Dropdown toggle="Toggle dropdown" canFlip>
     <p style={{padding: '12px'}}>I am a text inside dropdown!</p>
 </Dropdown>
 ```

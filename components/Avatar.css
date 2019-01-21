@@ -18,13 +18,6 @@
   height: 100%;
   width: 100%;
 }
-.wds-avatar.is-default:before {
-  border-radius: 50%;
-  box-sizing: border-box;
-  content: "";
-  pointer-events: none;
-  position: absolute;
-}
 
 .wds-avatar__image {
   height: 100%;
@@ -33,6 +26,12 @@
   display: inline-block;
   border-radius: 50%;
   box-sizing: border-box;
+}
+
+.wds-avatar__inner-border {
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
 }
 
 .wds-avatar__badge {
@@ -65,7 +64,11 @@
   border-color: #bed1cf;
   fill: #bed1cf;
 }
-.wds-avatar.is-default:before {
+.wds-avatar .wds-avatar__inner-border:hover + .wds-avatar__image {
+  fill: #bed1cf;
+  border-color: #bed1cf;
+}
+.wds-avatar .wds-avatar__inner-border {
   height: 42px;
   min-width: 42px;
   width: 42px;

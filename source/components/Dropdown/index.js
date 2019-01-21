@@ -4,6 +4,7 @@ import classNames from 'classnames';
 
 import DropdownContent from './components/DropdownContent';
 import DropdownToggle from './components/DropdownToggle';
+import getViewportSize from '../../utils/getViewportSize';
 
 import './styles.scss';
 
@@ -16,12 +17,16 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
+            ifFlipped: false,
             isTouchDevice: false,
         };
+
+        this.contentElementRef = React.createRef();
 
         this.onClick = this.onClick.bind(this);
         this.onToggleClicked = this.onToggleClicked.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.onMouseEnter = this.onMouseEnter.bind(this);
     }
 
     componentDidMount() {
@@ -39,11 +44,32 @@ class Dropdown extends React.Component {
     }
 
     onMouseLeave() {
+        const { canFlip } = this.props;
         const { isTouchDevice } = this.state;
 
         if (isTouchDevice) {
             this.setState({
                 isClicked: false,
+            });
+        }
+
+        if (canFlip && !this.isLevel2) {
+            this.setState({
+                isFlipped: false,
+            });
+        }
+    }
+
+    onMouseEnter() {
+        const { canFlip, isLevel2 } = this.props;
+        const contentElement = this.contentElementRef.current;
+
+        if (canFlip && !isLevel2 && contentElement) {
+            const contentElementBoundingRect = contentElement.getBoundingClientRect();
+            const isFlipped = contentElementBoundingRect.bottom > getViewportSize().height;
+
+            this.setState({
+                isFlipped,
             });
         }
     }
@@ -87,6 +113,7 @@ class Dropdown extends React.Component {
 
         const {
             isClicked,
+            isFlipped,
             isTouchDevice,
         } = this.state;
 
@@ -99,6 +126,7 @@ class Dropdown extends React.Component {
             'wds-dropdown-level-2': isLevel2,
             'wds-is-touch-device': isTouchDevice,
             'wds-is-sticked-to-parent': isStickedToParent,
+            'wds-is-flipped': isFlipped,
         });
 
         const dropdownBody = (
@@ -114,6 +142,7 @@ class Dropdown extends React.Component {
                 <DropdownContent
                     dropdownLeftAligned={dropdownLeftAligned}
                     dropdownRightAligned={dropdownRightAligned}
+                    elementRef={this.contentElementRef}
                     isLevel2={isLevel2}
                     scrollable={contentScrollable}
                 >
@@ -130,6 +159,7 @@ class Dropdown extends React.Component {
                 className={className}
                 onClick={this.onClick}
                 onMouseLeave={this.onMouseLeave}
+                onMouseEnter={this.onMouseEnter}
             >
                 {dropdownBody}
             </Component>
@@ -138,6 +168,10 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
+    /**
+     * Whether or nor not dropdown should automatically flip when it's near the bottom of the viewport
+     */
+    canFlip: PropTypes.bool,
     /**
      * React Component to display as the Dropdown Content
      */
@@ -212,6 +246,7 @@ Dropdown.propTypes = {
 };
 
 Dropdown.defaultProps = {
+    canFlip: false,
     children: null,
     hasShadow: false,
     noChevron: false,
