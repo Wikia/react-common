@@ -2,8 +2,8 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = _interopDefault(require('react'));
 var PropTypes = _interopDefault(require('prop-types'));
+var React = _interopDefault(require('react'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -181,6 +181,11 @@ var classnames = createCommonjsModule(function (module) {
 }());
 });
 
+var Element = typeof Element === 'undefined' ? function () {} : Element;
+var refPropType = PropTypes.shape({
+  current: PropTypes.instanceOf(Element)
+});
+
 /**
  * Basic DropdownContent component
  */
@@ -224,9 +229,7 @@ DropdownContent.propTypes = {
   /**
    * React ref to the content DOM element
    */
-  elementRef: PropTypes.shape({
-    current: PropTypes.instanceOf(Element)
-  }).isRequired,
+  elementRef: refPropType.isRequired,
 
   /**
    * Should content be scrollable

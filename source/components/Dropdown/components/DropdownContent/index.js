@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import refPropType from '../../../../utils/refPropType';
+
 /**
  * Basic DropdownContent component
  */
@@ -44,7 +46,7 @@ DropdownContent.propTypes = {
     /**
      * React ref to the content DOM element
      */
-    elementRef: PropTypes.shape({current: PropTypes.instanceOf(Element)}).isRequired,
+    elementRef: refPropType.isRequired,
     /**
      * Should content be scrollable
      */
