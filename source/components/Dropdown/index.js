@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import getViewportSize from '../../utils/getViewportSize';
+
 import DropdownContent from './components/DropdownContent';
 import DropdownToggle from './components/DropdownToggle';
-import getViewportSize from '../../utils/getViewportSize';
 
 import './styles.scss';
 
@@ -17,7 +18,7 @@ class Dropdown extends React.Component {
 
         this.state = {
             isClicked: false,
-            ifFlipped: false,
+            isFlipped: false,
             isTouchDevice: false,
         };
 
