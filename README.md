@@ -1,10 +1,21 @@
-# Note
 
-This repository was moved to https://github.com/Wikia/react-common
+# @Wikia/react-design-system
 
-## Upgrade guide
+[![Travis](https://img.shields.io/travis/Wikia/react-design-system/master.svg?style=flat-square)](https://travis-ci.org/Wikia/react-design-system)
+[![Release](https://img.shields.io/github/package-json/v/Wikia/react-design-system.svg?style=flat-square)](https://github.com/Wikia/react-design-system/releases)
 
-1. Upgrade app's dependency to `@wikia/react-design-system@2.8.4`.
-2. Replace it with `@wikia/react-common@1.0.0`.
+Wikia's reusable React parts.
 
-Both releases are the same
+The following directories and files are auto-generated from the files in [source](./source) directory:
+
+* [components](./components)
+* [hocs](./hocs)
+* [models](./models)
+* [systems](./systems)
+* [assets](./assets)
+* [icons](./icons)
+* [docs](./docs)
+* [README.md](./README.md)
+* [package.json](./package.json)
+
+Look in [source](./source) for details.
