@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import sinon from 'sinon';
 import {
     shallow,
+    mount,
 } from 'enzyme';
 
 import Dropdown from './index';
@@ -253,4 +254,41 @@ test('handleClick does not call onClose from props if dropdown is closing on des
     component.instance().handleClick(true, eventMock);
 
     expect(onCloseMock.called).toBe(false);
+});
+
+test('Dropdown does not have class `wds-is-flipped` applied when canFlip is not', () => {
+    const component = mount(
+        <Dropdown toggle="Toggle">
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.instance().contentElementRef.current.getBoundingClientRect = () => ({
+        bottom: 800,
+    });
+
+    component.simulate('mouseEnter');
+
+    expect(component.find('.wds-dropdown').hasClass('wds-is-flipped')).toBe(false);
+});
+
+
+test('Dropdown has class `wds-is-flipped` applied when canFlip is set and it is near the bottom of the viewport', () => {
+    const component = mount(
+        <Dropdown toggle="Toggle" canFlip>
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.instance().contentElementRef.current.getBoundingClientRect = () => ({
+        bottom: 800,
+    });
+
+    component.simulate('mouseEnter');
+
+    expect(component.find('.wds-dropdown').hasClass('wds-is-flipped')).toBe(true);
+
+    component.simulate('mouseLeave');
+
+    expect(component.find('.wds-dropdown').hasClass('wds-is-flipped')).toBe(false);
 });
