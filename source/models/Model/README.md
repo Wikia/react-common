@@ -3,7 +3,7 @@
 ## Usage
 
 ```js static
-import Model from '@react-design-system/models/Model';
+import Model from '@react-common/models/Model';
 
 export const MY_MODEL_KEYS = Object.freeze({
     type: 'type',
