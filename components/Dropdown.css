@@ -138,6 +138,22 @@
 .wds-dropdown.wds-has-shadow .wds-dropdown__content, .wds-dropdown.wds-has-dark-shadow .wds-dropdown__content {
   border: 0;
 }
+.wds-dropdown.wds-is-flipped::before, .wds-dropdown.wds-is-flipped::after {
+  bottom: unset;
+  top: -1px;
+}
+.wds-dropdown.wds-is-flipped::before {
+  border-bottom-color: transparent;
+  border-top-color: #ccc;
+}
+.wds-dropdown.wds-is-flipped::after {
+  border-bottom-color: transparent;
+  border-top-color: #fff;
+}
+.wds-dropdown.wds-is-flipped .wds-dropdown__content {
+  bottom: 100%;
+  top: unset;
+}
 
 .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 {
   margin-right: 0;

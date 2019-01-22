@@ -2,8 +2,8 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = _interopDefault(require('react'));
 var PropTypes = _interopDefault(require('prop-types'));
+var React = _interopDefault(require('react'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -181,6 +181,18 @@ var classnames = createCommonjsModule(function (module) {
 }());
 });
 
+function getViewportSize() {
+  return {
+    width: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+    height: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+  };
+}
+
+var Element = typeof global.Element === 'undefined' ? null : global.Element;
+var refPropType = PropTypes.shape({
+  current: PropTypes.instanceOf(Element)
+});
+
 /**
  * Basic DropdownContent component
  */
@@ -190,7 +202,8 @@ var DropdownContent = function DropdownContent(_ref) {
       dropdownLeftAligned = _ref.dropdownLeftAligned,
       dropdownRightAligned = _ref.dropdownRightAligned,
       scrollable = _ref.scrollable,
-      isLevel2 = _ref.isLevel2;
+      isLevel2 = _ref.isLevel2,
+      elementRef = _ref.elementRef;
   var className = classnames({
     'wds-dropdown__content': true,
     'wds-is-left-aligned': dropdownLeftAligned,
@@ -199,7 +212,8 @@ var DropdownContent = function DropdownContent(_ref) {
     'wds-dropdown-level-2__content': isLevel2
   });
   return React.createElement("div", {
-    className: className
+    className: className,
+    ref: elementRef
   }, children);
 };
 
@@ -218,6 +232,11 @@ DropdownContent.propTypes = {
    * Should content be right-aligned with the dropdown toggle
    */
   dropdownRightAligned: PropTypes.bool,
+
+  /**
+   * React ref to the content DOM element
+   */
+  elementRef: refPropType.isRequired,
 
   /**
    * Should content be scrollable
@@ -411,11 +430,14 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).call(this, props));
     _this.state = {
       isClicked: false,
+      isFlipped: false,
       isTouchDevice: false
     };
+    _this.contentElementRef = React.createRef();
     _this.onClick = _this.onClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onToggleClicked = _this.onToggleClicked.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     _this.onMouseLeave = _this.onMouseLeave.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.onMouseEnter = _this.onMouseEnter.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
@@ -439,11 +461,34 @@ function (_React$Component) {
   }, {
     key: "onMouseLeave",
     value: function onMouseLeave() {
+      var canFlip = this.props.canFlip;
       var isTouchDevice = this.state.isTouchDevice;
 
       if (isTouchDevice) {
         this.setState({
           isClicked: false
+        });
+      }
+
+      if (canFlip && !this.isLevel2) {
+        this.setState({
+          isFlipped: false
+        });
+      }
+    }
+  }, {
+    key: "onMouseEnter",
+    value: function onMouseEnter() {
+      var _this$props = this.props,
+          canFlip = _this$props.canFlip,
+          isLevel2 = _this$props.isLevel2;
+      var contentElement = this.contentElementRef.current;
+
+      if (canFlip && !isLevel2 && contentElement) {
+        var contentElementBoundingRect = contentElement.getBoundingClientRect();
+        var isFlipped = contentElementBoundingRect.bottom > getViewportSize().height;
+        this.setState({
+          isFlipped: isFlipped
         });
       }
     }
@@ -473,22 +518,23 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          children = _this$props.children,
-          toggle = _this$props.toggle,
-          dropdownLeftAligned = _this$props.dropdownLeftAligned,
-          dropdownRightAligned = _this$props.dropdownRightAligned,
-          isLevel2 = _this$props.isLevel2,
-          hasShadow = _this$props.hasShadow,
-          noChevron = _this$props.noChevron,
-          hasDarkShadow = _this$props.hasDarkShadow,
-          isActive = _this$props.isActive,
-          contentScrollable = _this$props.contentScrollable,
-          toggleAttrs = _this$props.toggleAttrs,
-          isStickedToParent = _this$props.isStickedToParent,
-          toggleClassName = _this$props.toggleClassName;
+      var _this$props2 = this.props,
+          children = _this$props2.children,
+          toggle = _this$props2.toggle,
+          dropdownLeftAligned = _this$props2.dropdownLeftAligned,
+          dropdownRightAligned = _this$props2.dropdownRightAligned,
+          isLevel2 = _this$props2.isLevel2,
+          hasShadow = _this$props2.hasShadow,
+          noChevron = _this$props2.noChevron,
+          hasDarkShadow = _this$props2.hasDarkShadow,
+          isActive = _this$props2.isActive,
+          contentScrollable = _this$props2.contentScrollable,
+          toggleAttrs = _this$props2.toggleAttrs,
+          isStickedToParent = _this$props2.isStickedToParent,
+          toggleClassName = _this$props2.toggleClassName;
       var _this$state2 = this.state,
           isClicked = _this$state2.isClicked,
+          isFlipped = _this$state2.isFlipped,
           isTouchDevice = _this$state2.isTouchDevice;
       var className = classnames({
         'wds-dropdown': !isLevel2,
@@ -498,7 +544,8 @@ function (_React$Component) {
         'wds-has-dark-shadow': hasDarkShadow,
         'wds-dropdown-level-2': isLevel2,
         'wds-is-touch-device': isTouchDevice,
-        'wds-is-sticked-to-parent': isStickedToParent
+        'wds-is-sticked-to-parent': isStickedToParent,
+        'wds-is-flipped': isFlipped
       });
       var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
         isLevel2: isLevel2,
@@ -510,6 +557,7 @@ function (_React$Component) {
       }), React.createElement(DropdownContent, {
         dropdownLeftAligned: dropdownLeftAligned,
         dropdownRightAligned: dropdownRightAligned,
+        elementRef: this.contentElementRef,
         isLevel2: isLevel2,
         scrollable: contentScrollable
       }, children));
@@ -518,7 +566,8 @@ function (_React$Component) {
         React.createElement(Component, {
           className: className,
           onClick: this.onClick,
-          onMouseLeave: this.onMouseLeave
+          onMouseLeave: this.onMouseLeave,
+          onMouseEnter: this.onMouseEnter
         }, dropdownBody)
       );
     }
@@ -528,6 +577,11 @@ function (_React$Component) {
 }(React.Component);
 
 Dropdown.propTypes = {
+  /**
+   * Whether or nor not dropdown should automatically flip when it's near the bottom of the viewport
+   */
+  canFlip: PropTypes.bool,
+
   /**
    * React Component to display as the Dropdown Content
    */
@@ -601,6 +655,7 @@ Dropdown.propTypes = {
   toggleClassName: PropTypes.string
 };
 Dropdown.defaultProps = {
+  canFlip: false,
   children: null,
   hasShadow: false,
   noChevron: false,

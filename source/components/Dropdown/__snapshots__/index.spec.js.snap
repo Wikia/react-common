@@ -4,6 +4,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
 <li
   className="wds-dropdown-level-2"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -32,6 +33,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
 <li
   className="wds-dropdown-level-2"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -60,6 +62,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
 <li
   className="wds-is-active wds-dropdown-level-2"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -88,6 +91,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
 <li
   className="wds-dropdown-level-2 wds-is-sticked-to-parent"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -116,6 +120,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
 <div
   className="wds-dropdown"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -148,6 +153,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
 <div
   className="wds-dropdown"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
@@ -180,6 +186,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
 <div
   className="wds-dropdown"
   onClick={[Function]}
+  onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
   <div
