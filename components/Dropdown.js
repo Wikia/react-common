@@ -181,7 +181,14 @@ var classnames = createCommonjsModule(function (module) {
 }());
 });
 
-var Element = typeof Element === 'undefined' ? function () {} : Element;
+function getViewportSize() {
+  return {
+    width: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+    height: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+  };
+}
+
+var Element = typeof global.Element === 'undefined' ? null : global.Element;
 var refPropType = PropTypes.shape({
   current: PropTypes.instanceOf(Element)
 });
@@ -406,13 +413,6 @@ DropdownToggle.defaultProps = {
   isTouchDevice: false
 };
 
-function getViewportSize() {
-  return {
-    width: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-    height: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-  };
-}
-
 /**
  * Basic Dropdown component
  */
@@ -430,7 +430,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).call(this, props));
     _this.state = {
       isClicked: false,
-      ifFlipped: false,
+      isFlipped: false,
       isTouchDevice: false
     };
     _this.contentElementRef = React.createRef();

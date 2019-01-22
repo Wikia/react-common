@@ -50,7 +50,7 @@
     "concurrently": "^4.1.0",
     "coveralls": "^3.0.2",
     "date-fns": "^1.29.0",
-    "design-system": "git://github.com/Wikia/design-system.git#e8855751f1771600c3029b2702391e5c705fbba9",
+    "design-system": "git://github.com/Wikia/design-system.git#18.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-redux": "^0.2.1",
