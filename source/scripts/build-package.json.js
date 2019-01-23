@@ -21,9 +21,6 @@ const template = `{
   "private": true,
   "peerDependencies": {
     ${peerDependencies}
-  },
-  "renovate": {
-    "enabled": false
   }
 }`;
 
