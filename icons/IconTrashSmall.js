@@ -6,6 +6,60 @@ var React = _interopDefault(require('react'));
 var styled = _interopDefault(require('styled-components'));
 var PropTypes = _interopDefault(require('prop-types'));
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
     raw = strings.slice(0);
@@ -45,12 +99,21 @@ function _templateObject() {
 
   return data;
 }
-var IconTrashSmall = styled(IconTrashSmallSvg)(_templateObject(), function (props) {
+var IconTrashSmall = styled(function (_ref) {
+  var size = _ref.size,
+      rest = _objectWithoutProperties(_ref, ["size"]);
+
+  return React.createElement(IconTrashSmallSvg, _extends({
+    height: size,
+    width: size
+  }, rest));
+})(_templateObject(), function (props) {
   return props.size;
 }, function (props) {
   return props.size;
 });
 IconTrashSmall.propTypes = {
+  /** Size of the icon */
   size: PropTypes.number
 };
 IconTrashSmall.defaultProps = {
