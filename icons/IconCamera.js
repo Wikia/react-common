@@ -26,22 +26,13 @@ var IconCameraSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M2 4h2a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m19 17H3V8h2c.266 0 .52-.105.707-.293L9.414 4h5.172l3.707 3.707A.996.996 0 0 0 19 8h2v13zm1-15h-2.586l-3.707-3.707A.996.996 0 0 0 15 2H9a.996.996 0 0 0-.707.293L4.586 6H2a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-10 9c-1.103 0-2-.896-2-2s.897-2 2-2 2 .896 2 2-.897 2-2 2m0-6c-2.206 0-4 1.795-4 4s1.794 4 4 4 4-1.795 4-4-1.794-4-4-4", id: "id-icons/IconCamera-a" })
+      React.createElement("path", { id: "id-icons/IconCamera-a", d: "M2 4h2a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m19 17H3V8h2c.266 0 .52-.105.707-.293L9.414 4h5.172l3.707 3.707A.996.996 0 0 0 19 8h2v13zm1-15h-2.586l-3.707-3.707A.996.996 0 0 0 15 2H9a.996.996 0 0 0-.707.293L4.586 6H2a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-10 9c-1.103 0-2-.896-2-2s.897-2 2-2 2 .896 2 2-.897 2-2 2m0-6c-2.206 0-4 1.795-4 4s1.794 4 4 4 4-1.795 4-4-1.794-4-4-4" })
     ),
-    React.createElement(
-      "g",
-      { id: "camera", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconCamera-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Camera", fill: "#000", xlinkHref: "#id-icons/IconCamera-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCamera-a" })
   );
 });
 

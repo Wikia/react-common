@@ -26,22 +26,13 @@ var IconSitemapSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 18.5a1 1 0 0 0 1-1V13h7v4.5a1 1 0 1 0 2 0V13h7v4.5a1 1 0 1 0 2 0V12a1 1 0 0 0-1-1h-8V6.5a1 1 0 1 0-2 0V11H3a1 1 0 0 0-1 1v5.5a1 1 0 0 0 1 1M10 2h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2M5 22H1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m18 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m-9 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2", id: "id-icons/IconSitemap-a" })
+      React.createElement("path", { id: "id-icons/IconSitemap-a", d: "M3 18.5a1 1 0 0 0 1-1V13h7v4.5a1 1 0 1 0 2 0V13h7v4.5a1 1 0 1 0 2 0V12a1 1 0 0 0-1-1h-8V6.5a1 1 0 1 0-2 0V11H3a1 1 0 0 0-1 1v5.5a1 1 0 0 0 1 1M10 2h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2M5 22H1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m18 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m-9 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "sitemap", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconSitemap-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Sitemap", fill: "#000", xlinkHref: "#id-icons/IconSitemap-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconSitemap-a" })
   );
 });
 

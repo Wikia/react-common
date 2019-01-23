@@ -26,22 +26,13 @@ var IconBoldSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M6 10h4c2.206 0 4-1.795 4-4s-1.794-4-4-4H6v8zm0 12h7c2.757 0 5-2.243 5-5s-2.243-5-5-5H6v10zm7 2H5a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h5c3.309 0 6 2.691 6 6a5.982 5.982 0 0 1-1.652 4.131C17.565 10.76 20 13.602 20 17c0 3.859-3.14 7-7 7z", id: "id-icons/IconBold-a" })
+      React.createElement("path", { id: "id-icons/IconBold-a", d: "M6 10h4c2.206 0 4-1.795 4-4s-1.794-4-4-4H6v8zm0 12h7c2.757 0 5-2.243 5-5s-2.243-5-5-5H6v10zm7 2H5a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h5c3.309 0 6 2.691 6 6a5.982 5.982 0 0 1-1.652 4.131C17.565 10.76 20 13.602 20 17c0 3.859-3.14 7-7 7z" })
     ),
-    React.createElement(
-      "g",
-      { id: "bold", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconBold-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Bold", fill: "#000", xlinkHref: "#id-icons/IconBold-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBold-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconPinSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M12 14h4V3H8v11h4zm0 9a1 1 0 0 1-1-1v-6H4a1 1 0 1 1 0-2h2V3H4a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2h-2v11h2a1 1 0 1 1 0 2h-7v6a1 1 0 0 1-1 1z", id: "id-icons/IconPin-a" })
+      React.createElement("path", { id: "id-icons/IconPin-a", d: "M12 14h4V3H8v11h4zm0 9a1 1 0 0 1-1-1v-6H4a1 1 0 1 1 0-2h2V3H4a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2h-2v11h2a1 1 0 1 1 0 2h-7v6a1 1 0 0 1-1 1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "pin", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconPin-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Pin", fill: "#000", xlinkHref: "#id-icons/IconPin-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPin-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconPlaySvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 5.476v13.047l16.308-6.524L3 5.476zM2 20.999c-.197 0-.393-.058-.561-.171a1.003 1.003 0 0 1-.439-.83v-16a1.001 1.001 0 0 1 1.372-.927l20 8a1 1 0 0 1 0 1.857l-20 8a1.007 1.007 0 0 1-.372.07z", id: "id-icons/IconPlay-a" })
+      React.createElement("path", { id: "id-icons/IconPlay-a", d: "M3 5.476v13.047l16.308-6.524L3 5.476zM2 20.999c-.197 0-.393-.058-.561-.171a1.003 1.003 0 0 1-.439-.83v-16a1.001 1.001 0 0 1 1.372-.927l20 8a1 1 0 0 1 0 1.857l-20 8a1.007 1.007 0 0 1-.372.07z" })
     ),
-    React.createElement(
-      "g",
-      { id: "play", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconPlay-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Play", fill: "#000", xlinkHref: "#id-icons/IconPlay-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPlay-a" })
   );
 });
 

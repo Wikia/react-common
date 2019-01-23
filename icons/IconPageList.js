@@ -26,22 +26,13 @@ var IconPageListSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 21h5v-5H3v5zm6-7H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1zm6-11h7a1 1 0 1 0 0-2h-7a1 1 0 1 0 0 2m7 11h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2m0-6h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2m0 13h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2M3 8h5V3H3v5zm6-7H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z", id: "id-icons/IconPageList-a" })
+      React.createElement("path", { id: "id-icons/IconPageList-a", d: "M3 21h5v-5H3v5zm6-7H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1zm6-11h7a1 1 0 1 0 0-2h-7a1 1 0 1 0 0 2m7 11h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2m0-6h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2m0 13h-7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2M3 8h5V3H3v5zm6-7H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "page-list", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconPageList-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Page-List", fill: "#000", xlinkHref: "#id-icons/IconPageList-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPageList-a" })
   );
 });
 

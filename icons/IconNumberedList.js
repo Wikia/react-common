@@ -26,22 +26,13 @@ var IconNumberedListSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M2.707 5.707L3 5.414V10a1 1 0 1 0 2 0V3a.999.999 0 0 0-1.707-.707l-2 2a.999.999 0 1 0 1.414 1.414M12 4h10a1 1 0 1 0 0-2H12a1 1 0 1 0 0 2M7 16c0-1.654-1.346-3-3-3a2.94 2.94 0 0 0-2.126.892.999.999 0 1 0 1.432 1.396A.957.957 0 0 1 4 15c.552 0 1 .449 1 1 0 .5-.85 1.138-1.6 1.7C2.275 18.544 1 19.5 1 21a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H3.71c.271-.236.59-.475.89-.7C5.725 18.456 7 17.5 7 16m15 4H12a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m0-9H12a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2", id: "id-icons/IconNumberedList-a" })
+      React.createElement("path", { id: "id-icons/IconNumberedList-a", d: "M2.707 5.707L3 5.414V10a1 1 0 1 0 2 0V3a.999.999 0 0 0-1.707-.707l-2 2a.999.999 0 1 0 1.414 1.414M12 4h10a1 1 0 1 0 0-2H12a1 1 0 1 0 0 2M7 16c0-1.654-1.346-3-3-3a2.94 2.94 0 0 0-2.126.892.999.999 0 1 0 1.432 1.396A.957.957 0 0 1 4 15c.552 0 1 .449 1 1 0 .5-.85 1.138-1.6 1.7C2.275 18.544 1 19.5 1 21a1 1 0 0 0 1 1h4a1 1 0 1 0 0-2H3.71c.271-.236.59-.475.89-.7C5.725 18.456 7 17.5 7 16m15 4H12a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m0-9H12a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "numbered-list", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconNumberedList-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Numbered-List", fill: "#000", xlinkHref: "#id-icons/IconNumberedList-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconNumberedList-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconCheckBoxSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M9.293 15.707a.997.997 0 0 0 1.414 0l7-7a.999.999 0 1 0-1.414-1.414L10 13.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414l3 3zM3 21h18V3H3v18zM22 1H2a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z", id: "id-icons/IconCheckBox-a" })
+      React.createElement("path", { id: "id-icons/IconCheckBox-a", d: "M9.293 15.707a.997.997 0 0 0 1.414 0l7-7a.999.999 0 1 0-1.414-1.414L10 13.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414l3 3zM3 21h18V3H3v18zM22 1H2a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "check-box", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconCheckBox-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Check-box", fill: "#000", xlinkHref: "#id-icons/IconCheckBox-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCheckBox-a" })
   );
 });
 

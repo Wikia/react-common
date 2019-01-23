@@ -26,22 +26,13 @@ var IconBulletedListSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3.006 19.995c-.553 0-1.006.451-1.006 1.004 0 .553.453 1.005 1.006 1.005.553 0 1.004-.452 1.004-1.005 0-.553-.451-1.004-1.004-1.004M10 4.005h11a.999.999 0 1 0 0-2H10a.999.999 0 1 0 0 2m-6.995 6.992c-.553 0-1.006.452-1.006 1.005 0 .553.453 1.005 1.006 1.005.553 0 1.004-.452 1.004-1.005 0-.553-.451-1.005-1.004-1.005m0-8.997C2.453 2 2 2.452 2 3.005c0 .553.453 1.004 1.006 1.004.553 0 1.004-.451 1.004-1.004C4.01 2.452 3.56 2 3.006 2M21 11.002H10a.999.999 0 1 0 0 2h11a.999.999 0 1 0 0-2M21 20H10a.999.999 0 1 0 0 2h11a.999.999 0 1 0 0-2", id: "id-icons/IconBulletedList-a" })
+      React.createElement("path", { id: "id-icons/IconBulletedList-a", d: "M3.006 19.995c-.553 0-1.006.451-1.006 1.004 0 .553.453 1.005 1.006 1.005.553 0 1.004-.452 1.004-1.005 0-.553-.451-1.004-1.004-1.004M10 4.005h11a.999.999 0 1 0 0-2H10a.999.999 0 1 0 0 2m-6.995 6.992c-.553 0-1.006.452-1.006 1.005 0 .553.453 1.005 1.006 1.005.553 0 1.004-.452 1.004-1.005 0-.553-.451-1.005-1.004-1.005m0-8.997C2.453 2 2 2.452 2 3.005c0 .553.453 1.004 1.006 1.004.553 0 1.004-.451 1.004-1.004C4.01 2.452 3.56 2 3.006 2M21 11.002H10a.999.999 0 1 0 0 2h11a.999.999 0 1 0 0-2M21 20H10a.999.999 0 1 0 0 2h11a.999.999 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "bulleted-list", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconBulletedList-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Bulleted-List", fill: "#000", xlinkHref: "#id-icons/IconBulletedList-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBulletedList-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconFlagSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 16h16.586l-5.293-5.293a.999.999 0 0 1 0-1.414L19.586 4H3v12zm-1 8a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v1h19a1.002 1.002 0 0 1 .707 1.707L16.414 10l6.293 6.293A1 1 0 0 1 22 18H3v5a1 1 0 0 1-1 1z", id: "id-icons/IconFlag-a" })
+      React.createElement("path", { id: "id-icons/IconFlag-a", d: "M3 16h16.586l-5.293-5.293a.999.999 0 0 1 0-1.414L19.586 4H3v12zm-1 8a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v1h19a1.002 1.002 0 0 1 .707 1.707L16.414 10l6.293 6.293A1 1 0 0 1 22 18H3v5a1 1 0 0 1-1 1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "flag", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconFlag-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Flag", fill: "#000", xlinkHref: "#id-icons/IconFlag-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconFlag-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconUnlockSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM20 8H9V5c0-1.654 1.346-3 3-3 .795 0 1.551.313 2.128.882a1 1 0 1 0 1.404-1.424A5.006 5.006 0 0 0 12 0C9.243 0 7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z", id: "id-icons/IconUnlock-a" })
+      React.createElement("path", { id: "id-icons/IconUnlock-a", d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM20 8H9V5c0-1.654 1.346-3 3-3 .795 0 1.551.313 2.128.882a1 1 0 1 0 1.404-1.424A5.006 5.006 0 0 0 12 0C9.243 0 7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "unlock", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconUnlock-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Open-Padlock", fill: "#000", xlinkHref: "#id-icons/IconUnlock-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUnlock-a" })
   );
 });
 

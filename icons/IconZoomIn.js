@@ -26,22 +26,13 @@ var IconZoomInSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M22 2h-5a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1M7 20H3v-4a1 1 0 1 0-2 0v5a1 1 0 0 0 1 1h5a1 1 0 1 0 0-2M7 2H2a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0V4h4a1 1 0 1 0 0-2m15 13a1 1 0 0 0-1 1v4h-4a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1", id: "id-icons/IconZoomIn-a" })
+      React.createElement("path", { id: "id-icons/IconZoomIn-a", d: "M22 2h-5a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1M7 20H3v-4a1 1 0 1 0-2 0v5a1 1 0 0 0 1 1h5a1 1 0 1 0 0-2M7 2H2a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0V4h4a1 1 0 1 0 0-2m15 13a1 1 0 0 0-1 1v4h-4a1 1 0 1 0 0 2h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1" })
     ),
-    React.createElement(
-      "g",
-      { id: "zoom-in", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconZoomIn-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Zoom-In", fill: "#000", xlinkHref: "#id-icons/IconZoomIn-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconZoomIn-a" })
   );
 });
 

@@ -26,22 +26,13 @@ var IconActivitySvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M16 23c-.409 0-.776-.249-.929-.629L8 4.692l-3.071 7.679c-.153.38-.52.629-.929.629H1a1 1 0 1 1 0-2h2.323l3.748-9.371a1.002 1.002 0 0 1 1.858 0L16 19.308l3.071-7.679c.153-.38.52-.629.929-.629h3a1 1 0 1 1 0 2h-2.323l-3.748 9.371c-.153.38-.52.629-.929.629", id: "id-icons/IconActivity-a" })
+      React.createElement("path", { id: "id-icons/IconActivity-a", d: "M16 23c-.409 0-.776-.249-.929-.629L8 4.692l-3.071 7.679c-.153.38-.52.629-.929.629H1a1 1 0 1 1 0-2h2.323l3.748-9.371a1.002 1.002 0 0 1 1.858 0L16 19.308l3.071-7.679c.153-.38.52-.629.929-.629h3a1 1 0 1 1 0 2h-2.323l-3.748 9.371c-.153.38-.52.629-.929.629" })
     ),
-    React.createElement(
-      "g",
-      { id: "activity", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconActivity-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Activity", fill: "#000", xlinkHref: "#id-icons/IconActivity-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconActivity-a" })
   );
 });
 

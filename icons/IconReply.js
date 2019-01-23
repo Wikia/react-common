@@ -26,22 +26,13 @@ var IconReplySvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M11 14c4.497 0 8.606 2.324 10.955 6.003.03-.331.045-.666.045-1.003 0-6.065-4.935-11-11-11a1 1 0 0 1-1-1V3.414L2.414 11 10 18.586V15a1 1 0 0 1 1-1m11.31 10h-.004a1.003 1.003 0 0 1-.94-.668A11.003 11.003 0 0 0 12 16.045V21a.999.999 0 0 1-1.707.707l-10-10a.999.999 0 0 1 0-1.414l10-10A1.002 1.002 0 0 1 12 1v5.038c6.703.513 12 6.13 12 12.962 0 1.498-.252 2.958-.75 4.339a1 1 0 0 1-.94.66", id: "id-icons/IconReply-a" })
+      React.createElement("path", { id: "id-icons/IconReply-a", d: "M11 14c4.497 0 8.606 2.324 10.955 6.003.03-.331.045-.666.045-1.003 0-6.065-4.935-11-11-11a1 1 0 0 1-1-1V3.414L2.414 11 10 18.586V15a1 1 0 0 1 1-1m11.31 10h-.004a1.003 1.003 0 0 1-.94-.668A11.003 11.003 0 0 0 12 16.045V21a.999.999 0 0 1-1.707.707l-10-10a.999.999 0 0 1 0-1.414l10-10A1.002 1.002 0 0 1 12 1v5.038c6.703.513 12 6.13 12 12.962 0 1.498-.252 2.958-.75 4.339a1 1 0 0 1-.94.66" })
     ),
-    React.createElement(
-      "g",
-      { id: "reply", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconReply-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Reply-Arrow", fill: "#000", xlinkHref: "#id-icons/IconReply-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconReply-a" })
   );
 });
 

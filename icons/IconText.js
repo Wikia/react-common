@@ -26,22 +26,13 @@ var IconTextSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M21 0H3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V2h7v20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3V2h7v2a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1", id: "id-icons/IconText-a" })
+      React.createElement("path", { id: "id-icons/IconText-a", d: "M21 0H3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V2h7v20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3V2h7v2a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1" })
     ),
-    React.createElement(
-      "g",
-      { id: "text", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconText-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Text", fill: "#000", xlinkHref: "#id-icons/IconText-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconText-a" })
   );
 });
 

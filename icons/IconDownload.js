@@ -26,22 +26,13 @@ var IconDownloadSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M11.293 16.707a1.009 1.009 0 0 0 .704.293h.006a.988.988 0 0 0 .704-.293l7-7a.999.999 0 1 0-1.414-1.414L13 13.586V2a1 1 0 1 0-2 0v11.586L5.707 8.293a.999.999 0 1 0-1.414 1.414l7 7zM22 16a1 1 0 0 0-1 1v4H3v-4a1 1 0 1 0-2 0v5a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1", id: "id-icons/IconDownload-a" })
+      React.createElement("path", { id: "id-icons/IconDownload-a", d: "M11.293 16.707a1.009 1.009 0 0 0 .704.293h.006a.988.988 0 0 0 .704-.293l7-7a.999.999 0 1 0-1.414-1.414L13 13.586V2a1 1 0 1 0-2 0v11.586L5.707 8.293a.999.999 0 1 0-1.414 1.414l7 7zM22 16a1 1 0 0 0-1 1v4H3v-4a1 1 0 1 0-2 0v5a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1" })
     ),
-    React.createElement(
-      "g",
-      { id: "download", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconDownload-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Download", fill: "#000", xlinkHref: "#id-icons/IconDownload-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconDownload-a" })
   );
 });
 

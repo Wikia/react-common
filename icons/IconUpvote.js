@@ -26,12 +26,13 @@ var IconUpvoteSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
-      "g",
-      { id: "upvote", fill: "none", fillRule: "evenodd" },
-      React.createElement("path", { d: "M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2m0 22C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12m1-15.586V18a1 1 0 1 1-2 0V8.414l-3.293 3.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l4.984-4.984a1.005 1.005 0 0 1 .275-.203 1 1 0 0 1 1.171.203l4.984 4.984a.999.999 0 1 1-1.414 1.414L13 8.414z", id: "icons/24px/Upvote", fill: "#000" })
-    )
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconUpvote-a", d: "M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2m0 22C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12m1-15.586V18a1 1 0 1 1-2 0V8.414l-3.293 3.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414l4.984-4.984a1.005 1.005 0 0 1 .275-.203 1 1 0 0 1 1.171.203l4.984 4.984a.999.999 0 1 1-1.414 1.414L13 8.414z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUpvote-a" })
   );
 });
 

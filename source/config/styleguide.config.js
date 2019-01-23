@@ -105,4 +105,9 @@ module.exports = {
         return docgen.parse(source, resolver, handlers);
     },
     webpackConfig,
+    compilerConfig: {
+        transforms: {
+            dangerousTaggedTemplateString: true,
+        },
+    },
 };

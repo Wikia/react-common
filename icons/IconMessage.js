@@ -26,22 +26,13 @@ var IconMessageSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M18 10H6a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2m4 2c0 1.654-1.346 3-3 3h-6a.997.997 0 0 0-.707.293L7 20.586V16a1 1 0 0 0-1-1H5c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h14c1.654 0 3 1.346 3 3v7zM19 0H5C2.243 0 0 2.243 0 5v7c0 2.757 2.243 5 5 5v6a1 1 0 0 0 1.707.707L13.414 17H19c2.757 0 5-2.243 5-5V5c0-2.757-2.243-5-5-5zm-1 5H6a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2", id: "id-icons/IconMessage-a" })
+      React.createElement("path", { id: "id-icons/IconMessage-a", d: "M3.414 5L12 13.586 20.586 5H3.414zM2 19h20V6.414l-9.293 9.293a.999.999 0 0 1-1.414 0L2 6.414V19zm21 2H1a1 1 0 0 1-1-1V3.997a.988.988 0 0 1 .293-.704A1.009 1.009 0 0 1 .997 3h22.006a.988.988 0 0 1 .704.293.983.983 0 0 1 .293.704V20a1 1 0 0 1-1 1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "bubble", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconMessage-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Message-Bubble", fill: "#000", xlinkHref: "#id-icons/IconMessage-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMessage-a" })
   );
 });
 

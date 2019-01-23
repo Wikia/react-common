@@ -26,22 +26,13 @@ var IconItalicsSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2", id: "id-icons/IconItalics-a" })
+      React.createElement("path", { id: "id-icons/IconItalics-a", d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "italics", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconItalics-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Italics", fill: "#000", xlinkHref: "#id-icons/IconItalics-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconItalics-a" })
   );
 });
 

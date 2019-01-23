@@ -26,22 +26,13 @@ var IconPencilSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M2 15.164l8.625-8.625 6.836 6.836L8.836 22H2v-6.836zm16.875-3.203l-6.836-6.836 2.711-2.71 6.836 6.835-2.711 2.711zm4.832-3.418l-8.25-8.25a.999.999 0 0 0-1.414 0L.294 14.043A1 1 0 0 0 0 14.75V23a1 1 0 0 0 1 1h8.25a1 1 0 0 0 .708-.294L23.707 9.957a.999.999 0 0 0 0-1.414z", id: "id-icons/IconPencil-a" })
+      React.createElement("path", { id: "id-icons/IconPencil-a", d: "M2 15.164l8.625-8.625 6.836 6.836L8.836 22H2v-6.836zm16.875-3.203l-6.836-6.836 2.711-2.71 6.836 6.835-2.711 2.711zm4.832-3.418l-8.25-8.25a.999.999 0 0 0-1.414 0L.294 14.043A1 1 0 0 0 0 14.75V23a1 1 0 0 0 1 1h8.25a1 1 0 0 0 .708-.294L23.707 9.957a.999.999 0 0 0 0-1.414z" })
     ),
-    React.createElement(
-      "g",
-      { id: "pencil", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconPencil-a" })
-      ),
-      React.createElement("use", { fill: "#000", xlinkHref: "#id-icons/IconPencil-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPencil-a" })
   );
 });
 

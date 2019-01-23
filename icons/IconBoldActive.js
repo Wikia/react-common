@@ -26,12 +26,13 @@ var IconBoldActiveSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
-      "g",
-      { id: "bold-active", fill: "none", fillRule: "evenodd" },
-      React.createElement("path", { d: "M21 16.545A7.454 7.454 0 0 1 13.546 24H6a2 2 0 0 1-2-2V11.09a2 2 0 0 1 2-2h7.546A7.455 7.455 0 0 1 21 16.545zM13.546 20a3.454 3.454 0 0 0 0-6.91H8V20h5.546zM10.454 9.09a2.545 2.545 0 1 0 0-5.09H8v5.09h2.454zm0 4H6a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4.454a6.545 6.545 0 1 1 0 13.09z", id: "Stroke-1", fill: "#000", fillRule: "nonzero" })
-    )
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconBoldActive-a", d: "M21 16.545A7.454 7.454 0 0 1 13.546 24H6a2 2 0 0 1-2-2V11.09a2 2 0 0 1 2-2h7.546A7.455 7.455 0 0 1 21 16.545zM13.546 20a3.454 3.454 0 0 0 0-6.91H8V20h5.546zM10.454 9.09a2.545 2.545 0 1 0 0-5.09H8v5.09h2.454zm0 4H6a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h4.454a6.545 6.545 0 1 1 0 13.09z" })
+    ),
+    React.createElement("use", { xlinkHref: "#id-icons/IconBoldActive-a" })
   );
 });
 

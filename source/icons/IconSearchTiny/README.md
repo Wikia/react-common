@@ -1,0 +1,4 @@
+
+```js
+<IconSearchTiny />
+```

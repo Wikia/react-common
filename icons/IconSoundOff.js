@@ -26,22 +26,13 @@ var IconSoundOffSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M21.414 12l2.293-2.292a.999.999 0 1 0-1.414-1.414L20 10.587l-2.293-2.293a.999.999 0 1 0-1.414 1.414L18.586 12l-2.293 2.293a.999.999 0 1 0 1.414 1.414L20 13.415l2.293 2.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L21.414 12zM10 19.587l-4.293-4.293A1.002 1.002 0 0 0 5 15H2V9h3c.265 0 .52-.105.707-.293L10 4.414v15.172zm1.383-18.51a.998.998 0 0 0-1.09.217L4.586 7H1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3.586l5.707 5.707a.996.996 0 0 0 1.09.217A1 1 0 0 0 12 22V2c0-.404-.244-.769-.617-.924z", id: "id-icons/IconSoundOff-a" })
+      React.createElement("path", { id: "id-icons/IconSoundOff-a", d: "M21.414 12l2.293-2.292a.999.999 0 1 0-1.414-1.414L20 10.587l-2.293-2.293a.999.999 0 1 0-1.414 1.414L18.586 12l-2.293 2.293a.999.999 0 1 0 1.414 1.414L20 13.415l2.293 2.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L21.414 12zM10 19.587l-4.293-4.293A1.002 1.002 0 0 0 5 15H2V9h3c.265 0 .52-.105.707-.293L10 4.414v15.172zm1.383-18.51a.998.998 0 0 0-1.09.217L4.586 7H1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3.586l5.707 5.707a.996.996 0 0 0 1.09.217A1 1 0 0 0 12 22V2c0-.404-.244-.769-.617-.924z" })
     ),
-    React.createElement(
-      "g",
-      { id: "sound-off", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconSoundOff-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Sound-Off", fill: "#000", xlinkHref: "#id-icons/IconSoundOff-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconSoundOff-a" })
   );
 });
 

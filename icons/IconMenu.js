@@ -26,22 +26,13 @@ var IconMenuSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m18 16H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2m0-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2", id: "id-icons/IconMenu-a" })
+      React.createElement("path", { id: "id-icons/IconMenu-a", d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m18 16H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2m0-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "menu", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconMenu-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Menu", fill: "#000", xlinkHref: "#id-icons/IconMenu-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMenu-a" })
   );
 });
 

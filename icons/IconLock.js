@@ -26,22 +26,13 @@ var IconLockSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM9 5c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V5zm11 3h-3V5c0-2.757-2.243-5-5-5S7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z", id: "id-icons/IconLock-a" })
+      React.createElement("path", { id: "id-icons/IconLock-a", d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM9 5c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V5zm11 3h-3V5c0-2.757-2.243-5-5-5S7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "lock", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconLock-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Padlock", fill: "#000", xlinkHref: "#id-icons/IconLock-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconLock-a" })
   );
 });
 

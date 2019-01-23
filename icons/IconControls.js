@@ -26,22 +26,13 @@ var IconControlsSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M2 5h8v1a1 1 0 1 0 2 0V2a1 1 0 1 0-2 0v1H2a1 1 0 1 0 0 2m14 0h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2m6 4a1 1 0 0 0-1 1v1H2a1 1 0 1 0 0 2h19v1a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1m-11 8a1 1 0 0 0-1 1v1H2a1 1 0 1 0 0 2h8v1a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1m11 2h-6a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2", id: "id-icons/IconControls-a" })
+      React.createElement("path", { id: "id-icons/IconControls-a", d: "M2 5h8v1a1 1 0 1 0 2 0V2a1 1 0 1 0-2 0v1H2a1 1 0 1 0 0 2m14 0h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2m6 4a1 1 0 0 0-1 1v1H2a1 1 0 1 0 0 2h19v1a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1m-11 8a1 1 0 0 0-1 1v1H2a1 1 0 1 0 0 2h8v1a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1m11 2h-6a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "controls", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconControls-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Controls", fill: "#000", xlinkHref: "#id-icons/IconControls-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconControls-a" })
   );
 });
 

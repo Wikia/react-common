@@ -26,22 +26,13 @@ var IconImagesSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M12 14c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m4 7h-1.586L3 9.586V8h13v13zM3 21v-8.586L11.586 21H3zM17 6H2a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm5-5H7a1 1 0 1 0 0 2h14v14a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1", id: "id-icons/IconImages-a" })
+      React.createElement("path", { id: "id-icons/IconImages-a", d: "M12 14c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m4 7h-1.586L3 9.586V8h13v13zM3 21v-8.586L11.586 21H3zM17 6H2a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm5-5H7a1 1 0 1 0 0 2h14v14a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1" })
     ),
-    React.createElement(
-      "g",
-      { id: "images", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconImages-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Images", fill: "#000", xlinkHref: "#id-icons/IconImages-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconImages-a" })
   );
 });
 

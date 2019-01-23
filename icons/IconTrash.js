@@ -26,22 +26,13 @@ var IconTrashSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M16 19a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1M7 2h10a1 1 0 1 0 0-2H7a1 1 0 1 0 0 2M5 22h14V7H5v15zM22 5H2a1 1 0 1 0 0 2h1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7h1a1 1 0 1 0 0-2z", id: "id-icons/IconTrash-a" })
+      React.createElement("path", { id: "id-icons/IconTrash-a", d: "M16 19a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1M7 2h10a1 1 0 1 0 0-2H7a1 1 0 1 0 0 2M5 22h14V7H5v15zM22 5H2a1 1 0 1 0 0 2h1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7h1a1 1 0 1 0 0-2z" })
     ),
-    React.createElement(
-      "g",
-      { id: "trash", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconTrash-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Trash", fill: "#000", xlinkHref: "#id-icons/IconTrash-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTrash-a" })
   );
 });
 

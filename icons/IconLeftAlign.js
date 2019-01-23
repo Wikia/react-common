@@ -26,22 +26,13 @@ var IconLeftAlignSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m10 16H3a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m8-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2", id: "id-icons/IconLeftAlign-a" })
+      React.createElement("path", { id: "id-icons/IconLeftAlign-a", d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m10 16H3a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m8-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2" })
     ),
-    React.createElement(
-      "g",
-      { id: "left-align", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconLeftAlign-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Formatting", fill: "#000", xlinkHref: "#id-icons/IconLeftAlign-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconLeftAlign-a" })
   );
 });
 

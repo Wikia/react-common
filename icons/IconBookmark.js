@@ -26,22 +26,13 @@ var IconBookmarkSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M9 10h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2V6a1 1 0 1 0-2 0v2H9a1 1 0 1 0 0 2m10 10l-6.4-4.8a.995.995 0 0 0-1.2 0L5 20V3h14v17zm1-19H4a1 1 0 0 0-1 1v20a1.001 1.001 0 0 0 1.6.8l7.4-5.55 7.4 5.55A1.002 1.002 0 0 0 21 22V2a1 1 0 0 0-1-1z", id: "id-icons/IconBookmark-a" })
+      React.createElement("path", { id: "id-icons/IconBookmark-a", d: "M9 10h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2V6a1 1 0 1 0-2 0v2H9a1 1 0 1 0 0 2m10 10l-6.4-4.8a.995.995 0 0 0-1.2 0L5 20V3h14v17zm1-19H4a1 1 0 0 0-1 1v20a1.001 1.001 0 0 0 1.6.8l7.4-5.55 7.4 5.55A1.002 1.002 0 0 0 21 22V2a1 1 0 0 0-1-1z" })
     ),
-    React.createElement(
-      "g",
-      { id: "bookmark", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconBookmark-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Bookmark", fill: "#000", xlinkHref: "#id-icons/IconBookmark-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBookmark-a" })
   );
 });
 

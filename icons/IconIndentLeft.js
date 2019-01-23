@@ -26,22 +26,13 @@ var IconIndentLeftSvg = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ width: "24", height: "24", viewBox: "0 0 24 24", xmlnsXlink: "http://www.w3.org/1999/xlink" }, props),
+    _extends$1({ xmlnsXlink: "http://www.w3.org/1999/xlink", width: "24", height: "24", viewBox: "0 0 24 24" }, props),
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { d: "M17 11H3.414l5.293-5.293a.999.999 0 1 0-1.414-1.414l-7 7a.983.983 0 0 0-.293.704v.006a.988.988 0 0 0 .293.704l7 7a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L3.414 13H17a1 1 0 1 0 0-2m6-10a1 1 0 0 0-1 1v20a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1", id: "id-icons/IconIndentLeft-a" })
+      React.createElement("path", { id: "id-icons/IconIndentLeft-a", d: "M17 11H3.414l5.293-5.293a.999.999 0 1 0-1.414-1.414l-7 7a.983.983 0 0 0-.293.704v.006a.988.988 0 0 0 .293.704l7 7a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L3.414 13H17a1 1 0 1 0 0-2m6-10a1 1 0 0 0-1 1v20a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1" })
     ),
-    React.createElement(
-      "g",
-      { id: "indent-left", fill: "none", fillRule: "evenodd" },
-      React.createElement(
-        "mask",
-        { id: "mask-2", fill: "#fff" },
-        React.createElement("use", { xlinkHref: "#id-icons/IconIndentLeft-a" })
-      ),
-      React.createElement("use", { id: "icons/24px/Indent-Left", fill: "#000", xlinkHref: "#id-icons/IconIndentLeft-a" })
-    )
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconIndentLeft-a" })
   );
 });
 
