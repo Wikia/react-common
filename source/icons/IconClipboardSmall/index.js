@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-clipboard-small.svg';
+import React from 'react';
+import IconClipboardSmall from 'design-system/dist/svg/wds-icons-clipboard-small.svg';
+
+/** @component */
+export default props => <IconClipboardSmall {...props} />;

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-upvote-small.svg';
+import React from 'react';
+import IconUpvoteSmall from 'design-system/dist/svg/wds-icons-upvote-small.svg';
+
+/** @component */
+export default props => <IconUpvoteSmall {...props} />;

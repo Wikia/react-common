@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-checkmark.svg';
+import React from 'react';
+import IconCheckmark from 'design-system/dist/svg/wds-icons-checkmark.svg';
+
+/** @component */
+export default props => <IconCheckmark {...props} />;

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-qzone.svg';
+import React from 'react';
+import IconQzone from 'design-system/dist/svg/wds-icons-qzone.svg';
+
+/** @component */
+export default props => <IconQzone {...props} />;

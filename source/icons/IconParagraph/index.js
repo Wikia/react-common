@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-paragraph.svg';
+import React from 'react';
+import IconParagraph from 'design-system/dist/svg/wds-icons-paragraph.svg';
+
+/** @component */
+export default props => <IconParagraph {...props} />;

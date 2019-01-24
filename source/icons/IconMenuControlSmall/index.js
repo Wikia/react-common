@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-menu-control-small.svg';
+import React from 'react';
+import IconMenuControlSmall from 'design-system/dist/svg/wds-icons-menu-control-small.svg';
+
+/** @component */
+export default props => <IconMenuControlSmall {...props} />;

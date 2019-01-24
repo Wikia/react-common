@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-unlock.svg';
+import React from 'react';
+import IconUnlock from 'design-system/dist/svg/wds-icons-unlock.svg';
+
+/** @component */
+export default props => <IconUnlock {...props} />;

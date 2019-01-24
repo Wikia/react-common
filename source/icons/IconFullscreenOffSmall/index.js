@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-fullscreen-off-small.svg';
+import React from 'react';
+import IconFullscreenOffSmall from 'design-system/dist/svg/wds-icons-fullscreen-off-small.svg';
+
+/** @component */
+export default props => <IconFullscreenOffSmall {...props} />;

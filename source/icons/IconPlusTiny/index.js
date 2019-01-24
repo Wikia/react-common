@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-plus-tiny.svg';
+import React from 'react';
+import IconPlusTiny from 'design-system/dist/svg/wds-icons-plus-tiny.svg';
+
+/** @component */
+export default props => <IconPlusTiny {...props} />;

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-cross.svg';
+import React from 'react';
+import IconCross from 'design-system/dist/svg/wds-icons-cross.svg';
+
+/** @component */
+export default props => <IconCross {...props} />;

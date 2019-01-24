@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-share-small.svg';
+import React from 'react';
+import IconShareSmall from 'design-system/dist/svg/wds-icons-share-small.svg';
+
+/** @component */
+export default props => <IconShareSmall {...props} />;

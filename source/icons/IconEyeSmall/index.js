@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-eye-small.svg';
+import React from 'react';
+import IconEyeSmall from 'design-system/dist/svg/wds-icons-eye-small.svg';
+
+/** @component */
+export default props => <IconEyeSmall {...props} />;

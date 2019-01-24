@@ -95,14 +95,14 @@ module.exports = {
 
         return `import ${name} from '${pkg.name}/${subPath}';`;
     },
-    propsParser(filePath, source, resolver, handlers) {
-        /**
-         * `react-docgen` cannot parse this fine syntax, so let's ignore it
-         */
-        if (source.indexOf('export default from') > -1) {
-            return {};
-        }
-        return docgen.parse(source, resolver, handlers);
-    },
+    // propsParser(filePath, source, resolver, handlers) {
+    //     /**
+    //      * `react-docgen` cannot parse this fine syntax, so let's ignore it
+    //      */
+    //     if (source.indexOf('export default from') > -1) {
+    //         return {};
+    //     }
+    //     return docgen.parse(source, resolver, handlers);
+    // },
     webpackConfig,
 };

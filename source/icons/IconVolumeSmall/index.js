@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-volume-small.svg';
+import React from 'react';
+import IconVolumeSmall from 'design-system/dist/svg/wds-icons-volume-small.svg';
+
+/** @component */
+export default props => <IconVolumeSmall {...props} />;

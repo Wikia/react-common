@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-flag-small.svg';
+import React from 'react';
+import IconFlagSmall from 'design-system/dist/svg/wds-icons-flag-small.svg';
+
+/** @component */
+export default props => <IconFlagSmall {...props} />;
