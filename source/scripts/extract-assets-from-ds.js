@@ -106,7 +106,11 @@ function generateComponent(assetData) {
     const fromFile = assetData.from.replace(/^node_modules\//, '');
 
     const jsxTemplate = `// This file is generated automatically via extract-assets-from-ds.js
-export default from '${fromFile}';
+import React from 'react';
+import ${assetData.to} from '${fromFile}';
+
+/** @component */
+export default props => <${assetData.to} {...props} />;
 `;
     mkdirp.sync(outDirectory);
     fs.writeFileSync(`${outDirectory}/index.js`, jsxTemplate);

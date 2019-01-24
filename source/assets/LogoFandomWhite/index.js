@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-company-logo-fandom-white.svg';
+import React from 'react';
+import LogoFandomWhite from 'design-system/dist/svg/wds-company-logo-fandom-white.svg';
+
+/** @component */
+export default props => <LogoFandomWhite {...props} />;

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-avatar-badges-admin.svg';
+import React from 'react';
+import AvatarBadgeAdmin from 'design-system/dist/svg/wds-avatar-badges-admin.svg';
+
+/** @component */
+export default props => <AvatarBadgeAdmin {...props} />;

@@ -15,10 +15,15 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
         className="wds-avatar__image"
         title="wds-avatar__image"
       >
-        <div
+        <_default
           className="wds-avatar__image"
           title="wds-avatar__image"
-        />
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
       </_default>
     </AvatarImage>
     <Badge
@@ -43,10 +48,15 @@ exports[`Avatar renders with badge 1`] = `
         className="wds-avatar__image"
         title="wds-avatar__image"
       >
-        <div
+        <_default
           className="wds-avatar__image"
           title="wds-avatar__image"
-        />
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
       </_default>
     </AvatarImage>
     <Badge
@@ -57,7 +67,9 @@ exports[`Avatar renders with badge 1`] = `
         title="Community Admin"
       >
         <_default>
-          <div />
+          <_default>
+            <div />
+          </_default>
         </_default>
       </span>
     </Badge>
@@ -79,10 +91,15 @@ exports[`Avatar renders with default props 1`] = `
         className="wds-avatar__image"
         title="wds-avatar__image"
       >
-        <div
+        <_default
           className="wds-avatar__image"
           title="wds-avatar__image"
-        />
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
       </_default>
     </AvatarImage>
   </div>
@@ -125,7 +142,9 @@ exports[`Avatar renders with props 1`] = `
         title="Community Admin"
       >
         <_default>
-          <div />
+          <_default>
+            <div />
+          </_default>
         </_default>
       </span>
     </Badge>

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-tumblr.svg';
+import React from 'react';
+import IconTumblr from 'design-system/dist/svg/wds-icons-tumblr.svg';
+
+/** @component */
+export default props => <IconTumblr {...props} />;

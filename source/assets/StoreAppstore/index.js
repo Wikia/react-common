@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-company-store-appstore.svg';
+import React from 'react';
+import StoreAppstore from 'design-system/dist/svg/wds-company-store-appstore.svg';
+
+/** @component */
+export default props => <StoreAppstore {...props} />;

@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-reply.svg';
+import React from 'react';
+import IconReply from 'design-system/dist/svg/wds-icons-reply.svg';
+
+/** @component */
+export default props => <IconReply {...props} />;

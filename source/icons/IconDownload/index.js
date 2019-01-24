@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-download.svg';
+import React from 'react';
+import IconDownload from 'design-system/dist/svg/wds-icons-download.svg';
+
+/** @component */
+export default props => <IconDownload {...props} />;

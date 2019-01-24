@@ -1,2 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
-export default from 'design-system/dist/svg/wds-icons-grid-tiny.svg';
+import React from 'react';
+import IconGridTiny from 'design-system/dist/svg/wds-icons-grid-tiny.svg';
+
+/** @component */
+export default props => <IconGridTiny {...props} />;
