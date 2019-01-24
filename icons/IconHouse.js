@@ -7,7 +7,7 @@ var React = _interopDefault(require('react'));
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-var wdsIconsHouse = ((_ref) => {
+var IconHouse = ((_ref) => {
   let props = _objectWithoutProperties(_ref, ["styles"]);
 
   return React.createElement(
@@ -18,5 +18,10 @@ var wdsIconsHouse = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
 
-module.exports = wdsIconsHouse;
+var index = (function (props) {
+  return React.createElement(IconHouse, props);
+});
+
+module.exports = index;

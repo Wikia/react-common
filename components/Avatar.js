@@ -72,6 +72,11 @@ var AvatarIconUser = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarIconUser$1 = (function (props) {
+  return React.createElement(AvatarIconUser, props);
+});
 
 var AvatarImage = function AvatarImage(_ref) {
   var src = _ref.src,
@@ -82,7 +87,7 @@ var AvatarImage = function AvatarImage(_ref) {
     alt: alt,
     title: alt,
     className: className
-  }) : React.createElement(AvatarIconUser, {
+  }) : React.createElement(AvatarIconUser$1, {
     className: "wds-avatar__image",
     title: className
   });
@@ -116,6 +121,11 @@ var AvatarBadgeAdmin = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeAdmin$1 = (function (props) {
+  return React.createElement(AvatarBadgeAdmin, props);
+});
 
 var _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -136,6 +146,11 @@ var AvatarBadgeContentModerator = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeContentModerator$1 = (function (props) {
+  return React.createElement(AvatarBadgeContentModerator, props);
+});
 
 var _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -156,6 +171,11 @@ var AvatarBadgeDiscussionModerator = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeDiscussionModerator$1 = (function (props) {
+  return React.createElement(AvatarBadgeDiscussionModerator, props);
+});
 
 var _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -176,6 +196,11 @@ var AvatarBadgeGlobalDiscussionsModerator = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeGlobalDiscussionsModerator$1 = (function (props) {
+  return React.createElement(AvatarBadgeGlobalDiscussionsModerator, props);
+});
 
 var _extends$5 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -201,6 +226,11 @@ var AvatarBadgeHelper = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeHelper$1 = (function (props) {
+  return React.createElement(AvatarBadgeHelper, props);
+});
 
 var _extends$6 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -221,6 +251,11 @@ var AvatarBadgeStaff = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeStaff$1 = (function (props) {
+  return React.createElement(AvatarBadgeStaff, props);
+});
 
 var _extends$7 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -241,36 +276,41 @@ var AvatarBadgeVstf = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var AvatarBadgeVstf$1 = (function (props) {
+  return React.createElement(AvatarBadgeVstf, props);
+});
 
 var Badge = function Badge(_ref) {
   var badge = _ref.badge;
   var badgeIcons = {
     admin: {
-      icon: React.createElement(AvatarBadgeAdmin, null),
+      icon: React.createElement(AvatarBadgeAdmin$1, null),
       title: 'Community Admin'
     },
     'content-moderator': {
-      icon: React.createElement(AvatarBadgeContentModerator, null),
+      icon: React.createElement(AvatarBadgeContentModerator$1, null),
       title: 'Content Moderator'
     },
     'discussion-moderator': {
-      icon: React.createElement(AvatarBadgeDiscussionModerator, null),
+      icon: React.createElement(AvatarBadgeDiscussionModerator$1, null),
       title: 'Discussions Moderator'
     },
     'global-discussions-moderator': {
-      icon: React.createElement(AvatarBadgeGlobalDiscussionsModerator, null),
+      icon: React.createElement(AvatarBadgeGlobalDiscussionsModerator$1, null),
       title: 'Global Discussions Moderator'
     },
     helper: {
-      icon: React.createElement(AvatarBadgeHelper, null),
+      icon: React.createElement(AvatarBadgeHelper$1, null),
       title: 'FANDOM Helper'
     },
     staff: {
-      icon: React.createElement(AvatarBadgeStaff, null),
+      icon: React.createElement(AvatarBadgeStaff$1, null),
       title: 'FANDOM Staff'
     },
     vstf: {
-      icon: React.createElement(AvatarBadgeVstf, null),
+      icon: React.createElement(AvatarBadgeVstf$1, null),
       title: 'VSTF'
     }
   };

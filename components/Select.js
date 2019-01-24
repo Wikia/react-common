@@ -169,6 +169,11 @@ var IconMagnifyingGlass = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconMagnifyingGlass$1 = (function (props) {
+  return React.createElement(IconMagnifyingGlass, props);
+});
 
 var _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -184,15 +189,20 @@ var IconDropdown = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconDropdown$1 = (function (props) {
+  return React.createElement(IconDropdown, props);
+});
 
 var SearchDropdownIndicator = function SearchDropdownIndicator(props) {
-  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconMagnifyingGlass, {
+  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconMagnifyingGlass$1, {
     className: "search-dropdown-indicator"
   }));
 };
 var DefaultDropdownIndicator = function DefaultDropdownIndicator(props) {
   var className = ['default-dropdown-indicator', props.isFocused ? 'is-focused' : undefined].filter(Boolean).join(' ');
-  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconDropdown, {
+  return React.createElement(ReactSelect.components.DropdownIndicator, props, React.createElement(IconDropdown$1, {
     className: className
   }));
 };

@@ -19,6 +19,11 @@ var IconCrossTiny = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconCrossTiny$1 = (function (props) {
+  return React.createElement(IconCrossTiny, props);
+});
 
 var _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -34,6 +39,11 @@ var IconErrorSmall = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconErrorSmall$1 = (function (props) {
+  return React.createElement(IconErrorSmall, props);
+});
 
 var _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -49,6 +59,11 @@ var IconAlertSmall = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconAlertSmall$1 = (function (props) {
+  return React.createElement(IconAlertSmall, props);
+});
 
 var _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -64,6 +79,11 @@ var IconCheckmarkCircleSmall = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconCheckmarkCircleSmall$1 = (function (props) {
+  return React.createElement(IconCheckmarkCircleSmall, props);
+});
 
 var _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -79,26 +99,31 @@ var IconFlagSmall = ((_ref) => {
 });
 
 // This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var IconFlagSmall$1 = (function (props) {
+  return React.createElement(IconFlagSmall, props);
+});
 
 function getIcon(type) {
   switch (type) {
     case 'alert':
-      return React.createElement(IconErrorSmall, {
+      return React.createElement(IconErrorSmall$1, {
         className: "wds-banner-notification__icon-mark"
       });
 
     case 'warning':
-      return React.createElement(IconAlertSmall, {
+      return React.createElement(IconAlertSmall$1, {
         className: "wds-banner-notification__icon-mark"
       });
 
     case 'success':
-      return React.createElement(IconCheckmarkCircleSmall, {
+      return React.createElement(IconCheckmarkCircleSmall$1, {
         className: "wds-banner-notification__icon-mark"
       });
 
     default:
-      return React.createElement(IconFlagSmall, {
+      return React.createElement(IconFlagSmall$1, {
         className: "wds-banner-notification__icon-mark"
       });
   }
@@ -136,7 +161,7 @@ var BannerNotification = function BannerNotification(_ref) {
     className: "wds-banner-notification__icon"
   }, getIcon(type)), React.createElement("span", {
     className: "wds-banner-notification__text"
-  }, children || text), React.createElement(IconCrossTiny, {
+  }, children || text), React.createElement(IconCrossTiny$1, {
     className: "wds-banner-notification__close",
     onClick: onClose
   }));
