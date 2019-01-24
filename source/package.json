@@ -82,7 +82,7 @@
     "redux": "^4.0.0",
     "redux-test-utils": "^0.3.0",
     "rimraf": "^2.6.2",
-    "rollup": "^0.66.2",
+    "rollup": "^0.68.0",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
