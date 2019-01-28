@@ -1,11 +1,6 @@
 const babelConfig = require('./babel.config');
 
 module.exports = () => {
-    /**
-     * DS SVGs have "optimized"/minimized (broken) IDs
-     */
-    const randomStr = (Math.random() * 1e32).toString(36);
-
     return {
         module: {
             rules: [
@@ -34,8 +29,7 @@ module.exports = () => {
                                         {
                                             cleanupIDs: {
                                                 remove: false,
-                                                prefix: `id-${randomStr}-`,
-                                                minify: true,
+                                                minify: false,
                                             },
                                         },
                                     ],
