@@ -12,13 +12,13 @@ var IconPagesSmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 18 18", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
     React.createElement(
-      "g",
-      { fillRule: "evenodd" },
-      React.createElement("path", { d: "M13 0H4a1 1 0 1 0 0 2h8v10a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1z" }),
-      React.createElement("path", { d: "M2 14h6V6H2v8zM9 4H1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z" })
-    )
+      "defs",
+      null,
+      React.createElement("path", { id: "pages-small", d: "M3 16h8V6H3v10zm9-12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10zm4-4a1 1 0 0 1 1 1v12a1 1 0 1 1-2 0V2H6a1 1 0 1 1 0-2h10z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pages-small" })
   );
 });
 

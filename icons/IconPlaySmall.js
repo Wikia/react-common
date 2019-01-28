@@ -12,8 +12,13 @@ var IconPlaySmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M14.767 9.437L3.858 16.903a.553.553 0 0 1-.565.037.531.531 0 0 1-.293-.473V1.533c0-.199.113-.381.293-.473a.557.557 0 0 1 .565.036l10.91 7.467A.53.53 0 0 1 15 9a.53.53 0 0 1-.233.437z" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "play-small", d: "M4 5.5v7L12.4 9 4 5.5zM3 15a1.002 1.002 0 0 1-1-1V4a1.001 1.001 0 0 1 1.385-.922l12 5a1 1 0 0 1 0 1.846l-12 5A.995.995 0 0 1 3 15z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#play-small" })
   );
 });
 

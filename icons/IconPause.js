@@ -12,13 +12,13 @@ var IconPause = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
     React.createElement(
-      "g",
-      { fillRule: "evenodd" },
-      React.createElement("rect", { width: "7", height: "22", rx: "1", x: "3", y: "1" }),
-      React.createElement("rect", { x: "14", width: "7", height: "22", rx: "1", y: "1" })
-    )
+      "defs",
+      null,
+      React.createElement("path", { id: "pause-a", d: "M8 1a1 1 0 0 0-1 1v20a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1m8 0a1 1 0 0 0-1 1v20a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pause-a" })
   );
 });
 

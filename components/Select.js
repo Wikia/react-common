@@ -3,9 +3,9 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var PropTypes = _interopDefault(require('prop-types'));
 var ReactSelect = require('react-select');
 var ReactSelect__default = _interopDefault(ReactSelect);
-var PropTypes = _interopDefault(require('prop-types'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -158,13 +158,8 @@ var IconMagnifyingGlass = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$1({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement(
-      "g",
-      { fillRule: "evenodd" },
-      React.createElement("path", { d: "M21.747 20.524l-4.872-4.871a.864.864 0 1 0-1.222 1.222l4.871 4.872a.864.864 0 1 0 1.223-1.223z" }),
-      React.createElement("path", { d: "M3.848 10.763a6.915 6.915 0 0 1 6.915-6.915 6.915 6.915 0 0 1 6.915 6.915 6.915 6.915 0 0 1-6.915 6.915 6.915 6.915 0 0 1-6.915-6.915zm-1.729 0a8.643 8.643 0 0 0 8.644 8.644 8.643 8.643 0 0 0 8.644-8.644 8.643 8.643 0 0 0-8.644-8.644 8.643 8.643 0 0 0-8.644 8.644z" })
-    )
+    _extends$1({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
+    React.createElement("path", { d: "M10.5 18C6.364 18 3 14.636 3 10.5S6.364 3 10.5 3 18 6.364 18 10.5 14.636 18 10.5 18m12.207 3.293l-4.823-4.822A9.455 9.455 0 0 0 20 10.5C20 5.262 15.738 1 10.5 1S1 5.262 1 10.5 5.262 20 10.5 20c2.26 0 4.338-.793 5.97-2.115l4.823 4.822a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414" })
   );
 });
 
@@ -183,8 +178,13 @@ var IconDropdown = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends$2({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M7 8h10l-5 6z" })
+    _extends$2({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "dropdown-a", d: "M12.71 18.707a1 1 0 0 1-1.415 0l-10-10C.665 8.077 1.11 7 2.002 7h20c.89 0 1.337 1.077.707 1.707l-10 10z" })
+    ),
+    React.createElement("use", { xlinkHref: "#dropdown-a" })
   );
 });
 

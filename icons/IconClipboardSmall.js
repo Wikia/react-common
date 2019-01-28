@@ -12,8 +12,13 @@ var IconClipboardSmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 19 18", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M7.3 12.7l-2-2c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L8 10.6l3.3-3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4 4c-.4.4-.9.5-1.4 0zM16 2h-3v2h2v11H3V4h2V2H2c-.6 0-1 .4-1 1v13c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zM6 1h6v4H6V1z", fillRule: "evenodd" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "clipboard-small", d: "M12 4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1H3v11h12V4h-3zm0-2h4a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm-4 8.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L8 10.586z" })
+    ),
+    React.createElement("use", { xlinkHref: "#clipboard-small" })
   );
 });
 

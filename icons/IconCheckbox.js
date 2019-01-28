@@ -12,8 +12,13 @@ var IconCheckbox = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M17.03 9.53l-6 6a.748.748 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l2.47 2.47 5.47-5.47a.75.75 0 1 1 1.06 1.06M20.25 3H3.75a.75.75 0 0 0-.75.75v16.5c0 .414.335.75.75.75h16.5a.75.75 0 0 0 .75-.75V3.75a.75.75 0 0 0-.75-.75", fillRule: "evenodd" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "check-box-a", d: "M9.293 15.707a.997.997 0 0 0 1.414 0l7-7a.999.999 0 1 0-1.414-1.414L10 13.586l-2.293-2.293a.999.999 0 1 0-1.414 1.414l3 3zM3 21h18V3H3v18zM22 1H2a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#check-box-a" })
   );
 });
 

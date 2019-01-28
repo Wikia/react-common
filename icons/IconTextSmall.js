@@ -12,8 +12,13 @@ var IconTextSmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 18 18", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M9 1H2v4h1l.724-1.447A1 1 0 0 1 4.618 3H8v11.28a1 1 0 0 1-.684.948L5 16v1h8v-1l-2.316-.772a1 1 0 0 1-.684-.949V3h3.382a1 1 0 0 1 .894.553L15 5h1V1H9z", fillRule: "evenodd" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "text-small", d: "M11 17H7a1 1 0 1 1 0-2h1V4H5a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0h-3v11h1a1 1 0 1 1 0 2" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#text-small" })
   );
 });
 

@@ -2,8 +2,8 @@
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var PropTypes = _interopDefault(require('prop-types'));
 var React = _interopDefault(require('react'));
+var PropTypes = _interopDefault(require('prop-types'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {

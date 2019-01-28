@@ -12,8 +12,13 @@ var IconDropdownTiny = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 12 12", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M6 9l4-5H2", fillRule: "evenodd" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 12 12" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "dropdown-tiny", d: "M6 10a.997.997 0 0 1-.707-.293l-4-4A1 1 0 0 1 2 4h8a1 1 0 0 1 .707 1.707l-4 4A.997.997 0 0 1 6 10z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#dropdown-tiny" })
   );
 });
 
