@@ -16,9 +16,9 @@ var IconParagraphTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "paragraph-tiny", d: "M3 3a1.001 1.001 0 0 0 0 2V3zm5 8a1 1 0 0 1-1-1V3H5v7a1 1 0 1 1-2 0V7C1.346 7 0 5.654 0 4s1.346-3 3-3h7a1 1 0 1 1 0 2H9v7a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconParagraphTiny-a", d: "M3 3a1.001 1.001 0 0 0 0 2V3zm5 8a1 1 0 0 1-1-1V3H5v7a1 1 0 1 1-2 0V7C1.346 7 0 5.654 0 4s1.346-3 3-3h7a1 1 0 1 1 0 2H9v7a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#paragraph-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconParagraphTiny-a" })
   );
 });
 

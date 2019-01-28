@@ -16,9 +16,9 @@ var IconCheckboxEmptyTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "check-box-empty-tiny", d: "M2 10h8V2H2v8zm9 2H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconCheckboxEmptyTiny-a", d: "M2 10h8V2H2v8zm9 2H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#check-box-empty-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCheckboxEmptyTiny-a" })
   );
 });
 

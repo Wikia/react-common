@@ -16,9 +16,9 @@ var IconGripperSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "gripper-small", d: "M16 11a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2h14zM2 7a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H2z" })
+      React.createElement("path", { id: "id-icons/IconGripperSmall-a", d: "M16 11a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2h14zM2 7a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H2z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#gripper-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconGripperSmall-a" })
   );
 });
 

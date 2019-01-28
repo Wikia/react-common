@@ -16,9 +16,9 @@ var IconWatch = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "watch-a", d: "M18 11h-5V6a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2m-6 11C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m0-22C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0" })
+      React.createElement("path", { id: "id-icons/IconWatch-a", d: "M18 11h-5V6a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2m-6 11C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m0-22C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#watch-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconWatch-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconPages = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "pages-a", d: "M4 22h12V7H4v15zM17 5H3a1 1 0 0 0-1 1v17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm5-5H8a1 1 0 1 0 0 2h13v16a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1" })
+      React.createElement("path", { id: "id-icons/IconPages-a", d: "M4 22h12V7H4v15zM17 5H3a1 1 0 0 0-1 1v17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm5-5H8a1 1 0 1 0 0 2h13v16a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pages-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPages-a" })
   );
 });
 

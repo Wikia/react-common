@@ -16,9 +16,9 @@ var IconH2Tiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "h2-tiny", d: "M5 0a1 1 0 0 1 1 1v10a1 1 0 0 1-2 0V7H2v4a1 1 0 0 1-2 0V1a1 1 0 0 1 2 0v4h2V1a1 1 0 0 1 1-1zm4.5 7a.5.5 0 0 0-.5.5V10h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1V7.5C7 6.122 8.122 5 9.5 5a.5.5 0 0 0 .5-.5V3c0-.552-.449-1-1-1H8a1 1 0 0 1 0-2h1c1.654 0 3 1.346 3 3v1.5C12 5.878 10.878 7 9.5 7z" })
+      React.createElement("path", { id: "id-icons/IconH2Tiny-a", d: "M5 0a1 1 0 0 1 1 1v10a1 1 0 0 1-2 0V7H2v4a1 1 0 0 1-2 0V1a1 1 0 0 1 2 0v4h2V1a1 1 0 0 1 1-1zm4.5 7a.5.5 0 0 0-.5.5V10h2a1 1 0 0 1 0 2H8a1 1 0 0 1-1-1V7.5C7 6.122 8.122 5 9.5 5a.5.5 0 0 0 .5-.5V3c0-.552-.449-1-1-1H8a1 1 0 0 1 0-2h1c1.654 0 3 1.346 3 3v1.5C12 5.878 10.878 7 9.5 7z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#h2-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconH2Tiny-a" })
   );
 });
 

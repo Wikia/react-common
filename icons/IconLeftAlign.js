@@ -16,9 +16,9 @@ var IconLeftAlign = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "left-align-a", d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m10 16H3a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m8-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconLeftAlign-a", d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m10 16H3a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2m8-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#left-align-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconLeftAlign-a" })
   );
 });
 

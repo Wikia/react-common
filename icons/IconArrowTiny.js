@@ -16,9 +16,9 @@ var IconArrowTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "aarow-tiny", d: "M5 11a.997.997 0 0 1-.707-.293l-4-4A.983.983 0 0 1 0 6.003v-.006a.988.988 0 0 1 .293-.704l4-4a.999.999 0 1 1 1.414 1.414L3.414 5H11a1 1 0 1 1 0 2H3.414l2.293 2.293A.999.999 0 0 1 5 11" })
+      React.createElement("path", { id: "id-icons/IconArrowTiny-a", d: "M5 11a.997.997 0 0 1-.707-.293l-4-4A.983.983 0 0 1 0 6.003v-.006a.988.988 0 0 1 .293-.704l4-4a.999.999 0 1 1 1.414 1.414L3.414 5H11a1 1 0 1 1 0 2H3.414l2.293 2.293A.999.999 0 0 1 5 11" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#aarow-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconArrowTiny-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconRefresh = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "reload-a", d: "M12 24C5.935 24 1 19.065 1 13S5.935 2 12 2c3.052 0 5.943 1.281 8 3.453V2a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.707A9.035 9.035 0 0 0 12 4c-4.963 0-9 4.037-9 9s4.037 9 9 9a8.966 8.966 0 0 0 8.956-8.099 1 1 0 1 1 1.99.198A10.957 10.957 0 0 1 12 24" })
+      React.createElement("path", { id: "id-icons/IconRefresh-a", d: "M12 24C5.935 24 1 19.065 1 13S5.935 2 12 2c3.052 0 5.943 1.281 8 3.453V2a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.707A9.035 9.035 0 0 0 12 4c-4.963 0-9 4.037-9 9s4.037 9 9 9a8.966 8.966 0 0 0 8.956-8.099 1 1 0 1 1 1.99.198A10.957 10.957 0 0 1 12 24" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#reload-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconRefresh-a" })
   );
 });
 

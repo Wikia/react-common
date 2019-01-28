@@ -16,9 +16,9 @@ var IconArrow = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "arrow-a", d: "M23 11H3.414l7.293-7.293a.999.999 0 1 0-1.414-1.414l-9 9a.983.983 0 0 0-.293.704v.006a.988.988 0 0 0 .293.704l9 9a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L3.414 13H23a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconArrow-a", d: "M23 11H3.414l7.293-7.293a.999.999 0 1 0-1.414-1.414l-9 9a.983.983 0 0 0-.293.704v.006a.988.988 0 0 0 .293.704l9 9a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L3.414 13H23a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#arrow-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconArrow-a" })
   );
 });
 

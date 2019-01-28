@@ -16,9 +16,9 @@ var IconTagTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "tag-tiny", d: "M10 5.586l-4 4L2.414 6l4-4H10v3.586zM11 0H6a1 1 0 0 0-.707.293l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0l5-5A.997.997 0 0 0 12 6V1a1 1 0 0 0-1-1zM8 4.988c.26 0 .52-.11.71-.29.18-.189.29-.45.29-.71 0-.26-.11-.52-.29-.71-.38-.37-1.05-.37-1.42 0-.18.19-.29.45-.29.71 0 .26.11.521.29.71.19.18.45.29.71.29" })
+      React.createElement("path", { id: "id-icons/IconTagTiny-a", d: "M10 5.586l-4 4L2.414 6l4-4H10v3.586zM11 0H6a1 1 0 0 0-.707.293l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0l5-5A.997.997 0 0 0 12 6V1a1 1 0 0 0-1-1zM8 4.988c.26 0 .52-.11.71-.29.18-.189.29-.45.29-.71 0-.26-.11-.52-.29-.71-.38-.37-1.05-.37-1.42 0-.18.19-.29.45-.29.71 0 .26.11.521.29.71.19.18.45.29.71.29" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#tag-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTagTiny-a" })
   );
 });
 

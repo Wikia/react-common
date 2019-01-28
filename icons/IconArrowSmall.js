@@ -16,9 +16,9 @@ var IconArrowSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "arrow-small", d: "M8 17a.997.997 0 0 1-.707-.293l-7-7A.983.983 0 0 1 0 9.003v-.006a.988.988 0 0 1 .293-.704l7-7a.999.999 0 1 1 1.414 1.414L3.414 8H17a1 1 0 1 1 0 2H3.414l5.293 5.293A.999.999 0 0 1 8 17" })
+      React.createElement("path", { id: "id-icons/IconArrowSmall-a", d: "M8 17a.997.997 0 0 1-.707-.293l-7-7A.983.983 0 0 1 0 9.003v-.006a.988.988 0 0 1 .293-.704l7-7a.999.999 0 1 1 1.414 1.414L3.414 8H17a1 1 0 1 1 0 2H3.414l5.293 5.293A.999.999 0 0 1 8 17" })
     ),
-    React.createElement("use", { xlinkHref: "#arrow-small" })
+    React.createElement("use", { xlinkHref: "#id-icons/IconArrowSmall-a" })
   );
 });
 

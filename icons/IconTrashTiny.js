@@ -16,9 +16,9 @@ var IconTrashTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "trash-tiny", d: "M10 4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v5h2V5a1 1 0 0 1 2 0v5h2V5a1 1 0 0 1 1-1zm1-3a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2h3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3z" })
+      React.createElement("path", { id: "id-icons/IconTrashTiny-a", d: "M10 4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v5h2V5a1 1 0 0 1 2 0v5h2V5a1 1 0 0 1 1-1zm1-3a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2h3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#trash-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTrashTiny-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconCalendarTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "calendar-tiny", d: "M2 5h8V3H9a1 1 0 1 1-2 0H5a1 1 0 1 1-2 0H2v2zm0 5h8V7H2v3zm9 2H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2a1 1 0 0 1 2 0h2a1 1 0 0 1 2 0h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconCalendarTiny-a", d: "M2 5h8V3H9a1 1 0 1 1-2 0H5a1 1 0 1 1-2 0H2v2zm0 5h8V7H2v3zm9 2H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2a1 1 0 0 1 2 0h2a1 1 0 0 1 2 0h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#calendar-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCalendarTiny-a" })
   );
 });
 

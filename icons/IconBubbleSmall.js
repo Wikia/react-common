@@ -16,9 +16,9 @@ var IconBubbleSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "bubble-small", d: "M15 10c0 .551-.449 1-1 1H9a.997.997 0 0 0-.707.293L6 13.586V12a1 1 0 0 0-1-1H4c-.551 0-1-.449-1-1V4c0-.551.449-1 1-1h10c.551 0 1 .449 1 1v6zm-1-9H4C2.346 1 1 2.346 1 4v6c0 1.654 1.346 3 3 3v3a1 1 0 0 0 1.707.707L9.414 13H14c1.654 0 3-1.346 3-3V4c0-1.654-1.346-3-3-3zm-2 5H6a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconBubbleSmall-a", d: "M15 10c0 .551-.449 1-1 1H9a.997.997 0 0 0-.707.293L6 13.586V12a1 1 0 0 0-1-1H4c-.551 0-1-.449-1-1V4c0-.551.449-1 1-1h10c.551 0 1 .449 1 1v6zm-1-9H4C2.346 1 1 2.346 1 4v6c0 1.654 1.346 3 3 3v3a1 1 0 0 0 1.707.707L9.414 13H14c1.654 0 3-1.346 3-3V4c0-1.654-1.346-3-3-3zm-2 5H6a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#bubble-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBubbleSmall-a" })
   );
 });
 

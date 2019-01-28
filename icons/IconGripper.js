@@ -16,9 +16,9 @@ var IconGripper = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "gripper-a", d: "M2 9h20a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m20 6H2a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconGripper-a", d: "M2 9h20a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m20 6H2a1 1 0 1 0 0 2h20a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#gripper-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconGripper-a" })
   );
 });
 

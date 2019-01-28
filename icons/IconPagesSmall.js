@@ -16,9 +16,9 @@ var IconPagesSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "pages-small", d: "M3 16h8V6H3v10zm9-12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10zm4-4a1 1 0 0 1 1 1v12a1 1 0 1 1-2 0V2H6a1 1 0 1 1 0-2h10z" })
+      React.createElement("path", { id: "id-icons/IconPagesSmall-a", d: "M3 16h8V6H3v10zm9-12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10zm4-4a1 1 0 0 1 1 1v12a1 1 0 1 1-2 0V2H6a1 1 0 1 1 0-2h10z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pages-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPagesSmall-a" })
   );
 });
 

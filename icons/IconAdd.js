@@ -16,9 +16,9 @@ var IconAdd = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "add-a", d: "M22 11h-9V2a1 1 0 1 0-2 0v9H2a1 1 0 1 0 0 2h9v9a1 1 0 1 0 2 0v-9h9a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconAdd-a", d: "M22 11h-9V2a1 1 0 1 0-2 0v9H2a1 1 0 1 0 0 2h9v9a1 1 0 1 0 2 0v-9h9a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#add-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconAdd-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconBoldTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "bold-tiny", d: "M4 4h2a1.001 1.001 0 0 0 0-2H4v2zm0 6h3c1.103 0 2-.896 2-2 0-1.103-.897-2-2-2H4v4zm3 2H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h3a3.004 3.004 0 0 1 2.671 4.366A4.007 4.007 0 0 1 11 8c0 2.206-1.794 4-4 4z" })
+      React.createElement("path", { id: "id-icons/IconBoldTiny-a", d: "M4 4h2a1.001 1.001 0 0 0 0-2H4v2zm0 6h3c1.103 0 2-.896 2-2 0-1.103-.897-2-2-2H4v4zm3 2H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h3a3.004 3.004 0 0 1 2.671 4.366A4.007 4.007 0 0 1 11 8c0 2.206-1.794 4-4 4z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#bold-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBoldTiny-a" })
   );
 });
 

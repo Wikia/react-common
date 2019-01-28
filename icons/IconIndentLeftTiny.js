@@ -16,9 +16,9 @@ var IconIndentLeftTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "indent-left-tiny", d: "M7 5a1 1 0 1 1 0 2H3.414l1.293 1.293a.999.999 0 1 1-1.414 1.414l-3-3A1.003 1.003 0 0 1 0 6.003v-.006a.988.988 0 0 1 .293-.704l3-3a.999.999 0 1 1 1.414 1.414L3.414 5H7zm4-4a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1z" })
+      React.createElement("path", { id: "id-icons/IconIndentLeftTiny-a", d: "M7 5a1 1 0 1 1 0 2H3.414l1.293 1.293a.999.999 0 1 1-1.414 1.414l-3-3A1.003 1.003 0 0 1 0 6.003v-.006a.988.988 0 0 1 .293-.704l3-3a.999.999 0 1 1 1.414 1.414L3.414 5H7zm4-4a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#indent-left-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconIndentLeftTiny-a" })
   );
 });
 

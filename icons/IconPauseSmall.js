@@ -16,9 +16,9 @@ var IconPauseSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "pause-small", d: "M12 1a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1zM6 1a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1z" })
+      React.createElement("path", { id: "id-icons/IconPauseSmall-a", d: "M12 1a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1zM6 1a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pause-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPauseSmall-a" })
   );
 });
 

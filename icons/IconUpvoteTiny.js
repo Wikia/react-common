@@ -16,9 +16,9 @@ var IconUpvoteTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "upvote-tiny", d: "M6 2C3.794 2 2 3.794 2 6s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4m0 10c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6m-.5-6.792l-.146.146a.502.502 0 0 1-.708 0 .502.502 0 0 1 0-.708l1-1a.502.502 0 0 1 .708 0l1 1a.502.502 0 0 1-.708.708L6.5 5.208V8a.5.5 0 0 1-1 0V5.208z" })
+      React.createElement("path", { id: "id-icons/IconUpvoteTiny-a", d: "M6 2C3.794 2 2 3.794 2 6s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4m0 10c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6m-.5-6.792l-.146.146a.502.502 0 0 1-.708 0 .502.502 0 0 1 0-.708l1-1a.502.502 0 0 1 .708 0l1 1a.502.502 0 0 1-.708.708L6.5 5.208V8a.5.5 0 0 1-1 0V5.208z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#upvote-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUpvoteTiny-a" })
   );
 });
 

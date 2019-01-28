@@ -16,9 +16,9 @@ var IconDownloadSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "download-small", d: "M16 12a1 1 0 0 0-1 1v2H3v-2a1 1 0 1 0-2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1m-7.707.707a1.009 1.009 0 0 0 .704.293h.006a.988.988 0 0 0 .704-.293l5-5a.999.999 0 1 0-1.414-1.414L10 9.586V2a1 1 0 1 0-2 0v7.586L4.707 6.293a.999.999 0 1 0-1.414 1.414l5 5z" })
+      React.createElement("path", { id: "id-icons/IconDownloadSmall-a", d: "M16 12a1 1 0 0 0-1 1v2H3v-2a1 1 0 1 0-2 0v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1m-7.707.707a1.009 1.009 0 0 0 .704.293h.006a.988.988 0 0 0 .704-.293l5-5a.999.999 0 1 0-1.414-1.414L10 9.586V2a1 1 0 1 0-2 0v7.586L4.707 6.293a.999.999 0 1 0-1.414 1.414l5 5z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#download-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconDownloadSmall-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconText = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "text-a", d: "M21 0H3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V2h7v20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3V2h7v2a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1" })
+      React.createElement("path", { id: "id-icons/IconText-a", d: "M21 0H3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V2h7v20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3V2h7v2a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#text-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconText-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconRadioActiveSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "radio-active-small", d: "M9 15c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6M9 1C4.589 1 1 4.589 1 9s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8m0 5C7.346 6 6 7.346 6 9s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3" })
+      React.createElement("path", { id: "id-icons/IconRadioActiveSmall-a", d: "M9 15c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6M9 1C4.589 1 1 4.589 1 9s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8m0 5C7.346 6 6 7.346 6 9s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#radio-active-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconRadioActiveSmall-a" })
   );
 });
 

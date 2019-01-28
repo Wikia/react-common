@@ -16,9 +16,9 @@ var IconAddSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "add-small", d: "M16 8h-6V2a1 1 0 1 0-2 0v6H2a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconAddSmall-a", d: "M16 8h-6V2a1 1 0 1 0-2 0v6H2a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#add-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconAddSmall-a" })
   );
 });
 

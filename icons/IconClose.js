@@ -16,9 +16,9 @@ var IconClose = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "close-a", d: "M22.083 23a.914.914 0 0 1-.648-.269l-9.485-9.485-9.385 9.385a.917.917 0 0 1-1.296-1.297l9.384-9.384L1.37 2.666a.917.917 0 0 1 1.297-1.297l9.284 9.283 9.384-9.383a.916.916 0 1 1 1.297 1.296l-9.385 9.385 9.485 9.485A.916.916 0 0 1 22.083 23" })
+      React.createElement("path", { id: "id-icons/IconClose-a", d: "M22.083 23a.914.914 0 0 1-.648-.269l-9.485-9.485-9.385 9.385a.917.917 0 0 1-1.296-1.297l9.384-9.384L1.37 2.666a.917.917 0 0 1 1.297-1.297l9.284 9.283 9.384-9.383a.916.916 0 1 1 1.297 1.296l-9.385 9.385 9.485 9.485A.916.916 0 0 1 22.083 23" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#close-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconClose-a" })
   );
 });
 

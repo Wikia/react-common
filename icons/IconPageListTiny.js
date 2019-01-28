@@ -16,9 +16,9 @@ var IconPageListTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "page-list-tiny", d: "M4 7a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm0-7a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h3zm4 2a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2H8zm3 3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3zm0 5a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3z" })
+      React.createElement("path", { id: "id-icons/IconPageListTiny-a", d: "M4 7a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3zm0-7a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h3zm4 2a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2H8zm3 3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3zm0 5a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#page-list-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPageListTiny-a" })
   );
 });
 

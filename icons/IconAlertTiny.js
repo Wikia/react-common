@@ -16,9 +16,9 @@ var IconAlertTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "alert-tiny", d: "M7 9.993c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004H2.618L6 3.203l3.382 6.79H7zm4.895.555L6.895.51c-.34-.68-1.45-.68-1.79 0l-5 10.038A1.002 1.002 0 0 0 1 12h10a1.002 1.002 0 0 0 .895-1.452zM5 5.978V6.98c0 .554.447 1.004 1 1.004.553 0 1-.45 1-1.004V5.978c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004" })
+      React.createElement("path", { id: "id-icons/IconAlertTiny-a", d: "M7 9.993c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004H2.618L6 3.203l3.382 6.79H7zm4.895.555L6.895.51c-.34-.68-1.45-.68-1.79 0l-5 10.038A1.002 1.002 0 0 0 1 12h10a1.002 1.002 0 0 0 .895-1.452zM5 5.978V6.98c0 .554.447 1.004 1 1.004.553 0 1-.45 1-1.004V5.978c0-.554-.447-1.004-1-1.004-.553 0-1 .45-1 1.004" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#alert-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconAlertTiny-a" })
   );
 });
 

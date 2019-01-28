@@ -16,9 +16,9 @@ var IconCameraTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "camera-tiny", d: "M10 10H2V5c.266 0 .52-.105.707-.293L5.414 2h1.172l2.707 2.707A.996.996 0 0 0 10 5v5zm1-7h-.586L7.707.293A.996.996 0 0 0 7 0H5a.996.996 0 0 0-.707.293L1.586 3H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM1.005 2a1 1 0 1 0 0-2h-.01A.996.996 0 0 0 0 1c0 .552.453 1 1.005 1m5 4C5.452 6 5 6.453 5 7.005c0 .552.452 1.005 1.005 1.005.553 0 1.005-.453 1.005-1.005C7.01 6.453 6.558 6 6.005 6" })
+      React.createElement("path", { id: "id-icons/IconCameraTiny-a", d: "M10 10H2V5c.266 0 .52-.105.707-.293L5.414 2h1.172l2.707 2.707A.996.996 0 0 0 10 5v5zm1-7h-.586L7.707.293A.996.996 0 0 0 7 0H5a.996.996 0 0 0-.707.293L1.586 3H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM1.005 2a1 1 0 1 0 0-2h-.01A.996.996 0 0 0 0 1c0 .552.453 1 1.005 1m5 4C5.452 6 5 6.453 5 7.005c0 .552.452 1.005 1.005 1.005.553 0 1.005-.453 1.005-1.005C7.01 6.453 6.558 6 6.005 6" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#camera-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCameraTiny-a" })
   );
 });
 

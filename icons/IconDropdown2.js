@@ -16,9 +16,9 @@ var IconDropdown2 = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "dropdown2-a", d: "M12 19a.997.997 0 0 1-.707-.293l-11-11a.999.999 0 1 1 1.414-1.414L12 16.586 22.293 6.293a.999.999 0 1 1 1.414 1.414l-11 11A.997.997 0 0 1 12 19" })
+      React.createElement("path", { id: "id-icons/IconDropdown2-a", d: "M12 19a.997.997 0 0 1-.707-.293l-11-11a.999.999 0 1 1 1.414-1.414L12 16.586 22.293 6.293a.999.999 0 1 1 1.414 1.414l-11 11A.997.997 0 0 1 12 19" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#dropdown2-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconDropdown2-a" })
   );
 });
 

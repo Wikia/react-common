@@ -16,9 +16,9 @@ var IconFacebookSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "facebook-small", d: "M12.81 3.746h-1.43c-1.143 0-1.333.568-1.333 1.325V6.87h2.762l-.286 2.84h-2.286V17H7.381V9.71H5V6.87h2.381V4.787C7.381 2.42 8.81 1 10.905 1c.952 0 1.81.095 2.095.095v2.65h-.19z" })
+      React.createElement("path", { id: "id-icons/IconFacebookSmall-a", d: "M12.81 3.746h-1.43c-1.143 0-1.333.568-1.333 1.325V6.87h2.762l-.286 2.84h-2.286V17H7.381V9.71H5V6.87h2.381V4.787C7.381 2.42 8.81 1 10.905 1c.952 0 1.81.095 2.095.095v2.65h-.19z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#facebook-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconFacebookSmall-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconItalicsSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "italics-small", d: "M7.1 17H4a1 1 0 1 1 0-2h2.432l4.552-11H9a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2h-1.851L8.597 15H11a1 1 0 1 1 0 2H7.1z" })
+      React.createElement("path", { id: "id-icons/IconItalicsSmall-a", d: "M7.1 17H4a1 1 0 1 1 0-2h2.432l4.552-11H9a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2h-1.851L8.597 15H11a1 1 0 1 1 0 2H7.1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#italics-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconItalicsSmall-a" })
   );
 });
 

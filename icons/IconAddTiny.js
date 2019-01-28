@@ -16,9 +16,9 @@ var IconAddTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "add-tiny", d: "M6 12a1 1 0 0 1-1-1V7H1a1 1 0 1 1 0-2h4V1a1 1 0 0 1 2 0v4h4a1 1 0 0 1 0 2H7v4a1 1 0 0 1-1 1" })
+      React.createElement("path", { id: "id-icons/IconAddTiny-a", d: "M6 12a1 1 0 0 1-1-1V7H1a1 1 0 1 1 0-2h4V1a1 1 0 0 1 2 0v4h4a1 1 0 0 1 0 2H7v4a1 1 0 0 1-1 1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#add-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconAddTiny-a" })
   );
 });
 

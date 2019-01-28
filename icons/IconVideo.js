@@ -16,9 +16,9 @@ var IconVideo = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "video-a", d: "M2 18h12v-2.73a.999.999 0 0 1 1.423-.907L22 17.43V6.57l-6.577 3.067A1 1 0 0 1 14 8.73V6H2v12zm21 2a.998.998 0 0 1-.423-.094L16 16.84V19a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2.16l6.577-3.066A1 1 0 0 1 24 5v14a1.002 1.002 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconVideo-a", d: "M2 18h12v-2.73a.999.999 0 0 1 1.423-.907L22 17.43V6.57l-6.577 3.067A1 1 0 0 1 14 8.73V6H2v12zm21 2a.998.998 0 0 1-.423-.094L16 16.84V19a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2.16l6.577-3.066A1 1 0 0 1 24 5v14a1.002 1.002 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#video-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconVideo-a" })
   );
 });
 

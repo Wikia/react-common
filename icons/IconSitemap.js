@@ -16,9 +16,9 @@ var IconSitemap = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "sitemap-a", d: "M3 18.5a1 1 0 0 0 1-1V13h7v4.5a1 1 0 1 0 2 0V13h7v4.5a1 1 0 1 0 2 0V12a1 1 0 0 0-1-1h-8V6.5a1 1 0 1 0-2 0V11H3a1 1 0 0 0-1 1v5.5a1 1 0 0 0 1 1M10 2h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2M5 22H1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m18 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m-9 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconSitemap-a", d: "M3 18.5a1 1 0 0 0 1-1V13h7v4.5a1 1 0 1 0 2 0V13h7v4.5a1 1 0 1 0 2 0V12a1 1 0 0 0-1-1h-8V6.5a1 1 0 1 0-2 0V11H3a1 1 0 0 0-1 1v5.5a1 1 0 0 0 1 1M10 2h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2M5 22H1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m18 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2m-9 0h-4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#sitemap-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconSitemap-a" })
   );
 });
 

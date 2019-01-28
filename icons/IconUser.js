@@ -16,9 +16,9 @@ var IconUser = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "user-a", d: "M12 3c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m0 8c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5m8 12a1 1 0 0 1-1-1c0-3.86-3.141-7-7-7s-7 3.14-7 7a1 1 0 1 1-2 0c0-4.962 4.037-9 9-9s9 4.038 9 9a1 1 0 0 1-1 1" })
+      React.createElement("path", { id: "id-icons/IconUser-a", d: "M12 3c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m0 8c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5m8 12a1 1 0 0 1-1-1c0-3.86-3.141-7-7-7s-7 3.14-7 7a1 1 0 1 1-2 0c0-4.962 4.037-9 9-9s9 4.038 9 9a1 1 0 0 1-1 1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#user-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUser-a" })
   );
 });
 

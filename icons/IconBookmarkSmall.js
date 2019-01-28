@@ -16,9 +16,9 @@ var IconBookmarkSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "bookmark-small", d: "M14 14.502l-4.616-1.916a1.004 1.004 0 0 0-.768 0L4 14.502V3h10v11.502zM15 1H3a1 1 0 0 0-1 1v14a1.002 1.002 0 0 0 1.384.924L9 14.592l5.616 2.332a1.007 1.007 0 0 0 .94-.092c.277-.185.444-.498.444-.832V2a1 1 0 0 0-1-1zM7 9h1v1a1 1 0 1 0 2 0V9h1a1 1 0 1 0 0-2h-1V6a1 1 0 1 0-2 0v1H7a1 1 0 1 0 0 2" })
+      React.createElement("path", { id: "id-icons/IconBookmarkSmall-a", d: "M14 14.502l-4.616-1.916a1.004 1.004 0 0 0-.768 0L4 14.502V3h10v11.502zM15 1H3a1 1 0 0 0-1 1v14a1.002 1.002 0 0 0 1.384.924L9 14.592l5.616 2.332a1.007 1.007 0 0 0 .94-.092c.277-.185.444-.498.444-.832V2a1 1 0 0 0-1-1zM7 9h1v1a1 1 0 1 0 2 0V9h1a1 1 0 1 0 0-2h-1V6a1 1 0 1 0-2 0v1H7a1 1 0 1 0 0 2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#bookmark-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBookmarkSmall-a" })
   );
 });
 

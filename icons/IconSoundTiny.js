@@ -16,9 +16,9 @@ var IconSoundTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "sound-tiny", d: "M7 8a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1m-4 3a1 1 0 0 1-1-1V9H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h1V2a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1m4 1a1 1 0 0 1 0-2c1.654 0 3-1.346 3-3V5c0-1.654-1.346-3-3-3a1 1 0 0 1 0-2c2.757 0 5 2.243 5 5v2c0 2.757-2.243 5-5 5" })
+      React.createElement("path", { id: "id-icons/IconSoundTiny-a", d: "M7 8a1 1 0 0 1-1-1V5a1 1 0 0 1 2 0v2a1 1 0 0 1-1 1m-4 3a1 1 0 0 1-1-1V9H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h1V2a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1m4 1a1 1 0 0 1 0-2c1.654 0 3-1.346 3-3V5c0-1.654-1.346-3-3-3a1 1 0 0 1 0-2c2.757 0 5 2.243 5 5v2c0 2.757-2.243 5-5 5" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#sound-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconSoundTiny-a" })
   );
 });
 

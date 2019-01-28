@@ -16,9 +16,9 @@ var IconLockTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "lock-tiny", d: "M4 4h4c0-1.103-.897-2-2-2s-2 .897-2 2zm-1 6h6V6H3v4zm7 2H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1c0-2.205 1.794-4 4-4s4 1.795 4 4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconLockTiny-a", d: "M4 4h4c0-1.103-.897-2-2-2s-2 .897-2 2zm-1 6h6V6H3v4zm7 2H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1c0-2.205 1.794-4 4-4s4 1.795 4 4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#lock-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconLockTiny-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconBell = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "bell-a", d: "M15 19a1 1 0 0 0-1 1c0 1.104-.897 2-2 2s-2-.896-2-2a1 1 0 1 0-2 0c0 2.205 1.794 4 4 4s4-1.795 4-4a1 1 0 0 0-1-1m-8.675-5l2.708-9.477A3.496 3.496 0 0 1 12.38 2c1.63 0 3.06 1.156 3.402 2.75L17.763 14H6.325zm11.411-9.668A5.507 5.507 0 0 0 12.38 0a5.505 5.505 0 0 0-5.27 3.975l-3.07 10.75A1 1 0 0 0 5 16h14a1 1 0 0 0 .977-1.209l-2.24-10.459z" })
+      React.createElement("path", { id: "id-icons/IconBell-a", d: "M15 19a1 1 0 0 0-1 1c0 1.104-.897 2-2 2s-2-.896-2-2a1 1 0 1 0-2 0c0 2.205 1.794 4 4 4s4-1.795 4-4a1 1 0 0 0-1-1m-8.675-5l2.708-9.477A3.496 3.496 0 0 1 12.38 2c1.63 0 3.06 1.156 3.402 2.75L17.763 14H6.325zm11.411-9.668A5.507 5.507 0 0 0 12.38 0a5.505 5.505 0 0 0-5.27 3.975l-3.07 10.75A1 1 0 0 0 5 16h14a1 1 0 0 0 .977-1.209l-2.24-10.459z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#bell-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBell-a" })
   );
 });
 

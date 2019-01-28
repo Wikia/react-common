@@ -16,9 +16,9 @@ var IconRadioEmptyTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "radio-empty-tiny", d: "M6 2C3.794 2 2 3.795 2 6c0 2.206 1.794 4 4 4s4-1.794 4-4c0-2.205-1.794-4-4-4m0 10c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6" })
+      React.createElement("path", { id: "id-icons/IconRadioEmptyTiny-a", d: "M6 2C3.794 2 2 3.795 2 6c0 2.206 1.794 4 4 4s4-1.794 4-4c0-2.205-1.794-4-4-4m0 10c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#radio-empty-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconRadioEmptyTiny-a" })
   );
 });
 

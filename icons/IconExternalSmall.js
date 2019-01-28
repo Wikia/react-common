@@ -19,13 +19,13 @@ var IconExternalSmall = ((_ref) => {
       { fill: "none", fillRule: "evenodd" },
       React.createElement(
         "mask",
-        { id: "mask-2", fill: "#fff" },
+        { id: "id-icons/IconExternalSmall-a", fill: "#fff" },
         React.createElement("use", { xlinkHref: "#path-1-small" })
       ),
       React.createElement("use", { fill: "#999", xlinkHref: "#path-1-small" }),
       React.createElement(
         "g",
-        { mask: "url(#mask-2)", fill: "#000" },
+        { mask: "url(#id-icons/IconExternalSmall-a)", fill: "#000" },
         React.createElement("path", { d: "M0 0h18v18H0z" })
       )
     )

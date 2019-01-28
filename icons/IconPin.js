@@ -16,9 +16,9 @@ var IconPin = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "pin-a", d: "M12 14h4V3H8v11h4zm0 9a1 1 0 0 1-1-1v-6H4a1 1 0 1 1 0-2h2V3H4a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2h-2v11h2a1 1 0 1 1 0 2h-7v6a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconPin-a", d: "M12 14h4V3H8v11h4zm0 9a1 1 0 0 1-1-1v-6H4a1 1 0 1 1 0-2h2V3H4a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2h-2v11h2a1 1 0 1 1 0 2h-7v6a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#pin-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPin-a" })
   );
 });
 

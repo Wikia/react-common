@@ -16,9 +16,9 @@ var IconItalics = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "italics-a", d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconItalics-a", d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#italics-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconItalics-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconBoldSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "bold-small", d: "M9.5 15H6v-5h3.5c1.378 0 2.5 1.121 2.5 2.5S10.878 15 9.5 15zM6 4h2c1.103 0 2 .896 2 2s-.897 2-2 2H6V4zm5.236 4.349C11.716 7.688 12 6.877 12 6c0-2.205-1.794-4-4-4H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h4.5c2.481 0 4.5-2.019 4.5-4.5a4.506 4.506 0 0 0-2.764-4.151z" })
+      React.createElement("path", { id: "id-icons/IconBoldSmall-a", d: "M9.5 15H6v-5h3.5c1.378 0 2.5 1.121 2.5 2.5S10.878 15 9.5 15zM6 4h2c1.103 0 2 .896 2 2s-.897 2-2 2H6V4zm5.236 4.349C11.716 7.688 12 6.877 12 6c0-2.205-1.794-4-4-4H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h4.5c2.481 0 4.5-2.019 4.5-4.5a4.506 4.506 0 0 0-2.764-4.151z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#bold-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconBoldSmall-a" })
   );
 });
 

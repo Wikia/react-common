@@ -16,9 +16,9 @@ var IconReplySmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "reply-small", d: "M17 18a1 1 0 0 1-1-1c0-4.963-4.037-9-9-9H3.414l4.293 4.293a.999.999 0 1 1-1.414 1.414l-6-6A.993.993 0 0 1 0 7.003v-.006a.988.988 0 0 1 .293-.704l6-6a.999.999 0 1 1 1.414 1.414L3.414 6H7c6.065 0 11 4.935 11 11a1 1 0 0 1-1 1" })
+      React.createElement("path", { id: "id-icons/IconReplySmall-a", d: "M17 18a1 1 0 0 1-1-1c0-4.963-4.037-9-9-9H3.414l4.293 4.293a.999.999 0 1 1-1.414 1.414l-6-6A.993.993 0 0 1 0 7.003v-.006a.988.988 0 0 1 .293-.704l6-6a.999.999 0 1 1 1.414 1.414L3.414 6H7c6.065 0 11 4.935 11 11a1 1 0 0 1-1 1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#reply-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconReplySmall-a" })
   );
 });
 

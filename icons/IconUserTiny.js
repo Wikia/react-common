@@ -16,9 +16,9 @@ var IconUserTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "user-tiny", d: "M6 5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2m3 6a1 1 0 0 1-1-1c0-1.103-.897-2-2-2s-2 .897-2 2a1 1 0 1 1-2 0c0-2.206 1.794-4 4-4s4 1.794 4 4a1 1 0 0 1-1 1" })
+      React.createElement("path", { id: "id-icons/IconUserTiny-a", d: "M6 5c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2m3 6a1 1 0 0 1-1-1c0-1.103-.897-2-2-2s-2 .897-2 2a1 1 0 1 1-2 0c0-2.206 1.794-4 4-4s4 1.794 4 4a1 1 0 0 1-1 1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#user-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUserTiny-a" })
   );
 });
 

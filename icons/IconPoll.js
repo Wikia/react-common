@@ -16,9 +16,9 @@ var IconPoll = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "poll-a", d: "M17 21h5V10h-5v11zm-7-6V3h5v18h-5v-6zm-7 6h5v-5H3v5zM23 8h-6V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v12H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h21a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
+      React.createElement("path", { id: "id-icons/IconPoll-a", d: "M17 21h5V10h-5v11zm-7-6V3h5v18h-5v-6zm-7 6h5v-5H3v5zM23 8h-6V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v12H2a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h21a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#poll-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPoll-a" })
   );
 });
 

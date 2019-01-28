@@ -16,9 +16,9 @@ var IconControlsTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "controls-tiny", d: "M4 8a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h2a1 1 0 0 1 1-1zM1 3a1 1 0 0 1 0-2h2a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0H1zm10 6a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2h3zM8 3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2H8zm3 1a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h9a1 1 0 0 1 1-1z" })
+      React.createElement("path", { id: "id-icons/IconControlsTiny-a", d: "M4 8a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h2a1 1 0 0 1 1-1zM1 3a1 1 0 0 1 0-2h2a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0H1zm10 6a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2h3zM8 3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2H8zm3 1a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0H1a1 1 0 0 1 0-2h9a1 1 0 0 1 1-1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#controls-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconControlsTiny-a" })
   );
 });
 

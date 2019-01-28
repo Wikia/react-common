@@ -16,9 +16,9 @@ var IconPlaySmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "play-small", d: "M4 5.5v7L12.4 9 4 5.5zM3 15a1.002 1.002 0 0 1-1-1V4a1.001 1.001 0 0 1 1.385-.922l12 5a1 1 0 0 1 0 1.846l-12 5A.995.995 0 0 1 3 15z" })
+      React.createElement("path", { id: "id-icons/IconPlaySmall-a", d: "M4 5.5v7L12.4 9 4 5.5zM3 15a1.002 1.002 0 0 1-1-1V4a1.001 1.001 0 0 1 1.385-.922l12 5a1 1 0 0 1 0 1.846l-12 5A.995.995 0 0 1 3 15z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#play-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPlaySmall-a" })
   );
 });
 

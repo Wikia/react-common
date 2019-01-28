@@ -16,9 +16,9 @@ var IconTrashOpen = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "trash-open-a", d: "M20 8a1 1 0 0 0-1 1v12H5V10.763l15.406-6.847a1 1 0 0 0-.812-1.828l-15.95 7.09a.587.587 0 0 0-.097.043l-1.953.867a1 1 0 0 0 .812 1.828L3 11.65V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1M4.001 6a.987.987 0 0 0 .405-.086l9-4a1 1 0 0 0-.812-1.828l-9 4A1 1 0 0 0 4.001 6m11 5v6a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0m-4 1v5a1 1 0 1 0 2 0v-5a1 1 0 1 0-2 0m-4 1v4a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0" })
+      React.createElement("path", { id: "id-icons/IconTrashOpen-a", d: "M20 8a1 1 0 0 0-1 1v12H5V10.763l15.406-6.847a1 1 0 0 0-.812-1.828l-15.95 7.09a.587.587 0 0 0-.097.043l-1.953.867a1 1 0 0 0 .812 1.828L3 11.65V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1M4.001 6a.987.987 0 0 0 .405-.086l9-4a1 1 0 0 0-.812-1.828l-9 4A1 1 0 0 0 4.001 6m11 5v6a1 1 0 1 0 2 0v-6a1 1 0 1 0-2 0m-4 1v5a1 1 0 1 0 2 0v-5a1 1 0 1 0-2 0m-4 1v4a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#trash-open-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTrashOpen-a" })
   );
 });
 

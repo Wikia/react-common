@@ -16,9 +16,9 @@ var IconVideoSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "video-small", d: "M16 12.504l-4.618-1.908a.997.997 0 0 0-.938.094.998.998 0 0 0-.444.83V13H2V5h8v1.481a1 1 0 0 0 1.382.923L16 5.496v7.008zm1.556-9.335a1 1 0 0 0-.938-.093L12 4.984V4a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-.984l4.618 1.908a.997.997 0 0 0 .938-.093A1 1 0 0 0 18 14V4c0-.334-.167-.645-.444-.831z" })
+      React.createElement("path", { id: "id-icons/IconVideoSmall-a", d: "M16 12.504l-4.618-1.908a.997.997 0 0 0-.938.094.998.998 0 0 0-.444.83V13H2V5h8v1.481a1 1 0 0 0 1.382.923L16 5.496v7.008zm1.556-9.335a1 1 0 0 0-.938-.093L12 4.984V4a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-.984l4.618 1.908a.997.997 0 0 0 .938-.093A1 1 0 0 0 18 14V4c0-.334-.167-.645-.444-.831z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#video-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconVideoSmall-a" })
   );
 });
 

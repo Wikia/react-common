@@ -16,9 +16,9 @@ var IconSitemapSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "sitemap-small", d: "M2 14a1 1 0 0 0 1-1v-3h5v3a1 1 0 1 0 2 0v-3h5v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1h-6V5a1 1 0 1 0-2 0v3H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1M8 2h2a1 1 0 1 0 0-2H8a1 1 0 1 0 0 2M3 16H1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2m14 0h-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2m-7 0H8a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconSitemapSmall-a", d: "M2 14a1 1 0 0 0 1-1v-3h5v3a1 1 0 1 0 2 0v-3h5v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1h-6V5a1 1 0 1 0-2 0v3H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1M8 2h2a1 1 0 1 0 0-2H8a1 1 0 1 0 0 2M3 16H1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2m14 0h-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2m-7 0H8a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#sitemap-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconSitemapSmall-a" })
   );
 });
 

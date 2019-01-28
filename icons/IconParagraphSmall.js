@@ -16,9 +16,9 @@ var IconParagraphSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "paragraph-small", d: "M12 16V3H8C6.667 3 6.667 1 8 1h8c1.333 0 1.333 2 0 2h-2v13c0 1.333-2 1.333-2 0zm-5 0V8c0-1.333 2-1.333 2 0v8c0 1.333-2 1.333-2 0zM7 3H5a2 2 0 1 0 0 4h2V3zM5 1h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a4 4 0 1 1 0-8z" })
+      React.createElement("path", { id: "id-icons/IconParagraphSmall-a", d: "M12 16V3H8C6.667 3 6.667 1 8 1h8c1.333 0 1.333 2 0 2h-2v13c0 1.333-2 1.333-2 0zm-5 0V8c0-1.333 2-1.333 2 0v8c0 1.333-2 1.333-2 0zM7 3H5a2 2 0 1 0 0 4h2V3zM5 1h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a4 4 0 1 1 0-8z" })
     ),
-    React.createElement("use", { xlinkHref: "#paragraph-small" })
+    React.createElement("use", { xlinkHref: "#id-icons/IconParagraphSmall-a" })
   );
 });
 

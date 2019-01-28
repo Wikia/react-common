@@ -16,9 +16,9 @@ var IconDropdown = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "dropdown-a", d: "M12.71 18.707a1 1 0 0 1-1.415 0l-10-10C.665 8.077 1.11 7 2.002 7h20c.89 0 1.337 1.077.707 1.707l-10 10z" })
+      React.createElement("path", { id: "id-icons/IconDropdown-a", d: "M12.71 18.707a1 1 0 0 1-1.415 0l-10-10C.665 8.077 1.11 7 2.002 7h20c.89 0 1.337 1.077.707 1.707l-10 10z" })
     ),
-    React.createElement("use", { xlinkHref: "#dropdown-a" })
+    React.createElement("use", { xlinkHref: "#id-icons/IconDropdown-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconMoreSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "more-small", d: "M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2" })
+      React.createElement("path", { id: "id-icons/IconMoreSmall-a", d: "M9 5c1.103 0 2-.896 2-2s-.897-2-2-2-2 .896-2 2 .897 2 2 2m0 8c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2m0-6c-1.103 0-2 .896-2 2s.897 2 2 2 2-.896 2-2-.897-2-2-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#more-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMoreSmall-a" })
   );
 });
 

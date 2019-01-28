@@ -16,9 +16,9 @@ var IconFlag = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "flag-a", d: "M3 16h16.586l-5.293-5.293a.999.999 0 0 1 0-1.414L19.586 4H3v12zm-1 8a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v1h19a1.002 1.002 0 0 1 .707 1.707L16.414 10l6.293 6.293A1 1 0 0 1 22 18H3v5a1 1 0 0 1-1 1z" })
+      React.createElement("path", { id: "id-icons/IconFlag-a", d: "M3 16h16.586l-5.293-5.293a.999.999 0 0 1 0-1.414L19.586 4H3v12zm-1 8a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v1h19a1.002 1.002 0 0 1 .707 1.707L16.414 10l6.293 6.293A1 1 0 0 1 22 18H3v5a1 1 0 0 1-1 1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#flag-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconFlag-a" })
   );
 });
 

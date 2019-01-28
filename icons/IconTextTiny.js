@@ -16,9 +16,9 @@ var IconTextTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "text-tiny", d: "M8 12H4a1 1 0 1 1 0-2h1V2H3a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0H7v8h1a1 1 0 0 1 0 2" })
+      React.createElement("path", { id: "id-icons/IconTextTiny-a", d: "M8 12H4a1 1 0 1 1 0-2h1V2H3a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0H7v8h1a1 1 0 0 1 0 2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#text-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTextTiny-a" })
   );
 });
 

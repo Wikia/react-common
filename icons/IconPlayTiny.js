@@ -16,9 +16,9 @@ var IconPlayTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "play-tiny", d: "M2 8.522V3.477L8.308 6 2 8.522zm9.372-3.45l-10-4a1.006 1.006 0 0 0-.933.1A1.004 1.004 0 0 0 0 2v8a1.003 1.003 0 0 0 1 1c.125 0 .251-.024.372-.072l10-4a1 1 0 0 0 0-1.857z" })
+      React.createElement("path", { id: "id-icons/IconPlayTiny-a", d: "M2 8.522V3.477L8.308 6 2 8.522zm9.372-3.45l-10-4a1.006 1.006 0 0 0-.933.1A1.004 1.004 0 0 0 0 2v8a1.003 1.003 0 0 0 1 1c.125 0 .251-.024.372-.072l10-4a1 1 0 0 0 0-1.857z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#play-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPlayTiny-a" })
   );
 });
 

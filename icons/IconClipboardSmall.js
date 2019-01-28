@@ -16,9 +16,9 @@ var IconClipboardSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "clipboard-small", d: "M12 4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1H3v11h12V4h-3zm0-2h4a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm-4 8.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L8 10.586z" })
+      React.createElement("path", { id: "id-icons/IconClipboardSmall-a", d: "M12 4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1H3v11h12V4h-3zm0-2h4a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm-4 8.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L8 10.586z" })
     ),
-    React.createElement("use", { xlinkHref: "#clipboard-small" })
+    React.createElement("use", { xlinkHref: "#id-icons/IconClipboardSmall-a" })
   );
 });
 

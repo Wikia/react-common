@@ -16,9 +16,9 @@ var IconUnlockSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "unlock-small", d: "M14 16H4V8h10v8zm1-10H7V4c0-1.104.897-2 2-2 .533 0 1.035.209 1.413.587a.999.999 0 1 0 1.414-1.414A3.969 3.969 0 0 0 9 0C6.794 0 5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconUnlockSmall-a", d: "M14 16H4V8h10v8zm1-10H7V4c0-1.104.897-2 2-2 .533 0 1.035.209 1.413.587a.999.999 0 1 0 1.414-1.414A3.969 3.969 0 0 0 9 0C6.794 0 5 1.795 5 4v2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-5 4H8a1 1 0 1 0 0 2v1a1 1 0 1 0 2 0v-1a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#unlock-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUnlockSmall-a" })
   );
 });
 

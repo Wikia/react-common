@@ -16,9 +16,9 @@ var IconPageListSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "page-list-small", d: "M3 15h3v-3H3v3zm4-5H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1zm4.587-7H16a1 1 0 1 0 0-2h-4.413a1 1 0 1 0 0 2M16 15h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2m0-10h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2M3 6h3V3H3v3zm4-5H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm9 10h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconPageListSmall-a", d: "M3 15h3v-3H3v3zm4-5H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1zm4.587-7H16a1 1 0 1 0 0-2h-4.413a1 1 0 1 0 0 2M16 15h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2m0-10h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2M3 6h3V3H3v3zm4-5H2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm9 10h-4.413a1 1 0 1 0 0 2H16a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#page-list-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPageListSmall-a" })
   );
 });
 

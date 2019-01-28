@@ -16,9 +16,9 @@ var IconCloseSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "close-small", d: "M10.414 9l6.293-6.293a.999.999 0 1 0-1.414-1.414L9 7.586 2.707 1.293a.999.999 0 1 0-1.414 1.414L7.586 9l-6.293 6.293a.999.999 0 1 0 1.414 1.414L9 10.414l6.293 6.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L10.414 9z" })
+      React.createElement("path", { id: "id-icons/IconCloseSmall-a", d: "M10.414 9l6.293-6.293a.999.999 0 1 0-1.414-1.414L9 7.586 2.707 1.293a.999.999 0 1 0-1.414 1.414L7.586 9l-6.293 6.293a.999.999 0 1 0 1.414 1.414L9 10.414l6.293 6.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L10.414 9z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#close-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconCloseSmall-a" })
   );
 });
 

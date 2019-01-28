@@ -16,9 +16,9 @@ var IconDropdownTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "dropdown-tiny", d: "M6 10a.997.997 0 0 1-.707-.293l-4-4A1 1 0 0 1 2 4h8a1 1 0 0 1 .707 1.707l-4 4A.997.997 0 0 1 6 10z" })
+      React.createElement("path", { id: "id-icons/IconDropdownTiny-a", d: "M6 10a.997.997 0 0 1-.707-.293l-4-4A1 1 0 0 1 2 4h8a1 1 0 0 1 .707 1.707l-4 4A.997.997 0 0 1 6 10z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#dropdown-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconDropdownTiny-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconZoomOutTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "zoom-out-tiny", d: "M8 5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2H8zM4 7a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V9H2a1 1 0 1 1 0-2h2zm0-6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1V2a1 1 0 0 1 1-1zm6 6a1 1 0 1 1 0 2H9v1a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1h2z" })
+      React.createElement("path", { id: "id-icons/IconZoomOutTiny-a", d: "M8 5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2H8zM4 7a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V9H2a1 1 0 1 1 0-2h2zm0-6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1V2a1 1 0 0 1 1-1zm6 6a1 1 0 1 1 0 2H9v1a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1h2z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#zoom-out-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconZoomOutTiny-a" })
   );
 });
 

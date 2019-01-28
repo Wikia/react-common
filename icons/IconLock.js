@@ -16,9 +16,9 @@ var IconLock = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "lock-a", d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM9 5c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V5zm11 3h-3V5c0-2.757-2.243-5-5-5S7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
+      React.createElement("path", { id: "id-icons/IconLock-a", d: "M10 15h1v3a1 1 0 1 0 2 0v-3h1a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2m-5 7h14V10H5v12zM9 5c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V5zm11 3h-3V5c0-2.757-2.243-5-5-5S7 2.243 7 5v3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#lock-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconLock-a" })
   );
 });
 

@@ -16,9 +16,9 @@ var IconMenuSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "menu-small", d: "M2 4h14a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m14 4H2a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2m0 6H2a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2" })
+      React.createElement("path", { id: "id-icons/IconMenuSmall-a", d: "M2 4h14a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2m14 4H2a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2m0 6H2a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#menu-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMenuSmall-a" })
   );
 });
 

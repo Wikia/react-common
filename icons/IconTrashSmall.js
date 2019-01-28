@@ -16,9 +16,9 @@ var IconTrashSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "trash-small", d: "M4 16h10V6H4v10zM16 4H2a1 1 0 1 0 0 2v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 1 0 0-2zM6 2h6a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2m5 12a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4a1 1 0 0 0 1 1" })
+      React.createElement("path", { id: "id-icons/IconTrashSmall-a", d: "M4 16h10V6H4v10zM16 4H2a1 1 0 1 0 0 2v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 1 0 0-2zM6 2h6a1 1 0 1 0 0-2H6a1 1 0 1 0 0 2m5 12a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4a1 1 0 0 0 1 1m-4 0a1 1 0 0 0 1-1V9a1 1 0 1 0-2 0v4a1 1 0 0 0 1 1" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#trash-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconTrashSmall-a" })
   );
 });
 

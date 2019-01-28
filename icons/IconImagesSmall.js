@@ -16,9 +16,9 @@ var IconImagesSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "images-small", d: "M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4-4a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V3H6a1 1 0 1 1 0-2h10z" })
+      React.createElement("path", { id: "id-icons/IconImagesSmall-a", d: "M11 15h-.586L3 7.586V7h8v8zm-8 0v-4.586L7.586 15H3zm9-10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4-4a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V3H6a1 1 0 1 1 0-2h10z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#images-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconImagesSmall-a" })
   );
 });
 

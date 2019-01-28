@@ -16,9 +16,9 @@ var IconClipboardTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "clipboard-tiny", d: "M5 8.5a.498.498 0 0 1-.354-.146l-1-1a.5.5 0 1 1 .708-.708L5 7.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3A.498.498 0 0 1 5 8.5zM3.75 1a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1H11a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2.75zM2 10h8V3H2v7z" })
+      React.createElement("path", { id: "id-icons/IconClipboardTiny-a", d: "M5 8.5a.498.498 0 0 1-.354-.146l-1-1a.5.5 0 1 1 .708-.708L5 7.293l2.646-2.647a.5.5 0 1 1 .708.708l-3 3A.498.498 0 0 1 5 8.5zM3.75 1a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1H11a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2.75zM2 10h8V3H2v7z" })
     ),
-    React.createElement("use", { xlinkHref: "#clipboard-tiny" })
+    React.createElement("use", { xlinkHref: "#id-icons/IconClipboardTiny-a" })
   );
 });
 

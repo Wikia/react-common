@@ -16,9 +16,9 @@ var IconQuoteTiny = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "quote-tiny", d: "M4.667 1.766A7.485 7.485 0 0 0 2.157 6H4c.552 0 1 .449 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7c0-.065.025-.124.037-.185A9.477 9.477 0 0 1 3.378.236a.998.998 0 0 1 1.409.12 1.001 1.001 0 0 1-.12 1.41zM10.999 6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V7c0-.065.026-.124.038-.186a9.478 9.478 0 0 1 3.34-6.579 1.001 1.001 0 1 1 1.29 1.53A7.479 7.479 0 0 0 9.158 6H11z" })
+      React.createElement("path", { id: "id-icons/IconQuoteTiny-a", d: "M4.667 1.766A7.485 7.485 0 0 0 2.157 6H4c.552 0 1 .449 1 1v3a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7c0-.065.025-.124.037-.185A9.477 9.477 0 0 1 3.378.236a.998.998 0 0 1 1.409.12 1.001 1.001 0 0 1-.12 1.41zM10.999 6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V7c0-.065.026-.124.038-.186a9.478 9.478 0 0 1 3.34-6.579 1.001 1.001 0 1 1 1.29 1.53A7.479 7.479 0 0 0 9.158 6H11z" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#quote-tiny" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconQuoteTiny-a" })
   );
 });
 

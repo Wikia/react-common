@@ -16,9 +16,9 @@ var IconMore = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "more-a", d: "M12 18c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m0-12c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3m0 3c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3" })
+      React.createElement("path", { id: "id-icons/IconMore-a", d: "M12 18c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3m0-12c1.654 0 3-1.346 3-3s-1.346-3-3-3-3 1.346-3 3 1.346 3 3 3m0 3c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#more-a" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMore-a" })
   );
 });
 

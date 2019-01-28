@@ -16,9 +16,9 @@ var IconUsersSmall = ((_ref) => {
     React.createElement(
       "defs",
       null,
-      React.createElement("path", { id: "users-small", d: "M6 8c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m0 2c-3.309 0-6 2.691-6 6a1 1 0 1 0 2 0c0-2.206 1.794-4 4-4s4 1.794 4 4a1 1 0 1 0 2 0c0-3.309-2.691-6-6-6m6-5c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m0 2a1 1 0 1 0 0 2c2.206 0 4 1.794 4 4a1 1 0 1 0 2 0c0-3.309-2.691-6-6-6" })
+      React.createElement("path", { id: "id-icons/IconUsersSmall-a", d: "M6 8c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m0 2c-3.309 0-6 2.691-6 6a1 1 0 1 0 2 0c0-2.206 1.794-4 4-4s4 1.794 4 4a1 1 0 1 0 2 0c0-3.309-2.691-6-6-6m6-5c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2m0 2a1 1 0 1 0 0 2c2.206 0 4 1.794 4 4a1 1 0 1 0 2 0c0-3.309-2.691-6-6-6" })
     ),
-    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#users-small" })
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconUsersSmall-a" })
   );
 });
 
