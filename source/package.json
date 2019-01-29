@@ -72,7 +72,7 @@
     "prop-types": "^15.6.2",
     "raw-loader": "^1.0.0",
     "react": "^16.6.3",
-    "react-docgen": "3.0.0-rc.2",
+    "react-docgen": "3.0.0",
     "react-dom": "^16.6.3",
     "react-redux": "^5.0.7",
     "react-select": "^2.1.1",
