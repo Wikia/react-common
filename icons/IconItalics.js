@@ -12,8 +12,13 @@ var IconItalics = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M6 24l.166-1.625 2.42-.232c.464-.032.53-.165.596-.663l2.652-18.96c.066-.498.034-.63-.43-.664l-2.32-.232L9.282 0h8.885l-.2 1.624-2.518.265c-.498.067-.532.133-.598.63l-2.685 18.929c-.066.53-.066.596.43.663l2.454.264L14.884 24H6z", fillRule: "evenodd" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconItalics-a", d: "M22 0H10a1 1 0 1 0 0 2h5.063L6.772 22H2a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H8.937l8.291-20H22a1 1 0 1 0 0-2" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconItalics-a" })
   );
 });
 

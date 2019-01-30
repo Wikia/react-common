@@ -5,9 +5,6 @@ export { default as AvatarBadgeGlobalDiscussionsModerator } from './AvatarBadgeG
 export { default as AvatarBadgeHelper } from './AvatarBadgeHelper';
 export { default as AvatarBadgeStaff } from './AvatarBadgeStaff';
 export { default as AvatarBadgeVstf } from './AvatarBadgeVstf';
-export { default as AvatarIconTiny } from './AvatarIconTiny';
-export { default as AvatarIconUser } from './AvatarIconUser';
-export { default as AvatarIcon } from './AvatarIcon';
 export { default as LogoFandomHeart } from './LogoFandomHeart';
 export { default as LogoFandomWhite } from './LogoFandomWhite';
 export { default as LogoFandom } from './LogoFandom';

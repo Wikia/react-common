@@ -12,11 +12,8 @@ var IconGridTiny = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 12 12" }, props),
-    React.createElement("rect", { width: "5", height: "5", rx: "1" }),
-    React.createElement("rect", { width: "5", height: "5", x: "7", rx: "1" }),
-    React.createElement("rect", { width: "5", height: "5", y: "7", rx: "1" }),
-    React.createElement("rect", { width: "5", height: "5", x: "7", y: "7", rx: "1" })
+    _extends({ viewBox: "0 0 12 12", xmlns: "http://www.w3.org/2000/svg" }, props),
+    React.createElement("path", { d: "M8 3.99h3V.997H8V3.99zm-1 .498V.498A.5.5 0 0 1 7.5 0h4a.5.5 0 0 1 .5.499v3.99a.5.5 0 0 1-.5.498h-4a.5.5 0 0 1-.5-.499zm-6 6.515h3V8.01H1v2.993zM0 11.5V7.51a.5.5 0 0 1 .5-.498h4a.5.5 0 0 1 .5.499v3.99a.5.5 0 0 1-.5.498h-4A.5.5 0 0 1 0 11.5zm8-.498h3V8.01H8v2.993zM7 11.5V7.51a.5.5 0 0 1 .5-.498h4a.5.5 0 0 1 .5.499v3.99a.5.5 0 0 1-.5.498h-4A.5.5 0 0 1 7 11.5zM1 3.99h3V.997H1V3.99zm-1 .498V.498A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 .5.499v3.99a.5.5 0 0 1-.5.498h-4a.5.5 0 0 1-.5-.499z" })
   );
 });
 

@@ -6,7 +6,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
   badge="someIncorrectBadgePermission"
 >
   <div
-    className="wds-avatar is-default"
+    className="wds-avatar"
   >
     <AvatarImage
       alt="User avatar"
@@ -39,7 +39,7 @@ exports[`Avatar renders with badge 1`] = `
   badge="admin"
 >
   <div
-    className="wds-avatar is-default"
+    className="wds-avatar"
   >
     <AvatarImage
       alt="User avatar"
@@ -82,7 +82,7 @@ exports[`Avatar renders with default props 1`] = `
   alt="User avatar"
 >
   <div
-    className="wds-avatar is-default"
+    className="wds-avatar"
   >
     <AvatarImage
       alt="User avatar"

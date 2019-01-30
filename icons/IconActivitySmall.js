@@ -12,8 +12,13 @@ var IconActivitySmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 18 18", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M10.75 17.002a1.5 1.5 0 0 1-1.449-1.11L6.934 7.099 5.881 9.586a1.499 1.499 0 0 1-1.381.916h-3a1.5 1.5 0 1 1 0-3h2.005l2.363-5.584c.25-.591.839-.97 1.485-.912a1.5 1.5 0 0 1 1.345 1.106l2.337 8.679.949-2.351a1.5 1.5 0 0 1 1.391-.938H16.5a1.5 1.5 0 0 1 0 3h-2.114l-2.246 5.562a1.5 1.5 0 0 1-1.39.938" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconActivitySmall-a", d: "M12 17a1 1 0 0 1-.919-.605L6 4.539 3.919 9.395A1 1 0 0 1 3 10H1a1 1 0 1 1 0-2h1.341l2.74-6.395a1 1 0 0 1 1.838 0L12 13.461l2.081-4.856A1 1 0 0 1 15 8h2a1 1 0 1 1 0 2h-1.341l-2.74 6.395A1 1 0 0 1 12 17" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconActivitySmall-a" })
   );
 });
 

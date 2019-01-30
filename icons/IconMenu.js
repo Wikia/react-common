@@ -12,8 +12,13 @@ var IconMenu = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M23 11H1a1 1 0 0 0 0 2h22a1 1 0 0 0 0-2zm0-7H1a1 1 0 0 0 0 2h22a1 1 0 0 0 0-2zm0 14H1a1 1 0 0 0 0 2h22a1 1 0 0 0 0-2z" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconMenu-a", d: "M3 4h18a1 1 0 1 0 0-2H3a1 1 0 1 0 0 2m18 16H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2m0-9H3a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconMenu-a" })
   );
 });
 

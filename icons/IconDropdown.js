@@ -12,8 +12,13 @@ var IconDropdown = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, props),
-    React.createElement("path", { d: "M7 8h10l-5 6z" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 24 24" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconDropdown-a", d: "M12.71 18.707a1 1 0 0 1-1.415 0l-10-10C.665 8.077 1.11 7 2.002 7h20c.89 0 1.337 1.077.707 1.707l-10 10z" })
+    ),
+    React.createElement("use", { xlinkHref: "#id-icons/IconDropdown-a" })
   );
 });
 

@@ -28,12 +28,6 @@
   box-sizing: border-box;
 }
 
-.wds-avatar__inner-border {
-  border-radius: 50%;
-  box-sizing: border-box;
-  position: absolute;
-}
-
 .wds-avatar__badge {
   line-height: 0;
   position: absolute;
@@ -57,18 +51,18 @@
 }
 .wds-avatar .wds-avatar__image {
   background-color: #fff;
-  border: solid 3px #bed1cf;
   fill: #bed1cf;
 }
 .wds-avatar .wds-avatar__image:hover {
-  border-color: #bed1cf;
   fill: #bed1cf;
 }
-.wds-avatar .wds-avatar__inner-border:hover + .wds-avatar__image {
-  fill: #bed1cf;
+.wds-avatar img.wds-avatar__image {
+  border: solid 3px #bed1cf;
+}
+.wds-avatar img.wds-avatar__image:hover {
   border-color: #bed1cf;
 }
-.wds-avatar .wds-avatar__inner-border {
+.wds-avatar.is-default:before {
   height: 42px;
   min-width: 42px;
   width: 42px;

@@ -12,16 +12,8 @@ var IconGridSmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
-    React.createElement("rect", { width: "4", height: "4", rx: "1", x: "1", y: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "7", rx: "1", y: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "13", rx: "1", y: "1" }),
-    React.createElement("rect", { width: "4", height: "4", y: "7", rx: "1", x: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "7", y: "7", rx: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "13", y: "7", rx: "1" }),
-    React.createElement("rect", { width: "4", height: "4", y: "13", rx: "1", x: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "7", y: "13", rx: "1" }),
-    React.createElement("rect", { width: "4", height: "4", x: "13", y: "13", rx: "1" })
+    _extends({ viewBox: "0 0 18 18", xmlns: "http://www.w3.org/2000/svg" }, props),
+    React.createElement("path", { d: "M2 16h4v-4H2v4zm-2 1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm12-1h4v-4h-4v4zm-2 1v-6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1zm2-11h4V2h-4v4zm-2 1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1zM2 6h4V2H2v4zM0 7V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1z" })
   );
 });
 

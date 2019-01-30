@@ -12,8 +12,13 @@ var IconPinSmall = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M5.617 2v1.23h.618v4.917L5 9.377v1.229h2.136L8.573 16h.261l1.438-5.394h2.135v-1.23l-1.234-1.23V3.23h.617V2z" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 18 18" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconPinSmall-a", d: "M7 10h4V3H7v7zm2 7a1 1 0 0 1-1-1v-4H4a1 1 0 1 1 0-2h1V3H4a1 1 0 1 1 0-2h10a1 1 0 1 1 0 2h-1v7h1a1 1 0 1 1 0 2h-4v4a1 1 0 0 1-1 1z" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconPinSmall-a" })
   );
 });
 

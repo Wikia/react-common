@@ -12,8 +12,13 @@ var IconArrowTiny = ((_ref) => {
 
   return React.createElement(
     "svg",
-    _extends({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 12 12" }, props),
-    React.createElement("path", { fillRule: "evenodd", d: "M5.712 10.707a.996.996 0 0 0 0-1.412L3.412 7h7.587a.999.999 0 1 0 0-1.998H3.416l2.301-2.297a.996.996 0 0 0 0-1.413 1 1 0 0 0-1.414 0L.3 5.29a1.004 1.004 0 0 0-.224.332.99.99 0 0 0-.065.325C.01 5.967 0 5.981 0 6v.002a1 1 0 0 0 .078.383c.033.08.09.147.143.216.027.035.04.075.072.107l4.005 4a1 1 0 0 0 1.414 0" })
+    _extends({ xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 12 12" }, props),
+    React.createElement(
+      "defs",
+      null,
+      React.createElement("path", { id: "id-icons/IconArrowTiny-a", d: "M5 11a.997.997 0 0 1-.707-.293l-4-4A.983.983 0 0 1 0 6.003v-.006a.988.988 0 0 1 .293-.704l4-4a.999.999 0 1 1 1.414 1.414L3.414 5H11a1 1 0 1 1 0 2H3.414l2.293 2.293A.999.999 0 0 1 5 11" })
+    ),
+    React.createElement("use", { fillRule: "evenodd", xlinkHref: "#id-icons/IconArrowTiny-a" })
   );
 });
 

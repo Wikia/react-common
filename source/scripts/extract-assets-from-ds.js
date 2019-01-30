@@ -28,11 +28,6 @@ const ASSET_CATEGORIES = Object.freeze({
         prefix: 'AvatarBadge',
         previewHeight: '16',
     },
-    'wds-avatar': {
-        directory: 'assets',
-        prefix: 'Avatar',
-        previewHeight: '30',
-    },
     'wds-company-logo': {
         directory: 'assets',
         prefix: 'Logo',
