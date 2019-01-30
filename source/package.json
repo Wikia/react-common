@@ -101,5 +101,8 @@
     "stylelint-scss": "^3.4.0",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/"
   }
 }

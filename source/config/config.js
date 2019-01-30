@@ -1,5 +1,5 @@
 module.exports = {
-    outputDir: '..',
+    outputDir: '../dist',
     styleguideDir: 'docs',
     sourceDirectories: [
         'components',

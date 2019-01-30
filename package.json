@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Wikia's reusable React parts",
   "license": "UNLICENSED",
+  "private": true,
   "peerDependencies": {
     "date-fns": "^1.29.0",
     "prop-types": "^15.6.2",
@@ -11,6 +12,5 @@
     "react-select": "^2.1.1",
     "react-redux": "^5.0.7",
     "immutable": "^4.0.0-rc.12"
-  },
-  "publishConfig":{"registry":"https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/"}
+  }
 }
