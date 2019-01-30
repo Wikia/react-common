@@ -68,3 +68,10 @@ typings/
 
 # build
 dist/
+/assets/
+/components/
+/hocs/
+/icons/
+/models/
+/systems/
+/hocs
