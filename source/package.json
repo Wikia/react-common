@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
+    "prepublishOnly": "yarn build",
     "build": "yarn clean && yarn lib:build && yarn styleguide:build && yarn package:build && yarn readme:build",
     "clean": "node ./scripts/clean.js",
     "coverage": "yarn test --coverage",
