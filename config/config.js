@@ -1,6 +1,6 @@
 module.exports = {
-    outputDir: '..',
-    styleguideDir: 'docs',
+    outputDir: './dist',
+    styleguideDir: './docs',
     sourceDirectories: [
         'components',
         'hocs',

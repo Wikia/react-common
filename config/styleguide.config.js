@@ -83,7 +83,7 @@ module.exports = {
     styleguideComponents: {
         Wrapper: resolve('./styleguide.ExampleWrapper.js'),
     },
-    styleguideDir: `../${config.outputDir}/${config.styleguideDir}`,
+    styleguideDir: `../${config.styleguideDir}`,
     components: '../components/**/index.js',
     sections: getSections(),
     getExampleFilename(componentPath) {
