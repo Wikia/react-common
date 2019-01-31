@@ -75,7 +75,7 @@ This will run few build commands in sequence:
 
 After PR is merged into `master` branch create new release. You should use [SemVer](http://semver.org/) using one of the following commands.
 
-The script will automatically pull newest `master` branch, build the documentation, create new release version in the `package.json`, create GitHub tag and push this tag to GitHub.
+The script will automatically pull newest `master` branch, build the documentation, create new release version in the `package.json`, create GitHub tag and push this tag to GitHub. After pushing the new tag it will publish the package to artifactory. 
 
 ### Usual release; bugfixes, no new features and no breaking changes
 

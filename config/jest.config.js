@@ -11,10 +11,10 @@ module.exports = {
     ],
     collectCoverage: true,
     collectCoverageFrom: [
-        'components/**/*.js',
-        'hocs/**/*.js',
-        'systems/**/*.js',
-        '**/*.spec.js',
+        'source/components/**/*.js',
+        'source/hocs/**/*.js',
+        'source/systems/**/*.js',
+        'source/**/*.spec.js',
     ],
     coverageThreshold: {
         global: {

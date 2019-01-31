@@ -36,14 +36,14 @@ function getSections() {
 
         if (components) {
             section.components = () => components.map(
-                componentName => resolve('../components', componentName, 'index.js')
+                componentName => resolve('../source/components', componentName, 'index.js')
             );
         }
 
         if (gallery) {
             const assetComponents = [];
 
-            glob.sync(`${gallery}/*/index.js`, {}).forEach(
+            glob.sync(`source/${gallery}/*/index.js`, {}).forEach(
                 (file) => {
                     assetComponents.push(resolve(`../${file}`));
                 }
@@ -56,7 +56,7 @@ function getSections() {
             section.sections = items.map(
                 itemName => ({
                     name: itemName,
-                    content: resolve(`../${directory}`, itemName, 'README.md'),
+                    content: resolve(`../source/${directory}`, itemName, 'README.md'),
                 })
             );
         }
@@ -84,7 +84,7 @@ module.exports = {
         Wrapper: resolve('./styleguide.ExampleWrapper.js'),
     },
     styleguideDir: `../${config.styleguideDir}`,
-    components: '../components/**/index.js',
+    components: '../source/components/**/index.js',
     sections: getSections(),
     getExampleFilename(componentPath) {
         return componentPath.replace(/index\.js$/, 'README.md');

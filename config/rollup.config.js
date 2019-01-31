@@ -12,49 +12,50 @@ const babelConfig = require('./babel.config');
 const sources = [];
 config.sourceDirectories.forEach(
     // glob only dirs
-    directory => glob.sync(`${directory}/*/`, {}).forEach(
+    directory => glob.sync(`source/${directory}/*/`, {}).forEach(
         // drop the '/' from the end
         file => sources.push(file.substring(0, file.length - 1))
     )
 );
 
-const buildConfig = file => ({
-    input: `${file}/index.js`,
-    output: [
-        {
-            file: `${config.outputDir}/${file}.js`,
-            format: 'cjs',
-        },
-    ],
-    external: config.externalDependencies,
-    plugins: [
-        string({
-            include: 'node_modules/design-system/dist/svg/sprite.svg',
-        }),
-        resolve({
-            module: true,
-        }),
-        sass({
-            output: true,
-        }),
-        svg({
-            svgo: {
-                plugins: [
-                    {
-                        cleanupIDs: {
-                            remove: false,
-                            prefix: `id-${file}-`,
-                            minify: true,
-                        },
-                    },
-                ],
+const buildConfig = file =>
+    ({
+        input: `${file}/index.js`,
+        output: [
+            {
+                file: `${config.outputDir}/${file.replace('source/', '')}.js`,
+                format: 'cjs',
             },
-            exclude: 'node_modules/design-system/dist/svg/sprite.svg',
-        }),
-        babel(babelConfig),
-        commonjs(),
-    ],
-});
+        ],
+        external: config.externalDependencies,
+        plugins: [
+            string({
+                       include: 'node_modules/design-system/dist/svg/sprite.svg',
+                   }),
+            resolve({
+                        module: true,
+                    }),
+            sass({
+                     output: true,
+                 }),
+            svg({
+                    svgo: {
+                        plugins: [
+                            {
+                                cleanupIDs: {
+                                    remove: false,
+                                    prefix: `id-${file}-`,
+                                    minify: true,
+                                },
+                            },
+                        ],
+                    },
+                    exclude: 'node_modules/design-system/dist/svg/sprite.svg',
+                }),
+            babel(babelConfig),
+            commonjs(),
+        ],
+    });
 
 export default sources.map(
     source => buildConfig(source),

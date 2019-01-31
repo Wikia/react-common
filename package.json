@@ -35,6 +35,15 @@
     "test:watch": "yarn test --watchAll --notify"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-select": "^2.1.1",
+    "react-redux": "^5.0.7",
+    "immutable": "^4.0.0-rc.12"
+  },
+  "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/node": "^7.0.0",
     "@babel/plugin-external-helpers": "^7.0.0",
@@ -51,7 +60,6 @@
     "classnames": "^2.2.6",
     "concurrently": "^4.1.0",
     "coveralls": "^3.0.2",
-    "date-fns": "^1.29.0",
     "design-system": "git://github.com/Wikia/design-system.git#IW-1261",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -65,19 +73,13 @@
     "eslint-plugin-react": "^7.11.1",
     "glob": "^7.1.3",
     "identity-obj-proxy": "^3.0.0",
-    "immutable": "^4.0.0-rc.12",
     "jest": "^23.6.0",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.10.0",
     "postcss-modules": "^1.4.1",
-    "prop-types": "^15.6.2",
     "raw-loader": "^1.0.0",
-    "react": "^16.6.3",
     "react-docgen": "3.0.0",
-    "react-dom": "^16.6.3",
-    "react-redux": "^5.0.7",
-    "react-select": "^2.1.1",
     "react-styleguidist": "^8.0.0",
     "react-svg-loader": "^2.1.0",
     "react-test-renderer": "^16.6.3",
@@ -109,12 +111,6 @@
   },
   "files": [
     "dist/",
-    "components/",
-    "assets",
-    "hocs",
-    "icons",
-    "models",
-    "systems",
-    "utils"
+    "source/"
   ]
 }

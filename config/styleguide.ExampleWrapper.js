@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import ButtonGroup from '../components/ButtonGroup';
-import Button from '../components/Button';
+import ButtonGroup from '../source/components/ButtonGroup';
+import Button from '../source/components/Button';
 
 const Wrapper = styled.div`
     border: 1px solid rgba(0, 0, 0, .2);
