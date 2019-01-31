@@ -5,7 +5,6 @@ cache:
   directories:
     - source/node_modules
 script:
-  - cd source
   - yarn
   - yarn ci
   - yarn coveralls
