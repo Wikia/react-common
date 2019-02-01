@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "prepublishOnly": "yarn git:reset && yarn build",
+    "prepublishOnly": "yarn clean && yarn build:lib",
     "build": "yarn clean && yarn build:lib && yarn build:docs",
     "build:docs": "yarn styleguide:build",
     "build:lib": "yarn clean && yarn lib:build",
