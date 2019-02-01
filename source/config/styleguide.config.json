@@ -44,6 +44,7 @@
       "Icon",
       "IconSprite",
       "Input",
+      "List",
       "Select",
       "Spinner",
       "Timeago",

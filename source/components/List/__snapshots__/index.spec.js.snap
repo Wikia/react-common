@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders with children inside 1`] = `
+<ul
+  className="wds-list"
+>
+  <li>
+    First one
+  </li>
+  <li>
+    Second one
+  </li>
+  <li>
+    Third one
+  </li>
+</ul>
+`;
