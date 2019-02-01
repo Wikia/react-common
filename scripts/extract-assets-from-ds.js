@@ -47,7 +47,7 @@ const ASSET_CATEGORIES_KEYS = Object.keys(ASSET_CATEGORIES);
  */
 ASSET_CATEGORIES_KEYS.forEach(
     (category) => {
-        const name = `./${ASSET_CATEGORIES[category].directory}`;
+        const name = `./source/${ASSET_CATEGORIES[category].directory}`;
         console.log(`Deleting ${name}`);
         rimraf.sync(name);
     }
@@ -97,7 +97,7 @@ function generateComponent(assetData) {
     const componentName = `${assetData.directory}/${assetData.to}`;
     console.log(`Writing ${componentName}`);
 
-    const outDirectory = `${__dirname}/../${componentName}`;
+    const outDirectory = `${__dirname}/../source/${componentName}`;
     const fromFile = assetData.from.replace(/^node_modules\//, '');
 
     const jsxTemplate = `// This file is generated automatically via extract-assets-from-ds.js
@@ -126,7 +126,7 @@ assets.forEach(asset => generateComponent(asset));
 function generateReadmeAndTest(directory, components) {
     console.log(`Writing tests and README.md for ${directory}`);
 
-    const outDirectory = `${__dirname}/../${directory}`;
+    const outDirectory = `${__dirname}/../source/${directory}`;
 
     // generate README.md
     const readmeTemplate = `Files and directories in this directory are automatically re-generated. See the source/scripts/extract-assets-from-ds.js.
