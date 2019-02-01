@@ -78,12 +78,19 @@ var List = function List(_ref) {
 };
 
 List.propTypes = {
+  /** Whether or not the list contains big items */
   bigItems: PropTypes.bool,
+
+  /** Whether or not list items should be bold */
   boldItems: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   hasEllipsis: PropTypes.bool,
+
+  /** Whether or not items are links */
   isLinked: PropTypes.bool,
+
+  /** Whether or not show line separator between items */
   linesBetween: PropTypes.bool
 };
 List.defaultProps = {
