@@ -13,7 +13,7 @@
 
 1. Assuming the new component's name is `ComponentA` all it's files will be in `/source/components/ComponentA/` directory.
 2. Create component in `ComponentA/index.js`.
-3. Add component to `/src/index.js`.
+3. Add component to `/source/components/index.js`.
 4. Add component to `/config/styleguide.config.json`.
 5. (optionally) create styles in `ComponentA/styles.s?css` and import them in `ComponentA/index.js`.
 6. Document the usage and props in JSDocs in `ComponentA/index.js`.
@@ -75,7 +75,7 @@ This will run few build commands in sequence:
 
 After PR is merged into `master` branch create new release. You should use [SemVer](http://semver.org/) using one of the following commands.
 
-The script will automatically pull newest `master` branch, build the documentation, create new release version in the `package.json`, create GitHub tag and push this tag to GitHub. After pushing the new tag it will publish the package to artifactory. 
+The script will automatically pull newest `master` branch, build the documentation, create new release version in the `package.json`, create GitHub tag and push this tag to GitHub. After pushing the new tag it will publish the package to artifactory.
 
 ### Usual release; bugfixes, no new features and no breaking changes
 
