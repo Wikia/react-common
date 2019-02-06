@@ -16,6 +16,7 @@ export { default as FloatingButtonGroup } from './FloatingButtonGroup';
 // Design System UI
 export { default as BannerNotification } from './BannerNotification';
 export { default as BannerNotifications } from './BannerNotifications';
+export { default as GlobalNavigation } from './GlobalNavigation';
 
 // Lite Icons
 export { default as VideoPlayIcon } from './VideoPlayIcon';
@@ -36,3 +37,4 @@ export { default as bannerNotificationsMessageType }
 // HEAVY icons
 export { default as IconSprite } from './IconSprite';
 export { default as Icon } from './Icon';
+

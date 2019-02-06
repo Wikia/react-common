@@ -99,6 +99,7 @@ class Dropdown extends React.Component {
         const {
             children,
             toggle,
+            contentClassName,
             dropdownLeftAligned,
             dropdownRightAligned,
             isLevel2,
@@ -110,6 +111,7 @@ class Dropdown extends React.Component {
             toggleAttrs,
             isStickedToParent,
             toggleClassName,
+            className,
         } = this.props;
 
         const {
@@ -118,7 +120,7 @@ class Dropdown extends React.Component {
             isTouchDevice,
         } = this.state;
 
-        const className = classNames({
+        const allClassNames = classNames({
             'wds-dropdown': !isLevel2,
             'wds-is-active': isClicked || isActive,
             'wds-has-shadow': hasShadow,
@@ -128,7 +130,7 @@ class Dropdown extends React.Component {
             'wds-is-touch-device': isTouchDevice,
             'wds-is-sticked-to-parent': isStickedToParent,
             'wds-is-flipped': isFlipped,
-        });
+        }, className);
 
         const dropdownBody = (
             <React.Fragment>
@@ -141,6 +143,7 @@ class Dropdown extends React.Component {
                     onClick={this.onToggleClicked}
                 />
                 <DropdownContent
+                    className={contentClassName}
                     dropdownLeftAligned={dropdownLeftAligned}
                     dropdownRightAligned={dropdownRightAligned}
                     elementRef={this.contentElementRef}
@@ -157,7 +160,7 @@ class Dropdown extends React.Component {
         return (
             // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <Component
-                className={className}
+                className={allClassNames}
                 onClick={this.onClick}
                 onMouseLeave={this.onMouseLeave}
                 onMouseEnter={this.onMouseEnter}
@@ -173,10 +176,19 @@ Dropdown.propTypes = {
      * Whether or nor not dropdown should automatically flip when it's near the bottom of the viewport
      */
     canFlip: PropTypes.bool,
+
+    /** Additional class name */
+    className: PropTypes.string,
+
     /**
      * React Component to display as the Dropdown Content
      */
     children: PropTypes.node,
+
+    /**
+     * HTML classes to add to content element
+     */
+    contentClassName: PropTypes.string,
 
     /**
      * Should dropdown content be scrollable
@@ -231,7 +243,11 @@ Dropdown.propTypes = {
     /**
      * React Component to display as a dropdown toggle
      */
-    toggle: PropTypes.node.isRequired,
+    toggle: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.string,
+        PropTypes.node,
+    ]).isRequired,
 
     /**
      * HTML attributes to add to toggle

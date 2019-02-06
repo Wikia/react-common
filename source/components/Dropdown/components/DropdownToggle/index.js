@@ -14,7 +14,7 @@ class DropdownToggle extends React.Component {
         const iconClassName = isLevel2
             ? 'wds-dropdown-chevron'
             : 'wds-dropdown__toggle-chevron';
-        const icon = <Icon name="menu-control-tiny" className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+        const icon = <Icon name="dropdown-tiny" className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
         let toggleContentComponent;
 
         if (typeof toggleContent === 'function') {

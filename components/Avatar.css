@@ -62,14 +62,6 @@
 .wds-avatar img.wds-avatar__image:hover {
   border-color: #bed1cf;
 }
-.wds-avatar.is-default:before {
-  height: 42px;
-  min-width: 42px;
-  width: 42px;
-  border: solid 3px #fff;
-  left: 3px;
-  top: 3px;
-}
 .wds-avatar .wds-avatar__badge {
   height: 20.1872px;
   min-width: 20.1872px;

@@ -41,6 +41,7 @@
       "Fieldset",
       "FloatingButton",
       "FloatingButtonGroup",
+      "GlobalNavigation",
       "Icon",
       "IconSprite",
       "Input",

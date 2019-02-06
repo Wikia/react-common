@@ -199,20 +199,21 @@ var refPropType = PropTypes.shape({
 
 var DropdownContent = function DropdownContent(_ref) {
   var children = _ref.children,
+      className = _ref.className,
       dropdownLeftAligned = _ref.dropdownLeftAligned,
       dropdownRightAligned = _ref.dropdownRightAligned,
       scrollable = _ref.scrollable,
       isLevel2 = _ref.isLevel2,
       elementRef = _ref.elementRef;
-  var className = classnames({
+  var allClassNames = classnames({
     'wds-dropdown__content': true,
     'wds-is-left-aligned': dropdownLeftAligned,
     'wds-is-right-aligned': dropdownRightAligned,
     'wds-is-not-scrollable': !scrollable,
     'wds-dropdown-level-2__content': isLevel2
-  });
+  }, className);
   return React.createElement("div", {
-    className: className,
+    className: allClassNames,
     ref: elementRef
   }, children);
 };
@@ -222,6 +223,9 @@ DropdownContent.propTypes = {
    * React Component to display as content
    */
   children: PropTypes.node,
+
+  /** Additional class name */
+  className: PropTypes.string,
 
   /**
    * Should content be left-aligned with the dropdown toggle
@@ -323,7 +327,7 @@ function (_React$Component) {
           isLevel2 = _this$props.isLevel2;
       var iconClassName = isLevel2 ? 'wds-dropdown-chevron' : 'wds-dropdown__toggle-chevron';
       var icon = React.createElement(Icon, {
-        name: "menu-control-tiny",
+        name: "dropdown-tiny",
         className: "wds-icon wds-icon-tiny ".concat(iconClassName)
       });
       var toggleContentComponent;
@@ -521,6 +525,7 @@ function (_React$Component) {
       var _this$props2 = this.props,
           children = _this$props2.children,
           toggle = _this$props2.toggle,
+          contentClassName = _this$props2.contentClassName,
           dropdownLeftAligned = _this$props2.dropdownLeftAligned,
           dropdownRightAligned = _this$props2.dropdownRightAligned,
           isLevel2 = _this$props2.isLevel2,
@@ -531,12 +536,13 @@ function (_React$Component) {
           contentScrollable = _this$props2.contentScrollable,
           toggleAttrs = _this$props2.toggleAttrs,
           isStickedToParent = _this$props2.isStickedToParent,
-          toggleClassName = _this$props2.toggleClassName;
+          toggleClassName = _this$props2.toggleClassName,
+          className = _this$props2.className;
       var _this$state2 = this.state,
           isClicked = _this$state2.isClicked,
           isFlipped = _this$state2.isFlipped,
           isTouchDevice = _this$state2.isTouchDevice;
-      var className = classnames({
+      var allClassNames = classnames({
         'wds-dropdown': !isLevel2,
         'wds-is-active': isClicked || isActive,
         'wds-has-shadow': hasShadow,
@@ -546,7 +552,7 @@ function (_React$Component) {
         'wds-is-touch-device': isTouchDevice,
         'wds-is-sticked-to-parent': isStickedToParent,
         'wds-is-flipped': isFlipped
-      });
+      }, className);
       var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
         isLevel2: isLevel2,
         attrs: toggleAttrs,
@@ -555,6 +561,7 @@ function (_React$Component) {
         toggleContent: toggle,
         onClick: this.onToggleClicked
       }), React.createElement(DropdownContent, {
+        className: contentClassName,
         dropdownLeftAligned: dropdownLeftAligned,
         dropdownRightAligned: dropdownRightAligned,
         elementRef: this.contentElementRef,
@@ -564,7 +571,7 @@ function (_React$Component) {
       var Component = isLevel2 ? 'li' : 'div';
       return (// eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
         React.createElement(Component, {
-          className: className,
+          className: allClassNames,
           onClick: this.onClick,
           onMouseLeave: this.onMouseLeave,
           onMouseEnter: this.onMouseEnter
@@ -582,10 +589,18 @@ Dropdown.propTypes = {
    */
   canFlip: PropTypes.bool,
 
+  /** Additional class name */
+  className: PropTypes.string,
+
   /**
    * React Component to display as the Dropdown Content
    */
   children: PropTypes.node,
+
+  /**
+   * HTML classes to add to content element
+   */
+  contentClassName: PropTypes.string,
 
   /**
    * Should dropdown content be scrollable
@@ -640,7 +655,7 @@ Dropdown.propTypes = {
   /**
    * React Component to display as a dropdown toggle
    */
-  toggle: PropTypes.node.isRequired,
+  toggle: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.node]).isRequired,
 
   /**
    * HTML attributes to add to toggle

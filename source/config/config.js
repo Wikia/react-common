@@ -19,5 +19,7 @@ module.exports = {
         'react-select',
         'react-redux',
         'immutable',
+        'react-i18next',
+        'i18next',
     ],
 };

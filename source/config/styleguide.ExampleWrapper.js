@@ -2,8 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import i18n from 'i18next';
+import { initReactI18next } from "react-i18next";
+import translation from 'design-system/i18n/en/design-system.json';
+
 import ButtonGroup from '../components/ButtonGroup';
 import Button from '../components/Button';
+
+i18n
+.use(initReactI18next) // passes i18n down to react-i18next
+.init({
+    resources: {
+        en: {
+            translation,
+        }
+    },
+    lng: "en",
+    fallbackLng: "en",
+
+    interpolation: {
+        escapeValue: false
+    }
+});
 
 const Wrapper = styled.div`
     border: 1px solid rgba(0, 0, 0, .2);
