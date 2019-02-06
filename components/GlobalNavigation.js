@@ -870,13 +870,13 @@ function (_React$Component) {
         }),
         toggleClassName: "wds-global-navigation__search-input-wrapper",
         contentClassName: "wds-global-navigation__search-suggestions"
-      }, React.createElement(List, null, React.createElement("li", null, "className=\"wds-global-navigation__search-suggestion\"", React.createElement("a", {
+      }, React.createElement(List, null, React.createElement("li", null, React.createElement("a", {
         href: "#",
         className: "wds-global-navigation__dropdown-link"
-      }, "Suggestion 1")), React.createElement("li", null, "className=\"wds-global-navigation__search-suggestion\"", React.createElement("a", {
+      }, "Suggestion 1")), React.createElement("li", null, React.createElement("a", {
         href: "#",
         className: "wds-global-navigation__dropdown-link"
-      }, "Suggestion 2")), React.createElement("li", null, "className=\"wds-global-navigation__search-suggestion\"", React.createElement("a", {
+      }, "Suggestion 2")), React.createElement("li", null, React.createElement("a", {
         href: "#",
         className: "wds-global-navigation__dropdown-link"
       }, "Suggestion 3"))))));

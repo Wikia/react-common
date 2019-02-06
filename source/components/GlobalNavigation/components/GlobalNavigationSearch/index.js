@@ -27,7 +27,6 @@ class GlobalNavigationSearch extends React.Component {
                     >
                         <List>
                             <li>
-                                className="wds-global-navigation__search-suggestion"
                                 <a
                                     href="#"
                                     className="wds-global-navigation__dropdown-link"
@@ -36,7 +35,6 @@ class GlobalNavigationSearch extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                className="wds-global-navigation__search-suggestion"
                                 <a
                                     href="#"
                                     className="wds-global-navigation__dropdown-link"
@@ -45,7 +43,6 @@ class GlobalNavigationSearch extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                className="wds-global-navigation__search-suggestion"
                                 <a
                                     href="#"
                                     className="wds-global-navigation__dropdown-link"
