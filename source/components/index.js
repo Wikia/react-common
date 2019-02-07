@@ -22,6 +22,7 @@ export { default as VideoPlayIcon } from './VideoPlayIcon';
 // Usefull flow components
 export { default as ContentWell } from './ContentWell';
 export { default as FandomContentWell } from './FandomContentWell';
+export { default as List } from './List';
 // Other UI
 export { default as Avatar } from './Avatar';
 export { default as ExpandableText } from './ExpandableText';
