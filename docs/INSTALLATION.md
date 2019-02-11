@@ -7,7 +7,7 @@ This setup will work for both `yarn` and `npm`. If you run into issues consult [
 
 1. Verify you can login to [Artifactory Wikia](https://artifactory.wikia-inc.com/artifactory/webapp/#/home)
 2. Change wikia scoped packages to use artifactory
-    * `npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/npm-source/`
+    * `npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/`
 3. Login
     * `npm login --scope=@wikia`
     * Use artifactory login and artifactory API key for password by going to "Edit Profile" in artifactory web ui
