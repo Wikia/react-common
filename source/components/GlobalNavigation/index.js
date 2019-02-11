@@ -14,9 +14,9 @@ class GlobalNavigation extends React.Component {
     renderMainNavigation(navigation) {
         return navigation.map(link => {
             if (link.type === 'link-text') {
-                return <GlobalNavigationLinkText link={link} isStandaloneLink />;
+                return <GlobalNavigationLinkText key={link.href} link={link} isStandaloneLink />;
             } else if (link.type === 'link-group') {
-                return <GlobalNavigationLinkGroup link={link} />
+                return <GlobalNavigationLinkGroup key={link.href} link={link} />
             }
         });
     }
@@ -41,7 +41,7 @@ class GlobalNavigation extends React.Component {
                 <div className="wds-global-navigation__content-bar-right">
                     <div className="wds-global-navigation__dropdown-controls">
                         <GlobalNavigationSearch />
-                        <GlobalNavigationUserAnon />
+                        <GlobalNavigationUserAnon data={model.anon} />
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
                         </div>
