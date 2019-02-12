@@ -1,12 +1,14 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
 
 import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
+import List from '../../../List/index';
+import GlobalNavigationLinkText from '../GlobalNavigationLink/GlobalNavigationLinkText';
+import GlobalNavigationLinkLogOut from '../GlobalNavigationLink/GlobalNavigationLinkLogOut';
 
 class GlobalNavigationUserLoggedIn extends React.Component {
     renderToggle = (chevron) => {
-        const { data, t } = this.props;
+        const { data } = this.props;
 
         return (
             <React.Fragment>
@@ -16,24 +18,31 @@ class GlobalNavigationUserLoggedIn extends React.Component {
     };
 
     render() {
-        const { data, t } = this.props;
+        const { data } = this.props;
 
         return (
             <Dropdown
                 toggle={this.renderToggle}
-                className="wds-global-navigation__user-menu wds-global-navigation__user-anon"
+                className="wds-global-navigation__user-menu wds-global-navigation__user-logged-in"
                 contentScrollable={false}
-                dropdownRightAligned={true}
+                dropdownRightAligned
+                hasShadow
                 contentClassName="wds-global-navigation__dropdown-content"
             >
-                <ul className="wds-list wds-has-lines-between">
-                    <li>
-
-                    </li>
-                </ul>
+                <List isLinked>
+                    {data.items.map(item => {
+                        if (item.type === 'link-text') {
+                            return <li><GlobalNavigationLinkText link={item} /></li>
+                        } else if (item.type === 'link-logout') {
+                            return <li><GlobalNavigationLinkLogOut link={item} /></li>
+                        } else {
+                            return null;
+                        }
+                    })}
+                </List>
             </Dropdown>
         );
     }
 }
 
-export default withTranslation()(GlobalNavigationUserLoggedIn);
+export default GlobalNavigationUserLoggedIn;
