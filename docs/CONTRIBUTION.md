@@ -1,5 +1,3 @@
-# Contribution
-
 ## General guidelines
 
 - ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.

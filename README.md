@@ -5,9 +5,6 @@
 
 Wikia's reusable React parts.
 
-## Live site
+## Live site / documentation
 [https://wikia.github.io/react-common/](https://wikia.github.io/react-common/)
 
-## Source
-* [docs](https://github.com/Wikia/react-common/tree/master/docs)
-* [package.json](https://github.com/Wikia/react-common/tree/master/package.json)

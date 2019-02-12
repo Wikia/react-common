@@ -1,18 +1,16 @@
-# Installation
-
 ## 1. Add it to your project
 
-### Artifactory Setup
+### 1.1. Artifactory Setup
 This setup will work for both `yarn` and `npm`. If you run into issues consult [Artifactory NPM Docs](https://www.jfrog.com/confluence/display/RTF/Npm+Registry) first
 
 1. Verify you can login to [Artifactory Wikia](https://artifactory.wikia-inc.com/artifactory/webapp/#/home)
 2. Change wikia scoped packages to use artifactory
-    * `npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/`
+    * `$> npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/`
 3. Login
-    * `npm login --scope=@wikia`
+    * `$> npm login --scope=@wikia`
     * Use artifactory login and artifactory API key for password by going to "Edit Profile" in artifactory web ui
 
-### Add the package to `package.json`
+### 1.2. Add the package to `package.json`
 
 ```js static
 $> yarn add @wikia/react-common
