@@ -18,17 +18,17 @@ const GlobalNavigationLinkGroup = ({ link }) => {
             contentClassName="wds-global-navigation__dropdown-content"
         >
             <List isLinked>
-                {link.items.map(item => {
+                {link.items.map((item, index) => {
                     let link;
                     if (item.type === 'link-text') {
-                        link = <GlobalNavigationLinkText link={item} />;
+                        link = <GlobalNavigationLinkText link={item} key={index}/>;
                     } else {
                         link = (
-                            <GlobalNavigationLinkButton link={item} />
+                            <GlobalNavigationLinkButton link={item} key={index}/>
                         );
                     }
                     return (
-                        <li>
+                        <li key={index}>
                             {link}
                         </li>
                     );

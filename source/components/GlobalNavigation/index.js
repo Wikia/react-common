@@ -12,11 +12,11 @@ import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNaviga
 class GlobalNavigation extends React.Component {
 
     renderMainNavigation(navigation) {
-        return navigation.map(link => {
+        return navigation.map((link, index) => {
             if (link.type === 'link-text') {
-                return <GlobalNavigationLinkText key={link.href} link={link} isStandaloneLink />;
+                return <GlobalNavigationLinkText key={index} link={link} isStandaloneLink />;
             } else if (link.type === 'link-group') {
-                return <GlobalNavigationLinkGroup key={link.href} link={link} />
+                return <GlobalNavigationLinkGroup key={index} link={link} />
             }
         });
     }

@@ -30,11 +30,11 @@ class GlobalNavigationUserLoggedIn extends React.Component {
                 contentClassName="wds-global-navigation__dropdown-content"
             >
                 <List isLinked>
-                    {data.items.map(item => {
+                    {data.items.map((item, index) => {
                         if (item.type === 'link-text') {
-                            return <li><GlobalNavigationLinkText link={item} /></li>
+                            return <li key={index}><GlobalNavigationLinkText link={item} /></li>
                         } else if (item.type === 'link-logout') {
-                            return <li><GlobalNavigationLinkLogOut link={item} /></li>
+                            return <li key={index}><GlobalNavigationLinkLogOut link={item} /></li>
                         } else {
                             return null;
                         }
