@@ -2,12 +2,12 @@ import React from 'react';
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
 import GlobalNavigationSearch from './components/GlobalNavigationSearch';
-import GlobalNavigationUserAnon from './components/GlobalNavigationUser/GlobalNavigationUserAnon';
 
 import './styles.scss';
 import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
+import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
 
 class GlobalNavigation extends React.Component {
 
@@ -41,7 +41,7 @@ class GlobalNavigation extends React.Component {
                 <div className="wds-global-navigation__content-bar-right">
                     <div className="wds-global-navigation__dropdown-controls">
                         <GlobalNavigationSearch />
-                        <GlobalNavigationUserAnon data={model.anon} />
+                        <GlobalNavigationUser data={model} />
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
                         </div>
