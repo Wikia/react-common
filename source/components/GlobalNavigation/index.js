@@ -111,10 +111,16 @@ class GlobalNavigation extends React.Component {
                                 track={track}
                                 inSearchModal
                             />
-                            {this.renderMainNavigation(model['main-navigation'])}
+                            <nav className="wds-global-navigation__links">
+                                {this.renderMainNavigation(model['main-navigation'])}
+                            </nav>
                         </GlobalNavigationSearchModal>
                         <GlobalNavigationMobileUserModal data={model}/>
-                        <Button onClick={this.closeModal} text className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close">
+                        <Button
+                            onClick={this.closeModal}
+                            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
+                            text
+                        >
                             <Icon name="close" />
                         </Button>
                     </div>

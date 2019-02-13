@@ -25,6 +25,7 @@ class GlobalNavigationSearch extends React.Component {
         this.onBlur = this.onBlur.bind(this);
         this.onFocus = this.onFocus.bind(this);
         this.onKeyDown = this.onKeyDown.bind(this);
+        this.onSearchSuggestionClick = this.onSearchSuggestionClick.bind(this);
         this.requestSuggestionsFromAPI = debounce(this.requestSuggestionsFromAPI.bind(this), DEBOUNCE_DURATION);
     }
 
@@ -239,7 +240,7 @@ class GlobalNavigationSearch extends React.Component {
 
     onKeyDown(event) {
         const { selectedSuggestionIndex, suggestions, query } = this.state;
-        const { onSearchSuggestionChosen } = this.props;
+        const { onSearchSuggestionChosen, goToSearchResults } = this.props;
 
         event.stopPropagation();
 
@@ -269,8 +270,8 @@ class GlobalNavigationSearch extends React.Component {
                     onSearchSuggestionChosen(suggestions[selectedSuggestionIndex]);
                     this.input.current.blur();
                     this.onCloseSearch();
-                } else if (this.goToSearchResults) {
-                    this.goToSearchResults(this.state.query);
+                } else {
+                    goToSearchResults(query);
                 }
 
                 break;
@@ -294,6 +295,8 @@ class GlobalNavigationSearch extends React.Component {
     renderInput() {
         const { t, model } = this.props;
         const placeholderConfig = model['placeholder-active'];
+        
+        console.log('######', placeholderConfig.params.sitename.value); 
         
         return (
             <React.Fragment>
@@ -326,10 +329,14 @@ class GlobalNavigationSearch extends React.Component {
         return suggestions.map(suggestion => {
             const match = suggestion.match(highlightRegex);
             const highlightedPart = match ? match[0] : match;
-            const regulartPart = suggestion.replace(highlightRegex, '');
+            const regularPart = suggestion.replace(highlightRegex, '');
 
             return (
-                <li key={suggestion} className="wds-global-navigation__search__suggestion">
+                <li
+                    key={suggestion}
+                    className="wds-global-navigation__search__suggestion"
+                    onClick={this.onSearchSuggestionClick}
+                >
                     <a
                         href={this.normalizeToUnderscore(suggestion)}
                         className="wds-global-navigation__dropdown-link"
@@ -339,7 +346,7 @@ class GlobalNavigationSearch extends React.Component {
                                 {highlightedPart}
                             </span>
                         )}
-                        {regulartPart}
+                        {regularPart}
                     </a>
                 </li>
             )
