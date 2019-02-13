@@ -1,9 +1,9 @@
 Open this example in the new page to see the difference:
 
 ```js
-const { default: LocalNavigation, ACTIVE_CLASS_NAME } = require('./index');
+const { default: SimpleLocalNavigation, ACTIVE_CLASS_NAME } = require('./index');
 
-class LocalNavigationTest1 extends React.Component {
+class SimpleLocalNavigationTest1 extends React.Component {
     constructor() {
         this.state = {
             value: 0,
@@ -17,7 +17,7 @@ class LocalNavigationTest1 extends React.Component {
 
     render() {
         return (
-            <LocalNavigation>
+            <SimpleLocalNavigation>
                 <span
                     className={this.state.value === 0 ? ACTIVE_CLASS_NAME : ''}
                     onClick={() => this.onChange(0)}
@@ -36,10 +36,10 @@ class LocalNavigationTest1 extends React.Component {
                 >
                     Third option
                 </span>
-            </LocalNavigation>
+            </SimpleLocalNavigation>
         );
     }
 }
 
-<LocalNavigationTest1 />
+<SimpleLocalNavigationTest1 />
 ```

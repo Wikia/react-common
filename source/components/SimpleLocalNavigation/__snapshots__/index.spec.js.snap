@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LocalNavigation renders 1`] = `
-<LocalNavigation
+exports[`SimpleLocalNavigation renders 1`] = `
+<SimpleLocalNavigation
   className="foo"
 >
   <div
-    className="local-navigation foo"
+    className="simple-local-navigation foo"
   >
     <FandomContentWell
       className=""
@@ -14,13 +14,13 @@ exports[`LocalNavigation renders 1`] = `
         className="wds-fandom-content-well "
       >
         <span
-          className="local-navigation__item"
+          className="simple-local-navigation__item"
           key=".0"
         >
           Item 1
         </span>
         <span
-          className="local-navigation__item"
+          className="simple-local-navigation__item"
           key=".1"
         >
           Item 2
@@ -28,5 +28,5 @@ exports[`LocalNavigation renders 1`] = `
       </div>
     </FandomContentWell>
   </div>
-</LocalNavigation>
+</SimpleLocalNavigation>
 `;

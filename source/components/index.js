@@ -28,7 +28,7 @@ export { default as Avatar } from './Avatar';
 export { default as ExpandableText } from './ExpandableText';
 export { default as Switch } from './Switch';
 export { default as Timeago } from './Timeago';
-export { default as LocalNavigation } from './LocalNavigation';
+export { default as SimpleLocalNavigation } from './SimpleLocalNavigation';
 export { default as Vignette } from './Vignette';
 
 // custom types

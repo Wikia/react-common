@@ -9,15 +9,15 @@ import './styles.scss';
 export const ACTIVE_CLASS_NAME = 'is-active';
 
 /**
- * LocalNavigation is a simple navigation than can be used with links or `react-router`.
+ * SimpleLocalNavigation is a simple navigation than can be used with links or `react-router`.
  *
  * To mark child as active use exported class `ACTIVE_CLASS_NAME`.
  */
-class LocalNavigation extends React.PureComponent {
+class SimpleLocalNavigation extends React.PureComponent {
     addClassName = (child) => {
         const className = classNames(
             child.props.className,
-            'local-navigation__item',
+            'simple-local-navigation__item',
         );
 
         const props = {
@@ -29,7 +29,7 @@ class LocalNavigation extends React.PureComponent {
 
     render() {
         const className = classNames(
-            'local-navigation',
+            'simple-local-navigation',
             this.props.className,
         );
 
@@ -44,16 +44,16 @@ class LocalNavigation extends React.PureComponent {
 }
 
 
-LocalNavigation.propTypes = {
+SimpleLocalNavigation.propTypes = {
     /** ignore */
     children: PropTypes.node.isRequired,
     /** Additional class name */
     className: PropTypes.string,
 };
 
-LocalNavigation.defaultProps = {
+SimpleLocalNavigation.defaultProps = {
     className: undefined,
 };
 
 
-export default LocalNavigation;
+export default SimpleLocalNavigation;
