@@ -14,7 +14,7 @@ export const ACTIVE_CLASS_NAME = 'is-active';
  * To mark child as active use exported class `ACTIVE_CLASS_NAME`.
  */
 class LocalNavigation extends React.PureComponent {
-    modifyChildren = (child) => {
+    addClassName = (child) => {
         const className = classNames(
             child.props.className,
             'local-navigation__item',
@@ -36,7 +36,7 @@ class LocalNavigation extends React.PureComponent {
         return (
             <div className={className}>
                 <FandomContentWell>
-                    {React.Children.map(this.props.children, child => this.modifyChildren(child))}
+                    {React.Children.map(this.props.children, child => this.addClassName(child))}
                 </FandomContentWell>
             </div>
         );
