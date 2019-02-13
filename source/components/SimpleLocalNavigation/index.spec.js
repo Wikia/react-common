@@ -6,8 +6,8 @@ import SimpleLocalNavigation from './index';
 test('SimpleLocalNavigation renders', () => {
     const component = mount(
         <SimpleLocalNavigation className="foo">
-            <span>Item 1</span>
-            <span>Item 2</span>
+            <span className={SimpleLocalNavigation.ACTIVE_CLASS_NAME}>active item</span>
+            <span>inactive item</span>
         </SimpleLocalNavigation>
     );
     expect(component).toMatchSnapshot();

@@ -6,14 +6,14 @@ import FandomContentWell from '../FandomContentWell';
 
 import './styles.scss';
 
-export const ACTIVE_CLASS_NAME = 'is-active';
-
 /**
  * SimpleLocalNavigation is a simple navigation than can be used with links or `react-router`.
  *
- * To mark child as active use exported class `ACTIVE_CLASS_NAME`.
+ * To mark child as active use exported static `SimpleLocalNavigation.ACTIVE_CLASS_NAME`.
  */
 class SimpleLocalNavigation extends React.PureComponent {
+    static ACTIVE_CLASS_NAME = 'is-active';
+
     addClassName = (child) => {
         const className = classNames(
             child.props.className,

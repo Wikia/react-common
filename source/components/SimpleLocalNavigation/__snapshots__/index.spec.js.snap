@@ -14,16 +14,16 @@ exports[`SimpleLocalNavigation renders 1`] = `
         className="wds-fandom-content-well "
       >
         <span
-          className="simple-local-navigation__item"
+          className="is-active simple-local-navigation__item"
           key=".0"
         >
-          Item 1
+          active item
         </span>
         <span
           className="simple-local-navigation__item"
           key=".1"
         >
-          Item 2
+          inactive item
         </span>
       </div>
     </FandomContentWell>
