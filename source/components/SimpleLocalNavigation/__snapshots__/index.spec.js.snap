@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleLocalNavigation renders 1`] = `
+<SimpleLocalNavigation
+  className="foo"
+>
+  <div
+    className="simple-local-navigation foo"
+  >
+    <FandomContentWell
+      className=""
+    >
+      <div
+        className="wds-fandom-content-well "
+      >
+        <span
+          className="simple-local-navigation__item"
+          key=".0"
+        >
+          Item 1
+        </span>
+        <span
+          className="simple-local-navigation__item"
+          key=".1"
+        >
+          Item 2
+        </span>
+      </div>
+    </FandomContentWell>
+  </div>
+</SimpleLocalNavigation>
+`;

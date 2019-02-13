@@ -46,7 +46,11 @@
       "Input",
       "List",
       "Select",
+      "SimpleLocalNavigation",
       "Spinner",
+      "Switch",
+      "Switch.Item",
+      "Switch.Wrapper",
       "Timeago",
       "VideoPlayIcon",
       "Vignette"
