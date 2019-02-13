@@ -2,29 +2,27 @@ import React from 'react';
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
 import GlobalNavigationSearch from './components/GlobalNavigationSearch';
-import GlobalNavigationUserAnon from './components/GlobalNavigationUser/GlobalNavigationUserAnon';
 
 import './styles.scss';
 import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
+import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
 
 class GlobalNavigation extends React.Component {
 
     renderMainNavigation(navigation) {
-        return navigation.map(link => {
+        return navigation.map((link, index) => {
             if (link.type === 'link-text') {
-                return <GlobalNavigationLinkText key={link.href} link={link} isStandaloneLink />;
+                return <GlobalNavigationLinkText key={index} link={link} isStandaloneLink />;
             } else if (link.type === 'link-group') {
-                return <GlobalNavigationLinkGroup key={link.href} link={link} />
+                return <GlobalNavigationLinkGroup key={index} link={link} />
             }
         });
     }
 
     render() {
         const { model } = this.props;
-
-        console.log('model', model);
 
         return (
             <div className="wds-global-navigation">
@@ -43,7 +41,7 @@ class GlobalNavigation extends React.Component {
                 <div className="wds-global-navigation__content-bar-right">
                     <div className="wds-global-navigation__dropdown-controls">
                         <GlobalNavigationSearch data={model.search} />
-                        <GlobalNavigationUserAnon data={model.anon} />
+                        <GlobalNavigationUser data={model} />
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
                         </div>

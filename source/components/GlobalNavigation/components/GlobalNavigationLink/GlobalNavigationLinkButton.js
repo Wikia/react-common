@@ -10,7 +10,7 @@ const GlobalNavigationLinkButton = ({ link }) => {
         <Button
             className="wds-global-navigation__link-button"
             secondary
-            dataTrackingLabel={link['tracking-label']}
+            data-tracking-label={link['tracking-label']}
             href={link.href}
         >
             {t(link.title.key)}

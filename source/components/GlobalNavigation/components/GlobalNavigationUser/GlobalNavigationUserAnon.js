@@ -4,6 +4,7 @@ import { withTranslation } from 'react-i18next';
 import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
 import Button from "../../../Button";
+import List from '../../../List/index';
 
 class GlobalNavigationUserAnon extends React.Component {
     renderToggle = (chevron) => {
@@ -22,10 +23,11 @@ class GlobalNavigationUserAnon extends React.Component {
                 toggle={this.renderToggle}
                 className="wds-global-navigation__user-menu wds-global-navigation__user-anon"
                 contentScrollable={false}
-                dropdownRightAligned={true}
+                dropdownRightAligned
+                hasShadow
                 contentClassName="wds-global-navigation__dropdown-content"
             >
-                <ul className="wds-list wds-has-lines-between">
+                <List linesBetween>
                     <li>
                         <Button
                             fullwidth
@@ -50,7 +52,7 @@ class GlobalNavigationUserAnon extends React.Component {
                             {t(data.register.title.key)}
                         </Button>
                     </li>
-                </ul>
+                </List>
             </Dropdown>
         );
     }
