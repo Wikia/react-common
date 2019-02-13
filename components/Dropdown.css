@@ -24,6 +24,9 @@
   cursor: default;
   position: relative;
 }
+.wds-is-clickable .wds-dropdown__toggle {
+  cursor: pointer;
+}
 .wds-dropdown__content {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -117,16 +120,16 @@
   border-bottom-color: #ccc;
   margin-left: -9px;
 }
-.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before, .wds-dropdown.wds-is-active:not(.wds-no-chevron)::after, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::before, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::after {
+.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before, .wds-dropdown.wds-is-active:not(.wds-no-chevron)::after, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::after {
   display: block;
 }
-.wds-dropdown.wds-is-active .wds-dropdown__content, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__content {
+.wds-dropdown.wds-is-active .wds-dropdown__content, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover .wds-dropdown__content {
   display: inline-block;
 }
-.wds-dropdown.wds-is-active .wds-dropdown__toggle-chevron, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__toggle-chevron {
+.wds-dropdown.wds-is-active .wds-dropdown__toggle-chevron, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover .wds-dropdown__toggle-chevron {
   transform: rotate(180deg);
 }
-.wds-dropdown.wds-is-active.wds-has-shadow::before, .wds-dropdown.wds-is-active.wds-has-dark-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-dark-shadow::before {
+.wds-dropdown.wds-is-active.wds-has-shadow::before, .wds-dropdown.wds-is-active.wds-has-dark-shadow::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover.wds-has-shadow::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover.wds-has-dark-shadow::before {
   display: none;
 }
 .wds-dropdown.wds-has-shadow .wds-dropdown__content {

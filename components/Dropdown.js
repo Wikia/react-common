@@ -536,6 +536,7 @@ function (_React$Component) {
           contentScrollable = _this$props2.contentScrollable,
           toggleAttrs = _this$props2.toggleAttrs,
           isStickedToParent = _this$props2.isStickedToParent,
+          isNotHoverable = _this$props2.isNotHoverable,
           toggleClassName = _this$props2.toggleClassName,
           className = _this$props2.className;
       var _this$state2 = this.state,
@@ -551,6 +552,7 @@ function (_React$Component) {
         'wds-dropdown-level-2': isLevel2,
         'wds-is-touch-device': isTouchDevice,
         'wds-is-sticked-to-parent': isStickedToParent,
+        'wds-is-not-hoverable': isNotHoverable,
         'wds-is-flipped': isFlipped
       }, className);
       var dropdownBody = React.createElement(React.Fragment, null, React.createElement(DropdownToggle, {
