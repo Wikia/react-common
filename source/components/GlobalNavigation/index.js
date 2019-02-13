@@ -14,12 +14,15 @@ import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/Glo
 import GlobalNavigationMobileUserModal from './components/GlobalNavigationUser/GlobalNavigationMobileUserModal';
 
 import './styles.scss';
+import Icon from "../Icon/index";
+import Button from "../Button/index";
 
 class GlobalNavigation extends React.Component {
     constructor(props) {
         super(props);
 
         this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
 
     state = {
@@ -30,6 +33,13 @@ class GlobalNavigation extends React.Component {
         if (type === 'search') {
             this.setState({ isSearchModalOpen: true });
         }
+    }
+
+    closeModal() {
+        this.setState({
+            isSearchModalOpen: false,
+            isUserModalOpen: false,
+        })
     }
 
     renderMainNavigation(navigation) {
@@ -104,6 +114,9 @@ class GlobalNavigation extends React.Component {
                             {this.renderMainNavigation(model['main-navigation'])}
                         </GlobalNavigationSearchModal>
                         <GlobalNavigationMobileUserModal data={model}/>
+                        <Button onClick={this.closeModal} text className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close">
+                            <Icon name="close" />
+                        </Button>
                     </div>
                 </div>
             </div>
