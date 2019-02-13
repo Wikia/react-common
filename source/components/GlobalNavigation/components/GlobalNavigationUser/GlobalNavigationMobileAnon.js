@@ -5,9 +5,7 @@ import Avatar from "../../../Avatar";
 
 const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => {
     return (
-        <Button
-            onClick={() => {}}
-            text={true}
+        <Button text
             href={getUrlWithRedirect(data.signin.href)}
             className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon">
             <Avatar />
