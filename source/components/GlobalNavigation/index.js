@@ -10,8 +10,8 @@ import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNa
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
-import GlobalNavigationSearchModal from "./components/GlobalNavigationSearch/GlobalNavigationSearchModal";
-import GlobalNavigationMobileUser from "./components/GlobalNavigationUser/GlobalNavigationMobileUser";
+import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
+import GlobalNavigationMobileUserModal from './components/GlobalNavigationUser/GlobalNavigationMobileUserModal';
 
 import './styles.scss';
 
@@ -103,7 +103,7 @@ class GlobalNavigation extends React.Component {
                             />
                             {this.renderMainNavigation(model['main-navigation'])}
                         </GlobalNavigationSearchModal>
-                        <GlobalNavigationMobileUser/>
+                        <GlobalNavigationMobileUserModal data={model}/>
                     </div>
                 </div>
             </div>

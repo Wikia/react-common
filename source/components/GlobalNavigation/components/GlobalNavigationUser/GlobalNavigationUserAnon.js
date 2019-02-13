@@ -5,6 +5,7 @@ import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
 import Button from "../../../Button";
 import List from '../../../List/index';
+import withUpdatedAuthLinks from "../../hocs/withUpdatedAuthLinks";
 
 class GlobalNavigationUserAnon extends React.Component {
     renderToggle = (chevron) => {
@@ -58,4 +59,4 @@ class GlobalNavigationUserAnon extends React.Component {
     }
 }
 
-export default withTranslation()(GlobalNavigationUserAnon);
+export default withTranslation()(withUpdatedAuthLinks(GlobalNavigationUserAnon));

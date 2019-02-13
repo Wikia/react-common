@@ -23,9 +23,6 @@
   height: 100%;
   justify-content: flex-end;
 }
-.wds-global-navigation__search-close-icon {
-  transform: rotate(45deg);
-}
 .wds-global-navigation__search-container {
   height: 100%;
   flex: 1;
@@ -79,6 +76,9 @@
 }
 .wds-global-navigation__search-input:placeholder-shown + .wds-global-navigation__search-clear {
   opacity: 0.5;
+}
+.wds-global-navigation__search-dropdown {
+  display: inline-flex;
 }
 .wds-global-navigation__search-submit {
   color: #fff;
@@ -143,8 +143,11 @@
   background-color: transparent;
   color: #39424d;
 }
+.wds-global-navigation__search-container:not(.wds-search-is-focused) .wds-global-navigation__search-suggestions.wds-dropdown__content {
+  display: none;
+}
 @media only screen and (max-width: 1499px) {
-  .wds-global-navigation__search-container:not(.wds-search-is-focused) .wds-global-navigation__search-suggestions.wds-dropdown__content, .wds-global-navigation:not(.wds-search-is-active) .wds-global-navigation__search-suggestions.wds-dropdown__content {
+  .wds-global-navigation:not(.wds-search-is-active) .wds-global-navigation__search-suggestions.wds-dropdown__content {
     display: none;
   }
 }
@@ -177,9 +180,6 @@
   .wds-global-navigation__search-toggle-text {
     display: none !important;
   }
-}
-.wds-global-navigation__search:hover:not(.wds-is-active) .wds-dropdown__content {
-  display: none;
 }
 
 @media only screen and (max-width: 1499px) {
@@ -697,6 +697,85 @@
   to {
     opacity: 1;
   }
+}
+.wds-sign-out__button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
+  width: auto;
+}
+.wds-is-linked .wds-sign-out__button {
+  box-sizing: border-box;
+  display: block;
+  padding: 11px 9px;
+  width: 100%;
+}
+.wds-sign-out__button:hover {
+  background-color: rgba(0, 172, 172, 0.1);
+  color: #00acac;
+}
+.wds-sign-out__button:focus:not(:disabled), .wds-sign-out__button:active, .wds-sign-out__button.wds-is-active {
+  background-color: transparent;
+  color: inherit;
+}/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 7px 18px;
+}
+.wds-list > li {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1em;
+  padding: 11px 0;
+}
+.wds-list.wds-has-big-items {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.wds-list.wds-has-big-items > li {
+  font-size: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.wds-list.wds-has-bolded-items > li {
+  font-weight: bold;
+}
+.wds-list.wds-has-lines-between > li {
+  border-bottom: solid 1px #dee7e5;
+}
+.wds-list.wds-has-lines-between > li:last-child {
+  border: 0;
+}
+.wds-list.wds-has-ellipsis > li, .wds-list.wds-has-ellipsis.wds-is-linked > li > a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wds-list.wds-is-linked > li {
+  padding: 0;
+}
+.wds-list.wds-is-linked > li > a {
+  display: block;
+  padding: 11px 0;
 }/**
 * Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
 */
@@ -722,6 +801,9 @@
 .wds-dropdown__toggle {
   cursor: default;
   position: relative;
+}
+.wds-is-clickable .wds-dropdown__toggle {
+  cursor: pointer;
 }
 .wds-dropdown__content {
   background-color: #fff;
@@ -816,16 +898,16 @@
   border-bottom-color: #ccc;
   margin-left: -9px;
 }
-.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before, .wds-dropdown.wds-is-active:not(.wds-no-chevron)::after, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::before, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::after {
+.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before, .wds-dropdown.wds-is-active:not(.wds-no-chevron)::after, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover:not(.wds-no-chevron)::after {
   display: block;
 }
-.wds-dropdown.wds-is-active .wds-dropdown__content, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__content {
+.wds-dropdown.wds-is-active .wds-dropdown__content, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover .wds-dropdown__content {
   display: inline-block;
 }
-.wds-dropdown.wds-is-active .wds-dropdown__toggle-chevron, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__toggle-chevron {
+.wds-dropdown.wds-is-active .wds-dropdown__toggle-chevron, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover .wds-dropdown__toggle-chevron {
   transform: rotate(180deg);
 }
-.wds-dropdown.wds-is-active.wds-has-shadow::before, .wds-dropdown.wds-is-active.wds-has-dark-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-dark-shadow::before {
+.wds-dropdown.wds-is-active.wds-has-shadow::before, .wds-dropdown.wds-is-active.wds-has-dark-shadow::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover.wds-has-shadow::before, .wds-dropdown:not(.wds-is-touch-device):not(.wds-is-not-hoverable):hover.wds-has-dark-shadow::before {
   display: none;
 }
 .wds-dropdown.wds-has-shadow .wds-dropdown__content {
@@ -888,128 +970,6 @@
 }
 .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2.wds-is-active .wds-dropdown-level-2__content, .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2:not(.wds-is-touch-device):hover .wds-dropdown-level-2__content {
   display: block;
-}/**
-* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
-*/
-/**
-* Implementation taken from http://alienryderflex.com/hsp.html
-*/
-/**
-* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
-*/
-/**
-* Implementation taken from http://alienryderflex.com/hsp.html
-*/
-.wds-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 7px 18px;
-}
-.wds-list > li {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1em;
-  padding: 11px 0;
-}
-.wds-list.wds-has-big-items {
-  padding-bottom: 2px;
-  padding-top: 2px;
-}
-.wds-list.wds-has-big-items > li {
-  font-size: 16px;
-  padding-bottom: 16px;
-  padding-top: 16px;
-}
-.wds-list.wds-has-bolded-items > li {
-  font-weight: bold;
-}
-.wds-list.wds-has-lines-between > li {
-  border-bottom: solid 1px #dee7e5;
-}
-.wds-list.wds-has-lines-between > li:last-child {
-  border: 0;
-}
-.wds-list.wds-has-ellipsis > li, .wds-list.wds-has-ellipsis.wds-is-linked > li > a {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.wds-list.wds-is-linked > li {
-  padding: 0;
-}
-.wds-list.wds-is-linked > li > a {
-  display: block;
-  padding: 11px 0;
-}/**
-* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
-*/
-/**
-* Implementation taken from http://alienryderflex.com/hsp.html
-*/
-/**
-* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
-*/
-/**
-* Implementation taken from http://alienryderflex.com/hsp.html
-*/
-.wds-avatar {
-  display: inline-block;
-  position: relative;
-}
-.wds-avatar a {
-  height: 100%;
-  width: 100%;
-}
-
-.wds-avatar__image {
-  height: 100%;
-  min-width: 100%;
-  width: 100%;
-  display: inline-block;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.wds-avatar__badge {
-  line-height: 0;
-  position: absolute;
-}
-.wds-avatar__badge svg {
-  height: 100%;
-  min-width: 100%;
-  width: 100%;
-}
-
-.wds-avatar {
-  height: 48px;
-  min-width: 48px;
-  width: 48px;
-}
-.wds-avatar a {
-  color: #bed1cf;
-}
-.wds-avatar a:hover {
-  color: #bed1cf;
-}
-.wds-avatar .wds-avatar__image {
-  background-color: #fff;
-  fill: #bed1cf;
-}
-.wds-avatar .wds-avatar__image:hover {
-  fill: #bed1cf;
-}
-.wds-avatar img.wds-avatar__image {
-  border: solid 3px #bed1cf;
-}
-.wds-avatar img.wds-avatar__image:hover {
-  border-color: #bed1cf;
-}
-.wds-avatar .wds-avatar__badge {
-  height: 20.1872px;
-  min-width: 20.1872px;
-  width: 20.1872px;
-  left: -4.4860444444px;
-  top: -5.7677714286px;
 }/**
 * Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
 */
@@ -1550,6 +1510,76 @@ button.wds-button, a.wds-button {
 .wds-button.wds-is-fullwidth {
   box-sizing: border-box;
   width: 100%;
+}/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-avatar {
+  display: inline-block;
+  position: relative;
+}
+.wds-avatar a {
+  height: 100%;
+  width: 100%;
+}
+
+.wds-avatar__image {
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.wds-avatar__badge {
+  line-height: 0;
+  position: absolute;
+}
+.wds-avatar__badge svg {
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.wds-avatar {
+  height: 48px;
+  min-width: 48px;
+  width: 48px;
+}
+.wds-avatar a {
+  color: #bed1cf;
+}
+.wds-avatar a:hover {
+  color: #bed1cf;
+}
+.wds-avatar .wds-avatar__image {
+  background-color: #fff;
+  fill: #bed1cf;
+}
+.wds-avatar .wds-avatar__image:hover {
+  fill: #bed1cf;
+}
+.wds-avatar img.wds-avatar__image {
+  border: solid 3px #bed1cf;
+}
+.wds-avatar img.wds-avatar__image:hover {
+  border-color: #bed1cf;
+}
+.wds-avatar .wds-avatar__badge {
+  height: 20.1872px;
+  min-width: 20.1872px;
+  width: 20.1872px;
+  left: -4.4860444444px;
+  top: -5.7677714286px;
 }/**
 * Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
 */
