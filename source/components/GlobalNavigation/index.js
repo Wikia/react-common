@@ -8,6 +8,8 @@ import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNa
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
+import GlobalNavigationSearchModal from "./components/GlobalNavigationSearch/GlobalNavigationSearchModal";
+import GlobalNavigationMobileUser from "./components/GlobalNavigationUser/GlobalNavigationMobileUser";
 
 class GlobalNavigation extends React.Component {
 
@@ -45,6 +47,10 @@ class GlobalNavigation extends React.Component {
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
                         </div>
+                    </div>
+                    <div className="wds-global-navigation__modal-controls">
+                        <GlobalNavigationSearchModal/>
+                        <GlobalNavigationMobileUser/>
                     </div>
                 </div>
             </div>
