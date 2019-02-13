@@ -110,6 +110,7 @@ class Dropdown extends React.Component {
             contentScrollable,
             toggleAttrs,
             isStickedToParent,
+            isNotHoverable,
             toggleClassName,
             className,
         } = this.props;
@@ -129,6 +130,7 @@ class Dropdown extends React.Component {
             'wds-dropdown-level-2': isLevel2,
             'wds-is-touch-device': isTouchDevice,
             'wds-is-sticked-to-parent': isStickedToParent,
+            'wds-is-not-hoverable': isNotHoverable,
             'wds-is-flipped': isFlipped,
         }, className);
 

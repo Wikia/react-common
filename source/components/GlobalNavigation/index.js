@@ -24,6 +24,8 @@ class GlobalNavigation extends React.Component {
     render() {
         const { model } = this.props;
 
+        console.log('model', model);
+
         return (
             <div className="wds-global-navigation">
                 <div className="wds-global-navigation__content-bar-left">
@@ -40,7 +42,7 @@ class GlobalNavigation extends React.Component {
                 </div>
                 <div className="wds-global-navigation__content-bar-right">
                     <div className="wds-global-navigation__dropdown-controls">
-                        <GlobalNavigationSearch />
+                        <GlobalNavigationSearch data={model.search} />
                         <GlobalNavigationUserAnon data={model.anon} />
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
