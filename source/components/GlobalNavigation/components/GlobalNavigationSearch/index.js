@@ -348,13 +348,6 @@ class GlobalNavigationSearch extends React.Component {
                 tabIndex="0"
             >
                 <div className="wds-global-navigation__search">
-                    <div className="wds-global-navigation__search-toggle" role="searchbox" onClick={this.openSearch}>
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
-                        <span className="wds-global-navigation__search-toggle-text">
-                                Search
-                        </span>
-                    </div>
                     <Dropdown
                         className="wds-global-navigation__search-dropdown"
                         toggle={this.renderInput()}
@@ -364,6 +357,13 @@ class GlobalNavigationSearch extends React.Component {
                         isNotHoverable={!Boolean(suggestions.length)}
                         noChevron
                     >
+                        <div className="wds-global-navigation__search-toggle" role="searchbox" onClick={this.openSearch}>
+                            <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
+                            <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
+                            <span className="wds-global-navigation__search-toggle-text">
+                                Search
+                            </span>
+                        </div>
                         <List isLinked hasEllipsis>
                             {this.renderSuggestions()}
                         </List>

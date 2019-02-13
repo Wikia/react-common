@@ -80,6 +80,9 @@
 .wds-global-navigation__search-input:placeholder-shown + .wds-global-navigation__search-clear {
   opacity: 0.5;
 }
+.wds-global-navigation__search-dropdown {
+  display: inline-flex;
+}
 .wds-global-navigation__search-submit {
   color: #fff;
   background: none;
