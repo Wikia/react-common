@@ -19,7 +19,7 @@ export { default as BannerNotifications } from './BannerNotifications';
 
 // Lite Icons
 export { default as VideoPlayIcon } from './VideoPlayIcon';
-// Usefull flow components
+// Useful flow components
 export { default as ContentWell } from './ContentWell';
 export { default as FandomContentWell } from './FandomContentWell';
 export { default as List } from './List';
