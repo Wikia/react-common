@@ -1,11 +1,21 @@
+## **[IMPORTANT]** Artifactory Setup
+This setup will work for both `yarn` and `npm`. If you run into issues consult [Artifactory NPM Docs](https://www.jfrog.com/confluence/display/RTF/Npm+Registry) first
+
+1. Verify you can login to [Artifactory Wikia](https://artifactory.wikia-inc.com/artifactory/webapp/#/home)
+2. Change wikia scoped packages to use artifactory
+    * `$> npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/`
+3. Login
+    * `$> npm login --scope=@wikia`
+    * Use artifactory login and artifactory API key for password by going to "Edit Profile" in artifactory web ui
+
 ## General guidelines
 
-- ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.
-- Use function syntax if possible, use nesting and flat files.
-- 100% lint and coverage and no regressions
-- use [Jest](https://facebook.github.io/jest/) as a general testing framework and for testing component's rendering
-- use [Enzyme](https://github.com/airbnb/enzyme) for testing interactions
-- use [Sinon](http://sinonjs.org/) for testing callbacks
+* ES6 React components with [`prop-types`](https://github.com/facebook/prop-types) saved in `.js` file.
+* Use function syntax if possible, use nesting and flat files.
+* 100% lint and coverage and no regressions
+* use [Jest](https://facebook.github.io/jest/) as a general testing framework and for testing component's rendering
+* use [Enzyme](https://github.com/airbnb/enzyme) for testing interactions
+* use [Sinon](http://sinonjs.org/) for testing callbacks
 
 ## Step-by-step guide for components
 
@@ -62,12 +72,9 @@ Running the build is as simple as:
 
 This will run few build commands in sequence:
 
-1. Remove every generated file and directory from the root directory (equivalent of `yarn clean`).
-2. Build the library outputting built ES5 files to the root (`yarn lib:build`).
-3. Build the `docs/`  in the root directory; it contains the build styleguide that will appear on the GitHub pages (`yarn styleguide:build`).
-4. Build the `package.json` in the root directory (`yarn package:build`).
-5. Build the `README.md` in the root directory and in all auto generated directories (`yarn readme:build`).
-
+1. Remove every generated file and directory from the `dist/` directory (equivalent of `yarn clean`).
+2. Build the library outputting built ES5 files to the `dist/` (`yarn lib:build`).
+3. Build the styleguide in the `docs/` directory; it contains the build styleguide that will appear on the GitHub pages (`yarn styleguide:build`).
 
 ## Release
 
@@ -75,7 +82,7 @@ After PR is merged into `master` branch create new release. You should use [SemV
 
 The script will automatically pull newest `master` branch, build the documentation, create new release version in the `package.json`, create GitHub tag and push this tag to GitHub. After pushing the new tag it will publish the package to artifactory.
 
-### Usual release; bugfixes, no new features and no breaking changes
+### Default release; bugfixes, no new features and no breaking changes
 
 ```js static
 > yarn release
