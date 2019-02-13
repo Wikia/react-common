@@ -1,7 +1,18 @@
 import React from 'react';
+import withRedirectUrl from "../../hocs/withRedirectUrl";
+import Button from "../../../Button";
+import Avatar from "../../../Avatar";
 
-const GlobalNavigationMobileAnon = ({ data }) => {
-    return 'a';
+const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => {
+    return (
+        <Button
+            onClick={() => {}}
+            text={true}
+            href={getUrlWithRedirect(data.signin.href)}
+            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon">
+            <Avatar />
+        </Button>
+    )
 };
 
-export default GlobalNavigationMobileAnon;
+export default withRedirectUrl(GlobalNavigationMobileAnon);

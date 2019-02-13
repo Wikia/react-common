@@ -5,7 +5,6 @@ import Avatar from '../../../Avatar';
 import List from '../../../List/index';
 import GlobalNavigationLinkText from '../GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkLogOut from '../GlobalNavigationLink/GlobalNavigationLinkLogOut';
-import withUpdatedAuthLinks from "../../hocs/withUpdatedAuthLinks";
 
 class GlobalNavigationUserLoggedIn extends React.Component {
     renderToggle = (chevron) => {

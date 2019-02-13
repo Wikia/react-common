@@ -5,7 +5,7 @@ import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
 import Button from "../../../Button";
 import List from '../../../List/index';
-import withUpdatedAuthLinks from "../../hocs/withUpdatedAuthLinks";
+import withRedirectUrl from "../../hocs/withRedirectUrl";
 
 class GlobalNavigationUserAnon extends React.Component {
     renderToggle = (chevron) => {
@@ -17,7 +17,7 @@ class GlobalNavigationUserAnon extends React.Component {
     };
 
     render() {
-        const { data, t } = this.props;
+        const { data, t, getUrlWithRedirect } = this.props;
 
         return (
             <Dropdown
@@ -32,7 +32,7 @@ class GlobalNavigationUserAnon extends React.Component {
                     <li>
                         <Button
                             fullwidth
-                            href={data.signin.href}
+                            href={getUrlWithRedirect(data.signin.href)}
                             rel="nofollow"
                             data-tracking-label="account.sign-in"
                         >
@@ -44,7 +44,7 @@ class GlobalNavigationUserAnon extends React.Component {
                             Don't have an account?
                         </div>
                         <Button
-                            href={data.register.href}
+                            href={getUrlWithRedirect(data.register.href)}
                             rel="nofollow"
                             data-tracking-label="account.register"
                             fullwidth
@@ -59,4 +59,4 @@ class GlobalNavigationUserAnon extends React.Component {
     }
 }
 
-export default withTranslation()(withUpdatedAuthLinks(GlobalNavigationUserAnon));
+export default withTranslation()(withRedirectUrl(GlobalNavigationUserAnon));
