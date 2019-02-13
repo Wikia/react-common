@@ -45,8 +45,12 @@
       "IconSprite",
       "Input",
       "List",
+      "LocalNavigation",
       "Select",
       "Spinner",
+      "Switch",
+      "Switch.Item",
+      "Switch.Wrapper",
       "Timeago",
       "VideoPlayIcon",
       "Vignette"

@@ -1,0 +1,41 @@
+@import "~design-system/dist/scss/wds-variables/index";
+@import "../FandomContentWell/styles.scss";
+
+.local-navigation {
+	background: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .18);
+
+	&__item {
+		align-items: center;
+		border-bottom: 5px solid transparent;
+		color: $wds-fandom-color-navy;
+		cursor: pointer;
+		display: inline-flex;
+		font-size: 14px;
+		font-weight: $wds-font-weight-medium;
+		height: 50px;
+		justify-content: center;
+		letter-spacing: .2px;
+		padding-top: 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-right: 24px;
+		}
+
+		&:visited,
+		&:active {
+			color: inherit;
+		}
+
+		&:hover {
+			color: $wds-fandom-color-link-hover;
+		}
+
+		&.is-active {
+			border-color: #088488;
+			color: #088488;
+		}
+	}
+}

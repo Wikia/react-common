@@ -95,6 +95,7 @@ module.exports = {
 
         return `import ${name} from '${pkg.name}/${subPath}';`;
     },
+    resolver: require('react-docgen').resolver.findAllComponentDefinitions,
     // propsParser(filePath, source, resolver, handlers) {
     //     /**
     //      * `react-docgen` cannot parse this fine syntax, so let's ignore it
