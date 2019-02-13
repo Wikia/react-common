@@ -1,24 +1,24 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
+import withUpdatedAuthLinks from "../../hocs/withUpdatedAuthLinks";
 
 class GlobalNavigationLinkLogOut extends React.Component {
-    constructor(props) {
-        super(props);
-        // TODO: handle SSR case better
-        this.state = {
-            redirectUrl: window ? window.location.href : 'https://fandom.com',
-        }
-    }
-
-    componentDidMount() {
-        this.setState({
-            redirectUrl: window.location.href,
-        })
-    }
+    // constructor(props) {
+    //     super(props);
+    //     // TODO: handle SSR case better
+    //     this.state = {
+    //         redirectUrl: 'https://fandom.com',
+    //     }
+    // }
+    //
+    // componentDidMount() {
+    //     this.setState({
+    //         redirectUrl: window.location.href,
+    //     })
+    // }
 
     render() {
-        const { link, t } = this.props;
-        const { redirectUrl } = this.state;
+        const { link, t, redirectUrl } = this.props;
 
         return (
             <div id={link.title.key}>
@@ -42,4 +42,4 @@ class GlobalNavigationLinkLogOut extends React.Component {
     }
 }
 
-export default withTranslation()(GlobalNavigationLinkLogOut);
+export default withTranslation()(withUpdatedAuthLinks(GlobalNavigationLinkLogOut));
