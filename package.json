@@ -4,7 +4,6 @@
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
-  "private": true,
   "scripts": {
     "prepublishOnly": "yarn clean && yarn build:lib",
     "build": "yarn clean && yarn build:lib && yarn build:docs",
