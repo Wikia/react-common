@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from "prop-types";
+import classNames from "classnames";
+
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
 import GlobalNavigationSearch from './components/GlobalNavigationSearch';
 
-import './styles.scss';
 import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
@@ -11,7 +13,24 @@ import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNaviga
 import GlobalNavigationSearchModal from "./components/GlobalNavigationSearch/GlobalNavigationSearchModal";
 import GlobalNavigationMobileUser from "./components/GlobalNavigationUser/GlobalNavigationMobileUser";
 
+import './styles.scss';
+
 class GlobalNavigation extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.openModal = this.openModal.bind(this);
+    }
+
+    state = {
+        isSearchModalOpen: false,
+    };
+
+    openModal(type) {
+        if (type === 'search') {
+            this.setState({ isSearchModalOpen: true });
+        }
+    }
 
     renderMainNavigation(navigation) {
         return navigation.map((link, index) => {
@@ -24,10 +43,22 @@ class GlobalNavigation extends React.Component {
     }
 
     render() {
-        const { model } = this.props;
+        const {
+            model,
+            onSearchToggleClicked,
+            onSearchSuggestionChosen,
+            goToSearchResults,
+            track,
+            onSearchCloseClicked,
+        } = this.props;
+        const { isSearchModalOpen } = this.state;
+        const containerClass = classNames('wds-global-navigation', {
+            'wds-search-is-active': isSearchModalOpen,
+            'wds-is-modal-opened': isSearchModalOpen,
+        });
 
         return (
-            <div className="wds-global-navigation">
+            <div className={containerClass}>
                 <div className="wds-global-navigation__content-bar-left">
                     <a
                         href={model.logo.href}
@@ -42,14 +73,36 @@ class GlobalNavigation extends React.Component {
                 </div>
                 <div className="wds-global-navigation__content-bar-right">
                     <div className="wds-global-navigation__dropdown-controls">
-                        <GlobalNavigationSearch data={model.search} />
+                        <GlobalNavigationSearch
+                            model={model.search}
+                            onSearchToggleClicked={onSearchToggleClicked}
+                            onSearchSuggestionChosen={onSearchSuggestionChosen}
+                            onSearchCloseClicked={onSearchCloseClicked}
+                            goToSearchResults={goToSearchResults}
+                            track={track}
+                        />
                         <GlobalNavigationUser data={model} />
                         <div className="wds-global-navigation__start-a-wiki">
                             <GlobalNavigationLinkButton link={model['create-wiki']} />
                         </div>
                     </div>
                     <div className="wds-global-navigation__modal-controls">
-                        <GlobalNavigationSearchModal/>
+                        <GlobalNavigationSearchModal
+                            model={model}
+                            isOpen={isSearchModalOpen}
+                            openModal={this.openModal}
+                        >
+                            <GlobalNavigationSearch
+                                model={model.search}
+                                onSearchToggleClicked={onSearchToggleClicked}
+                                onSearchCloseClicked={onSearchCloseClicked}
+                                onSearchSuggestionChosen={onSearchSuggestionChosen}
+                                goToSearchResults={goToSearchResults}
+                                track={track}
+                                inSearchModal
+                            />
+                            {this.renderMainNavigation(model['main-navigation'])}
+                        </GlobalNavigationSearchModal>
                         <GlobalNavigationMobileUser/>
                     </div>
                 </div>
@@ -57,5 +110,22 @@ class GlobalNavigation extends React.Component {
         );
     }
 }
+
+GlobalNavigation.propTypes = {
+    model: PropTypes.object.isRequired,
+    onSearchCloseClicked: PropTypes.func,
+    onSearchToggleClicked: PropTypes.func,
+    onSearchSuggestionChosen: PropTypes.func,
+    goToSearchResults: PropTypes.func,
+    track: PropTypes.func,
+};
+
+GlobalNavigation.defaultProps = {
+    onSearchCloseClicked: () => {},
+    onSearchToggleClicked: () => {},
+    onSearchSuggestionChosen: () => {},
+    goToSearchResults: () => {},
+    track: () => {},
+};
 
 export default GlobalNavigation;

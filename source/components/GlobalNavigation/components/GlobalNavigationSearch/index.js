@@ -7,6 +7,8 @@ import Dropdown from '../../../Dropdown';
 import Icon from '../../../../components/Icon';
 import List from '../../../List';
 import Button from "../../../Button";
+import PropTypes from "prop-types";
+import GlobalNavigation from "../../index";
 
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
@@ -78,7 +80,7 @@ class GlobalNavigationSearch extends React.Component {
 
     requestSuggestionsFromAPI() {
         const { query, searchRequestInProgress, requestsInProgress } = this.state;
-        const { data } = this.props;
+        const { model } = this.props;
 
         /**
          * This was queued to run before the user has finished typing, and when they
@@ -93,7 +95,7 @@ class GlobalNavigationSearch extends React.Component {
 
         this.setState({ requestsInProgress: { ...requestsInProgress, [query]: true } });
 
-        fetch(`${data.suggestions.url}&query=${query}`)
+        fetch(`${model.suggestions.url}&query=${query}`)
             .then((response) => {
                 if (response.ok) {
                     if (!this.isMounted) {
@@ -108,16 +110,16 @@ class GlobalNavigationSearch extends React.Component {
                     console.error('Search suggestions error', response);
                 }
             })
-            .then((data) => {
-                if (!data || searchRequestInProgress) {
+            .then((response) => {
+                if (!response || searchRequestInProgress) {
                     return;
                 }
 
                 this.setState({
-                    suggestion: data.suggestions,
+                    suggestion: response.suggestions,
                 });
 
-                this.cacheResult(query, data.suggestions);
+                this.cacheResult(query, response.suggestions);
             })
             .catch((reason) => {
                 console.error('Search suggestions error', reason)
@@ -276,7 +278,13 @@ class GlobalNavigationSearch extends React.Component {
     }
 
     componentDidMount() {
+        const { inSearchModal } = this.props;
+
         this.isMounted = true;
+
+        if (inSearchModal) {
+            this.input.current.focus();
+        }
     }
 
     componentWillUnmount() {
@@ -284,8 +292,8 @@ class GlobalNavigationSearch extends React.Component {
     }
 
     renderInput() {
-        const { t, data } = this.props;
-        const placeholderConfig = data['placeholder-active'];
+        const { t, model } = this.props;
+        const placeholderConfig = model['placeholder-active'];
         
         return (
             <React.Fragment>
@@ -374,12 +382,18 @@ class GlobalNavigationSearch extends React.Component {
     }
 }
 
+GlobalNavigationSearch.propTypes = {
+    model: PropTypes.object.isRequired,
+    onSearchCloseClicked: PropTypes.func.isRequired,
+    onSearchToggleClicked: PropTypes.func.isRequired,
+    onSearchSuggestionChosen: PropTypes.func.isRequired,
+    goToSearchResults: PropTypes.func.isRequired,
+    track: PropTypes.func.isRequired,
+    inSearchModal: PropTypes.bool,
+};
+
 GlobalNavigationSearch.defaultProps = {
-    onSearchToggleClicked: () => {},
-    onSearchCloseClicked: () => {},
-    onSearchSuggestionChosen: () => {},
-    goToSearchResults: () => {},
-    track: () => {},
+    inSearchModal: false,
 };
 
 export default withTranslation()(GlobalNavigationSearch);
