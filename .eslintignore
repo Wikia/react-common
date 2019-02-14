@@ -3,3 +3,9 @@ scripts/**
 config/**
 dist/**
 docs/**
+assets/**
+components/**
+hocs/**
+icons/**
+models/**
+systems/**

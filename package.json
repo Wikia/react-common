@@ -109,6 +109,11 @@
     "registry": "https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/"
   },
   "files": [
-    "dist/"
+    "/assets",
+    "/components",
+    "/hocs",
+    "/icons",
+    "/models",
+    "/systems"
   ]
 }
