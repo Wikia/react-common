@@ -11,7 +11,7 @@ import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalN
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
 import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
-import GlobalNavigationMobileUserModal from './components/GlobalNavigationUser/GlobalNavigationMobileUserModal';
+import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
 
 import './styles.scss';
 import Icon from "../Icon/index";
@@ -27,11 +27,16 @@ class GlobalNavigation extends React.Component {
 
     state = {
         isSearchModalOpen: false,
+        isUserModalOpen: false,
     };
 
     openModal(type) {
         if (type === 'search') {
             this.setState({ isSearchModalOpen: true });
+        }
+
+        if (type === 'user') {
+            this.setState({ isUserModalOpen: true })
         }
     }
 
@@ -61,10 +66,10 @@ class GlobalNavigation extends React.Component {
             track,
             onSearchCloseClicked,
         } = this.props;
-        const { isSearchModalOpen } = this.state;
+        const { isSearchModalOpen, isUserModalOpen } = this.state;
         const containerClass = classNames('wds-global-navigation', {
             'wds-search-is-active': isSearchModalOpen,
-            'wds-is-modal-opened': isSearchModalOpen,
+            'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
         });
 
         return (
@@ -115,7 +120,7 @@ class GlobalNavigation extends React.Component {
                                 {this.renderMainNavigation(model['main-navigation'])}
                             </nav>
                         </GlobalNavigationSearchModal>
-                        <GlobalNavigationMobileUserModal data={model}/>
+                        <GlobalNavigationMobileUser data={model} openModal={this.openModal} modalOpen={isUserModalOpen}/>
                         <Button
                             onClick={this.closeModal}
                             className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"

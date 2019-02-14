@@ -4,10 +4,10 @@ import withRedirectUrl from "../../hocs/withRedirectUrl";
 
 class GlobalNavigationLinkLogOut extends React.Component {
     render() {
-        const { link, t, redirectUrl } = this.props;
+        const { link, t, redirectUrl, className } = this.props;
 
         return (
-            <div id={link.title.key}>
+            <div id={link.title.key} className={className || ''}>
                 <form method="POST" action={link.href}>
                     <input
                         type="hidden"

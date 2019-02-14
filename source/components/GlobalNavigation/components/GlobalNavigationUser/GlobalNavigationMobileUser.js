@@ -2,9 +2,13 @@ import React from 'react';
 import GlobalNavigationMobileAnon from './GlobalNavigationMobileAnon';
 import GlobalNavigationMobileLoggedIn from './GlobalNavigationMobileLoggedIn';
 
-const GlobalNavigationMobileUserModal = ({ data }) => {
+const GlobalNavigationMobileUser = ({ data, openModal, modalOpen }) => {
     if (data.user) {
-        return <GlobalNavigationMobileLoggedIn data={data.user}/>
+        return (
+            <React.Fragment>
+                <GlobalNavigationMobileLoggedIn user={data.user} openModal={openModal} modalOpen={modalOpen}/>
+            </React.Fragment>
+        )
     }
 
     if (data.anon) {
@@ -14,4 +18,4 @@ const GlobalNavigationMobileUserModal = ({ data }) => {
     return null;
 };
 
-export default GlobalNavigationMobileUserModal
+export default GlobalNavigationMobileUser
