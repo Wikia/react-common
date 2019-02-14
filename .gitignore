@@ -68,3 +68,11 @@ typings/
 
 # build
 /dist/
+
+# TODO remove this list
+/assets
+/components
+/hocs
+/icons
+/models
+/systems

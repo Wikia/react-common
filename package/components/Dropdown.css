@@ -1,0 +1,219 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-dropdown {
+  display: inline-block;
+  position: relative;
+}
+.wds-dropdown__toggle {
+  cursor: default;
+  position: relative;
+}
+.wds-dropdown__content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  left: 50%;
+  min-width: 70%;
+  padding: 7px 0;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.wds-dropdown__content.wds-is-right-aligned {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+.wds-dropdown__content.wds-is-left-aligned {
+  left: 0;
+  transform: none;
+}
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list {
+  background-image: radial-gradient(farthest-side at 50% 0, rgba(26, 26, 26, 0.12), transparent), radial-gradient(farthest-side at 50% 100%, rgba(26, 26, 26, 0.12), transparent);
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 9px;
+  max-height: 270px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after, .wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 30px;
+  margin: 0 0 -30px;
+  position: relative;
+  z-index: -1;
+}
+.wds-dropdown__content:not(.wds-is-not-scrollable) .wds-list::after {
+  background-color: #fff;
+  margin: -29px 0 0;
+}
+.wds-dropdown__content.wds-is-not-scrollable .wds-list {
+  position: relative;
+}
+.wds-dropdown__content .wds-list {
+  padding: 0;
+}
+.wds-dropdown__content .wds-list > li {
+  margin: 0 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  white-space: nowrap;
+}
+.wds-dropdown__content .wds-list.wds-is-linked > li {
+  padding: 0;
+}
+.wds-dropdown__content .wds-list.wds-is-linked > li > a {
+  color: #39424d;
+  padding-left: 9px;
+  padding-right: 9px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+}
+.wds-dropdown__content .wds-list.wds-is-linked > li:hover > a:not(.wds-button), .wds-dropdown__content .wds-list.wds-is-linked > li.wds-is-selected > a:not(.wds-button) {
+  background-color: rgba(0, 172, 172, 0.1);
+  color: #00acac;
+}
+.wds-dropdown::before, .wds-dropdown::after {
+  bottom: -1px;
+  content: "";
+  display: none;
+  height: 0;
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  z-index: 2;
+}
+.wds-dropdown::after {
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  margin-left: -8px;
+}
+.wds-dropdown::before {
+  border: 9px solid transparent;
+  border-bottom-color: #ccc;
+  margin-left: -9px;
+}
+.wds-dropdown.wds-is-active:not(.wds-no-chevron)::before, .wds-dropdown.wds-is-active:not(.wds-no-chevron)::after, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::before, .wds-dropdown:not(.wds-is-touch-device):hover:not(.wds-no-chevron)::after {
+  display: block;
+}
+.wds-dropdown.wds-is-active .wds-dropdown__content, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__content {
+  display: inline-block;
+}
+.wds-dropdown.wds-is-active .wds-dropdown__toggle-chevron, .wds-dropdown:not(.wds-is-touch-device):hover .wds-dropdown__toggle-chevron {
+  transform: rotate(180deg);
+}
+.wds-dropdown.wds-is-active.wds-has-shadow::before, .wds-dropdown.wds-is-active.wds-has-dark-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-shadow::before, .wds-dropdown:not(.wds-is-touch-device):hover.wds-has-dark-shadow::before {
+  display: none;
+}
+.wds-dropdown.wds-has-shadow .wds-dropdown__content {
+  box-shadow: 0 0 10px 0 rgba(26, 26, 26, 0.2);
+}
+.wds-dropdown.wds-has-dark-shadow .wds-dropdown__content {
+  box-shadow: 0 0 20px 0 rgba(26, 26, 26, 0.3);
+}
+.wds-dropdown.wds-has-shadow .wds-dropdown__content, .wds-dropdown.wds-has-dark-shadow .wds-dropdown__content {
+  border: 0;
+}
+.wds-dropdown.wds-is-flipped::before, .wds-dropdown.wds-is-flipped::after {
+  bottom: unset;
+  top: -1px;
+}
+.wds-dropdown.wds-is-flipped::before {
+  border-bottom-color: transparent;
+  border-top-color: #ccc;
+}
+.wds-dropdown.wds-is-flipped::after {
+  border-bottom-color: transparent;
+  border-top-color: #fff;
+}
+.wds-dropdown.wds-is-flipped .wds-dropdown__content {
+  bottom: 100%;
+  top: unset;
+}
+
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 {
+  margin-right: 0;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 > a {
+  padding-right: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-chevron {
+  transform: rotate(-90deg);
+  margin-left: 18px;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2.wds-is-sticked-to-parent {
+  position: relative;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2.wds-is-sticked-to-parent .wds-dropdown-level-2__content {
+  top: auto;
+  bottom: -8px;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-level-2__content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  left: 100%;
+  padding: 7px 0;
+  position: absolute;
+  top: -8px;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2 .wds-dropdown-level-2__content .wds-list.wds-is-linked > li > a {
+  font-size: 12px;
+}
+.wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2.wds-is-active .wds-dropdown-level-2__content, .wds-dropdown__content .wds-list.wds-is-linked .wds-dropdown-level-2:not(.wds-is-touch-device):hover .wds-dropdown-level-2__content {
+  display: block;
+}/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-icon {
+  fill: currentColor;
+  height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+.wds-icon-small {
+  height: 18px;
+  min-width: 18px;
+  width: 18px;
+}
+.wds-icon-tiny {
+  height: 12px;
+  min-width: 12px;
+  width: 12px;
+}
