@@ -559,7 +559,6 @@ exports[`Select renders correctly 6`] = `
         </div>
         <input
           className="css-14uuagi"
-          disabled={false}
           id="fandom-select-input"
           onBlur={[Function]}
           onChange={[Function]}
