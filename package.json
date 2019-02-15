@@ -59,7 +59,7 @@
     "classnames": "^2.2.6",
     "concurrently": "^4.1.0",
     "coveralls": "^3.0.2",
-    "design-system": "git://github.com/Wikia/design-system.git#IW-1261",
+    "design-system": "git://github.com/Wikia/design-system.git#IW-1589",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-redux": "^0.2.1",
