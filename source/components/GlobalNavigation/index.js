@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
-import GlobalNavigationSearch from './components/GlobalNavigationSearch';
+import GlobalNavigationSearch from './components/GlobalNavigationSearch/GlobalNavigationSearch';
 
 import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
@@ -71,6 +71,8 @@ class GlobalNavigation extends React.Component {
             'wds-search-is-active': isSearchModalOpen,
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
         });
+
+        console.log('######', model);
 
         return (
             <div className={containerClass}>
