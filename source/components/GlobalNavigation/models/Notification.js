@@ -2,7 +2,8 @@ import merge from 'lodash/merge';
 import get from 'lodash/get';
 
 import { convertToTimestamp } from '../utils/isoTime';
-import notificationTypes from './notificationTypes';
+
+import { notificationTypes } from './notificationTypes';
 
 const defaultProps = {
     title: null,
@@ -55,72 +56,14 @@ function getNotificationType(apiData) {
 }
 
 class Notification {
-    constructor(data, apiInstance) {
+    constructor(data) {
         Object.keys(data).forEach(key => {
             this[key] = data[key];
         });
-
-        this.api = apiInstance;
     }
 
-    static build(notificationData, apiInstance) {
-        const data = merge({}, defaultProps, mapData(notificationData));
-
-        return new this(data, apiInstance);
-    }
-
-    markAsRead(willUnloadPage) {
-        if (willUnloadPage && window.navigator.sendBeacon) {
-            return this.markAsReadUsingSendBeacon();
-        }
-
-        return this.markAsReadUsingFetch(willUnloadPage);
-    }
-
-    markAsReadUsingSendBeacon() {
-        const body = JSON.stringify([this.uri]);
-        const markAsReadUrl = this.api.getNotificationServiceUrl('/notifications/mark-as-read/by-uri');
-
-        try {
-            const blob = new Blob([body], {
-                type: 'application/json'
-            });
-
-            if (window.navigator.sendBeacon(markAsReadUrl, blob) === true) {
-                return Promise.resolve()
-                    .then(() => {
-                        this.isUnread = false;
-                    });
-            } else {
-                return this.markAsReadUsingFetch(true);
-            }
-        } catch (exception) {
-            // See http://crbug.com/490015#c99
-            console.warn('Error when sending beacon', exception);
-            return this.markAsReadUsingFetch(true);
-        }
-    }
-
-    markAsReadUsingFetch(willUnloadPage) {
-        const body = JSON.stringify([this.uri]);
-        const options = {
-            body,
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            method: 'POST',
-        };
-
-        if (willUnloadPage) {
-            // Keep it low as it's blocking user from navigating to the notification target
-            options.timeout = 500;
-        }
-
-        return this.api
-            .fetchFromNotificationService('/notifications/mark-as-read/by-uri', options)
-            .then(() => {
-                this.isUnread = false;
-            });
+    static build(notificationData) {
+        return new this(merge({}, defaultProps, mapData(notificationData)));
     }
 }
 

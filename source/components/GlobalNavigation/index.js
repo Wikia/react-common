@@ -12,10 +12,14 @@ import GlobalNavigationLinkButton from './components/GlobalNavigationLink/Global
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
 import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
 import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
+import NotificationsDataProvider from "./components/GlobalNavigationNotifications/NotificationsDataProvider";
 
-import './styles.scss';
 import Icon from "../Icon/index";
 import Button from "../Button/index";
+
+import './styles.scss';
+import { NotificationsConsumer } from './utils/NotificationContext';
+import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
 
 class GlobalNavigation extends React.Component {
     constructor(props) {
@@ -72,67 +76,85 @@ class GlobalNavigation extends React.Component {
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
         });
 
-        console.log('######', model);
+        console.log('######', 'model', model);
 
         return (
-            <div className={containerClass}>
-                <div className="wds-global-navigation__content-bar-left">
-                    <a
-                        href={model.logo.href}
-                        className="wds-global-navigation__logo"
-                        data-tracking-label={model.logo['tracking-label']}
-                    >
-                        <LogoFandomWhite height="27" />
-                    </a>
-                    <nav className="wds-global-navigation__links">
-                        {this.renderMainNavigation(model['main-navigation'])}
-                    </nav>
-                </div>
-                <div className="wds-global-navigation__content-bar-right">
-                    <div className="wds-global-navigation__dropdown-controls">
-                        <GlobalNavigationSearch
-                            model={model.search}
-                            onSearchToggleClicked={onSearchToggleClicked}
-                            onSearchSuggestionChosen={onSearchSuggestionChosen}
-                            onSearchCloseClicked={onSearchCloseClicked}
-                            goToSearchResults={goToSearchResults}
-                            track={track}
-                        />
-                        <GlobalNavigationUser data={model} />
-                        <div className="wds-global-navigation__start-a-wiki">
-                            <GlobalNavigationLinkButton link={model['create-wiki']} />
-                        </div>
-                    </div>
-                    <div className="wds-global-navigation__modal-controls">
-                        <GlobalNavigationSearchModal
-                            model={model}
-                            isOpen={isSearchModalOpen}
-                            openModal={this.openModal}
+            <NotificationsDataProvider serviceUrl={model['services-domain']}>
+                <div className={containerClass}>
+                    <div className="wds-global-navigation__content-bar-left">
+                        <a
+                            href={model.logo.href}
+                            className="wds-global-navigation__logo"
+                            data-tracking-label={model.logo['tracking-label']}
                         >
+                            <LogoFandomWhite height="27" />
+                        </a>
+                        <nav className="wds-global-navigation__links">
+                            {this.renderMainNavigation(model['main-navigation'])}
+                        </nav>
+                    </div>
+                    <div className="wds-global-navigation__content-bar-right">
+                        <div className="wds-global-navigation__dropdown-controls">
                             <GlobalNavigationSearch
                                 model={model.search}
                                 onSearchToggleClicked={onSearchToggleClicked}
-                                onSearchCloseClicked={onSearchCloseClicked}
                                 onSearchSuggestionChosen={onSearchSuggestionChosen}
+                                onSearchCloseClicked={onSearchCloseClicked}
                                 goToSearchResults={goToSearchResults}
                                 track={track}
-                                inSearchModal
                             />
-                            <nav className="wds-global-navigation__links">
-                                {this.renderMainNavigation(model['main-navigation'])}
-                            </nav>
-                        </GlobalNavigationSearchModal>
-                        <GlobalNavigationMobileUser data={model} openModal={this.openModal} modalOpen={isUserModalOpen}/>
-                        <Button
-                            onClick={this.closeModal}
-                            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
-                            text
-                        >
-                            <Icon name="close" />
-                        </Button>
+                            <GlobalNavigationUser data={model} />
+                            {
+                                model.user && (
+                                    <NotificationsConsumer>
+                                        {
+                                            ({ unreadCount, loadFirstPage, markAllAsRead }) => (
+                                                <NotificationsDropdown
+                                                    track={track}
+                                                    loadFirstPage={loadFirstPage}
+                                                    unreadCount={unreadCount}
+                                                    markAllAsRead={markAllAsRead}
+                                                />
+                                            )
+                                        }
+                                    </NotificationsConsumer>
+                                )
+                            }
+                            <div className="wds-global-navigation__start-a-wiki">
+                                <GlobalNavigationLinkButton link={model['create-wiki']} />
+                            </div>
+                        </div>
+                        <div className="wds-global-navigation__modal-controls">
+                            <GlobalNavigationSearchModal
+                                model={model}
+                                isOpen={isSearchModalOpen}
+                                openModal={this.openModal}
+                            >
+                                <GlobalNavigationSearch
+                                    model={model.search}
+                                    onSearchToggleClicked={onSearchToggleClicked}
+                                    onSearchCloseClicked={onSearchCloseClicked}
+                                    onSearchSuggestionChosen={onSearchSuggestionChosen}
+                                    goToSearchResults={goToSearchResults}
+                                    track={track}
+                                    inSearchModal
+                                />
+                                <nav className="wds-global-navigation__links">
+                                    {this.renderMainNavigation(model['main-navigation'])}
+                                </nav>
+                            </GlobalNavigationSearchModal>
+                            <GlobalNavigationMobileUser data={model} openModal={this.openModal} modalOpen={isUserModalOpen}/>
+                            <Button
+                                onClick={this.closeModal}
+                                className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
+                                text
+                            >
+                                <Icon name="close" />
+                            </Button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </NotificationsDataProvider>
         );
     }
 }
