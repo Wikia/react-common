@@ -10,14 +10,12 @@ import MarkAsReadIcon from './MarkAsReadIcon';
 import CardText from './CardText';
 import CardLink from './CardLink';
 
-function Card({ model, track }) {
+const Card = ({ model, track }) => {
     const { totalUniqueActors, isUnread, type, title, latestActors, timestamp, communityName, snippet } = model;
     const computedClass = classNames('wds-notification-card', isUnread && 'wds-is-unread');
     const showAvatars = totalUniqueActors > 2 && isDiscussionReply(type);
     const showSnippet = !title && !isAnnouncement(type);
     const showLastActor = isAnnouncement(type);
-
-    console.log('######', 'text', timestamp);
 
     return (
         <li className={computedClass}>
@@ -61,12 +59,11 @@ function Card({ model, track }) {
                 </div>
             </CardLink>
         </li>
-    )
-}
+    );
+};
 
 Card.propTypes = {
-    goToDestination: PropTypes.func.isRequired,
-    markAsRead: PropTypes.func.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     track: PropTypes.func.isRequired,
 };

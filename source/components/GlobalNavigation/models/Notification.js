@@ -29,12 +29,12 @@ function mapData(notificationData) {
         isUnread: notificationData.read === false,
         totalUniqueActors: get(notificationData, 'events.totalUniqueActors'),
         latestActors: createActors(get(notificationData, 'events.latestActors')),
-        type: getNotificationType(notificationData)
-    }
+        type: getNotificationType(notificationData),
+    };
 }
 
 function createActors(actors) {
-    return actors.map((actor) => merge({}, actor, { profileUrl: getProfileUrl(name) }));
+    return actors.map(actor => merge({}, actor, { profileUrl: getProfileUrl(actor.username) }));
 }
 
 function getProfileUrl(name) {
@@ -45,19 +45,25 @@ function getNotificationType(apiData) {
     if (apiData.type === 'upvote-notification') {
         if (apiData.refersTo.type === 'discussion-post') {
             return notificationTypes.discussionUpvoteReply;
-        } else {
-            return notificationTypes.discussionUpvotePost;
         }
-    } else if (apiData.type === 'replies-notification') {
+
+        return notificationTypes.discussionUpvotePost;
+    }
+
+    if (apiData.type === 'replies-notification') {
         return notificationTypes.discussionReply;
-    } else if (apiData.type === 'announcement-notification') {
+    }
+
+    if (apiData.type === 'announcement-notification') {
         return notificationTypes.announcement;
     }
+
+    return null;
 }
 
 class Notification {
     constructor(data) {
-        Object.keys(data).forEach(key => {
+        Object.keys(data).forEach((key) => {
             this[key] = data[key];
         });
     }

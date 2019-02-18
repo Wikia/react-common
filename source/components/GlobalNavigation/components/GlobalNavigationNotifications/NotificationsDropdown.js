@@ -22,6 +22,11 @@ const NotificationToggle = ({ chevron, unreadCount }) => (
     </React.Fragment>
 );
 
+NotificationToggle.propTypes = {
+    chevron: PropTypes.node.isRequired,
+    unreadCount: PropTypes.number.isRequired,
+};
+
 const NotificationsDropdown = ({ track }) => {
     const { unreadCount, loadFirstPage } = useContext(NotificationsContext);
     const onMouseEnter = useCallback(() => {
@@ -41,13 +46,13 @@ const NotificationsDropdown = ({ track }) => {
             toggleClassName="wds-global-navigation__dropdown-toggle"
             contentClassName="wds-notifications__dropdown-content"
             onMouseEnter={onMouseEnter}
-            toggle={(chevron) => <NotificationToggle chevron={chevron} unreadCount={unreadCount} />}
+            toggle={chevron => <NotificationToggle chevron={chevron} unreadCount={unreadCount} />}
             hasShadow
             dropdownRightAligned
         >
             <ListContainer track={track} />
         </Dropdown>
-    )
+    );
 };
 
 NotificationsDropdown.propTypes = {

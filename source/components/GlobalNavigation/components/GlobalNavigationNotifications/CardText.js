@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import get from 'lodash/get';
 
 import {
     isAnnouncement,
@@ -7,8 +9,6 @@ import {
     isDiscussionReply,
     isDiscussionReplyUpvote,
 } from '../../models/notificationTypes';
-
-import get from 'lodash/get';
 
 const getReplyMessageBody = (t, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
@@ -22,33 +22,38 @@ const getReplyMessageBody = (t, { title, totalUniqueActors, latestActors, postTi
                 mostRecentUser: firstReplierName,
                 number: totalUniqueActors - 1,
             });
-        } else if (hasTwoUsers) {
+        }
+
+        if (hasTwoUsers) {
             return t('notifications-replied-by-two-users-with-title', {
                 firstUser: firstReplierName,
-                secondUser: model.get('latestActors.1.name'),
-                postTitle: postTitleMarkup,
-            });
-        } else {
-            return t('notifications-replied-by-with-title', {
-                user: firstReplierName,
+                secondUser: latestActors[1].name,
                 postTitle: postTitleMarkup,
             });
         }
-    } else if (hasThreeOrMoreUsers) {
+
+        return t('notifications-replied-by-with-title', {
+            user: firstReplierName,
+            postTitle: postTitleMarkup,
+        });
+    }
+
+    if (hasThreeOrMoreUsers) {
         return t('notifications-replied-by-multiple-users-no-title', {
             mostRecentUser: firstReplierName,
             number: totalUniqueActors - 1,
         });
-    } else if (hasTwoUsers) {
+    }
+    if (hasTwoUsers) {
         return t('notifications-replied-by-two-users-no-title', {
             firstUser: firstReplierName,
-            secondUser: model.get('latestActors.1.name'),
-        });
-    } else {
-        return t('notifications-replied-by-no-title', {
-            user: firstReplierName,
+            secondUser: latestActors[1].name,
         });
     }
+
+    return t('notifications-replied-by-no-title', {
+        user: firstReplierName,
+    });
 };
 
 const getPostUpvoteMessageBody = (t, { title, totalUniqueActors, postTitleMarkup }) => {
@@ -60,18 +65,20 @@ const getPostUpvoteMessageBody = (t, { title, totalUniqueActors, postTitleMarkup
                 postTitle: postTitleMarkup,
                 number: totalUniqueActors,
             });
-        } else {
-            return t('notifications-post-upvote-single-user-with-title', {
-                postTitle: postTitleMarkup,
-            });
         }
-    } else if (hasMultipleUsers) {
+
+        return t('notifications-post-upvote-single-user-with-title', {
+            postTitle: postTitleMarkup,
+        });
+    }
+
+    if (hasMultipleUsers) {
         return t('notifications-post-upvote-multiple-users-no-title', {
             number: totalUniqueActors,
         });
-    } else {
-        return t('notifications-post-upvote-single-user-no-title');
     }
+
+    return t('notifications-post-upvote-single-user-no-title');
 };
 
 const getReplyUpvoteMessageBody = (t, { title, totalUniqueActors, postTitleMarkup }) => {
@@ -83,18 +90,20 @@ const getReplyUpvoteMessageBody = (t, { title, totalUniqueActors, postTitleMarku
                 postTitle: postTitleMarkup,
                 number: totalUniqueActors - 1,
             });
-        } else {
-            return t('notifications-reply-upvote-single-user-with-title', {
-                postTitle: postTitleMarkup,
-            });
         }
-    } else if (hasMultipleUsers) {
+
+        return t('notifications-reply-upvote-single-user-with-title', {
+            postTitle: postTitleMarkup,
+        });
+    }
+
+    if (hasMultipleUsers) {
         return t('notifications-reply-upvote-multiple-users-no-title', {
             number: totalUniqueActors,
         });
-    } else {
-        return t('notifications-reply-upvote-single-user-no-title');
     }
+
+    return t('notifications-reply-upvote-single-user-no-title');
 };
 
 const getText = (t, model) => {
@@ -124,7 +133,13 @@ const CardText = ({ model }) => {
     const [t] = useTranslation();
     const text = getText(t, model);
 
-    return <p className="wds-notification-card__text" dangerouslySetInnerHTML={{ __html: text }} />
+    // eslint-disable-next-line react/no-danger
+    return <p className="wds-notification-card__text" dangerouslySetInnerHTML={{ __html: text }} />;
+};
+
+CardText.propTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
+    model: PropTypes.object.isRequired,
 };
 
 export default CardText;

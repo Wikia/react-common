@@ -34,11 +34,12 @@ const CardLink = ({ track, model, children }) => {
         >
             {children}
         </a>
-    )
+    );
 };
 
 CardLink.propTypes = {
     children: PropTypes.node.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     track: PropTypes.func.isRequired,
 };

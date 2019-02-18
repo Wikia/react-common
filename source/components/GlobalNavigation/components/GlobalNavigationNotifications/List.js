@@ -42,7 +42,7 @@ const List = ({ track }) => {
                 )
             }
         </ul>
-    )
+    );
 };
 
 List.propTypes = {

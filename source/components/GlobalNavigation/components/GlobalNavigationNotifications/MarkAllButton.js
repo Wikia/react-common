@@ -1,5 +1,6 @@
 import React, { useCallback, useContext } from 'react';
 import PropTypes from 'prop-types';
+
 import NotificationsContext from '../../utils/NotificationContext';
 
 const MarkAllButton = ({ track, header }) => {
@@ -23,7 +24,7 @@ const MarkAllButton = ({ track, header }) => {
                 Mark all as read
             </a>
         </div>
-    )
+    );
 };
 
 MarkAllButton.propTypes = {

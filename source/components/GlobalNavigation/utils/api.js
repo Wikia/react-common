@@ -1,5 +1,6 @@
-import { convertToIsoString } from '../utils/isoTime';
-import merge from "lodash/merge";
+import merge from 'lodash/merge';
+
+import { convertToIsoString } from './isoTime';
 
 const defaultOptions = {
     credentials: 'include',
@@ -25,24 +26,19 @@ class Api {
     fetchFromOnSiteNotifications(path, options) {
         return fetch(this.getNotificationServiceUrl(path), merge({}, options, defaultOptions))
             .catch((error) => {
-                // do error handling
+                console.error('Something went wrong while calling a OSN service', error);
             })
             .then((response) => {
                 const contentType = response.headers.get('content-type');
+                const hasNoContent = response.status === 204 || contentType && contentType.indexOf('json') === -1;
 
-                if (
-                    response.ok &&
-                    (
-                        response.status === 204 ||
-                        contentType && contentType.indexOf('json') === -1
-                    )
-                ) {
+                if (response.ok && hasNoContent) {
                     return null;
                 } else if (response.ok) {
                     return response.json();
-                } else {
-                    // do error handling
                 }
+
+                // do error handling
             });
     }
 
@@ -68,14 +64,14 @@ class Api {
 
         try {
             const blob = new Blob([body], {
-                type: 'application/json'
+                type: 'application/json',
             });
 
             if (window.navigator.sendBeacon(markAsReadUrl, blob) === true) {
                 return Promise.resolve();
-            } else {
-                return this.markAsReadUsingFetch(true);
             }
+
+            return this.markAsReadUsingFetch(true);
         } catch (exception) {
             // See http://crbug.com/490015#c99
             console.warn('Error when sending beacon', exception);
@@ -88,7 +84,7 @@ class Api {
         const options = {
             body,
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             method: 'POST',
         };
@@ -104,10 +100,10 @@ class Api {
     markAllAsRead(notifications) {
         const since = convertToIsoString(notifications[0].timestamp);
 
-        return this.fetchFromOnSiteNotifications(`/notifications/mark-all-as-read`, {
+        return this.fetchFromOnSiteNotifications('/notifications/mark-all-as-read', {
             body: JSON.stringify({ since }),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             method: 'POST',
         });

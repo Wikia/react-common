@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import get from "lodash/get";
+import get from 'lodash/get';
 
-import Api from "../../utils/api";
-import { NotificationsProvider } from "../../utils/NotificationContext";
-import Notification from "../../models/Notification";
+import Api from '../../utils/api';
+import { NotificationsProvider } from '../../utils/NotificationContext';
+import Notification from '../../models/Notification';
 
+/* eslint-disable react/no-unused-state */
 class NotificationsDataProvider extends React.Component {
     constructor(props) {
         super(props);
@@ -26,6 +27,23 @@ class NotificationsDataProvider extends React.Component {
         };
     }
 
+    componentDidMount() {
+        this.loadUnreadNotificationCount();
+    }
+
+    getNextPageLink(data) {
+        return get(data, '_links.next') || null;
+    }
+
+    getUnreadCount(notifications) {
+        return notifications.filter(notification => notification.isUnread).length;
+    }
+
+    goToDestination(latestEventUri) {
+        // TODO check if it's a local url and use transitionTo or delegate to app
+        window.location.href = latestEventUri;
+    }
+
     loadFirstPage() {
         const { nextPage, firstPageLoaded } = this.state;
 
@@ -34,7 +52,7 @@ class NotificationsDataProvider extends React.Component {
             return;
         }
 
-        return this.loadPage('/notifications?contentType=discussion-upvote&contentType=discussion-post&contentType=announcement-target');
+        this.loadPage('/notifications?contentType=discussion-upvote&contentType=discussion-post&contentType=announcement-target');
     }
 
     loadNextPage() {
@@ -44,7 +62,7 @@ class NotificationsDataProvider extends React.Component {
             return;
         }
 
-        return this.loadPage(nextPage);
+        this.loadPage(nextPage);
     }
 
     loadPage(pageLink) {
@@ -56,9 +74,9 @@ class NotificationsDataProvider extends React.Component {
 
         this.setState({ isLoading: true, firstPageLoaded: true });
 
-        return this.api
+        this.api
             .loadPage(pageLink)
-            .then(response => {
+            .then((response) => {
                 const mappedNotifications = this.mapNotifications(response.notifications);
 
                 this.setState({
@@ -68,23 +86,23 @@ class NotificationsDataProvider extends React.Component {
                     isLoading: false,
                 });
             })
-            .catch(error => {
+            .catch((error) => {
                 this.setState({ isLoading: false });
 
-                console.error(`Couldn't load notifications`, error);
+                console.error('Couldn\'t load notifications', error);
             });
     }
 
     loadUnreadNotificationCount() {
-        return this.api
+        this.api
             .loadUnreadNotificationCount()
             .then((result) => {
                 this.setState({ unreadCount: result.unreadCount });
             }).catch((error) => {
-                this.setState({ unreadCount: 0 });
+            this.setState({ unreadCount: 0 });
 
-                console.error('Setting notifications unread count to 0 because of the API fetch error', error);
-            });
+            console.error('Setting notifications unread count to 0 because of the API fetch error', error);
+        });
     }
 
     markAsRead(uri, willUnloadPage) {
@@ -113,17 +131,8 @@ class NotificationsDataProvider extends React.Component {
             });
     }
 
-    goToDestination(latestEventUri) {
-        // TODO check if it's a local url and use transitionTo or delegate to app
-        window.location.href = latestEventUri;
-    }
-
     mapNotifications(notifications) {
         return (notifications || []).map(notification => Notification.build(notification));
-    }
-
-    getUnreadCount(notifications) {
-        return notifications.filter(notification => notification.isUnread).length;
     }
 
     updateUnreadStatus(uri) {
@@ -134,14 +143,6 @@ class NotificationsDataProvider extends React.Component {
             .map(notification => Notification.build({ ...notification, isUnread: false }));
     }
 
-    getNextPageLink(data) {
-        return get(data, '_links.next') || null;
-    }
-
-    componentDidMount() {
-        this.loadUnreadNotificationCount();
-    }
-
     render() {
         const { children } = this.props;
 
@@ -149,7 +150,7 @@ class NotificationsDataProvider extends React.Component {
             <NotificationsProvider value={this.state}>
                 {children}
             </NotificationsProvider>
-        )
+        );
     }
 }
 

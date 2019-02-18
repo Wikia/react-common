@@ -1,26 +1,27 @@
 import React from 'react';
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
+import Icon from '../Icon/index';
+import Button from '../Button/index';
 
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
 import GlobalNavigationSearch from './components/GlobalNavigationSearch/GlobalNavigationSearch';
-
 import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
 import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
 import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
 import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
 import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
-import NotificationsDataProvider from "./components/GlobalNavigationNotifications/NotificationsDataProvider";
-
-import Icon from "../Icon/index";
-import Button from "../Button/index";
-
-import './styles.scss';
-import { NotificationsConsumer } from './utils/NotificationContext';
+import NotificationsDataProvider from './components/GlobalNavigationNotifications/NotificationsDataProvider';
 import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
 
+import { NotificationsConsumer } from './utils/NotificationContext';
+
+import './styles.scss';
+
+/* eslint-disable react/no-array-index-key */
 class GlobalNavigation extends React.Component {
     constructor(props) {
         super(props);
@@ -40,7 +41,7 @@ class GlobalNavigation extends React.Component {
         }
 
         if (type === 'user') {
-            this.setState({ isUserModalOpen: true })
+            this.setState({ isUserModalOpen: true });
         }
     }
 
@@ -48,16 +49,20 @@ class GlobalNavigation extends React.Component {
         this.setState({
             isSearchModalOpen: false,
             isUserModalOpen: false,
-        })
+        });
     }
 
     renderMainNavigation(navigation) {
         return navigation.map((link, index) => {
             if (link.type === 'link-text') {
                 return <GlobalNavigationLinkText key={index} link={link} isStandaloneLink />;
-            } else if (link.type === 'link-group') {
-                return <GlobalNavigationLinkGroup key={index} link={link} />
             }
+
+            if (link.type === 'link-group') {
+                return <GlobalNavigationLinkGroup key={index} link={link} />;
+            }
+
+            return null;
         });
     }
 
@@ -75,8 +80,6 @@ class GlobalNavigation extends React.Component {
             'wds-search-is-active': isSearchModalOpen,
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
         });
-
-        console.log('######', 'model', model);
 
         return (
             <NotificationsDataProvider serviceUrl={model['services-domain']}>
@@ -143,7 +146,11 @@ class GlobalNavigation extends React.Component {
                                     {this.renderMainNavigation(model['main-navigation'])}
                                 </nav>
                             </GlobalNavigationSearchModal>
-                            <GlobalNavigationMobileUser data={model} openModal={this.openModal} modalOpen={isUserModalOpen}/>
+                            <GlobalNavigationMobileUser
+                                data={model}
+                                openModal={this.openModal}
+                                modalOpen={isUserModalOpen}
+                            />
                             <Button
                                 onClick={this.closeModal}
                                 className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
@@ -160,19 +167,20 @@ class GlobalNavigation extends React.Component {
 }
 
 GlobalNavigation.propTypes = {
+    goToSearchResults: PropTypes.func,
+    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     onSearchCloseClicked: PropTypes.func,
-    onSearchToggleClicked: PropTypes.func,
     onSearchSuggestionChosen: PropTypes.func,
-    goToSearchResults: PropTypes.func,
+    onSearchToggleClicked: PropTypes.func,
     track: PropTypes.func,
 };
 
 GlobalNavigation.defaultProps = {
-    onSearchCloseClicked: () => {},
-    onSearchToggleClicked: () => {},
-    onSearchSuggestionChosen: () => {},
     goToSearchResults: () => {},
+    onSearchCloseClicked: () => {},
+    onSearchSuggestionChosen: () => {},
+    onSearchToggleClicked: () => {},
     track: () => {},
 };
 

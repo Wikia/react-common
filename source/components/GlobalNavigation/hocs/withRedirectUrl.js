@@ -30,7 +30,7 @@ const withRedirectUrl = (Component) => {
         render() {
             const { redirectUrl } = this.state;
 
-            return <Component {...this.props} redirectUrl={redirectUrl} getUrlWithRedirect={this.getUrlWithRedirect}/>
+            return <Component {...this.props} redirectUrl={redirectUrl} getUrlWithRedirect={this.getUrlWithRedirect} />;
         }
     }
 

@@ -9,18 +9,18 @@ import { isAnnouncement, isDiscussionReply } from '../../models/notificationType
 function getIconName(type) {
     if (isDiscussionReply(type)) {
         return 'comment-small';
-    } else if (isAnnouncement(type)) {
-        return 'flag';
     }
 
+    if (isAnnouncement(type)) {
+        return 'flag';
+    }
     return 'upvote-small';
 }
 
 const MarkAsReadIcon = ({ track, model }) => {
-    const { markAsRead } = useContext(NotificationsContext);
     const { type, isUnread, uri } = model;
+    const { markAsRead } = useContext(NotificationsContext);
     const onClick = useCallback((event) => {
-
         event.stopPropagation();
 
         if (!isUnread) {
@@ -40,10 +40,11 @@ const MarkAsReadIcon = ({ track, model }) => {
         <div className="wds-notification-card__icon-wrapper" onClick={onClick}>
             <Icon name={getIconName(type)} />
         </div>
-    )
+    );
 };
 
 MarkAsReadIcon.propTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     track: PropTypes.func.isRequired,
 };

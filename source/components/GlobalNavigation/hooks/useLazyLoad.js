@@ -1,22 +1,23 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const BOTTOM_COMPENSATION = 100;
 
-const hasAlmostScrolledToTheBottom = (element) => {
-    return element.scrollHeight - BOTTOM_COMPENSATION <= element.scrollTop + element.offsetHeight;
-};
+const hasAlmostScrolledToTheBottom = element => (
+    element.scrollHeight - BOTTOM_COMPENSATION <= element.scrollTop + element.offsetHeight
+);
 
-const getOnScrollListener = (handler) => (event) => {
+const getOnScrollListener = handler => (event) => {
     if (hasAlmostScrolledToTheBottom(event.target)) {
         handler();
     }
 };
 
 const onMouseWheel = (event) => {
-    const delta = -event.wheelDelta || event.detail,
-        scrollTop = event.target.scrollTop;
+    const { detail, wheelDelta, target } = event;
+    const { clientHeight, scrollHeight, scrollTop } = target;
+    const delta = -wheelDelta || detail;
 
-    if ((delta < 0 && scrollTop === 0) || (delta > 0 && event.target.scrollHeight - event.target.clientHeight - scrollTop === 0)) {
+    if ((delta < 0 && scrollTop === 0) || (delta > 0 && scrollHeight - clientHeight - scrollTop === 0)) {
         event.preventDefault();
     }
 };
