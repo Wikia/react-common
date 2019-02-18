@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import NotificationsContext from '../../utils/NotificationContext';
 
+/* eslint-disable jsx-a11y/no-interactive-element-to-noninteractive-role */
 const MarkAllButton = ({ track, header }) => {
     const { markAllAsRead } = useContext(NotificationsContext);
     const onClick = useCallback(() => {
@@ -20,9 +21,9 @@ const MarkAllButton = ({ track, header }) => {
             {
                 header && <p className="wds-notifications__header">{header}</p>
             }
-            <a onClick={onClick} className="wds-notifications__mark-all-as-read">
+            <button onClick={onClick} className="wds-notifications__mark-all-as-read" role="presentation">
                 Mark all as read
-            </a>
+            </button>
         </div>
     );
 };

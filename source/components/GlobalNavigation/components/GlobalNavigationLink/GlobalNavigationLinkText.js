@@ -1,6 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const GlobalNavigationLinkText = ({ link, isStandaloneLink }) => {
     const [t] = useTranslation();
@@ -14,6 +15,11 @@ const GlobalNavigationLinkText = ({ link, isStandaloneLink }) => {
             {t(link.title.key)}
         </a>
     );
+};
+
+GlobalNavigationLinkText.propTypes = {
+    isStandaloneLink: PropTypes.bool.isRequired,
+    link: PropTypes.object.isRequired,
 };
 
 export default GlobalNavigationLinkText;

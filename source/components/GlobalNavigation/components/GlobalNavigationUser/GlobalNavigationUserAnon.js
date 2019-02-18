@@ -1,20 +1,21 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
-import Button from "../../../Button";
-import List from '../../../List/index';
-import withRedirectUrl from "../../hocs/withRedirectUrl";
+import Button from '../../../Button';
+import List from '../../../List';
+
+import withRedirectUrl from '../../hocs/withRedirectUrl';
 
 class GlobalNavigationUserAnon extends React.Component {
-    renderToggle = (chevron) => {
-        return (
-            <React.Fragment>
-                <Avatar />{chevron}
-            </React.Fragment>
-        );
-    };
+    renderToggle = chevron => (
+        <React.Fragment>
+            <Avatar />
+            {chevron}
+        </React.Fragment>
+    );
 
     render() {
         const { data, t, getUrlWithRedirect } = this.props;
@@ -41,7 +42,7 @@ class GlobalNavigationUserAnon extends React.Component {
                     </li>
                     <li>
                         <div className="wds-global-navigation__user-menu-dropdown-caption">
-                            Don't have an account?
+                            Don&apos;t have an account?
                         </div>
                         <Button
                             href={getUrlWithRedirect(data.register.href)}
@@ -58,5 +59,11 @@ class GlobalNavigationUserAnon extends React.Component {
         );
     }
 }
+
+GlobalNavigationUserAnon.propTypes = {
+    data: PropTypes.object.isRequired,
+    getUrlWithRedirect: PropTypes.func.isRequired,
+    t: PropTypes.func.isRequired,
+};
 
 export default withTranslation()(withRedirectUrl(GlobalNavigationUserAnon));

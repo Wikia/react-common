@@ -37,14 +37,13 @@ const MarkAsReadIcon = ({ track, model }) => {
     }, [markAsRead, track, model]);
 
     return (
-        <div className="wds-notification-card__icon-wrapper" onClick={onClick}>
+        <div className="wds-notification-card__icon-wrapper" onClick={onClick} role="presentation">
             <Icon name={getIconName(type)} />
         </div>
     );
 };
 
 MarkAsReadIcon.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     track: PropTypes.func.isRequired,
 };

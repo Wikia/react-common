@@ -1,22 +1,42 @@
-import React from 'react';
-import Button from "../../../Button";
-import Avatar from "../../../Avatar";
-import GlobalNavigationUserModal from "./GlobalNavigationUserModal";
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 
-const GlobalNavigationMobileLoggedIn = ({ user, openModal, modalOpen }) => {
+import Button from '../../../Button';
+import Avatar from '../../../Avatar';
+
+import NotificationsContext from '../../utils/NotificationContext';
+
+import GlobalNavigationUserModal from './GlobalNavigationUserModal';
+
+const GlobalNavigationMobileLoggedIn = ({ user, openModal, isOpen, track }) => {
+    const { unreadCount } = useContext(NotificationsContext);
+
     return (
         <React.Fragment>
-            <Button onClick={() => openModal('user')} text className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user">
+            <Button
+                className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user"
+                onClick={() => openModal('user')}
+                text
+            >
                 <Avatar src={user.avatar_url} alt={user.username} />
-                    {/* TODO: notification counter only if there are notifications */}
-                <span className="wds-global-navigation__avatar-notifications-counter">
-                    {/*{{wdsOnSiteNotifications.unreadCountWithLimit}}*/}
-                    3
-                </span>
+                {
+                    unreadCount && (
+                        <span className="wds-global-navigation__avatar-notifications-counter">
+                            {unreadCount > 99 ? '99+' : unreadCount}
+                        </span>
+                    )
+                }
             </Button>
-            <GlobalNavigationUserModal user={user} isOpen={modalOpen}/>
+            <GlobalNavigationUserModal user={user} isOpen={isOpen} track={track} />
         </React.Fragment>
-    )
+    );
+};
+
+GlobalNavigationMobileLoggedIn.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    openModal: PropTypes.func.isRequired,
+    track: PropTypes.func.isRequired,
+    user: PropTypes.object.isRequired,
 };
 
 export default GlobalNavigationMobileLoggedIn;

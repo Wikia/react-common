@@ -138,7 +138,6 @@ const CardText = ({ model }) => {
 };
 
 CardText.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
 };
 

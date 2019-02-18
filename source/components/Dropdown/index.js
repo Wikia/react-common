@@ -183,13 +183,15 @@ Dropdown.propTypes = {
      */
     canFlip: PropTypes.bool,
 
-    /** Additional class name */
-    className: PropTypes.string,
-
     /**
      * React Component to display as the Dropdown Content
      */
     children: PropTypes.node,
+
+    /**
+     * Additional class name
+     */
+    className: PropTypes.string,
 
     /**
      * HTML classes to add to content element
@@ -230,6 +232,11 @@ Dropdown.propTypes = {
      * Is it a nested dropdown
      */
     isLevel2: PropTypes.bool,
+
+    /**
+     * If dropdown should not be hoverable
+     */
+    isNotHoverable: PropTypes.bool,
 
     /**
      * if the top of nested dropdown content should be positioned at the same height as toggle
@@ -276,19 +283,22 @@ Dropdown.propTypes = {
 Dropdown.defaultProps = {
     canFlip: false,
     children: null,
-    hasShadow: false,
-    noChevron: false,
-    hasDarkShadow: false,
+    className: '',
+    contentClassName: '',
+    contentScrollable: false,
     dropdownLeftAligned: false,
     dropdownRightAligned: false,
-    contentScrollable: false,
+    hasDarkShadow: false,
+    hasShadow: false,
     isLevel2: false,
     isActive: false,
-    toggleClassName: '',
-    toggleAttrs: {},
+    isNotHoverable: false,
     isStickedToParent: false,
+    noChevron: false,
     onClose: null,
     onMouseEnter: null,
+    toggleClassName: '',
+    toggleAttrs: {},
 };
 
 export default Dropdown;

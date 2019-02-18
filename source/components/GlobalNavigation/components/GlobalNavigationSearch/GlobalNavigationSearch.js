@@ -2,18 +2,19 @@ import React from 'react';
 import classNames from 'classnames';
 import debounce from 'lodash/debounce';
 import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 import Dropdown from '../../../Dropdown';
-import Icon from '../../../../components/Icon';
 import List from '../../../List';
-import Button from "../../../Button";
-import PropTypes from "prop-types";
-import GlobalNavigation from "../../index";
+import Button from '../../../Button';
+import Icon from '../../../Icon';
 
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
 
 class GlobalNavigationSearch extends React.Component {
+    isMounted = false;
+
     constructor(props) {
         super(props);
 
@@ -29,8 +30,6 @@ class GlobalNavigationSearch extends React.Component {
         this.requestSuggestionsFromAPI = debounce(this.requestSuggestionsFromAPI.bind(this), DEBOUNCE_DURATION);
     }
 
-    isMounted = false;
-
     state = {
         suggestions: [],
         requestsInProgress: {},
@@ -41,6 +40,20 @@ class GlobalNavigationSearch extends React.Component {
         selectedSuggestionIndex: -1,
         query: '',
     };
+
+    componentDidMount() {
+        const { inSearchModal } = this.props;
+
+        this.isMounted = true;
+
+        if (inSearchModal) {
+            this.input.current.focus();
+        }
+    }
+
+    componentWillUnmount() {
+        this.isMounted = false;
+    }
 
     openSearch() {
 
@@ -62,7 +75,6 @@ class GlobalNavigationSearch extends React.Component {
             onSearchToggleClicked();
             this.input.current.focus();
         });
-
     }
 
     escapeRegex(text) {
@@ -100,39 +112,40 @@ class GlobalNavigationSearch extends React.Component {
             .then((response) => {
                 if (response.ok) {
                     if (!this.isMounted) {
-                        return
+                        return null;
                     }
 
                     return response.json();
-                } else if (response.status === 404) {
+                }
+                if (response.status === 404) {
                     // When we get a 404, it means there were no results
                     return { suggestions: [] };
-                } else {
-                    console.error('Search suggestions error', response);
                 }
+
+                console.error('Search suggestions error', response);
+
+                return null;
             })
             .then((response) => {
                 if (!response || searchRequestInProgress) {
                     return;
                 }
 
-                this.setState({
-                    suggestion: response.suggestions,
-                });
+                this.setState({ suggestions: response.suggestions });
 
                 this.cacheResult(query, response.suggestions);
             })
             .catch((reason) => {
-                console.error('Search suggestions error', reason)
+                console.error('Search suggestions error', reason);
 
                 this.onRequestEnd();
             })
             .then(() => this.onRequestEnd());
-    };
+    }
 
     onRequestEnd() {
         if (!this.isMounted) {
-            return
+            return;
         }
 
         const { query, requestsInProgress } = this.state;
@@ -145,7 +158,7 @@ class GlobalNavigationSearch extends React.Component {
     hasCachedResult(query) {
         const { cachedResults } = this.state;
 
-        return cachedResults.hasOwnProperty(query)
+        return Object.prototype.hasOwnProperty.call(cachedResults, query);
     }
 
     cacheResult(query, suggestions) {
@@ -211,9 +224,7 @@ class GlobalNavigationSearch extends React.Component {
     }
 
     onFocus() {
-        this.setState({
-            inputFocused: true,
-        })
+        this.setState({ inputFocused: true });
     }
 
     onBlur() {
@@ -234,7 +245,7 @@ class GlobalNavigationSearch extends React.Component {
         track({
             action: 'click',
             category: 'navigation',
-            label: 'search-open-suggestion-link'
+            label: 'search-open-suggestion-link',
         });
     }
 
@@ -248,14 +259,14 @@ class GlobalNavigationSearch extends React.Component {
             // down arrow
             case 40:
                 if (selectedSuggestionIndex < suggestions.length - 1) {
-                    this.setState(({ selectedSuggestionIndex }) => ({ selectedSuggestionIndex: selectedSuggestionIndex + 1}));
+                    this.setState({ selectedSuggestionIndex: selectedSuggestionIndex + 1 });
                 }
 
                 break;
             // up arrow
             case 30:
                 if (suggestions.length && selectedSuggestionIndex > -1) {
-                    this.setState(({ selectedSuggestionIndex }) => ({ selectedSuggestionIndex: selectedSuggestionIndex - 1}));
+                    this.setState(({ selectedSuggestionIndex: selectedSuggestionIndex - 1 }));
                 }
 
                 break;
@@ -275,27 +286,16 @@ class GlobalNavigationSearch extends React.Component {
                 }
 
                 break;
+
+            default:
+                // do nothing
         }
-    }
-
-    componentDidMount() {
-        const { inSearchModal } = this.props;
-
-        this.isMounted = true;
-
-        if (inSearchModal) {
-            this.input.current.focus();
-        }
-    }
-
-    componentWillUnmount() {
-        this.isMounted = false;
     }
 
     renderInput() {
         const { t, model } = this.props;
         const placeholderConfig = model['placeholder-active'];
-        
+
         return (
             <React.Fragment>
                 <input
@@ -324,12 +324,13 @@ class GlobalNavigationSearch extends React.Component {
         const { suggestions, query } = this.state;
         const highlightRegex = new RegExp(`(${this.escapeRegex(query)})`, 'ig');
 
-        return suggestions.map(suggestion => {
+        return suggestions.map((suggestion) => {
             const match = suggestion.match(highlightRegex);
             const highlightedPart = match ? match[0] : match;
             const regularPart = suggestion.replace(highlightRegex, '');
 
             return (
+                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
                 <li
                     key={suggestion}
                     className="wds-global-navigation__search__suggestion"
@@ -347,7 +348,7 @@ class GlobalNavigationSearch extends React.Component {
                         {regularPart}
                     </a>
                 </li>
-            )
+            );
         });
     }
 
@@ -355,13 +356,19 @@ class GlobalNavigationSearch extends React.Component {
         const { inputFocused, suggestions } = this.state;
 
         return (
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
             <form
                 className={classNames('wds-global-navigation__search-container', inputFocused && 'wds-search-is-focused')}
                 onKeyDown={this.onKeyDown}
                 tabIndex="0"
             >
                 <div className="wds-global-navigation__search">
-                    <div className="wds-global-navigation__search-toggle" role="searchbox" onClick={this.openSearch}>
+                    <div
+                        className="wds-global-navigation__search-toggle"
+                        role="searchbox"
+                        tabIndex="0"
+                        onClick={this.openSearch}
+                    >
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
                         <span className="wds-global-navigation__search-toggle-text">
@@ -374,7 +381,7 @@ class GlobalNavigationSearch extends React.Component {
                         toggleClassName="wds-global-navigation__search-input-wrapper"
                         contentClassName="wds-global-navigation__search-suggestions"
                         isActive={Boolean(suggestions.length)}
-                        isNotHoverable={!Boolean(suggestions.length)}
+                        isNotHoverable={!suggestions.length}
                         noChevron
                     >
                         <List isLinked hasEllipsis>
@@ -388,13 +395,14 @@ class GlobalNavigationSearch extends React.Component {
 }
 
 GlobalNavigationSearch.propTypes = {
+    goToSearchResults: PropTypes.func.isRequired,
+    inSearchModal: PropTypes.bool,
     model: PropTypes.object.isRequired,
     onSearchCloseClicked: PropTypes.func.isRequired,
-    onSearchToggleClicked: PropTypes.func.isRequired,
     onSearchSuggestionChosen: PropTypes.func.isRequired,
-    goToSearchResults: PropTypes.func.isRequired,
+    onSearchToggleClicked: PropTypes.func.isRequired,
+    t: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
-    inSearchModal: PropTypes.bool,
 };
 
 GlobalNavigationSearch.defaultProps = {

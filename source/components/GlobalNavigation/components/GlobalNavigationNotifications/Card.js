@@ -47,7 +47,7 @@ const Card = ({ model, track }) => {
                     }
                     <ul className="wds-notification-card__context-list">
                         <li className="wds-notification-card__context-item">
-                            <Timeago datetime={timestamp * 1000} />
+                            <Timeago datetime={`${timestamp * 1000}`} />
                         </li>
                         <li>
                             <span className="wds-notification-card__context-separator">·</span>
@@ -63,7 +63,6 @@ const Card = ({ model, track }) => {
 };
 
 Card.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     track: PropTypes.func.isRequired,
 };

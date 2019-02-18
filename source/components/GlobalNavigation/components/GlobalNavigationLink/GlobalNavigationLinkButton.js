@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
 import Button from '../../../Button';
@@ -16,6 +17,10 @@ const GlobalNavigationLinkButton = ({ link }) => {
             {t(link.title.key)}
         </Button>
     );
+};
+
+GlobalNavigationLinkButton.propTypes = {
+    link: PropTypes.object.isRequired,
 };
 
 export default GlobalNavigationLinkButton;
