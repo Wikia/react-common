@@ -16,6 +16,7 @@ const Card = ({ model, track }) => {
     const showAvatars = totalUniqueActors > 2 && isDiscussionReply(type);
     const showSnippet = !title && !isAnnouncement(type);
     const showLastActor = isAnnouncement(type);
+    const dateOfCreation = new Date(timestamp * 1000).toDateString();
 
     return (
         <li className={computedClass}>
@@ -47,7 +48,7 @@ const Card = ({ model, track }) => {
                     }
                     <ul className="wds-notification-card__context-list">
                         <li className="wds-notification-card__context-item">
-                            <Timeago datetime={`${timestamp * 1000}`} />
+                            <Timeago datetime={dateOfCreation} />
                         </li>
                         <li>
                             <span className="wds-notification-card__context-separator">·</span>

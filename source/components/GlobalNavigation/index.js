@@ -17,8 +17,6 @@ import GlobalNavigationMobileUser from './components/GlobalNavigationUser/Global
 import NotificationsDataProvider from './components/GlobalNavigationNotifications/NotificationsDataProvider';
 import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
 
-import { NotificationsConsumer } from './utils/NotificationContext';
-
 import './styles.scss';
 
 /* eslint-disable react/no-array-index-key */
@@ -27,13 +25,58 @@ class GlobalNavigation extends React.Component {
         super(props);
 
         this.openModal = this.openModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
+        this.closeAndDeactivate = this.closeAndDeactivate.bind(this);
+        this.onSearchActivation = this.onSearchActivation.bind(this);
+        this.onSearchClose = this.onSearchClose.bind(this);
+        this.onSearchSuggestionChosen = this.onSearchSuggestionChosen.bind(this);
+        this.onRedirectToSearchResults = this.onRedirectToSearchResults.bind(this);
     }
 
     state = {
         isSearchModalOpen: false,
         isUserModalOpen: false,
+        isSearchExpanded: false,
     };
+
+    onRedirectToSearchResults() {
+        const { goToSearchResults } = this.props;
+
+        this.closeAndDeactivate();
+
+        goToSearchResults();
+    }
+
+    onSearchActivation() {
+        const { onSearchToggleClicked } = this.props;
+
+        this.setState({ isSearchExpanded: true });
+
+        onSearchToggleClicked();
+    }
+
+    onSearchClose() {
+        const { onSearchCloseClicked } = this.props;
+
+        this.closeAndDeactivate();
+
+        onSearchCloseClicked();
+    }
+
+    onSearchSuggestionChosen() {
+        const { onSearchSuggestionChosen } = this.props;
+
+        this.closeAndDeactivate();
+
+        onSearchSuggestionChosen();
+    }
+
+    closeAndDeactivate() {
+        this.setState({
+            isSearchModalOpen: false,
+            isUserModalOpen: false,
+            isSearchExpanded: false,
+        });
+    }
 
     openModal(type) {
         if (type === 'search') {
@@ -43,13 +86,6 @@ class GlobalNavigation extends React.Component {
         if (type === 'user') {
             this.setState({ isUserModalOpen: true });
         }
-    }
-
-    closeModal() {
-        this.setState({
-            isSearchModalOpen: false,
-            isUserModalOpen: false,
-        });
     }
 
     renderMainNavigation(navigation) {
@@ -67,17 +103,10 @@ class GlobalNavigation extends React.Component {
     }
 
     render() {
-        const {
-            model,
-            onSearchToggleClicked,
-            onSearchSuggestionChosen,
-            goToSearchResults,
-            track,
-            onSearchCloseClicked,
-        } = this.props;
-        const { isSearchModalOpen, isUserModalOpen } = this.state;
+        const { model, track } = this.props;
+        const { isSearchModalOpen, isUserModalOpen, isSearchExpanded } = this.state;
         const containerClass = classNames('wds-global-navigation', {
-            'wds-search-is-active': isSearchModalOpen,
+            'wds-search-is-active': isSearchExpanded || isSearchModalOpen,
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
         });
 
@@ -100,28 +129,16 @@ class GlobalNavigation extends React.Component {
                         <div className="wds-global-navigation__dropdown-controls">
                             <GlobalNavigationSearch
                                 model={model.search}
-                                onSearchToggleClicked={onSearchToggleClicked}
-                                onSearchSuggestionChosen={onSearchSuggestionChosen}
-                                onSearchCloseClicked={onSearchCloseClicked}
-                                goToSearchResults={goToSearchResults}
+                                isSearchExpanded={isSearchExpanded}
+                                onSearchActivation={this.onSearchActivation}
+                                onSearchClose={this.onSearchClose}
+                                onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                                onRedirectToSearchResults={this.onRedirectToSearchResults}
                                 track={track}
                             />
                             <GlobalNavigationUser data={model} />
                             {
-                                model.user && (
-                                    <NotificationsConsumer>
-                                        {
-                                            ({ unreadCount, loadFirstPage, markAllAsRead }) => (
-                                                <NotificationsDropdown
-                                                    track={track}
-                                                    loadFirstPage={loadFirstPage}
-                                                    unreadCount={unreadCount}
-                                                    markAllAsRead={markAllAsRead}
-                                                />
-                                            )
-                                        }
-                                    </NotificationsConsumer>
-                                )
+                                model.user && <NotificationsDropdown track={track} />
                             }
                             <div className="wds-global-navigation__start-a-wiki">
                                 <GlobalNavigationLinkButton link={model['create-wiki']} />
@@ -135,10 +152,11 @@ class GlobalNavigation extends React.Component {
                             >
                                 <GlobalNavigationSearch
                                     model={model.search}
-                                    onSearchToggleClicked={onSearchToggleClicked}
-                                    onSearchCloseClicked={onSearchCloseClicked}
-                                    onSearchSuggestionChosen={onSearchSuggestionChosen}
-                                    goToSearchResults={goToSearchResults}
+                                    isSearchExpanded={isSearchExpanded}
+                                    onSearchActivation={this.onSearchActivation}
+                                    onSearchClose={this.onSearchClose}
+                                    onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                                    onRedirectToSearchResults={this.onRedirectToSearchResults}
                                     track={track}
                                     inSearchModal
                                 />
@@ -153,7 +171,7 @@ class GlobalNavigation extends React.Component {
                                 track={track}
                             />
                             <Button
-                                onClick={this.closeModal}
+                                onClick={this.closeAndDeactivate}
                                 className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
                                 text
                             >
@@ -169,7 +187,6 @@ class GlobalNavigation extends React.Component {
 
 GlobalNavigation.propTypes = {
     goToSearchResults: PropTypes.func,
-    // eslint-disable-next-line react/forbid-prop-types
     model: PropTypes.object.isRequired,
     onSearchCloseClicked: PropTypes.func,
     onSearchSuggestionChosen: PropTypes.func,

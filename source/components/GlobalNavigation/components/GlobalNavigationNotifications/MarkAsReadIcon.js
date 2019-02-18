@@ -22,6 +22,7 @@ const MarkAsReadIcon = ({ track, model }) => {
     const { markAsRead } = useContext(NotificationsContext);
     const onClick = useCallback((event) => {
         event.stopPropagation();
+        event.preventDefault();
 
         if (!isUnread) {
             return;
