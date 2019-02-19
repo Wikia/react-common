@@ -17,7 +17,7 @@ const List = ({ track }) => {
         'wds-has-lines-between',
         'wds-notifications__notification-list',
         'wds-list',
-        isLoading && 'is-loading-new-results',
+        { 'is-loading-new-results': isLoading },
     );
 
     useLazyLoad(loadNextPage, listEl);
