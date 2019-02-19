@@ -6,7 +6,7 @@ import Avatar from '../../../Avatar';
 
 import withRedirectUrl from '../../hocs/withRedirectUrl';
 
-const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => (
+const MobileAnon = ({ data, getUrlWithRedirect }) => (
     <Button
         className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon"
         href={getUrlWithRedirect(data.signin.href)}
@@ -16,9 +16,9 @@ const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => (
     </Button>
 );
 
-GlobalNavigationMobileAnon.propTypes = {
+MobileAnon.propTypes = {
     data: PropTypes.object.isRequired,
     getUrlWithRedirect: PropTypes.func.isRequired,
 };
 
-export default withRedirectUrl(GlobalNavigationMobileAnon);
+export default withRedirectUrl(MobileAnon);

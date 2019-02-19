@@ -9,7 +9,7 @@ import LinkText from '../Link/LinkText';
 import LinkLogOut from '../Link/LinkLogOut';
 
 /* eslint-disable react/no-array-index-key */
-class GlobalNavigationUserLoggedIn extends React.Component {
+class UserLoggedIn extends React.Component {
     renderToggle = (chevron) => {
         const { data } = this.props;
 
@@ -51,8 +51,8 @@ class GlobalNavigationUserLoggedIn extends React.Component {
     }
 }
 
-GlobalNavigationUserLoggedIn.propTypes = {
+UserLoggedIn.propTypes = {
     data: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigationUserLoggedIn;
+export default UserLoggedIn;

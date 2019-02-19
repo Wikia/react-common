@@ -7,7 +7,7 @@ import Avatar from '../../../Avatar';
 import LinkLogOut from '../Link/LinkLogOut';
 import NotificationsListContainer from '../Notifications/ListContainer';
 
-const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
+const UserModal = ({ isOpen, user, track }) => {
     const viewProfileLink = user.items.filter(item => item['tracking-label'] === 'account.profile')[0].href;
     const signOutModel = user.items.filter(item => item.type === 'link-logout')[0];
     const classes = classNames('wds-global-navigation__modal', 'wds-user-modal', { 'wds-is-hidden': !isOpen });
@@ -28,10 +28,10 @@ const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
     );
 };
 
-GlobalNavigationUserModal.propTypes = {
+UserModal.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     track: PropTypes.func.isRequired,
     user: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigationUserModal;
+export default UserModal;

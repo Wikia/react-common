@@ -11,9 +11,9 @@ import Search from './components/Search/Search';
 import LinkText from './components/Link/LinkText';
 import LinkGroup from './components/Link/LinkGroup';
 import LinkButton from './components/Link/LinkButton';
-import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
+import User from './components/User/User';
 import SearchModal from './components/Search/SearchModal';
-import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
+import MobileUser from './components/User/MobileUser';
 import NotificationsDataProvider from './components/Notifications/NotificationsDataProvider';
 import NotificationsDropdown from './components/Notifications/NotificationsDropdown';
 import PartnerSlot from './components/PartnerSlot/PartnerSlot';
@@ -153,7 +153,7 @@ class GlobalNavigation extends React.Component {
                                 onRedirectToSearchResults={this.onRedirectToSearchResults}
                                 track={track}
                             />
-                            <GlobalNavigationUser data={model} />
+                            <User data={model} />
                             {
                                 model.user && <NotificationsDropdown track={track} />
                             }
@@ -181,7 +181,7 @@ class GlobalNavigation extends React.Component {
                                     {this.renderMainNavigation(model['main-navigation'])}
                                 </nav>
                             </SearchModal>
-                            <GlobalNavigationMobileUser
+                            <MobileUser
                                 data={model}
                                 openModal={this.openModal}
                                 isOpen={isUserModalOpen}

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import GlobalNavigationMobileAnon from './GlobalNavigationMobileAnon';
-import GlobalNavigationMobileLoggedIn from './GlobalNavigationMobileLoggedIn';
+import MobileAnon from './MobileAnon';
+import MobileLoggedIn from './MobileLoggedIn';
 
-const GlobalNavigationMobileUser = ({ data, openModal, isOpen, track }) => {
+const MobileUser = ({ data, openModal, isOpen, track }) => {
     if (data.user) {
         return (
-            <GlobalNavigationMobileLoggedIn
+            <MobileLoggedIn
                 user={data.user}
                 openModal={openModal}
                 isOpen={isOpen}
@@ -17,17 +17,17 @@ const GlobalNavigationMobileUser = ({ data, openModal, isOpen, track }) => {
     }
 
     if (data.anon) {
-        return <GlobalNavigationMobileAnon data={data.anon} />;
+        return <MobileAnon data={data.anon} />;
     }
 
     return null;
 };
 
-GlobalNavigationMobileUser.propTypes = {
+MobileUser.propTypes = {
     data: PropTypes.object.isRequired,
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };
 
-export default GlobalNavigationMobileUser;
+export default MobileUser;
