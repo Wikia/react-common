@@ -98,11 +98,12 @@ class NotificationsDataProvider extends React.Component {
             .loadUnreadNotificationCount()
             .then((result) => {
                 this.setState({ unreadCount: result.unreadCount });
-            }).catch((error) => {
-            this.setState({ unreadCount: 0 });
+            })
+            .catch((error) => {
+                this.setState({ unreadCount: 0 });
 
-            console.error('Setting notifications unread count to 0 because of the API fetch error', error);
-        });
+                console.error('Setting notifications unread count to 0 because of the API fetch error', error);
+            });
     }
 
     markAsRead(uri, willUnloadPage) {

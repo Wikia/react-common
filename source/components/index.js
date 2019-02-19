@@ -37,4 +37,3 @@ export { default as bannerNotificationsMessageType }
 // HEAVY icons
 export { default as IconSprite } from './IconSprite';
 export { default as Icon } from './Icon';
-

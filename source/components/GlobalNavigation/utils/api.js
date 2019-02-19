@@ -30,15 +30,18 @@ class Api {
             })
             .then((response) => {
                 const contentType = response.headers.get('content-type');
-                const hasNoContent = response.status === 204 || contentType && contentType.indexOf('json') === -1;
+                const hasNoContent = response.status === 204 || (contentType && contentType.indexOf('json') === -1);
 
                 if (response.ok && hasNoContent) {
                     return null;
-                } else if (response.ok) {
+                }
+
+                if (response.ok) {
                     return response.json();
                 }
 
-                // do error handling
+                // todo error handling
+                return null;
             });
     }
 

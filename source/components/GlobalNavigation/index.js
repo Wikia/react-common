@@ -149,7 +149,8 @@ class GlobalNavigation extends React.Component {
                             <GlobalNavigationMobileUser
                                 data={model}
                                 openModal={this.openModal}
-                                modalOpen={isUserModalOpen}
+                                isOpen={isUserModalOpen}
+                                track={track}
                             />
                             <Button
                                 onClick={this.closeModal}

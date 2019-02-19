@@ -1,16 +1,24 @@
 import React from 'react';
-import withRedirectUrl from "../../hocs/withRedirectUrl";
-import Button from "../../../Button";
-import Avatar from "../../../Avatar";
+import PropTypes from 'prop-types';
 
-const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => {
-    return (
-        <Button text
-            href={getUrlWithRedirect(data.signin.href)}
-            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon">
-            <Avatar />
-        </Button>
-    )
+import Button from '../../../Button';
+import Avatar from '../../../Avatar';
+
+import withRedirectUrl from '../../hocs/withRedirectUrl';
+
+const GlobalNavigationMobileAnon = ({ data, getUrlWithRedirect }) => (
+    <Button
+        className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon"
+        href={getUrlWithRedirect(data.signin.href)}
+        text
+    >
+        <Avatar />
+    </Button>
+);
+
+GlobalNavigationMobileAnon.propTypes = {
+    data: PropTypes.object.isRequired,
+    getUrlWithRedirect: PropTypes.func.isRequired,
 };
 
 export default withRedirectUrl(GlobalNavigationMobileAnon);

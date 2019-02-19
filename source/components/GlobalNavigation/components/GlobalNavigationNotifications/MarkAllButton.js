@@ -20,9 +20,9 @@ const MarkAllButton = ({ track, header }) => {
             {
                 header && <p className="wds-notifications__header">{header}</p>
             }
-            <a onClick={onClick} className="wds-notifications__mark-all-as-read">
+            <button onClick={onClick} className="wds-notifications__mark-all-as-read">
                 Mark all as read
-            </a>
+            </button>
         </div>
     );
 };

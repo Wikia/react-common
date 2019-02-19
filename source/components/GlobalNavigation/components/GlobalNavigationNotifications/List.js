@@ -9,6 +9,7 @@ import useLazyLoad from '../../hooks/useLazyLoad';
 
 import Card from './Card';
 
+/* eslint-disable react/no-array-index-key */
 const List = ({ track }) => {
     const { loadNextPage, notifications, isLoading, markAsRead, goToDestination } = useContext(NotificationsContext);
     const listEl = useRef(null);

@@ -36,7 +36,10 @@ DropdownContent.propTypes = {
      * React Component to display as content
      */
     children: PropTypes.node,
-    /** Additional class name */
+
+    /**
+     * Additional class name
+     */
     className: PropTypes.string,
     /**
      * Should content be left-aligned with the dropdown toggle
@@ -62,6 +65,7 @@ DropdownContent.propTypes = {
 
 DropdownContent.defaultProps = {
     children: null,
+    className: '',
     dropdownLeftAligned: false,
     dropdownRightAligned: false,
     scrollable: true,

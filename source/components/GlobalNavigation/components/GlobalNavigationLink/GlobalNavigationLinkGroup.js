@@ -1,11 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 import List from '../../../List';
-import GlobalNavigationLinkText from './GlobalNavigationLinkText';
-import GlobalNavigationLinkButton from './GlobalNavigationLinkButton';
 import Dropdown from '../../../Dropdown';
 
+import GlobalNavigationLinkText from './GlobalNavigationLinkText';
+import GlobalNavigationLinkButton from './GlobalNavigationLinkButton';
+
+/* eslint-disable react/no-array-index-key */
 const GlobalNavigationLinkGroup = ({ link }) => {
     const [t] = useTranslation();
 
@@ -19,23 +22,27 @@ const GlobalNavigationLinkGroup = ({ link }) => {
         >
             <List isLinked>
                 {link.items.map((item, index) => {
-                    let link;
+                    let linkEl;
+
                     if (item.type === 'link-text') {
-                        link = <GlobalNavigationLinkText link={item} key={index}/>;
+                        linkEl = <GlobalNavigationLinkText link={item} />;
                     } else {
-                        link = (
-                            <GlobalNavigationLinkButton link={item} key={index}/>
-                        );
+                        linkEl = <GlobalNavigationLinkButton link={item} />;
                     }
+
                     return (
                         <li key={index}>
-                            {link}
+                            {linkEl}
                         </li>
                     );
                 })}
             </List>
         </Dropdown>
     );
+};
+
+GlobalNavigationLinkGroup.propTypes = {
+    link: PropTypes.object.isRequired,
 };
 
 export default GlobalNavigationLinkGroup;
