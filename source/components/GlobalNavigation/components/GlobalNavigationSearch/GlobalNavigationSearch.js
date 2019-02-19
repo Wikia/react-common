@@ -343,6 +343,7 @@ class GlobalNavigationSearch extends React.Component {
                     type="submit"
                     disabled={!query}
                     onClick={this.onSearchSubmit}
+                    data-tracking-label={model.results['tracking-label']}
                     text
                 >
                     <Icon name="arrow" className="wds-global-navigation__search-submit-icon" small />
@@ -353,6 +354,7 @@ class GlobalNavigationSearch extends React.Component {
 
     renderSuggestions() {
         const { suggestions, query } = this.state;
+        const { model } = this.props;
         const highlightRegex = new RegExp(`(${this.escapeRegex(query)})`, 'ig');
 
         return suggestions.map((suggestion) => {
@@ -369,6 +371,7 @@ class GlobalNavigationSearch extends React.Component {
                     <a
                         href={this.normalizeToUnderscore(suggestion)}
                         className="wds-global-navigation__dropdown-link"
+                        data-tracking-label={model.suggestions['tracking-label']}
                     >
                         {highlightedPart && (
                             <span className="wds-global-navigation__search-suggestion-highlight">

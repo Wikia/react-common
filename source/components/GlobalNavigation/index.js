@@ -31,6 +31,7 @@ class GlobalNavigation extends React.Component {
         this.onSearchClose = this.onSearchClose.bind(this);
         this.onSearchSuggestionChosen = this.onSearchSuggestionChosen.bind(this);
         this.onRedirectToSearchResults = this.onRedirectToSearchResults.bind(this);
+        this.onTrackingLabelClick = this.onTrackingLabelClick.bind(this);
     }
 
     state = {
@@ -69,6 +70,19 @@ class GlobalNavigation extends React.Component {
         this.closeAndDeactivate();
 
         onSearchSuggestionChosen();
+    }
+
+    onTrackingLabelClick(event) {
+        const { track } = this.props;
+        const elementToTrack = event.target.closest('[data-tracking-label]');
+
+        if (elementToTrack) {
+            track({
+                action: 'click',
+                category: 'navigation',
+                label: elementToTrack.getAttribute('data-tracking-label'),
+            });
+        }
     }
 
     closeAndDeactivate() {
@@ -115,7 +129,7 @@ class GlobalNavigation extends React.Component {
 
         return (
             <NotificationsDataProvider serviceUrl={model['services-domain']}>
-                <div className={containerClass}>
+                <div className={containerClass} onClick={this.onTrackingLabelClick}>
                     <div className="wds-global-navigation__content-bar-left">
                         <a
                             href={model.logo.href}
