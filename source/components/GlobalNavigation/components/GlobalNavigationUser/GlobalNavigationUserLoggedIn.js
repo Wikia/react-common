@@ -5,8 +5,8 @@ import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
 import List from '../../../List';
 
-import GlobalNavigationLinkText from '../GlobalNavigationLink/GlobalNavigationLinkText';
-import GlobalNavigationLinkLogOut from '../GlobalNavigationLink/GlobalNavigationLinkLogOut';
+import LinkText from '../Link/LinkText';
+import LinkLogOut from '../Link/LinkLogOut';
 
 /* eslint-disable react/no-array-index-key */
 class GlobalNavigationUserLoggedIn extends React.Component {
@@ -36,11 +36,11 @@ class GlobalNavigationUserLoggedIn extends React.Component {
                 <List isLinked>
                     {data.items.map((item, index) => {
                         if (item.type === 'link-text') {
-                            return <li key={index}><GlobalNavigationLinkText link={item} /></li>;
+                            return <li key={index}><LinkText link={item} /></li>;
                         }
 
                         if (item.type === 'link-logout') {
-                            return <li key={index}><GlobalNavigationLinkLogOut link={item} /></li>;
+                            return <li key={index}><LinkLogOut link={item} /></li>;
                         }
 
                         return null;

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import Avatar from '../../../Avatar';
 
-import GlobalNavigationLinkLogOut from '../GlobalNavigationLink/GlobalNavigationLinkLogOut';
+import LinkLogOut from '../Link/LinkLogOut';
 import NotificationsListContainer from '../GlobalNavigationNotifications/ListContainer';
 
 const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
@@ -23,7 +23,7 @@ const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
             <div className="wds-user-modal__notifications-wrapper">
                 <NotificationsListContainer track={track} header="Notifications" />
             </div>
-            <GlobalNavigationLinkLogOut link={signOutModel} className="wds-user-modal__sign-out-container" />
+            <LinkLogOut link={signOutModel} className="wds-user-modal__sign-out-container" />
         </div>
     );
 };
