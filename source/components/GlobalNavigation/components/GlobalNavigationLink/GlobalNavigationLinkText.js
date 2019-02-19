@@ -18,8 +18,12 @@ const GlobalNavigationLinkText = ({ link, isStandaloneLink }) => {
 };
 
 GlobalNavigationLinkText.propTypes = {
-    isStandaloneLink: PropTypes.bool.isRequired,
+    isStandaloneLink: PropTypes.bool,
     link: PropTypes.object.isRequired,
+};
+
+GlobalNavigationLinkText.defaultProps = {
+    isStandaloneLink: false,
 };
 
 export default GlobalNavigationLinkText;
