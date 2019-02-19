@@ -424,8 +424,8 @@ class GlobalNavigationSearch extends React.Component {
 }
 
 GlobalNavigationSearch.propTypes = {
-    isSearchExpanded: PropTypes.bool.isRequired,
     inSearchModal: PropTypes.bool,
+    isSearchExpanded: PropTypes.bool.isRequired,
     model: PropTypes.object.isRequired,
     onRedirectToSearchResults: PropTypes.func.isRequired,
     onSearchActivation: PropTypes.func.isRequired,
