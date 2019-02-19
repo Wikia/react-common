@@ -20,8 +20,10 @@ class GlobalNavigationSearch extends React.Component {
 
         this.input = React.createRef();
 
-        this.openSearch = this.openSearch.bind(this);
-        this.onInputClick = this.onInputClick.bind(this);
+        this.onSearchActivation = this.onSearchActivation.bind(this);
+        this.onSearchClear = this.onSearchClear.bind(this);
+        this.onSearchClose = this.onSearchClose.bind(this);
+        this.onSearchSubmit = this.onSearchSubmit.bind(this);
         this.onQueryChanged = this.onQueryChanged.bind(this);
         this.onBlur = this.onBlur.bind(this);
         this.onFocus = this.onFocus.bind(this);
@@ -35,7 +37,6 @@ class GlobalNavigationSearch extends React.Component {
         requestsInProgress: {},
         cachedResults: {},
         searchRequestInProgress: false,
-        searchIsActive: false,
         inputFocused: false,
         selectedSuggestionIndex: -1,
         query: '',
@@ -55,40 +56,179 @@ class GlobalNavigationSearch extends React.Component {
         this.isMounted = false;
     }
 
-    openSearch() {
+    onBlur() {
+        const { query } = this.state;
 
+        if (!query) {
+            this.onSearchClose();
+        }
     }
 
-    onInputClick() {
-        const { onSearchToggleClicked } = this.props;
-        const { searchIsActive } = this.state;
+    onFocus() {
+        this.setState({ inputFocused: true });
+    }
 
-        if (searchIsActive) {
+    onKeyDown(event) {
+        const { selectedSuggestionIndex, suggestions, query } = this.state;
+        const { onSearchSuggestionChosen, onRedirectToSearchResults } = this.props;
+
+        event.stopPropagation();
+
+        switch (event.key) {
+            // down arrow
+            case 40:
+                if (selectedSuggestionIndex < suggestions.length - 1) {
+                    this.setState({ selectedSuggestionIndex: selectedSuggestionIndex + 1 });
+                }
+
+                break;
+            // up arrow
+            case 30:
+                if (suggestions.length && selectedSuggestionIndex > -1) {
+                    this.setState(({ selectedSuggestionIndex: selectedSuggestionIndex - 1 }));
+                }
+
+                break;
+            // ESC key
+            case 27:
+                this.onSearchClose();
+
+                break;
+            // ENTER key
+            case 13:
+                if (selectedSuggestionIndex !== -1) {
+                    onSearchSuggestionChosen(suggestions[selectedSuggestionIndex]);
+                    this.input.current.blur();
+                    this.onSearchClose();
+                } else {
+                    onRedirectToSearchResults(query);
+                }
+
+                break;
+
+            default:
+            // do nothing
+        }
+    }
+
+    onSearchSuggestionClick(index) {
+        const { track, onSearchSuggestionChosen } = this.props;
+        const { suggestions } = this.state;
+
+        onSearchSuggestionChosen(suggestions[index]);
+
+        this.onSearchClose();
+
+        track({
+            action: 'click',
+            category: 'navigation',
+            label: 'search-open-suggestion-link',
+        });
+    }
+
+    onSearchActivation() {
+        const { onSearchActivation, isSearchExpanded } = this.props;
+
+        if (isSearchExpanded) {
             return;
         }
 
         this.setState({
-            searchIsActive: true,
             inputFocused: true,
             suggestions: [],
         }, () => {
-            onSearchToggleClicked();
+            onSearchActivation();
             this.input.current.focus();
         });
     }
 
-    escapeRegex(text) {
-        return text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+    onSearchClear() {
+        this.setState({
+            suggestions: [],
+            searchRequestInProgress: false,
+            inputFocused: true,
+            selectedSuggestionIndex: -1,
+            query: '',
+        });
+
+        this.input.current.focus();
     }
 
-    normalizeToUnderscore(title = '') {
-        return title
-            .replace(/\s/g, '_')
-            .replace(/_+/g, '_');
+    onSearchClose() {
+        const { onSearchClose } = this.props;
+
+        this.setState({
+            suggestions: [],
+            searchRequestInProgress: false,
+            inputFocused: false,
+            selectedSuggestionIndex: -1,
+            query: '',
+        });
+
+        onSearchClose();
+    }
+
+    onSearchSubmit() {
+        const { track, onRedirectToSearchResults } = this.props;
+        const { query } = this.state;
+
+        track({
+            action: 'open',
+            category: 'navigation',
+            label: 'search-open-special-search',
+        });
+
+        this.setState({
+            searchRequestInProgress: true,
+        }, () => {
+            onRedirectToSearchResults(query);
+
+            this.onSearchClose();
+        });
     }
 
     onQueryChanged(event) {
         this.getSuggestions(event.target.value);
+    }
+
+    onRequestEnd() {
+        if (!this.isMounted) {
+            return;
+        }
+
+        const { query, requestsInProgress } = this.state;
+
+        this.setState({
+            requestsInProgress: { ...requestsInProgress, [query]: false },
+        });
+    }
+
+    getSuggestions(query) {
+        if (!this.isMounted) {
+            return;
+        }
+
+        const { cachedResults } = this.state;
+        const isQueryTooShort = !query || query.length < MINIMAL_QUERY_LENGTH;
+
+        this.setState({
+            suggestions: [],
+            selectedSuggestionIndex: -1,
+            searchRequestInProgress: false,
+            query,
+        });
+
+        if (isQueryTooShort) {
+            return;
+        }
+
+        if (this.hasCachedResult(query)) {
+            this.setState({
+                suggestions: cachedResults[query],
+            });
+        } else {
+            this.requestSuggestionsFromAPI();
+        }
     }
 
     requestSuggestionsFromAPI() {
@@ -143,22 +283,14 @@ class GlobalNavigationSearch extends React.Component {
             .then(() => this.onRequestEnd());
     }
 
-    onRequestEnd() {
-        if (!this.isMounted) {
-            return;
-        }
-
-        const { query, requestsInProgress } = this.state;
-
-        this.setState({
-            requestsInProgress: { ...requestsInProgress, [query]: false },
-        });
+    escapeRegex(text) {
+        return text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
     }
 
-    hasCachedResult(query) {
-        const { cachedResults } = this.state;
-
-        return Object.prototype.hasOwnProperty.call(cachedResults, query);
+    normalizeToUnderscore(title = '') {
+        return title
+            .replace(/\s/g, '_')
+            .replace(/_+/g, '_');
     }
 
     cacheResult(query, suggestions) {
@@ -167,133 +299,15 @@ class GlobalNavigationSearch extends React.Component {
         this.setState({ cachedResults: { ...cachedResults, [query]: suggestions || [] } });
     }
 
-    getSuggestions(query) {
-        if (!this.isMounted) {
-            return;
-        }
-
+    hasCachedResult(query) {
         const { cachedResults } = this.state;
-        const isQueryTooShort = !query || query.length < MINIMAL_QUERY_LENGTH;
 
-        this.setState({
-            suggestions: [],
-            selectedSuggestionIndex: -1,
-            searchRequestInProgress: false,
-            query,
-        });
-
-        if (isQueryTooShort) {
-            return;
-        }
-
-        if (this.hasCachedResult(query)) {
-            this.setState({
-                suggestions: cachedResults[query],
-            });
-        } else {
-            this.requestSuggestionsFromAPI();
-        }
-    }
-
-    onCloseSearch() {
-        const { onSearchCloseClicked } = this.props;
-
-        this.setState({
-            suggestions: [],
-            searchRequestInProgress: false,
-            searchIsActive: false,
-            inputFocused: false,
-            selectedSuggestionIndex: -1,
-            query: '',
-        });
-
-        onSearchCloseClicked();
-    }
-
-    onClearSearch() {
-        this.setState({
-            suggestions: [],
-            searchRequestInProgress: false,
-            searchIsActive: true,
-            inputFocused: true,
-            selectedSuggestionIndex: -1,
-            query: '',
-        });
-
-        this.input.current.focus();
-    }
-
-    onFocus() {
-        this.setState({ inputFocused: true });
-    }
-
-    onBlur() {
-        const { query } = this.state;
-
-        if (query) {
-            this.onCloseSearch();
-        }
-    }
-
-    onSearchSuggestionClick(index) {
-        const { track } = this.props;
-        const { suggestions } = this.state;
-
-        this.onSearchSuggestionChosen(suggestions[index]);
-        this.onCloseSearch();
-
-        track({
-            action: 'click',
-            category: 'navigation',
-            label: 'search-open-suggestion-link',
-        });
-    }
-
-    onKeyDown(event) {
-        const { selectedSuggestionIndex, suggestions, query } = this.state;
-        const { onSearchSuggestionChosen, goToSearchResults } = this.props;
-
-        event.stopPropagation();
-
-        switch (event.key) {
-            // down arrow
-            case 40:
-                if (selectedSuggestionIndex < suggestions.length - 1) {
-                    this.setState({ selectedSuggestionIndex: selectedSuggestionIndex + 1 });
-                }
-
-                break;
-            // up arrow
-            case 30:
-                if (suggestions.length && selectedSuggestionIndex > -1) {
-                    this.setState(({ selectedSuggestionIndex: selectedSuggestionIndex - 1 }));
-                }
-
-                break;
-            // ESC key
-            case 27:
-                this.onCloseSearch();
-
-                break;
-            // ENTER key
-            case 13:
-                if (selectedSuggestionIndex !== -1) {
-                    onSearchSuggestionChosen(suggestions[selectedSuggestionIndex]);
-                    this.input.current.blur();
-                    this.onCloseSearch();
-                } else {
-                    goToSearchResults(query);
-                }
-
-                break;
-
-            default:
-                // do nothing
-        }
+        return Object.prototype.hasOwnProperty.call(cachedResults, query);
     }
 
     renderInput() {
         const { t, model } = this.props;
+        const { query } = this.state;
         const placeholderConfig = model['placeholder-active'];
 
         return (
@@ -301,19 +315,36 @@ class GlobalNavigationSearch extends React.Component {
                 <input
                     className="wds-global-navigation__search-input"
                     placeholder={t(placeholderConfig.key, { sitename: placeholderConfig.params.sitename.value })}
-                    onClick={this.onInputClick}
+                    value={query}
+                    onClick={this.onSearchActivation}
                     ref={this.input}
                     onChange={this.onQueryChanged}
                     onFocus={this.onFocus}
                     onBlur={this.onBlur}
                 />
-                <Button className="wds-global-navigation__search-clear" text>
+                <Button
+                    className="wds-global-navigation__search-clear"
+                    type="button"
+                    onClick={this.onSearchClear}
+                    text
+                >
                     <Icon name="add" small className="wds-global-navigation__search-clear-icon" />
                 </Button>
-                <Button className="wds-global-navigation__search-close" text>
+                <Button
+                    className="wds-global-navigation__search-close"
+                    type="button"
+                    onClick={this.onSearchClose}
+                    text
+                >
                     <Icon name="close" className="wds-global-navigation__search-close-icon" tiny />
                 </Button>
-                <Button className="wds-global-navigation__search-submit" type="submit" text>
+                <Button
+                    className="wds-global-navigation__search-submit"
+                    type="submit"
+                    disabled={!query}
+                    onClick={this.onSearchSubmit}
+                    text
+                >
                     <Icon name="arrow" className="wds-global-navigation__search-submit-icon" small />
                 </Button>
             </React.Fragment>
@@ -365,7 +396,7 @@ class GlobalNavigationSearch extends React.Component {
                         className="wds-global-navigation__search-toggle"
                         role="searchbox"
                         tabIndex="0"
-                        onClick={this.openSearch}
+                        onClick={this.onSearchActivation}
                     >
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
@@ -393,12 +424,13 @@ class GlobalNavigationSearch extends React.Component {
 }
 
 GlobalNavigationSearch.propTypes = {
-    goToSearchResults: PropTypes.func.isRequired,
     inSearchModal: PropTypes.bool,
+    isSearchExpanded: PropTypes.bool.isRequired,
     model: PropTypes.object.isRequired,
-    onSearchCloseClicked: PropTypes.func.isRequired,
+    onRedirectToSearchResults: PropTypes.func.isRequired,
+    onSearchActivation: PropTypes.func.isRequired,
+    onSearchClose: PropTypes.func.isRequired,
     onSearchSuggestionChosen: PropTypes.func.isRequired,
-    onSearchToggleClicked: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };
