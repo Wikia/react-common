@@ -164,7 +164,6 @@ class Dropdown extends React.Component {
         const Component = isLevel2 ? 'li' : 'div';
 
         return (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <Component
                 className={allClassNames}
                 onClick={this.onClick}
