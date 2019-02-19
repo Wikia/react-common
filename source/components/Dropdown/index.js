@@ -62,7 +62,7 @@ class Dropdown extends React.Component {
     }
 
     onMouseEnter() {
-        const { canFlip, isLevel2 } = this.props;
+        const { canFlip, isLevel2, onMouseEnter } = this.props;
         const contentElement = this.contentElementRef.current;
 
         if (canFlip && !isLevel2 && contentElement) {
@@ -72,6 +72,10 @@ class Dropdown extends React.Component {
             this.setState({
                 isFlipped,
             });
+        }
+
+        if (onMouseEnter) {
+            onMouseEnter();
         }
     }
 
@@ -238,9 +242,14 @@ Dropdown.propTypes = {
     noChevron: PropTypes.bool,
 
     /**
-     * HTML classes to add to toggle
+     * Function to call when dropdown will be closed
      */
     onClose: PropTypes.func,
+
+    /**
+     * Function to call when dropdown will be hovered
+     */
+    onMouseEnter: PropTypes.func,
 
     /**
      * React Component to display as a dropdown toggle
@@ -279,6 +288,7 @@ Dropdown.defaultProps = {
     toggleAttrs: {},
     isStickedToParent: false,
     onClose: null,
+    onMouseEnter: null,
 };
 
 export default Dropdown;

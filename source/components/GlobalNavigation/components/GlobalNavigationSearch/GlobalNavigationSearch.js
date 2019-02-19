@@ -296,8 +296,6 @@ class GlobalNavigationSearch extends React.Component {
         const { t, model } = this.props;
         const placeholderConfig = model['placeholder-active'];
         
-        console.log('######', placeholderConfig.params.sitename.value); 
-        
         return (
             <React.Fragment>
                 <input
