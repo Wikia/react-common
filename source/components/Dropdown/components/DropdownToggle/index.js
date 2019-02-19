@@ -50,8 +50,6 @@ class DropdownToggle extends React.Component {
         const Component = attrs.href ? 'a' : 'div';
 
         return (
-            // TODO: Fix a11y
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
             <Component onClick={onClick} className={fullClassName} {...attrs} role="button">
                 {toggleContentComponent}
             </Component>

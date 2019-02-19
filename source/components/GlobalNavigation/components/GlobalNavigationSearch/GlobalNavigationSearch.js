@@ -361,7 +361,6 @@ class GlobalNavigationSearch extends React.Component {
             const regularPart = suggestion.replace(highlightRegex, '');
 
             return (
-                // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
                 <li
                     key={suggestion}
                     className="wds-global-navigation__search__suggestion"
@@ -385,14 +384,13 @@ class GlobalNavigationSearch extends React.Component {
 
     render() {
         const { inputFocused, suggestions } = this.state;
+        const computedClass = classNames(
+            'wds-global-navigation__search-container',
+            { 'wds-search-is-focused': inputFocused },
+        );
 
         return (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
-            <form
-                className={classNames('wds-global-navigation__search-container', inputFocused && 'wds-search-is-focused')}
-                onKeyDown={this.onKeyDown}
-                tabIndex="0"
-            >
+            <form className={computedClass} onKeyDown={this.onKeyDown}>
                 <div className="wds-global-navigation__search">
                     <div
                         className="wds-global-navigation__search-toggle"

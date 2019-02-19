@@ -25,10 +25,14 @@ const GlobalNavigationLinkLogOut = ({ link, t, redirectUrl, className }) => (
 );
 
 GlobalNavigationLinkLogOut.propTypes = {
-    className: PropTypes.string.isRequired,
+    className: PropTypes.string,
     link: PropTypes.object.isRequired,
     redirectUrl: PropTypes.string.isRequired,
     t: PropTypes.func.isRequired,
+};
+
+GlobalNavigationLinkLogOut.defaultProps = {
+    className: '',
 };
 
 export default withTranslation()(withRedirectUrl(GlobalNavigationLinkLogOut));

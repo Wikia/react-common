@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import get from 'lodash/get';
 
 import Timeago from '../../../Timeago';
 
@@ -12,7 +13,7 @@ import CardLink from './CardLink';
 
 const Card = ({ model, track }) => {
     const { totalUniqueActors, isUnread, type, title, latestActors, timestamp, communityName, snippet } = model;
-    const computedClass = classNames('wds-notification-card', isUnread && 'wds-is-unread');
+    const computedClass = classNames('wds-notification-card', { 'wds-is-unread': isUnread });
     const showAvatars = totalUniqueActors > 2 && isDiscussionReply(type);
     const showSnippet = !title && !isAnnouncement(type);
     const showLastActor = isAnnouncement(type);
@@ -42,7 +43,7 @@ const Card = ({ model, track }) => {
                     {
                         showLastActor && (
                             <p className="wds-notification-card__last-actor">
-                                {latestActors[0].name}
+                                {get(latestActors, '[0].name')}
                             </p>
                         )
                     }
