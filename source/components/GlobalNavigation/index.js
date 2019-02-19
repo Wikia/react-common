@@ -16,6 +16,7 @@ import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/Glo
 import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
 import NotificationsDataProvider from './components/GlobalNavigationNotifications/NotificationsDataProvider';
 import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
+import PartnerSlot from './components/PartnerSlot/PartnerSlot';
 
 import './styles.scss';
 
@@ -104,10 +105,12 @@ class GlobalNavigation extends React.Component {
 
     render() {
         const { model, track } = this.props;
+        const partnerSlotModel = model['partner-slot'];
         const { isSearchModalOpen, isUserModalOpen, isSearchExpanded } = this.state;
         const containerClass = classNames('wds-global-navigation', {
             'wds-search-is-active': isSearchExpanded || isSearchModalOpen,
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
+            'wds-has-partner-slot': partnerSlotModel,
         });
 
         return (
@@ -179,6 +182,9 @@ class GlobalNavigation extends React.Component {
                             </Button>
                         </div>
                     </div>
+                    {
+                        partnerSlotModel && <PartnerSlot model={partnerSlotModel} />
+                    }
                 </div>
             </NotificationsDataProvider>
         );
