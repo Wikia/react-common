@@ -35,7 +35,7 @@ class GlobalNavigationUserAnon extends React.Component {
                             fullwidth
                             href={getUrlWithRedirect(data.signin.href)}
                             rel="nofollow"
-                            data-tracking-label="account.sign-in"
+                            data-tracking-label={data.signin['tracking-label']}
                         >
                             {t(data.signin.title.key)}
                         </Button>
@@ -47,7 +47,7 @@ class GlobalNavigationUserAnon extends React.Component {
                         <Button
                             href={getUrlWithRedirect(data.register.href)}
                             rel="nofollow"
-                            data-tracking-label="account.register"
+                            data-tracking-label={data.register['tracking-label']}
                             fullwidth
                             secondary
                         >
