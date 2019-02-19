@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Button from '../../../Button';
 import Icon from '../../../Icon';
 
-const GlobalNavigationSearchModal = ({ openModal, children, isOpen }) => (
+const SearchModal = ({ openModal, children, isOpen }) => (
     <React.Fragment>
         <Button
             className="wds-global-navigation__modal-control wds-global-navigation__modal-control-search"
@@ -25,10 +25,10 @@ const GlobalNavigationSearchModal = ({ openModal, children, isOpen }) => (
     </React.Fragment>
 );
 
-GlobalNavigationSearchModal.propTypes = {
+SearchModal.propTypes = {
     children: PropTypes.node.isRequired,
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
 };
 
-export default GlobalNavigationSearchModal;
+export default SearchModal;

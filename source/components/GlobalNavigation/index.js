@@ -7,15 +7,15 @@ import Button from '../Button/index';
 
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
-import GlobalNavigationSearch from './components/GlobalNavigationSearch/GlobalNavigationSearch';
+import Search from './components/Search/Search';
 import LinkText from './components/Link/LinkText';
 import LinkGroup from './components/Link/LinkGroup';
 import LinkButton from './components/Link/LinkButton';
 import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
-import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
+import SearchModal from './components/Search/SearchModal';
 import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
-import NotificationsDataProvider from './components/GlobalNavigationNotifications/NotificationsDataProvider';
-import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
+import NotificationsDataProvider from './components/Notifications/NotificationsDataProvider';
+import NotificationsDropdown from './components/Notifications/NotificationsDropdown';
 import PartnerSlot from './components/PartnerSlot/PartnerSlot';
 
 import './styles.scss';
@@ -144,7 +144,7 @@ class GlobalNavigation extends React.Component {
                     </div>
                     <div className="wds-global-navigation__content-bar-right">
                         <div className="wds-global-navigation__dropdown-controls">
-                            <GlobalNavigationSearch
+                            <Search
                                 model={model.search}
                                 isSearchExpanded={isSearchExpanded}
                                 onSearchActivation={this.onSearchActivation}
@@ -162,12 +162,12 @@ class GlobalNavigation extends React.Component {
                             </div>
                         </div>
                         <div className="wds-global-navigation__modal-controls">
-                            <GlobalNavigationSearchModal
+                            <SearchModal
                                 model={model}
                                 isOpen={isSearchModalOpen}
                                 openModal={this.openModal}
                             >
-                                <GlobalNavigationSearch
+                                <Search
                                     model={model.search}
                                     isSearchExpanded={isSearchExpanded}
                                     onSearchActivation={this.onSearchActivation}
@@ -180,7 +180,7 @@ class GlobalNavigation extends React.Component {
                                 <nav className="wds-global-navigation__links">
                                     {this.renderMainNavigation(model['main-navigation'])}
                                 </nav>
-                            </GlobalNavigationSearchModal>
+                            </SearchModal>
                             <GlobalNavigationMobileUser
                                 data={model}
                                 openModal={this.openModal}

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Avatar from '../../../Avatar';
 
 import LinkLogOut from '../Link/LinkLogOut';
-import NotificationsListContainer from '../GlobalNavigationNotifications/ListContainer';
+import NotificationsListContainer from '../Notifications/ListContainer';
 
 const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
     const viewProfileLink = user.items.filter(item => item['tracking-label'] === 'account.profile')[0].href;
