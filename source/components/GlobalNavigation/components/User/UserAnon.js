@@ -9,7 +9,7 @@ import List from '../../../List';
 
 import withRedirectUrl from '../../hocs/withRedirectUrl';
 
-class GlobalNavigationUserAnon extends React.Component {
+class UserAnon extends React.Component {
     renderToggle = chevron => (
         <React.Fragment>
             <Avatar />
@@ -60,10 +60,10 @@ class GlobalNavigationUserAnon extends React.Component {
     }
 }
 
-GlobalNavigationUserAnon.propTypes = {
+UserAnon.propTypes = {
     data: PropTypes.object.isRequired,
     getUrlWithRedirect: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
 };
 
-export default withTranslation()(withRedirectUrl(GlobalNavigationUserAnon));
+export default withTranslation()(withRedirectUrl(UserAnon));

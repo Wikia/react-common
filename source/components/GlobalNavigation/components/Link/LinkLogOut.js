@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import withRedirectUrl from '../../hocs/withRedirectUrl';
 
-const GlobalNavigationLinkLogOut = ({ link, t, redirectUrl, className }) => (
+const LinkLogOut = ({ link, t, redirectUrl, className }) => (
     <div id={link.title.key} className={className || ''}>
         <form method="POST" action={link.href}>
             <input
@@ -24,15 +24,15 @@ const GlobalNavigationLinkLogOut = ({ link, t, redirectUrl, className }) => (
     </div>
 );
 
-GlobalNavigationLinkLogOut.propTypes = {
+LinkLogOut.propTypes = {
     className: PropTypes.string,
     link: PropTypes.object.isRequired,
     redirectUrl: PropTypes.string.isRequired,
     t: PropTypes.func.isRequired,
 };
 
-GlobalNavigationLinkLogOut.defaultProps = {
+LinkLogOut.defaultProps = {
     className: '',
 };
 
-export default withTranslation()(withRedirectUrl(GlobalNavigationLinkLogOut));
+export default withTranslation()(withRedirectUrl(LinkLogOut));

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-const GlobalNavigationLinkText = ({ link, isStandaloneLink }) => {
+const LinkText = ({ link, isStandaloneLink }) => {
     const [t] = useTranslation();
 
     return (
@@ -17,13 +17,13 @@ const GlobalNavigationLinkText = ({ link, isStandaloneLink }) => {
     );
 };
 
-GlobalNavigationLinkText.propTypes = {
+LinkText.propTypes = {
     isStandaloneLink: PropTypes.bool,
     link: PropTypes.object.isRequired,
 };
 
-GlobalNavigationLinkText.defaultProps = {
+LinkText.defaultProps = {
     isStandaloneLink: false,
 };
 
-export default GlobalNavigationLinkText;
+export default LinkText;

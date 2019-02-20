@@ -6,9 +6,9 @@ import Avatar from '../../../Avatar';
 
 import NotificationsContext from '../../utils/NotificationContext';
 
-import GlobalNavigationUserModal from './GlobalNavigationUserModal';
+import UserModal from './UserModal';
 
-const GlobalNavigationMobileLoggedIn = ({ user, openModal, isOpen, track }) => {
+const MobileLoggedIn = ({ user, openModal, isOpen, track }) => {
     const { unreadCount } = useContext(NotificationsContext);
 
     return (
@@ -27,16 +27,16 @@ const GlobalNavigationMobileLoggedIn = ({ user, openModal, isOpen, track }) => {
                     )
                 }
             </Button>
-            <GlobalNavigationUserModal user={user} isOpen={isOpen} track={track} />
+            <UserModal user={user} isOpen={isOpen} track={track} />
         </React.Fragment>
     );
 };
 
-GlobalNavigationMobileLoggedIn.propTypes = {
+MobileLoggedIn.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
     user: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigationMobileLoggedIn;
+export default MobileLoggedIn;

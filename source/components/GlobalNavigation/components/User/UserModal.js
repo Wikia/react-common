@@ -4,10 +4,10 @@ import classNames from 'classnames';
 
 import Avatar from '../../../Avatar';
 
-import GlobalNavigationLinkLogOut from '../GlobalNavigationLink/GlobalNavigationLinkLogOut';
-import NotificationsListContainer from '../GlobalNavigationNotifications/ListContainer';
+import LinkLogOut from '../Link/LinkLogOut';
+import NotificationsListContainer from '../Notifications/ListContainer';
 
-const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
+const UserModal = ({ isOpen, user, track }) => {
     const viewProfileLink = user.items.filter(item => item['tracking-label'] === 'account.profile')[0].href;
     const signOutModel = user.items.filter(item => item.type === 'link-logout')[0];
     const classes = classNames('wds-global-navigation__modal', 'wds-user-modal', { 'wds-is-hidden': !isOpen });
@@ -23,15 +23,15 @@ const GlobalNavigationUserModal = ({ isOpen, user, track }) => {
             <div className="wds-user-modal__notifications-wrapper">
                 <NotificationsListContainer track={track} header="Notifications" />
             </div>
-            <GlobalNavigationLinkLogOut link={signOutModel} className="wds-user-modal__sign-out-container" />
+            <LinkLogOut link={signOutModel} className="wds-user-modal__sign-out-container" />
         </div>
     );
 };
 
-GlobalNavigationUserModal.propTypes = {
+UserModal.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     track: PropTypes.func.isRequired,
     user: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigationUserModal;
+export default UserModal;

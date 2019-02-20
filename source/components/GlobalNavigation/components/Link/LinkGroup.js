@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import List from '../../../List';
 import Dropdown from '../../../Dropdown';
 
-import GlobalNavigationLinkText from './GlobalNavigationLinkText';
-import GlobalNavigationLinkButton from './GlobalNavigationLinkButton';
+import LinkButton from './LinkButton';
+import LinkText from './LinkText';
 
 /* eslint-disable react/no-array-index-key */
-const GlobalNavigationLinkGroup = ({ link }) => {
+const LinkGroup = ({ link }) => {
     const [t] = useTranslation();
 
     return (
@@ -25,9 +25,9 @@ const GlobalNavigationLinkGroup = ({ link }) => {
                     let linkEl;
 
                     if (item.type === 'link-text') {
-                        linkEl = <GlobalNavigationLinkText link={item} />;
+                        linkEl = <LinkText link={item} />;
                     } else {
-                        linkEl = <GlobalNavigationLinkButton link={item} />;
+                        linkEl = <LinkButton link={item} />;
                     }
 
                     return (
@@ -41,8 +41,8 @@ const GlobalNavigationLinkGroup = ({ link }) => {
     );
 };
 
-GlobalNavigationLinkGroup.propTypes = {
+LinkGroup.propTypes = {
     link: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigationLinkGroup;
+export default LinkGroup;

@@ -7,15 +7,15 @@ import Button from '../Button/index';
 
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
-import GlobalNavigationSearch from './components/GlobalNavigationSearch/GlobalNavigationSearch';
-import GlobalNavigationLinkText from './components/GlobalNavigationLink/GlobalNavigationLinkText';
-import GlobalNavigationLinkGroup from './components/GlobalNavigationLink/GlobalNavigationLinkGroup';
-import GlobalNavigationLinkButton from './components/GlobalNavigationLink/GlobalNavigationLinkButton';
-import GlobalNavigationUser from './components/GlobalNavigationUser/GlobalNavigationUser';
-import GlobalNavigationSearchModal from './components/GlobalNavigationSearch/GlobalNavigationSearchModal';
-import GlobalNavigationMobileUser from './components/GlobalNavigationUser/GlobalNavigationMobileUser';
-import NotificationsDataProvider from './components/GlobalNavigationNotifications/NotificationsDataProvider';
-import NotificationsDropdown from './components/GlobalNavigationNotifications/NotificationsDropdown';
+import Search from './components/Search/Search';
+import LinkText from './components/Link/LinkText';
+import LinkGroup from './components/Link/LinkGroup';
+import LinkButton from './components/Link/LinkButton';
+import User from './components/User/User';
+import SearchModal from './components/Search/SearchModal';
+import MobileUser from './components/User/MobileUser';
+import NotificationsDataProvider from './components/Notifications/NotificationsDataProvider';
+import NotificationsDropdown from './components/Notifications/NotificationsDropdown';
 import PartnerSlot from './components/PartnerSlot/PartnerSlot';
 
 import './styles.scss';
@@ -106,11 +106,11 @@ class GlobalNavigation extends React.Component {
     renderMainNavigation(navigation) {
         return navigation.map((link, index) => {
             if (link.type === 'link-text') {
-                return <GlobalNavigationLinkText key={index} link={link} isStandaloneLink />;
+                return <LinkText key={index} link={link} isStandaloneLink />;
             }
 
             if (link.type === 'link-group') {
-                return <GlobalNavigationLinkGroup key={index} link={link} />;
+                return <LinkGroup key={index} link={link} />;
             }
 
             return null;
@@ -144,7 +144,7 @@ class GlobalNavigation extends React.Component {
                     </div>
                     <div className="wds-global-navigation__content-bar-right">
                         <div className="wds-global-navigation__dropdown-controls">
-                            <GlobalNavigationSearch
+                            <Search
                                 model={model.search}
                                 isSearchExpanded={isSearchExpanded}
                                 onSearchActivation={this.onSearchActivation}
@@ -153,21 +153,21 @@ class GlobalNavigation extends React.Component {
                                 onRedirectToSearchResults={this.onRedirectToSearchResults}
                                 track={track}
                             />
-                            <GlobalNavigationUser data={model} />
+                            <User data={model} />
                             {
                                 model.user && <NotificationsDropdown track={track} />
                             }
                             <div className="wds-global-navigation__start-a-wiki">
-                                <GlobalNavigationLinkButton link={model['create-wiki']} />
+                                <LinkButton link={model['create-wiki']} />
                             </div>
                         </div>
                         <div className="wds-global-navigation__modal-controls">
-                            <GlobalNavigationSearchModal
+                            <SearchModal
                                 model={model}
                                 isOpen={isSearchModalOpen}
                                 openModal={this.openModal}
                             >
-                                <GlobalNavigationSearch
+                                <Search
                                     model={model.search}
                                     isSearchExpanded={isSearchExpanded}
                                     onSearchActivation={this.onSearchActivation}
@@ -180,8 +180,8 @@ class GlobalNavigation extends React.Component {
                                 <nav className="wds-global-navigation__links">
                                     {this.renderMainNavigation(model['main-navigation'])}
                                 </nav>
-                            </GlobalNavigationSearchModal>
-                            <GlobalNavigationMobileUser
+                            </SearchModal>
+                            <MobileUser
                                 data={model}
                                 openModal={this.openModal}
                                 isOpen={isUserModalOpen}

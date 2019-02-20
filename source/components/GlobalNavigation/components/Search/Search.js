@@ -12,7 +12,7 @@ import Icon from '../../../Icon';
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
 
-class GlobalNavigationSearch extends React.Component {
+class Search extends React.Component {
     isMounted = false;
 
     constructor(props) {
@@ -426,7 +426,7 @@ class GlobalNavigationSearch extends React.Component {
     }
 }
 
-GlobalNavigationSearch.propTypes = {
+Search.propTypes = {
     inSearchModal: PropTypes.bool,
     isSearchExpanded: PropTypes.bool.isRequired,
     model: PropTypes.object.isRequired,
@@ -438,8 +438,8 @@ GlobalNavigationSearch.propTypes = {
     track: PropTypes.func.isRequired,
 };
 
-GlobalNavigationSearch.defaultProps = {
+Search.defaultProps = {
     inSearchModal: false,
 };
 
-export default withTranslation()(GlobalNavigationSearch);
+export default withTranslation()(Search);
