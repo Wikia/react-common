@@ -1,5 +1,5 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
 import LinkLogOut from './LinkLogOut';
@@ -20,13 +20,13 @@ const defaultProps = {
 function renderComponent(props) {
     const computedProps = merge({}, defaultProps, props);
 
-    return renderer.create(<LinkLogOut {...computedProps} />);
+    return shallow(<LinkLogOut {...computedProps} />);
 }
 
 test('LinkLogOut renders correctly with default params', () => {
-    expect(renderComponent().toJSON()).toMatchSnapshot();
+    expect(renderComponent().dive()).toMatchSnapshot();
 });
 
 test('LinkLogOut renders correctly with additional className', () => {
-    expect(renderComponent({ className: 'so-classy' }).toJSON()).toMatchSnapshot();
+    expect(renderComponent({ className: 'so-classy' }).dive()).toMatchSnapshot();
 });

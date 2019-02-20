@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
 import LinkGroup from './LinkGroup';
@@ -43,9 +43,9 @@ const defaultProps = {
 function renderComponent(props) {
     const computedProps = merge({}, defaultProps, props);
 
-    return renderer.create(<LinkGroup {...computedProps} />);
+    return shallow(<LinkGroup {...computedProps} />);
 }
 
 test('LinkGroup renders correctly', () => {
-    expect(renderComponent().toJSON()).toMatchSnapshot();
+    expect(renderComponent()).toMatchSnapshot();
 });

@@ -1,64 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkGroup renders correctly 1`] = `
-<div
-  className="wds-dropdown wds-has-shadow wds-global-navigation__link-group"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
+<Dropdown
+  canFlip={false}
+  className="wds-global-navigation__link-group"
+  contentClassName="wds-global-navigation__dropdown-content"
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={true}
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="global-navigation-wikis-header"
+  toggleAttrs={Object {}}
+  toggleClassName="wds-global-navigation__link"
 >
-  <div
-    className="wds-dropdown__toggle wds-global-navigation__link"
-    onClick={[Function]}
-    role="button"
+  <List
+    bigItems={false}
+    boldItems={false}
+    className=""
+    hasEllipsis={false}
+    isLinked={true}
+    linesBetween={false}
   >
-    <span>
-      global-navigation-wikis-header
-    </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    <li
+      key="0"
     >
-      <use
-        xlinkHref="#wds-icons-dropdown-tiny"
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//fandom.wikia.com/explore",
+            "title": Object {
+              "key": "global-navigation-wikis-explore",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.explore",
+            "type": "link-text",
+          }
+        }
       />
-    </svg>
-  </div>
-  <div
-    className="wds-dropdown__content wds-is-not-scrollable wds-global-navigation__dropdown-content"
-  >
-    <ul
-      className="wds-list wds-is-linked"
+    </li>
+    <li
+      key="1"
     >
-      <li>
-        <a
-          className=""
-          data-tracking-label="link.explore"
-          href="//fandom.wikia.com/explore"
-        >
-          global-navigation-wikis-explore
-        </a>
-      </li>
-      <li>
-        <a
-          className=""
-          data-tracking-label="link.community-central"
-          href="//community.wikia.com/wiki/Community_Central"
-        >
-          global-navigation-wikis-community-central
-        </a>
-      </li>
-      <li>
-        <a
-          className="wds-button wds-global-navigation__link-button wds-is-secondary"
-          data-tracking-label="link.start-a-wiki"
-          disabled={false}
-          href="//www.wikia.com/Special:CreateNewWiki"
-          onClick={[Function]}
-        >
-          global-navigation-create-wiki-link-start-wikia
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//community.wikia.com/wiki/Community_Central",
+            "title": Object {
+              "key": "global-navigation-wikis-community-central",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.community-central",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <LinkButton
+        link={
+          Object {
+            "href": "//www.wikia.com/Special:CreateNewWiki",
+            "title": Object {
+              "key": "global-navigation-create-wiki-link-start-wikia",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.start-a-wiki",
+            "type": "link-button",
+          }
+        }
+      />
+    </li>
+  </List>
+</Dropdown>
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
 import LinkText from './LinkText';
@@ -19,13 +19,13 @@ const defaultProps = {
 function renderComponent(props) {
     const computedProps = merge({}, defaultProps, props);
 
-    return renderer.create(<LinkText {...computedProps} />);
+    return shallow(<LinkText {...computedProps} />);
 }
 
 test('LinkText renders correctly with default params', () => {
-    expect(renderComponent().toJSON()).toMatchSnapshot();
+    expect(renderComponent()).toMatchSnapshot();
 });
 
 test('LinkText renders correctly with isStandaloneLink flag', () => {
-    expect(renderComponent({ isStandaloneLink: true }).toJSON()).toMatchSnapshot();
+    expect(renderComponent({ isStandaloneLink: true })).toMatchSnapshot();
 });

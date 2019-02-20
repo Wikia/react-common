@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
 import LinkButton from './LinkButton';
@@ -19,9 +19,9 @@ const defaultProps = {
 function renderComponent(props) {
     const computedProps = merge({}, defaultProps, props);
 
-    return renderer.create(<LinkButton {...computedProps} />);
+    return shallow(<LinkButton {...computedProps} />);
 }
 
 test('LinkButton renders correctly', () => {
-    expect(renderComponent().toJSON()).toMatchSnapshot();
+    expect(renderComponent()).toMatchSnapshot();
 });
