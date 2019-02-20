@@ -61,7 +61,7 @@ class Dropdown extends React.Component {
         }
     }
 
-    onMouseEnter() {
+    onMouseEnter(event) {
         const { canFlip, isLevel2, onMouseEnter } = this.props;
         const contentElement = this.contentElementRef.current;
 
@@ -75,7 +75,7 @@ class Dropdown extends React.Component {
         }
 
         if (onMouseEnter) {
-            onMouseEnter();
+            onMouseEnter(event);
         }
     }
 

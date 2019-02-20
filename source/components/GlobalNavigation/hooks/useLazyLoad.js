@@ -13,8 +13,8 @@ const getOnScrollListener = handler => (event) => {
 };
 
 const onMouseWheel = (event) => {
-    const { detail, wheelDelta, target } = event;
-    const { clientHeight, scrollHeight, scrollTop } = target;
+    const { detail, wheelDelta, currentTarget } = event;
+    const { clientHeight, scrollHeight, scrollTop } = currentTarget;
     const delta = -wheelDelta || detail;
 
     if ((delta < 0 && scrollTop === 0) || (delta > 0 && scrollHeight - clientHeight - scrollTop === 0)) {

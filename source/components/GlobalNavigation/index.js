@@ -30,6 +30,7 @@ class GlobalNavigation extends React.Component {
         this.onSearchActivation = this.onSearchActivation.bind(this);
         this.onSearchClose = this.onSearchClose.bind(this);
         this.onSearchSuggestionChosen = this.onSearchSuggestionChosen.bind(this);
+        this.onSearchSuggestionsImpression = this.onSearchSuggestionsImpression.bind(this);
         this.onRedirectToSearchResults = this.onRedirectToSearchResults.bind(this);
         this.onTrackingLabelClick = this.onTrackingLabelClick.bind(this);
     }
@@ -64,12 +65,18 @@ class GlobalNavigation extends React.Component {
         onSearchCloseClicked();
     }
 
-    onSearchSuggestionChosen() {
+    onSearchSuggestionChosen(clickedSuggestion, displayedSuggestions, suggestionId) {
         const { onSearchSuggestionChosen } = this.props;
 
         this.closeAndDeactivate();
 
-        onSearchSuggestionChosen();
+        onSearchSuggestionChosen(clickedSuggestion, displayedSuggestions, suggestionId);
+    }
+
+    onSearchSuggestionsImpression(suggestions, suggestionId) {
+        const { onSearchSuggestionsImpression } = this.props;
+
+        onSearchSuggestionsImpression(suggestions, suggestionId);
     }
 
     onTrackingLabelClick(event) {
@@ -150,6 +157,7 @@ class GlobalNavigation extends React.Component {
                                 onSearchActivation={this.onSearchActivation}
                                 onSearchClose={this.onSearchClose}
                                 onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                                onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
                                 onRedirectToSearchResults={this.onRedirectToSearchResults}
                                 track={track}
                             />
@@ -173,6 +181,7 @@ class GlobalNavigation extends React.Component {
                                     onSearchActivation={this.onSearchActivation}
                                     onSearchClose={this.onSearchClose}
                                     onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                                    onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
                                     onRedirectToSearchResults={this.onRedirectToSearchResults}
                                     track={track}
                                     inSearchModal
@@ -210,6 +219,7 @@ GlobalNavigation.propTypes = {
     model: PropTypes.object.isRequired,
     onSearchCloseClicked: PropTypes.func,
     onSearchSuggestionChosen: PropTypes.func,
+    onSearchSuggestionsImpression: PropTypes.func,
     onSearchToggleClicked: PropTypes.func,
     track: PropTypes.func,
 };
@@ -218,6 +228,7 @@ GlobalNavigation.defaultProps = {
     goToSearchResults: () => {},
     onSearchCloseClicked: () => {},
     onSearchSuggestionChosen: () => {},
+    onSearchSuggestionsImpression: () => {},
     onSearchToggleClicked: () => {},
     track: () => {},
 };
