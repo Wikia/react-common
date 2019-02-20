@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkLogOut renders correctly with additional className 1`] = `
+<div
+  className="so-classy"
+  id="global-navigation-user-sign-out"
+>
+  <form
+    action="https://www.wikia.com/logout"
+    method="POST"
+  >
+    <input
+      name="returnto"
+      type="hidden"
+      value="http://localhost/"
+    />
+    <button
+      className="wds-sign-out__button"
+      data-tracking-label="account.sign-out"
+      type="submit"
+    >
+      global-navigation-user-sign-out
+    </button>
+  </form>
+</div>
+`;
+
+exports[`LinkLogOut renders correctly with default params 1`] = `
+<div
+  className=""
+  id="global-navigation-user-sign-out"
+>
+  <form
+    action="https://www.wikia.com/logout"
+    method="POST"
+  >
+    <input
+      name="returnto"
+      type="hidden"
+      value="http://localhost/"
+    />
+    <button
+      className="wds-sign-out__button"
+      data-tracking-label="account.sign-out"
+      type="submit"
+    >
+      global-navigation-user-sign-out
+    </button>
+  </form>
+</div>
+`;

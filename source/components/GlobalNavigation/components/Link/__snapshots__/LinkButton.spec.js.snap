@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButton renders correctly 1`] = `
+<a
+  className="wds-button wds-global-navigation__link-button wds-is-secondary"
+  data-tracking-label="link.start-a-wiki"
+  disabled={false}
+  href="//www.wikia.com/Special:CreateNewWiki"
+  onClick={[Function]}
+>
+  global-navigation-create-wiki-link-start-wikia
+</a>
+`;

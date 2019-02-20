@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkGroup renders correctly 1`] = `
+<div
+  className="wds-dropdown wds-has-shadow wds-global-navigation__link-group"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="wds-dropdown__toggle wds-global-navigation__link"
+    onClick={[Function]}
+    role="button"
+  >
+    <span>
+      global-navigation-wikis-header
+    </span>
+    <svg
+      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+    >
+      <use
+        xlinkHref="#wds-icons-dropdown-tiny"
+      />
+    </svg>
+  </div>
+  <div
+    className="wds-dropdown__content wds-is-not-scrollable wds-global-navigation__dropdown-content"
+  >
+    <ul
+      className="wds-list wds-is-linked"
+    >
+      <li>
+        <a
+          className=""
+          data-tracking-label="link.explore"
+          href="//fandom.wikia.com/explore"
+        >
+          global-navigation-wikis-explore
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          data-tracking-label="link.community-central"
+          href="//community.wikia.com/wiki/Community_Central"
+        >
+          global-navigation-wikis-community-central
+        </a>
+      </li>
+      <li>
+        <a
+          className="wds-button wds-global-navigation__link-button wds-is-secondary"
+          data-tracking-label="link.start-a-wiki"
+          disabled={false}
+          href="//www.wikia.com/Special:CreateNewWiki"
+          onClick={[Function]}
+        >
+          global-navigation-create-wiki-link-start-wikia
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
