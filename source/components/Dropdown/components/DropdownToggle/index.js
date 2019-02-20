@@ -10,11 +10,11 @@ import Icon from '../../../Icon';
  */
 class DropdownToggle extends React.Component {
     getToggleContentComponent() {
-        const { toggleContent, isLevel2 } = this.props;
+        const { toggleContent, iconName, isLevel2 } = this.props;
         const iconClassName = isLevel2
             ? 'wds-dropdown-chevron'
             : 'wds-dropdown__toggle-chevron';
-        const icon = <Icon name="menu-control-tiny" className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+        const icon = <Icon name={iconName} className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
         let toggleContentComponent;
 
         if (typeof toggleContent === 'function') {
@@ -74,6 +74,15 @@ DropdownToggle.propTypes = {
      * HTML classes
      */
     className: PropTypes.string,
+
+    /**
+     *  The icon to use for the dropdown chevron
+     */
+    iconName: PropTypes.oneOf([
+        'dropdown-tiny',
+        'menu-control-tiny',
+    ]).isRequired,
+
     /**
      * Is it a nested dropdown
      */

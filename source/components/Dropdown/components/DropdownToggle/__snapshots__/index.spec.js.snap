@@ -146,6 +146,25 @@ exports[`DropdownToggle renders correctly with default values for level 2 1`] = 
 </div>
 `;
 
+exports[`DropdownToggle renders correctly with dropdown-tiny icon 1`] = `
+<div
+  className="wds-dropdown__toggle"
+  onClick={[Function]}
+  role="button"
+>
+  <span>
+    
+  </span>
+  <svg
+    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
+  >
+    <use
+      xlinkHref="#wds-icons-dropdown-tiny"
+    />
+  </svg>
+</div>
+`;
+
 exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
 <a
   className="wds-dropdown__toggle"
