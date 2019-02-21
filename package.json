@@ -19,7 +19,7 @@
     "lint:css": "stylelint \"source/components/*.scss\" \"source/components/*.css\"",
     "lint:fix": "stylelint \"source/components/*.scss\" \"source/components/*.css\" --fix",
     "lint:js": "eslint --cache .",
-    "extract-assets-from-ds": "node ./scripts/extract-assets-from-ds.js",
+    "extract-assets-from-ds": "node ./scripts/extract-assets-from-ds.js && yarn generate-icons-demo",
     "generate-icons-demo": "node ./scripts/generate-icons-demo.js",
     "bump:version": "node ./scripts/bump-version.js",
     "create:tag": "node ./scripts/create-tag.js",
