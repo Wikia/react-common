@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserLoggedIn renders correctly 1`] = `
+<Dropdown
+  canFlip={false}
+  className="wds-global-navigation__user-menu wds-global-navigation__user-logged-in"
+  contentClassName="wds-global-navigation__dropdown-content"
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={true}
+  hasDarkShadow={false}
+  hasShadow={true}
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle={[Function]}
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <List
+    bigItems={false}
+    boldItems={false}
+    className=""
+    hasEllipsis={false}
+    isLinked={true}
+    linesBetween={false}
+  >
+    <li
+      key="0"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//starwars.wikia.com/wiki/User:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-view-profile",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.profile",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="1"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//starwars.wikia.com/wiki/User_talk:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-my-talk",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.talk",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//starwars.wikia.com/wiki/Special:Preferences",
+            "title": Object {
+              "key": "global-navigation-user-my-preferences",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.preferences",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="3"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//community.wikia.com/wiki/Help:Contents",
+            "title": Object {
+              "key": "global-navigation-user-help",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.help",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="4"
+    >
+      <ComponentWrapper
+        link={
+          Object {
+            "href": "https://www.wikia.com/logout",
+            "param-name": "returnto",
+            "title": Object {
+              "key": "global-navigation-user-sign-out",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.sign-out",
+            "type": "link-logout",
+          }
+        }
+      />
+    </li>
+  </List>
+</Dropdown>
+`;
+
+exports[`UserLoggedIn renders toggle correctly 1`] = `
+<Fragment>
+  <Avatar
+    alt="Ryba777"
+    src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+  />
+  <div />
+</Fragment>
+`;

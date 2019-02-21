@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileAnon renders correctly 1`] = `
+<Button
+  className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon"
+  disabled={false}
+  fullwidth={false}
+  href="https://www.wikia.com/signin + redirectto"
+  onClick={[Function]}
+  secondary={false}
+  square={false}
+  text={true}
+>
+  <Avatar
+    alt="User avatar"
+  />
+</Button>
+`;

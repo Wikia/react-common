@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileLoggedIn renders correctly with isOpen passed as true 1`] = `
+<React.Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Avatar
+      alt="Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+    <span
+      className="wds-global-navigation__avatar-notifications-counter"
+    >
+      99+
+    </span>
+  </Button>
+  <UserModal
+    isOpen={true}
+    track={[Function]}
+    user={
+      Object {
+        "avatar_url": "https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg",
+        "items": Array [
+          Object {
+            "href": "//starwars.wikia.com/wiki/User:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-view-profile",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.profile",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/User_talk:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-my-talk",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.talk",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/Special:Preferences",
+            "title": Object {
+              "key": "global-navigation-user-my-preferences",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.preferences",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//community.wikia.com/wiki/Help:Contents",
+            "title": Object {
+              "key": "global-navigation-user-help",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.help",
+            "type": "link-text",
+          },
+          Object {
+            "href": "https://www.wikia.com/logout",
+            "param-name": "returnto",
+            "title": Object {
+              "key": "global-navigation-user-sign-out",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.sign-out",
+            "type": "link-logout",
+          },
+        ],
+        "tracking-label": "account",
+        "username": "Ryba777",
+      }
+    }
+  />
+</React.Fragment>
+`;
+
+exports[`MobileLoggedIn renders correctly with over 99 notifications in counter 1`] = `
+<React.Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Avatar
+      alt="Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+    <span
+      className="wds-global-navigation__avatar-notifications-counter"
+    >
+      99+
+    </span>
+  </Button>
+  <UserModal
+    isOpen={false}
+    track={[Function]}
+    user={
+      Object {
+        "avatar_url": "https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg",
+        "items": Array [
+          Object {
+            "href": "//starwars.wikia.com/wiki/User:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-view-profile",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.profile",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/User_talk:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-my-talk",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.talk",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/Special:Preferences",
+            "title": Object {
+              "key": "global-navigation-user-my-preferences",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.preferences",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//community.wikia.com/wiki/Help:Contents",
+            "title": Object {
+              "key": "global-navigation-user-help",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.help",
+            "type": "link-text",
+          },
+          Object {
+            "href": "https://www.wikia.com/logout",
+            "param-name": "returnto",
+            "title": Object {
+              "key": "global-navigation-user-sign-out",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.sign-out",
+            "type": "link-logout",
+          },
+        ],
+        "tracking-label": "account",
+        "username": "Ryba777",
+      }
+    }
+  />
+</React.Fragment>
+`;
+
+exports[`MobileLoggedIn renders correctly with unread counter 1`] = `
+<React.Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Avatar
+      alt="Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+    <span
+      className="wds-global-navigation__avatar-notifications-counter"
+    >
+      1
+    </span>
+  </Button>
+  <UserModal
+    isOpen={false}
+    track={[Function]}
+    user={
+      Object {
+        "avatar_url": "https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg",
+        "items": Array [
+          Object {
+            "href": "//starwars.wikia.com/wiki/User:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-view-profile",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.profile",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/User_talk:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-my-talk",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.talk",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/Special:Preferences",
+            "title": Object {
+              "key": "global-navigation-user-my-preferences",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.preferences",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//community.wikia.com/wiki/Help:Contents",
+            "title": Object {
+              "key": "global-navigation-user-help",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.help",
+            "type": "link-text",
+          },
+          Object {
+            "href": "https://www.wikia.com/logout",
+            "param-name": "returnto",
+            "title": Object {
+              "key": "global-navigation-user-sign-out",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.sign-out",
+            "type": "link-logout",
+          },
+        ],
+        "tracking-label": "account",
+        "username": "Ryba777",
+      }
+    }
+  />
+</React.Fragment>
+`;
+
+exports[`MobileLoggedIn renders correctly without unread counter 1`] = `
+<React.Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-user"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Avatar
+      alt="Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+  </Button>
+  <UserModal
+    isOpen={false}
+    track={[Function]}
+    user={
+      Object {
+        "avatar_url": "https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg",
+        "items": Array [
+          Object {
+            "href": "//starwars.wikia.com/wiki/User:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-view-profile",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.profile",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/User_talk:Ryba777",
+            "title": Object {
+              "key": "global-navigation-user-my-talk",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.talk",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//starwars.wikia.com/wiki/Special:Preferences",
+            "title": Object {
+              "key": "global-navigation-user-my-preferences",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.preferences",
+            "type": "link-text",
+          },
+          Object {
+            "href": "//community.wikia.com/wiki/Help:Contents",
+            "title": Object {
+              "key": "global-navigation-user-help",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.help",
+            "type": "link-text",
+          },
+          Object {
+            "href": "https://www.wikia.com/logout",
+            "param-name": "returnto",
+            "title": Object {
+              "key": "global-navigation-user-sign-out",
+              "type": "translatable-text",
+            },
+            "tracking-label": "account.sign-out",
+            "type": "link-logout",
+          },
+        ],
+        "tracking-label": "account",
+        "username": "Ryba777",
+      }
+    }
+  />
+</React.Fragment>
+`;

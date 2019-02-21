@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User renders correctly for anon 1`] = `
+<ComponentWrapper
+  data={
+    Object {
+      "mockedAnon": "mocked-anon-value",
+    }
+  }
+/>
+`;
+
+exports[`User renders correctly for user 1`] = `
+<UserLoggedIn
+  data={
+    Object {
+      "mockedUser": "mocked-user-value",
+    }
+  }
+/>
+`;
+
+exports[`User returns null when no data is provided 1`] = `""`;
