@@ -2,8 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-// eslint-disable-next-line
-import Icon from '../../../Icon';
+import IconDropdownTiny from '../../../../icons/IconDropdownTiny';
+import IconMenuControlTiny from '../../../../icons/IconMenuControlTiny';
+
+const getToggleIcon = (iconName, isLevel2) => {
+    const iconClassName = isLevel2
+        ? 'wds-dropdown-chevron'
+        : 'wds-dropdown__toggle-chevron';
+
+    return iconName === 'dropdown-tiny'
+        ? <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />
+        : <IconMenuControlTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+};
 
 /**
  * Basic DropdownToggle component
@@ -11,10 +21,7 @@ import Icon from '../../../Icon';
 class DropdownToggle extends React.Component {
     getToggleContentComponent() {
         const { toggleContent, iconName, isLevel2 } = this.props;
-        const iconClassName = isLevel2
-            ? 'wds-dropdown-chevron'
-            : 'wds-dropdown__toggle-chevron';
-        const icon = <Icon name={iconName} className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+        const icon = getToggleIcon(iconName, isLevel2);
         let toggleContentComponent;
 
         if (typeof toggleContent === 'function') {

@@ -9,13 +9,9 @@ exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+  />
 </div>
 `;
 
@@ -28,13 +24,9 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
   <span>
     My toggle content
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+  />
 </div>
 `;
 
@@ -58,13 +50,9 @@ exports[`DropdownToggle renders correctly with a function passed as toggle 1`] =
 >
   <div>
     My toggle content
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+    />
   </div>
 </div>
 `;
@@ -79,13 +67,9 @@ exports[`DropdownToggle renders correctly with additional attrs 1`] = `
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+  />
 </div>
 `;
 
@@ -98,13 +82,9 @@ exports[`DropdownToggle renders correctly with additional classNames 1`] = `
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+  />
 </div>
 `;
 
@@ -117,13 +97,9 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+  />
 </div>
 `;
 
@@ -136,13 +112,9 @@ exports[`DropdownToggle renders correctly with default values for level 2 1`] = 
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+  />
 </div>
 `;
 
@@ -155,13 +127,9 @@ exports[`DropdownToggle renders correctly with dropdown-tiny icon 1`] = `
   <span>
     
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-dropdown-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+  />
 </div>
 `;
 
@@ -175,12 +143,8 @@ exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
   <span>
     My toggle content
   </span>
-  <svg
-    className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-  >
-    <use
-      xlinkHref="#wds-icons-menu-control-tiny"
-    />
-  </svg>
+  <div
+    className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+  />
 </a>
 `;
