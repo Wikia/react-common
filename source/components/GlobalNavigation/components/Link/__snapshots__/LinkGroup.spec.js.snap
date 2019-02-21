@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkGroup renders correctly 1`] = `
+<Dropdown
+  canFlip={false}
+  className="wds-global-navigation__link-group"
+  contentClassName="wds-global-navigation__dropdown-content"
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={true}
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="global-navigation-wikis-header"
+  toggleAttrs={Object {}}
+  toggleClassName="wds-global-navigation__link"
+>
+  <List
+    bigItems={false}
+    boldItems={false}
+    className=""
+    hasEllipsis={false}
+    isLinked={true}
+    linesBetween={false}
+  >
+    <li
+      key="0"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//fandom.wikia.com/explore",
+            "title": Object {
+              "key": "global-navigation-wikis-explore",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.explore",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="1"
+    >
+      <LinkText
+        isStandaloneLink={false}
+        link={
+          Object {
+            "href": "//community.wikia.com/wiki/Community_Central",
+            "title": Object {
+              "key": "global-navigation-wikis-community-central",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.community-central",
+            "type": "link-text",
+          }
+        }
+      />
+    </li>
+    <li
+      key="2"
+    >
+      <LinkButton
+        link={
+          Object {
+            "href": "//www.wikia.com/Special:CreateNewWiki",
+            "title": Object {
+              "key": "global-navigation-create-wiki-link-start-wikia",
+              "type": "translatable-text",
+            },
+            "tracking-label": "link.start-a-wiki",
+            "type": "link-button",
+          }
+        }
+      />
+    </li>
+  </List>
+</Dropdown>
+`;
