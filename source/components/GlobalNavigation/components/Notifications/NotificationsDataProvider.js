@@ -66,7 +66,7 @@ class NotificationsDataProvider extends React.Component {
     }
 
     loadPage(pageLink) {
-        const { isLoading } = this.state;
+        const { isLoading, notifications } = this.state;
 
         if (isLoading) {
             return;
@@ -77,11 +77,10 @@ class NotificationsDataProvider extends React.Component {
         this.api
             .loadPage(pageLink)
             .then((response) => {
-                const mappedNotifications = this.mapNotifications(response.notifications);
+                const mappedNotifications = notifications.concat(this.mapNotifications(response.notifications));
 
                 this.setState({
                     notifications: mappedNotifications,
-                    unreadCount: this.getUnreadCount(mappedNotifications),
                     nextPage: this.getNextPageLink(response),
                     isLoading: false,
                 });
@@ -133,15 +132,20 @@ class NotificationsDataProvider extends React.Component {
     }
 
     mapNotifications(notifications) {
-        return (notifications || []).map(notification => Notification.build(notification));
+        return (notifications || []).map(notification => Notification.buildFromJson(notification));
     }
 
     updateUnreadStatus(uri) {
         const { notifications } = this.state;
 
         return notifications
-            .filter(notification => !uri || notification.uri === uri)
-            .map(notification => Notification.build({ ...notification, isUnread: false }));
+            .map(notification => {
+                if (!uri || notification.uri === uri) {
+                    return Notification.build({ ...notification, isUnread: false });
+                }
+
+                return notification;
+            });
     }
 
     render() {

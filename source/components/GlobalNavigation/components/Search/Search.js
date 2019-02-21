@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import debounce from 'lodash/debounce';
 import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import uuidv4 from 'uuid/v4';
 
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
@@ -34,6 +35,7 @@ class Search extends React.Component {
 
     state = {
         suggestions: [],
+        suggestionId: 0,
         requestsInProgress: {},
         cachedResults: {},
         searchRequestInProgress: false,
@@ -69,7 +71,7 @@ class Search extends React.Component {
     }
 
     onKeyDown(event) {
-        const { selectedSuggestionIndex, suggestions, query } = this.state;
+        const { selectedSuggestionIndex, suggestions, suggestionId, query } = this.state;
         const { onSearchSuggestionChosen, onRedirectToSearchResults } = this.props;
 
         event.stopPropagation();
@@ -97,7 +99,7 @@ class Search extends React.Component {
             // ENTER key
             case 13:
                 if (selectedSuggestionIndex !== -1) {
-                    onSearchSuggestionChosen(suggestions[selectedSuggestionIndex]);
+                    onSearchSuggestionChosen(suggestions[selectedSuggestionIndex], suggestions, suggestionId);
                     this.input.current.blur();
                     this.onSearchClose();
                 } else {
@@ -113,9 +115,9 @@ class Search extends React.Component {
 
     onSearchSuggestionClick(index) {
         const { track, onSearchSuggestionChosen } = this.props;
-        const { suggestions } = this.state;
+        const { suggestions, suggestionId } = this.state;
 
-        onSearchSuggestionChosen(suggestions[index]);
+        onSearchSuggestionChosen(suggestions[index], suggestions, suggestionId);
 
         this.onSearchClose();
 
@@ -223,12 +225,26 @@ class Search extends React.Component {
         }
 
         if (this.hasCachedResult(query)) {
-            this.setState({
-                suggestions: cachedResults[query],
-            });
+            this.setSuggestions(cachedResults[query]);
         } else {
             this.requestSuggestionsFromAPI();
         }
+    }
+
+    setSuggestions(suggestions) {
+        const { onSearchSuggestionsImpression } = this.props;
+        const suggestionId = uuidv4();
+
+        if (!this.isMounted) {
+            return;
+        }
+
+        this.setState({
+            suggestions,
+            suggestionId,
+        }, () => {
+            onSearchSuggestionsImpression(suggestions, suggestionId)
+        });
     }
 
     requestSuggestionsFromAPI() {
@@ -271,8 +287,7 @@ class Search extends React.Component {
                     return;
                 }
 
-                this.setState({ suggestions: response.suggestions });
-
+                this.setSuggestions(response.suggestions);
                 this.cacheResult(query, response.suggestions);
             })
             .catch((reason) => {
@@ -434,6 +449,7 @@ Search.propTypes = {
     onSearchActivation: PropTypes.func.isRequired,
     onSearchClose: PropTypes.func.isRequired,
     onSearchSuggestionChosen: PropTypes.func.isRequired,
+    onSearchSuggestionsImpression: PropTypes.func.isRequired,
     t: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };

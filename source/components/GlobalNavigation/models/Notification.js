@@ -6,15 +6,17 @@ import { convertToTimestamp } from '../utils/isoTime';
 import { notificationTypes } from './notificationTypes';
 
 const defaultProps = {
-    title: null,
-    snippet: null,
-    timestamp: null,
-    communityName: null,
-    type: null,
+    communityId: '',
+    communityName: '',
     isUnread: false,
-    totalUniqueActors: 1,
-    latestActors: null,
-    uri: null,
+    latestActors: [],
+    latestEventUri: '',
+    snippet: '',
+    timestamp: 0,
+    title: '',
+    type: '',
+    totalUniqueActors: 0,
+    uri: '',
 };
 
 function mapData(notificationData) {
@@ -69,7 +71,11 @@ class Notification {
     }
 
     static build(notificationData) {
-        return new this(merge({}, defaultProps, mapData(notificationData)));
+        return new this(merge({}, defaultProps, notificationData));
+    }
+
+    static buildFromJson(notificationData) {
+        return this.build(mapData(notificationData));
     }
 }
 

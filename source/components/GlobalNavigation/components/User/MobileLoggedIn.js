@@ -20,7 +20,7 @@ const MobileLoggedIn = ({ user, openModal, isOpen, track }) => {
             >
                 <Avatar src={user.avatar_url} alt={user.username} />
                 {
-                    unreadCount && (
+                    Boolean(unreadCount) && (
                         <span className="wds-global-navigation__avatar-notifications-counter">
                             {unreadCount > 99 ? '99+' : unreadCount}
                         </span>

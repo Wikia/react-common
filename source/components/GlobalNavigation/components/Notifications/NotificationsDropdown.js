@@ -11,7 +11,7 @@ import ListContainer from './ListContainer';
 const NotificationToggle = ({ chevron, unreadCount }) => (
     <React.Fragment>
         {
-            unreadCount && (
+            Boolean(unreadCount) && (
                 <span className="wds-global-navigation__notifications-counter">
                     {unreadCount > 99 ? '99+' : unreadCount}
                 </span>
