@@ -6,6 +6,13 @@ Defaults:
 </Dropdown>
 ```
 
+Dropdown using dropdown-tiny chevron:
+```js
+<Dropdown toggle="Toggle dropdown" iconName="dropdown-tiny">
+    <p style={{padding: '12px'}}>I am a text inside dropdown!</p>
+</Dropdown>
+```
+
 Nested dropdown:
 
 ```js

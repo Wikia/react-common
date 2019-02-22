@@ -110,6 +110,7 @@ class Dropdown extends React.Component {
             toggleAttrs,
             isStickedToParent,
             toggleClassName,
+            iconName,
         } = this.props;
 
         const {
@@ -139,6 +140,7 @@ class Dropdown extends React.Component {
                     isTouchDevice={isTouchDevice}
                     toggleContent={toggle}
                     onClick={this.onToggleClicked}
+                    iconName={iconName}
                 />
                 <DropdownContent
                     dropdownLeftAligned={dropdownLeftAligned}
@@ -204,6 +206,14 @@ Dropdown.propTypes = {
     hasShadow: PropTypes.bool,
 
     /**
+     *  The icon to use for the dropdown chevron
+     */
+    iconName: PropTypes.oneOf([
+        'dropdown-tiny',
+        'menu-control-tiny',
+    ]),
+
+    /**
      * is active
      */
     isActive: PropTypes.bool,
@@ -261,6 +271,7 @@ Dropdown.defaultProps = {
     toggleAttrs: {},
     isStickedToParent: false,
     onClose: null,
+    iconName: 'menu-control-tiny',
 };
 
 export default Dropdown;

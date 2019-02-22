@@ -15,13 +15,9 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
@@ -44,13 +40,9 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
@@ -73,13 +65,9 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
@@ -102,13 +90,9 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable wds-dropdown-level-2__content"
@@ -131,13 +115,9 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable"
@@ -164,13 +144,9 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable"
@@ -197,13 +173,9 @@ exports[`Dropdown renders correctly with default values 1`] = `
     <span>
       Toggle
     </span>
-    <svg
-      className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
-    >
-      <use
-        xlinkHref="#wds-icons-menu-control-tiny"
-      />
-    </svg>
+    <div
+      className="wds-icon wds-icon-tiny wds-dropdown__toggle-chevron"
+    />
   </div>
   <div
     className="wds-dropdown__content wds-is-not-scrollable"
