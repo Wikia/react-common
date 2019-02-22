@@ -4,6 +4,7 @@ import debounce from 'lodash/debounce';
 import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
+import merge from 'lodash/merge';
 
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
@@ -232,18 +233,18 @@ class Search extends React.Component {
     }
 
     setSuggestions(suggestions) {
-        const { onSearchSuggestionsImpression } = this.props;
-        const suggestionId = uuidv4();
-
         if (!this.isMounted) {
             return;
         }
+
+        const { onSearchSuggestionsImpression } = this.props;
+        const suggestionId = uuidv4();
 
         this.setState({
             suggestions,
             suggestionId,
         }, () => {
-            onSearchSuggestionsImpression(suggestions, suggestionId)
+            onSearchSuggestionsImpression(suggestions, suggestionId);
         });
     }
 
@@ -259,14 +260,15 @@ class Search extends React.Component {
          * value into the window.
          */
         if (requestsInProgress[query] || !this.isMounted) {
-            return;
+            return Promise.reject();
         }
 
         this.setState({ requestsInProgress: { ...requestsInProgress, [query]: true } });
 
-        fetch(`${model.suggestions.url}&query=${query}`)
+        return fetch(`${model.suggestions.url}&query=${query}`)
             .then((response) => {
                 if (response.ok) {
+                    /* istanbul ignore next */
                     if (!this.isMounted) {
                         return null;
                     }
@@ -302,7 +304,7 @@ class Search extends React.Component {
         return text.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
     }
 
-    normalizeToUnderscore(title = '') {
+    normalizeToUnderscore(title) {
         return title
             .replace(/\s/g, '_')
             .replace(/_+/g, '_');
@@ -311,7 +313,7 @@ class Search extends React.Component {
     cacheResult(query, suggestions) {
         const { cachedResults } = this.state;
 
-        this.setState({ cachedResults: { ...cachedResults, [query]: suggestions || [] } });
+        this.setState({ cachedResults: merge({}, cachedResults, { [query]: suggestions || [] }) });
     }
 
     hasCachedResult(query) {
