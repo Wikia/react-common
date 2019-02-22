@@ -9,7 +9,7 @@ import withRedirectUrl from '../../hocs/withRedirectUrl';
 const MobileAnon = ({ data, getUrlWithRedirect }) => (
     <Button
         className="wds-global-navigation__modal-control wds-global-navigation__modal-control-anon"
-        href={getUrlWithRedirect(data.signin.href)}
+        href={getUrlWithRedirect(data.signin.href, data.signin['param-name'])}
         text
     >
         <Avatar />

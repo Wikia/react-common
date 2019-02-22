@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserAnon renders correctly 1`] = `
+<Dropdown
+  canFlip={false}
+  className="wds-global-navigation__user-menu wds-global-navigation__user-anon"
+  contentClassName="wds-global-navigation__dropdown-content"
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={true}
+  hasDarkShadow={false}
+  hasShadow={true}
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle={[Function]}
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <List
+    bigItems={false}
+    boldItems={false}
+    className=""
+    hasEllipsis={false}
+    isLinked={false}
+    linesBetween={true}
+  >
+    <li>
+      <Button
+        className=""
+        data-tracking-label="account.sign-in"
+        disabled={false}
+        fullwidth={true}
+        href="https://www.wikia.com/signin + redirectto"
+        onClick={[Function]}
+        rel="nofollow"
+        secondary={false}
+        square={false}
+        text={false}
+      >
+        global-navigation-user-sign-in
+      </Button>
+    </li>
+    <li>
+      <div
+        className="wds-global-navigation__user-menu-dropdown-caption"
+      >
+        Don't have an account?
+      </div>
+      <Button
+        className=""
+        data-tracking-label="account.register"
+        disabled={false}
+        fullwidth={true}
+        href="https://www.wikia.com/register + register-param"
+        onClick={[Function]}
+        rel="nofollow"
+        secondary={true}
+        square={false}
+        text={false}
+      >
+        global-navigation-user-register
+      </Button>
+    </li>
+  </List>
+</Dropdown>
+`;
+
+exports[`UserAnon renders toggle correctly 1`] = `
+<Fragment>
+  <Avatar
+    alt="User avatar"
+  />
+  <div />
+</Fragment>
+`;
