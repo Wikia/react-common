@@ -67,4 +67,12 @@ typings/
 .DS_Store
 
 # build
-# dist/
+/dist/
+
+# TODO remove this list
+/assets
+/components
+/hocs
+/icons
+/models
+/systems
