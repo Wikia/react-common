@@ -1,0 +1,25 @@
+@import "~design-system/dist/scss/wds-variables/index";
+
+.switch-item {
+	align-items: center;
+	background-color: transparent;
+	border: 0;
+	border-radius: 18px;
+	color: #0e191a;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 12px;
+	font-weight: $wds-font-weight-bold;
+	height: 24px;
+	letter-spacing: .5px;
+	padding: 0 15px;
+	text-transform: uppercase;
+
+	&:focus {
+		outline: none;
+	}
+
+	&__active {
+		background-color: #fff;
+	}
+}

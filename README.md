@@ -1,4 +1,3 @@
-
 # @Wikia/react-common
 
 [![Travis](https://img.shields.io/travis/Wikia/react-common/master.svg?style=flat-square)](https://travis-ci.org/Wikia/react-common)
@@ -6,16 +5,6 @@
 
 Wikia's reusable React parts.
 
-The following directories and files are auto-generated from the files in [source](./source) directory:
+## Live site / documentation
+[https://wikia.github.io/react-common/](https://wikia.github.io/react-common/)
 
-* [components](./components)
-* [hocs](./hocs)
-* [models](./models)
-* [systems](./systems)
-* [assets](./assets)
-* [icons](./icons)
-* [docs](./docs)
-* [README.md](./README.md)
-* [package.json](./package.json)
-
-Look in [source](./source) for details.

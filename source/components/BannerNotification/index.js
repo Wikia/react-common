@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import IconCloseTiny from '../../icons/IconCloseTiny';
 import IconAlertSmall from '../../icons/IconAlertSmall';
 import IconCheckmarkSmall from '../../icons/IconCheckmarkSmall';
+import IconErrorSmall from '../../icons/IconErrorSmall';
 import IconFlagSmall from '../../icons/IconFlagSmall';
 
 import './styles.scss';
@@ -11,7 +12,7 @@ import './styles.scss';
 function getIcon(type) {
     switch (type) {
         case ('alert'):
-            return <IconAlertSmall className="wds-banner-notification__icon-mark" />;
+            return <IconErrorSmall className="wds-banner-notification__icon-mark" />;
         case ('warning'):
             return <IconAlertSmall className="wds-banner-notification__icon-mark" />;
         case ('success'):

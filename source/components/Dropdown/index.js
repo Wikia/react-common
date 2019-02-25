@@ -117,6 +117,7 @@ class Dropdown extends React.Component {
             isNotHoverable,
             toggleClassName,
             className,
+            iconName,
         } = this.props;
 
         const {
@@ -147,6 +148,7 @@ class Dropdown extends React.Component {
                     isTouchDevice={isTouchDevice}
                     toggleContent={toggle}
                     onClick={this.onToggleClicked}
+                    iconName={iconName}
                 />
                 <DropdownContent
                     className={contentClassName}
@@ -223,6 +225,14 @@ Dropdown.propTypes = {
     hasShadow: PropTypes.bool,
 
     /**
+     *  The icon to use for the dropdown chevron
+     */
+    iconName: PropTypes.oneOf([
+        'dropdown-tiny',
+        'menu-control-tiny',
+    ]),
+
+    /**
      * is active
      */
     isActive: PropTypes.bool,
@@ -289,6 +299,7 @@ Dropdown.defaultProps = {
     dropdownRightAligned: false,
     hasDarkShadow: false,
     hasShadow: false,
+    iconName: 'menu-control-tiny',
     isLevel2: false,
     isActive: false,
     isNotHoverable: false,

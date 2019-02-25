@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch renders 1`] = `
+<SwitchWrapper>
+  <div
+    className="switch-wrapper"
+  >
+    <SwitchItem
+      active={true}
+    >
+      <button
+        className="switch-item switch-item__active"
+        type="button"
+      >
+        Foo
+      </button>
+    </SwitchItem>
+    <SwitchItem
+      active={false}
+    >
+      <button
+        className="switch-item"
+        type="button"
+      >
+        Bar
+      </button>
+    </SwitchItem>
+  </div>
+</SwitchWrapper>
+`;
+
+exports[`Switch renders custom class names 1`] = `
+<SwitchWrapper
+  className="foo"
+>
+  <div
+    className="switch-wrapper foo"
+  >
+    <SwitchItem
+      active={false}
+      className="foo"
+    >
+      <button
+        className="switch-item foo"
+        type="button"
+      >
+        Item 1
+      </button>
+    </SwitchItem>
+    <SwitchItem
+      active={true}
+      className="bar"
+    >
+      <button
+        className="switch-item bar switch-item__active"
+        type="button"
+      >
+        Bar
+      </button>
+    </SwitchItem>
+  </div>
+</SwitchWrapper>
+`;
