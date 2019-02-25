@@ -19,7 +19,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -48,7 +48,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -77,7 +77,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -106,7 +106,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -135,7 +135,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -168,7 +168,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
@@ -201,7 +201,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
       className="wds-icon wds-icon wds-icon-tiny wds-dropdown__toggle-chevron wds-icon-tiny"
     >
       <use
-        xlinkHref="#wds-icons-menu-control-tiny"
+        xlinkHref="#wds-icons-dropdown-tiny"
       />
     </svg>
   </div>
