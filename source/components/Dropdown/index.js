@@ -118,7 +118,6 @@ class Dropdown extends React.Component {
             toggleClassName,
             iconName,
             className,
-            iconName,
         } = this.props;
 
         const {
