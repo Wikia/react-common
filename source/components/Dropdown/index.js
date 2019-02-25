@@ -116,6 +116,7 @@ class Dropdown extends React.Component {
             isStickedToParent,
             isNotHoverable,
             toggleClassName,
+            iconName,
             className,
             iconName,
         } = this.props;
