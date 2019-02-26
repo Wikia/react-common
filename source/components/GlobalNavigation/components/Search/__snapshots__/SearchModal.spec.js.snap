@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchModal renders correctly when isOpen is false 1`] = `
+<Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-search"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Icon
+      className=""
+      name="magnifying-glass"
+      small={false}
+      tiny={false}
+    />
+  </Button>
+</Fragment>
+`;
+
+exports[`SearchModal renders correctly when isOpen is true 1`] = `
+<Fragment>
+  <Button
+    className="wds-global-navigation__modal-control wds-global-navigation__modal-control-search"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+  >
+    <Icon
+      className=""
+      name="magnifying-glass"
+      small={false}
+      tiny={false}
+    />
+  </Button>
+  <div
+    className="wds-global-navigation__modal wds-search-modal"
+  >
+    <div
+      className="wds-search-modal__form-and-links-wrapper"
+    >
+      <div>
+        YES, I AM A CHILD
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
