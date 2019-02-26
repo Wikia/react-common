@@ -36,7 +36,7 @@ function mapData(notificationData) {
 }
 
 function createActors(actors) {
-    return actors.map(actor => merge({}, actor, { profileUrl: getProfileUrl(actor.username), src: actor.avatarUrl }));
+    return actors.map(actor => merge({}, actor, { profileUrl: getProfileUrl(actor.name), src: actor.avatarUrl }));
 }
 
 function getProfileUrl(name) {

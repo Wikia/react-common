@@ -14,6 +14,7 @@ function getIconName(type) {
     if (isAnnouncement(type)) {
         return 'flag';
     }
+
     return 'upvote-small';
 }
 

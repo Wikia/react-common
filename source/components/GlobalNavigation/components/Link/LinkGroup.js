@@ -16,9 +16,10 @@ const LinkGroup = ({ link }) => {
         <Dropdown
             toggle={t(link.title.key)}
             className="wds-global-navigation__link-group"
-            hasShadow
             toggleClassName="wds-global-navigation__link"
             contentClassName="wds-global-navigation__dropdown-content"
+            iconName="dropdown-tiny"
+            hasShadow
         >
             <List isLinked>
                 {link.items.map((item, index) => {

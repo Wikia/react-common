@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkAllButton renders correctly with default props 1`] = `
+<div
+  className="wds-notifications__mark-all-as-read-button"
+>
+  
+  <button
+    className="wds-notifications__mark-all-as-read"
+  >
+    Mark all as read
+  </button>
+</div>
+`;
+
+exports[`MarkAllButton renders correctly with non-empty header 1`] = `
+<div
+  className="wds-notifications__mark-all-as-read-button"
+>
+  <p
+    className="wds-notifications__header"
+  >
+    blah
+  </p>
+  <button
+    className="wds-notifications__mark-all-as-read"
+  >
+    Mark all as read
+  </button>
+</div>
+`;

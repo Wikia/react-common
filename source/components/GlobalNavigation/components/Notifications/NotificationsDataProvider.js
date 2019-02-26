@@ -8,6 +8,8 @@ import Notification from '../../models/Notification';
 
 /* eslint-disable react/no-unused-state */
 class NotificationsDataProvider extends React.Component {
+    isMounted = false;
+
     constructor(props) {
         super(props);
 
@@ -28,7 +30,13 @@ class NotificationsDataProvider extends React.Component {
     }
 
     componentDidMount() {
+        this.isMounted = true;
+
         this.loadUnreadNotificationCount();
+    }
+
+    componentWillUnmount() {
+        this.isMounted = false;
     }
 
     getNextPageLink(data) {
@@ -69,37 +77,37 @@ class NotificationsDataProvider extends React.Component {
         const { isLoading, notifications } = this.state;
 
         if (isLoading) {
-            return;
+            return Promise.reject();
         }
 
-        this.setState({ isLoading: true, firstPageLoaded: true });
+        this.updateState({ isLoading: true, firstPageLoaded: true });
 
-        this.api
+        return this.api
             .loadPage(pageLink)
             .then((response) => {
                 const mappedNotifications = notifications.concat(this.mapNotifications(response.notifications));
 
-                this.setState({
+                this.updateState({
                     notifications: mappedNotifications,
                     nextPage: this.getNextPageLink(response),
                     isLoading: false,
                 });
             })
             .catch((error) => {
-                this.setState({ isLoading: false });
+                this.updateState({ isLoading: false });
 
                 console.error('Couldn\'t load notifications', error);
             });
     }
 
     loadUnreadNotificationCount() {
-        this.api
+        return this.api
             .loadUnreadNotificationCount()
             .then((result) => {
-                this.setState({ unreadCount: result.unreadCount });
+                this.updateState({ unreadCount: result.unreadCount });
             })
             .catch((error) => {
-                this.setState({ unreadCount: 0 });
+                this.updateState({ unreadCount: 0 });
 
                 console.error('Setting notifications unread count to 0 because of the API fetch error', error);
             });
@@ -111,7 +119,7 @@ class NotificationsDataProvider extends React.Component {
             .then(() => {
                 const updatedNotifications = this.updateUnreadStatus(uri);
 
-                this.setState({
+                this.updateState({
                     notifications: updatedNotifications,
                     unreadCount: this.getUnreadCount(updatedNotifications),
                 });
@@ -124,7 +132,7 @@ class NotificationsDataProvider extends React.Component {
         return this.api
             .markAllAsRead(notifications)
             .then(() => {
-                this.setState({
+                this.updateState({
                     notifications: this.updateUnreadStatus(),
                     unreadCount: 0,
                 });
@@ -146,6 +154,14 @@ class NotificationsDataProvider extends React.Component {
 
                 return notification;
             });
+    }
+
+    updateState(newState) {
+        if (!this.isMounted) {
+            return;
+        }
+
+        this.setState(newState);
     }
 
     render() {

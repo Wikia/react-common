@@ -10,6 +10,7 @@ import { isAnnouncement, isDiscussionReply } from '../../models/notificationType
 import MarkAsReadIcon from './MarkAsReadIcon';
 import CardText from './CardText';
 import CardLink from './CardLink';
+import AvatarStack from '../../../AvatarStack';
 
 const Card = ({ model, track }) => {
     const { totalUniqueActors, isUnread, type, title, latestActors, timestamp, communityName, snippet } = model;
@@ -18,12 +19,13 @@ const Card = ({ model, track }) => {
     const showSnippet = !title && !isAnnouncement(type);
     const showLastActor = isAnnouncement(type);
     const dateOfCreation = new Date(timestamp * 1000).toDateString();
+    const avatars = latestActors.map(({ profileUrl, avatarUrl }) => ({ link: profileUrl, src: avatarUrl }));
 
     return (
         <li className={computedClass}>
             {
                 showAvatars && (
-                    <div>{/* placeholder for avatar stack */}</div>
+                    <AvatarStack overrideCount={totalUniqueActors} avatars={avatars} />
                 )
             }
             <CardLink model={model} track={track}>

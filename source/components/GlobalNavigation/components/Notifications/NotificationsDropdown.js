@@ -47,6 +47,7 @@ const NotificationsDropdown = ({ track }) => {
             contentClassName="wds-notifications__dropdown-content"
             onMouseEnter={onMouseEnter}
             toggle={chevron => <NotificationToggle chevron={chevron} unreadCount={unreadCount} />}
+            iconName="dropdown-tiny"
             hasShadow
             dropdownRightAligned
         >
