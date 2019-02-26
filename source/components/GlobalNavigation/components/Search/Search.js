@@ -60,9 +60,10 @@ class Search extends React.Component {
     }
 
     onBlur() {
+        const { inSearchModal } = this.props;
         const { query } = this.state;
 
-        if (!query) {
+        if (!query && !inSearchModal) {
             this.onSearchClose();
         }
     }

@@ -7,6 +7,7 @@ import Button from '../Button/index';
 
 import LogoFandomWhite from '../../assets/LogoFandomWhite';
 
+import CommunityBar from './components/CommunityBar/CommunityBar';
 import Search from './components/Search/Search';
 import LinkText from './components/Link/LinkText';
 import LinkGroup from './components/Link/LinkGroup';
@@ -22,8 +23,12 @@ import './styles.scss';
 
 /* eslint-disable react/no-array-index-key */
 class GlobalNavigation extends React.Component {
+    communityBar = null;
+
     constructor(props) {
         super(props);
+
+        this.nav = React.createRef();
 
         this.openModal = this.openModal.bind(this);
         this.closeAndDeactivate = this.closeAndDeactivate.bind(this);
@@ -33,13 +38,26 @@ class GlobalNavigation extends React.Component {
         this.onSearchSuggestionsImpression = this.onSearchSuggestionsImpression.bind(this);
         this.onRedirectToSearchResults = this.onRedirectToSearchResults.bind(this);
         this.onTrackingLabelClick = this.onTrackingLabelClick.bind(this);
+        this.onScroll = this.onScroll.bind(this);
     }
 
     state = {
         isSearchModalOpen: false,
         isUserModalOpen: false,
         isSearchExpanded: false,
+        isCommunityBarActive: false,
     };
+
+    componentDidMount() {
+        // todo consider changing it to ref when bar will be moved to RC
+        this.communityBar = document.querySelector('.wds-community-bar');
+
+        window.addEventListener('scroll', this.onScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.onScroll);
+    }
 
     onRedirectToSearchResults() {
         const { goToSearchResults } = this.props;
@@ -92,6 +110,23 @@ class GlobalNavigation extends React.Component {
         }
     }
 
+    onScroll() {
+        const { isCommunityBarActive } = this.state;
+
+        if (!this.communityBar) {
+            return;
+        }
+
+        const communityBarOffsetY = this.communityBar.getBoundingClientRect().top;
+        const globalNavOffsetY = this.nav.current.getBoundingClientRect().top;
+
+        if (communityBarOffsetY <= globalNavOffsetY && !isCommunityBarActive) {
+            this.setState({ isCommunityBarActive: true });
+        } else if (communityBarOffsetY > globalNavOffsetY && isCommunityBarActive) {
+            this.setState({ isCommunityBarActive: false });
+        }
+    }
+
     closeAndDeactivate() {
         this.setState({
             isSearchModalOpen: false,
@@ -101,6 +136,10 @@ class GlobalNavigation extends React.Component {
     }
 
     openModal(type) {
+        const { onModalOpen } = this.props;
+
+        onModalOpen(type);
+
         if (type === 'search') {
             this.setState({ isSearchModalOpen: true });
         }
@@ -125,18 +164,19 @@ class GlobalNavigation extends React.Component {
     }
 
     render() {
-        const { model, track } = this.props;
+        const { model, track, siteName } = this.props;
         const partnerSlotModel = model['partner-slot'];
-        const { isSearchModalOpen, isUserModalOpen, isSearchExpanded } = this.state;
+        const { isSearchModalOpen, isUserModalOpen, isSearchExpanded, isCommunityBarActive } = this.state;
         const containerClass = classNames('wds-global-navigation', {
             'wds-search-is-active': isSearchExpanded || isSearchModalOpen,
             'wds-is-modal-opened': isSearchModalOpen || isUserModalOpen,
             'wds-has-partner-slot': partnerSlotModel,
+            'wds-is-community-bar-in': isCommunityBarActive,
         });
 
         return (
             <NotificationsDataProvider serviceUrl={model['services-domain']}>
-                <div className={containerClass} onClick={this.onTrackingLabelClick}>
+                <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
                     <div className="wds-global-navigation__content-bar-left">
                         <a
                             href={model.logo.href}
@@ -150,6 +190,7 @@ class GlobalNavigation extends React.Component {
                         </nav>
                     </div>
                     <div className="wds-global-navigation__content-bar-right">
+                        <CommunityBar model={model.logo} siteName={siteName} />
                         <div className="wds-global-navigation__dropdown-controls">
                             <Search
                                 model={model.search}
@@ -217,15 +258,18 @@ class GlobalNavigation extends React.Component {
 GlobalNavigation.propTypes = {
     goToSearchResults: PropTypes.func,
     model: PropTypes.object.isRequired,
+    onModalOpen: PropTypes.func,
     onSearchCloseClicked: PropTypes.func,
     onSearchSuggestionChosen: PropTypes.func,
     onSearchSuggestionsImpression: PropTypes.func,
     onSearchToggleClicked: PropTypes.func,
+    siteName: PropTypes.object.isRequired,
     track: PropTypes.func,
 };
 
 GlobalNavigation.defaultProps = {
     goToSearchResults: () => {},
+    onModalOpen: () => {},
     onSearchCloseClicked: () => {},
     onSearchSuggestionChosen: () => {},
     onSearchSuggestionsImpression: () => {},
