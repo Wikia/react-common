@@ -37,12 +37,12 @@
     "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
     "design-system": "git://github.com/Wikia/design-system.git#19.2.0",
+    "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-select": "^2.1.1",
     "react-redux": "^5.0.7",
-    "immutable": "^4.0.0-rc.12"
+    "react-select": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -90,6 +90,7 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.0",
+    "rollup-plugin-postprocess": "^1.0.2",
     "rollup-plugin-react-svg": "^2.1.0",
     "rollup-plugin-sass": "^1.0.0",
     "rollup-plugin-string": "^2.0.2",
