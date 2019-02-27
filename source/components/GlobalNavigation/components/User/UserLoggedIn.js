@@ -26,9 +26,10 @@ const UserLoggedIn = ({ data }) => (
         toggle={chevron => <UserToggle chevron={chevron} data={data} />}
         className="wds-global-navigation__user-menu wds-global-navigation__user-logged-in"
         contentScrollable={false}
-        dropdownRightAligned
-        hasShadow
         contentClassName="wds-global-navigation__dropdown-content"
+        iconName="dropdown-tiny"
+        hasShadow
+        dropdownRightAligned
     >
         <List isLinked>
             {data.items.map((item, index) => {

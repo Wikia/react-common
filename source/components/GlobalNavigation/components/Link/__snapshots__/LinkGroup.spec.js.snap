@@ -10,6 +10,7 @@ exports[`LinkGroup renders correctly 1`] = `
   dropdownRightAligned={false}
   hasDarkShadow={false}
   hasShadow={true}
+  iconName="dropdown-tiny"
   isActive={false}
   isLevel2={false}
   isNotHoverable={false}

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const BOTTOM_COMPENSATION = 100;
 
@@ -22,20 +22,24 @@ const onMouseWheel = (event) => {
     }
 };
 
-const useLazyLoad = (lazyLoadHandler, listEl) => {
+const useLazyLoad = (lazyLoadHandler) => {
+    const element = useRef(null);
+    
     useEffect(() => {
         const onScroll = getOnScrollListener(lazyLoadHandler);
 
-        listEl.current.addEventListener('scroll', onScroll);
-        listEl.current.addEventListener('mousewheel', onMouseWheel);
-        listEl.current.addEventListener('DOMMouseScroll', onMouseWheel);
+        element.current.addEventListener('scroll', onScroll);
+        element.current.addEventListener('mousewheel', onMouseWheel);
+        element.current.addEventListener('DOMMouseScroll', onMouseWheel);
 
         return () => {
-            listEl.current.removeEventListener('scroll', onScroll);
-            listEl.current.removeEventListener('mousewheel', onMouseWheel);
-            listEl.current.removeEventListener('DOMMouseScroll', onMouseWheel);
+            element.current.removeEventListener('scroll', onScroll);
+            element.current.removeEventListener('mousewheel', onMouseWheel);
+            element.current.removeEventListener('DOMMouseScroll', onMouseWheel);
         };
     });
+
+    return element;
 };
 
 export default useLazyLoad;

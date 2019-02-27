@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -11,16 +11,14 @@ import Card from './Card';
 
 /* eslint-disable react/no-array-index-key */
 const List = ({ track }) => {
-    const { loadNextPage, notifications, isLoading, markAsRead, goToDestination } = useContext(NotificationsContext);
-    const listEl = useRef(null);
+    const { loadNextPage, notifications, isLoading } = useContext(NotificationsContext);
     const computedClass = classNames(
         'wds-has-lines-between',
         'wds-notifications__notification-list',
         'wds-list',
         { 'is-loading-new-results': isLoading },
     );
-
-    useLazyLoad(loadNextPage, listEl);
+    const listEl = useLazyLoad(loadNextPage);
 
     return (
         <ul className={computedClass} ref={listEl}>
@@ -30,15 +28,13 @@ const List = ({ track }) => {
                         key={index}
                         model={notification}
                         track={track}
-                        goToDestination={goToDestination}
-                        markAsRead={markAsRead}
                     />
                 ))
             }
             {
                 isLoading && (
                     <li>
-                        <Spinner block size="13" stroke="2" />
+                        <Spinner block size="28" stroke="2" />
                     </li>
                 )
             }

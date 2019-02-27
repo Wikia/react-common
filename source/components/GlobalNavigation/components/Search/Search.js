@@ -432,6 +432,7 @@ class Search extends React.Component {
                         contentClassName="wds-global-navigation__search-suggestions"
                         isActive={Boolean(suggestions.length)}
                         isNotHoverable={!suggestions.length}
+                        iconName="dropdown-tiny"
                         noChevron
                     >
                         <List isLinked hasEllipsis>

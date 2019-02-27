@@ -1,0 +1,869 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly with default props 1`] = `
+<li
+  className="wds-notification-card"
+>
+  <AvatarStack
+    avatars={
+      Array [
+        Object {
+          "link": "http://localhost:6060/wiki/User:ATOB",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BTOA",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BLAH",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+      ]
+    }
+    className=""
+    hideOverflow={false}
+    maxStackSize={5}
+    overrideCount={3}
+  />
+  <CardLink
+    model={
+      Object {
+        "communityId": "1619010",
+        "communityName": "Xkxd Wiki",
+        "isUnread": false,
+        "latestActors": Array [
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "12345",
+            "name": "ATOB",
+            "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "54321",
+            "name": "BTOA",
+            "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "23456",
+            "name": "BLAH",
+            "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+        ],
+        "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+        "snippet": "snippet",
+        "timestamp": 1550663179,
+        "title": "MOAR LIKES",
+        "totalUniqueActors": 3,
+        "type": "discussion-reply",
+        "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+      }
+    }
+    track={[Function]}
+  >
+    <MarkAsReadIcon
+      model={
+        Object {
+          "communityId": "1619010",
+          "communityName": "Xkxd Wiki",
+          "isUnread": false,
+          "latestActors": Array [
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "12345",
+              "name": "ATOB",
+              "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "54321",
+              "name": "BTOA",
+              "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "23456",
+              "name": "BLAH",
+              "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+          ],
+          "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+          "snippet": "snippet",
+          "timestamp": 1550663179,
+          "title": "MOAR LIKES",
+          "totalUniqueActors": 3,
+          "type": "discussion-reply",
+          "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+        }
+      }
+      track={[Function]}
+    />
+    <div
+      className="wds-notification-card__body"
+    >
+      <CardText
+        model={
+          Object {
+            "communityId": "1619010",
+            "communityName": "Xkxd Wiki",
+            "isUnread": false,
+            "latestActors": Array [
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "12345",
+                "name": "ATOB",
+                "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "54321",
+                "name": "BTOA",
+                "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "23456",
+                "name": "BLAH",
+                "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+            ],
+            "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+            "snippet": "snippet",
+            "timestamp": 1550663179,
+            "title": "MOAR LIKES",
+            "totalUniqueActors": 3,
+            "type": "discussion-reply",
+            "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+          }
+        }
+      />
+      <ul
+        className="wds-notification-card__context-list"
+      >
+        <li
+          className="wds-notification-card__context-item"
+        >
+          <Timeago
+            datetime="Wed Feb 20 2019"
+          />
+        </li>
+        <li>
+          <span
+            className="wds-notification-card__context-separator"
+          >
+            ·
+          </span>
+        </li>
+        <li
+          className="wds-notification-card__context-item wds-notification-card__community"
+        >
+          Xkxd Wiki
+        </li>
+      </ul>
+    </div>
+  </CardLink>
+</li>
+`;
+
+exports[`Card renders correctly with isUnread set to true 1`] = `
+<li
+  className="wds-notification-card wds-is-unread"
+>
+  <AvatarStack
+    avatars={
+      Array [
+        Object {
+          "link": "http://localhost:6060/wiki/User:ATOB",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BTOA",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BLAH",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+      ]
+    }
+    className=""
+    hideOverflow={false}
+    maxStackSize={5}
+    overrideCount={3}
+  />
+  <CardLink
+    model={
+      Object {
+        "communityId": "1619010",
+        "communityName": "Xkxd Wiki",
+        "isUnread": true,
+        "latestActors": Array [
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "12345",
+            "name": "ATOB",
+            "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "54321",
+            "name": "BTOA",
+            "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "23456",
+            "name": "BLAH",
+            "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+        ],
+        "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+        "snippet": "snippet",
+        "timestamp": 1550663179,
+        "title": "MOAR LIKES",
+        "totalUniqueActors": 3,
+        "type": "discussion-reply",
+        "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+      }
+    }
+    track={[Function]}
+  >
+    <MarkAsReadIcon
+      model={
+        Object {
+          "communityId": "1619010",
+          "communityName": "Xkxd Wiki",
+          "isUnread": true,
+          "latestActors": Array [
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "12345",
+              "name": "ATOB",
+              "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "54321",
+              "name": "BTOA",
+              "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "23456",
+              "name": "BLAH",
+              "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+          ],
+          "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+          "snippet": "snippet",
+          "timestamp": 1550663179,
+          "title": "MOAR LIKES",
+          "totalUniqueActors": 3,
+          "type": "discussion-reply",
+          "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+        }
+      }
+      track={[Function]}
+    />
+    <div
+      className="wds-notification-card__body"
+    >
+      <CardText
+        model={
+          Object {
+            "communityId": "1619010",
+            "communityName": "Xkxd Wiki",
+            "isUnread": true,
+            "latestActors": Array [
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "12345",
+                "name": "ATOB",
+                "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "54321",
+                "name": "BTOA",
+                "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "23456",
+                "name": "BLAH",
+                "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+            ],
+            "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+            "snippet": "snippet",
+            "timestamp": 1550663179,
+            "title": "MOAR LIKES",
+            "totalUniqueActors": 3,
+            "type": "discussion-reply",
+            "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+          }
+        }
+      />
+      <ul
+        className="wds-notification-card__context-list"
+      >
+        <li
+          className="wds-notification-card__context-item"
+        >
+          <Timeago
+            datetime="Wed Feb 20 2019"
+          />
+        </li>
+        <li>
+          <span
+            className="wds-notification-card__context-separator"
+          >
+            ·
+          </span>
+        </li>
+        <li
+          className="wds-notification-card__context-item wds-notification-card__community"
+        >
+          Xkxd Wiki
+        </li>
+      </ul>
+    </div>
+  </CardLink>
+</li>
+`;
+
+exports[`Card renders correctly with no title 1`] = `
+<li
+  className="wds-notification-card"
+>
+  <AvatarStack
+    avatars={
+      Array [
+        Object {
+          "link": "http://localhost:6060/wiki/User:ATOB",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BTOA",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BLAH",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+      ]
+    }
+    className=""
+    hideOverflow={false}
+    maxStackSize={5}
+    overrideCount={3}
+  />
+  <CardLink
+    model={
+      Object {
+        "communityId": "1619010",
+        "communityName": "Xkxd Wiki",
+        "isUnread": false,
+        "latestActors": Array [
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "12345",
+            "name": "ATOB",
+            "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "54321",
+            "name": "BTOA",
+            "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "23456",
+            "name": "BLAH",
+            "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+        ],
+        "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+        "snippet": "snippet",
+        "timestamp": 1550663179,
+        "title": "",
+        "totalUniqueActors": 3,
+        "type": "discussion-reply",
+        "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+      }
+    }
+    track={[Function]}
+  >
+    <MarkAsReadIcon
+      model={
+        Object {
+          "communityId": "1619010",
+          "communityName": "Xkxd Wiki",
+          "isUnread": false,
+          "latestActors": Array [
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "12345",
+              "name": "ATOB",
+              "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "54321",
+              "name": "BTOA",
+              "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "23456",
+              "name": "BLAH",
+              "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+          ],
+          "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+          "snippet": "snippet",
+          "timestamp": 1550663179,
+          "title": "",
+          "totalUniqueActors": 3,
+          "type": "discussion-reply",
+          "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+        }
+      }
+      track={[Function]}
+    />
+    <div
+      className="wds-notification-card__body"
+    >
+      <CardText
+        model={
+          Object {
+            "communityId": "1619010",
+            "communityName": "Xkxd Wiki",
+            "isUnread": false,
+            "latestActors": Array [
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "12345",
+                "name": "ATOB",
+                "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "54321",
+                "name": "BTOA",
+                "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "23456",
+                "name": "BLAH",
+                "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+            ],
+            "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+            "snippet": "snippet",
+            "timestamp": 1550663179,
+            "title": "",
+            "totalUniqueActors": 3,
+            "type": "discussion-reply",
+            "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+          }
+        }
+      />
+      <p
+        className="wds-notification-card__snippet"
+      >
+        snippet
+      </p>
+      <ul
+        className="wds-notification-card__context-list"
+      >
+        <li
+          className="wds-notification-card__context-item"
+        >
+          <Timeago
+            datetime="Wed Feb 20 2019"
+          />
+        </li>
+        <li>
+          <span
+            className="wds-notification-card__context-separator"
+          >
+            ·
+          </span>
+        </li>
+        <li
+          className="wds-notification-card__context-item wds-notification-card__community"
+        >
+          Xkxd Wiki
+        </li>
+      </ul>
+    </div>
+  </CardLink>
+</li>
+`;
+
+exports[`Card renders correctly with no title and announcement type 1`] = `
+<li
+  className="wds-notification-card"
+>
+  <CardLink
+    model={
+      Object {
+        "communityId": "1619010",
+        "communityName": "Xkxd Wiki",
+        "isUnread": false,
+        "latestActors": Array [
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "12345",
+            "name": "ATOB",
+            "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "54321",
+            "name": "BTOA",
+            "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "23456",
+            "name": "BLAH",
+            "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+        ],
+        "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+        "snippet": "snippet",
+        "timestamp": 1550663179,
+        "title": "",
+        "totalUniqueActors": 3,
+        "type": "announcement",
+        "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+      }
+    }
+    track={[Function]}
+  >
+    <MarkAsReadIcon
+      model={
+        Object {
+          "communityId": "1619010",
+          "communityName": "Xkxd Wiki",
+          "isUnread": false,
+          "latestActors": Array [
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "12345",
+              "name": "ATOB",
+              "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "54321",
+              "name": "BTOA",
+              "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "23456",
+              "name": "BLAH",
+              "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+          ],
+          "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+          "snippet": "snippet",
+          "timestamp": 1550663179,
+          "title": "",
+          "totalUniqueActors": 3,
+          "type": "announcement",
+          "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+        }
+      }
+      track={[Function]}
+    />
+    <div
+      className="wds-notification-card__body"
+    >
+      <CardText
+        model={
+          Object {
+            "communityId": "1619010",
+            "communityName": "Xkxd Wiki",
+            "isUnread": false,
+            "latestActors": Array [
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "12345",
+                "name": "ATOB",
+                "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "54321",
+                "name": "BTOA",
+                "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "23456",
+                "name": "BLAH",
+                "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+            ],
+            "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+            "snippet": "snippet",
+            "timestamp": 1550663179,
+            "title": "",
+            "totalUniqueActors": 3,
+            "type": "announcement",
+            "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+          }
+        }
+      />
+      <p
+        className="wds-notification-card__last-actor"
+      >
+        ATOB
+      </p>
+      <ul
+        className="wds-notification-card__context-list"
+      >
+        <li
+          className="wds-notification-card__context-item"
+        >
+          <Timeago
+            datetime="Wed Feb 20 2019"
+          />
+        </li>
+        <li>
+          <span
+            className="wds-notification-card__context-separator"
+          >
+            ·
+          </span>
+        </li>
+        <li
+          className="wds-notification-card__context-item wds-notification-card__community"
+        >
+          Xkxd Wiki
+        </li>
+      </ul>
+    </div>
+  </CardLink>
+</li>
+`;
+
+exports[`Card renders correctly with two actors 1`] = `
+<li
+  className="wds-notification-card"
+>
+  <AvatarStack
+    avatars={
+      Array [
+        Object {
+          "link": "http://localhost:6060/wiki/User:ATOB",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BTOA",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+        Object {
+          "link": "http://localhost:6060/wiki/User:BLAH",
+          "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+        },
+      ]
+    }
+    className=""
+    hideOverflow={false}
+    maxStackSize={5}
+    overrideCount={3}
+  />
+  <CardLink
+    model={
+      Object {
+        "communityId": "1619010",
+        "communityName": "Xkxd Wiki",
+        "isUnread": false,
+        "latestActors": Array [
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "12345",
+            "name": "ATOB",
+            "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "54321",
+            "name": "BTOA",
+            "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+          Object {
+            "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            "id": "23456",
+            "name": "BLAH",
+            "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+            "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+          },
+        ],
+        "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+        "snippet": "snippet",
+        "timestamp": 1550663179,
+        "title": "MOAR LIKES",
+        "totalUniqueActors": 3,
+        "type": "discussion-reply",
+        "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+      }
+    }
+    track={[Function]}
+  >
+    <MarkAsReadIcon
+      model={
+        Object {
+          "communityId": "1619010",
+          "communityName": "Xkxd Wiki",
+          "isUnread": false,
+          "latestActors": Array [
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "12345",
+              "name": "ATOB",
+              "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "54321",
+              "name": "BTOA",
+              "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+            Object {
+              "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              "id": "23456",
+              "name": "BLAH",
+              "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+              "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+            },
+          ],
+          "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+          "snippet": "snippet",
+          "timestamp": 1550663179,
+          "title": "MOAR LIKES",
+          "totalUniqueActors": 3,
+          "type": "discussion-reply",
+          "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+        }
+      }
+      track={[Function]}
+    />
+    <div
+      className="wds-notification-card__body"
+    >
+      <CardText
+        model={
+          Object {
+            "communityId": "1619010",
+            "communityName": "Xkxd Wiki",
+            "isUnread": false,
+            "latestActors": Array [
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "12345",
+                "name": "ATOB",
+                "profileUrl": "http://localhost:6060/wiki/User:ATOB",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "54321",
+                "name": "BTOA",
+                "profileUrl": "http://localhost:6060/wiki/User:BTOA",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+              Object {
+                "avatarUrl": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+                "id": "23456",
+                "name": "BLAH",
+                "profileUrl": "http://localhost:6060/wiki/User:BLAH",
+                "src": "https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75",
+              },
+            ],
+            "latestEventUri": "http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635",
+            "snippet": "snippet",
+            "timestamp": 1550663179,
+            "title": "MOAR LIKES",
+            "totalUniqueActors": 3,
+            "type": "discussion-reply",
+            "uri": "http://xkxd.wikia.com/d/p/3100000000000001096",
+          }
+        }
+      />
+      <ul
+        className="wds-notification-card__context-list"
+      >
+        <li
+          className="wds-notification-card__context-item"
+        >
+          <Timeago
+            datetime="Wed Feb 20 2019"
+          />
+        </li>
+        <li>
+          <span
+            className="wds-notification-card__context-separator"
+          >
+            ·
+          </span>
+        </li>
+        <li
+          className="wds-notification-card__context-item wds-notification-card__community"
+        >
+          Xkxd Wiki
+        </li>
+      </ul>
+    </div>
+  </CardLink>
+</li>
+`;

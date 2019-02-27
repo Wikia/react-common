@@ -28,9 +28,10 @@ const UserAnon = ({ data, getUrlWithRedirect }) => {
             toggle={chevron => <UserToggle chevron={chevron} />}
             className="wds-global-navigation__user-menu wds-global-navigation__user-anon"
             contentScrollable={false}
-            dropdownRightAligned
-            hasShadow
             contentClassName="wds-global-navigation__dropdown-content"
+            iconName="dropdown-tiny"
+            hasShadow
+            dropdownRightAligned
         >
             <List linesBetween>
                 <li>

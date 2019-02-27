@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardLink renders correctly with default props 1`] = `
+<a
+  className="wds-notification-card__outer-body"
+  href="http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635"
+>
+  <div>
+    IMMA CHILD
+  </div>
+</a>
+`;

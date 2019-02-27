@@ -1,3 +1,4 @@
+import fs from 'fs-extra';
 import glob from 'glob';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
@@ -36,7 +37,15 @@ const buildConfig = file =>
                         module: true,
                     }),
             sass({
-                     output: true,
+                output: function (styles, styleNodes) {
+                    const filteredNodes = styleNodes.filter(node => node.id.indexOf(`${file}/`) !== -1);
+
+                    if (!filteredNodes.length) {
+                        return;
+                    }
+
+                    fs.outputFileSync(`${config.outputDir}/${file.replace('source/', '')}.css`, filteredNodes[0].content);
+                },
                  }),
             svg({
                     svgo: {

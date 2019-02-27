@@ -1,5 +1,5 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import React, { useEffect, useContext } from 'react';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import merge from 'lodash/merge';
 
 import UserModal from './UserModal';
@@ -62,17 +62,53 @@ const defaultProps = {
     isOpen: false,
 };
 
+const mockDefaultContext = { loadFirstPage: () => null };
+
 function renderComponent(props) {
+    const renderer = new ShallowRenderer();
     const computedProps = merge({}, defaultProps, props);
 
-    return shallow(<UserModal {...computedProps} />);
+    renderer.render(<UserModal {...computedProps} />);
+
+    return renderer.getRenderOutput();
 }
+
+// TODO: remove mocks when enzyme/react-test-renderer will fully support hooks
+jest.mock('react', () => ({
+    ...jest.requireActual('react'),
+    useContext: jest.fn(() => mockDefaultContext),
+    useEffect: jest.fn(),
+}));
+
+/* eslint-disable-next-line jest/no-hooks */
+beforeEach(() => {
+    jest.resetModules();
+});
 
 test('UserModal renders correctly with default params', () => {
     expect(renderComponent()).toMatchSnapshot();
 });
 
-
 test('UserModal renders correctly with isOpen set as true', () => {
     expect(renderComponent({ isOpen: true })).toMatchSnapshot();
+});
+
+test('UserModal does not call loadFirstPage via useEffect when isOpen is false', () => {
+    const loadFirstPageMock = jest.fn();
+    useContext.mockImplementation(() => ({ loadFirstPage: loadFirstPageMock }));
+    useEffect.mockImplementation(callback => callback());
+
+    renderComponent();
+
+    expect(loadFirstPageMock).not.toBeCalled();
+});
+
+test('UserModal calls loadFirstPage via useEffect when isOpen is true', () => {
+    const loadFirstPageMock = jest.fn();
+    useContext.mockImplementation(() => ({ loadFirstPage: loadFirstPageMock }));
+    useEffect.mockImplementation(callback => callback());
+
+    renderComponent({ isOpen: true });
+
+    expect(loadFirstPageMock).toBeCalledWith();
 });

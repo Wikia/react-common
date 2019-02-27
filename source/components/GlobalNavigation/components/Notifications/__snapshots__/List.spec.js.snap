@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders correctly with default props 1`] = `
+<ul
+  className="wds-has-lines-between wds-notifications__notification-list wds-list"
+>
+  <Card
+    model={
+      Object {
+        "title": "blah",
+      }
+    }
+    track={[Function]}
+  />
+</ul>
+`;
+
+exports[`List renders correctly with isLoading set to true 1`] = `
+<ul
+  className="wds-has-lines-between wds-notifications__notification-list wds-list is-loading-new-results"
+>
+  <Card
+    model={
+      Object {
+        "title": "blah",
+      }
+    }
+    track={[Function]}
+  />
+  <li>
+    <Spinner
+      block={true}
+      className=""
+      inline={false}
+      size="28"
+      stroke="2"
+    />
+  </li>
+</ul>
+`;
