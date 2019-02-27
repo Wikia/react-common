@@ -52,6 +52,7 @@ class BannerNotificationsStoreModel extends Model(schema, 'BannerNotificationsSt
         const notifications = this.get(BANNER_NOTIFICATIONS_MODEL_KEYS.notifications, List());
 
         // when it's empty, sometimes `toJS` returns Object instead of Array :(
+        /* istanbul ignore next */
         return notifications.size ? notifications : List();
     }
 

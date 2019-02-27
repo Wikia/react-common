@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { components } from 'react-select';
 
 // eslint-disable-next-line no-restricted-imports
@@ -24,4 +25,12 @@ export const DefaultDropdownIndicator = (props) => {
             <IconDropdown className={className} />
         </components.DropdownIndicator>
     );
+};
+
+DefaultDropdownIndicator.propTypes = {
+    isFocused: PropTypes.bool,
+};
+
+DefaultDropdownIndicator.defaultProps = {
+    isFocused: false,
 };
