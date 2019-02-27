@@ -175,7 +175,7 @@ class GlobalNavigation extends React.Component {
         });
 
         return (
-            <NotificationsDataProvider serviceUrl={model['services-domain']}>
+            <NotificationsDataProvider isAuthenticated={Boolean(model.user)} serviceUrl={model['services-domain']}>
                 <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
                     <div className="wds-global-navigation__content-bar-left">
                         <a
@@ -183,7 +183,7 @@ class GlobalNavigation extends React.Component {
                             className="wds-global-navigation__logo"
                             data-tracking-label={model.logo['tracking-label']}
                         >
-                            <LogoFandomWhite height="27" />
+                            <LogoFandomWhite className="wds-global-navigation__logo-image" />
                         </a>
                         <nav className="wds-global-navigation__links">
                             {this.renderMainNavigation(model['main-navigation'])}

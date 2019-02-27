@@ -339,6 +339,7 @@ class Search extends React.Component {
                     onChange={this.onQueryChanged}
                     onFocus={this.onFocus}
                     onBlur={this.onBlur}
+                    type="search"
                 />
                 <Button
                     className="wds-global-navigation__search-clear"
@@ -354,7 +355,7 @@ class Search extends React.Component {
                     onClick={this.onSearchClose}
                     text
                 >
-                    <Icon name="close" className="wds-global-navigation__search-close-icon" tiny />
+                    <Icon name="close-tiny" className="wds-global-navigation__search-close-icon" tiny />
                 </Button>
                 <Button
                     className="wds-global-navigation__search-submit"
@@ -364,7 +365,7 @@ class Search extends React.Component {
                     data-tracking-label={model.results['tracking-label']}
                     text
                 >
-                    <Icon name="arrow" className="wds-global-navigation__search-submit-icon" small />
+                    <Icon name="arrow-small" className="wds-global-navigation__search-submit-icon" small />
                 </Button>
             </React.Fragment>
         );
@@ -419,7 +420,7 @@ class Search extends React.Component {
                         tabIndex="0"
                         onClick={this.onSearchActivation}
                     >
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
+                        <Icon name="magnifying-glass-small" className="wds-global-navigation__search-toggle-icon" small />
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
                         <span className="wds-global-navigation__search-toggle-text">
                                 Search

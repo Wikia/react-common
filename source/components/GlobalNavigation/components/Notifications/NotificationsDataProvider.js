@@ -30,9 +30,13 @@ class NotificationsDataProvider extends React.Component {
     }
 
     componentDidMount() {
+        const { isAuthenticated } = this.props;
+
         this.isMounted = true;
 
-        this.loadUnreadNotificationCount();
+        if (isAuthenticated) {
+            this.loadUnreadNotificationCount();
+        }
     }
 
     componentWillUnmount() {
@@ -177,6 +181,7 @@ class NotificationsDataProvider extends React.Component {
 
 NotificationsDataProvider.propTypes = {
     children: PropTypes.node.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired,
     serviceUrl: PropTypes.string.isRequired,
 };
 
