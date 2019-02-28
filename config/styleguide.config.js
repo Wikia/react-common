@@ -98,14 +98,10 @@ module.exports = {
         return `import ${name} from '${pkg.name}/${subPath}';`;
     },
     resolver: require('react-docgen').resolver.findAllComponentDefinitions,
-    // propsParser(filePath, source, resolver, handlers) {
-    //     /**
-    //      * `react-docgen` cannot parse this fine syntax, so let's ignore it
-    //      */
-    //     if (source.indexOf('export default from') > -1) {
-    //         return {};
-    //     }
-    //     return docgen.parse(source, resolver, handlers);
-    // },
     webpackConfig,
+    compilerConfig: {
+        transforms: {
+            dangerousTaggedTemplateString: true,
+        },
+    },
 };

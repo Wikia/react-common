@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+// eslint-disable-next-line no-restricted-imports
 import FandomContentWell from '../FandomContentWell';
 
 import './styles.scss';
