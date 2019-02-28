@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import glob from 'glob';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
+import postprocess from 'rollup-plugin-postprocess';
 import sass from 'rollup-plugin-sass';
 import commonjs from 'rollup-plugin-commonjs';
 import string from 'rollup-plugin-string/dist/rollup-plugin-string';
@@ -19,6 +20,17 @@ config.sourceDirectories.forEach(
     )
 );
 
+/**
+ * Check if import should be "external" or not:
+ * - External deps are left as-is
+ * - Non-external ones are parsed and included
+ */
+const isThisExternalDependency = (fileName) => {
+    return config.externalDependencies.indexOf(fileName) > -1
+        || fileName.startsWith('../../icons')
+        || fileName.startsWith('../../assets');
+}
+
 const buildConfig = file =>
     ({
         input: `${file}/index.js`,
@@ -28,14 +40,14 @@ const buildConfig = file =>
                 format: 'cjs',
             },
         ],
-        external: config.externalDependencies,
+        external: isThisExternalDependency,
         plugins: [
             string({
-                       include: 'node_modules/design-system/dist/svg/sprite.svg',
-                   }),
+                include: 'node_modules/design-system/dist/svg/sprite.svg',
+            }),
             resolve({
-                        module: true,
-                    }),
+                module: true,
+            }),
             sass({
                 output: function (styles, styleNodes) {
                     const filteredNodes = styleNodes.filter(node => node.id.indexOf(`${file}/`) !== -1);
@@ -46,23 +58,30 @@ const buildConfig = file =>
 
                     fs.outputFileSync(`${config.outputDir}/${file.replace('source/', '')}.css`, filteredNodes[0].content);
                 },
-                 }),
+            }),
             svg({
-                    svgo: {
-                        plugins: [
-                            {
-                                cleanupIDs: {
-                                    remove: false,
-                                    prefix: `id-${file}-`,
-                                    minify: true,
-                                },
+                svgo: {
+                    plugins: [
+                        {
+                            cleanupIDs: {
+                                remove: false,
+                                prefix: `id-${file}-`,
+                                minify: false,
                             },
-                        ],
-                    },
-                    exclude: 'node_modules/design-system/dist/svg/sprite.svg',
-                }),
+                        },
+                    ],
+                },
+                exclude: 'node_modules/design-system/dist/svg/sprite.svg',
+            }),
             babel(babelConfig),
             commonjs(),
+            postprocess([
+                /**
+                 * reference the assets directly
+                 */
+                [ '../../assets', '@wikia/react-common/assets', ],
+                [ '../../icons', '@wikia/react-common/icons', ],
+            ]),
         ],
     });
 

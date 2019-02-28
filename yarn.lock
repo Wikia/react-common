@@ -11369,6 +11369,13 @@ rollup-plugin-postcss@^2.0.0:
     rollup-pluginutils "^2.0.1"
     style-inject "^0.3.0"
 
+rollup-plugin-postprocess@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-postprocess/-/rollup-plugin-postprocess-1.0.2.tgz#673d31ccbfb121dfa8c836d2f35b8c6f508a8b5f"
+  integrity sha512-teKF5sVgjoQPRF9IV4wTED0Tx6kuoyz4rxkiSG9NweBC28fwXy+sZ0HLDw9GwCwck///08hFGi0RY4jlSdoZTA==
+  dependencies:
+    magic-string "^0.22.4"
+
 rollup-plugin-react-svg@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-react-svg/-/rollup-plugin-react-svg-2.1.0.tgz#bd9612f10d2e181277a7d9d12bdfd57eade91ab6"

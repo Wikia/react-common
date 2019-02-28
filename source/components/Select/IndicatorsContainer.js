@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { components } from 'react-select';
 
 const IndicatorsContainer = (props) => {
@@ -13,6 +14,13 @@ const IndicatorsContainer = (props) => {
             {indicatorSeparator}
         </components.IndicatorsContainer>
     );
+};
+
+IndicatorsContainer.propTypes = {
+    // eslint-disable-next-line
+    children: PropTypes.any,
+    // eslint-disable-next-line
+    selectProps: PropTypes.any,
 };
 
 export default IndicatorsContainer;
