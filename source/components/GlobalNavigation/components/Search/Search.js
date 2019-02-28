@@ -78,7 +78,7 @@ class Search extends React.Component {
 
         event.stopPropagation();
 
-        switch (event.key) {
+        switch (event.keyCode) {
             // down arrow
             case 40:
                 if (selectedSuggestionIndex < suggestions.length - 1) {
@@ -153,9 +153,9 @@ class Search extends React.Component {
             inputFocused: true,
             selectedSuggestionIndex: -1,
             query: '',
+        }, () => {
+            this.input.current.focus();
         });
-
-        this.input.current.focus();
     }
 
     onSearchClose() {
@@ -406,6 +406,7 @@ class Search extends React.Component {
 
     render() {
         const { inputFocused, suggestions } = this.state;
+        const hasSuggestions = Boolean(suggestions.length);
         const computedClass = classNames(
             'wds-global-navigation__search-container',
             { 'wds-search-is-focused': inputFocused },
@@ -431,14 +432,17 @@ class Search extends React.Component {
                         toggle={this.renderInput()}
                         toggleClassName="wds-global-navigation__search-input-wrapper"
                         contentClassName="wds-global-navigation__search-suggestions"
-                        isActive={Boolean(suggestions.length)}
-                        isNotHoverable={!suggestions.length}
+                        isActive={hasSuggestions}
                         iconName="dropdown-tiny"
                         noChevron
                     >
-                        <List isLinked hasEllipsis>
-                            {this.renderSuggestions()}
-                        </List>
+                        {
+                            hasSuggestions && (
+                                <List className="wds-global-navigation__search-suggestions-list" isLinked hasEllipsis>
+                                    {this.renderSuggestions()}
+                                </List>
+                            )
+                        }
                     </Dropdown>
                 </div>
             </form>
