@@ -59,12 +59,12 @@ class GlobalNavigation extends React.Component {
         window.removeEventListener('scroll', this.onScroll);
     }
 
-    onRedirectToSearchResults() {
+    onRedirectToSearchResults(query) {
         const { goToSearchResults } = this.props;
 
         this.closeAndDeactivate();
 
-        goToSearchResults();
+        goToSearchResults(query);
     }
 
     onSearchActivation() {

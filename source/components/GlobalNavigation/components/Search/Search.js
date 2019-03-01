@@ -191,6 +191,12 @@ class Search extends React.Component {
         });
     }
 
+    onSuggestionHover(index) {
+        this.setState({
+            selectedSuggestionIndex: index,
+        })
+    }
+
     onQueryChanged(event) {
         this.getSuggestions(event.target.value);
     }
@@ -363,7 +369,6 @@ class Search extends React.Component {
                     disabled={!query}
                     onClick={this.onSearchSubmit}
                     data-tracking-label={model.results['tracking-label']}
-                    text
                 >
                     <Icon name="arrow-small" className="wds-global-navigation__search-submit-icon" small />
                 </Button>
@@ -372,20 +377,24 @@ class Search extends React.Component {
     }
 
     renderSuggestions() {
-        const { suggestions, query } = this.state;
+        const { suggestions, query, selectedSuggestionIndex } = this.state;
         const { model } = this.props;
         const highlightRegex = new RegExp(`(${this.escapeRegex(query)})`, 'ig');
 
-        return suggestions.map((suggestion) => {
+        return suggestions.map((suggestion, index) => {
             const match = suggestion.match(highlightRegex);
             const highlightedPart = match ? match[0] : match;
             const regularPart = suggestion.replace(highlightRegex, '');
+            const wrapperClassName = classNames('wds-global-navigation__search__suggestion', {
+                'wds-is-selected': selectedSuggestionIndex === index,
+            });
 
             return (
                 <li
                     key={suggestion}
-                    className="wds-global-navigation__search__suggestion"
+                    className={wrapperClassName}
                     onClick={this.onSearchSuggestionClick}
+                    onMouseEnter={() => this.onSuggestionHover(index)}
                 >
                     <a
                         href={this.normalizeToUnderscore(suggestion)}
@@ -433,6 +442,7 @@ class Search extends React.Component {
                         toggleClassName="wds-global-navigation__search-input-wrapper"
                         contentClassName="wds-global-navigation__search-suggestions"
                         isActive={hasSuggestions}
+                        isNotHoverable={!hasSuggestions}
                         iconName="dropdown-tiny"
                         noChevron
                     >
