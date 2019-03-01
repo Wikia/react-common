@@ -212,7 +212,6 @@ class GlobalNavigation extends React.Component {
                         </div>
                         <div className="wds-global-navigation__modal-controls">
                             <SearchModal
-                                model={model}
                                 isOpen={isSearchModalOpen}
                                 openModal={this.openModal}
                             >

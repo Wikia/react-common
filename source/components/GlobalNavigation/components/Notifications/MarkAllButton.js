@@ -20,6 +20,7 @@ const MarkAllButton = ({ track, header }) => {
             {
                 header && <p className="wds-notifications__header">{header}</p>
             }
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a onClick={onClick} className="wds-notifications__mark-all-as-read">
                 Mark all as read
             </a>

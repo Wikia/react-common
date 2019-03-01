@@ -7,7 +7,7 @@ exports[`MarkAsReadIcon renders correctly for announcement 1`] = `
 >
   <Icon
     className=""
-    name="flag"
+    name="flag-small"
     small={false}
     tiny={false}
   />

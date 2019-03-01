@@ -27,7 +27,7 @@ const actorsMock = [
         avatarUrl: 'https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75',
         profileUrl: 'http://localhost:6060/wiki/User:BLAH',
         src: 'https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75',
-    }
+    },
 ];
 
 const defaultProps = {

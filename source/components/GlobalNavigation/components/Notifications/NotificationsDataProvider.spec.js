@@ -7,6 +7,7 @@ import NotificationsDataProvider from './NotificationsDataProvider';
 const defaultProps = {
     children: <div>HAI SANTA!</div>,
     serviceUrl: 'some://valid.url',
+    isAuthenticated: false,
 };
 
 function renderComponent(props, options = {}) {
@@ -30,7 +31,20 @@ describe('render', () => {
 });
 
 describe('componentDidMount', () => {
-    test('sets isMounted flag properly and calls loadUnreadNotificationCount', () => {
+    test('sets isMounted flag properly and calls loadUnreadNotificationCount when isAuthenticated is true', () => {
+        const loadUnreadMock = jest.fn();
+        const wrapper = renderComponent({ isAuthenticated: true });
+        const instance = wrapper.instance();
+
+        instance.loadUnreadNotificationCount = loadUnreadMock;
+
+        instance.componentDidMount();
+
+        expect(instance.isMounted).toBe(true);
+        expect(loadUnreadMock).toBeCalledWith();
+    });
+
+    test('sets isMounted flag properly and does not call loadUnreadNotificationCount when isAuthenticated is false', () => {
         const loadUnreadMock = jest.fn();
         const wrapper = renderComponent();
         const instance = wrapper.instance();
@@ -40,7 +54,7 @@ describe('componentDidMount', () => {
         instance.componentDidMount();
 
         expect(instance.isMounted).toBe(true);
-        expect(loadUnreadMock).toBeCalledWith();
+        expect(loadUnreadMock).not.toBeCalled();
     });
 });
 
@@ -202,7 +216,7 @@ describe('loadPage', () => {
         expect.assertions(3);
 
         const updateStateMock = jest.fn();
-        const loadPageMock = jest.fn().mockRejectedValue("blah");
+        const loadPageMock = jest.fn().mockRejectedValue('blah');
         const pageLinkMock = 'valid.url.bro';
         const wrapper = renderComponent();
         const instance = wrapper.instance();
@@ -259,7 +273,7 @@ describe('loadUnreadNotificationCount', () => {
         expect.assertions(2);
 
         const updateStateMock = jest.fn();
-        const loadUnreadNotificationCountMock = jest.fn().mockRejectedValue("blah");
+        const loadUnreadNotificationCountMock = jest.fn().mockRejectedValue('blah');
         const wrapper = renderComponent();
         const instance = wrapper.instance();
 

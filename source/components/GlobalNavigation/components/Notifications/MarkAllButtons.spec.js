@@ -49,7 +49,7 @@ test('MarkAllButton calls track and markAllAsReadMock onClick', () => {
     const output = renderComponent({ track: trackMock });
     const wrapper = shallow(<div>{output}</div>);
 
-    wrapper.find('button').props().onClick();
+    wrapper.find('a').props().onClick();
 
     expect(markAllAsReadMock).toBeCalledWith();
     expect(trackMock).toBeCalledWith(expect.any(Object));

@@ -11,9 +11,9 @@ const defaultProps = {
             type: 'translatable-text',
             key: 'global-navigation-wikis-community-central',
         },
-        href: '\/\/community.wikia.com\/wiki\/Community_Central',
+        href: '//community.wikia.com/wiki/Community_Central',
         'tracking-label': 'link.community-central',
-    }
+    },
 };
 
 function renderComponent(props) {

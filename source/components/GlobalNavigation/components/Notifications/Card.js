@@ -4,13 +4,13 @@ import classNames from 'classnames';
 import get from 'lodash/get';
 
 import Timeago from '../../../Timeago';
+import AvatarStack from '../../../AvatarStack';
 
 import { isAnnouncement, isDiscussionReply } from '../../models/notificationTypes';
 
 import MarkAsReadIcon from './MarkAsReadIcon';
 import CardText from './CardText';
 import CardLink from './CardLink';
-import AvatarStack from '../../../AvatarStack';
 
 const Card = ({ model, track }) => {
     const { totalUniqueActors, isUnread, type, title, latestActors, timestamp, communityName, snippet } = model;

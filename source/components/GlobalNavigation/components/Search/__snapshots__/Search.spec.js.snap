@@ -16,7 +16,7 @@ exports[`render Search renders correctly with default props 1`] = `
     >
       <Icon
         className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
+        name="magnifying-glass-small"
         small={true}
         tiny={false}
       />
@@ -58,6 +58,7 @@ exports[`render Search renders correctly with default props 1`] = `
             onClick={[Function]}
             onFocus={[Function]}
             placeholder="global-navigation-search-placeholder-in-wiki"
+            type="search"
             value=""
           />
           <Button
@@ -91,7 +92,7 @@ exports[`render Search renders correctly with default props 1`] = `
           >
             <Icon
               className="wds-global-navigation__search-close-icon"
-              name="close"
+              name="close-tiny"
               small={false}
               tiny={true}
             />
@@ -105,12 +106,12 @@ exports[`render Search renders correctly with default props 1`] = `
             onClick={[Function]}
             secondary={false}
             square={false}
-            text={true}
+            text={false}
             type="submit"
           >
             <Icon
               className="wds-global-navigation__search-submit-icon"
-              name="arrow"
+              name="arrow-small"
               small={true}
               tiny={false}
             />
@@ -119,16 +120,7 @@ exports[`render Search renders correctly with default props 1`] = `
       }
       toggleAttrs={Object {}}
       toggleClassName="wds-global-navigation__search-input-wrapper"
-    >
-      <List
-        bigItems={false}
-        boldItems={false}
-        className=""
-        hasEllipsis={true}
-        isLinked={true}
-        linesBetween={false}
-      />
-    </Dropdown>
+    />
   </div>
 </form>
 `;
@@ -149,7 +141,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
     >
       <Icon
         className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
+        name="magnifying-glass-small"
         small={true}
         tiny={false}
       />
@@ -191,6 +183,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
             onClick={[Function]}
             onFocus={[Function]}
             placeholder="global-navigation-search-placeholder-in-wiki"
+            type="search"
             value="Harr"
           />
           <Button
@@ -224,7 +217,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           >
             <Icon
               className="wds-global-navigation__search-close-icon"
-              name="close"
+              name="close-tiny"
               small={false}
               tiny={true}
             />
@@ -238,12 +231,12 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
             onClick={[Function]}
             secondary={false}
             square={false}
-            text={true}
+            text={false}
             type="submit"
           >
             <Icon
               className="wds-global-navigation__search-submit-icon"
-              name="arrow"
+              name="arrow-small"
               small={true}
               tiny={false}
             />
@@ -256,7 +249,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
       <List
         bigItems={false}
         boldItems={false}
-        className=""
+        className="wds-global-navigation__search-suggestions-list"
         hasEllipsis={true}
         isLinked={true}
         linesBetween={false}
@@ -265,6 +258,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           className="wds-global-navigation__search__suggestion"
           key="Harry Pottah"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <a
             className="wds-global-navigation__dropdown-link"
@@ -283,6 +277,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           className="wds-global-navigation__search__suggestion"
           key="Frodo"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <a
             className="wds-global-navigation__dropdown-link"
@@ -296,6 +291,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           className="wds-global-navigation__search__suggestion"
           key="Your mom"
           onClick={[Function]}
+          onMouseEnter={[Function]}
         >
           <a
             className="wds-global-navigation__dropdown-link"

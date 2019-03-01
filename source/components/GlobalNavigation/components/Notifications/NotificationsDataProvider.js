@@ -151,7 +151,7 @@ class NotificationsDataProvider extends React.Component {
         const { notifications } = this.state;
 
         return notifications
-            .map(notification => {
+            .map((notification) => {
                 if (!uri || notification.uri === uri) {
                     return Notification.build({ ...notification, isUnread: false });
                 }

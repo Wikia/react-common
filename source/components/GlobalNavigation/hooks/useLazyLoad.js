@@ -24,7 +24,7 @@ const onMouseWheel = (event) => {
 
 const useLazyLoad = (lazyLoadHandler) => {
     const element = useRef(null);
-    
+
     useEffect(() => {
         const onScroll = getOnScrollListener(lazyLoadHandler);
 

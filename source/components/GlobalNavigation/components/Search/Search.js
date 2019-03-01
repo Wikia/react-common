@@ -194,7 +194,7 @@ class Search extends React.Component {
     onSuggestionHover(index) {
         this.setState({
             selectedSuggestionIndex: index,
-        })
+        });
     }
 
     onQueryChanged(event) {
