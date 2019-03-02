@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import Avatar from '../../../Avatar';
 
-import NotificationsContext from '../../utils/NotificationContext';
+import NotificationsContext from '../../models/NotificationContext';
 
 import LinkLogOut from '../Link/LinkLogOut';
 import NotificationsListContainer from '../Notifications/ListContainer';
