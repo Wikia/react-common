@@ -7,18 +7,9 @@ const hasAlmostScrolledToTheBottom = element => (
 );
 
 const getOnScrollListener = handler => (event) => {
+    /* istanbul ignore else */
     if (hasAlmostScrolledToTheBottom(event.target)) {
         handler();
-    }
-};
-
-const onMouseWheel = (event) => {
-    const { detail, wheelDelta, currentTarget } = event;
-    const { clientHeight, scrollHeight, scrollTop } = currentTarget;
-    const delta = -wheelDelta || detail;
-
-    if ((delta < 0 && scrollTop === 0) || (delta > 0 && scrollHeight - clientHeight - scrollTop === 0)) {
-        event.preventDefault();
     }
 };
 
@@ -29,13 +20,9 @@ const useLazyLoad = (lazyLoadHandler) => {
         const onScroll = getOnScrollListener(lazyLoadHandler);
 
         element.current.addEventListener('scroll', onScroll);
-        element.current.addEventListener('mousewheel', onMouseWheel);
-        element.current.addEventListener('DOMMouseScroll', onMouseWheel);
 
         return () => {
             element.current.removeEventListener('scroll', onScroll);
-            element.current.removeEventListener('mousewheel', onMouseWheel);
-            element.current.removeEventListener('DOMMouseScroll', onMouseWheel);
         };
     });
 

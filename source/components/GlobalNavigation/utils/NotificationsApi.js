@@ -6,17 +6,17 @@ const defaultOptions = {
     credentials: 'include',
 };
 
-class Api {
-    constructor(serviceUrl) {
-        this.serviceUrl = serviceUrl;
+class NotificationsApi {
+    constructor(serviceBaseUrl) {
+        this.serviceBaseUrl = serviceBaseUrl;
     }
 
-    static build(serviceUrl) {
-        return new this(serviceUrl);
+    static build(serviceBaseUrl) {
+        return new this(serviceBaseUrl);
     }
 
     getServiceUrl(serviceName, url) {
-        return `${this.serviceUrl}${serviceName}${url}`;
+        return `${this.serviceBaseUrl}${serviceName}${url}`;
     }
 
     getNotificationServiceUrl(path) {
@@ -29,6 +29,10 @@ class Api {
                 console.error('Something went wrong while calling a OSN service', error);
             })
             .then((response) => {
+                if (!response) {
+                    return null;
+                }
+
                 const contentType = response.headers.get('content-type');
                 const hasNoContent = response.status === 204 || (contentType && contentType.indexOf('json') === -1);
 
@@ -40,7 +44,6 @@ class Api {
                     return response.json();
                 }
 
-                // todo error handling
                 return null;
             });
     }
@@ -62,11 +65,10 @@ class Api {
     }
 
     markAsReadUsingSendBeacon(uri) {
-        const body = JSON.stringify([uri]);
         const markAsReadUrl = this.getNotificationServiceUrl('/notifications/mark-as-read/by-uri');
 
         try {
-            const blob = new Blob([body], {
+            const blob = new Blob([JSON.stringify([uri])], {
                 type: 'application/json',
             });
 
@@ -74,18 +76,17 @@ class Api {
                 return Promise.resolve();
             }
 
-            return this.markAsReadUsingFetch(true);
+            return this.markAsReadUsingFetch(uri, true);
         } catch (exception) {
             // See http://crbug.com/490015#c99
             console.warn('Error when sending beacon', exception);
-            return this.markAsReadUsingFetch(true);
+            return this.markAsReadUsingFetch(uri, true);
         }
     }
 
     markAsReadUsingFetch(uri, willUnloadPage) {
-        const body = JSON.stringify([uri]);
         const options = {
-            body,
+            body: JSON.stringify([uri]),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -113,4 +114,4 @@ class Api {
     }
 }
 
-export default Api;
+export default NotificationsApi;

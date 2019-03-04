@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
 
-import Api from '../../utils/api';
+import NotificationsApi from '../../utils/NotificationsApi';
 import { NotificationsProvider } from '../../models/NotificationContext';
 import Notification from '../../models/Notification';
 
@@ -13,7 +13,7 @@ class NotificationsDataProvider extends React.Component {
     constructor(props) {
         super(props);
 
-        this.api = Api.build(props.serviceUrl);
+        this.api = NotificationsApi.build(props.serviceUrl);
 
         this.state = {
             unreadCount: 0,
