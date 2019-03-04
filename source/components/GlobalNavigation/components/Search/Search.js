@@ -394,7 +394,7 @@ class Search extends React.Component {
                     key={suggestion}
                     className={wrapperClassName}
                     onClick={this.onSearchSuggestionClick}
-                    onMouseEnter={() => this.onSuggestionHover(index)}
+                    onMouseEnter={this.onSuggestionHover.bind(this, index)}
                 >
                     <a
                         href={this.normalizeToUnderscore(suggestion)}

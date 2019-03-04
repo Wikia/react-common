@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Icon from '../../../Icon';
 
-import NotificationsContext from '../../utils/NotificationContext';
+import NotificationsContext from '../../models/NotificationContext';
 import { isAnnouncement, isDiscussionReply } from '../../models/notificationTypes';
 
 function getIconName(type) {

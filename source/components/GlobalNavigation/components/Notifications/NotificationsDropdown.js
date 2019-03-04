@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Dropdown from '../../../Dropdown';
 import Icon from '../../../Icon';
 
-import NotificationsContext from '../../utils/NotificationContext';
+import NotificationsContext from '../../models/NotificationContext';
 
 import ListContainer from './ListContainer';
 
