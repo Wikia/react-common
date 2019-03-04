@@ -43,6 +43,7 @@
       "BannerNotifications",
       "Button",
       "ButtonGroup",
+      "Checkbox",
       "ContentWell",
       "Dropdown",
       "ExpandableText",

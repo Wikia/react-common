@@ -1,0 +1,16 @@
+.wds-checkbox {
+	display: inline-flex;
+
+	&__input {
+		display: none;
+	}
+
+	&__label {
+		cursor: pointer;
+		display: inline-flex;
+	}
+
+	&__icon {
+		margin-right: 13px;
+	}
+}
