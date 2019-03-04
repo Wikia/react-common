@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import Spinner from '../../../Spinner';
 
-import NotificationsContext from '../../utils/NotificationContext';
+import NotificationsContext from '../../models/NotificationContext';
 import useLazyLoad from '../../hooks/useLazyLoad';
 
 import Card from './Card';

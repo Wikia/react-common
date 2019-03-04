@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapped component renders correctly 1`] = `
+<Component
+  data={Object {}}
+  getUrlWithRedirect={[Function]}
+  isOpen={false}
+  openModal={[Function]}
+  redirectUrl="https://fandom.com"
+  track={[Function]}
+/>
+`;
