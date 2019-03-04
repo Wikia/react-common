@@ -11,9 +11,9 @@ const defaultProps = {
             type: 'translatable-text',
             key: 'global-navigation-create-wiki-link-start-wikia',
         },
-        href: '\/\/www.wikia.com\/Special:CreateNewWiki',
+        href: '//www.wikia.com/Special:CreateNewWiki',
         'tracking-label': 'link.start-a-wiki',
-    }
+    },
 };
 
 function renderComponent(props) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
@@ -7,7 +7,7 @@ import LinkLogOut from './LinkLogOut';
 const defaultProps = {
     link: {
         type: 'link-logout',
-        href: 'https:\/\/www.wikia.com\/logout',
+        href: 'https://www.wikia.com/logout',
         title: {
             type: 'translatable-text',
             key: 'global-navigation-user-sign-out',

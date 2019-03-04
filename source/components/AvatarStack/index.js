@@ -6,6 +6,7 @@ import Avatar from '../Avatar';
 
 import './styles.scss';
 
+/* eslint-disable react/no-array-index-key */
 const AvatarStack = ({ avatars, overrideCount, maxStackSize, hideOverflow, className }) => {
     const count = overrideCount || avatars.length;
     const overflow = !hideOverflow && (count > maxStackSize ? count - maxStackSize : 0);
@@ -15,8 +16,8 @@ const AvatarStack = ({ avatars, overrideCount, maxStackSize, hideOverflow, class
             {
                 avatars
                     .slice(0, maxStackSize)
-                    .map(({ src, alt, link, badge = '' }) => (
-                        <Avatar src={src} alt={alt} badge={badge} href={link} />
+                    .map(({ src, alt, link, badge = '' }, index) => (
+                        <Avatar key={index} src={src} alt={alt} badge={badge} href={link} />
                     ))
             }
             {

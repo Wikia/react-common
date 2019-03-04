@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "3.4.0",
+  "version": "3.4.0-nav-3",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
@@ -45,7 +45,8 @@
     "react-dom": "^16.8.3",
     "react-i18next": "^10.0.0",
     "react-redux": "^5.0.7",
-    "react-select": "^2.1.1"
+    "react-select": "^2.1.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",

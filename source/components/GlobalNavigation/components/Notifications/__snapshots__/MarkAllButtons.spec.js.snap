@@ -5,11 +5,11 @@ exports[`MarkAllButton renders correctly with default props 1`] = `
   className="wds-notifications__mark-all-as-read-button"
 >
   
-  <button
+  <a
     className="wds-notifications__mark-all-as-read"
   >
     Mark all as read
-  </button>
+  </a>
 </div>
 `;
 
@@ -22,10 +22,10 @@ exports[`MarkAllButton renders correctly with non-empty header 1`] = `
   >
     blah
   </p>
-  <button
+  <a
     className="wds-notifications__mark-all-as-read"
   >
     Mark all as read
-  </button>
+  </a>
 </div>
 `;

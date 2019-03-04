@@ -18,7 +18,7 @@ const defaultProps = {
                 type: 'translatable-text',
                 key: 'global-navigation-wikis-explore',
             },
-            href: '\/\/fandom.wikia.com\/explore',
+            href: '//fandom.wikia.com/explore',
             'tracking-label': 'link.explore',
         }, {
             type: 'link-text',
@@ -26,7 +26,7 @@ const defaultProps = {
                 type: 'translatable-text',
                 key: 'global-navigation-wikis-community-central',
             },
-            href: '\/\/community.wikia.com\/wiki\/Community_Central',
+            href: '//community.wikia.com/wiki/Community_Central',
             'tracking-label': 'link.community-central',
         }, {
             type: 'link-button',
@@ -34,7 +34,7 @@ const defaultProps = {
                 type: 'translatable-text',
                 key: 'global-navigation-create-wiki-link-start-wikia',
             },
-            href: '\/\/www.wikia.com\/Special:CreateNewWiki',
+            href: '//www.wikia.com/Special:CreateNewWiki',
             'tracking-label': 'link.start-a-wiki',
         }],
     },

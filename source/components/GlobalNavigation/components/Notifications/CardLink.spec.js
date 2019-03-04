@@ -1,10 +1,11 @@
 import React, { useContext, useCallback } from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import { shallow } from 'enzyme';
 import merge from 'lodash/merge';
 
-import CardLink from './CardLink';
-import { shallow } from 'enzyme/build';
 import { notificationTypes } from '../../models/notificationTypes';
+
+import CardLink from './CardLink';
 
 const defaultProps = {
     track: () => null,
@@ -69,7 +70,7 @@ test('CardLink calls track and goToDestinationMock onClick when notification has
     expect(preventDefaultMock).toBeCalledWith();
     expect(trackMock).toBeCalledWith(expect.any(Object));
     expect(goToDestinationMock).toBeCalledWith(latestEventUriMock);
-    expect(markAsReadMock).not.toBeCalled()
+    expect(markAsReadMock).not.toBeCalled();
 });
 
 test('CardLink calls track, markAsRead and goToDestinationMock onClick when notification has inUnread set to true', () => {

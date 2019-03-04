@@ -78,7 +78,7 @@ class Search extends React.Component {
 
         event.stopPropagation();
 
-        switch (event.key) {
+        switch (event.keyCode) {
             // down arrow
             case 40:
                 if (selectedSuggestionIndex < suggestions.length - 1) {
@@ -153,9 +153,9 @@ class Search extends React.Component {
             inputFocused: true,
             selectedSuggestionIndex: -1,
             query: '',
+        }, () => {
+            this.input.current.focus();
         });
-
-        this.input.current.focus();
     }
 
     onSearchClose() {
@@ -188,6 +188,12 @@ class Search extends React.Component {
             onRedirectToSearchResults(query);
 
             this.onSearchClose();
+        });
+    }
+
+    onSuggestionHover(index) {
+        this.setState({
+            selectedSuggestionIndex: index,
         });
     }
 
@@ -339,6 +345,7 @@ class Search extends React.Component {
                     onChange={this.onQueryChanged}
                     onFocus={this.onFocus}
                     onBlur={this.onBlur}
+                    type="search"
                 />
                 <Button
                     className="wds-global-navigation__search-clear"
@@ -354,7 +361,7 @@ class Search extends React.Component {
                     onClick={this.onSearchClose}
                     text
                 >
-                    <Icon name="close" className="wds-global-navigation__search-close-icon" tiny />
+                    <Icon name="close-tiny" className="wds-global-navigation__search-close-icon" tiny />
                 </Button>
                 <Button
                     className="wds-global-navigation__search-submit"
@@ -362,29 +369,32 @@ class Search extends React.Component {
                     disabled={!query}
                     onClick={this.onSearchSubmit}
                     data-tracking-label={model.results['tracking-label']}
-                    text
                 >
-                    <Icon name="arrow" className="wds-global-navigation__search-submit-icon" small />
+                    <Icon name="arrow-small" className="wds-global-navigation__search-submit-icon" small />
                 </Button>
             </React.Fragment>
         );
     }
 
     renderSuggestions() {
-        const { suggestions, query } = this.state;
+        const { suggestions, query, selectedSuggestionIndex } = this.state;
         const { model } = this.props;
         const highlightRegex = new RegExp(`(${this.escapeRegex(query)})`, 'ig');
 
-        return suggestions.map((suggestion) => {
+        return suggestions.map((suggestion, index) => {
             const match = suggestion.match(highlightRegex);
             const highlightedPart = match ? match[0] : match;
             const regularPart = suggestion.replace(highlightRegex, '');
+            const wrapperClassName = classNames('wds-global-navigation__search__suggestion', {
+                'wds-is-selected': selectedSuggestionIndex === index,
+            });
 
             return (
                 <li
                     key={suggestion}
-                    className="wds-global-navigation__search__suggestion"
+                    className={wrapperClassName}
                     onClick={this.onSearchSuggestionClick}
+                    onMouseEnter={() => this.onSuggestionHover(index)}
                 >
                     <a
                         href={this.normalizeToUnderscore(suggestion)}
@@ -405,6 +415,7 @@ class Search extends React.Component {
 
     render() {
         const { inputFocused, suggestions } = this.state;
+        const hasSuggestions = Boolean(suggestions.length);
         const computedClass = classNames(
             'wds-global-navigation__search-container',
             { 'wds-search-is-focused': inputFocused },
@@ -419,7 +430,7 @@ class Search extends React.Component {
                         tabIndex="0"
                         onClick={this.onSearchActivation}
                     >
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" small />
+                        <Icon name="magnifying-glass-small" className="wds-global-navigation__search-toggle-icon" small />
                         <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
                         <span className="wds-global-navigation__search-toggle-text">
                                 Search
@@ -430,14 +441,18 @@ class Search extends React.Component {
                         toggle={this.renderInput()}
                         toggleClassName="wds-global-navigation__search-input-wrapper"
                         contentClassName="wds-global-navigation__search-suggestions"
-                        isActive={Boolean(suggestions.length)}
-                        isNotHoverable={!suggestions.length}
+                        isActive={hasSuggestions}
+                        isNotHoverable={!hasSuggestions}
                         iconName="dropdown-tiny"
                         noChevron
                     >
-                        <List isLinked hasEllipsis>
-                            {this.renderSuggestions()}
-                        </List>
+                        {
+                            hasSuggestions && (
+                                <List className="wds-global-navigation__search-suggestions-list" isLinked hasEllipsis>
+                                    {this.renderSuggestions()}
+                                </List>
+                            )
+                        }
                     </Dropdown>
                 </div>
             </form>

@@ -12,7 +12,7 @@ function getIconName(type) {
     }
 
     if (isAnnouncement(type)) {
-        return 'flag';
+        return 'flag-small';
     }
 
     return 'upvote-small';

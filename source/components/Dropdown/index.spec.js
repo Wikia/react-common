@@ -272,6 +272,23 @@ test('Dropdown does not have class `wds-is-flipped` applied when canFlip is not'
     expect(component.find('.wds-dropdown').hasClass('wds-is-flipped')).toBe(false);
 });
 
+test('Dropdown calls onMouseEnter prop on respective event', () => {
+    const onMouseEnterMock = jest.fn();
+    const component = mount(
+        <Dropdown toggle="Toggle" onMouseEnter={onMouseEnterMock}>
+            <div>Content</div>
+        </Dropdown>
+    );
+
+    component.instance().contentElementRef.current.getBoundingClientRect = () => ({
+        bottom: 800,
+    });
+
+    component.simulate('mouseEnter');
+
+    expect(onMouseEnterMock).toBeCalled();
+});
+
 
 test('Dropdown has class `wds-is-flipped` applied when canFlip is set and it is near the bottom of the viewport', () => {
     const component = mount(
