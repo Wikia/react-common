@@ -10,7 +10,7 @@ But it can be rendered with close buttton:
 
 Or with extra HTML:
 ```js
-<BannerNotification type={'alert'}onClose={() => alert('Click')}>
+<BannerNotification type={'alert'} onClose={() => alert('Click')}>
     This is a text <a href="http://example.com">with a link</a>
 </BannerNotification>
 ```

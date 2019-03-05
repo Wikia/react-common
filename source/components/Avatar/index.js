@@ -2,15 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import AvatarImage from './AvatarImage';
 import Badge from './Badge';
+import { getAvatarImage } from './utils';
 
 import './styles.scss';
-
-const getAvatarImage = (href, alt, src) => {
-    const avatarImage = <AvatarImage alt={alt} src={src} />;
-    return href ? <a href={href}>{avatarImage}</a> : avatarImage;
-};
 
 const Avatar = ({
     alt,
