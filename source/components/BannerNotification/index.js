@@ -2,38 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import IconCloseTiny from '../../icons/IconCloseTiny';
-import IconAlertSmall from '../../icons/IconAlertSmall';
-import IconCheckmarkSmall from '../../icons/IconCheckmarkSmall';
-import IconErrorSmall from '../../icons/IconErrorSmall';
-import IconFlagSmall from '../../icons/IconFlagSmall';
+
+import { getClassName, getIcon } from './utils';
 
 import './styles.scss';
-
-function getIcon(type) {
-    switch (type) {
-        case ('alert'):
-            return <IconErrorSmall className="wds-banner-notification__icon-mark" />;
-        case ('warning'):
-            return <IconAlertSmall className="wds-banner-notification__icon-mark" />;
-        case ('success'):
-            return <IconCheckmarkSmall className="wds-banner-notification__icon-mark" />;
-        default:
-            return <IconFlagSmall className="wds-banner-notification__icon-mark" />;
-    }
-}
-
-function getClassName(type) {
-    switch (type) {
-        case ('alert'):
-            return 'wds-alert';
-        case ('warning'):
-            return 'wds-warning';
-        case ('success'):
-            return 'wds-success';
-        default:
-            return 'wds-message';
-    }
-}
 
 /**
  * This is a single component used in `BannerNotifications` component.
@@ -47,6 +19,7 @@ const BannerNotification = ({
         <IconCloseTiny className="wds-banner-notification__close" onClick={onClose} />
     </div>
 );
+
 
 BannerNotification.propTypes = {
     /** Children to display */
