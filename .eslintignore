@@ -6,6 +6,7 @@ docs/**
 assets/**
 components/**
 hocs/**
+hooks/**
 icons/**
 models/**
 systems/**

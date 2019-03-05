@@ -4,6 +4,7 @@ module.exports = {
     sourceDirectories: [
         'components',
         'hocs',
+        'hooks',
         'models',
         'systems',
         'assets',

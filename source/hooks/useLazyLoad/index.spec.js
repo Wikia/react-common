@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-import useLazyLoad from './useLazyLoad';
+import useLazyLoad from './index';
 
 // TODO: remove mocks when enzyme/react-test-renderer will fully support hooks
 jest.mock('react', () => ({

@@ -75,6 +75,13 @@
     ]
   },
   {
+    "name": "Hooks",
+    "directory": "hooks",
+    "items": [
+      "useLazyLoad"
+    ]
+  },
+  {
     "name": "Models",
     "description": "Wrappers for immutable.js Records.",
     "directory": "models",

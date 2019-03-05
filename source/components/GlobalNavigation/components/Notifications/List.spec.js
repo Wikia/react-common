@@ -25,7 +25,7 @@ jest.mock('react', () => ({
     useContext: jest.fn(() => mockDefaultContext),
 }));
 
-jest.mock('../../hooks/useLazyLoad', () => () => 'mock-ref');
+jest.mock('../../../../hooks/useLazyLoad', () => () => 'mock-ref');
 
 /* eslint-disable-next-line jest/no-hooks */
 beforeEach(() => {
