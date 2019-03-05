@@ -4,6 +4,10 @@ import merge from 'lodash/merge';
 
 import LinkText from './LinkText';
 
+jest.mock('react-i18next', () => ({
+    useTranslation: () => [value => value],
+}));
+
 const defaultProps = {
     link: {
         type: 'link-text',

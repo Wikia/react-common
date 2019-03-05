@@ -4,6 +4,10 @@ import merge from 'lodash/merge';
 
 import UserAnon from './UserAnon';
 
+jest.mock('react-i18next', () => ({
+    useTranslation: () => [value => value],
+}));
+
 const defaultProps = {
     data: {
         signin: {

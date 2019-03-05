@@ -4,6 +4,10 @@ import merge from 'lodash/merge';
 
 import Search from './Search';
 
+jest.mock('react-i18next', () => ({
+    withTranslation: () => Component => props => <Component {...props} t={value => value}  />,
+}));
+
 const defaultProps = {
     isSearchExpanded: false,
     model: {
