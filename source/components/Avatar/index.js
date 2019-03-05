@@ -7,11 +7,6 @@ import Badge from './Badge';
 
 import './styles.scss';
 
-const getAvatarImage = (href, alt, src) => {
-    const avatarImage = <AvatarImage alt={alt} src={src} />;
-    return href ? <a href={href}>{avatarImage}</a> : avatarImage;
-};
-
 const Avatar = ({
     alt,
     badge,
@@ -53,6 +48,11 @@ Avatar.defaultProps = {
     href: undefined,
     src: undefined,
     title: undefined,
+};
+
+const getAvatarImage = (href, alt, src) => {
+    const avatarImage = <AvatarImage alt={alt} src={src} />;
+    return href ? <a href={href}>{avatarImage}</a> : avatarImage;
 };
 
 export default Avatar;
