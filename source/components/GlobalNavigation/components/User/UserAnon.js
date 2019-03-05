@@ -64,7 +64,7 @@ const UserAnon = ({ data, getUrlWithRedirect }) => {
 };
 
 UserAnon.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
     getUrlWithRedirect: PropTypes.func.isRequired,
 };
 

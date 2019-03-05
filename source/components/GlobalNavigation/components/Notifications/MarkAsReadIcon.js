@@ -46,7 +46,7 @@ const MarkAsReadIcon = ({ track, model }) => {
 };
 
 MarkAsReadIcon.propTypes = {
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
     track: PropTypes.func.isRequired,
 };
 

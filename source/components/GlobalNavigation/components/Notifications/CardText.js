@@ -138,7 +138,7 @@ const CardText = ({ model }) => {
 };
 
 CardText.propTypes = {
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
 };
 
 export default CardText;

@@ -256,13 +256,13 @@ class GlobalNavigation extends React.Component {
 
 GlobalNavigation.propTypes = {
     goToSearchResults: PropTypes.func,
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
     onModalOpen: PropTypes.func,
     onSearchCloseClicked: PropTypes.func,
     onSearchSuggestionChosen: PropTypes.func,
     onSearchSuggestionsImpression: PropTypes.func,
     onSearchToggleClicked: PropTypes.func,
-    siteName: PropTypes.object.isRequired,
+    siteName: PropTypes.shape().isRequired,
     track: PropTypes.func,
 };
 

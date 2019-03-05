@@ -19,7 +19,7 @@ const LinkText = ({ link, isStandaloneLink }) => {
 
 LinkText.propTypes = {
     isStandaloneLink: PropTypes.bool,
-    link: PropTypes.object.isRequired,
+    link: PropTypes.shape().isRequired,
 };
 
 LinkText.defaultProps = {

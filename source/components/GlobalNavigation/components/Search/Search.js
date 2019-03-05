@@ -463,7 +463,7 @@ class Search extends React.Component {
 Search.propTypes = {
     inSearchModal: PropTypes.bool,
     isSearchExpanded: PropTypes.bool.isRequired,
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
     onRedirectToSearchResults: PropTypes.func.isRequired,
     onSearchActivation: PropTypes.func.isRequired,
     onSearchClose: PropTypes.func.isRequired,

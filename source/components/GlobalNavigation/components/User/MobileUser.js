@@ -24,7 +24,7 @@ const MobileUser = ({ data, openModal, isOpen, track }) => {
 };
 
 MobileUser.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,

@@ -17,7 +17,7 @@ const MobileAnon = ({ data, getUrlWithRedirect }) => (
 );
 
 MobileAnon.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
     getUrlWithRedirect: PropTypes.func.isRequired,
 };
 

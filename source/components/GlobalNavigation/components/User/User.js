@@ -17,7 +17,7 @@ const User = ({ data }) => {
 };
 
 User.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
 };
 
 export default User;

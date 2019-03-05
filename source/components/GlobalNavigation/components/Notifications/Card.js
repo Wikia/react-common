@@ -67,7 +67,7 @@ const Card = ({ model, track }) => {
 };
 
 Card.propTypes = {
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
     track: PropTypes.func.isRequired,
 };
 

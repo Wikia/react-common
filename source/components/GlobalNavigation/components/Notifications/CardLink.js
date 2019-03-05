@@ -39,7 +39,7 @@ const CardLink = ({ track, model, children }) => {
 
 CardLink.propTypes = {
     children: PropTypes.node.isRequired,
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
     track: PropTypes.func.isRequired,
 };
 

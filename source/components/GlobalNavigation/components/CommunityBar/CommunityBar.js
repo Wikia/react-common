@@ -31,8 +31,8 @@ const CommunityBar = ({ model, siteName }) => {
 };
 
 CommunityBar.propTypes = {
-    model: PropTypes.object.isRequired,
-    siteName: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
+    siteName: PropTypes.shape().isRequired,
 };
 
 export default CommunityBar;

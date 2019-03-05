@@ -40,7 +40,7 @@ const UserModal = ({ isOpen, user, track }) => {
 UserModal.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     track: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired,
+    user: PropTypes.shape().isRequired,
 };
 
 export default UserModal;

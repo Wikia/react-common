@@ -36,7 +36,7 @@ MobileLoggedIn.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
-    user: PropTypes.object.isRequired,
+    user: PropTypes.shape().isRequired,
 };
 
 export default MobileLoggedIn;

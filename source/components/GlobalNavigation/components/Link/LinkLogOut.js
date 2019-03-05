@@ -30,7 +30,7 @@ const LinkLogOut = ({ link, redirectUrl, className }) => {
 
 LinkLogOut.propTypes = {
     className: PropTypes.string,
-    link: PropTypes.object.isRequired,
+    link: PropTypes.shape().isRequired,
     redirectUrl: PropTypes.string.isRequired,
 };
 

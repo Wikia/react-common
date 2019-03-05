@@ -20,7 +20,7 @@ const LinkButton = ({ link }) => {
 };
 
 LinkButton.propTypes = {
-    link: PropTypes.object.isRequired,
+    link: PropTypes.shape().isRequired,
 };
 
 export default LinkButton;

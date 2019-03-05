@@ -17,7 +17,7 @@ const UserToggle = ({ chevron, data }) => (
 
 UserToggle.propTypes = {
     chevron: PropTypes.node.isRequired,
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
 };
 
 /* eslint-disable react/no-array-index-key */
@@ -48,7 +48,7 @@ const UserLoggedIn = ({ data }) => (
 );
 
 UserLoggedIn.propTypes = {
-    data: PropTypes.object.isRequired,
+    data: PropTypes.shape().isRequired,
 };
 
 export default UserLoggedIn;

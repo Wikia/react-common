@@ -25,7 +25,7 @@ const PartnerSlot = ({ model }) => {
 };
 
 PartnerSlot.propTypes = {
-    model: PropTypes.object.isRequired,
+    model: PropTypes.shape().isRequired,
 };
 
 export default PartnerSlot;
