@@ -104,4 +104,7 @@ module.exports = {
             dangerousTaggedTemplateString: true,
         },
     },
+    require: [
+        path.join(__dirname, '../source/styleguide.css')
+    ],
 };
