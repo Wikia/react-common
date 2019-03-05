@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders correctly checked (and with label and class name) 1`] = `
+<div
+  className="wds-checkbox checked-box"
+>
+  <input
+    checked={true}
+    className="wds-checkbox__input"
+    id="wds-checkbox-2"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="wds-checkbox__label"
+    htmlFor="wds-checkbox-2"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-checkbox__icon"
+    />
+    a Checkbox
+  </label>
+</div>
+`;
+
+exports[`Checkbox renders correctly with default values 1`] = `
+<div
+  className="wds-checkbox"
+>
+  <input
+    checked={false}
+    className="wds-checkbox__input"
+    id="wds-checkbox-1"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="wds-checkbox__label"
+    htmlFor="wds-checkbox-1"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-checkbox__icon"
+    />
+  </label>
+</div>
+`;
