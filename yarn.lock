@@ -4250,7 +4250,7 @@ des.js@^1.0.0:
 
 "design-system@git://github.com/Wikia/design-system.git#IW-1022":
   version "19.2.1"
-  resolved "git://github.com/Wikia/design-system.git#08de17f28e3274b95e9880e6154fb69c3249d746"
+  resolved "git://github.com/Wikia/design-system.git#32eef62d631ea7e3bf2965d306460d721411f6db"
   dependencies:
     ember-autoresize "1.3.2"
     ember-cli-babel "7.2.0"
@@ -11294,9 +11294,9 @@ resolve-from@^4.0.0:
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
 
 resolve-package-path@^1.0.11:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-1.2.2.tgz#0c6f7cfeffdd96215c97a0082eadd6dc98a1de57"
-  integrity sha512-Rva99mD09iKulXPC7JnH3CAtdD3n5pZtTHtyhqknXcPKyu+bVkYUvUV0qxaO/+STvY8/JQsZdlmcBEgbPdFU4w==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-1.2.3.tgz#a73193b7baa715e2c828309543170e2008d6220b"
+  integrity sha512-QHIyPu8wSU3E9YVgd/VmGthvbv/RLavZsYuN//4DpfSHQV5QW6x0xG98RtB28vH1alh93xobZg6mplkBbN1mJw==
   dependencies:
     path-root "^0.1.1"
     resolve "^1.10.0"
