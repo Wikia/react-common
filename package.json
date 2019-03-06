@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "3.5.0-nav-3",
+  "version": "3.5.0-nav-4",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
