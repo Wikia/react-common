@@ -3045,9 +3045,9 @@ caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805:
   integrity sha512-cXKbYwpxBLd7qHyej16JazPoUacqoVuDhvR61U7Fr5vSxMUiodzcYa1rQYRYfZ5GexV03vGZHd722vNPLjPJGQ==
 
 caniuse-lite@^1.0.30000844:
-  version "1.0.30000940"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000940.tgz#19f2b1497fbfa5b96b615963097c3757f27989ce"
-  integrity sha512-rp/086IBUfCsNgBpko6DGQv674jRjeXPesDatDB2kxrkmDfD+S5Gesw+uT8YjpRWvLKLMRBy72SLRZ8I0EgQFw==
+  version "1.0.30000941"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000941.tgz#f0810802b2ab8d27f4b625d4769a610e24d5a42c"
+  integrity sha512-4vzGb2MfZcO20VMPj1j6nRAixhmtlhkypM4fL4zhgzEucQIYiRzSqPcWIu1OF8i0FETD93FMIPWfUJCAcFvrqA==
 
 caniuse-lite@^1.0.30000884:
   version "1.0.30000939"
@@ -4250,7 +4250,7 @@ des.js@^1.0.0:
 
 "design-system@git://github.com/Wikia/design-system.git#IW-1022":
   version "19.2.1"
-  resolved "git://github.com/Wikia/design-system.git#2e09e6ae397e56b05e7cc1d5e8673fedceb025b5"
+  resolved "git://github.com/Wikia/design-system.git#08de17f28e3274b95e9880e6154fb69c3249d746"
   dependencies:
     ember-autoresize "1.3.2"
     ember-cli-babel "7.2.0"
@@ -5406,9 +5406,9 @@ finalhandler@1.1.1:
     unpipe "~1.0.0"
 
 find-babel-config@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/find-babel-config/-/find-babel-config-1.1.0.tgz#acc01043a6749fec34429be6b64f542ebb5d6355"
-  integrity sha1-rMAQQ6Z0n+w0Qpvmtk9ULrtdY1U=
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/find-babel-config/-/find-babel-config-1.2.0.tgz#a9b7b317eb5b9860cda9d54740a8c8337a2283a2"
+  integrity sha512-jB2CHJeqy6a820ssiqwrKMeyC6nNdmrcgkKWJWmpoxpE8RKciYJXCcXRq1h2AzCo5I5BJeN2tkGEO3hLTuePRA==
   dependencies:
     json5 "^0.5.1"
     path-exists "^3.0.0"
@@ -11294,9 +11294,9 @@ resolve-from@^4.0.0:
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
 
 resolve-package-path@^1.0.11:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-1.1.1.tgz#39db6201f7db8800207d8f82cc8005ee30c9200e"
-  integrity sha512-6vg7LnxKY3NhmlH/K/CfudgPDx7ah4RPgHjhMCcP3L1LPsoxOXeClUBFpF5c2FRlQScVQ4VL8GTbB5FjHQ3ISQ==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/resolve-package-path/-/resolve-package-path-1.2.2.tgz#0c6f7cfeffdd96215c97a0082eadd6dc98a1de57"
+  integrity sha512-Rva99mD09iKulXPC7JnH3CAtdD3n5pZtTHtyhqknXcPKyu+bVkYUvUV0qxaO/+STvY8/JQsZdlmcBEgbPdFU4w==
   dependencies:
     path-root "^0.1.1"
     resolve "^1.10.0"
