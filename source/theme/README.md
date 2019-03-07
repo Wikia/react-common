@@ -55,7 +55,7 @@ const theme = {
     font_size: /* .. */,
     font_size_value: /* same as `font_size` without units */,
     font_weight: /* ... */,
-    line_heights: /* ... */,
+    line_height: /* ... */,
     margin: {
         content_well: /* ... */,
         content_well_value: /* same as `content_well` without units */,
@@ -66,6 +66,19 @@ const theme = {
 
 You can see `theme`'s values in the [source](https://github.com/Wikia/react-common/blob/master/source/theme/index.js).
 
+## Changing theme (customization)
+
+If you want to change/override or add new values to the `theme`, there's a handy function for that:
+
+```js static
+import generateTheme from '@wikia/react-common/theme/generateTheme';
+
+const customTheme = generateTheme({
+    color: {
+        link: 'blue',
+    },
+});
+```
 
 ## Separate theme values
 

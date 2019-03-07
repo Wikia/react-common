@@ -37,7 +37,7 @@ const theme = Object.freeze({
     font_size: FONT_SIZES_PX,
     font_size_value: FONT_SIZES,
     font_weight: FONT_WEIGHTS,
-    line_heights: LINE_HEIGHTS,
+    line_height: LINE_HEIGHTS,
     margin: {
         content_well: CONTENT_WELL_MARGIN_PX,
         content_well_value: CONTENT_WELL_MARGIN,
