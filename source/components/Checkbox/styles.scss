@@ -1,3 +1,5 @@
+@import "~design-system/dist/scss/wds-variables/index.scss";
+
 .wds-checkbox {
 	display: inline-flex;
 
@@ -12,5 +14,20 @@
 
 	&__icon {
 		margin-right: 13px;
+	}
+
+	&__input[disabled] + .wds-checkbox__label {
+		color: $wds-fandom-color-middle-gray;
+		position: relative;
+
+		.wds-icon {
+			fill: $wds-fandom-color-middle-gray;
+		}
+
+		.wds-lock__icon {
+			left: 0;
+			position: absolute;
+			right: 0;
+		}
 	}
 }
