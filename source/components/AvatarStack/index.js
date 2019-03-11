@@ -32,10 +32,15 @@ const AvatarStack = ({ avatars, overrideCount, maxStackSize, hideOverflow, class
 };
 
 AvatarStack.propTypes = {
+    /* An array of `Avatar` props */
     avatars: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+    /* Additional class name */
     className: PropTypes.string,
+    /* Flag to hide overflow */
     hideOverflow: PropTypes.bool,
+    /* Max stack size */
     maxStackSize: PropTypes.number,
+    /* If specified, it will be used instead of `avatars.length` */
     overrideCount: PropTypes.number,
 };
 
