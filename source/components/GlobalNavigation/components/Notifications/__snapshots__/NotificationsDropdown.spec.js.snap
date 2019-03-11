@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationsDropdown renders correctly with default props 1`] = `
+<Dropdown
+  canFlip={false}
+  className="wds-global-navigation__notifications-dropdown"
+  contentClassName="wds-notifications__dropdown-content"
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={true}
+  hasDarkShadow={false}
+  hasShadow={true}
+  iconName="dropdown-tiny"
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle={[Function]}
+  toggleAttrs={Object {}}
+  toggleClassName="wds-global-navigation__dropdown-toggle"
+>
+  <ListContainer
+    header=""
+    track={[Function]}
+  />
+</Dropdown>
+`;
+
+exports[`NotificationsDropdown renders toggle correctly for unread counter greater than 0 1`] = `
+<Fragment>
+  <span
+    className="wds-global-navigation__notifications-counter"
+  >
+    10
+  </span>
+  <Icon
+    className="icon-bell"
+    name="bell"
+    small={false}
+    tiny={false}
+  />
+  <div />
+</Fragment>
+`;
+
+exports[`NotificationsDropdown renders toggle correctly for unread counter greater than 99 1`] = `
+<Fragment>
+  <span
+    className="wds-global-navigation__notifications-counter"
+  >
+    99+
+  </span>
+  <Icon
+    className="icon-bell"
+    name="bell"
+    small={false}
+    tiny={false}
+  />
+  <div />
+</Fragment>
+`;

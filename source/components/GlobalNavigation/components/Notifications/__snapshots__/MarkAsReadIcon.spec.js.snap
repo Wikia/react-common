@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkAsReadIcon renders correctly for announcement 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="flag-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for discussion-reply 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="comment-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for other types 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="upvote-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;

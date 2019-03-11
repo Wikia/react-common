@@ -61,8 +61,8 @@ class Dropdown extends React.Component {
         }
     }
 
-    onMouseEnter() {
-        const { canFlip, isLevel2 } = this.props;
+    onMouseEnter(event) {
+        const { canFlip, isLevel2, onMouseEnter } = this.props;
         const contentElement = this.contentElementRef.current;
 
         if (canFlip && !isLevel2 && contentElement) {
@@ -72,6 +72,10 @@ class Dropdown extends React.Component {
             this.setState({
                 isFlipped,
             });
+        }
+
+        if (onMouseEnter) {
+            onMouseEnter(event);
         }
     }
 
@@ -99,6 +103,7 @@ class Dropdown extends React.Component {
         const {
             children,
             toggle,
+            contentClassName,
             dropdownLeftAligned,
             dropdownRightAligned,
             isLevel2,
@@ -109,8 +114,10 @@ class Dropdown extends React.Component {
             contentScrollable,
             toggleAttrs,
             isStickedToParent,
+            isNotHoverable,
             toggleClassName,
             iconName,
+            className,
         } = this.props;
 
         const {
@@ -119,7 +126,7 @@ class Dropdown extends React.Component {
             isTouchDevice,
         } = this.state;
 
-        const className = classNames({
+        const allClassNames = classNames({
             'wds-dropdown': !isLevel2,
             'wds-is-active': isClicked || isActive,
             'wds-has-shadow': hasShadow,
@@ -128,8 +135,9 @@ class Dropdown extends React.Component {
             'wds-dropdown-level-2': isLevel2,
             'wds-is-touch-device': isTouchDevice,
             'wds-is-sticked-to-parent': isStickedToParent,
+            'wds-is-not-hoverable': isNotHoverable,
             'wds-is-flipped': isFlipped,
-        });
+        }, className);
 
         const dropdownBody = (
             <React.Fragment>
@@ -143,6 +151,7 @@ class Dropdown extends React.Component {
                     iconName={iconName}
                 />
                 <DropdownContent
+                    className={contentClassName}
                     dropdownLeftAligned={dropdownLeftAligned}
                     dropdownRightAligned={dropdownRightAligned}
                     elementRef={this.contentElementRef}
@@ -157,9 +166,8 @@ class Dropdown extends React.Component {
         const Component = isLevel2 ? 'li' : 'div';
 
         return (
-            // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
             <Component
-                className={className}
+                className={allClassNames}
                 onClick={this.onClick}
                 onMouseLeave={this.onMouseLeave}
                 onMouseEnter={this.onMouseEnter}
@@ -175,10 +183,21 @@ Dropdown.propTypes = {
      * Whether or nor not dropdown should automatically flip when it's near the bottom of the viewport
      */
     canFlip: PropTypes.bool,
+
     /**
      * React Component to display as the Dropdown Content
      */
     children: PropTypes.node,
+
+    /**
+     * Additional class name
+     */
+    className: PropTypes.string,
+
+    /**
+     * HTML classes to add to content element
+     */
+    contentClassName: PropTypes.string,
 
     /**
      * Should dropdown content be scrollable
@@ -224,6 +243,11 @@ Dropdown.propTypes = {
     isLevel2: PropTypes.bool,
 
     /**
+     * If dropdown should not be hoverable
+     */
+    isNotHoverable: PropTypes.bool,
+
+    /**
      * if the top of nested dropdown content should be positioned at the same height as toggle
      */
     isStickedToParent: PropTypes.bool,
@@ -234,14 +258,23 @@ Dropdown.propTypes = {
     noChevron: PropTypes.bool,
 
     /**
-     * HTML classes to add to toggle
+     * Function to call when dropdown will be closed
      */
     onClose: PropTypes.func,
 
     /**
+     * Function to call when dropdown will be hovered
+     */
+    onMouseEnter: PropTypes.func,
+
+    /**
      * React Component to display as a dropdown toggle
      */
-    toggle: PropTypes.node.isRequired,
+    toggle: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.string,
+        PropTypes.node,
+    ]).isRequired,
 
     /**
      * HTML attributes to add to toggle
@@ -259,19 +292,23 @@ Dropdown.propTypes = {
 Dropdown.defaultProps = {
     canFlip: false,
     children: null,
-    hasShadow: false,
-    noChevron: false,
-    hasDarkShadow: false,
+    className: '',
+    contentClassName: '',
+    contentScrollable: false,
     dropdownLeftAligned: false,
     dropdownRightAligned: false,
-    contentScrollable: false,
+    hasDarkShadow: false,
+    hasShadow: false,
+    iconName: 'menu-control-tiny',
     isLevel2: false,
     isActive: false,
+    isNotHoverable: false,
+    isStickedToParent: false,
+    noChevron: false,
+    onClose: null,
+    onMouseEnter: null,
     toggleClassName: '',
     toggleAttrs: {},
-    isStickedToParent: false,
-    onClose: null,
-    iconName: 'menu-control-tiny',
 };
 
 export default Dropdown;

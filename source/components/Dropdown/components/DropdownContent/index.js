@@ -9,22 +9,23 @@ import refPropType from '../../../../utils/refPropType';
  */
 const DropdownContent = ({
     children,
+    className,
     dropdownLeftAligned,
     dropdownRightAligned,
     scrollable,
     isLevel2,
     elementRef,
 }) => {
-    const className = classNames({
+    const allClassNames = classNames({
         'wds-dropdown__content': true,
         'wds-is-left-aligned': dropdownLeftAligned,
         'wds-is-right-aligned': dropdownRightAligned,
         'wds-is-not-scrollable': !scrollable,
         'wds-dropdown-level-2__content': isLevel2,
-    });
+    }, className);
 
     return (
-        <div className={className} ref={elementRef}>
+        <div className={allClassNames} ref={elementRef}>
             {children}
         </div>
     );
@@ -35,6 +36,11 @@ DropdownContent.propTypes = {
      * React Component to display as content
      */
     children: PropTypes.node,
+
+    /**
+     * Additional class name
+     */
+    className: PropTypes.string,
     /**
      * Should content be left-aligned with the dropdown toggle
      */
@@ -59,6 +65,7 @@ DropdownContent.propTypes = {
 
 DropdownContent.defaultProps = {
     children: null,
+    className: '',
     dropdownLeftAligned: false,
     dropdownRightAligned: false,
     scrollable: true,

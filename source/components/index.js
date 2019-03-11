@@ -17,6 +17,7 @@ export { default as FloatingButtonGroup } from './FloatingButtonGroup';
 // Design System UI
 export { default as BannerNotification } from './BannerNotification';
 export { default as BannerNotifications } from './BannerNotifications';
+export { default as GlobalNavigation } from './GlobalNavigation';
 
 // Lite Icons
 export { default as VideoPlayIcon } from './VideoPlayIcon';

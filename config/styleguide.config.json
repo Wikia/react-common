@@ -53,6 +53,7 @@
       "Fieldset",
       "FloatingButton",
       "FloatingButtonGroup",
+      "GlobalNavigation",
       "Icon",
       "IconSprite",
       "Input",
@@ -73,6 +74,13 @@
     "directory": "hocs",
     "items": [
       "withTimeoutFallback"
+    ]
+  },
+  {
+    "name": "Hooks",
+    "directory": "hooks",
+    "items": [
+      "useLazyLoad"
     ]
   },
   {

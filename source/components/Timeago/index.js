@@ -21,7 +21,7 @@ export default class Timeago extends React.Component {
             PropTypes.instanceOf(Date),
             PropTypes.string,
         ]).isRequired,
-    }
+    };
 
     componentDidMount() {
         const { datetime } = this.props;

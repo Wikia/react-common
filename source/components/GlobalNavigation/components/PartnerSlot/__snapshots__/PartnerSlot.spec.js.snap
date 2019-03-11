@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PartnerSlot renders correctly with default props 1`] = `
+<div
+  className="wds-global-navigation__partner-slot"
+>
+  <div
+    className="wds-global-navigation__partner-slot-horizontal-bar"
+  />
+  <a
+    className="wds-global-navigation__partner-slot-link"
+    data-tracking-label="track-partner"
+    href="//xkxd.fandom.com"
+  >
+    <img
+      alt="Xkxd Wiki"
+      className="wds-global-navigation__partner-slot-image"
+      height="20"
+      src="some://valid.url"
+      width="55"
+    />
+  </a>
+</div>
+`;

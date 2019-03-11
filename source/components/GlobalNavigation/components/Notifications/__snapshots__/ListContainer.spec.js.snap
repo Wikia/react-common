@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListContainer renders correctly when isLoading is true 1`] = `
+<React.Fragment>
+  <List
+    track={[Function]}
+  />
+</React.Fragment>
+`;
+
+exports[`ListContainer renders correctly with default props 1`] = `
+<React.Fragment>
+  <p
+    className="wds-notifications__zero-state"
+  >
+    No notifications yet.
+  </p>
+</React.Fragment>
+`;
+
+exports[`ListContainer renders correctly with notifications 1`] = `
+<React.Fragment>
+  <List
+    track={[Function]}
+  />
+</React.Fragment>
+`;
+
+exports[`ListContainer renders correctly with unread counter and custom header 1`] = `
+<React.Fragment>
+  <MarkAllButton
+    header="blah"
+    track={[Function]}
+  />
+  <p
+    className="wds-notifications__zero-state"
+  >
+    No notifications yet.
+  </p>
+</React.Fragment>
+`;

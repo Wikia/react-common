@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserModal renders correctly with default params 1`] = `
+<div
+  className="wds-global-navigation__modal wds-user-modal wds-is-hidden"
+>
+  <div
+    className="wds-user-modal__info"
+  >
+    <Avatar
+      alt="User avatar"
+      data-tracking-label="open-user-profile"
+      href="//starwars.wikia.com/wiki/User:Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+    <p
+      className="wds-user-modal__username"
+    >
+      Ryba777
+    </p>
+  </div>
+  <div
+    className="wds-user-modal__notifications-wrapper"
+  >
+    <ListContainer
+      header="Notifications"
+      track={[Function]}
+    />
+  </div>
+  <ComponentWrapper
+    className="wds-user-modal__sign-out-container"
+    link={
+      Object {
+        "href": "https://www.wikia.com/logout",
+        "param-name": "returnto",
+        "title": Object {
+          "key": "global-navigation-user-sign-out",
+          "type": "translatable-text",
+        },
+        "tracking-label": "account.sign-out",
+        "type": "link-logout",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`UserModal renders correctly with isOpen set as true 1`] = `
+<div
+  className="wds-global-navigation__modal wds-user-modal"
+>
+  <div
+    className="wds-user-modal__info"
+  >
+    <Avatar
+      alt="User avatar"
+      data-tracking-label="open-user-profile"
+      href="//starwars.wikia.com/wiki/User:Ryba777"
+      src="https://fandomdesignsystem.com/images/FANDOM-Avatar.jpg"
+    />
+    <p
+      className="wds-user-modal__username"
+    >
+      Ryba777
+    </p>
+  </div>
+  <div
+    className="wds-user-modal__notifications-wrapper"
+  >
+    <ListContainer
+      header="Notifications"
+      track={[Function]}
+    />
+  </div>
+  <ComponentWrapper
+    className="wds-user-modal__sign-out-container"
+    link={
+      Object {
+        "href": "https://www.wikia.com/logout",
+        "param-name": "returnto",
+        "title": Object {
+          "key": "global-navigation-user-sign-out",
+          "type": "translatable-text",
+        },
+        "tracking-label": "account.sign-out",
+        "type": "link-logout",
+      }
+    }
+  />
+</div>
+`;

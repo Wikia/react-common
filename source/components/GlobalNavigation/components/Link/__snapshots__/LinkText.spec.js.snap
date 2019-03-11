@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkText renders correctly with default params 1`] = `
+<a
+  className=""
+  data-tracking-label="link.community-central"
+  href="//community.wikia.com/wiki/Community_Central"
+>
+  global-navigation-wikis-community-central
+</a>
+`;
+
+exports[`LinkText renders correctly with isStandaloneLink flag 1`] = `
+<a
+  className="wds-global-navigation__link"
+  data-tracking-label="link.community-central"
+  href="//community.wikia.com/wiki/Community_Central"
+>
+  global-navigation-wikis-community-central
+</a>
+`;
