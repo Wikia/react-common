@@ -44,7 +44,7 @@ exports[`Checkbox renders correctly when disabled 1`] = `
       className="wds-icon wds-icon-small wds-checkbox__icon"
     />
     <div
-      className="wds-icon wds-icon-small wds-lock__icon"
+      className="wds-icon wds-icon-small wds-checkbox__lock-icon"
     />
     disabled checkbox
   </label>
