@@ -39,7 +39,7 @@ class Checkbox extends React.Component {
                 <label className="wds-checkbox__label" htmlFor={this.id}>
                     {checked && <IconCheckboxSmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
                     {!checked && <IconCheckboxEmptySmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
-                    {disabled && <IconLockSmall className="wds-icon wds-icon-small wds-lock__icon" />}
+                    {disabled && <IconLockSmall className="wds-icon wds-icon-small wds-checkbox__lock-icon" />}
                     {children}
                 </label>
             </div>
