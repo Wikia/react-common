@@ -21,6 +21,25 @@ test('Checkbox renders correctly checked (and with label and class name)', () =>
     expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Checkbox renders correctly when disabled', () => {
+    const component = renderer.create(
+        <Checkbox disabled onChange={() => {}}>disabled checkbox</Checkbox>,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
+
+test('Checkbox is not clickable when disabled', () => {
+    const mockonChange = sinon.spy();
+    const wrapper = shallow(
+        <Checkbox disabled onChange={mockonChange}>disabled</Checkbox>
+    );
+
+    wrapper.find('input').simulate('click');
+
+    expect(mockonChange.notCalled).toBe(true);
+});
+
 test('Checkbox triggers onChange event', () => {
     const mockonChange = sinon.spy();
     const wrapper = shallow(
