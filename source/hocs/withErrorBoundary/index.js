@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component {
     componentDidCatch(error, info) {
         console.log(`Error Boundary (${this.props.boundaryName}):`, error, info);
         this.setState({ info });
-        logErrorEvent(`error-boundary-${this.props.boundaryName}`, {
+        logErrorEvent(this.props.appName, `error-boundary-${this.props.boundaryName}`, {
             errorStack: error.stack,
             componentStack: info.componentStack,
         });
@@ -44,6 +44,7 @@ class ErrorBoundary extends React.Component {
 }
 
 ErrorBoundary.propTypes = {
+    appName: PropTypes.string.isRequired,
     boundaryName: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
     fallbackComponent: PropTypes.oneOfType([
@@ -52,9 +53,9 @@ ErrorBoundary.propTypes = {
     ]).isRequired,
 };
 
-export default function withErrorBoundary(WrappedComponent, boundaryName, FallBackComponent = InComponentErrorBoundary) {
+export default function withErrorBoundary(WrappedComponent, boundaryName, appName, FallBackComponent = InComponentErrorBoundary) {
     const Component = props => (
-        <ErrorBoundary fallbackComponent={FallBackComponent} boundaryName={boundaryName}>
+        <ErrorBoundary fallbackComponent={FallBackComponent} boundaryName={boundaryName} appName={appName}>
             <WrappedComponent {...props} />
         </ErrorBoundary>
     );
