@@ -14,7 +14,7 @@ const SimpleComponent = () => (
 );
 
 test('Default fallback error boundary', () => {
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FandomCreator');
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FandomCreator', 'v1');
 
     const component = mount(
         <ComponentWithErrorBoundary />,
@@ -25,7 +25,7 @@ test('Default fallback error boundary', () => {
 });
 
 test('Renders nothing when there is undefined fallback', () => {
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FEPO', null);
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FEPO', 'v2', null);
 
     const component = mount(
         <ComponentWithErrorBoundary />,
