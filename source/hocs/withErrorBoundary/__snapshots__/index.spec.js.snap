@@ -6,6 +6,7 @@ exports[`Default fallback error boundary 1`] = `
     appName="FandomCreator"
     boundaryName="TestBoundaryName"
     fallbackComponent={[Function]}
+    version="v1"
   >
     <DefaultFallbackComponent
       error={[Error: test]}
@@ -107,6 +108,7 @@ exports[`Renders nothing when there is undefined fallback 1`] = `
     appName="FEPO"
     boundaryName="TestBoundaryName"
     fallbackComponent={null}
+    version="v2"
   />
 </Component>
 `;
