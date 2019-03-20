@@ -2,6 +2,8 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+// todo import styles
+
 /**
  * Create a super low resolution image that will automatically be blurred in most browsers
  *
@@ -125,7 +127,7 @@ class ImageView extends React.Component {
                     />
                 )}
 
-                {/* // support SSR */}
+                {/* // support no-js and SSR */}
                 <noscript>
                     <img src={src} alt={alt} className={className} srcSet={srcSet} {...rest} />
                 </noscript>
