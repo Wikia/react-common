@@ -1,6 +1,6 @@
 Hide:
 ```js
-<HideComponent isHidden>Default</HideComponent>
+<HideComponent hide>Default</HideComponent>
 ```
 
 Display

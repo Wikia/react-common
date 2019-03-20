@@ -6,7 +6,7 @@ const HideComponent = ({ hide, children }) => {
     }
 
     return children;
-}
+};
 
 HideComponent.propTypes = {
     hide: PropTypes.bool,
