@@ -19,7 +19,7 @@ function getLowRes(vignetteUrl) {
     // });
 }
 
-class ImageView extends React.Component {
+class Image extends React.Component {
     static propTypes = {
         alt: PropTypes.string.isRequired,
         className: PropTypes.string,
@@ -62,6 +62,8 @@ class ImageView extends React.Component {
     }
 
     componentDidMount() {
+        // jsom will not load image
+        /* istanbul ignore next */
         if (this.image && this.image.current && this.image.current.complete) {
             this.setState({ isLoading: false });
         }
@@ -79,7 +81,13 @@ class ImageView extends React.Component {
 
     onLoad = () => {
         this.setState(() => ({ isLoading: false }));
-    };
+    }
+
+    isVignette
+
+    getSrc() {
+
+    }
 
     render() {
         const {
@@ -115,9 +123,7 @@ class ImageView extends React.Component {
                 {!this.state.isLimbo && (
                     <img
                         ref={this.image}
-                        onLoad={() => {
-                            this.onLoad();
-                        }}
+                        onLoad={this.onLoad}
                         src={src}
                         alt={alt}
                         className={classNames('imageview', className, 'imageview-full',
@@ -136,4 +142,4 @@ class ImageView extends React.Component {
     }
 }
 
-export default ImageView;
+export default Image;

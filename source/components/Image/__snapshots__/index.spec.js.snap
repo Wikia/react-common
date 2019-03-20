@@ -1,62 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Disabled lazyj 1`] = `
-<ImageView
-  alt="tets"
+exports[`Disabled lazyLoading 1`] = `
+<Image
+  alt="test"
   className=""
   disableLazy={true}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   srcSet=""
 >
   <img
-    alt="tets"
+    alt="test"
     className=""
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
     srcSet=""
   />
-</ImageView>
+</Image>
 `;
 
 exports[`Image test 1`] = `
-Array [
-  <img
-    alt="tets"
-    className="imageview"
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  />,
-  <img
-    alt="tets"
-    className="imageview imageview-full is-hidden"
-    onLoad={[Function]}
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
-  />,
-  <noscript>
-    <img
-      alt="tets"
-      className=""
-      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-      srcSet=""
-    />
-  </noscript>,
-]
-`;
-
-exports[`Mocking a loaded iamge 1`] = `
-<ImageView
-  alt="tets"
+<Image
+  alt="test"
   className=""
   disableLazy={false}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   srcSet=""
 >
   <img
-    alt="tets"
+    alt="test"
     className="imageview"
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   />
   <img
-    alt="tets"
+    alt="test"
     className="imageview imageview-full is-hidden"
     onLoad={[Function]}
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
@@ -64,30 +39,30 @@ exports[`Mocking a loaded iamge 1`] = `
   />
   <noscript>
     <img
-      alt="tets"
+      alt="test"
       className=""
       src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
       srcSet=""
     />
   </noscript>
-</ImageView>
+</Image>
 `;
 
-exports[`Mocking a loaded iamge 2`] = `
-<ImageView
-  alt="tets"
+exports[`Mocking a loaded iamge 1`] = `
+<Image
+  alt="test"
   className=""
   disableLazy={false}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   srcSet=""
 >
   <img
-    alt="tets"
+    alt="test"
     className="imageview is-hidden"
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   />
   <img
-    alt="tets"
+    alt="test"
     className="imageview imageview-full"
     onLoad={[Function]}
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
@@ -95,30 +70,30 @@ exports[`Mocking a loaded iamge 2`] = `
   />
   <noscript>
     <img
-      alt="tets"
+      alt="test"
       className=""
       src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
       srcSet=""
     />
   </noscript>
-</ImageView>
+</Image>
 `;
 
 exports[`Updating an image src 1`] = `
-<ImageView
-  alt="tets"
+<Image
+  alt="test"
   className=""
   disableLazy={false}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   srcSet=""
 >
   <img
-    alt="tets"
+    alt="test"
     className="imageview"
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
   />
   <img
-    alt="tets"
+    alt="test"
     className="imageview imageview-full is-hidden"
     onLoad={[Function]}
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
@@ -126,42 +101,11 @@ exports[`Updating an image src 1`] = `
   />
   <noscript>
     <img
-      alt="tets"
+      alt="test"
       className=""
       src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
       srcSet=""
     />
   </noscript>
-</ImageView>
-`;
-
-exports[`Updating an image src 2`] = `
-<ImageView
-  alt="tets"
-  className=""
-  disableLazy={false}
-  src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  srcSet=""
->
-  <img
-    alt="tets"
-    className="imageview"
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  />
-  <img
-    alt="tets"
-    className="imageview imageview-full is-hidden"
-    onLoad={[Function]}
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
-  />
-  <noscript>
-    <img
-      alt="tets"
-      className=""
-      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-      srcSet=""
-    />
-  </noscript>
-</ImageView>
+</Image>
 `;
