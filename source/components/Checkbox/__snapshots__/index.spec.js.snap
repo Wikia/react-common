@@ -41,9 +41,6 @@ exports[`Checkbox renders correctly when disabled 1`] = `
     htmlFor="wds-checkbox-3"
   >
     <div
-      className="wds-icon wds-icon-small wds-checkbox__icon"
-    />
-    <div
       className="wds-icon wds-icon-small wds-checkbox__lock-icon"
     />
     disabled checkbox
