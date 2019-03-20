@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component without SSR 1`] = `
+<DisabledSSRComponent>
+  <TestComponent>
+    <div>
+       ...spinner 
+    </div>
+  </TestComponent>
+</DisabledSSRComponent>
+`;
