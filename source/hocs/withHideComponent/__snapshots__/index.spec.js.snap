@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display component 1`] = `
+<HideComponentView
+  isHidden={false}
+>
+  <WithHiddenProp>
+    <div>
+       Alt Fallback 
+    </div>
+  </WithHiddenProp>
+</HideComponentView>
+`;
+
+exports[`Hide component 1`] = `
+<HideComponentView
+  isHidden={true}
+/>
+`;
