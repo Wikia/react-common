@@ -80,7 +80,15 @@ const buildConfig = file => {
                 exclude: 'node_modules/design-system/dist/svg/sprite.svg',
             }),
             babel(babelConfig),
-            commonjs(),
+            commonjs({
+                         namedExports: {
+                             'node_modules/react-is/index.js': [
+                                 'isElement',
+                                 'isValidElementType',
+                                 'ForwardRef',
+                             ],
+                         }
+                     }),
             postprocess([
                 /**
                  * reference the assets directly

@@ -79,6 +79,7 @@
     "items": [
       "withHideComponent",
       "withTimeoutFallback",
+      "withErrorBoundary",
       "withDisabledSSR"
     ]
   },
