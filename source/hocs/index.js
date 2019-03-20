@@ -6,4 +6,5 @@
 
 export { default as withTimeoutFallback } from './withTimeoutFallback';
 export { default as withErrorBoundary } from './withErrorBoundary';
+export { default as withHideComponent } from './withHideComponent';
 export { default as withDisabledSSR } from './withDisabledSSR';
