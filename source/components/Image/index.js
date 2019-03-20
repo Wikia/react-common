@@ -83,12 +83,6 @@ class Image extends React.Component {
         this.setState(() => ({ isLoading: false }));
     }
 
-    isVignette
-
-    getSrc() {
-
-    }
-
     render() {
         const {
             className, alt, src, srcSet, disableLazy, ...rest

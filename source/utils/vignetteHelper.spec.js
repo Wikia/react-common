@@ -1,4 +1,4 @@
-import * as helper from './helper';
+import * as helper from './vignetteHelper';
 
 test('getUuid returns false for non-uuid urls', () => {
     const uuid = helper.getUuid('whatever.jpg');

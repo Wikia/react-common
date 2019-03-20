@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getVignetteParams, getUuid } from './helper';
+import { getVignetteParams, getUuid } from '../../utils/vignetteHelper';
 
 /**
  * Vignette helper for getting scaled/resized images from Static Image Assets service.
