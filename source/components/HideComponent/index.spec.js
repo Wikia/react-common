@@ -1,22 +1,22 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount } from 'enzyme';
 
 import HideComponent from './index';
 
 test('Hide component tree', () => {
-    const component = renderer.create(
-        <HideComponent isHidden>
+    const component = mount(
+        <HideComponent hide>
             <div> test </div>
         </HideComponent>,
     );
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 });
 
 test('Show component tree', () => {
-    const component = renderer.create(
+    const component = mount(
         <HideComponent>
             <div> test </div>
         </HideComponent>,
     );
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
 });

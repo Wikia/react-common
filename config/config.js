@@ -10,6 +10,12 @@ module.exports = {
         'assets',
         'icons',
     ],
+    sourceFiles: [
+        'theme/breakpoints.js',
+        'theme/colors.js',
+        'theme/index.js',
+        'theme/typography.js'
+    ],
     externalDependencies: [
         'date-fns',
         // we ony use one function from date-fns

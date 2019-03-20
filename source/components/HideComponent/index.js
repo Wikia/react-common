@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-function HideComponent({ isHidden, children }) {
-    if (isHidden === true) {
+const HideComponent = ({ hide, children }) => {
+    if (hide === true) {
         return false;
     }
 
@@ -9,11 +9,11 @@ function HideComponent({ isHidden, children }) {
 }
 
 HideComponent.propTypes = {
-    isHidden: PropTypes.bool,
+    hide: PropTypes.bool,
 };
 
 HideComponent.defaultProps = {
-    isHidden: false,
+    hide: false,
 };
 
 export default HideComponent;

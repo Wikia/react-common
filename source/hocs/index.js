@@ -7,3 +7,4 @@
 // eslint-disable-next-line
 export { default as withTimeoutFallback } from './withTimeoutFallback';
 export { default as withHideComponent } from './withHideComponent';
+export { default as withDisabledSSR } from './withDisabledSSR';

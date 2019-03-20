@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
@@ -37,6 +37,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
+    "deepmerge": "^3.2.0",
     "design-system": "git://github.com/Wikia/design-system.git#20.0.0",
     "i18next": "^14.0.1",
     "immutable": "^4.0.0-rc.12",
