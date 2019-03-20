@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
-// import Vignette from 'vignette'; // todo fix
 
 /**
  * Create a super low resolution image that will automatically be blurred in most browsers
@@ -10,6 +9,7 @@ import React from 'react';
  * @returns {String}
  */
 function getLowRes(vignetteUrl) {
+    return vignetteUrl;
     // return Vignette.getThumbURL(vignetteUrl, {
     //     mode: 'smart',
     //     width: 5,
@@ -19,7 +19,7 @@ function getLowRes(vignetteUrl) {
 
 class ImageView extends React.Component {
     static propTypes = {
-        alt: PropTypes.string.uired,
+        alt: PropTypes.string.isRequired,
         className: PropTypes.string,
         disableLazy: PropTypes.bool,
         src: PropTypes.string.isRequired,
@@ -27,9 +27,9 @@ class ImageView extends React.Component {
     };
 
     static defaultProps = {
+        className: '',
         disableLazy: false,
         srcSet: '',
-        className: '',
     };
 
     state = {
@@ -75,7 +75,9 @@ class ImageView extends React.Component {
         }
     }
 
-    onLoad = () => { this.setState(() => ({ isLoading: false })); };
+    onLoad = () => {
+        this.setState(() => ({ isLoading: false }));
+    };
 
     render() {
         const {
@@ -83,7 +85,15 @@ class ImageView extends React.Component {
         } = this.props;
 
         if (disableLazy) {
-            return <img src={this.props.src} alt={alt} className={className} srcSet={srcSet} {...rest} />;
+            return (
+                <img
+                    src={this.props.src}
+                    alt={alt}
+                    className={className}
+                    srcSet={srcSet}
+                    {...rest}
+                />
+            );
         }
 
         // Limbo state happens when only the src and/or srcset is changed
@@ -91,8 +101,29 @@ class ImageView extends React.Component {
         // lets just remove the entire node from html when in limbo
         return (
             <React.Fragment>
-                {!this.state.isLimbo && <img src={getLowRes(src)} alt={alt} className={classNames('imageview', className, { 'is-hidden': !this.state.isLoading })} {...rest} />}
-                {!this.state.isLimbo && <img ref={this.image} onLoad={() => { this.onLoad(); }} src={src} alt={alt} className={classNames('imageview', className, { 'is-hidden': this.state.isLoading })} srcSet={srcSet} {...rest} />}
+                {!this.state.isLimbo && (
+                    <img
+                        src={getLowRes(src)}
+                        alt={alt}
+                        className={classNames('imageview', className,
+                            { 'is-hidden': !this.state.isLoading })}
+                        {...rest}
+                    />
+                )}
+                {!this.state.isLimbo && (
+                    <img
+                        ref={this.image}
+                        onLoad={() => {
+                            this.onLoad();
+                        }}
+                        src={src}
+                        alt={alt}
+                        className={classNames('imageview', className,
+                            { 'is-hidden': this.state.isLoading })}
+                        srcSet={srcSet}
+                        {...rest}
+                    />
+                )}
 
                 {/* // support SSR */}
                 <noscript>
@@ -101,5 +132,6 @@ class ImageView extends React.Component {
             </React.Fragment>
         );
     }
+}
 
 export default ImageView;
