@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Default Spinner with timeout 1`] = `
+exports[`Component without SSR 1`] = `
 <DisabledSSRComponent>
   <TestComponent>
     <div>
@@ -9,11 +9,3 @@ exports[`Default Spinner with timeout 1`] = `
   </TestComponent>
 </DisabledSSRComponent>
 `;
-
-exports[`Default Spinner with timeout 2 1`] = `
-<div>
-   ...spinner 
-</div>
-`;
-
-exports[`Default Spinner with timeout 3 1`] = `<TestComponent />`;
