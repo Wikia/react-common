@@ -1,5 +1,6 @@
-import { mount } from 'enzyme/build/index';
+import { mount } from 'enzyme';
 import React from 'react';
+import sinon from 'sinon';
 
 import withErrorBoundary from './index';
 
@@ -13,23 +14,70 @@ const SimpleComponent = () => (
     </div>
 );
 
-test('Default fallback error boundary', () => {
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FandomCreator', 'v1');
+test('Default empty fallback error boundary', () => {
+    sinon.stub(console, 'error');
+    sinon.stub(console, 'log');
+
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent);
 
     const component = mount(
         <ComponentWithErrorBoundary />,
     );
 
+    expect(component).toMatchSnapshot();
+    console.error.restore();
+    console.log.restore();
+});
+test('Default fallback error boundary', () => {
+    sinon.stub(console, 'error');
+    sinon.stub(console, 'log');
+
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
+        appName: 'FandomCreator',
+        appVersion: 'v1',
+        name: 'TestBoundaryName',
+    });
+
+    const component = mount(
+        <ComponentWithErrorBoundary />,
+    );
 
     expect(component).toMatchSnapshot();
+    console.error.restore();
+    console.log.restore();
 });
 
-test('Renders nothing when there is undefined fallback', () => {
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, 'TestBoundaryName', 'FEPO', 'v2', null);
+test('Renders nothing when there is null fallback', () => {
+    sinon.stub(console, 'error');
+    sinon.stub(console, 'log');
+
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
+        fallbackComponent: null,
+        name: 'TestBoundaryName',
+    });
 
     const component = mount(
         <ComponentWithErrorBoundary />,
     );
 
     expect(component).toMatchSnapshot();
+    console.error.restore();
+    console.log.restore();
+});
+
+test('Can skip the log and can extract the name', () => {
+    sinon.stub(console, 'error');
+    sinon.stub(console, 'log');
+
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
+        skipLog: true,
+    });
+
+    const component = mount(
+        <ComponentWithErrorBoundary />,
+    );
+
+    expect(component).toMatchSnapshot();
+    console.error.restore();
+    console.log.restore();
 });
