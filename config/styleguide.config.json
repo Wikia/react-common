@@ -54,6 +54,7 @@
       "FloatingButton",
       "FloatingButtonGroup",
       "GlobalNavigation",
+      "HideComponent",
       "Icon",
       "IconSprite",
       "Input",
@@ -73,6 +74,7 @@
     "name": "Higher Order Components",
     "directory": "hocs",
     "items": [
+      "withHideComponent",
       "withTimeoutFallback"
     ]
   },
