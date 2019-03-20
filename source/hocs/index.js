@@ -4,6 +4,6 @@
  * importable.
  */
 
-// eslint-disable-next-line
 export { default as withTimeoutFallback } from './withTimeoutFallback';
 export { default as withErrorBoundary } from './withErrorBoundary';
+export { default as withDisabledSSR } from './withDisabledSSR';

@@ -77,7 +77,8 @@
     "directory": "hocs",
     "items": [
       "withTimeoutFallback",
-      "withErrorBoundary"
+      "withErrorBoundary",
+      "withDisabledSSR"
     ]
   },
   {
