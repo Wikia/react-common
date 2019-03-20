@@ -7,6 +7,7 @@ exports[`Checkbox renders correctly checked (and with label and class name) 1`] 
   <input
     checked={true}
     className="wds-checkbox__input"
+    disabled={false}
     id="wds-checkbox-2"
     onChange={[Function]}
     type="checkbox"
@@ -23,6 +24,30 @@ exports[`Checkbox renders correctly checked (and with label and class name) 1`] 
 </div>
 `;
 
+exports[`Checkbox renders correctly when disabled 1`] = `
+<div
+  className="wds-checkbox"
+>
+  <input
+    checked={false}
+    className="wds-checkbox__input"
+    disabled={true}
+    id="wds-checkbox-3"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="wds-checkbox__label"
+    htmlFor="wds-checkbox-3"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-checkbox__lock-icon"
+    />
+    disabled checkbox
+  </label>
+</div>
+`;
+
 exports[`Checkbox renders correctly with default values 1`] = `
 <div
   className="wds-checkbox"
@@ -30,6 +55,7 @@ exports[`Checkbox renders correctly with default values 1`] = `
   <input
     checked={false}
     className="wds-checkbox__input"
+    disabled={false}
     id="wds-checkbox-1"
     onChange={[Function]}
     type="checkbox"

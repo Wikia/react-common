@@ -65,6 +65,8 @@ function getSections() {
     });
 }
 
+
+
 module.exports = {
     title: 'react-common',
     template: {
@@ -102,4 +104,7 @@ module.exports = {
             dangerousTaggedTemplateString: true,
         },
     },
+    require: [
+        path.join(__dirname, '../source/styleguide.css')
+    ],
 };

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommunityBar renders correctly when mobileTitle is empty 1`] = `
+<div
+  className="wds-global-navigation__community-bar"
+>
+  <a
+    className="wds-global-navigation__logo-heart-link"
+    data-tracking-label="track-logo"
+  >
+    <_default
+      className="wds-global-navigation__logo-heart"
+    />
+  </a>
+  <div
+    className="wds-global-navigation__community-bar-separator"
+  />
+  <div
+    className="wds-community-bar__sitename"
+  >
+    <a
+      data-tracking-label="sitename"
+      href="//xkxd.fandom.com"
+    >
+      Xkxd Wiki
+    </a>
+  </div>
+</div>
+`;
+
+exports[`CommunityBar renders correctly with default props 1`] = `
+<div
+  className="wds-global-navigation__community-bar"
+>
+  <a
+    className="wds-global-navigation__logo-heart-link"
+    data-tracking-label="track-logo"
+  >
+    <_default
+      className="wds-global-navigation__logo-heart"
+    />
+  </a>
+  <div
+    className="wds-global-navigation__community-bar-separator"
+  />
+  <div
+    className="wds-community-bar__sitename"
+  >
+    <a
+      data-tracking-label="sitename"
+      href="//xkxd.fandom.com"
+    >
+      Xkxd Wiki
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render NotificationsDataProvider renders correctly with default props 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "firstPageLoaded": false,
+      "goToDestination": [Function],
+      "isLoading": false,
+      "loadFirstPage": [Function],
+      "loadNextPage": [Function],
+      "markAllAsRead": [Function],
+      "markAsRead": [Function],
+      "nextPage": null,
+      "notifications": Array [],
+      "unreadCount": 0,
+    }
+  }
+>
+  <div>
+    HAI SANTA!
+  </div>
+</ContextProvider>
+`;

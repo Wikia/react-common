@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MobileUser renders correctly for anon 1`] = `
+<ComponentWrapper
+  data={
+    Object {
+      "mockedAnon": "mocked-anon-value",
+    }
+  }
+/>
+`;
+
+exports[`MobileUser renders correctly for user 1`] = `
+<MobileLoggedIn
+  isOpen={false}
+  openModal={[Function]}
+  track={[Function]}
+  user={
+    Object {
+      "mockedUser": "mocked-user-value",
+    }
+  }
+/>
+`;
+
+exports[`MobileUser returns null when no data is provided 1`] = `""`;
