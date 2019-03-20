@@ -12,18 +12,11 @@
 		display: inline-flex;
 	}
 
-	&__icon {
+	&__icon, &__lock-icon {
 		margin-right: 13px;
 	}
 
 	&__input[disabled] + .wds-checkbox__label {
 		color: $wds-fandom-color-middle-gray;
-		position: relative;
-
-		.wds-checkbox__lock-icon {
-			left: 0;
-			position: absolute;
-			right: 0;
-		}
 	}
 }
