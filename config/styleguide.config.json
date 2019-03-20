@@ -17,8 +17,11 @@
     ]
   },
   {
+    "name": "Theme",
+    "content": "../source/theme/README.md"
+  },
+  {
     "name": "Icons",
-    "description": "Icons",
     "content": "../source/icons/demo.md"
   },
   {

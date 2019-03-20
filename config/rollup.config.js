@@ -19,6 +19,9 @@ config.sourceDirectories.forEach(
         file => sources.push(file.substring(0, file.length - 1))
     )
 );
+config.sourceFiles.forEach(
+    sourceFile => sources.push(`source/${sourceFile}`)
+);
 
 /**
  * Check if import should be "external" or not:
@@ -31,12 +34,15 @@ const isThisExternalDependency = (fileName) => {
         || fileName.startsWith('../../assets');
 }
 
-const buildConfig = file =>
-    ({
-        input: `${file}/index.js`,
+const buildConfig = file => {
+    const inputFileName = file.endsWith('.js') ? file : `${file}/index.js`;
+    const outputFileName = file.endsWith('.js') ? file.replace('source/', '') : `${file.replace('source/', '')}.js`;
+
+    return {
+        input: inputFileName,
         output: [
             {
-                file: `${config.outputDir}/${file.replace('source/', '')}.js`,
+                file: `${config.outputDir}/${outputFileName}`,
                 format: 'cjs',
             },
         ],
@@ -91,7 +97,8 @@ const buildConfig = file =>
                 [ '../../icons', '@wikia/react-common/icons', ],
             ]),
         ],
-    });
+    };
+};
 
 export default sources.map(
     source => buildConfig(source),
