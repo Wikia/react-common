@@ -2,18 +2,18 @@
 
 exports[`Display component 1`] = `
 <HideComponentView
-  isHidden={false}
+  hide={false}
 >
-  <WithHiddenProp>
+  <WithHideProp>
     <div>
        Alt Fallback 
     </div>
-  </WithHiddenProp>
+  </WithHideProp>
 </HideComponentView>
 `;
 
 exports[`Hide component 1`] = `
 <HideComponentView
-  isHidden={true}
+  hide={true}
 />
 `;

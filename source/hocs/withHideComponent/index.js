@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function withHideComponent(component) {
     function HideComponentView(props) {
-        const { isHidden, ...rest } = props;
-        if (isHidden) {
+        const { hide, ...rest } = props;
+        if (hide) {
             return false;
         }
 
@@ -17,11 +17,11 @@ function withHideComponent(component) {
     }
 
     HideComponentView.propTypes = {
-        isHidden: PropTypes.bool,
+        hide: PropTypes.bool,
     };
 
     HideComponentView.defaultProps = {
-        isHidden: false,
+        hide: false,
     };
 
     return HideComponentView;

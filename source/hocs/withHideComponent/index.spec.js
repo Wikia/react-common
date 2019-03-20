@@ -1,15 +1,14 @@
-import { mount } from 'enzyme/build/index';
+import { mount } from 'enzyme';
 import React from 'react';
 
 import withHideComponent from './index';
 
-const WithHiddenProp = () => (<div> Alt Fallback </div>);
-const ComponentWithOutHidden = withHideComponent(WithHiddenProp);
-
+const WithHideProp = () => (<div> Alt Fallback </div>);
+const ComponentWithHideHoC = withHideComponent(WithHideProp);
 
 test('Hide component', () => {
     const component = mount(
-        <ComponentWithOutHidden isHidden />,
+        <ComponentWithHideHoC hide />,
     );
 
     expect(component).toMatchSnapshot();
@@ -17,7 +16,7 @@ test('Hide component', () => {
 
 test('Display component', () => {
     const component = mount(
-        <ComponentWithOutHidden />,
+        <ComponentWithHideHoC />,
     );
 
     expect(component).toMatchSnapshot();

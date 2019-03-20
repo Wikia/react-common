@@ -1,4 +1,5 @@
-Adds a `isHidden` prop logic to newly created component
+Adds a `hide` prop logic to newly created component
+
 ## Usage
 
 ```js static
@@ -8,6 +9,6 @@ const Comp = props => (<div> test </div>)
 const ComponentWithIsHidden = withTimeoutFallback(Spinner);
 
 // Usage
-<ComponentWithIsHidden isHidden/>
-<ComponentWithIsHidden/>
+<ComponentWithIsHidden hide/> // ComponentWithIsHidden will be hidden
+<ComponentWithIsHidden /> // ComponentWithIsHidden will be visible
 ```
