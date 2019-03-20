@@ -118,7 +118,7 @@ class ImageView extends React.Component {
                         }}
                         src={src}
                         alt={alt}
-                        className={classNames('imageview', className,
+                        className={classNames('imageview', className, 'imageview-full',
                             { 'is-hidden': this.state.isLoading })}
                         srcSet={srcSet}
                         {...rest}
