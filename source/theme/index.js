@@ -33,15 +33,13 @@ const theme = Object.freeze({
         light: COLORS_LIGHT_THEME,
         dark: COLORS_DARK_THEME,
     },
+    content_well_margin: CONTENT_WELL_MARGIN_PX,
+    content_well_margin_value: CONTENT_WELL_MARGIN,
     font_family: FONT_FAMILY,
     font_size: FONT_SIZES_PX,
     font_size_value: FONT_SIZES,
     font_weight: FONT_WEIGHTS,
     line_height: LINE_HEIGHTS,
-    margin: {
-        content_well: CONTENT_WELL_MARGIN_PX,
-        content_well_value: CONTENT_WELL_MARGIN,
-    },
     media: MEDIAQUERIES,
 });
 

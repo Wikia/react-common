@@ -45,21 +45,19 @@ Here's how the object looks like (values omitted):
 const theme = {
     breakpoint_values: /* .. */,
     breakpoint_available_width: /* .. */,
-    breakpoint_available_width_values: /* ame as `breakpoint_available_width` without units */,
+    breakpoint_available_width_values: /* same as `breakpoint_available_width` without units */,
     color: /* .. */,
     color_theme: {
         light: /* .. */,
         dark: /* .. */,
     },
+    content_well_margin: /* ... */,
+    content_well_margin_value: /* same as `content_well` without units */,
     font_family: /* .. */,
     font_size: /* .. */,
     font_size_value: /* same as `font_size` without units */,
     font_weight: /* ... */,
     line_height: /* ... */,
-    margin: {
-        content_well: /* ... */,
-        content_well_value: /* same as `content_well` without units */,
-    },
     media: /* ... */,
 };
 ```
