@@ -124,6 +124,7 @@
     "/icons",
     "/models",
     "/systems",
-    "/theme"
+    "/theme",
+    "/utils"
   ]
 }
