@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "5.0.0",
+  "version": "5.0.0-avatar-link-builder",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
