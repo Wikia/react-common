@@ -120,8 +120,10 @@
     "/assets",
     "/components",
     "/hocs",
+    "/hooks",
     "/icons",
     "/models",
-    "/systems"
+    "/systems",
+    "/theme"
   ]
 }
