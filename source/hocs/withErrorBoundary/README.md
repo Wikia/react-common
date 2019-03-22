@@ -13,6 +13,9 @@ The `options` param is optional and can have the following:
 * `options.appName` - Front-End application's name; this is sent to remote log
 * `options.appVersion` - Front-End application's verion; this is sent to remote log
 
+**NOTE**: This component requires `styled-components` for displaying the default fallback Component.
+Alternatively the `options.fallbackComponent` should be used to provide custom fallback or to disable this feature completely.
+
 ## Examples
 
 Very basic usage:
