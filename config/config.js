@@ -23,13 +23,14 @@ module.exports = {
         // we ony use one function from date-fns
         'date-fns/distance_in_words_strict',
         'deepmerge',
+        'i18next',
+        'immutable',
         'prop-types',
         'react',
         'react-dom',
-        'react-select',
-        'react-redux',
-        'immutable',
         'react-i18next',
-        'i18next',
+        'react-redux',
+        'react-select',
+        'styled-components',
     ],
 };
