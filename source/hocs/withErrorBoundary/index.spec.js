@@ -28,6 +28,23 @@ test('Default empty fallback error boundary', () => {
     console.error.restore();
     console.log.restore();
 });
+
+test('Undefined value for fallback should use default fallback', () => {
+    sinon.stub(console, 'error');
+    sinon.stub(console, 'log');
+
+    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, { fallbackComponent: undefined });
+
+    const component = mount(
+        <ComponentWithErrorBoundary />,
+    );
+
+    expect(component).toMatchSnapshot();
+    console.error.restore();
+    console.log.restore();
+});
+
+
 test('Default fallback error boundary', () => {
     sinon.stub(console, 'error');
     sinon.stub(console, 'log');
