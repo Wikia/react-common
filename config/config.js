@@ -13,8 +13,10 @@ module.exports = {
     sourceFiles: [
         'theme/breakpoints.js',
         'theme/colors.js',
+        'theme/generateTheme.js',
         'theme/index.js',
-        'theme/typography.js'
+        'theme/typography.js',
+        'utils/eventLogger.js',
     ],
     externalDependencies: [
         'date-fns',
