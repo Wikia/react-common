@@ -7,20 +7,31 @@ import { getAvatarImage } from './utils';
 
 import './styles.scss';
 
-const Avatar = ({
-    alt,
-    badge,
-    className,
-    href,
-    src,
-    title,
-    linkBuilder,
-}) => (
-    <div className={classNames('wds-avatar', className)} title={title}>
-        {getAvatarImage(href, alt, src, linkBuilder)}
-        {badge && <Badge badge={badge} />}
-    </div>
-);
+class Avatar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            imageSrc: props.src,
+        };
+    }
+
+    componentDidMount() {
+        if (!this.state.imageSrc) {
+            fetch(`https://services.wikia.com/user-attribute/user/${this.props.userId}/attr/avatar`)
+                .then(response => response.json())
+                .then(data => this.setState({ imageSrc: data.value }));
+        }
+    }
+
+    render() {
+        return (
+            <div className={classNames('wds-avatar', this.props.className)} title={this.props.title}>
+                {getAvatarImage(this.props.href, this.props.alt, this.state.imageSrc, this.props.linkBuilder)}
+                {this.props.badge && <Badge badge={this.props.badge} />}
+            </div>
+        );
+    }
+}
 
 Avatar.propTypes = {
     /** Alt text for avatar */
@@ -42,6 +53,8 @@ Avatar.propTypes = {
     src: PropTypes.string,
     /** Title attribute for avatar */
     title: PropTypes.string,
+    /** Optional user ID to fetch avatar for, if `src` prop is not provided */
+    userId: PropTypes.number,
 };
 
 Avatar.defaultProps = {
@@ -50,8 +63,10 @@ Avatar.defaultProps = {
     className: undefined,
     href: undefined,
     linkBuilder: undefined,
+    size: 30,
     src: undefined,
     title: undefined,
+    userId: undefined,
 };
 
 export default Avatar;
