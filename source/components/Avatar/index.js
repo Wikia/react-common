@@ -63,7 +63,6 @@ Avatar.defaultProps = {
     className: undefined,
     href: undefined,
     linkBuilder: undefined,
-    size: 30,
     src: undefined,
     title: undefined,
     userId: undefined,
