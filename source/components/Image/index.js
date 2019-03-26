@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import ImagePreloader from '../ImagePreloader';
-import { isVignetteUrl, Vignette } from '../../utils/vignette';
+import { isVignetteUrl, vignette } from '../../utils/vignette';
 
 const LAZY_IMAGE_SIZE = 5;
 
@@ -49,12 +49,9 @@ class Image extends React.Component {
 
     /**
      * Create a super low resolution image that will automatically be blurred in most browsers
-     *
-     * But only from Vignette
      */
-    getLowResSrc() {
-        const image = Vignette(this.props.src);
-        return image.isOk() ? image.withSmart(LAZY_IMAGE_SIZE, LAZY_IMAGE_SIZE).get() : this.props.src;
+    getLowResSrcFromVignette() {
+        return vignette(this.props.src).withSmart(LAZY_IMAGE_SIZE, LAZY_IMAGE_SIZE).get();
     }
 
     renderPlainImage() {
@@ -80,7 +77,7 @@ class Image extends React.Component {
                     }
 
                     // if the image is loading, render low quality image
-                    return <img className={classNames(className)} src={this.getLowResSrc()} alt={alt} {...rest} />;
+                    return <img className={classNames(className)} src={this.getLowResSrcFromVignette()} alt={alt} {...rest} />;
                 }}
             </ImagePreloader>
         );

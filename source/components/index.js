@@ -31,7 +31,6 @@ export { default as Spinner } from './Spinner';
 export { default as Switch } from './Switch';
 export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
-export { default as Vignette } from './Vignette';
 
 // custom types
 export { default as bannerNotificationsMessageType } from './BannerNotifications/bannerNotificationsMessageType';

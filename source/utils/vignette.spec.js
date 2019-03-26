@@ -1,4 +1,4 @@
-import { isVignetteUrl, isVignetteId, VignetteHelper } from './vignette';
+import { isVignetteUrl, isVignetteId, VignetteHelper, vignette } from './vignette';
 
 const DEFAULT_BASE_IMAGE = 'https://vignette.wikia.com/541b323b-a3c2-4d4f-be1f-500cf13573b8';
 
@@ -37,7 +37,7 @@ describe('isVignetteId works properly', () => {
 });
 
 test('VignetteHelper can be initialized', () => {
-    const helperWithoutParams = new VignetteHelper(DEFAULT_BASE_IMAGE);
+    const helperWithoutParams = vignette(DEFAULT_BASE_IMAGE);
 
     expect(helperWithoutParams.baseImage).toEqual(DEFAULT_BASE_IMAGE);
     expect(helperWithoutParams.getParams()).toEqual('');

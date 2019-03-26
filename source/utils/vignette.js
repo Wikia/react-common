@@ -21,7 +21,10 @@ export function isVignetteId(id) {
     return VIGNETTE_UUID_REGEX.test(id);
 }
 
-export function Vignette(imageUrl) {
+/**
+ * Helper factory function
+ */
+export function vignette(imageUrl) {
     return new VignetteHelper(imageUrl);
 }
 

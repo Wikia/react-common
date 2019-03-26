@@ -6,11 +6,14 @@ There are two functions can be used to validate a proper Vignette ID and URL:
 
 * `isVignetteUrl(url: String): Boolean`
 * `isVignetteId(id: String): Boolean`
+* `vignette(imageUrl): VignetteHelper`
 
 ## `VignetteHelper` class
 
 This class can be used to extract and manipulate URLs - it can extract Vignette params from given image and new options can be applied.
 Class' instance keeps the base image URL (server + ID) as well as all the Vignette params.
+
+**NOTE**: The `vignette(url)` function can be used instead of `new VignetteHelper(url)`.
 
 ### API
 
@@ -33,7 +36,7 @@ All the following are instance methods:
 Usage:
 
 ```js static
-import { VignetteHelper } from '@wikia/react-common/utils/vignette';
+import { vignette, VignetteHelper } from '@wikia/react-common/utils/vignette';
 
 const ThumbImage = ({ alt, src, width, height }) => {
     const image = new VignetteHelper(src);
@@ -46,6 +49,20 @@ const ThumbImage = ({ alt, src, width, height }) => {
     `;
 
     return <img src={image300px} alt={alt} srcSet={srcSet} />;
+}
+
+// this will be the same as
+
+const ThumbImage = ({ alt, src, width, height }) => {
+    const standardImage = vignette(src);
+
+    const srcSet = `
+        ${standardImage.withScaleToWidth(300).get()} 300w
+        ${standardImage.withScaleToWidth(600).get()} 600w
+        ${standardImage.withScaleToWidth(1000).get()} 2x
+    `;
+
+    return <img src={standardImage.get()} alt={alt} srcSet={srcSet} />;
 }
 ```
 
