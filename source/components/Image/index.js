@@ -2,11 +2,12 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import ImagePreloader from '../ImagePreloader';
 import { isVignetteUrl, VignetteHelper } from '../../utils/vignette';
 
 const LAZY_IMAGE_SIZE = 5;
 
-class Img extends React.Component {
+class Image extends React.Component {
     static propTypes = {
         alt: PropTypes.string.isRequired,
         className: PropTypes.string,
@@ -23,7 +24,6 @@ class Img extends React.Component {
 
     state = {
         src: this.props.src,
-        isLoading: true,
         isLimbo: false,
     };
 
@@ -34,24 +34,13 @@ class Img extends React.Component {
         // when only the src changes we are in "limbo" mode
         if (props.src !== state.src) {
             return {
-                // try go get low resolution image of new image first
-                isLoading: true,
                 isLimbo: true,
             };
         }
 
         return {
-            isLoading: state.isLoading,
             isLimbo: false,
         };
-    }
-
-    componentDidMount() {
-        // jsom will not load image
-        /* istanbul ignore next */
-        if (this.image && this.image.current && this.image.current.complete) {
-            this.setState({ isLoading: false });
-        }
     }
 
     // after the component updates once we want to
@@ -69,41 +58,9 @@ class Img extends React.Component {
      *
      * But only from Vignette
      */
-    getLowResImageUrl() {
+    getLowResSrc() {
         const image = new VignetteHelper(this.props.src);
         return image.isOk() ? image.withSmart(LAZY_IMAGE_SIZE, LAZY_IMAGE_SIZE).get() : this.props.src;
-    }
-
-    onLoad = () => {
-        this.destroyLoader();
-        this.setState(() => ({ isLoading: false }));
-    }
-
-    onError = () => {
-        this.destroyLoader();
-        console.error(`Cannot load image: ${this.props.src}`);
-    }
-
-    destroyLoader() {
-        if (this.imageLoader) {
-            this.imageLoader.onload = null;
-            this.imageLoader.onerror = null;
-            this.imageLoader = null;
-        }
-    }
-
-    createLoader(src, srcSet = undefined) {
-        console.log('createLoader', src);
-        if (!this.imageLoader) {
-            this.imageLoader = new Image();
-            this.imageLoader.onload = this.handleLoad;
-            this.imageLoader.onerror = this.handleError;
-            this.imageLoader.src = src;
-
-            // if srcSet is not passed in then use src for srcset
-            // Setting srcset to a non-string is a bad idea. E.g. imageLoader.srcset = undefined actually sets srcset to the string "undefined", causing a load failure)
-            this.imageLoader.srcset = srcSet || src;
-        }
     }
 
     renderPlainImage() {
@@ -114,17 +71,21 @@ class Img extends React.Component {
     }
 
     renderVignetteImage() {
-        const { alt, className, srcSet, disableLazy, ...rest } = this.props;
-        const { src, isLoading } = this.state;
+        const { alt, className, disableLazy } = this.props;
 
-        if (isLoading) {
-            this.createLoader(src, srcSet);
-
-            const imageSrc = this.getLowResImageUrl();
-            return <img className={classNames(className)} src={imageSrc} alt={alt} {...rest} />;
+        if (disableLazy) {
+            return this.renderPlainImage();
         }
 
-        return <img className={classNames(className)} srcSet={srcSet} src={src} alt={alt} {...rest} />;
+        return (
+            <ImagePreloader src={this.state.src}>
+                {({ src, state }) => {
+                    const imageSrc = state === ImagePreloader.STATE.SUCCESS ? src : this.getLowResSrc();
+
+                    return <img className={classNames(className)} src={imageSrc} alt={alt} />
+                }}
+            </ImagePreloader>
+        );
     }
 
     render() {
@@ -149,4 +110,4 @@ class Img extends React.Component {
     }
 }
 
-export default Img;
+export default Image;

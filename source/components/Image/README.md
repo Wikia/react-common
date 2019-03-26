@@ -2,31 +2,31 @@ Default:
 
 ```js
     <React.Fragment>
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/150"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/100"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/200"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/300"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/500"
         />
-        <Img
+        <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/400"
         />

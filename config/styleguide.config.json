@@ -56,7 +56,7 @@
       "GlobalNavigation",
       "Icon",
       "IconSprite",
-      "Img",
+      "Image",
       "Input",
       "List",
       "Select",
