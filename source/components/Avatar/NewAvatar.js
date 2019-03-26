@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styled from 'styled-components';
 
-import Badge from '../Avatar/Badge';
 import IconAvatar from '../../icons/IconAvatar';
+
+import Badge from './Badge';
 
 // const AvatarContext = React.createContext();
 
@@ -135,7 +136,7 @@ Avatar.propTypes = {
     className: PropTypes.string,
     /** Link to user's profile */
     href: PropTypes.string,
-    /** Function which returns wrapped AvatarImage, accepts one argument avatarImage which provides the actual avatar image */
+    /** Function that returns wrapped avatar image, accepts one argument avatarImage which provides the actual avatar image */
     linkBuilder: PropTypes.func,
     /** Diameter of avatar in px */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

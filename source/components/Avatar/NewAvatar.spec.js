@@ -47,9 +47,13 @@ test('Avatar renders when incorrect badgePermission is set', () => {
 });
 
 test('Avatar image is fetched when given userId prop', () => {
+    const userId = 123;
     const props = {
-        userId: 123,
+        userId,
     };
-    // TO DO
-    // const component = mount(<Avatar {...props} />);
+    jest.spyOn(global, 'fetch').mockImplementation(() => { throw new Error('nothing'); });
+    global.console.error = jest.fn();
+    mount(<Avatar {...props} />);
+
+    expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
 });
