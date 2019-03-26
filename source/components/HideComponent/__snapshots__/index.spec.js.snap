@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hide component tree 1`] = `
+<HideComponent
+  hide={true}
+/>
+`;
+
+exports[`Show component tree 1`] = `
+<HideComponent
+  hide={false}
+>
+  <div>
+     test 
+  </div>
+</HideComponent>
+`;

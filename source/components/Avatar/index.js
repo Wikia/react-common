@@ -14,9 +14,10 @@ const Avatar = ({
     href,
     src,
     title,
+    linkBuilder,
 }) => (
     <div className={classNames('wds-avatar', className)} title={title}>
-        {getAvatarImage(href, alt, src)}
+        {getAvatarImage(href, alt, src, linkBuilder)}
         {badge && <Badge badge={badge} />}
     </div>
 );
@@ -35,6 +36,8 @@ Avatar.propTypes = {
     className: PropTypes.string,
     /** Link to user's profile */
     href: PropTypes.string,
+    /** Function which returns wrapped AvatarImage, accepts one argument avatarImage which provides the actual avatar image */
+    linkBuilder: PropTypes.func,
     /** Image src for avatar */
     src: PropTypes.string,
     /** Title attribute for avatar */
@@ -46,6 +49,7 @@ Avatar.defaultProps = {
     badge: undefined,
     className: undefined,
     href: undefined,
+    linkBuilder: undefined,
     src: undefined,
     title: undefined,
 };

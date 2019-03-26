@@ -20,6 +20,7 @@ export { default as Fieldset } from './Fieldset';
 export { default as FloatingButton } from './FloatingButton';
 export { default as FloatingButtonGroup } from './FloatingButtonGroup';
 export { default as GlobalNavigation } from './GlobalNavigation';
+export { default as HideComponent } from './HideComponent';
 export { default as Icon } from './Icon';
 export { default as IconSprite } from './IconSprite';
 export { default as Image } from './Image';

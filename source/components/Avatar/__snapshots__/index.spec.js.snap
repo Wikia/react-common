@@ -106,6 +106,38 @@ exports[`Avatar renders with default props 1`] = `
 </Avatar>
 `;
 
+exports[`Avatar renders with link builder 1`] = `
+<Avatar
+  alt="User avatar"
+  linkBuilder={[Function]}
+>
+  <div
+    className="wds-avatar"
+  >
+    <div>
+      <AvatarImage
+        alt="User avatar"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <_default
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          >
+            <div
+              className="wds-avatar__image"
+              title="wds-avatar__image"
+            />
+          </_default>
+        </_default>
+      </AvatarImage>
+    </div>
+  </div>
+</Avatar>
+`;
+
 exports[`Avatar renders with props 1`] = `
 <Avatar
   alt="alt"
