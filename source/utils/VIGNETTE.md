@@ -36,7 +36,7 @@ All the following are instance methods:
 Usage:
 
 ```js static
-import { vignette, VignetteHelper } from '@wikia/react-common/utils/vignette';
+import { VignetteHelper } from '@wikia/react-common/utils/vignette';
 
 const ThumbImage = ({ alt, src, width, height }) => {
     const image = new VignetteHelper(src);
@@ -52,6 +52,8 @@ const ThumbImage = ({ alt, src, width, height }) => {
 }
 
 // this will be the same as
+
+import { VignetteHelper } from '@wikia/react-common/utils/vignette';
 
 const ThumbImage = ({ alt, src, width, height }) => {
     const standardImage = vignette(src);
