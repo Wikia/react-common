@@ -17,6 +17,7 @@ module.exports = {
         'theme/index.js',
         'theme/typography.js',
         'utils/eventLogger.js',
+        'utils/vignette.js',
     ],
     externalDependencies: [
         'date-fns',
