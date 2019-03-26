@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 export const VIGNETTE_MODES = Object.freeze({
     auto: 'auto',
     scale: 'scale',
@@ -51,7 +49,7 @@ export class VignetteHelper {
 
         if (isVignetteUrl(imageUrl)) {
             const matches = imageUrl.match(VIGNETTE_BASE_IMAGE_REGEX);
-            this.baseImage = matches[0];
+            this.baseImage = matches[0]; // eslint-disable-line prefer-destructuring
 
             const paramsStr = imageUrl.substring(this.baseImage.length + 1);
 
@@ -62,49 +60,49 @@ export class VignetteHelper {
                     case 'smart':
                         // /smart/width/123/height/123
                         this.mode = VIGNETTE_MODES.smart;
-                        this.height = params[4];
-                        this.width = params[2];
+                        this.height = params[4]; // eslint-disable-line prefer-destructuring
+                        this.width = params[2]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'top-crop':
                         // /top-crop/width/123/height/123
                         this.mode = VIGNETTE_MODES.topCrop;
-                        this.height = params[4];
-                        this.width = params[2];
+                        this.height = params[4]; // eslint-disable-line prefer-destructuring
+                        this.width = params[2]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'thumbnail':
                         // /thumbnail/width/123/height/123
                         this.mode = VIGNETTE_MODES.thumbnail;
                         this.allowUpscaling = true;
-                        this.height = params[4];
-                        this.width = params[2];
+                        this.height = params[4]; // eslint-disable-line prefer-destructuring
+                        this.width = params[2]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'thumbnail-down':
                         // /thumbnail-down/width/123/height/123
                         this.mode = VIGNETTE_MODES.thumbnail;
-                        this.height = params[4];
-                        this.width = params[2];
+                        this.height = params[4]; // eslint-disable-line prefer-destructuring
+                        this.width = params[2]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'scale-to-width':
                         // /scale-to-width/1234
                         this.mode = VIGNETTE_MODES.scale;
                         this.allowUpscaling = true;
-                        this.width = params[1];
+                        this.width = params[1]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'scale-to-width-down':
                         // /scale-to-width-down/1234
                         this.mode = VIGNETTE_MODES.scale;
-                        this.width = params[1];
+                        this.width = params[1]; // eslint-disable-line prefer-destructuring
                         break;
 
                     case 'scale-to-height-down':
                         // /scale-to-height/1234
                         this.mode = VIGNETTE_MODES.scale;
-                        this.height = params[1];
+                        this.height = params[1]; // eslint-disable-line prefer-destructuring
                         break;
 
                     default:
