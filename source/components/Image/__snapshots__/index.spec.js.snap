@@ -3,108 +3,85 @@
 exports[`Disabled lazyLoading 1`] = `
 <Image
   alt="test"
-  className=""
   disableLazy={true}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  srcSet=""
 >
   <img
     alt="test"
     className=""
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
   />
+  <noscript>
+    <img
+      alt="test"
+      className=""
+      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
+    />
+  </noscript>
 </Image>
 `;
 
 exports[`Image test 1`] = `
 <Image
   alt="test"
-  className=""
   disableLazy={false}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  srcSet=""
 >
-  <img
-    alt="test"
-    className="imageview"
+  <ImagePreloader
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  />
-  <img
-    alt="test"
-    className="imageview imageview-full is-hidden"
-    onLoad={[Function]}
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
-  />
+    srcSet={null}
+  >
+    <img
+      alt="test"
+      className=""
+      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205/smart/width/5/height/5"
+    />
+  </ImagePreloader>
   <noscript>
     <img
       alt="test"
       className=""
       src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-      srcSet=""
     />
   </noscript>
 </Image>
 `;
 
-exports[`Mocking a loaded iamge 1`] = `
+exports[`Image test for non-vignette 1`] = `
 <Image
   alt="test"
-  className=""
   disableLazy={false}
-  src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  srcSet=""
+  src="https://foo.jpg"
 >
   <img
     alt="test"
-    className="imageview is-hidden"
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
+    className=""
+    src="https://foo.jpg"
   />
-  <img
-    alt="test"
-    className="imageview imageview-full"
-    onLoad={[Function]}
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
-  />
-  <noscript>
-    <img
-      alt="test"
-      className=""
-      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-      srcSet=""
-    />
-  </noscript>
 </Image>
 `;
 
 exports[`Updating an image src 1`] = `
 <Image
   alt="test"
-  className=""
   disableLazy={false}
   src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  srcSet=""
 >
-  <img
-    alt="test"
-    className="imageview"
+  <ImagePreloader
     src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-  />
-  <img
-    alt="test"
-    className="imageview imageview-full is-hidden"
-    onLoad={[Function]}
-    src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-    srcSet=""
-  />
+    srcSet={null}
+  >
+    <img
+      alt="test"
+      className=""
+      src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205/smart/width/5/height/5"
+    />
+  </ImagePreloader>
   <noscript>
     <img
       alt="test"
       className=""
       src="http://vignette.wikia-dev.us/22b12324-ab36-4266-87c9-452776157205"
-      srcSet=""
     />
   </noscript>
 </Image>

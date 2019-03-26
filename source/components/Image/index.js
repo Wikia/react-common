@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import ImagePreloader from '../ImagePreloader';
-import { isVignetteUrl, VignetteHelper } from '../../utils/vignette';
+import { isVignetteUrl, Vignette } from '../../utils/vignette';
 
 const LAZY_IMAGE_SIZE = 5;
 
@@ -32,14 +32,8 @@ class Image extends React.Component {
     // https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#when-to-use-derived-state
     static getDerivedStateFromProps(props, state) {
         // when only the src changes we are in "limbo" mode
-        if (props.src !== state.src) {
-            return {
-                isLimbo: true,
-            };
-        }
-
         return {
-            isLimbo: false,
+            isLimbo: props.src !== state.src,
         };
     }
 
@@ -59,30 +53,34 @@ class Image extends React.Component {
      * But only from Vignette
      */
     getLowResSrc() {
-        const image = new VignetteHelper(this.props.src);
+        const image = Vignette(this.props.src);
         return image.isOk() ? image.withSmart(LAZY_IMAGE_SIZE, LAZY_IMAGE_SIZE).get() : this.props.src;
     }
 
     renderPlainImage() {
-        const { alt, className, disableLazy, ...rest } = this.props;
-        const { src } = this.state;
+        const { src, alt, className, disableLazy, ...rest } = this.props;
 
         return <img className={classNames(className)} src={src} alt={alt} {...rest} />;
     }
 
     renderVignetteImage() {
-        const { alt, className, disableLazy } = this.props;
+        const { src: _skip1, srcSet: _skip2, alt, className, disableLazy, ...rest } = this.props;
 
         if (disableLazy) {
             return this.renderPlainImage();
         }
 
         return (
-            <ImagePreloader src={this.state.src}>
-                {({ src, state }) => {
-                    const imageSrc = state === ImagePreloader.STATE.SUCCESS ? src : this.getLowResSrc();
+            <ImagePreloader src={this.state.src} srcSet={this.props.srcSet}>
+                {({ src, srcSet, state }) => {
+                    // we will not test the functionality of ImagePreloader here
+                    /* istanbul ignore next */
+                    if (state !== ImagePreloader.STATE.PENDING) {
+                        return <img className={classNames(className)} src={src} srcSet={srcSet} alt={alt} {...rest} />;
+                    }
 
-                    return <img className={classNames(className)} src={imageSrc} alt={alt} />
+                    // if the image is loading, render low quality image
+                    return <img className={classNames(className)} src={this.getLowResSrc()} alt={alt} {...rest} />;
                 }}
             </ImagePreloader>
         );
@@ -106,6 +104,7 @@ class Image extends React.Component {
             );
         }
 
+        // if the image is not a Vignette one, just render it and don't care
         return this.renderPlainImage();
     }
 }

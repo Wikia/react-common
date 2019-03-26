@@ -21,6 +21,10 @@ export function isVignetteId(id) {
     return VIGNETTE_UUID_REGEX.test(id);
 }
 
+export function Vignette(imageUrl) {
+    return new VignetteHelper(imageUrl);
+}
+
 export class VignetteHelper {
     constructor(imageUrl) {
         this.baseImage = undefined;

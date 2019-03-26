@@ -57,6 +57,7 @@
       "Icon",
       "IconSprite",
       "Image",
+      "ImagePreloader",
       "Input",
       "List",
       "Select",

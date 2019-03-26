@@ -5,30 +5,8 @@ Default:
         <Image
             alt="test"
             src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/150"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/100"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/200"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/300"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/500"
-        />
-        <Image
-            alt="test"
-            src="https://static.wikia.nocookie.net/2a6c845c-c6e9-472e-abed-24863817b795/scale-to-width/400"
+            width="160"
+            height="100"
         />
     </React.Fragment>
 ```
