@@ -28,7 +28,6 @@ export { default as Image } from './Image';
 export { default as ImagePreloader } from './ImagePreloader';
 export { default as Input } from './Input';
 export { default as List } from './List';
-export { default as NewAvatar } from './NewAvatar';
 export { default as SimpleLocalNavigation } from './SimpleLocalNavigation';
 export { default as Spinner } from './Spinner';
 export { default as Switch } from './Switch';

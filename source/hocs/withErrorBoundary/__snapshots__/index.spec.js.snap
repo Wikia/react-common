@@ -23,27 +23,24 @@ exports[`Can skip the log and can extract the name 1`] = `
         }
       }
     >
-      <styled.div>
+      <InComponentError__InComponentWrapper>
         <StyledComponent
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "InComponentError__InComponentWrapper-beiyoe-0",
                 "isStatic": true,
-                "lastClassName": "gQXkGF",
+                "lastClassName": "bfOMyj",
                 "rules": Array [
-                  "
-    background: #fff;
-    padding: 10px;
-",
+                  "background:#fff;padding:10px;",
                 ],
               },
-              "displayName": "styled.div",
+              "displayName": "InComponentError__InComponentWrapper",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "InComponentError__InComponentWrapper-beiyoe-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -53,33 +50,26 @@ exports[`Can skip the log and can extract the name 1`] = `
           forwardedRef={null}
         >
           <div
-            className="sc-bdVaJa gQXkGF"
+            className="InComponentError__InComponentWrapper-beiyoe-0 bfOMyj"
           >
-            <styled.h4>
+            <InComponentError__Heading>
               <StyledComponent
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "InComponentError__Heading-beiyoe-1",
                       "isStatic": true,
-                      "lastClassName": "ePWlJX",
+                      "lastClassName": "hymLvr",
                       "rules": Array [
-                        "
-    align-content: center;
-    color: red;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-",
+                        "align-content:center;color:red;display:flex;margin-top:0;margin-bottom:0;padding:10px;",
                       ],
                     },
-                    "displayName": "styled.h4",
+                    "displayName": "InComponentError__Heading",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "InComponentError__Heading-beiyoe-1",
                     "target": "h4",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -89,15 +79,15 @@ exports[`Can skip the log and can extract the name 1`] = `
                 forwardedRef={null}
               >
                 <h4
-                  className="sc-bwzfXH ePWlJX"
+                  className="InComponentError__Heading-beiyoe-1 hymLvr"
                 >
                   Sorry, we’re having trouble displaying this content right now
                 </h4>
               </StyledComponent>
-            </styled.h4>
+            </InComponentError__Heading>
           </div>
         </StyledComponent>
-      </styled.div>
+      </InComponentError__InComponentWrapper>
     </DefaultFallbackComponent>
   </ErrorBoundary>
 </Component>
@@ -126,27 +116,24 @@ exports[`Default empty fallback error boundary 1`] = `
         }
       }
     >
-      <styled.div>
+      <InComponentError__InComponentWrapper>
         <StyledComponent
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "InComponentError__InComponentWrapper-beiyoe-0",
                 "isStatic": true,
-                "lastClassName": "gQXkGF",
+                "lastClassName": "bfOMyj",
                 "rules": Array [
-                  "
-    background: #fff;
-    padding: 10px;
-",
+                  "background:#fff;padding:10px;",
                 ],
               },
-              "displayName": "styled.div",
+              "displayName": "InComponentError__InComponentWrapper",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "InComponentError__InComponentWrapper-beiyoe-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -156,33 +143,26 @@ exports[`Default empty fallback error boundary 1`] = `
           forwardedRef={null}
         >
           <div
-            className="sc-bdVaJa gQXkGF"
+            className="InComponentError__InComponentWrapper-beiyoe-0 bfOMyj"
           >
-            <styled.h4>
+            <InComponentError__Heading>
               <StyledComponent
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "InComponentError__Heading-beiyoe-1",
                       "isStatic": true,
-                      "lastClassName": "ePWlJX",
+                      "lastClassName": "hymLvr",
                       "rules": Array [
-                        "
-    align-content: center;
-    color: red;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-",
+                        "align-content:center;color:red;display:flex;margin-top:0;margin-bottom:0;padding:10px;",
                       ],
                     },
-                    "displayName": "styled.h4",
+                    "displayName": "InComponentError__Heading",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "InComponentError__Heading-beiyoe-1",
                     "target": "h4",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -192,15 +172,15 @@ exports[`Default empty fallback error boundary 1`] = `
                 forwardedRef={null}
               >
                 <h4
-                  className="sc-bwzfXH ePWlJX"
+                  className="InComponentError__Heading-beiyoe-1 hymLvr"
                 >
                   Sorry, we’re having trouble displaying this content right now
                 </h4>
               </StyledComponent>
-            </styled.h4>
+            </InComponentError__Heading>
           </div>
         </StyledComponent>
-      </styled.div>
+      </InComponentError__InComponentWrapper>
     </DefaultFallbackComponent>
   </ErrorBoundary>
 </Component>
@@ -229,27 +209,24 @@ exports[`Default fallback error boundary 1`] = `
         }
       }
     >
-      <styled.div>
+      <InComponentError__InComponentWrapper>
         <StyledComponent
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "InComponentError__InComponentWrapper-beiyoe-0",
                 "isStatic": true,
-                "lastClassName": "gQXkGF",
+                "lastClassName": "bfOMyj",
                 "rules": Array [
-                  "
-    background: #fff;
-    padding: 10px;
-",
+                  "background:#fff;padding:10px;",
                 ],
               },
-              "displayName": "styled.div",
+              "displayName": "InComponentError__InComponentWrapper",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "InComponentError__InComponentWrapper-beiyoe-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -259,33 +236,26 @@ exports[`Default fallback error boundary 1`] = `
           forwardedRef={null}
         >
           <div
-            className="sc-bdVaJa gQXkGF"
+            className="InComponentError__InComponentWrapper-beiyoe-0 bfOMyj"
           >
-            <styled.h4>
+            <InComponentError__Heading>
               <StyledComponent
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "InComponentError__Heading-beiyoe-1",
                       "isStatic": true,
-                      "lastClassName": "ePWlJX",
+                      "lastClassName": "hymLvr",
                       "rules": Array [
-                        "
-    align-content: center;
-    color: red;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-",
+                        "align-content:center;color:red;display:flex;margin-top:0;margin-bottom:0;padding:10px;",
                       ],
                     },
-                    "displayName": "styled.h4",
+                    "displayName": "InComponentError__Heading",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "InComponentError__Heading-beiyoe-1",
                     "target": "h4",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -295,15 +265,15 @@ exports[`Default fallback error boundary 1`] = `
                 forwardedRef={null}
               >
                 <h4
-                  className="sc-bwzfXH ePWlJX"
+                  className="InComponentError__Heading-beiyoe-1 hymLvr"
                 >
                   Sorry, we’re having trouble displaying this content right now
                 </h4>
               </StyledComponent>
-            </styled.h4>
+            </InComponentError__Heading>
           </div>
         </StyledComponent>
-      </styled.div>
+      </InComponentError__InComponentWrapper>
     </DefaultFallbackComponent>
   </ErrorBoundary>
 </Component>
@@ -343,27 +313,24 @@ exports[`Undefined value for fallback should use default fallback 1`] = `
         }
       }
     >
-      <styled.div>
+      <InComponentError__InComponentWrapper>
         <StyledComponent
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-bdVaJa",
+                "componentId": "InComponentError__InComponentWrapper-beiyoe-0",
                 "isStatic": true,
-                "lastClassName": "gQXkGF",
+                "lastClassName": "bfOMyj",
                 "rules": Array [
-                  "
-    background: #fff;
-    padding: 10px;
-",
+                  "background:#fff;padding:10px;",
                 ],
               },
-              "displayName": "styled.div",
+              "displayName": "InComponentError__InComponentWrapper",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-bdVaJa",
+              "styledComponentId": "InComponentError__InComponentWrapper-beiyoe-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -373,33 +340,26 @@ exports[`Undefined value for fallback should use default fallback 1`] = `
           forwardedRef={null}
         >
           <div
-            className="sc-bdVaJa gQXkGF"
+            className="InComponentError__InComponentWrapper-beiyoe-0 bfOMyj"
           >
-            <styled.h4>
+            <InComponentError__Heading>
               <StyledComponent
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "InComponentError__Heading-beiyoe-1",
                       "isStatic": true,
-                      "lastClassName": "ePWlJX",
+                      "lastClassName": "hymLvr",
                       "rules": Array [
-                        "
-    align-content: center;
-    color: red;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-",
+                        "align-content:center;color:red;display:flex;margin-top:0;margin-bottom:0;padding:10px;",
                       ],
                     },
-                    "displayName": "styled.h4",
+                    "displayName": "InComponentError__Heading",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "InComponentError__Heading-beiyoe-1",
                     "target": "h4",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -409,15 +369,15 @@ exports[`Undefined value for fallback should use default fallback 1`] = `
                 forwardedRef={null}
               >
                 <h4
-                  className="sc-bwzfXH ePWlJX"
+                  className="InComponentError__Heading-beiyoe-1 hymLvr"
                 >
                   Sorry, we’re having trouble displaying this content right now
                 </h4>
               </StyledComponent>
-            </styled.h4>
+            </InComponentError__Heading>
           </div>
         </StyledComponent>
-      </styled.div>
+      </InComponentError__InComponentWrapper>
     </DefaultFallbackComponent>
   </ErrorBoundary>
 </Component>

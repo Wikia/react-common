@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import IconAvatar from '../../icons/IconAvatar';
 
 // TODO: Move badge to this directory?
-import Badge from '../Avatar/Badge';
+import Badge from '../../components/Avatar/Badge';
 
 const Wrapper = styled.div`
     display: inline-block;

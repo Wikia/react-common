@@ -11,3 +11,4 @@ rimraf.sync('./models/');
 rimraf.sync('./systems/');
 rimraf.sync('./theme/');
 rimraf.sync('./utils/');
+rimraf.sync('./styled-');

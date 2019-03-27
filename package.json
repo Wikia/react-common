@@ -64,6 +64,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.10.0",
     "concurrently": "^4.1.0",
     "coveralls": "^3.0.2",
     "enzyme": "^3.7.0",
@@ -120,6 +121,7 @@
   "files": [
     "/assets",
     "/components",
+    "/styled-components",
     "/hocs",
     "/hooks",
     "/icons",

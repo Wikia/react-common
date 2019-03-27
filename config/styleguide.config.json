@@ -64,7 +64,6 @@
       "ImagePreloader",
       "Input",
       "List",
-      "NewAvatar",
       "Select",
       "SimpleLocalNavigation",
       "Spinner",
@@ -73,6 +72,13 @@
       "Switch.Wrapper",
       "Timeago",
       "VideoPlayIcon"
+    ]
+  },
+  {
+    "name": "Styled Components",
+    "description": "styled-components",
+    "components": [
+      "Avatar"
     ]
   },
   {

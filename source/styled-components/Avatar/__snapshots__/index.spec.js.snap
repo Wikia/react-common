@@ -6,7 +6,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
   badge="someIncorrectBadgePermission"
   size={30}
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={15.617}
     borderWidth="2px"
     className="user-avatar"
@@ -23,94 +23,39 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "ErcEl",
+            "lastClassName": "dfUuRZ",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -121,7 +66,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa ErcEl"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 dfUuRZ"
       >
         <_default
           className="user-avatar__image"
@@ -142,7 +87,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
         />
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -152,7 +97,7 @@ exports[`Avatar renders with badge 1`] = `
   badge="admin"
   size={30}
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={15.617}
     borderWidth="2px"
     className="user-avatar"
@@ -169,94 +114,39 @@ exports[`Avatar renders with badge 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "ErcEl",
+            "lastClassName": "dfUuRZ",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -267,7 +157,7 @@ exports[`Avatar renders with badge 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa ErcEl"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 dfUuRZ"
       >
         <_default
           className="user-avatar__image"
@@ -299,7 +189,7 @@ exports[`Avatar renders with badge 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -308,7 +198,7 @@ exports[`Avatar renders with default props 1`] = `
   alt="User avatar"
   size={30}
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={15.617}
     borderWidth="2px"
     className="user-avatar"
@@ -325,94 +215,39 @@ exports[`Avatar renders with default props 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "ErcEl",
+            "lastClassName": "dfUuRZ",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -423,7 +258,7 @@ exports[`Avatar renders with default props 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa ErcEl"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 dfUuRZ"
       >
         <_default
           className="user-avatar__image"
@@ -441,7 +276,7 @@ exports[`Avatar renders with default props 1`] = `
         </_default>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -451,7 +286,7 @@ exports[`Avatar renders with link builder 1`] = `
   linkBuilder={[Function]}
   size={30}
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={15.617}
     borderWidth="2px"
     className="user-avatar"
@@ -468,94 +303,39 @@ exports[`Avatar renders with link builder 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "ErcEl",
+            "lastClassName": "dfUuRZ",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -566,7 +346,7 @@ exports[`Avatar renders with link builder 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa ErcEl"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 dfUuRZ"
       >
         <div>
           <_default
@@ -586,7 +366,7 @@ exports[`Avatar renders with link builder 1`] = `
         </div>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -600,7 +380,7 @@ exports[`Avatar renders with props 1`] = `
   src="src"
   title="title"
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={15.617}
     borderWidth="2px"
     className="user-avatar class-name"
@@ -618,94 +398,39 @@ exports[`Avatar renders with props 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "injycr",
+            "lastClassName": "kDqtQO",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -717,7 +442,7 @@ exports[`Avatar renders with props 1`] = `
       title="title"
     >
       <div
-        className="user-avatar class-name sc-bdVaJa injycr"
+        className="user-avatar class-name Avatar__Wrapper-sc-1jh7fda-0 kDqtQO"
         title="title"
       >
         <a
@@ -746,7 +471,7 @@ exports[`Avatar renders with props 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -755,7 +480,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
   alt="User avatar"
   size="50"
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={20.695}
     borderWidth="3px"
     className="user-avatar"
@@ -772,94 +497,39 @@ exports[`Avatar renders with size >= 48px 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "pXtAq",
+            "lastClassName": "iJfHux",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -870,7 +540,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa pXtAq"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 iJfHux"
       >
         <_default
           className="user-avatar__image"
@@ -888,7 +558,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
         </_default>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
 
@@ -897,7 +567,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
   alt="User avatar"
   size="124"
 >
-  <styled.div
+  <Avatar__Wrapper
     badgeSize={39.4836}
     borderWidth="4px"
     className="user-avatar"
@@ -914,94 +584,39 @@ exports[`Avatar renders with size >= 120px 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "Avatar__Wrapper-sc-1jh7fda-0",
             "isStatic": false,
-            "lastClassName": "bOepyc",
+            "lastClassName": "kxPXia",
             "rules": Array [
-              "
-    display: inline-block;
-    height: ",
+              "display:inline-block;height:",
               [Function],
-              ";
-    min-width: ",
+              ";min-width:",
               [Function],
-              ";
-    position: relative;
-    width: ",
+              ";position:relative;width:",
               [Function],
-              ";
-
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
-    }
-
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ",
+              ";a,img,svg{height:100%;width:100%;}.user-avatar__image{border-radius:50%;box-sizing:border-box;display:inline-block;}a{color:#000;&:hover{color:#00acac;}}}img.user-avatar__image{border:",
               [Function],
-              " solid #ccc;
-
-        &:hover {
-            border-color: ",
+              " solid #ccc;&:hover{border-color:",
               [Function],
-              ";
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ",
+              ";}}svg.user-avatar__image{background-color:#fff;fill:#ccc;&:hover{fill:",
               [Function],
-              ";
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ",
+              ";}}.wds-avatar__badge{height:",
               [Function],
-              ";
-        left: ",
+              ";left:",
               [Function],
-              ";
-        line-height: 0;
-        min-width: ",
+              ";line-height:0;min-width:",
               [Function],
-              ";
-        position: absolute;
-        top: ",
+              ";position:absolute;top:",
               [Function],
-              ";
-        width: ",
+              ";width:",
               [Function],
-              ";
-    }
-",
+              ";}",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "Avatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1012,7 +627,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
       hasLink={false}
     >
       <div
-        className="user-avatar sc-bdVaJa bOepyc"
+        className="user-avatar Avatar__Wrapper-sc-1jh7fda-0 kxPXia"
       >
         <_default
           className="user-avatar__image"
@@ -1030,6 +645,6 @@ exports[`Avatar renders with size >= 120px 1`] = `
         </_default>
       </div>
     </StyledComponent>
-  </styled.div>
+  </Avatar__Wrapper>
 </Avatar>
 `;
