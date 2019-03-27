@@ -9,7 +9,6 @@ module.exports = {
         'systems',
         'assets',
         'icons',
-        'styled-components',
     ],
     sourceFiles: [
         'theme/breakpoints.js',

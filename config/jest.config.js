@@ -12,8 +12,8 @@ module.exports = {
     collectCoverage: true,
     collectCoverageFrom: [
         'source/components/**/*.js',
-        'source/styled-components/**/*.js',
         'source/hocs/**/*.js',
+        'source/hooks/**/*.js',
         'source/systems/**/*.js',
         'source/**/*.spec.js',
     ],

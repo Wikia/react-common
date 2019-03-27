@@ -42,6 +42,7 @@
     "description": "React components",
     "components": [
       "Avatar",
+      "AvatarStyled",
       "AvatarStack",
       "BannerNotification",
       "BannerNotifications",
@@ -72,13 +73,6 @@
       "Switch.Wrapper",
       "Timeago",
       "VideoPlayIcon"
-    ]
-  },
-  {
-    "name": "Styled Components",
-    "description": "styled-components",
-    "styledComponents": [
-      "StyledAvatar"
     ]
   },
   {

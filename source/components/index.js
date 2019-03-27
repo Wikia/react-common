@@ -6,6 +6,7 @@
 
 // Components
 export { default as Avatar } from './Avatar';
+export { default as AvatarStyled } from './AvatarStyled';
 export { default as AvatarStack } from './AvatarStack';
 export { default as BannerNotification } from './BannerNotification';
 export { default as BannerNotifications } from './BannerNotifications';

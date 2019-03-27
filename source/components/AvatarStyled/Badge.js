@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import BadgeComponent from '../../components/Avatar/Badge';
+import BadgeComponent from '../Avatar/Badge';
 
 const Badge = styled(BadgeComponent)`
     height: ${props => `${props.size}px`};

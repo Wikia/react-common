@@ -121,7 +121,6 @@
   "files": [
     "/assets",
     "/components",
-    "/styled-components",
     "/hocs",
     "/hooks",
     "/icons",
