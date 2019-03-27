@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders when incorrect badgePermission is set 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="someIncorrectBadgePermission"
+  size={30}
+>
+  <styled.div
+    badgeSize={15.617}
+    borderWidth="2px"
+    className="user-avatar"
+    diameter={30}
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={15.617}
+      borderWidth="2px"
+      className="user-avatar"
+      diameter={30}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "ErcEl",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa ErcEl"
+      >
+        <_default
+          className="user-avatar__image"
+          title="User avatar"
+        >
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <div
+              className="user-avatar__image"
+              title="User avatar"
+            />
+          </_default>
+        </_default>
+        <Badge
+          badge="someIncorrectBadgePermission"
+        />
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;
+
+exports[`Avatar renders with badge 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="admin"
+  size={30}
+>
+  <styled.div
+    badgeSize={15.617}
+    borderWidth="2px"
+    className="user-avatar"
+    diameter={30}
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={15.617}
+      borderWidth="2px"
+      className="user-avatar"
+      diameter={30}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "ErcEl",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa ErcEl"
+      >
+        <_default
+          className="user-avatar__image"
+          title="User avatar"
+        >
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <div
+              className="user-avatar__image"
+              title="User avatar"
+            />
+          </_default>
+        </_default>
+        <Badge
+          badge="admin"
+        >
+          <span
+            className="wds-avatar__badge"
+            title="Community Admin"
+          >
+            <_default>
+              <_default>
+                <div />
+              </_default>
+            </_default>
+          </span>
+        </Badge>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;
+
+exports[`Avatar renders with default props 1`] = `
+<Avatar
+  alt="User avatar"
+  size={30}
+>
+  <styled.div
+    badgeSize={15.617}
+    borderWidth="2px"
+    className="user-avatar"
+    diameter={30}
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={15.617}
+      borderWidth="2px"
+      className="user-avatar"
+      diameter={30}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "ErcEl",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa ErcEl"
+      >
+        <_default
+          className="user-avatar__image"
+          title="User avatar"
+        >
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <div
+              className="user-avatar__image"
+              title="User avatar"
+            />
+          </_default>
+        </_default>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;
+
+exports[`Avatar renders with link builder 1`] = `
+<Avatar
+  alt="User avatar"
+  linkBuilder={[Function]}
+  size={30}
+>
+  <styled.div
+    badgeSize={15.617}
+    borderWidth="2px"
+    className="user-avatar"
+    diameter={30}
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={15.617}
+      borderWidth="2px"
+      className="user-avatar"
+      diameter={30}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "ErcEl",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa ErcEl"
+      >
+        <div>
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <_default
+              className="user-avatar__image"
+              title="User avatar"
+            >
+              <div
+                className="user-avatar__image"
+                title="User avatar"
+              />
+            </_default>
+          </_default>
+        </div>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;
+
+exports[`Avatar renders with props 1`] = `
+<Avatar
+  alt="alt"
+  badge="admin"
+  className="class-name"
+  href="href"
+  size={30}
+  src="src"
+  title="title"
+>
+  <styled.div
+    badgeSize={15.617}
+    borderWidth="2px"
+    className="user-avatar class-name"
+    diameter={30}
+    hasLink={true}
+    title="title"
+  >
+    <StyledComponent
+      badgeSize={15.617}
+      borderWidth="2px"
+      className="user-avatar class-name"
+      diameter={30}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "injycr",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={true}
+      title="title"
+    >
+      <div
+        className="user-avatar class-name sc-bdVaJa injycr"
+        title="title"
+      >
+        <a
+          href="href"
+        >
+          <img
+            alt="alt"
+            className="user-avatar__image"
+            src="src"
+            title="alt"
+          />
+        </a>
+        <Badge
+          badge="admin"
+        >
+          <span
+            className="wds-avatar__badge"
+            title="Community Admin"
+          >
+            <_default>
+              <_default>
+                <div />
+              </_default>
+            </_default>
+          </span>
+        </Badge>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;

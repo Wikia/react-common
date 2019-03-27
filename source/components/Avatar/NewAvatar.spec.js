@@ -4,6 +4,15 @@ import sinon from 'sinon';
 
 import Avatar from './NewAvatar';
 
+// eslint-disable-next-line jest/no-hooks
+beforeEach(() => {
+    // Mock `fetch`
+    const fetchResponse = { value: 'avatar_url' };
+    global.fetch = jest.fn().mockImplementation(() => Promise.resolve({ json: () => fetchResponse, value: 'avatar_url' }));
+    // Mock `Response.json()`
+//    jest.spyOn(Object.prototype, 'json').mockImplementation(obj => obj);
+});
+
 test('Avatar renders with default props', () => {
     const component = mount(<Avatar />);
     expect(component).toMatchSnapshot();
@@ -51,9 +60,7 @@ test('Avatar image is fetched when given userId prop', () => {
     const props = {
         userId,
     };
-    jest.spyOn(global, 'fetch').mockImplementation(() => { throw new Error('nothing'); });
-    global.console.error = jest.fn();
-    mount(<Avatar {...props} />);
-
+    const wrapper = mount(<Avatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
+    expect(wrapper.state('imageSrc')).toBe('avatar_url');
 });

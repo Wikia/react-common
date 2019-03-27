@@ -151,7 +151,7 @@ Avatar.propTypes = {
     /** Title attribute for avatar */
     title: PropTypes.string,
     /** Optional user ID to fetch avatar for, if `src` prop is not provided */
-    userId: PropTypes.string,
+    userId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 Avatar.defaultProps = {
