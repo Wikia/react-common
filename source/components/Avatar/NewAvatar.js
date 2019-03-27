@@ -23,6 +23,12 @@ const Wrapper = styled.div`
         width: 100%;
     }
 
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
     a {
         color: #000;
 
@@ -32,8 +38,7 @@ const Wrapper = styled.div`
         }
     }
 
-    img {
-        border-radius: 50%;
+    img.user-avatar__image {
         border: ${props => props.borderWidth} solid #ccc;
 
         &:hover {
@@ -41,22 +46,23 @@ const Wrapper = styled.div`
         }
     }
 
-    svg {
+    svg.user-avatar__image {
         background-color: #fff;
-        fill: #333;
+        fill: #ccc;
 
         &:hover {
-            fill: ${props => (props.hasLink ? '#00acac' : '#333')};
+            fill: ${props => (props.hasLink ? '#00acac' : '#ccc')};
         }
     }
 
     .wds-avatar__badge {
         height: ${props => `${props.badgeSize}px`};
-        min-width: ${props => `${props.badgeSize}px`};
-        width: ${props => `${props.badgeSize}px`};
-
         left: ${props => `${-1 * props.badgeSize / (props.diameter > 48 ? 4.5 : 3.5)}px`};
+        line-height: 0;
+        min-width: ${props => `${props.badgeSize}px`};
+        position: absolute;
         top: ${props => `${-1 * props.badgeSize / (props.diameter > 48 ? 3.5 : 2.5)}px`};
+        width: ${props => `${props.badgeSize}px`};
     }
 `;
 
@@ -96,7 +102,7 @@ class Avatar extends React.Component {
         const className = 'user-avatar__image';
         const avatarImage = src
             ? <img src={src} alt={alt} title={alt} className={className} />
-            : <IconAvatar className="user-avatar__image" title={className} />;
+            : <IconAvatar className="user-avatar__image" title={alt} />;
 
         if (linkBuilder) {
             return linkBuilder(avatarImage);
