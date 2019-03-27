@@ -10,8 +10,6 @@ beforeEach(() => {
     // Mock `fetch`
     const fetchResponse = { value: 'avatar_url' };
     global.fetch = jest.fn().mockImplementation(() => Promise.resolve({ json: () => fetchResponse, value: 'avatar_url' }));
-    // Mock `Response.json()`
-//    jest.spyOn(Object.prototype, 'json').mockImplementation(obj => obj);
 });
 
 test('Avatar renders with default props', () => {
