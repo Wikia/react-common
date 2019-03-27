@@ -22,6 +22,7 @@ function getSections() {
         content,
         items,
         components,
+        styledComponents,
         directory,
         description,
         sections,
@@ -37,6 +38,12 @@ function getSections() {
         if (components) {
             section.components = () => components.map(
                 componentName => resolve('../source/components', componentName, 'index.js')
+            );
+        }
+
+        if (styledComponents) {
+            section.components = () => styledComponents.map(
+                componentName => resolve('../source/styled-components', componentName, 'index.js')
             );
         }
 

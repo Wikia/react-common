@@ -77,7 +77,7 @@
   {
     "name": "Styled Components",
     "description": "styled-components",
-    "components": [
+    "styledComponents": [
       "Avatar"
     ]
   },

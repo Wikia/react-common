@@ -19,8 +19,13 @@ test('Avatar renders with default props', () => {
     expect(component).toMatchSnapshot();
 });
 
+test('Avatar renders with size 30px', () => {
+    const component = mount(<Avatar size="30" badge="admin" />);
+    expect(component).toMatchSnapshot();
+});
+
 test('Avatar renders with size >= 48px', () => {
-    const component = mount(<Avatar size="50" />);
+    const component = mount(<Avatar size="50" badge="admin" />);
     expect(component).toMatchSnapshot();
 });
 
@@ -70,6 +75,21 @@ test('Avatar image is fetched when given userId prop', async () => {
     const userId = 123;
     const props = {
         userId,
+    };
+    const wrapper = mount(<Avatar {...props} />);
+    expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
+
+    // wait 0ms (resolve promise in fetch in componentDidMount)
+    await wait(0);
+
+    expect(wrapper.state('imageSrc')).toBe('avatar_url');
+});
+
+test('Avatar image is fetched when given userId prop (and href)', async () => {
+    const userId = 123;
+    const props = {
+        userId,
+        href: 'http://example.com',
     };
     const wrapper = mount(<Avatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);

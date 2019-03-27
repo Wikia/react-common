@@ -1,131 +1,85 @@
-/**
- * This is a self-contained replacement for the Avatar component. Eventually
- * we should delete the old Avatar and replace its usage (in fepo) with this component.
- */
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import styled from 'styled-components';
 
-import IconAvatar from '../../icons/IconAvatar';
+import Badge from './Badge';
+import DefaultAvatar from './DefaultAvatar';
+import UserAvatar from './UserAvatar';
 
-// TODO: Move badge to this directory?
-import Badge from '../../components/Avatar/Badge';
+function getBorderWidth(size) {
+    const diameter = parseInt(size, 10);
+    let borderWidth = 2;
+    if (diameter >= 48) {
+        borderWidth = 3;
+    }
+    if (diameter >= 120) {
+        borderWidth = 4;
+    }
+    return `${borderWidth}px`;
+}
+
+function getBadgeSize(size) {
+    return (0.2539 * parseInt(size, 10)) + 8;
+}
+
+const Link = styled.a`
+    color: #000;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+        color: #00acac;
+    }
+`;
 
 const Wrapper = styled.div`
     display: inline-block;
-    height: ${props => `${props.diameter}px`};
-    min-width: ${props => `${props.diameter}px`};
+    height: ${props => `${props.size}px`};
+    min-width: ${props => `${props.size}px`};
     position: relative;
-    width: ${props => `${props.diameter}px`};
+    width: ${props => `${props.size}px`};
 
-    a,
-    img,
-    svg {
-        height: 100%;
-        width: 100%;
+    ${Link} ${DefaultAvatar}:hover {
+        fill: ${props => (props.href ? '#00acac' : '#ccc')};
     }
 
-    .user-avatar__image {
-        border-radius: 50%;
-        box-sizing: border-box;
-        display: inline-block;
-    }
-
-    a {
-        color: #000;
-
-            &:hover {
-                color: #00acac;
-            }
-        }
-    }
-
-    img.user-avatar__image {
-        border: ${props => props.borderWidth} solid #ccc;
-
-        &:hover {
-            border-color: ${props => (props.hasLink ? '#00acac' : '#ccc')};
-        }
-    }
-
-    svg.user-avatar__image {
-        background-color: #fff;
-        fill: #ccc;
-
-        &:hover {
-            fill: ${props => (props.hasLink ? '#00acac' : '#ccc')};
-        }
-    }
-
-    .wds-avatar__badge {
-        height: ${props => `${props.badgeSize}px`};
-        left: ${props => `${-1 * props.badgeSize / (props.diameter > 48 ? 4.5 : 3.5)}px`};
-        line-height: 0;
-        min-width: ${props => `${props.badgeSize}px`};
-        position: absolute;
-        top: ${props => `${-1 * props.badgeSize / (props.diameter > 48 ? 3.5 : 2.5)}px`};
-        width: ${props => `${props.badgeSize}px`};
+    ${Link} ${UserAvatar}:hover {
+        border-color: ${props => (props.href ? '#00acac' : '#ccc')};
     }
 `;
 
 class Avatar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            imageSrc: props.src,
-        };
-    }
+    state = {
+        imageSrc: this.props.src,
+    };
 
     componentDidMount() {
-        if (!this.state.imageSrc) {
+        if (!this.state.imageSrc && this.props.userId) {
             fetch(`https://services.wikia.com/user-attribute/user/${this.props.userId}/attr/avatar`)
                 .then(response => response.json())
                 .then(data => this.setState({ imageSrc: data.value }));
         }
     }
 
-    getBorderWidth() {
-        const diameter = parseInt(this.props.size, 10);
-        let borderWidth = 2;
-        if (diameter >= 48) {
-            borderWidth = 3;
-        }
-        if (diameter >= 120) {
-            borderWidth = 4;
-        }
-        return `${borderWidth}px`;
-    }
+    renderAvatarImage() {
+        const borderWidth = getBorderWidth(this.props.size);
+        const { alt } = this.props;
+        const avatarImage = this.state.imageSrc
+            ? <UserAvatar borderWidth={borderWidth} src={this.state.imageSrc} alt={alt} title={alt} />
+            : <DefaultAvatar borderWidth={borderWidth} alt={alt} title={alt} />;
 
-    getBadgeSize() {
-        return (0.2539 * parseInt(this.props.size, 10)) + 8;
-    }
-
-    getAvatarImage(href, alt, src, linkBuilder) {
-        const className = 'user-avatar__image';
-        const avatarImage = src
-            ? <img src={src} alt={alt} title={alt} className={className} />
-            : <IconAvatar className="user-avatar__image" title={alt} />;
-
-        if (linkBuilder) {
-            return linkBuilder(avatarImage);
+        if (this.props.linkBuilder) {
+            return this.props.linkBuilder(avatarImage);
         }
 
-        return href ? <a href={href}>{avatarImage}</a> : avatarImage;
+        return this.props.href ? <Link href={this.props.href}>{avatarImage}</Link> : avatarImage;
     }
 
     render() {
         return (
-            <Wrapper
-                badgeSize={this.getBadgeSize()}
-                borderWidth={this.getBorderWidth()}
-                className={classNames('user-avatar', this.props.className)}
-                hasLink={!!this.props.href}
-                diameter={this.props.size}
-                title={this.props.title}
-            >
-                {this.getAvatarImage(this.props.href, this.props.alt, this.state.imageSrc, this.props.linkBuilder)}
-                {this.props.badge && <Badge badge={this.props.badge} />}
+            <Wrapper title={this.props.title} size={this.props.size} href={this.props.href}>
+                {this.renderAvatarImage()}
+                {this.props.badge && <Badge badge={this.props.badge} diameter={this.props.size} size={getBadgeSize(this.props.size)} />}
             </Wrapper>
         );
     }
@@ -141,13 +95,11 @@ Avatar.propTypes = {
             'global-discussions-moderator', 'helper', 'staff', 'vstf', '',
         ],
     ),
-    /** Additional class name */
-    className: PropTypes.string,
     /** Link to user's profile */
     href: PropTypes.string,
     /** Function that returns wrapped avatar image, accepts one argument avatarImage which provides the actual avatar image */
     linkBuilder: PropTypes.func,
-    /** Diameter of avatar in px */
+    /** Size of avatar in px */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     /** Image src for avatar */
     src: PropTypes.string,
@@ -160,10 +112,9 @@ Avatar.propTypes = {
 Avatar.defaultProps = {
     alt: 'User avatar',
     badge: undefined,
-    className: undefined,
     href: undefined,
     linkBuilder: undefined,
-    size: 30,
+    size: 48,
     src: undefined,
     title: undefined,
     userId: undefined,

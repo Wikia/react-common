@@ -9,7 +9,7 @@ import AvatarBadgeHelper from '../../assets/AvatarBadgeHelper';
 import AvatarBadgeStaff from '../../assets/AvatarBadgeStaff';
 import AvatarBadgeVstf from '../../assets/AvatarBadgeVstf';
 
-const Badge = ({ badge }) => {
+const Badge = ({ badge, className }) => {
     const badgeIcons = {
         admin: {
             icon: <AvatarBadgeAdmin />,
@@ -44,7 +44,7 @@ const Badge = ({ badge }) => {
 
     return (badgeIcon
         ? (
-            <span title={badgeIcon.title} className="wds-avatar__badge">
+            <span title={badgeIcon.title} className={`wds-avatar__badge ${className}`}>
                 {badgeIcon.icon}
             </span>
         ) : null
@@ -53,10 +53,12 @@ const Badge = ({ badge }) => {
 
 Badge.propTypes = {
     badge: PropTypes.string,
+    className: PropTypes.string,
 };
 
 Badge.defaultProps = {
     badge: undefined,
+    className: '',
 };
 
 export default Badge;

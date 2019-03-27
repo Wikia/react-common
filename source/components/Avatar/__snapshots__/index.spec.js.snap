@@ -28,6 +28,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
     </AvatarImage>
     <Badge
       badge="someIncorrectBadgePermission"
+      className=""
     />
   </div>
 </Avatar>
@@ -61,9 +62,10 @@ exports[`Avatar renders with badge 1`] = `
     </AvatarImage>
     <Badge
       badge="admin"
+      className=""
     >
       <span
-        className="wds-avatar__badge"
+        className="wds-avatar__badge "
         title="Community Admin"
       >
         <_default>
@@ -168,9 +170,10 @@ exports[`Avatar renders with props 1`] = `
     </a>
     <Badge
       badge="admin"
+      className=""
     >
       <span
-        className="wds-avatar__badge"
+        className="wds-avatar__badge "
         title="Community Admin"
       >
         <_default>
