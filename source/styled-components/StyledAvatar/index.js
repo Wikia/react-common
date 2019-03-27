@@ -48,7 +48,7 @@ const Wrapper = styled.div`
     }
 `;
 
-class Avatar extends React.Component {
+class StyledAvatar extends React.Component {
     state = {
         imageSrc: this.props.src,
     };
@@ -79,13 +79,13 @@ class Avatar extends React.Component {
         return (
             <Wrapper title={this.props.title} size={this.props.size} href={this.props.href}>
                 {this.renderAvatarImage()}
-                {this.props.badge && <Badge badge={this.props.badge} diameter={this.props.size} size={getBadgeSize(this.props.size)} />}
+                {this.props.badge && <Badge badge={this.props.badge} diameter={parseInt(this.props.size, 10)} size={getBadgeSize(this.props.size)} />}
             </Wrapper>
         );
     }
 }
 
-Avatar.propTypes = {
+StyledAvatar.propTypes = {
     /** Alt text for avatar */
     alt: PropTypes.string,
     /** Badge to display for avatar. */
@@ -109,7 +109,7 @@ Avatar.propTypes = {
     userId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-Avatar.defaultProps = {
+StyledAvatar.defaultProps = {
     alt: 'User avatar',
     badge: undefined,
     href: undefined,
@@ -120,4 +120,4 @@ Avatar.defaultProps = {
     userId: undefined,
 };
 
-export default Avatar;
+export default StyledAvatar;

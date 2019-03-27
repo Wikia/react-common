@@ -78,7 +78,7 @@
     "name": "Styled Components",
     "description": "styled-components",
     "styledComponents": [
-      "Avatar"
+      "StyledAvatar"
     ]
   },
   {

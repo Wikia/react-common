@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders when incorrect badgePermission is set 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   badge="someIncorrectBadgePermission"
   size={48}
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size={48}
   >
     <StyledComponent
@@ -15,9 +15,9 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "hMhJiW",
+            "lastClassName": "cTuOwQ",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -26,24 +26,24 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -54,7 +54,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
       size={48}
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 hMhJiW"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 cTuOwQ"
         size={48}
       >
         <DefaultAvatar
@@ -72,9 +72,9 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -85,7 +85,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -99,22 +99,22 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -137,9 +137,9 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-12twjj0-0",
+                  "componentId": "Badge-sc-1whp6kt-0",
                   "isStatic": false,
-                  "lastClassName": "grktSh",
+                  "lastClassName": "bXVqVr",
                   "rules": Array [
                     "height:",
                     [Function],
@@ -165,7 +165,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                   "size": [Function],
                 },
                 "render": [Function],
-                "styledComponentId": "Badge-sc-12twjj0-0",
+                "styledComponentId": "Badge-sc-1whp6kt-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -178,7 +178,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
           >
             <Badge
               badge="someIncorrectBadgePermission"
-              className="Badge-sc-12twjj0-0 grktSh"
+              className="Badge-sc-1whp6kt-0 bXVqVr"
               diameter={48}
               size={20.1872}
             />
@@ -186,17 +186,17 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with badge 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   badge="admin"
   size={48}
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size={48}
   >
     <StyledComponent
@@ -205,9 +205,9 @@ exports[`Avatar renders with badge 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "hMhJiW",
+            "lastClassName": "cTuOwQ",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -216,24 +216,24 @@ exports[`Avatar renders with badge 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -244,7 +244,7 @@ exports[`Avatar renders with badge 1`] = `
       size={48}
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 hMhJiW"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 cTuOwQ"
         size={48}
       >
         <DefaultAvatar
@@ -262,9 +262,9 @@ exports[`Avatar renders with badge 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -275,7 +275,7 @@ exports[`Avatar renders with badge 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -289,22 +289,22 @@ exports[`Avatar renders with badge 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -327,9 +327,9 @@ exports[`Avatar renders with badge 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-12twjj0-0",
+                  "componentId": "Badge-sc-1whp6kt-0",
                   "isStatic": false,
-                  "lastClassName": "grktSh",
+                  "lastClassName": "bXVqVr",
                   "rules": Array [
                     "height:",
                     [Function],
@@ -355,7 +355,7 @@ exports[`Avatar renders with badge 1`] = `
                   "size": [Function],
                 },
                 "render": [Function],
-                "styledComponentId": "Badge-sc-12twjj0-0",
+                "styledComponentId": "Badge-sc-1whp6kt-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -368,12 +368,12 @@ exports[`Avatar renders with badge 1`] = `
           >
             <Badge
               badge="admin"
-              className="Badge-sc-12twjj0-0 grktSh"
+              className="Badge-sc-1whp6kt-0 bXVqVr"
               diameter={48}
               size={20.1872}
             >
               <span
-                className="wds-avatar__badge Badge-sc-12twjj0-0 grktSh"
+                className="wds-avatar__badge Badge-sc-1whp6kt-0 bXVqVr"
                 title="Community Admin"
               >
                 <_default>
@@ -387,16 +387,16 @@ exports[`Avatar renders with badge 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with default props 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   size={48}
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size={48}
   >
     <StyledComponent
@@ -405,9 +405,9 @@ exports[`Avatar renders with default props 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "hMhJiW",
+            "lastClassName": "cTuOwQ",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -416,24 +416,24 @@ exports[`Avatar renders with default props 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -444,7 +444,7 @@ exports[`Avatar renders with default props 1`] = `
       size={48}
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 hMhJiW"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 cTuOwQ"
         size={48}
       >
         <DefaultAvatar
@@ -462,9 +462,9 @@ exports[`Avatar renders with default props 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -475,7 +475,7 @@ exports[`Avatar renders with default props 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -489,22 +489,22 @@ exports[`Avatar renders with default props 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -514,17 +514,17 @@ exports[`Avatar renders with default props 1`] = `
         </DefaultAvatar>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with link builder 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   linkBuilder={[Function]}
   size={48}
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size={48}
   >
     <StyledComponent
@@ -533,9 +533,9 @@ exports[`Avatar renders with link builder 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "hMhJiW",
+            "lastClassName": "cTuOwQ",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -544,24 +544,24 @@ exports[`Avatar renders with link builder 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -572,7 +572,7 @@ exports[`Avatar renders with link builder 1`] = `
       size={48}
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 hMhJiW"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 cTuOwQ"
         size={48}
       >
         <div>
@@ -591,9 +591,9 @@ exports[`Avatar renders with link builder 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-puc6xj-0",
+                    "componentId": "DefaultAvatar-sc-14cfqol-0",
                     "isStatic": true,
-                    "lastClassName": "ctvFRB",
+                    "lastClassName": "jiEbzv",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                     ],
@@ -604,7 +604,7 @@ exports[`Avatar renders with link builder 1`] = `
                   "displayName": "DefaultAvatar",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "DefaultAvatar-puc6xj-0",
+                  "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                   "target": [Function],
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -618,22 +618,22 @@ exports[`Avatar renders with link builder 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-puc6xj-0 ctvFRB"
+                      className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                       title="User avatar"
                     />
                   </_default>
@@ -644,12 +644,12 @@ exports[`Avatar renders with link builder 1`] = `
         </div>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with props 1`] = `
-<Avatar
+<StyledAvatar
   alt="alt"
   badge="admin"
   className="class-name"
@@ -658,7 +658,7 @@ exports[`Avatar renders with props 1`] = `
   src="src"
   title="title"
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     href="href"
     size={48}
     title="title"
@@ -669,9 +669,9 @@ exports[`Avatar renders with props 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "kHAlun",
+            "lastClassName": "idjrFh",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -680,24 +680,24 @@ exports[`Avatar renders with props 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -710,12 +710,12 @@ exports[`Avatar renders with props 1`] = `
       title="title"
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 kHAlun"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 idjrFh"
         href="href"
         size={48}
         title="title"
       >
-        <Avatar__Link
+        <StyledAvatar__Link
           href="href"
         >
           <StyledComponent
@@ -724,17 +724,17 @@ exports[`Avatar renders with props 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Avatar__Link-sc-1jh7fda-0",
+                  "componentId": "StyledAvatar__Link-sc-1q6qp9k-0",
                   "isStatic": true,
-                  "lastClassName": "itobjK",
+                  "lastClassName": "bxAytd",
                   "rules": Array [
                     "color:#000;height:100%;width:100%;&:hover{color:#00acac;}",
                   ],
                 },
-                "displayName": "Avatar__Link",
+                "displayName": "StyledAvatar__Link",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "Avatar__Link-sc-1jh7fda-0",
+                "styledComponentId": "StyledAvatar__Link-sc-1q6qp9k-0",
                 "target": "a",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -745,7 +745,7 @@ exports[`Avatar renders with props 1`] = `
             href="href"
           >
             <a
-              className="Avatar__Link-sc-1jh7fda-0 itobjK"
+              className="StyledAvatar__Link-sc-1q6qp9k-0 bxAytd"
               href="href"
             >
               <UserAvatar
@@ -764,9 +764,9 @@ exports[`Avatar renders with props 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "UserAvatar-yszxdr-0",
+                        "componentId": "UserAvatar-sc-1jmhmvx-0",
                         "isStatic": false,
-                        "lastClassName": "wxMeK",
+                        "lastClassName": "btAFqq",
                         "rules": Array [
                           "height:100%;width:100%;border-radius:50%;box-sizing:border-box;display:inline-block;border:",
                           [Function],
@@ -785,7 +785,7 @@ exports[`Avatar renders with props 1`] = `
                         "title": [Function],
                       },
                       "render": [Function],
-                      "styledComponentId": "UserAvatar-yszxdr-0",
+                      "styledComponentId": "UserAvatar-sc-1jmhmvx-0",
                       "target": [Function],
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -800,13 +800,13 @@ exports[`Avatar renders with props 1`] = `
                   <Component
                     alt="alt"
                     borderWidth="3px"
-                    className="UserAvatar-yszxdr-0 wxMeK"
+                    className="UserAvatar-sc-1jmhmvx-0 btAFqq"
                     src="src"
                     title="alt"
                   >
                     <img
                       alt="alt"
-                      className="UserAvatar-yszxdr-0 wxMeK"
+                      className="UserAvatar-sc-1jmhmvx-0 btAFqq"
                       src="src"
                       title="alt"
                     />
@@ -815,7 +815,7 @@ exports[`Avatar renders with props 1`] = `
               </UserAvatar>
             </a>
           </StyledComponent>
-        </Avatar__Link>
+        </StyledAvatar__Link>
         <Badge
           badge="admin"
           className=""
@@ -831,9 +831,9 @@ exports[`Avatar renders with props 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-12twjj0-0",
+                  "componentId": "Badge-sc-1whp6kt-0",
                   "isStatic": false,
-                  "lastClassName": "grktSh",
+                  "lastClassName": "bXVqVr",
                   "rules": Array [
                     "height:",
                     [Function],
@@ -859,7 +859,7 @@ exports[`Avatar renders with props 1`] = `
                   "size": [Function],
                 },
                 "render": [Function],
-                "styledComponentId": "Badge-sc-12twjj0-0",
+                "styledComponentId": "Badge-sc-1whp6kt-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -872,12 +872,12 @@ exports[`Avatar renders with props 1`] = `
           >
             <Badge
               badge="admin"
-              className="Badge-sc-12twjj0-0 grktSh"
+              className="Badge-sc-1whp6kt-0 bXVqVr"
               diameter={48}
               size={20.1872}
             >
               <span
-                className="wds-avatar__badge Badge-sc-12twjj0-0 grktSh"
+                className="wds-avatar__badge Badge-sc-1whp6kt-0 bXVqVr"
                 title="Community Admin"
               >
                 <_default>
@@ -891,17 +891,17 @@ exports[`Avatar renders with props 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with size >= 48px 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   badge="admin"
   size="50"
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size="50"
   >
     <StyledComponent
@@ -910,9 +910,9 @@ exports[`Avatar renders with size >= 48px 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "jUIsOl",
+            "lastClassName": "jfJkPZ",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -921,24 +921,24 @@ exports[`Avatar renders with size >= 48px 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -949,7 +949,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
       size="50"
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 jUIsOl"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 jfJkPZ"
         size="50"
       >
         <DefaultAvatar
@@ -967,9 +967,9 @@ exports[`Avatar renders with size >= 48px 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -980,7 +980,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -994,22 +994,22 @@ exports[`Avatar renders with size >= 48px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -1020,21 +1020,21 @@ exports[`Avatar renders with size >= 48px 1`] = `
         <Badge
           badge="admin"
           className=""
-          diameter="50"
+          diameter={50}
           size={20.695}
         >
           <StyledComponent
             badge="admin"
             className=""
-            diameter="50"
+            diameter={50}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-12twjj0-0",
+                  "componentId": "Badge-sc-1whp6kt-0",
                   "isStatic": false,
-                  "lastClassName": "dCvRfU",
+                  "lastClassName": "gNfyn",
                   "rules": Array [
                     "height:",
                     [Function],
@@ -1060,7 +1060,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
                   "size": [Function],
                 },
                 "render": [Function],
-                "styledComponentId": "Badge-sc-12twjj0-0",
+                "styledComponentId": "Badge-sc-1whp6kt-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1073,12 +1073,12 @@ exports[`Avatar renders with size >= 48px 1`] = `
           >
             <Badge
               badge="admin"
-              className="Badge-sc-12twjj0-0 dCvRfU"
-              diameter="50"
+              className="Badge-sc-1whp6kt-0 gNfyn"
+              diameter={50}
               size={20.695}
             >
               <span
-                className="wds-avatar__badge Badge-sc-12twjj0-0 dCvRfU"
+                className="wds-avatar__badge Badge-sc-1whp6kt-0 gNfyn"
                 title="Community Admin"
               >
                 <_default>
@@ -1092,16 +1092,16 @@ exports[`Avatar renders with size >= 48px 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with size >= 120px 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   size="124"
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size="124"
   >
     <StyledComponent
@@ -1110,9 +1110,9 @@ exports[`Avatar renders with size >= 120px 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "cPMvcg",
+            "lastClassName": "fnbnyA",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -1121,24 +1121,24 @@ exports[`Avatar renders with size >= 120px 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1149,7 +1149,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
       size="124"
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 cPMvcg"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 fnbnyA"
         size="124"
       >
         <DefaultAvatar
@@ -1167,9 +1167,9 @@ exports[`Avatar renders with size >= 120px 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -1180,7 +1180,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1194,22 +1194,22 @@ exports[`Avatar renders with size >= 120px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="4px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -1219,17 +1219,17 @@ exports[`Avatar renders with size >= 120px 1`] = `
         </DefaultAvatar>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
 
 exports[`Avatar renders with size 30px 1`] = `
-<Avatar
+<StyledAvatar
   alt="User avatar"
   badge="admin"
   size="30"
 >
-  <Avatar__Wrapper
+  <StyledAvatar__Wrapper
     size="30"
   >
     <StyledComponent
@@ -1238,9 +1238,9 @@ exports[`Avatar renders with size 30px 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "Avatar__Wrapper-sc-1jh7fda-1",
+            "componentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
             "isStatic": false,
-            "lastClassName": "cOKIfC",
+            "lastClassName": "duOmrf",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -1249,24 +1249,24 @@ exports[`Avatar renders with size 30px 1`] = `
               ";position:relative;width:",
               [Function],
               ";",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".DefaultAvatar-puc6xj-0",
+              ".DefaultAvatar-sc-14cfqol-0",
               ":hover{fill:",
               [Function],
               ";}",
-              ".Avatar__Link-sc-1jh7fda-0",
+              ".StyledAvatar__Link-sc-1q6qp9k-0",
               " ",
-              ".UserAvatar-yszxdr-0",
+              ".UserAvatar-sc-1jmhmvx-0",
               ":hover{border-color:",
               [Function],
               ";}",
             ],
           },
-          "displayName": "Avatar__Wrapper",
+          "displayName": "StyledAvatar__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "Avatar__Wrapper-sc-1jh7fda-1",
+          "styledComponentId": "StyledAvatar__Wrapper-sc-1q6qp9k-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -1277,7 +1277,7 @@ exports[`Avatar renders with size 30px 1`] = `
       size="30"
     >
       <div
-        className="Avatar__Wrapper-sc-1jh7fda-1 cOKIfC"
+        className="StyledAvatar__Wrapper-sc-1q6qp9k-1 duOmrf"
         size="30"
       >
         <DefaultAvatar
@@ -1295,9 +1295,9 @@ exports[`Avatar renders with size 30px 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-puc6xj-0",
+                  "componentId": "DefaultAvatar-sc-14cfqol-0",
                   "isStatic": true,
-                  "lastClassName": "ctvFRB",
+                  "lastClassName": "jiEbzv",
                   "rules": Array [
                     "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
                   ],
@@ -1308,7 +1308,7 @@ exports[`Avatar renders with size 30px 1`] = `
                 "displayName": "DefaultAvatar",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "DefaultAvatar-puc6xj-0",
+                "styledComponentId": "DefaultAvatar-sc-14cfqol-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1322,22 +1322,22 @@ exports[`Avatar renders with size 30px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="2px"
-              className="DefaultAvatar-puc6xj-0 ctvFRB"
+              className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-puc6xj-0 ctvFRB"
+                className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-puc6xj-0 ctvFRB"
+                  className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-puc6xj-0 ctvFRB"
+                    className="DefaultAvatar-sc-14cfqol-0 jiEbzv"
                     title="User avatar"
                   />
                 </_default>
@@ -1348,21 +1348,21 @@ exports[`Avatar renders with size 30px 1`] = `
         <Badge
           badge="admin"
           className=""
-          diameter="30"
+          diameter={30}
           size={15.617}
         >
           <StyledComponent
             badge="admin"
             className=""
-            diameter="30"
+            diameter={30}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-12twjj0-0",
+                  "componentId": "Badge-sc-1whp6kt-0",
                   "isStatic": false,
-                  "lastClassName": "dQisRC",
+                  "lastClassName": "hqMXWK",
                   "rules": Array [
                     "height:",
                     [Function],
@@ -1388,7 +1388,7 @@ exports[`Avatar renders with size 30px 1`] = `
                   "size": [Function],
                 },
                 "render": [Function],
-                "styledComponentId": "Badge-sc-12twjj0-0",
+                "styledComponentId": "Badge-sc-1whp6kt-0",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -1401,12 +1401,12 @@ exports[`Avatar renders with size 30px 1`] = `
           >
             <Badge
               badge="admin"
-              className="Badge-sc-12twjj0-0 dQisRC"
-              diameter="30"
+              className="Badge-sc-1whp6kt-0 hqMXWK"
+              diameter={30}
               size={15.617}
             >
               <span
-                className="wds-avatar__badge Badge-sc-12twjj0-0 dQisRC"
+                className="wds-avatar__badge Badge-sc-1whp6kt-0 hqMXWK"
                 title="Community Admin"
               >
                 <_default>
@@ -1420,6 +1420,6 @@ exports[`Avatar renders with size 30px 1`] = `
         </Badge>
       </div>
     </StyledComponent>
-  </Avatar__Wrapper>
-</Avatar>
+  </StyledAvatar__Wrapper>
+</StyledAvatar>
 `;
