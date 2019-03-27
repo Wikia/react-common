@@ -9,6 +9,15 @@ Defaults:
 </div>
 ```
 
+With hover effect:
+
+```js
+<div>
+    <AvatarStyled href="https://fandom.com" className="extra-class-name" />
+    <AvatarStyled href="https://fandom.com" className="extra-class-name" userId="9876017" />
+</div>
+```
+
 Avatar with badges
 
 ```js
