@@ -60,6 +60,8 @@
       "HideComponent",
       "Icon",
       "IconSprite",
+      "Image",
+      "ImagePreloader",
       "Input",
       "List",
       "Select",
@@ -69,8 +71,7 @@
       "Switch.Item",
       "Switch.Wrapper",
       "Timeago",
-      "VideoPlayIcon",
-      "Vignette"
+      "VideoPlayIcon"
     ]
   },
   {
@@ -88,6 +89,15 @@
     "directory": "hooks",
     "items": [
       "useLazyLoad"
+    ]
+  },
+  {
+    "name": "Utils",
+    "sections": [
+      {
+        "name": "Vignette",
+        "content": "../source/utils/VIGNETTE.md"
+      }
     ]
   },
   {
