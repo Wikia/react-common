@@ -1,6 +1,7 @@
 import { mount } from 'enzyme';
 import React from 'react';
 import sinon from 'sinon';
+import wait from 'waait';
 
 import Avatar from './NewAvatar';
 
@@ -55,12 +56,16 @@ test('Avatar renders when incorrect badgePermission is set', () => {
     expect(component).toMatchSnapshot();
 });
 
-test('Avatar image is fetched when given userId prop', () => {
+test('Avatar image is fetched when given userId prop', async () => {
     const userId = 123;
     const props = {
         userId,
     };
     const wrapper = mount(<Avatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
+
+    // wait 0ms (resolve promise in fetch in componentDidMount)
+    await wait(0);
+
     expect(wrapper.state('imageSrc')).toBe('avatar_url');
 });
