@@ -10,7 +10,7 @@ const UserAvatar = styled(({ borderWidth, ...rest }) => <img {...rest} />)`
     border-radius: 50%;
     box-sizing: border-box;
     display: inline-block;
-    border: ${props => props.borderWidth} solid #ccc;
+    border: ${props => props.borderWidth} solid #bed1cf;
 `;
 
 UserAvatar.propTypes = {

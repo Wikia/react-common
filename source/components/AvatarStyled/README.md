@@ -3,7 +3,7 @@ Defaults:
 ```js
 <div>
     <AvatarStyled />
-    <AvatarStyled src="https://vignette.wikia.nocookie.net/01fc6376-689b-4561-a3a7-68c387fd4dfc" />
+    <AvatarStyled src="https://static.wikia.nocookie.net/438f6e23-1a0f-4351-a34d-6f8fa734a246" />
     <AvatarStyled userId="9876017" />
     <AvatarStyled linkBuilder={(avatarImage) => (<a className="my-custom-link" href="#">{avatarImage}</a>)} />
 </div>

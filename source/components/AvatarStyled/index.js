@@ -40,11 +40,11 @@ const Wrapper = styled.div`
     width: ${props => `${props.size}px`};
 
     ${Link} ${DefaultAvatar}:hover {
-        fill: ${props => (props.href ? '#00acac' : '#ccc')};
+        fill: ${props => (props.href ? '#00acac' : '#bed1cf')};
     }
 
     ${Link} ${UserAvatar}:hover {
-        border-color: ${props => (props.href ? '#00acac' : '#ccc')};
+        border-color: ${props => (props.href ? '#00acac' : '#bed1cf')};
     }
 `;
 

@@ -12,7 +12,7 @@ const DefaultAvatar = styled(({ borderWidth, ...rest }) => <IconAvatar {...rest}
     border: 0;
     box-sizing: border-box;
     display: inline-block;
-    fill: #ccc;
+    fill: #bed1cf;
     height: 100%;
     width: 100%;
 `;

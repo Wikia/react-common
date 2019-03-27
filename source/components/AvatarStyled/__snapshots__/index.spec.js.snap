@@ -17,7 +17,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "gIodcR",
+            "lastClassName": "ghGYWn",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -54,7 +54,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
       size={48}
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 gIodcR"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 ghGYWn"
         size={48}
       >
         <DefaultAvatar
@@ -74,9 +74,9 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -99,22 +99,22 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
@@ -207,7 +207,7 @@ exports[`Avatar renders with badge 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "gIodcR",
+            "lastClassName": "ghGYWn",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -244,7 +244,7 @@ exports[`Avatar renders with badge 1`] = `
       size={48}
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 gIodcR"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 ghGYWn"
         size={48}
       >
         <DefaultAvatar
@@ -264,9 +264,9 @@ exports[`Avatar renders with badge 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -289,22 +289,22 @@ exports[`Avatar renders with badge 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
@@ -407,7 +407,7 @@ exports[`Avatar renders with default props 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "gIodcR",
+            "lastClassName": "ghGYWn",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -444,7 +444,7 @@ exports[`Avatar renders with default props 1`] = `
       size={48}
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 gIodcR"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 ghGYWn"
         size={48}
       >
         <DefaultAvatar
@@ -464,9 +464,9 @@ exports[`Avatar renders with default props 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -489,22 +489,22 @@ exports[`Avatar renders with default props 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
@@ -535,7 +535,7 @@ exports[`Avatar renders with link builder 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "gIodcR",
+            "lastClassName": "ghGYWn",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -572,7 +572,7 @@ exports[`Avatar renders with link builder 1`] = `
       size={48}
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 gIodcR"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 ghGYWn"
         size={48}
       >
         <div>
@@ -593,9 +593,9 @@ exports[`Avatar renders with link builder 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-sc-1o3mul6-0",
                     "isStatic": true,
-                    "lastClassName": "gYGcKL",
+                    "lastClassName": "cFsFqK",
                     "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                     ],
                   },
                   "defaultProps": Object {
@@ -618,22 +618,22 @@ exports[`Avatar renders with link builder 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                      className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                       title="User avatar"
                     />
                   </_default>
@@ -766,11 +766,11 @@ exports[`Avatar renders with props 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "UserAvatar-v8q1cq-0",
                         "isStatic": false,
-                        "lastClassName": "bpAkFN",
+                        "lastClassName": "bkFVgm",
                         "rules": Array [
                           "height:100%;width:100%;border-radius:50%;box-sizing:border-box;display:inline-block;border:",
                           [Function],
-                          " solid #ccc;",
+                          " solid #bed1cf;",
                         ],
                       },
                       "defaultProps": Object {
@@ -800,13 +800,13 @@ exports[`Avatar renders with props 1`] = `
                   <Component
                     alt="alt"
                     borderWidth="3px"
-                    className="UserAvatar-v8q1cq-0 bpAkFN"
+                    className="UserAvatar-v8q1cq-0 bkFVgm"
                     src="src"
                     title="alt"
                   >
                     <img
                       alt="alt"
-                      className="UserAvatar-v8q1cq-0 bpAkFN"
+                      className="UserAvatar-v8q1cq-0 bkFVgm"
                       src="src"
                       title="alt"
                     />
@@ -912,7 +912,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "igzUoQ",
+            "lastClassName": "ePulSb",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -949,7 +949,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
       size="50"
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 igzUoQ"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 ePulSb"
         size="50"
       >
         <DefaultAvatar
@@ -969,9 +969,9 @@ exports[`Avatar renders with size >= 48px 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -994,22 +994,22 @@ exports[`Avatar renders with size >= 48px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
@@ -1112,7 +1112,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "imuLYd",
+            "lastClassName": "kttgZX",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -1149,7 +1149,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
       size="124"
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 imuLYd"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 kttgZX"
         size="124"
       >
         <DefaultAvatar
@@ -1169,9 +1169,9 @@ exports[`Avatar renders with size >= 120px 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -1194,22 +1194,22 @@ exports[`Avatar renders with size >= 120px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="4px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
@@ -1240,7 +1240,7 @@ exports[`Avatar renders with size 30px 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "AvatarStyled__Wrapper-sc-18cs6m1-1",
             "isStatic": false,
-            "lastClassName": "hZOksA",
+            "lastClassName": "htEqbA",
             "rules": Array [
               "display:inline-block;height:",
               [Function],
@@ -1277,7 +1277,7 @@ exports[`Avatar renders with size 30px 1`] = `
       size="30"
     >
       <div
-        className="AvatarStyled__Wrapper-sc-18cs6m1-1 hZOksA"
+        className="AvatarStyled__Wrapper-sc-18cs6m1-1 htEqbA"
         size="30"
       >
         <DefaultAvatar
@@ -1297,9 +1297,9 @@ exports[`Avatar renders with size 30px 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "DefaultAvatar-sc-1o3mul6-0",
                   "isStatic": true,
-                  "lastClassName": "gYGcKL",
+                  "lastClassName": "cFsFqK",
                   "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#ccc;height:100%;width:100%;",
+                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
                   ],
                 },
                 "defaultProps": Object {
@@ -1322,22 +1322,22 @@ exports[`Avatar renders with size 30px 1`] = `
             <Component
               alt="User avatar"
               borderWidth="2px"
-              className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+              className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
               title="User avatar"
             >
               <_default
                 alt="User avatar"
-                className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                  className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                   title="User avatar"
                 >
                   <div
                     alt="User avatar"
-                    className="DefaultAvatar-sc-1o3mul6-0 gYGcKL"
+                    className="DefaultAvatar-sc-1o3mul6-0 cFsFqK"
                     title="User avatar"
                   />
                 </_default>
