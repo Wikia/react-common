@@ -25,10 +25,10 @@ export const COLORS = Object.freeze({
     tv: '#00b7e0',
 
     // ## Alerts
-    alert: '#d71035',
-    message: '#460084',
-    success: '#4cda9a',
-    warning: '#dfec24',
+    alert: '#e81a3f',
+    message: '#008c8f',
+    success: '#018c30',
+    warning: '#de5e33',
 
     // ## Social network colors
     social_facebook: '#3b5998',
@@ -63,18 +63,16 @@ export const COLORS = Object.freeze({
     // # Fandom 2.0 Colors
     // ## Color Names
     fandom_aqua: '#00d6d6',
-    fandom_black: '#1a1a1a',
-    fandom_coral: '#ff6a64',
+    fandom_black: '#0e191a',
+    fandom_button_background: '#00cdd0',
+    fandom_coral: '#ff776d',
     fandom_dark_gray: '#5f7a7b',
     fandom_light_gray: '#f2f5f5',
-    fandom_link: '#00acac',
-    fandom_link_hover: '#008989',
-    fandom_mid_light_gray: '#dee7e5',
+    fandom_link: '#088488',
+    fandom_link_hover: '#005252',
+    fandom_mid_light_gray: '#bed1cf',
     fandom_middle_gray: '#bed1cf',
-    fandom_mint: '#5df2ae',
     fandom_navy: '#002a32',
-    fandom_pine: '#006661',
-    fandom_plum: '#833c58',
     fandom_purple: '#460084',
     fandom_red: '#ee1a41',
     fandom_warm_gray: '#eeecdc',
