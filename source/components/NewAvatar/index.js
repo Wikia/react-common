@@ -1,3 +1,7 @@
+/**
+ * This is a self-contained replacement for the Avatar component. Eventually
+ * we should delete the old Avatar and replace its usage (in fepo) with this component.
+ */
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -5,9 +9,8 @@ import styled from 'styled-components';
 
 import IconAvatar from '../../icons/IconAvatar';
 
+// TODO: Move badge to this directory?
 import Badge from '../Avatar/Badge';
-
-// const AvatarContext = React.createContext();
 
 const Wrapper = styled.div`
     display: inline-block;

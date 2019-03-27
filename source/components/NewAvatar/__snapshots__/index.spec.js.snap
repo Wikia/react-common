@@ -749,3 +749,287 @@ exports[`Avatar renders with props 1`] = `
   </styled.div>
 </Avatar>
 `;
+
+exports[`Avatar renders with size >= 48px 1`] = `
+<Avatar
+  alt="User avatar"
+  size="50"
+>
+  <styled.div
+    badgeSize={20.695}
+    borderWidth="3px"
+    className="user-avatar"
+    diameter="50"
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={20.695}
+      borderWidth="3px"
+      className="user-avatar"
+      diameter="50"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "pXtAq",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa pXtAq"
+      >
+        <_default
+          className="user-avatar__image"
+          title="User avatar"
+        >
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <div
+              className="user-avatar__image"
+              title="User avatar"
+            />
+          </_default>
+        </_default>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;
+
+exports[`Avatar renders with size >= 120px 1`] = `
+<Avatar
+  alt="User avatar"
+  size="124"
+>
+  <styled.div
+    badgeSize={39.4836}
+    borderWidth="4px"
+    className="user-avatar"
+    diameter="124"
+    hasLink={false}
+  >
+    <StyledComponent
+      badgeSize={39.4836}
+      borderWidth="4px"
+      className="user-avatar"
+      diameter="124"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "bOepyc",
+            "rules": Array [
+              "
+    display: inline-block;
+    height: ",
+              [Function],
+              ";
+    min-width: ",
+              [Function],
+              ";
+    position: relative;
+    width: ",
+              [Function],
+              ";
+
+    a,
+    img,
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .user-avatar__image {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    a {
+        color: #000;
+
+            &:hover {
+                color: #00acac;
+            }
+        }
+    }
+
+    img.user-avatar__image {
+        border: ",
+              [Function],
+              " solid #ccc;
+
+        &:hover {
+            border-color: ",
+              [Function],
+              ";
+        }
+    }
+
+    svg.user-avatar__image {
+        background-color: #fff;
+        fill: #ccc;
+
+        &:hover {
+            fill: ",
+              [Function],
+              ";
+        }
+    }
+
+    .wds-avatar__badge {
+        height: ",
+              [Function],
+              ";
+        left: ",
+              [Function],
+              ";
+        line-height: 0;
+        min-width: ",
+              [Function],
+              ";
+        position: absolute;
+        top: ",
+              [Function],
+              ";
+        width: ",
+              [Function],
+              ";
+    }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      hasLink={false}
+    >
+      <div
+        className="user-avatar sc-bdVaJa bOepyc"
+      >
+        <_default
+          className="user-avatar__image"
+          title="User avatar"
+        >
+          <_default
+            className="user-avatar__image"
+            title="User avatar"
+          >
+            <div
+              className="user-avatar__image"
+              title="User avatar"
+            />
+          </_default>
+        </_default>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Avatar>
+`;

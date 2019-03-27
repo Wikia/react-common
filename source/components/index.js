@@ -30,6 +30,7 @@ export { default as Avatar } from './Avatar';
 export { default as AvatarStack } from './AvatarStack';
 export { default as ExpandableText } from './ExpandableText';
 export { default as HideComponent } from './HideComponent';
+export { default as NewAvatar } from './NewAvatar';
 export { default as Switch } from './Switch';
 export { default as Timeago } from './Timeago';
 export { default as SimpleLocalNavigation } from './SimpleLocalNavigation';

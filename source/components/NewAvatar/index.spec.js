@@ -19,6 +19,16 @@ test('Avatar renders with default props', () => {
     expect(component).toMatchSnapshot();
 });
 
+test('Avatar renders with size >= 48px', () => {
+    const component = mount(<Avatar size="50" />);
+    expect(component).toMatchSnapshot();
+});
+
+test('Avatar renders with size >= 120px', () => {
+    const component = mount(<Avatar size="124" />);
+    expect(component).toMatchSnapshot();
+});
+
 test('Avatar renders with props', () => {
     const props = {
         alt: 'alt',
