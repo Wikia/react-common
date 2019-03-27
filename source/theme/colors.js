@@ -71,7 +71,7 @@ export const COLORS = Object.freeze({
     fandom_link: '#088488',
     fandom_link_hover: '#005252',
     fandom_mid_light_gray: '#bed1cf',
-    fandom_middle_gray: '#bed1cf',
+    fandom_middle_gray: '#7f9998',
     fandom_navy: '#002a32',
     fandom_purple: '#460084',
     fandom_red: '#ee1a41',
