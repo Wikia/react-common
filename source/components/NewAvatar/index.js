@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import IconAvatar from '../../icons/IconAvatar';
 
-import Badge from './Badge';
+import Badge from '../Avatar/Badge';
 
 // const AvatarContext = React.createContext();
 

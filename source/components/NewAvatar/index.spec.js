@@ -3,7 +3,7 @@ import React from 'react';
 import sinon from 'sinon';
 import wait from 'waait';
 
-import Avatar from './NewAvatar';
+import Avatar from './index';
 
 // eslint-disable-next-line jest/no-hooks
 beforeEach(() => {
