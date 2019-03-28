@@ -1,7 +1,9 @@
 Defaults:
 ```js
-<Avatar />
-<Avatar linkBuilder={(avatarImage) => (<a className="my-custom-link" href="#">{avatarImage}</a>)} />
+<div>
+    <Avatar />
+    <Avatar linkBuilder={(avatarImage) => (<a className="my-custom-link" href="#">{avatarImage}</a>)} />
+</div>
 ```
 
 Avatar with badges

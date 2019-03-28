@@ -42,6 +42,7 @@
     "description": "React components",
     "components": [
       "Avatar",
+      "StyledAvatar",
       "AvatarStack",
       "BannerNotification",
       "BannerNotifications",
