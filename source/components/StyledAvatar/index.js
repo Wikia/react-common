@@ -51,7 +51,7 @@ const Wrapper = styled.div`
 /**
  * A `styled-component` version of Avatar component
  */
-class AvatarStyled extends React.Component {
+class StyledAvatar extends React.Component {
     state = {
         imageSrc: this.props.src,
     };
@@ -88,7 +88,7 @@ class AvatarStyled extends React.Component {
     }
 }
 
-AvatarStyled.propTypes = {
+StyledAvatar.propTypes = {
     /** Alt text for avatar */
     alt: PropTypes.string,
     /** Badge to display for avatar. */
@@ -112,7 +112,7 @@ AvatarStyled.propTypes = {
     userId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-AvatarStyled.defaultProps = {
+StyledAvatar.defaultProps = {
     alt: 'User avatar',
     badge: undefined,
     href: undefined,
@@ -123,4 +123,4 @@ AvatarStyled.defaultProps = {
     userId: undefined,
 };
 
-export default AvatarStyled;
+export default StyledAvatar;

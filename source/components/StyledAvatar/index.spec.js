@@ -3,7 +3,7 @@ import React from 'react';
 import sinon from 'sinon';
 import wait from 'waait';
 
-import AvatarStyled from './index';
+import StyledAvatar from './index';
 
 const origFetch = global.fetch;
 
@@ -20,22 +20,22 @@ afterAll(() => {
 });
 
 test('Avatar renders with default props', () => {
-    const component = mount(<AvatarStyled />);
+    const component = mount(<StyledAvatar />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size 30px', () => {
-    const component = mount(<AvatarStyled size="30" badge="admin" />);
+    const component = mount(<StyledAvatar size="30" badge="admin" />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size >= 48px', () => {
-    const component = mount(<AvatarStyled size="50" badge="admin" />);
+    const component = mount(<StyledAvatar size="50" badge="admin" />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size >= 120px', () => {
-    const component = mount(<AvatarStyled size="124" />);
+    const component = mount(<StyledAvatar size="124" />);
     expect(component).toMatchSnapshot();
 });
 
@@ -48,12 +48,12 @@ test('Avatar renders with props', () => {
         src: 'src',
         title: 'title',
     };
-    const component = mount(<AvatarStyled {...props} />);
+    const component = mount(<StyledAvatar {...props} />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with link builder', () => {
-    const component = mount(<AvatarStyled linkBuilder={avatarImage => <div>{avatarImage}</div>} />);
+    const component = mount(<StyledAvatar linkBuilder={avatarImage => <div>{avatarImage}</div>} />);
     expect(component).toMatchSnapshot();
 });
 
@@ -61,7 +61,7 @@ test('Avatar renders with badge', () => {
     const props = {
         badge: 'admin',
     };
-    const component = mount(<AvatarStyled {...props} />);
+    const component = mount(<StyledAvatar {...props} />);
     expect(component).toMatchSnapshot();
 });
 
@@ -71,7 +71,7 @@ test('Avatar renders when incorrect badgePermission is set', () => {
     const props = {
         badge: 'someIncorrectBadgePermission',
     };
-    const component = mount(<AvatarStyled {...props} />);
+    const component = mount(<StyledAvatar {...props} />);
     consoleStub.restore();
     expect(component).toMatchSnapshot();
 });
@@ -81,7 +81,7 @@ test('Avatar image is fetched when given userId prop', async () => {
     const props = {
         userId,
     };
-    const wrapper = mount(<AvatarStyled {...props} />);
+    const wrapper = mount(<StyledAvatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
@@ -96,7 +96,7 @@ test('Avatar image is fetched when given userId prop (and href)', async () => {
         userId,
         href: 'http://example.com',
     };
-    const wrapper = mount(<AvatarStyled {...props} />);
+    const wrapper = mount(<StyledAvatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
