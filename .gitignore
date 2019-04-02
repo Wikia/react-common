@@ -79,3 +79,5 @@ package-lock.json
 /icons
 /models
 /systems
+/theme
+/utils

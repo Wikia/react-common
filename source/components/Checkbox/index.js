@@ -37,8 +37,8 @@ class Checkbox extends React.Component {
                     disabled={disabled}
                 />
                 <label className="wds-checkbox__label" htmlFor={this.id}>
-                    {checked && <IconCheckboxSmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
-                    {!checked && <IconCheckboxEmptySmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
+                    {checked && !disabled && <IconCheckboxSmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
+                    {!checked && !disabled && <IconCheckboxEmptySmall className="wds-icon wds-icon-small wds-checkbox__icon" />}
                     {disabled && <IconLockSmall className="wds-icon wds-icon-small wds-checkbox__lock-icon" />}
                     {children}
                 </label>

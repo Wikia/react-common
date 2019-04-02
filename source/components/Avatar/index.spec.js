@@ -22,6 +22,11 @@ test('Avatar renders with props', () => {
     expect(component).toMatchSnapshot();
 });
 
+test('Avatar renders with link builder', () => {
+    const component = mount(<Avatar linkBuilder={avatarImage => <div>{avatarImage}</div>} />);
+    expect(component).toMatchSnapshot();
+});
+
 test('Avatar renders with badge', () => {
     const props = {
         badge: 'admin',
