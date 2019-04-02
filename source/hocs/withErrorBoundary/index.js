@@ -1,24 +1,19 @@
-import * as deepmerge from 'deepmerge';
+import merge from 'lodash/merge';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 import logErrorEvent from '../../utils/eventLogger';
-
-import InComponentErrorBoundary from './InComponentError';
 
 class ErrorBoundary extends React.Component {
     static getDerivedStateFromError(error) {
         return { hasError: true, error };
     }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            hasError: false,
-            error: null,
-            info: null,
-        };
-    }
+    state = {
+        hasError: false,
+        error: null,
+        info: null,
+    };
 
     componentDidCatch(error, info) {
         console.log(`Error Boundary (${this.props.name}):`, error, info);
@@ -33,14 +28,13 @@ class ErrorBoundary extends React.Component {
     }
 
     render() {
-        const FallbackComponent = this.props.fallbackComponent === undefined ? InComponentErrorBoundary : this.props.fallbackComponent;
-
         if (this.state.hasError) {
-            if (!FallbackComponent) {
-                return false;
+            if (this.props.fallback) {
+                const FallbackComponent = this.props.fallback;
+                return <FallbackComponent error={this.state.error} info={this.state.info} />;
             }
 
-            return <FallbackComponent error={this.state.error} info={this.state.info} />;
+            return null;
         }
 
         return this.props.children;
@@ -53,11 +47,8 @@ ErrorBoundary.propTypes = {
     /** Front-End application's version - will be sent to the remote Fandom log */
     appVersion: PropTypes.string,
     children: PropTypes.node.isRequired,
-    /** Custom fallback component */
-    fallbackComponent: PropTypes.oneOfType([
-        PropTypes.element,
-        PropTypes.func,
-    ]).isRequired,
+    /** A fallback component */
+    fallback: PropTypes.element,
     /** Boundary's name - will be sent to the remote Fandom log */
     name: PropTypes.string.isRequired,
     /** Disable remote Fandom log */
@@ -67,19 +58,19 @@ ErrorBoundary.propTypes = {
 ErrorBoundary.defaultProps = {
     appName: 'unnamed app',
     appVersion: 'unknown version',
+    fallback: null,
     skipLog: false,
 };
 
 export default function withErrorBoundary(WrappedComponent, options = {}) {
     const defaultErrorBoundaryProps = {
         name: WrappedComponent.name,
-        fallbackComponent: InComponentErrorBoundary,
     };
 
-    const errorBoudaryProps = deepmerge.all([defaultErrorBoundaryProps, options]);
+    const errorBoundaryProps = merge({}, defaultErrorBoundaryProps, options);
 
     const Component = props => (
-        <ErrorBoundary {...errorBoudaryProps}>
+        <ErrorBoundary {...errorBoundaryProps}>
             <WrappedComponent {...props} />
         </ErrorBoundary>
     );

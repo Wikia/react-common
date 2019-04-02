@@ -72,7 +72,8 @@
       "Switch.Item",
       "Switch.Wrapper",
       "Timeago",
-      "VideoPlayIcon"
+      "VideoPlayIcon",
+      "StyledErrorDisplayingContent"
     ]
   },
   {

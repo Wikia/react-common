@@ -89,7 +89,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
       <div
         className="wds-global-navigation__dropdown-controls"
       >
-        <Wrapper
+        <withI18nextTranslation(Search)
           isSearchExpanded={false}
           model={
             Object {
@@ -195,7 +195,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
           isOpen={false}
           openModal={[Function]}
         >
-          <Wrapper
+          <withI18nextTranslation(Search)
             inSearchModal={true}
             isSearchExpanded={false}
             model={
@@ -446,7 +446,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
       <div
         className="wds-global-navigation__dropdown-controls"
       >
-        <Wrapper
+        <withI18nextTranslation(Search)
           isSearchExpanded={false}
           model={
             Object {
@@ -545,7 +545,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
           isOpen={false}
           openModal={[Function]}
         >
-          <Wrapper
+          <withI18nextTranslation(Search)
             inSearchModal={true}
             isSearchExpanded={false}
             model={

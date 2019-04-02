@@ -1,6 +1,6 @@
-import * as deepmerge from 'deepmerge';
+import merge from 'lodash/merge';
 
 import defaultTheme from './index';
 
-const generateTheme = (customization = {}) => deepmerge.all([defaultTheme, customization]);
+const generateTheme = (customization = {}) => merge({}, defaultTheme, customization);
 export default generateTheme;

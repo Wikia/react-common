@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledErrorDisplayingContent renders 1`] = `
+<StyledErrorDisplayingContent>
+  <StyledErrorDisplayingContent__Wrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledErrorDisplayingContent__Wrapper-sc-7aqm4x-0",
+            "isStatic": true,
+            "lastClassName": "iufekQ",
+            "rules": Array [
+              "background:#fff;padding:10px;",
+            ],
+          },
+          "displayName": "StyledErrorDisplayingContent__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledErrorDisplayingContent__Wrapper-sc-7aqm4x-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="StyledErrorDisplayingContent__Wrapper-sc-7aqm4x-0 iufekQ"
+      >
+        <StyledErrorDisplayingContent__Message>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledErrorDisplayingContent__Message-sc-7aqm4x-1",
+                  "isStatic": true,
+                  "lastClassName": "bTWDhU",
+                  "rules": Array [
+                    "align-content:center;color:red;display:flex;margin-top:0;margin-bottom:0;padding:10px;",
+                  ],
+                },
+                "displayName": "StyledErrorDisplayingContent__Message",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledErrorDisplayingContent__Message-sc-7aqm4x-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="StyledErrorDisplayingContent__Message-sc-7aqm4x-1 bTWDhU"
+            >
+              Sorry, we’re having trouble displaying this content right now.
+            </div>
+          </StyledComponent>
+        </StyledErrorDisplayingContent__Message>
+      </div>
+    </StyledComponent>
+  </StyledErrorDisplayingContent__Wrapper>
+</StyledErrorDisplayingContent>
+`;

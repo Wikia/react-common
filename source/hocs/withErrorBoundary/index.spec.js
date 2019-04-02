@@ -2,99 +2,69 @@ import { mount } from 'enzyme';
 import React from 'react';
 import sinon from 'sinon';
 
+import StyledErrorDisplayingContent from '../../components/StyledErrorDisplayingContent';
+
 import withErrorBoundary from './index';
 
-function Something() {
-    // this is just a placeholder
+function ThrowingError() {
     throw new Error('test');
 }
-const SimpleComponent = () => (
-    <div>
-        <Something />
-    </div>
-);
+const ComponentWithError = () => <ThrowingError />;
 
-test('Default empty fallback error boundary', () => {
+// eslint-disable-next-line jest/no-hooks
+beforeEach(() => {
     sinon.stub(console, 'error');
     sinon.stub(console, 'log');
+});
 
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent);
-
-    const component = mount(
-        <ComponentWithErrorBoundary />,
-    );
-
-    expect(component).toMatchSnapshot();
+// eslint-disable-next-line jest/no-hooks
+afterEach(() => {
     console.error.restore();
     console.log.restore();
 });
 
-test('Undefined value for fallback should use default fallback', () => {
-    sinon.stub(console, 'error');
-    sinon.stub(console, 'log');
+function mountWithErrorBoundary(Component, options = {}) {
+    const ComponentWithErrorBoundary = withErrorBoundary(Component, options);
+    return mount(<ComponentWithErrorBoundary />);
+}
 
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, { fallbackComponent: undefined });
+test('Can handle no options', () => {
+    const ComponentWithErrorBoundary = withErrorBoundary(ComponentWithError);
+    const component = mount(<ComponentWithErrorBoundary />);
 
-    const component = mount(
-        <ComponentWithErrorBoundary />,
-    );
-
-    expect(component).toMatchSnapshot();
-    console.error.restore();
-    console.log.restore();
+    expect(component.html()).toBe(null);
 });
 
+describe('Should display error state', () => {
+    test('Empty error state', () => {
+        const component = mountWithErrorBoundary(ComponentWithError);
 
-test('Default fallback error boundary', () => {
-    sinon.stub(console, 'error');
-    sinon.stub(console, 'log');
-
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
-        appName: 'FandomCreator',
-        appVersion: 'v1',
-        name: 'TestBoundaryName',
+        expect(component.html()).toBe(null);
     });
 
-    const component = mount(
-        <ComponentWithErrorBoundary />,
-    );
+    test('StyledErrorDisplayingContent error state', () => {
+        const component = mountWithErrorBoundary(ComponentWithError, {
+            fallback: StyledErrorDisplayingContent,
+        });
 
-    expect(component).toMatchSnapshot();
-    console.error.restore();
-    console.log.restore();
-});
-
-test('Renders nothing when there is null fallback', () => {
-    sinon.stub(console, 'error');
-    sinon.stub(console, 'log');
-
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
-        fallbackComponent: null,
-        name: 'TestBoundaryName',
+        expect(component.find(StyledErrorDisplayingContent)).toHaveLength(1);
     });
 
-    const component = mount(
-        <ComponentWithErrorBoundary />,
-    );
+    test('Should render custom fallback', () => {
+        const CustomFallback = () => <div name="CustomFallback">Error :(</div>;
 
-    expect(component).toMatchSnapshot();
-    console.error.restore();
-    console.log.restore();
+        const component = mountWithErrorBoundary(ComponentWithError, {
+            fallback: CustomFallback,
+        });
+
+        expect(component.find(CustomFallback)).toHaveLength(1);
+    });
 });
 
 test('Can skip the log and can extract the name', () => {
-    sinon.stub(console, 'error');
-    sinon.stub(console, 'log');
-
-    const ComponentWithErrorBoundary = withErrorBoundary(SimpleComponent, {
+    const component = mountWithErrorBoundary(ComponentWithError, {
         skipLog: true,
     });
 
-    const component = mount(
-        <ComponentWithErrorBoundary />,
-    );
-
     expect(component).toMatchSnapshot();
-    console.error.restore();
-    console.log.restore();
 });
