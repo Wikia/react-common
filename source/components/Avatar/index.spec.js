@@ -32,7 +32,7 @@ describe('Avatar', () => {
         'sysop', 'content-moderator', 'threadmoderator', 'global-discussions-moderator', 'staff', 'vstf', 'helper',
     ];
 
-    badgePermissionTestCases.forEach(badge => {
+    badgePermissionTestCases.forEach((badge) => {
         test(`Avatar renders for "${badge}" badge permission`, () => {
             const props = { badge };
             const component = mount(<Avatar {...props} />);
