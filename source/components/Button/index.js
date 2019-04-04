@@ -44,14 +44,14 @@ Button.propTypes = {
     fullwidth: PropTypes.bool,
     /** href attribute - `<Button/>` uses `<a>` tag if it's present */
     href: PropTypes.string,
+    /** Light flag */
+    light: PropTypes.bool,
     /** Callback for the `<button>` */
     onClick: PropTypes.func,
     /** Secondary flag */
     secondary: PropTypes.bool,
     /** Square flag */
     square: PropTypes.bool,
-    /** Light flag */
-    light: PropTypes.bool,
     /** Text flag */
     text: PropTypes.bool,
 };

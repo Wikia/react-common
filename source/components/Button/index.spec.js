@@ -78,7 +78,17 @@ test('Button renders correctly with custom types values', () => {
     expect(component.toJSON()).toMatchSnapshot();
 
     component = renderer.create(
+        <Button secondary light>secondary light</Button>,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+
+    component = renderer.create(
         <Button text>text</Button>,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+
+    component = renderer.create(
+        <Button text light>text light</Button>,
     );
     expect(component.toJSON()).toMatchSnapshot();
 

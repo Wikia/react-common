@@ -66,6 +66,16 @@ exports[`Button renders correctly with custom types values 2`] = `
 
 exports[`Button renders correctly with custom types values 3`] = `
 <button
+  className="wds-button wds-is-secondary wds-is-light"
+  disabled={false}
+  onClick={[Function]}
+>
+  secondary light
+</button>
+`;
+
+exports[`Button renders correctly with custom types values 4`] = `
+<button
   className="wds-button wds-is-text"
   disabled={false}
   onClick={[Function]}
@@ -74,7 +84,17 @@ exports[`Button renders correctly with custom types values 3`] = `
 </button>
 `;
 
-exports[`Button renders correctly with custom types values 4`] = `
+exports[`Button renders correctly with custom types values 5`] = `
+<button
+  className="wds-button wds-is-light wds-is-text"
+  disabled={false}
+  onClick={[Function]}
+>
+  text light
+</button>
+`;
+
+exports[`Button renders correctly with custom types values 6`] = `
 <button
   className="wds-button wds-is-square"
   disabled={false}
@@ -84,7 +104,7 @@ exports[`Button renders correctly with custom types values 4`] = `
 </button>
 `;
 
-exports[`Button renders correctly with custom types values 5`] = `
+exports[`Button renders correctly with custom types values 7`] = `
 <button
   className="wds-button custom-class"
   disabled={false}
