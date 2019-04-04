@@ -11,7 +11,7 @@ import AvatarBadgeVstf from '../../assets/AvatarBadgeVstf';
 
 const Badge = ({ badge, className }) => {
     const badgeIcons = {
-        admin: {
+        sysop: {
             icon: <AvatarBadgeAdmin />,
             title: 'Community Admin',
         },

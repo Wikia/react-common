@@ -25,12 +25,12 @@ test('Avatar renders with default props', () => {
 });
 
 test('Avatar renders with size 30px', () => {
-    const component = mount(<StyledAvatar size="30" badge="admin" />);
+    const component = mount(<StyledAvatar size="30" badge="sysop" />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size >= 48px', () => {
-    const component = mount(<StyledAvatar size="50" badge="admin" />);
+    const component = mount(<StyledAvatar size="50" badge="sysop" />);
     expect(component).toMatchSnapshot();
 });
 
@@ -42,7 +42,7 @@ test('Avatar renders with size >= 120px', () => {
 test('Avatar renders with props', () => {
     const props = {
         alt: 'alt',
-        badge: 'admin',
+        badge: 'sysop',
         className: 'class-name',
         href: 'href',
         src: 'src',
@@ -59,7 +59,7 @@ test('Avatar renders with link builder', () => {
 
 test('Avatar renders with badge', () => {
     const props = {
-        badge: 'admin',
+        badge: 'sysop',
     };
     const component = mount(<StyledAvatar {...props} />);
     expect(component).toMatchSnapshot();
