@@ -4253,9 +4253,9 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-"design-system@git://github.com/Wikia/design-system.git#841559170640b9ee889a592d85f1aac6a2e57d95":
+"design-system@git://github.com/Wikia/design-system.git#23cc0a1613b8192b1e798a8fcf0a0ec67bd97392":
   version "20.0.0"
-  resolved "git://github.com/Wikia/design-system.git#841559170640b9ee889a592d85f1aac6a2e57d95"
+  resolved "git://github.com/Wikia/design-system.git#23cc0a1613b8192b1e798a8fcf0a0ec67bd97392"
   dependencies:
     ember-autoresize "1.3.2"
     ember-cli-babel "7.2.0"
