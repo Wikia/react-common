@@ -6,6 +6,7 @@ exports[`MobileAnon renders correctly 1`] = `
   disabled={false}
   fullwidth={false}
   href="https://www.wikia.com/signin + redirectto"
+  light={false}
   onClick={[Function]}
   secondary={false}
   square={false}
