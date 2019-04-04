@@ -19,7 +19,7 @@ const Badge = ({ badge, className }) => {
             icon: <AvatarBadgeContentModerator />,
             title: 'Content Moderator',
         },
-        'discussion-moderator': {
+        'threadmoderator': {
             icon: <AvatarBadgeDiscussionModerator />,
             title: 'Discussions Moderator',
         },
