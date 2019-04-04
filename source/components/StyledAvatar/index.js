@@ -94,7 +94,7 @@ StyledAvatar.propTypes = {
     /** Badge to display for avatar. */
     badge: PropTypes.oneOf(
         [
-            'admin', 'content-moderator', 'discussion-moderator', 'sysop',
+            'content-moderator', 'discussion-moderator', 'sysop',
             'global-discussions-moderator', 'helper', 'staff', 'vstf', '',
         ],
     ),

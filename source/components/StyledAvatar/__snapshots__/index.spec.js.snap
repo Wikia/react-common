@@ -193,7 +193,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
 exports[`Avatar renders with badge 1`] = `
 <StyledAvatar
   alt="User avatar"
-  badge="admin"
+  badge="sysop"
   size={48}
 >
   <StyledAvatar__Wrapper
@@ -313,13 +313,13 @@ exports[`Avatar renders with badge 1`] = `
           </StyledComponent>
         </DefaultAvatar>
         <Badge
-          badge="admin"
+          badge="sysop"
           className=""
           diameter={48}
           size={20.1872}
         >
           <StyledComponent
-            badge="admin"
+            badge="sysop"
             className=""
             diameter={48}
             forwardedComponent={
@@ -367,7 +367,7 @@ exports[`Avatar renders with badge 1`] = `
             size={20.1872}
           >
             <Badge
-              badge="admin"
+              badge="sysop"
               className="Badge-sc-1a5ie29-0 cwhJAF"
               diameter={48}
               size={20.1872}
@@ -651,7 +651,7 @@ exports[`Avatar renders with link builder 1`] = `
 exports[`Avatar renders with props 1`] = `
 <StyledAvatar
   alt="alt"
-  badge="admin"
+  badge="sysop"
   className="class-name"
   href="href"
   size={48}
@@ -817,13 +817,13 @@ exports[`Avatar renders with props 1`] = `
           </StyledComponent>
         </StyledAvatar__Link>
         <Badge
-          badge="admin"
+          badge="sysop"
           className=""
           diameter={48}
           size={20.1872}
         >
           <StyledComponent
-            badge="admin"
+            badge="sysop"
             className=""
             diameter={48}
             forwardedComponent={
@@ -871,7 +871,7 @@ exports[`Avatar renders with props 1`] = `
             size={20.1872}
           >
             <Badge
-              badge="admin"
+              badge="sysop"
               className="Badge-sc-1a5ie29-0 cwhJAF"
               diameter={48}
               size={20.1872}
@@ -898,7 +898,7 @@ exports[`Avatar renders with props 1`] = `
 exports[`Avatar renders with size >= 48px 1`] = `
 <StyledAvatar
   alt="User avatar"
-  badge="admin"
+  badge="sysop"
   size="50"
 >
   <StyledAvatar__Wrapper
@@ -1018,13 +1018,13 @@ exports[`Avatar renders with size >= 48px 1`] = `
           </StyledComponent>
         </DefaultAvatar>
         <Badge
-          badge="admin"
+          badge="sysop"
           className=""
           diameter={50}
           size={20.695}
         >
           <StyledComponent
-            badge="admin"
+            badge="sysop"
             className=""
             diameter={50}
             forwardedComponent={
@@ -1072,7 +1072,7 @@ exports[`Avatar renders with size >= 48px 1`] = `
             size={20.695}
           >
             <Badge
-              badge="admin"
+              badge="sysop"
               className="Badge-sc-1a5ie29-0 juzlSY"
               diameter={50}
               size={20.695}
@@ -1226,7 +1226,7 @@ exports[`Avatar renders with size >= 120px 1`] = `
 exports[`Avatar renders with size 30px 1`] = `
 <StyledAvatar
   alt="User avatar"
-  badge="admin"
+  badge="sysop"
   size="30"
 >
   <StyledAvatar__Wrapper
@@ -1346,13 +1346,13 @@ exports[`Avatar renders with size 30px 1`] = `
           </StyledComponent>
         </DefaultAvatar>
         <Badge
-          badge="admin"
+          badge="sysop"
           className=""
           diameter={30}
           size={15.617}
         >
           <StyledComponent
-            badge="admin"
+            badge="sysop"
             className=""
             diameter={30}
             forwardedComponent={
@@ -1400,7 +1400,7 @@ exports[`Avatar renders with size 30px 1`] = `
             size={15.617}
           >
             <Badge
-              badge="admin"
+              badge="sysop"
               className="Badge-sc-1a5ie29-0 clhjIq"
               diameter={30}
               size={15.617}
