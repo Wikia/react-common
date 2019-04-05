@@ -4,5 +4,5 @@
  * importable.
  */
 
-// eslint-disable-next-line
 export { default as useLazyLoad } from './useLazyLoad';
+export { default as useInterval } from './useInterval';

@@ -50,6 +50,7 @@
       "ButtonGroup",
       "Checkbox",
       "ContentWell",
+      "Countdown",
       "Dropdown",
       "ExpandableText",
       "FandomBackgroundImage",
@@ -89,6 +90,7 @@
     "name": "Hooks",
     "directory": "hooks",
     "items": [
+      "useInterval",
       "useLazyLoad"
     ]
   },

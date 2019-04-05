@@ -1,0 +1,71 @@
+@import "~design-system/dist/scss/wds-variables/index";
+
+@keyframes countdown-animation {
+	from {
+		stroke-dashoffset: 0;
+	}
+
+	to {
+		stroke-dashoffset: 95px;
+	}
+}
+
+.countdown {
+	&__wrapper {
+		align-items: center;
+		background-color: $wds-color-white;
+		border-radius: 100%;
+		display: inline-flex;
+		height: 40px;
+		justify-content: center;
+		position: relative;
+		width: 40px;
+
+		&::after {
+			border: 1px solid #bed1cf;
+			border-radius: 100%;
+			content: ' ';
+			height: 30px;
+			left: 4px;
+			position: absolute;
+			top: 4px;
+			width: 30px;
+		}
+	}
+
+	&__value {
+		color: $wds-fandom-color-navy;
+		font-size: 18px;
+		font-weight: $wds-font-weight-bold;
+	}
+
+	&__animation {
+		height: 34px;
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		transform: rotateY(-180deg) rotateZ(-90deg);
+		width: 34px;
+		z-index: 1;
+
+		&.is-low {
+			stroke: $wds-color-alert;
+		}
+
+		&.is-medium {
+			stroke: $wds-color-warning;
+		}
+
+		&.is-high {
+			stroke: $wds-color-success;
+		}
+	}
+
+	&__animation > circle {
+		animation: countdown-animation 10s linear forwards;
+		fill: none;
+		stroke-dasharray: 95px;
+		stroke-dashoffset: 0;
+		stroke-width: 3px;
+	}
+}
