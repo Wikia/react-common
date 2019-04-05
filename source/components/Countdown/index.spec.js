@@ -31,5 +31,3 @@ describe('Countdown calls callback 10 times with proper values', () => {
         });
     }
 });
-
-
