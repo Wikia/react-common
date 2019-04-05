@@ -1,0 +1,3619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #0 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                9
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="high"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "cyUErQ",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="high"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 cyUErQ"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #1 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                8
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="high"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "cyUErQ",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="high"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 cyUErQ"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #2 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                7
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="high"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "cyUErQ",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="high"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 cyUErQ"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #3 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                6
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="medium"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "hqWcDN",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="medium"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 hqWcDN"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #4 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                5
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="medium"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "hqWcDN",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="medium"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 hqWcDN"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #5 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                4
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="medium"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "hqWcDN",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="medium"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 hqWcDN"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #6 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                3
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="medium"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "hqWcDN",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="medium"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 hqWcDN"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #7 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                2
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="low"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "ebhqyh",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="low"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ebhqyh"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #8 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                1
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="low"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "ebhqyh",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="low"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ebhqyh"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown calls callback 10 times with proper values Callback #9 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                0
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown renders correctly 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#d71035",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#1a1a1a",
+        "fandom_coral": "#ff6a64",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#00acac",
+        "fandom_link_hover": "#008989",
+        "fandom_mid_light_gray": "#dee7e5",
+        "fandom_middle_gray": "#bed1cf",
+        "fandom_mint": "#5df2ae",
+        "fandom_navy": "#002a32",
+        "fandom_pine": "#006661",
+        "fandom_plum": "#833c58",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#460084",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#4cda9a",
+        "tv": "#00b7e0",
+        "warning": "#dfec24",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    onTick={[Function]}
+  >
+    <StyledCountdown__Wrapper>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "kLEypm",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 kLEypm"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                10
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="high"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "isStatic": false,
+                    "lastClassName": "cyUErQ",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="high"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 cyUErQ"
+              >
+                <StyledCountdown__Circle
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "isStatic": true,
+                          "lastClassName": "dPseaz",
+                          "rules": Array [
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__Circle",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__Circle>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;

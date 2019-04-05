@@ -51,6 +51,7 @@
       "Checkbox",
       "ContentWell",
       "Countdown",
+      "StyledCountdown",
       "Dropdown",
       "ExpandableText",
       "FandomBackgroundImage",
