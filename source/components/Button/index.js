@@ -11,6 +11,7 @@ const Button = ({
     text,
     secondary,
     square,
+    light,
     fullwidth,
     children,
     ...rest
@@ -20,6 +21,7 @@ const Button = ({
         className,
         secondary ? 'wds-is-secondary' : '',
         square ? 'wds-is-square' : '',
+        light ? 'wds-is-light' : '',
         text ? 'wds-is-text' : '',
         fullwidth ? 'wds-is-fullwidth' : '',
     ].filter(c => c).join(' ');
@@ -42,6 +44,8 @@ Button.propTypes = {
     fullwidth: PropTypes.bool,
     /** href attribute - `<Button/>` uses `<a>` tag if it's present */
     href: PropTypes.string,
+    /** Light flag */
+    light: PropTypes.bool,
     /** Callback for the `<button>` */
     onClick: PropTypes.func,
     /** Secondary flag */
@@ -58,6 +62,7 @@ Button.defaultProps = {
     disabled: false,
     fullwidth: false,
     href: null,
+    light: false,
     secondary: false,
     square: false,
     text: false,
