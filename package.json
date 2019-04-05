@@ -38,7 +38,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
     "deepmerge": "^3.2.0",
-    "design-system": "git://github.com/Wikia/design-system.git#23cc0a1613b8192b1e798a8fcf0a0ec67bd97392",
+    "design-system": "git://github.com/Wikia/design-system.git#21.0.0",
     "i18next": "^14.0.1",
     "immutable": "^4.0.0-rc.12",
     "prop-types": "^15.6.2",
