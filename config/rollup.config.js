@@ -11,6 +11,11 @@ import svg from 'rollup-plugin-react-svg';
 const config = require('./config');
 const babelConfig = require('./babel.config');
 
+import pkg from '../package.json';
+
+/**
+ * Build list of sources for rollup
+ */
 const sources = [];
 config.sourceDirectories.forEach(
     // glob only dirs
@@ -24,12 +29,22 @@ config.sourceFiles.forEach(
 );
 
 /**
+ * Build the list of external dependencies for rollup:
+ * - package's dependencies
+ * - config.js' additionalDependencies
+ */
+const externalDependencies = [].concat(
+    Object.keys(pkg.dependencies),
+    config.additionalDependencies,
+);
+
+/**
  * Check if import should be "external" or not:
  * - External deps are left as-is
  * - Non-external ones are parsed and included
  */
 const isThisExternalDependency = (fileName) => {
-    return config.externalDependencies.indexOf(fileName) > -1
+    return externalDependencies.indexOf(fileName) > -1
         || fileName.startsWith('../../icons')
         || fileName.startsWith('../../assets');
 }
@@ -81,14 +96,14 @@ const buildConfig = file => {
             }),
             babel(babelConfig),
             commonjs({
-                         namedExports: {
-                             'node_modules/react-is/index.js': [
-                                 'isElement',
-                                 'isValidElementType',
-                                 'ForwardRef',
-                             ],
-                         }
-                     }),
+                namedExports: {
+                    'node_modules/react-is/index.js': [
+                        'isElement',
+                        'isValidElementType',
+                        'ForwardRef',
+                    ],
+                }
+            }),
             postprocess([
                 /**
                  * reference the assets directly

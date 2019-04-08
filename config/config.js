@@ -1,3 +1,4 @@
+// keep this file es5-friendly
 module.exports = {
     outputDir: '.',
     styleguideDir: './docs',
@@ -19,19 +20,12 @@ module.exports = {
         'utils/eventLogger.js',
         'utils/vignette.js',
     ],
-    externalDependencies: [
-        'date-fns',
+    /**
+     * Those are going to be specified in rollup's `external` in addition
+     * to `package.json`'s `dependencies`.
+     */
+    additionalDependencies: [
         // we ony use one function from date-fns
         'date-fns/distance_in_words_strict',
-        'deepmerge',
-        'i18next',
-        'immutable',
-        'prop-types',
-        'react',
-        'react-dom',
-        'react-i18next',
-        'react-redux',
-        'react-select',
-        'styled-components',
     ],
 };

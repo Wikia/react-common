@@ -1,3 +1,4 @@
+// keep this file es5-friendly
 module.exports = {
     babelrc: false,
     exclude: 'node_modules/**',
