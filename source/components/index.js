@@ -14,6 +14,8 @@ export { default as Button } from './Button';
 export { default as ButtonGroup } from './ButtonGroup';
 export { default as Checkbox } from './Checkbox';
 export { default as ContentWell } from './ContentWell';
+export { default as Countdown } from './Countdown';
+export { default as StyledCountdown } from './StyledCountdown';
 export { default as Dropdown } from './Dropdown';
 export { default as ExpandableText } from './ExpandableText';
 export { default as FandomBackgroundImage } from './FandomBackgroundImage';

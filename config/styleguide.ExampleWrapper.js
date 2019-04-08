@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
@@ -8,6 +8,7 @@ import translation from 'design-system/i18n/en/design-system.json';
 
 import ButtonGroup from '../source/components/ButtonGroup';
 import Button from '../source/components/Button';
+import theme from '../source/theme';
 
 i18n
 .use(initReactI18next) // passes i18n down to react-i18next
@@ -101,16 +102,18 @@ class StyleguideExampleWrapper extends React.Component {
 
     render() {
         return (
-            <Wrapper>
-                <Header>
-                    <ButtonGroup>
-                        {this.renderButton('transparent', this.setTransparentColor)}
-                        {this.renderButton('white', this.setWhiteColor)}
-                        {this.renderButton('black', this.setBlackColor)}
-                    </ButtonGroup>
-                </Header>
-                {this.renderExample()}
-            </Wrapper>
+            <ThemeProvider theme={theme}>
+                <Wrapper>
+                    <Header>
+                        <ButtonGroup>
+                            {this.renderButton('transparent', this.setTransparentColor)}
+                            {this.renderButton('white', this.setWhiteColor)}
+                            {this.renderButton('black', this.setBlackColor)}
+                        </ButtonGroup>
+                    </Header>
+                    {this.renderExample()}
+                </Wrapper>
+            </ThemeProvider>
         );
     }
 }
