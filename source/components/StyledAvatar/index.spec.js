@@ -25,7 +25,7 @@ test('Avatar renders with default props', () => {
 });
 
 test('Avatar renders with size 30px', () => {
-    const component = mount(<StyledAvatar size="30" badge="sysop" />);
+    const component = mount(<StyledAvatar className="foo" size="30" badge="sysop" />);
     expect(component).toMatchSnapshot();
 });
 

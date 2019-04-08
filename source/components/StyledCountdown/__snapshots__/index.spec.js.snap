@@ -180,11 +180,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -202,7 +204,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -519,11 +521,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -541,7 +545,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -858,11 +862,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -880,7 +886,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -1197,11 +1203,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -1219,7 +1227,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -1536,11 +1544,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -1558,7 +1568,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -1875,11 +1885,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -1897,7 +1909,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -2214,11 +2226,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -2236,7 +2250,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -2553,11 +2567,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -2575,7 +2591,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -2892,11 +2908,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -2914,7 +2932,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -3231,11 +3249,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -3253,7 +3273,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent
@@ -3481,11 +3501,13 @@ exports[`StyledCountdown renders correctly 1`] = `
             "componentStyle": ComponentStyle {
               "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
               "isStatic": false,
-              "lastClassName": "fkCHad",
+              "lastClassName": "erWcap",
               "rules": Array [
                 "align-items:center;background-color:",
                 [Function],
-                ";border-radius:100%;display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
                 [Function],
                 ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
               ],
@@ -3503,7 +3525,7 @@ exports[`StyledCountdown renders correctly 1`] = `
         forwardedRef={null}
       >
         <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 fkCHad"
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
         >
           <StyledCountdown__Value>
             <StyledComponent

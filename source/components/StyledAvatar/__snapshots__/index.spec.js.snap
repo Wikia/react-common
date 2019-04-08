@@ -659,11 +659,13 @@ exports[`Avatar renders with props 1`] = `
   title="title"
 >
   <StyledAvatar__Wrapper
+    className="class-name"
     href="href"
     size={48}
     title="title"
   >
     <StyledComponent
+      className="class-name"
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -710,7 +712,7 @@ exports[`Avatar renders with props 1`] = `
       title="title"
     >
       <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 cYlivE"
+        className="class-name StyledAvatar__Wrapper-sc-8ufved-1 cYlivE"
         href="href"
         size={48}
         title="title"
@@ -1227,12 +1229,15 @@ exports[`Avatar renders with size 30px 1`] = `
 <StyledAvatar
   alt="User avatar"
   badge="sysop"
+  className="foo"
   size="30"
 >
   <StyledAvatar__Wrapper
+    className="foo"
     size="30"
   >
     <StyledComponent
+      className="foo"
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -1277,7 +1282,7 @@ exports[`Avatar renders with size 30px 1`] = `
       size="30"
     >
       <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 miNBH"
+        className="foo StyledAvatar__Wrapper-sc-8ufved-1 miNBH"
         size="30"
       >
         <DefaultAvatar

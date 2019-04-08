@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     align-items: center;
     background-color: ${props => props.theme.color.white};
     border-radius: 100%;
+    color: ${props => props.theme.color.black};
     display: inline-flex;
     height: 40px;
     justify-content: center;

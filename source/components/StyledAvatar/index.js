@@ -80,7 +80,7 @@ class StyledAvatar extends React.Component {
 
     render() {
         return (
-            <Wrapper title={this.props.title} size={this.props.size} href={this.props.href}>
+            <Wrapper className={this.props.className} title={this.props.title} size={this.props.size} href={this.props.href}>
                 {this.renderAvatarImage()}
                 {this.props.badge && <Badge badge={this.props.badge} diameter={parseInt(this.props.size, 10)} size={getBadgeSize(this.props.size)} />}
             </Wrapper>
@@ -98,6 +98,8 @@ StyledAvatar.propTypes = {
             'global-discussions-moderator', 'helper', 'staff', 'vstf', '',
         ],
     ),
+    /** Additional class name */
+    className: PropTypes.string,
     /** Link to user's profile */
     href: PropTypes.string,
     /** Function that returns wrapped avatar image, accepts one argument avatarImage which provides the actual avatar image */
@@ -115,6 +117,7 @@ StyledAvatar.propTypes = {
 StyledAvatar.defaultProps = {
     alt: 'User avatar',
     badge: undefined,
+    className: undefined,
     href: undefined,
     linkBuilder: undefined,
     size: 48,
