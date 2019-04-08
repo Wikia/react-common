@@ -37,5 +37,7 @@ export { default as Switch } from './Switch';
 export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
 
+export { default as StyledErrorDisplayingContent } from './StyledErrorDisplayingContent';
+
 // custom types
 export { default as bannerNotificationsMessageType } from './BannerNotifications/bannerNotificationsMessageType';
