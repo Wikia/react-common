@@ -1,6 +1,321 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar renders when incorrect badgePermission is set 1`] = `
+exports[`Avatar Avatar renders for "content-moderator" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="content-moderator"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="content-moderator"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="Content Moderator"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "global-discussions-moderator" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="global-discussions-moderator"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="global-discussions-moderator"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="Global Discussions Moderator"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "helper" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="helper"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="helper"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="FANDOM Helper"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "staff" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="staff"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="staff"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="FANDOM Staff"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "sysop" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="sysop"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="sysop"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="Community Admin"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "threadmoderator" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="threadmoderator"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="threadmoderator"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="Discussions Moderator"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders for "vstf" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="vstf"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="vstf"
+      className=""
+    >
+      <span
+        className="wds-avatar__badge "
+        title="VSTF"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar Avatar renders when incorrect badgePermission is set 1`] = `
 <Avatar
   alt="User avatar"
   badge="someIncorrectBadgePermission"
@@ -34,52 +349,7 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar renders with badge 1`] = `
-<Avatar
-  alt="User avatar"
-  badge="admin"
->
-  <div
-    className="wds-avatar"
-  >
-    <AvatarImage
-      alt="User avatar"
-    >
-      <_default
-        className="wds-avatar__image"
-        title="wds-avatar__image"
-      >
-        <_default
-          className="wds-avatar__image"
-          title="wds-avatar__image"
-        >
-          <div
-            className="wds-avatar__image"
-            title="wds-avatar__image"
-          />
-        </_default>
-      </_default>
-    </AvatarImage>
-    <Badge
-      badge="admin"
-      className=""
-    >
-      <span
-        className="wds-avatar__badge "
-        title="Community Admin"
-      >
-        <_default>
-          <_default>
-            <div />
-          </_default>
-        </_default>
-      </span>
-    </Badge>
-  </div>
-</Avatar>
-`;
-
-exports[`Avatar renders with default props 1`] = `
+exports[`Avatar Avatar renders with default props 1`] = `
 <Avatar
   alt="User avatar"
 >
@@ -108,7 +378,7 @@ exports[`Avatar renders with default props 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar renders with link builder 1`] = `
+exports[`Avatar Avatar renders with link builder 1`] = `
 <Avatar
   alt="User avatar"
   linkBuilder={[Function]}
@@ -140,7 +410,7 @@ exports[`Avatar renders with link builder 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar renders with props 1`] = `
+exports[`Avatar Avatar renders with props 1`] = `
 <Avatar
   alt="alt"
   badge="admin"
@@ -171,18 +441,7 @@ exports[`Avatar renders with props 1`] = `
     <Badge
       badge="admin"
       className=""
-    >
-      <span
-        className="wds-avatar__badge "
-        title="Community Admin"
-      >
-        <_default>
-          <_default>
-            <div />
-          </_default>
-        </_default>
-      </span>
-    </Badge>
+    />
   </div>
 </Avatar>
 `;

@@ -332,6 +332,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
           disabled={false}
           fullwidth={false}
           href={null}
+          light={false}
           onClick={[Function]}
           secondary={false}
           square={false}
@@ -678,6 +679,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
           disabled={false}
           fullwidth={false}
           href={null}
+          light={false}
           onClick={[Function]}
           secondary={false}
           square={false}
