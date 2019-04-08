@@ -13,7 +13,7 @@ const LOW = 3;
 /**
  * Simple circular, countdown-from-10 component with callback.
  */
-const Countdown = ({ onTick }) => {
+const Countdown = ({ className, onTick }) => {
     const [value, setValue] = useState(START);
 
     useInterval(() => {
@@ -26,7 +26,7 @@ const Countdown = ({ onTick }) => {
     const rangeClassName = (value <= LOW ? 'is-low' : (value <= HIGH ? 'is-medium' : 'is-high'));
 
     return (
-        <div className="countdown__wrapper">
+        <div className={`countdown__wrapper ${className}`}>
             <span className="countdown__value">{value}</span>
             {value > 0 && (
                 <svg className={`countdown__animation ${rangeClassName}`}>
@@ -38,8 +38,14 @@ const Countdown = ({ onTick }) => {
 };
 
 Countdown.propTypes = {
+    /** Additional class name */
+    className: PropTypes.string,
     /** Callback function that will be called at every tick - 1st param is the value */
     onTick: PropTypes.func.isRequired,
+};
+
+Countdown.defaultProps = {
+    className: '',
 };
 
 export default Countdown;

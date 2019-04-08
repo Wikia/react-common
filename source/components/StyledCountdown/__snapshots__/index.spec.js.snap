@@ -165,10 +165,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -500,10 +504,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -835,10 +843,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -1170,10 +1182,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -1505,10 +1521,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -1840,10 +1860,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2175,10 +2199,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2510,10 +2538,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -2845,10 +2877,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -3180,10 +3216,14 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -3426,10 +3466,14 @@ exports[`StyledCountdown renders correctly 1`] = `
   }
 >
   <StyledCountdown
+    className={null}
     onTick={[Function]}
   >
-    <StyledCountdown__Wrapper>
+    <StyledCountdown__Wrapper
+      className={null}
+    >
       <StyledComponent
+        className={null}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
