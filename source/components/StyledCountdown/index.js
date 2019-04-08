@@ -90,7 +90,7 @@ const StyledCountdown = ({ onTick }) => {
     }, value > 0 ? ONE_SECOND : null);
 
     // eslint-disable-next-line
-    const level = (value < LOW ? 'low' : (value < HIGH ? 'medium' : 'high'));
+    const level = (value <= LOW ? 'low' : (value <= HIGH ? 'medium' : 'high'));
 
     return (
         <Wrapper>

@@ -23,7 +23,7 @@ const Countdown = ({ onTick }) => {
     }, value > 0 ? ONE_SECOND : null);
 
     // eslint-disable-next-line
-    const rangeClassName = (value < LOW ? 'is-low' : (value < HIGH ? 'is-medium' : 'is-high'));
+    const rangeClassName = (value <= LOW ? 'is-low' : (value <= HIGH ? 'is-medium' : 'is-high'));
 
     return (
         <div className="countdown__wrapper">

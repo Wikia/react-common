@@ -910,7 +910,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
             </StyledComponent>
           </StyledCountdown__Value>
           <StyledCountdown__AnimatedProgress
-            level="high"
+            level="medium"
           >
             <StyledComponent
               forwardedComponent={
@@ -920,7 +920,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                   "componentStyle": ComponentStyle {
                     "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
                     "isStatic": false,
-                    "lastClassName": "ktpMdK",
+                    "lastClassName": "frcLJa",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -938,10 +938,10 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                 }
               }
               forwardedRef={null}
-              level="high"
+              level="medium"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ktpMdK"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
               >
                 <StyledCountdown__Circle
                   cx="17"
@@ -2250,7 +2250,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
             </StyledComponent>
           </StyledCountdown__Value>
           <StyledCountdown__AnimatedProgress
-            level="medium"
+            level="low"
           >
             <StyledComponent
               forwardedComponent={
@@ -2260,7 +2260,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                   "componentStyle": ComponentStyle {
                     "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
                     "isStatic": false,
-                    "lastClassName": "frcLJa",
+                    "lastClassName": "gxpQbv",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -2278,10 +2278,10 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                 }
               }
               forwardedRef={null}
-              level="medium"
+              level="low"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 gxpQbv"
               >
                 <StyledCountdown__Circle
                   cx="17"
