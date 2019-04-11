@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     align-items: center;
     background-color: ${props => props.theme.color.white};
     border-radius: 100%;
+    color: ${props => props.theme.color.black};
     display: inline-flex;
     height: 40px;
     justify-content: center;
@@ -80,7 +81,7 @@ const LOW = 3;
 /**
  * Simple circular, countdown-from-10 component with callback.
  */
-const StyledCountdown = ({ onTick }) => {
+const StyledCountdown = ({ className, onTick }) => {
     const [value, setValue] = useState(START);
 
     useInterval(() => {
@@ -93,7 +94,7 @@ const StyledCountdown = ({ onTick }) => {
     const level = (value <= LOW ? 'low' : (value <= HIGH ? 'medium' : 'high'));
 
     return (
-        <Wrapper>
+        <Wrapper className={className}>
             <Value>{value}</Value>
             {value > 0 && <AnimatedProgress level={level}><Circle r="15" cx="17" cy="17" /></AnimatedProgress>}
         </Wrapper>
@@ -101,8 +102,14 @@ const StyledCountdown = ({ onTick }) => {
 };
 
 StyledCountdown.propTypes = {
+    /** Additional class name */
+    className: PropTypes.string,
     /** Callback function that will be called at every tick - 1st param is the value */
     onTick: PropTypes.func.isRequired,
+};
+
+StyledCountdown.defaultProps = {
+    className: null,
 };
 
 export default StyledCountdown;

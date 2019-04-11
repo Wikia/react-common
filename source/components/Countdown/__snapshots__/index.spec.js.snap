@@ -2,10 +2,11 @@
 
 exports[`Countdown calls callback 10 times with proper values Callback #0 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -27,10 +28,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #0 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #1 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -52,10 +54,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #1 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #2 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -77,10 +80,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #2 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #3 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -102,10 +106,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #3 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #4 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -127,10 +132,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #4 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #5 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -152,10 +158,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #5 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #6 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -177,10 +184,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #6 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #7 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -202,10 +210,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #7 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #8 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -227,10 +236,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #8 1`] = 
 
 exports[`Countdown calls callback 10 times with proper values Callback #9 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
@@ -243,10 +253,11 @@ exports[`Countdown calls callback 10 times with proper values Callback #9 1`] = 
 
 exports[`Countdown renders correctly 1`] = `
 <Countdown
+  className=""
   onTick={[Function]}
 >
   <div
-    className="countdown__wrapper"
+    className="countdown__wrapper "
   >
     <span
       className="countdown__value"
