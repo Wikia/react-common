@@ -97,10 +97,14 @@ const buildConfig = file => {
             babel(babelConfig),
             commonjs({
                 namedExports: {
-                    'node_modules/react-is/index.js': [
+                    'react-is': [
                         'isElement',
                         'isValidElementType',
                         'ForwardRef',
+                    ],
+                    'styled-components': [
+                        'keyframes',
+                        'css',
                     ],
                 }
             }),
