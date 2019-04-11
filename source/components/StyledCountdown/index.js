@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import useInterval from '../../hooks/useInterval';
@@ -32,7 +32,7 @@ const Value = styled.span`
     font-weight: ${props => props.theme.font_weight.bold};
 `;
 
-const circleAnimation = keyframes`
+const circleAnimation = styled.keyframes`
     from {
         stroke-dashoffset: 0;
     }
