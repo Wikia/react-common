@@ -60,6 +60,10 @@ const buildConfig = file => {
                 file: `${config.outputDir}/${outputFileName}`,
                 format: 'cjs',
             },
+            {
+                file: `${config.outputDir}/${outputFileName.replace('.js', '.esm.js')}`,
+                format: 'esm',
+            },
         ],
         external: isThisExternalDependency,
         plugins: [
