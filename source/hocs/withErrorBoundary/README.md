@@ -9,7 +9,7 @@ The `options` param is optional and can have the following:
 * `options.name` - Boundary's name; this will be used in `console.log` and will be sent to remote log
   **NOTE**: By default it's equal to `Component.name` (class name of the `Component` HoC param)
 * `options.fallback` - a component that will be displayed if there's an error
-* `options.skipLog` - if `false` the remote log will not be used; useful for developing/debugging local code
+* `options.skipLog` - if `true` the remote log will not be used; useful for developing/debugging local code
 * `options.appName` - Front-End application's name; this is sent to remote log
 * `options.appVersion` - Front-End application's verion; this is sent to remote log
 
