@@ -1,4 +1,4 @@
-import { getEventLoggerBase } from './config';
+import { getEventLoggerBase } from './environment';
 
 export default function logErrorEvent(app, version, name, data = {}) {
     // eslint-disable-next-line no-restricted-globals
