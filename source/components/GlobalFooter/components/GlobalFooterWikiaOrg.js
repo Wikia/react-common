@@ -38,7 +38,7 @@ const GlobalFooterWikiaOrg = ({ model }) => {
 };
 
 GlobalFooterWikiaOrg.propTypes = {
-    model: PropTypes.shape.isRequired,
+    model: PropTypes.shape().isRequired,
 };
 
 export default GlobalFooterWikiaOrg;
