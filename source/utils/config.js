@@ -1,5 +1,9 @@
+function isClient() {
+    return typeof window !== 'undefined';
+}
+
 function isFandomCom() {
-    if (window && window.location && window.location.hostname) {
+    if (isClient() && window.location && window.location.hostname) {
         return window.location.hostname.includes('fandom.com');
     }
 
@@ -13,6 +17,7 @@ const IS_PRODUCTION_APP = process.env.env === 'production';
 const SERVICES_BASE_URL = isFandomCom() ? 'https://services.fandom.com/' : 'https://services.fandom-dev.us/';
 
 const config = {
+    isClient,
     isFandomCom,
     IS_PRODUCTION_APP,
     SERVICES_BASE_URL,
