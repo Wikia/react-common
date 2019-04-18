@@ -11,6 +11,14 @@ export function isFandomCom() {
     return false;
 }
 
-export const IS_PRODUCTION_APP = process.env.NODE_ENV === 'production';
-export const SERVICES_BASE_URL = isFandomCom() ? 'https://services.fandom.com/' : 'https://services.fandom-dev.us/';
-export const EVENT_LOGGER_BASE = `${SERVICES_BASE_URL}event-logger`;
+export function isProduction() {
+    return process.env.NODE_ENV === 'production';
+}
+
+export function getServicesBaseURL() {
+    return isFandomCom() ? 'https://services.fandom.com/' : 'https://services.fandom-dev.us/';
+}
+
+export function getEventLoggerBase() {
+    return `${getServicesBaseURL()}event-logger`;
+}
