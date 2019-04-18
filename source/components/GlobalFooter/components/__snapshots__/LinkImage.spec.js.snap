@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkImage renders correctly 1`] = `
+<a
+  className="wds-global-footer__link"
+  href="https://itunes.apple.com/developer/wikia-inc./id422467077"
+>
+  <svg
+    className="wds-global-footer__image wds-icon"
+  >
+    <use
+      xlinkHref="wds-company-store-appstore"
+    />
+  </svg>
+</a>
+`;

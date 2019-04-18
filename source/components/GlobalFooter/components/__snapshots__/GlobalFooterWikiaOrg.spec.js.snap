@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomBar renders correctly 1`] = `
+<footer
+  className="wds-global-footer-wikia-org"
+>
+  <h2
+    className="wds-global-footer-wikia-org__header"
+  >
+    <a
+      href="https://www.wikia.org"
+      title="Wikia.org"
+    >
+      <svg
+        className="wds-global-footer__header-logo"
+      >
+        <use
+          xlinkHref="wds-company-logo-wikia-org"
+        />
+      </svg>
+    </a>
+  </h2>
+  <ul
+    className="wds-global-footer-wikia-org__links"
+  >
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      global-footer-site-overview-link-wikia-inc
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="site-overview.terms-of-use"
+        href="https://www.fandom.com/terms-of-use"
+      >
+        global-footer-site-overview-link-terms-of-use
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="site-overview.privacy-policy"
+        href="https://www.fandom.com/privacy-policy"
+      >
+        global-footer-site-overview-link-privacy-policy
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="community.support"
+        href="//community.fandom.com/wiki/Special:Contact"
+      >
+        global-footer-community-link-support
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="community.help"
+        href="//community.fandom.com/wiki/Help:Contents"
+      >
+        global-footer-community-link-help
+      </a>
+    </li>
+  </ul>
+</footer>
+`;
+
+exports[`GlobalFooterWikiaOrg renders correctly 1`] = `
+<footer
+  className="wds-global-footer-wikia-org"
+>
+  <h2
+    className="wds-global-footer-wikia-org__header"
+  >
+    <a
+      href="https://www.wikia.org"
+      title="Wikia.org"
+    >
+      <svg
+        className="wds-global-footer__header-logo"
+      >
+        <use
+          xlinkHref="wds-company-logo-wikia-org"
+        />
+      </svg>
+    </a>
+  </h2>
+  <ul
+    className="wds-global-footer-wikia-org__links"
+  >
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      global-footer-site-overview-link-wikia-inc
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="site-overview.terms-of-use"
+        href="https://www.fandom.com/terms-of-use"
+      >
+        global-footer-site-overview-link-terms-of-use
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="site-overview.privacy-policy"
+        href="https://www.fandom.com/privacy-policy"
+      >
+        global-footer-site-overview-link-privacy-policy
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="community.support"
+        href="//community.fandom.com/wiki/Special:Contact"
+      >
+        global-footer-community-link-support
+      </a>
+    </li>
+    <li
+      className="wds-global-footer-wikia-org__link"
+    >
+      <a
+        data-tracking-label="community.help"
+        href="//community.fandom.com/wiki/Help:Contents"
+      >
+        global-footer-community-link-help
+      </a>
+    </li>
+  </ul>
+</footer>
+`;

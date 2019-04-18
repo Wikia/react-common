@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section with description renders correctly 1`] = `
+<section
+  className="wds-global-footer__wikia-section wds-is-site_overview"
+>
+  
+  <span
+    className="wds-global-footer__section-description"
+  >
+    Can't find a community you love? Create your own and start something epic.
+  </span>
+  <ul
+    className="wds-global-footer__links-list"
+  >
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://www.wikia.com/Special:CreateNewWiki"
+      >
+        Start a wiki
+      </a>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Section with header renders correctly 1`] = `
+<section
+  className="wds-global-footer__wikia-section wds-is-site_overview"
+>
+  <h3
+    className="wds-global-footer__section-header"
+  >
+    Overview
+  </h3>
+  <ul
+    className="wds-global-footer__links-list"
+  >
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://www.wikia.com/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="https://careers.wikia.com"
+      >
+        Careers
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://fandom.wikia.com/press"
+      >
+        Press
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://fandom.wikia.com/contact"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Section with link-branded renders correctly 1`] = `
+<section
+  className="wds-global-footer__wikia-section wds-is-site_overview"
+>
+  
+  <ul
+    className="wds-global-footer__links-list"
+  >
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://fandom.wikia.com/games"
+      >
+        <div>
+          Games
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Section with link-image renders correctly 1`] = `
+<section
+  className="wds-global-footer__wikia-section wds-is-site_overview"
+>
+  
+  <ul
+    className="wds-global-footer__links-list"
+  >
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        data-tracking-label="follow-us.facebook"
+        href="#"
+      >
+        <svg
+          className="wds-global-footer__image wds-icon"
+        >
+          <use
+            xlinkHref="wds-icons-facebook"
+          />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Section with links only renders correctly 1`] = `
+<section
+  className="wds-global-footer__wikia-section wds-is-site_overview"
+>
+  
+  <ul
+    className="wds-global-footer__links-list"
+  >
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://www.wikia.com/Terms_of_use"
+      >
+        Terms of Use
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://www.wikia.com/Privacy_Policy"
+      >
+        Privacy Policy
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="http://www.wikia.com/Sitemap"
+      >
+        Global Sitemap
+      </a>
+    </li>
+    <li
+      className="wds-global-footer__links-list-item"
+    >
+      <a
+        className="wds-global-footer__link"
+        href="/wiki/Local_Sitemap"
+      >
+        Local Sitemap
+      </a>
+    </li>
+  </ul>
+</section>
+`;

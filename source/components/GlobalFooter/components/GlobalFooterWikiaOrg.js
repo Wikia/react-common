@@ -20,8 +20,8 @@ const GlobalFooterWikiaOrg = ({ t, model }) => {
             <li className="wds-global-footer-wikia-org__link">
                 {t('global-footer-site-overview-link-wikia-inc', {year: year})}
             </li>
-            {model.site_overview.links.map(link =>
-                <li className="wds-global-footer-wikia-org__link">
+            {model.site_overview.links.map((link, index) =>
+                <li className="wds-global-footer-wikia-org__link" key={index}>
                     <a href={link.href} data-tracking-label={link.tracking_label}>
                         {t(link.title.key)}
                     </a>
