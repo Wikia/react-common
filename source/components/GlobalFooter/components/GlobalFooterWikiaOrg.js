@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import Svg from './Svg';
 import './GlobalFooterWikiaOrg.scss';
 
-const GlobalFooterWikiaOrg = ({ t, model }) => {
+const GlobalFooterWikiaOrg = ({ model }) => {
     const year = new Date().getFullYear();
+    const [t] = useTranslation();
 
     return <footer className="wds-global-footer-wikia-org">
         {model.header &&
@@ -31,4 +32,8 @@ const GlobalFooterWikiaOrg = ({ t, model }) => {
     </footer>
 };
 
-export default withTranslation()(GlobalFooterWikiaOrg);
+GlobalFooterWikiaOrg.propTypes = {
+    model: PropTypes.shape.isRequired,
+};
+
+export default GlobalFooterWikiaOrg;

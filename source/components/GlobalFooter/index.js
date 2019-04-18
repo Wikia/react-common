@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import GlobalFooterWikiaOrg from './components/GlobalFooterWikiaOrg';
 import GlobalFooterFandom from './components/GlobalFooterFandom';
 
-const GlobalFooter = ({model}) => {
+const GlobalFooter = ({ model }) => {
     const isWikiaOrg = model['is-wikia-org'];
 
     if (isWikiaOrg) {

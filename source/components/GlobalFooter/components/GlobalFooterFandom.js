@@ -69,4 +69,8 @@ const GlobalFooterFandom = ({ model }) => {
     </footer>;
 };
 
+GlobalFooterFandom.propTypes = {
+    model: PropTypes.shape().isRequired,
+};
+
 export default GlobalFooterFandom

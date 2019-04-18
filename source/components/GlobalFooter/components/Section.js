@@ -1,5 +1,6 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import LinkImage from './LinkImage';
 import LinkBranded from './LinkBranded';
@@ -16,10 +17,11 @@ const renderLink = (type, model) => {
     }
 };
 
-const Section = ({ t, model, name, parentName }) => {
+const Section = ({ model, name, parentName }) => {
     const title = model.header ? model.header.title : '';
     const description = model.description;
     const links = model.links;
+    const [t] = useTranslation();
 
     return <section className={`wds-global-footer__${parentName}-section wds-is-${name}`}>
         {title && <h3 className="wds-global-footer__section-header">{t(title.key)}</h3>}
@@ -36,4 +38,10 @@ const Section = ({ t, model, name, parentName }) => {
     </section>
 };
 
-export default withTranslation()(Section);
+Section.propTypes = {
+    model: PropTypes.shape().isRequired,
+    name: PropTypes.string.isRequired,
+    parentName: PropTypes.string.isRequired,
+};
+
+export default Section;

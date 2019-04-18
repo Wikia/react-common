@@ -1,7 +1,10 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-const LinkBranded = ({ t, model }) => {
+const LinkBranded = ({ model }) => {
+    const [t] = useTranslation();
+
     return <a href={model.href} className="wds-global-footer__link" data-tracking-label={model.tracking_label}>
         <div>
             {t(model.title.key)}
@@ -9,4 +12,8 @@ const LinkBranded = ({ t, model }) => {
     </a>
 };
 
-export default withTranslation()(LinkBranded)
+LinkBranded.propTypes = {
+    model: PropTypes.shape.isRequired,
+};
+
+export default LinkBranded;

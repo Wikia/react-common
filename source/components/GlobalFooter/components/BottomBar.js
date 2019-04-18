@@ -1,7 +1,10 @@
 import React from 'react'
-import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-const BottomBar = ({ t, model }) => {
+const BottomBar = ({ model }) => {
+    const [t] = useTranslation();
+
     return <div className="wds-global-footer__bottom-bar">
         <div className="wds-global-footer__bottom-bar-row wds-has-padding">
             {t(
@@ -15,4 +18,8 @@ const BottomBar = ({ t, model }) => {
     </div>
 };
 
-export default withTranslation()(BottomBar);
+BottomBar.propTypes = {
+    model: PropTypes.shape().isRequired,
+};
+
+export default BottomBar;
