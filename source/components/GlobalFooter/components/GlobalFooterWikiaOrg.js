@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 
 import Svg from './Svg';
+import './GlobalFooterWikiaOrg.scss';
 
 const GlobalFooterWikiaOrg = ({ t, model }) => {
-    return <React.Fragment>
+    const year = new Date().getFullYear();
+
+    return <footer className="wds-global-footer-wikia-org">
         {model.header &&
             <h2 className="wds-global-footer-wikia-org__header">
                 <a href={model.header.href} title={model.header.title.value}>
@@ -25,7 +28,7 @@ const GlobalFooterWikiaOrg = ({ t, model }) => {
                 </li>
             )}
         </ul>
-    </React.Fragment>
+    </footer>
 };
 
 export default withTranslation()(GlobalFooterWikiaOrg);
