@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Svg = ({ name, className, ...rest }) => (
     <svg className={className} {...rest}>
-        <use xlinkHref={name} />
+        <use xlinkHref={`#${name}`} />
     </svg>
 );
 
