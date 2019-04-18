@@ -1,21 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Svg = ({ name, className, ...rest }) => {
-    return (
-        <svg className={className} {...rest}>
-            <use xlinkHref={name} />
-        </svg>
-    );
-};
+const Svg = ({ name, className, ...rest }) => (
+    <svg className={className} {...rest}>
+        <use xlinkHref={name} />
+    </svg>
+);
 
 Svg.propTypes = {
-    name: PropTypes.string.isRequired,
     className: PropTypes.string,
+    name: PropTypes.string.isRequired,
 };
 
 Svg.defaultProps = {
-    name: '',
+    className: '',
 };
 
-export default Svg
+export default Svg;

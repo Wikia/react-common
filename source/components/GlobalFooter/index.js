@@ -8,10 +8,10 @@ const GlobalFooter = ({ model }) => {
     const isWikiaOrg = model['is-wikia-org'];
 
     if (isWikiaOrg) {
-        return <GlobalFooterWikiaOrg model={model} />
+        return <GlobalFooterWikiaOrg model={model} />;
     }
 
-    return <GlobalFooterFandom model={model} />
+    return <GlobalFooterFandom model={model} />;
 };
 
 GlobalFooter.propTypes = {

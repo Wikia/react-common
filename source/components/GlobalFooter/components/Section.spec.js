@@ -5,42 +5,46 @@ import Section from './Section';
 
 test('Section with links only renders correctly', () => {
     const component = renderer.create(
-        <Section name="site_overview" parentName="wikia" model={{
-            "links": [
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Terms of Use"
+        <Section
+            name="site_overview"
+            parentName="wikia"
+            model={{
+                links: [
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Terms of Use',
+                        },
+                        href: 'http://www.wikia.com/Terms_of_use',
                     },
-                    "href": "http:\/\/www.wikia.com\/Terms_of_use"
-                },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Privacy Policy"
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Privacy Policy',
+                        },
+                        href: 'http://www.wikia.com/Privacy_Policy',
                     },
-                    "href": "http:\/\/www.wikia.com\/Privacy_Policy"
-                },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Global Sitemap"
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Global Sitemap',
+                        },
+                        href: 'http://www.wikia.com/Sitemap',
                     },
-                    "href": "http:\/\/www.wikia.com\/Sitemap"
-                },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Local Sitemap"
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Local Sitemap',
+                        },
+                        href: '/wiki/Local_Sitemap',
                     },
-                    "href": "\/wiki\/Local_Sitemap"
-                }
-            ]
-        }} />,
+                ],
+            }}
+        />,
     );
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -48,49 +52,53 @@ test('Section with links only renders correctly', () => {
 
 test('Section with header renders correctly', () => {
     const component = renderer.create(
-        <Section name="site_overview" parentName="wikia" model={{
-            "header": {
-                "type": "line-text",
-                "title": {
-                    "type": "translatable-text",
-                    "key": "Overview"
-                }
-            },
-            "links": [
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "About"
+        <Section
+            name="site_overview"
+            parentName="wikia"
+            model={{
+                header: {
+                    type: 'line-text',
+                    title: {
+                        type: 'translatable-text',
+                        key: 'Overview',
                     },
-                    "href": "http:\/\/www.wikia.com\/about"
                 },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Careers"
+                links: [
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'About',
+                        },
+                        href: 'http://www.wikia.com/about',
                     },
-                    "href": "https:\/\/careers.wikia.com"
-                },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Press"
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Careers',
+                        },
+                        href: 'https://careers.wikia.com',
                     },
-                    "href": "http:\/\/fandom.wikia.com\/press"
-                },
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Contact"
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Press',
+                        },
+                        href: 'http://fandom.wikia.com/press',
                     },
-                    "href": "http:\/\/fandom.wikia.com\/contact"
-                }
-            ]
-        }} />,
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Contact',
+                        },
+                        href: 'http://fandom.wikia.com/contact',
+                    },
+                ],
+            }}
+        />,
     );
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -98,22 +106,26 @@ test('Section with header renders correctly', () => {
 
 test('Section with description renders correctly', () => {
     const component = renderer.create(
-        <Section name="site_overview" parentName="wikia" model={{
-            "description": {
-                "type": "translatable-text",
-                "key": "Can't find a community you love? Create your own and start something epic."
-            },
-            "links": [
-                {
-                    "type": "link-text",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Start a wiki"
+        <Section
+            name="site_overview"
+            parentName="wikia"
+            model={{
+                description: {
+                    type: 'translatable-text',
+                    key: "Can't find a community you love? Create your own and start something epic.",
+                },
+                links: [
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Start a wiki',
+                        },
+                        href: 'http://www.wikia.com/Special:CreateNewWiki',
                     },
-                    "href": "http:\/\/www.wikia.com\/Special:CreateNewWiki"
-                }
-            ]
-        }} />,
+                ],
+            }}
+        />,
     );
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -121,24 +133,28 @@ test('Section with description renders correctly', () => {
 
 test('Section with link-image renders correctly', () => {
     const component = renderer.create(
-        <Section name="site_overview" parentName="wikia" model={{
-            "links": [
-                {
-                    "type": "link-image",
-                    "image": "wds-icons-facebook",
-                    "image-data": {
-                        "type": "wds-svg",
-                        "name": "wds-icons-facebook"
+        <Section
+            name="site_overview"
+            parentName="wikia"
+            model={{
+                links: [
+                    {
+                        type: 'link-image',
+                        image: 'wds-icons-facebook',
+                        'image-data': {
+                            type: 'wds-svg',
+                            name: 'wds-icons-facebook',
+                        },
+                        title: {
+                            type: 'translatable-text',
+                            key: 'global-footer-follow-us-link-facebook',
+                        },
+                        href: '#',
+                        tracking_label: 'follow-us.facebook',
                     },
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "global-footer-follow-us-link-facebook"
-                    },
-                    "href": "#",
-                    "tracking_label": "follow-us.facebook"
-                }
-            ]
-        }} />,
+                ],
+            }}
+        />,
     );
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -146,19 +162,23 @@ test('Section with link-image renders correctly', () => {
 
 test('Section with link-branded renders correctly', () => {
     const component = renderer.create(
-        <Section name="site_overview" parentName="wikia" model={{
-            "links": [
-                {
-                    "type": "link-branded",
-                    "brand": "games",
-                    "title": {
-                        "type": "translatable-text",
-                        "key": "Games"
+        <Section
+            name="site_overview"
+            parentName="wikia"
+            model={{
+                links: [
+                    {
+                        type: 'link-branded',
+                        brand: 'games',
+                        title: {
+                            type: 'translatable-text',
+                            key: 'Games',
+                        },
+                        href: 'http://fandom.wikia.com/games',
                     },
-                    "href": "http:\/\/fandom.wikia.com\/games"
-                },
-            ]
-        }} />,
+                ],
+            }}
+        />,
     );
 
     expect(component.toJSON()).toMatchSnapshot();
