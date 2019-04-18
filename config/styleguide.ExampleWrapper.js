@@ -25,8 +25,7 @@ i18n
         escapeValue: false,
         prefix: '{',
         suffix: '}',
-    },
-    debug: true,
+    }
 });
 
 const Wrapper = styled.div`
