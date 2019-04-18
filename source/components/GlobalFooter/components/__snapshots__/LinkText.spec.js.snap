@@ -8,12 +8,3 @@ exports[`LinkText renders correctly 1`] = `
   About
 </a>
 `;
-
-exports[`LnkText renders correctly 1`] = `
-<a
-  className="wds-global-footer__link"
-  href="http://www.wikia.com/about"
->
-  About
-</a>
-`;

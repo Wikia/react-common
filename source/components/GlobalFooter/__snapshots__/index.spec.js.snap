@@ -15,7 +15,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
         className="wds-global-footer__header-logo"
       >
         <use
-          xlinkHref="wds-company-logo-fandom-white"
+          xlinkHref="#wds-company-logo-fandom-white"
         />
       </svg>
     </a>
@@ -110,7 +110,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-icons-facebook"
+                  xlinkHref="#wds-icons-facebook"
                 />
               </svg>
             </a>
@@ -127,7 +127,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-icons-twitter"
+                  xlinkHref="#wds-icons-twitter"
                 />
               </svg>
             </a>
@@ -144,7 +144,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-icons-youtube"
+                  xlinkHref="#wds-icons-youtube"
                 />
               </svg>
             </a>
@@ -161,7 +161,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-icons-instagram"
+                  xlinkHref="#wds-icons-instagram"
                 />
               </svg>
             </a>
@@ -178,7 +178,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-icons-linkedin"
+                  xlinkHref="#wds-icons-linkedin"
                 />
               </svg>
             </a>
@@ -405,7 +405,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-company-store-appstore"
+                  xlinkHref="#wds-company-store-appstore"
                 />
               </svg>
             </a>
@@ -421,7 +421,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
                 className="wds-global-footer__image wds-icon"
               >
                 <use
-                  xlinkHref="wds-company-store-googleplay"
+                  xlinkHref="#wds-company-store-googleplay"
                 />
               </svg>
             </a>
@@ -490,7 +490,7 @@ exports[`GlobalFooter renders correctly for wikia.org 1`] = `
         className="wds-global-footer__header-logo"
       >
         <use
-          xlinkHref="wds-company-logo-wikia-org"
+          xlinkHref="#wds-company-logo-wikia-org"
         />
       </svg>
     </a>

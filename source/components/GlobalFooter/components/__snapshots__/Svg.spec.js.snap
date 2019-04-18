@@ -5,7 +5,7 @@ exports[`Svg renders correctly 1`] = `
   className="some-css-class"
 >
   <use
-    xlinkHref="wds-company-logo-fandom-white"
+    xlinkHref="#wds-company-logo-fandom-white"
   />
 </svg>
 `;

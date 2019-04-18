@@ -11,15 +11,3 @@ exports[`BottomBar renders correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`Svg renders correctly 1`] = `
-<div
-  className="wds-global-footer__bottom-bar"
->
-  <div
-    className="wds-global-footer__bottom-bar-row wds-has-padding"
-  >
-    global-footer-licensing-and-vertical-description
-  </div>
-</div>
-`;

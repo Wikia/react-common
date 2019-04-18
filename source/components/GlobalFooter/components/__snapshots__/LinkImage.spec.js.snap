@@ -9,7 +9,7 @@ exports[`LinkImage renders correctly 1`] = `
     className="wds-global-footer__image wds-icon"
   >
     <use
-      xlinkHref="wds-company-store-appstore"
+      xlinkHref="#wds-company-store-appstore"
     />
   </svg>
 </a>

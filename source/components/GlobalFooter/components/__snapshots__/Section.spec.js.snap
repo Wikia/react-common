@@ -127,7 +127,7 @@ exports[`Section with link-image renders correctly 1`] = `
           className="wds-global-footer__image wds-icon"
         >
           <use
-            xlinkHref="wds-icons-facebook"
+            xlinkHref="#wds-icons-facebook"
           />
         </svg>
       </a>
