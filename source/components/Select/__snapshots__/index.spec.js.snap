@@ -5,11 +5,11 @@ exports[`Select renders correctly 1`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -17,7 +17,7 @@ exports[`Select renders correctly 1`] = `
         className="css-1hwfws3 fandom-select__value-container"
       >
         <div
-          className="css-1492t68 fandom-select__placeholder"
+          className="css-151xaom-placeholder fandom-select__placeholder"
         >
           Select...
         </div>
@@ -50,6 +50,7 @@ exports[`Select renders correctly 1`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -83,7 +84,7 @@ exports[`Select renders correctly 1`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -102,11 +103,11 @@ exports[`Select renders correctly 2`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -114,7 +115,7 @@ exports[`Select renders correctly 2`] = `
         className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--has-value"
       >
         <div
-          className="css-xp4uvy fandom-select__single-value"
+          className="css-dvua67-singleValue fandom-select__single-value"
         >
           label1
         </div>
@@ -147,6 +148,7 @@ exports[`Select renders correctly 2`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -180,7 +182,7 @@ exports[`Select renders correctly 2`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -199,11 +201,11 @@ exports[`Select renders correctly 3`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -211,7 +213,7 @@ exports[`Select renders correctly 3`] = `
         className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--is-multi fandom-select__value-container--has-value"
       >
         <div
-          className="css-xwjg1b fandom-select__multi-value"
+          className="css-es53b3-multiValue fandom-select__multi-value"
         >
           <div
             className="css-12jo7m5 fandom-select__multi-value__label"
@@ -239,7 +241,7 @@ exports[`Select renders correctly 3`] = `
           </div>
         </div>
         <div
-          className="css-xwjg1b fandom-select__multi-value"
+          className="css-es53b3-multiValue fandom-select__multi-value"
         >
           <div
             className="css-12jo7m5 fandom-select__multi-value__label"
@@ -295,6 +297,7 @@ exports[`Select renders correctly 3`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -328,7 +331,7 @@ exports[`Select renders correctly 3`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -347,11 +350,11 @@ exports[`Select renders correctly 4`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -359,7 +362,7 @@ exports[`Select renders correctly 4`] = `
         className="css-1hwfws3 fandom-select__value-container"
       >
         <div
-          className="css-1492t68 fandom-select__placeholder"
+          className="css-151xaom-placeholder fandom-select__placeholder"
         >
           Select...
         </div>
@@ -392,6 +395,7 @@ exports[`Select renders correctly 4`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -425,7 +429,7 @@ exports[`Select renders correctly 4`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -444,11 +448,11 @@ exports[`Select renders correctly 5`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -456,7 +460,7 @@ exports[`Select renders correctly 5`] = `
         className="css-1hwfws3 fandom-select__value-container"
       >
         <div
-          className="css-1492t68 fandom-select__placeholder"
+          className="css-151xaom-placeholder fandom-select__placeholder"
         >
           Select...
         </div>
@@ -489,6 +493,7 @@ exports[`Select renders correctly 5`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -522,7 +527,7 @@ exports[`Select renders correctly 5`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -541,11 +546,11 @@ exports[`Select renders correctly 6`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-10nd86i fandom-select"
+    className="css-1pcexqc-container fandom-select"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z fandom-select__control"
+      className="css-bg1rzq-control fandom-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -553,12 +558,12 @@ exports[`Select renders correctly 6`] = `
         className="css-1hwfws3 fandom-select__value-container"
       >
         <div
-          className="css-1492t68 fandom-select__placeholder"
+          className="css-151xaom-placeholder fandom-select__placeholder"
         >
           Select...
         </div>
         <input
-          className="css-14uuagi"
+          className="css-gj7qu5-dummyInput"
           disabled={false}
           id="fandom-select-input"
           onBlur={[Function]}
@@ -574,7 +579,7 @@ exports[`Select renders correctly 6`] = `
       >
         <div
           aria-hidden="true"
-          className="css-1ep9fjw fandom-select__indicator fandom-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -593,11 +598,11 @@ exports[`Select renders correctly 7`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1sontr1 fandom-select fandom-select--is-disabled"
+    className="css-ssi0ig-container fandom-select fandom-select--is-disabled"
     onKeyDown={[Function]}
   >
     <div
-      className="css-162g8z5 fandom-select__control fandom-select__control--is-disabled"
+      className="css-14ojxsb-control fandom-select__control fandom-select__control--is-disabled"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -605,7 +610,7 @@ exports[`Select renders correctly 7`] = `
         className="css-1hwfws3 fandom-select__value-container"
       >
         <div
-          className="css-1492t68 fandom-select__placeholder"
+          className="css-151xaom-placeholder fandom-select__placeholder"
         >
           Select...
         </div>
@@ -638,6 +643,7 @@ exports[`Select renders correctly 7`] = `
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
