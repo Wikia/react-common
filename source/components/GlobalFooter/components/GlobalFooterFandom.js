@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import LogoFandomWhite from '../../../assets/LogoFandomWhite';
+
 import BottomBar from './BottomBar';
 import Section from './Section';
-import Svg from './Svg';
-
-import './GlobalFooterFandom.scss';
 
 const GlobalFooterFandom = ({ model }) => {
     const { header } = model;
@@ -17,7 +16,7 @@ const GlobalFooterFandom = ({ model }) => {
             && (
                 <h2 className="wds-global-footer__header">
                     <a href={header.href} title={header.title.value}>
-                        <Svg name={header['image-data'].name} className="wds-global-footer__header-logo" />
+                        <LogoFandomWhite className="wds-global-footer__header-logo" />
                     </a>
                 </h2>
             )

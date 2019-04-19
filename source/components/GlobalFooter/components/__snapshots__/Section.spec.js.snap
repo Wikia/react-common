@@ -123,13 +123,9 @@ exports[`Section with link-image renders correctly 1`] = `
         data-tracking-label="follow-us.facebook"
         href="#"
       >
-        <svg
+        <div
           className="wds-global-footer__image wds-icon"
-        >
-          <use
-            xlinkHref="#wds-icons-facebook"
-          />
-        </svg>
+        />
       </a>
     </li>
   </ul>

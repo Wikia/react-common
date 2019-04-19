@@ -13,7 +13,7 @@ describe('Avatar', () => {
     test('Avatar renders with props', () => {
         const props = {
             alt: 'alt',
-            badge: 'admin',
+            badge: 'sysop',
             className: 'class-name',
             href: 'href',
             src: 'src',
@@ -29,7 +29,7 @@ describe('Avatar', () => {
     });
 
     const badgePermissionTestCases = [
-        'sysop', 'content-moderator', 'threadmoderator', 'global-discussions-moderator', 'staff', 'vstf', 'helper',
+        'sysop', 'content-moderator', 'discussion-moderator', 'global-discussions-moderator', 'staff', 'vstf', 'helper',
     ];
 
     badgePermissionTestCases.forEach((badge) => {
