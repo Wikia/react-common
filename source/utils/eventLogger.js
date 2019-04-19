@@ -1,6 +1,4 @@
-import config from './config';
-
-const { EVENT_LOGGER_BASE } = config;
+import { getEventLoggerBase } from './environment';
 
 export default function logErrorEvent(app, version, name, data = {}) {
     // eslint-disable-next-line no-restricted-globals
@@ -9,7 +7,7 @@ export default function logErrorEvent(app, version, name, data = {}) {
         return;
     }
 
-    fetch(`${EVENT_LOGGER_BASE}/error`, {
+    fetch(`${getEventLoggerBase()}/error`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, cors, *same-origin
         credentials: 'include', // include, *same-origin, omit
