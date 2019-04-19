@@ -101,6 +101,10 @@
     "name": "Utils",
     "sections": [
       {
+        "name": "Environment",
+        "content": "../source/utils/ENVIRONMENT.md"
+      },
+      {
         "name": "Vignette",
         "content": "../source/utils/VIGNETTE.md"
       }

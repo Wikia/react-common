@@ -19,6 +19,7 @@ module.exports = {
         'theme/typography.js',
         'utils/eventLogger.js',
         'utils/vignette.js',
+        'utils/environment.js',
     ],
     /**
      * Those are going to be specified in rollup's `external` in addition
