@@ -11,13 +11,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
       href="http://fandom.wikia.com"
       title="Fandom powered by Wikia"
     >
-      <svg
+      <div
         className="wds-global-footer__header-logo"
-      >
-        <use
-          xlinkHref="#wds-company-logo-fandom-white"
-        />
-      </svg>
+      />
     </a>
   </h2>
   <div
@@ -106,13 +102,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               data-tracking-label="follow-us.facebook"
               href="#"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-icons-facebook"
-                />
-              </svg>
+              />
             </a>
           </li>
           <li
@@ -123,13 +115,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               data-tracking-label="follow-us.twitter"
               href="https://twitter.com/getfandom"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-icons-twitter"
-                />
-              </svg>
+              />
             </a>
           </li>
           <li
@@ -140,13 +128,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               data-tracking-label="follow-us.youtube"
               href="https://www.youtube.com/channel/UC988qTQImTjO7lUdPfYabgQ"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-icons-youtube"
-                />
-              </svg>
+              />
             </a>
           </li>
           <li
@@ -157,13 +141,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               data-tracking-label="follow-us.instagram"
               href="https://www.instagram.com/getfandom/"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-icons-instagram"
-                />
-              </svg>
+              />
             </a>
           </li>
           <li
@@ -174,13 +154,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               data-tracking-label="follow-us.linkedin"
               href="https://www.linkedin.com/company/157252"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-icons-linkedin"
-                />
-              </svg>
+              />
             </a>
           </li>
         </ul>
@@ -401,13 +377,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               className="wds-global-footer__link"
               href="https://itunes.apple.com/developer/wikia-inc./id422467077"
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-company-store-appstore"
-                />
-              </svg>
+              />
             </a>
           </li>
           <li
@@ -417,13 +389,9 @@ exports[`GlobalFooterFandom renders correctly 1`] = `
               className="wds-global-footer__link"
               href="https://play.google.com/store/apps/developer?id=Wikia,+Inc."
             >
-              <svg
+              <div
                 className="wds-global-footer__image wds-icon"
-              >
-                <use
-                  xlinkHref="#wds-company-store-googleplay"
-                />
-              </svg>
+              />
             </a>
           </li>
         </ul>

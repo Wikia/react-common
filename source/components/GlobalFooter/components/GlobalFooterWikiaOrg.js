@@ -4,9 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../consts';
 
-import Svg from './Svg';
-
-import './GlobalFooterWikiaOrg.scss';
+import LogoWikiaOrgWhite from '../../../assets/LogoWikiaOrgWhite';
 
 const GlobalFooterWikiaOrg = ({ model }) => {
     const year = new Date().getFullYear();
@@ -18,7 +16,7 @@ const GlobalFooterWikiaOrg = ({ model }) => {
             && (
                 <h2 className="wds-global-footer-wikia-org__header">
                     <a href={model.header.href} title={model.header.title.value}>
-                        <Svg name={model.header['image-data'].name} className="wds-global-footer__header-logo" />
+                        <LogoWikiaOrgWhite className="wds-global-footer__header-logo" />
                     </a>
                 </h2>
             )

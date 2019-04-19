@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import GlobalFooterWikiaOrg from './components/GlobalFooterWikiaOrg';
 import GlobalFooterFandom from './components/GlobalFooterFandom';
 
+import './styles.scss';
+
 const GlobalFooter = ({ model }) => {
     const isWikiaOrg = model['is-wikia-org'];
 
@@ -15,6 +17,7 @@ const GlobalFooter = ({ model }) => {
 };
 
 GlobalFooter.propTypes = {
+    /** data model retrieved from DesignSystem API */
     model: PropTypes.shape().isRequired,
 };
 

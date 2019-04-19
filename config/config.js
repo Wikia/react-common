@@ -19,6 +19,7 @@ module.exports = {
         'theme/typography.js',
         'utils/eventLogger.js',
         'utils/vignette.js',
+        'utils/environment.js',
         'consts.js',
     ],
     /**

@@ -11,13 +11,9 @@ exports[`GlobalFooterWikiaOrg renders correctly 1`] = `
       href="https://www.wikia.org"
       title="Wikia.org"
     >
-      <svg
+      <div
         className="wds-global-footer__header-logo"
-      >
-        <use
-          xlinkHref="#wds-company-logo-wikia-org"
-        />
-      </svg>
+      />
     </a>
   </h2>
   <ul

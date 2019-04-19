@@ -255,14 +255,51 @@ class GlobalNavigation extends React.Component {
 }
 
 GlobalNavigation.propTypes = {
+    /**
+     * Function called when "search" button is clicked
+     *
+     * accepts:
+     * - [String] query - search query string
+     * */
     goToSearchResults: PropTypes.func,
+    /** data model retrieved from DesignSystem API */
     model: PropTypes.shape().isRequired,
+    /**
+     * Function called when either "search" or "user" modal is opened on mobile
+     *
+     * arguments:
+     * - [String] type - type of modal currently opened
+     * */
     onModalOpen: PropTypes.func,
+    /** Function called when "close" button in search is clicked */
     onSearchCloseClicked: PropTypes.func,
+    /**
+     * Function called when any of the search suggestions is clicked
+     *
+     * arguments:
+     * - [String] clickedSuggestion
+     * - [Array<String>] displayedSuggestions - list of all currently displayed suggestions
+     * - [String] suggestionId - uuidv4 generated id, unique per every search attempt
+     * */
     onSearchSuggestionChosen: PropTypes.func,
+    /**
+     * Function called when search suggestions are displayed
+     *
+     * arguments:
+     * - [Array<String>] suggestions - list of all currently displayed suggestions
+     * - [String] suggestionId - uuidv4 generated id, unique per every search attempt
+     * */
     onSearchSuggestionsImpression: PropTypes.func,
+    /** Function called when search is expanded */
     onSearchToggleClicked: PropTypes.func,
+    /** data model retrieved from DesignSystem API */
     siteName: PropTypes.shape().isRequired,
+    /**
+     * Tracking function
+     *
+     * arguments:
+     * - [Object] object with "action", "category" and "label" keys
+     * */
     track: PropTypes.func,
 };
 
