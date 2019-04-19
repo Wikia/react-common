@@ -4,10 +4,6 @@ import merge from 'lodash/merge';
 
 import LinkLogOut from './LinkLogOut';
 
-jest.mock('react-i18next', () => ({
-    useTranslation: () => [value => value],
-}));
-
 const defaultProps = {
     link: {
         type: 'link-logout',

@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 import Dropdown from '../../../Dropdown';
 import Avatar from '../../../Avatar';
 import Button from '../../../Button';
@@ -21,7 +23,7 @@ UserToggle.propTypes = {
 };
 
 const UserAnon = ({ data, getUrlWithRedirect }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <Dropdown

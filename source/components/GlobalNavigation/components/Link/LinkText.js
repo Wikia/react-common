@@ -3,8 +3,10 @@ import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 const LinkText = ({ link, isStandaloneLink }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <a

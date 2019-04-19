@@ -16,11 +16,14 @@ const IS_PRODUCTION_APP = process.env.env === 'production';
 
 const SERVICES_BASE_URL = isFandomCom() ? 'https://services.fandom.com/' : 'https://services.fandom-dev.us/';
 
+const DESIGN_SYSTEM_I18N_NAMESPACE = 'designSystem';
+
 const config = {
     isClient,
     isFandomCom,
     IS_PRODUCTION_APP,
     SERVICES_BASE_URL,
+    DESIGN_SYSTEM_I18N_NAMESPACE,
     EVENT_LOGGER_BASE: `${SERVICES_BASE_URL}event-logger`,
 };
 

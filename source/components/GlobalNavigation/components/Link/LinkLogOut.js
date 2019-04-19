@@ -2,10 +2,12 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 import withRedirectUrl from '../../hocs/withRedirectUrl';
 
 const LinkLogOut = ({ link, redirectUrl, className }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <div id={link.title.key} className={className}>

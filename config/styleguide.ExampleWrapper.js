@@ -4,23 +4,24 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
-import translation from 'design-system/i18n/en/design-system.json';
+import designSystemTranslations from 'design-system/i18n/en/design-system.json';
 
 import ButtonGroup from '../source/components/ButtonGroup';
 import Button from '../source/components/Button';
 import theme from '../source/theme';
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../source/consts';
 
 i18n
 .use(initReactI18next) // passes i18n down to react-i18next
 .init({
     resources: {
         en: {
-            translation,
+            [DESIGN_SYSTEM_I18N_NAMESPACE]: designSystemTranslations,
         }
     },
+    defaultNS: DESIGN_SYSTEM_I18N_NAMESPACE,
     lng: "en",
     fallbackLng: "en",
-
     interpolation: {
         escapeValue: false,
         prefix: '{',

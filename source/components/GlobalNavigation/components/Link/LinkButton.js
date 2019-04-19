@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 import Button from '../../../Button';
 
 const LinkButton = ({ link }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <Button

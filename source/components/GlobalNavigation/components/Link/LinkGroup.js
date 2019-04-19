@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 import List from '../../../List';
 import Dropdown from '../../../Dropdown';
 
@@ -10,7 +12,7 @@ import LinkText from './LinkText';
 
 /* eslint-disable react/no-array-index-key */
 const LinkGroup = ({ link }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <Dropdown

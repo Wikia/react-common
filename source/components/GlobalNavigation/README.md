@@ -12,3 +12,9 @@ Defaults:
     track={(...args) => console.log('track logged:', ...args)}
 />
 ```
+
+Requirements:
+- `i18next` + `i18next-react`
+
+Notes:
+- Global Nav uses `designSystem` namespace for translations (exported in `consts.js`), please make sure you will set namespaces properly in four `i18next`'s `init` method

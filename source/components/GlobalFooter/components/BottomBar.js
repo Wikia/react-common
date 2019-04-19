@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../consts';
+
 const BottomBar = ({ model }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <div className="wds-global-footer__bottom-bar">

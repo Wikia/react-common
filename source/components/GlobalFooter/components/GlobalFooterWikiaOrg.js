@@ -2,12 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../consts';
+
 import Svg from './Svg';
+
 import './GlobalFooterWikiaOrg.scss';
 
 const GlobalFooterWikiaOrg = ({ model }) => {
     const year = new Date().getFullYear();
-    const [t] = useTranslation();
+    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
 
     return (
         <footer className="wds-global-footer-wikia-org">

@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
 import merge from 'lodash/merge';
 
+import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
 import Button from '../../../Button';
@@ -477,4 +479,4 @@ Search.defaultProps = {
     inSearchModal: false,
 };
 
-export default withTranslation()(Search);
+export default withTranslation(DESIGN_SYSTEM_I18N_NAMESPACE)(Search);
