@@ -106,6 +106,10 @@
       {
         "name": "Vignette",
         "content": "../source/utils/VIGNETTE.md"
+      },
+      {
+        "name": "CopyToClipboardOnClick",
+        "content": "../source/utils/CLIPBOARD.md"
       }
     ]
   },
