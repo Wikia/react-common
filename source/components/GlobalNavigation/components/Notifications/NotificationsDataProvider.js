@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import get from 'lodash/get';
 
 import NotificationsApi from '../../utils/NotificationsApi';
-import { NotificationsProvider } from '../../models/NotificationContext';
+import { NotificationsProvider } from '../../context/NotificationContext';
 import Notification from '../../models/Notification';
 
 /* eslint-disable react/no-unused-state */

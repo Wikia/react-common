@@ -1,6 +1,7 @@
 Defaults:
 ```js
 <GlobalFooter 
+    i18nNamespace="designSystem"
     model={{
            		"header": {
            			"type": "link-image",
@@ -380,3 +381,9 @@ Defaults:
            	}}
 />
 ```
+
+Requirements:
+- `i18next` + `i18next-react`
+
+Notes:
+- you have to provide i18n namespace (eg. `designSystem`) in order to apply translations. Footer DOES NOT HAVE default value as i18n happens on app's side. See https://www.i18next.com/overview/configuration-options for more info.

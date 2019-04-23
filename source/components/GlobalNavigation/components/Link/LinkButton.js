@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
-
 import Button from '../../../Button';
 
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+
 const LinkButton = ({ link }) => {
-    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <Button

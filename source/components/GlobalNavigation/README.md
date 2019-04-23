@@ -10,6 +10,7 @@ Defaults:
     onSearchSuggestionsImpression={(...args) => console.log('onSearchSuggestionsImpression logged:', ...args)}
     onSearchToggleClicked={(...args) => console.log('onSearchToggleClicked logged:', ...args)}
     track={(...args) => console.log('track logged:', ...args)}
+    i18nNamespace="designSystem"
 />
 ```
 
@@ -17,4 +18,5 @@ Requirements:
 - `i18next` + `i18next-react`
 
 Notes:
-- Global Nav uses `designSystem` namespace for translations (exported in `consts.js`), please make sure you will set namespaces properly in four `i18next`'s `init` method
+- you have to provide i18n namespace (eg. `designSystem`) in order to apply translations. Nav DOES NOT HAVE default value as i18n happens on app's side. See https://www.i18next.com/overview/configuration-options for more info.
+

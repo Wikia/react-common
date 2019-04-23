@@ -9,17 +9,16 @@ import designSystemTranslations from 'design-system/i18n/en/design-system.json';
 import ButtonGroup from '../source/components/ButtonGroup';
 import Button from '../source/components/Button';
 import theme from '../source/theme';
-import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../source/consts';
 
 i18n
 .use(initReactI18next) // passes i18n down to react-i18next
 .init({
     resources: {
         en: {
-            [DESIGN_SYSTEM_I18N_NAMESPACE]: designSystemTranslations,
+            'designSystem': designSystemTranslations,
         }
     },
-    defaultNS: DESIGN_SYSTEM_I18N_NAMESPACE,
+    defaultNS: 'designSystem',
     lng: "en",
     fallbackLng: "en",
     interpolation: {

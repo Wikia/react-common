@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import get from 'lodash/get';
@@ -9,7 +9,7 @@ import {
     isDiscussionReply,
     isDiscussionReplyUpvote,
 } from '../../models/notificationTypes';
-import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
@@ -131,7 +131,7 @@ const getText = (translateFunc, model) => {
 };
 
 const CardText = ({ model }) => {
-    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
     const text = getText(t, model);
 
     // eslint-disable-next-line react/no-danger

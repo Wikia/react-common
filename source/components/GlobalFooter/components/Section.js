@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../consts';
+import I18nNamespaceContext from '../context/I18nNamespaceContext';
 
 import LinkImage from './LinkImage';
 import LinkBranded from './LinkBranded';
@@ -23,7 +23,7 @@ const Section = ({ model, name, parentName }) => {
     const title = model.header ? model.header.title : '';
     const { description } = model;
     const { links } = model;
-    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <section className={`wds-global-footer__${parentName}-section wds-is-${name}`}>

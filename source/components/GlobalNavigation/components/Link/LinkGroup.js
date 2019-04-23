@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-
-import { DESIGN_SYSTEM_I18N_NAMESPACE } from '../../../../consts';
 
 import List from '../../../List';
 import Dropdown from '../../../Dropdown';
@@ -10,9 +8,11 @@ import Dropdown from '../../../Dropdown';
 import LinkButton from './LinkButton';
 import LinkText from './LinkText';
 
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+
 /* eslint-disable react/no-array-index-key */
 const LinkGroup = ({ link }) => {
-    const [t] = useTranslation(DESIGN_SYSTEM_I18N_NAMESPACE);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <Dropdown
