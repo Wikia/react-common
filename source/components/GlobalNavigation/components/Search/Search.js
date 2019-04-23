@@ -9,7 +9,7 @@ import Dropdown from '../../../Dropdown';
 import List from '../../../List';
 import Icon from '../../../Icon';
 
-import SearchInput from './components/SearchInput';
+import SearchInput from './SearchInput';
 
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
@@ -442,7 +442,6 @@ Search.propTypes = {
     onSearchClose: PropTypes.func.isRequired,
     onSearchSuggestionChosen: PropTypes.func.isRequired,
     onSearchSuggestionsImpression: PropTypes.func.isRequired,
-    t: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };
 

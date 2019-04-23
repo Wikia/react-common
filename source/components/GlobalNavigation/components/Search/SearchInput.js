@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import Icon from '../../../../Icon';
-import Button from '../../../../Button';
+import Icon from '../../../Icon';
+import Button from '../../../Button';
 
-import I18nNamespaceContext from '../../../context/I18nNamespaceContext';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 const SearchInput = React.forwardRef((props, ref) => {
     const {
@@ -63,5 +64,16 @@ const SearchInput = React.forwardRef((props, ref) => {
     );
 });
 
+SearchInput.propTypes = {
+    model: PropTypes.shape().isRequired,
+    onBlur: PropTypes.func.isRequired,
+    onFocus: PropTypes.func.isRequired,
+    onQueryChanged: PropTypes.func.isRequired,
+    onSearchActivation: PropTypes.func.isRequired,
+    onSearchClear: PropTypes.func.isRequired,
+    onSearchClose: PropTypes.func.isRequired,
+    onSearchSubmit: PropTypes.func.isRequired,
+    query: PropTypes.string.isRequired,
+};
 
 export default SearchInput;

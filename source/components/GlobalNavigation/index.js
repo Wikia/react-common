@@ -275,8 +275,6 @@ class GlobalNavigation extends React.Component {
 }
 
 GlobalNavigation.propTypes = {
-    /** i18next namespace for translated strings from Design System */
-    i18nNamespace: PropTypes.string.isRequired,
     /**
      * Function called when "search" button is clicked
      *
@@ -284,6 +282,8 @@ GlobalNavigation.propTypes = {
      * - [String] query - search query string
      * */
     goToSearchResults: PropTypes.func,
+    /** i18next namespace for translated strings from Design System */
+    i18nNamespace: PropTypes.string.isRequired,
     /** data model retrieved from DesignSystem API */
     model: PropTypes.shape().isRequired,
     /**

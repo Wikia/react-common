@@ -1,202 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render GlobalNavigation renders correctly 1`] = `
-<NotificationsDataProvider
-  isAuthenticated={true}
-  serviceUrl="https://services.wikia.com/"
+<ContextProvider
+  value="designSystem"
 >
-  <div
-    className="wds-global-navigation wds-has-partner-slot"
-    onClick={[Function]}
+  <NotificationsDataProvider
+    isAuthenticated={true}
+    serviceUrl="https://services.wikia.com/"
   >
     <div
-      className="wds-global-navigation__content-bar-left"
+      className="wds-global-navigation wds-has-partner-slot"
+      onClick={[Function]}
     >
-      <a
-        className="wds-global-navigation__logo"
-        data-tracking-label="logo"
-        href="//fandom.wikia.com/"
-      >
-        <_default
-          className="wds-global-navigation__logo-image"
-        />
-      </a>
-      <nav
-        className="wds-global-navigation__links"
-      >
-        <LinkText
-          isStandaloneLink={true}
-          key="0"
-          link={
-            Object {
-              "href": "//fandom.wikia.com/topics/games",
-              "title": Object {
-                "key": "global-navigation-fandom-overview-link-vertical-games",
-                "type": "translatable-text",
-              },
-              "tracking-label": "link.games",
-              "type": "link-text",
-            }
-          }
-        />
-        <LinkGroup
-          key="2"
-          link={
-            Object {
-              "items": Array [
-                Object {
-                  "href": "//fandom.wikia.com/explore",
-                  "title": Object {
-                    "key": "global-navigation-wikis-explore",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.explore",
-                  "type": "link-text",
-                },
-              ],
-              "title": Object {
-                "key": "global-navigation-wikis-header",
-                "type": "translatable-text",
-              },
-              "tracking-label": "link.wikis",
-              "type": "link-group",
-            }
-          }
-        />
-      </nav>
-    </div>
-    <div
-      className="wds-global-navigation__content-bar-right"
-    >
-      <CommunityBar
-        model={
-          Object {
-            "href": "//fandom.wikia.com/",
-            "image-data": Object {
-              "name": "wds-company-logo-fandom-white",
-              "type": "wds-svg",
-            },
-            "tracking-label": "logo",
-            "type": "link-image",
-          }
-        }
-        siteName={
-          Object {
-            "siteName": "mock",
-          }
-        }
-      />
       <div
-        className="wds-global-navigation__dropdown-controls"
+        className="wds-global-navigation__content-bar-left"
       >
-        <Component
-          isSearchExpanded={false}
-          model={
-            Object {
-              "search": "mock",
-            }
-          }
-          onRedirectToSearchResults={[Function]}
-          onSearchActivation={[Function]}
-          onSearchClose={[Function]}
-          onSearchSuggestionChosen={[Function]}
-          onSearchSuggestionsImpression={[Function]}
-          track={[Function]}
-        />
-        <User
-          data={
-            Object {
-              "create-wiki": Object {
-                "create-wiki": "mock",
-              },
-              "logo": Object {
-                "href": "//fandom.wikia.com/",
-                "image-data": Object {
-                  "name": "wds-company-logo-fandom-white",
-                  "type": "wds-svg",
-                },
-                "tracking-label": "logo",
-                "type": "link-image",
-              },
-              "main-navigation": Array [
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                },
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.blah",
-                  "type": "link-other",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
-                    },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
-                },
-              ],
-              "notifications": Object {
-                "notifications": "mock",
-              },
-              "partner-slot": Object {
-                "partner": "mock",
-              },
-              "search": Object {
-                "search": "mock",
-              },
-              "services-domain": "https://services.wikia.com/",
-              "user": Object {
-                "user": "mock",
-              },
-            }
-          }
-        />
-        <NotificationsDropdown
-          track={[Function]}
-        />
-        <div
-          className="wds-global-navigation__start-a-wiki"
+        <a
+          className="wds-global-navigation__logo"
+          data-tracking-label="logo"
+          href="//fandom.wikia.com/"
         >
-          <LinkButton
+          <_default
+            className="wds-global-navigation__logo-image"
+          />
+        </a>
+        <nav
+          className="wds-global-navigation__links"
+        >
+          <LinkText
+            isStandaloneLink={true}
+            key="0"
             link={
               Object {
-                "create-wiki": "mock",
+                "href": "//fandom.wikia.com/topics/games",
+                "title": Object {
+                  "key": "global-navigation-fandom-overview-link-vertical-games",
+                  "type": "translatable-text",
+                },
+                "tracking-label": "link.games",
+                "type": "link-text",
               }
             }
           />
-        </div>
+          <LinkGroup
+            key="2"
+            link={
+              Object {
+                "items": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/explore",
+                    "title": Object {
+                      "key": "global-navigation-wikis-explore",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.explore",
+                    "type": "link-text",
+                  },
+                ],
+                "title": Object {
+                  "key": "global-navigation-wikis-header",
+                  "type": "translatable-text",
+                },
+                "tracking-label": "link.wikis",
+                "type": "link-group",
+              }
+            }
+          />
+        </nav>
       </div>
       <div
-        className="wds-global-navigation__modal-controls"
+        className="wds-global-navigation__content-bar-right"
       >
-        <SearchModal
-          isOpen={false}
-          openModal={[Function]}
+        <CommunityBar
+          model={
+            Object {
+              "href": "//fandom.wikia.com/",
+              "image-data": Object {
+                "name": "wds-company-logo-fandom-white",
+                "type": "wds-svg",
+              },
+              "tracking-label": "logo",
+              "type": "link-image",
+            }
+          }
+          siteName={
+            Object {
+              "siteName": "mock",
+            }
+          }
+        />
+        <div
+          className="wds-global-navigation__dropdown-controls"
         >
-          <Component
-            inSearchModal={true}
+          <Search
+            inSearchModal={false}
             isSearchExpanded={false}
             model={
               Object {
@@ -210,344 +107,356 @@ exports[`render GlobalNavigation renders correctly 1`] = `
             onSearchSuggestionsImpression={[Function]}
             track={[Function]}
           />
-          <nav
-            className="wds-global-navigation__links"
-          >
-            <LinkText
-              isStandaloneLink={true}
-              key="0"
-              link={
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
+          <User
+            data={
+              Object {
+                "create-wiki": Object {
+                  "create-wiki": "mock",
+                },
+                "logo": Object {
+                  "href": "//fandom.wikia.com/",
+                  "image-data": Object {
+                    "name": "wds-company-logo-fandom-white",
+                    "type": "wds-svg",
                   },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                }
-              }
-            />
-            <LinkGroup
-              key="2"
-              link={
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
+                  "tracking-label": "logo",
+                  "type": "link-image",
+                },
+                "main-navigation": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
                     },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
+                    "tracking-label": "link.games",
+                    "type": "link-text",
                   },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
-                }
-              }
-            />
-          </nav>
-        </SearchModal>
-        <MobileUser
-          data={
-            Object {
-              "create-wiki": Object {
-                "create-wiki": "mock",
-              },
-              "logo": Object {
-                "href": "//fandom.wikia.com/",
-                "image-data": Object {
-                  "name": "wds-company-logo-fandom-white",
-                  "type": "wds-svg",
-                },
-                "tracking-label": "logo",
-                "type": "link-image",
-              },
-              "main-navigation": Array [
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                },
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.blah",
-                  "type": "link-other",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
                     },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
+                    "tracking-label": "link.blah",
+                    "type": "link-other",
                   },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  },
+                ],
+                "notifications": Object {
+                  "notifications": "mock",
                 },
-              ],
-              "notifications": Object {
-                "notifications": "mock",
-              },
-              "partner-slot": Object {
-                "partner": "mock",
-              },
-              "search": Object {
-                "search": "mock",
-              },
-              "services-domain": "https://services.wikia.com/",
-              "user": Object {
-                "user": "mock",
-              },
+                "partner-slot": Object {
+                  "partner": "mock",
+                },
+                "search": Object {
+                  "search": "mock",
+                },
+                "services-domain": "https://services.wikia.com/",
+                "user": Object {
+                  "user": "mock",
+                },
+              }
             }
-          }
-          isOpen={false}
-          openModal={[Function]}
-          track={[Function]}
-        />
-        <Button
-          className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
-          disabled={false}
-          fullwidth={false}
-          href={null}
-          light={false}
-          onClick={[Function]}
-          secondary={false}
-          square={false}
-          text={true}
-        >
-          <Icon
-            className=""
-            name="close"
-            small={false}
-            tiny={false}
           />
-        </Button>
+          <NotificationsDropdown
+            track={[Function]}
+          />
+          <div
+            className="wds-global-navigation__start-a-wiki"
+          >
+            <LinkButton
+              link={
+                Object {
+                  "create-wiki": "mock",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="wds-global-navigation__modal-controls"
+        >
+          <SearchModal
+            isOpen={false}
+            openModal={[Function]}
+          >
+            <Search
+              inSearchModal={true}
+              isSearchExpanded={false}
+              model={
+                Object {
+                  "search": "mock",
+                }
+              }
+              onRedirectToSearchResults={[Function]}
+              onSearchActivation={[Function]}
+              onSearchClose={[Function]}
+              onSearchSuggestionChosen={[Function]}
+              onSearchSuggestionsImpression={[Function]}
+              track={[Function]}
+            />
+            <nav
+              className="wds-global-navigation__links"
+            >
+              <LinkText
+                isStandaloneLink={true}
+                key="0"
+                link={
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.games",
+                    "type": "link-text",
+                  }
+                }
+              />
+              <LinkGroup
+                key="2"
+                link={
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  }
+                }
+              />
+            </nav>
+          </SearchModal>
+          <MobileUser
+            data={
+              Object {
+                "create-wiki": Object {
+                  "create-wiki": "mock",
+                },
+                "logo": Object {
+                  "href": "//fandom.wikia.com/",
+                  "image-data": Object {
+                    "name": "wds-company-logo-fandom-white",
+                    "type": "wds-svg",
+                  },
+                  "tracking-label": "logo",
+                  "type": "link-image",
+                },
+                "main-navigation": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.games",
+                    "type": "link-text",
+                  },
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.blah",
+                    "type": "link-other",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  },
+                ],
+                "notifications": Object {
+                  "notifications": "mock",
+                },
+                "partner-slot": Object {
+                  "partner": "mock",
+                },
+                "search": Object {
+                  "search": "mock",
+                },
+                "services-domain": "https://services.wikia.com/",
+                "user": Object {
+                  "user": "mock",
+                },
+              }
+            }
+            isOpen={false}
+            openModal={[Function]}
+            track={[Function]}
+          />
+          <Button
+            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
+            disabled={false}
+            fullwidth={false}
+            href={null}
+            light={false}
+            onClick={[Function]}
+            secondary={false}
+            square={false}
+            text={true}
+          >
+            <Icon
+              className=""
+              name="close"
+              small={false}
+              tiny={false}
+            />
+          </Button>
+        </div>
       </div>
-    </div>
-    <PartnerSlot
-      model={
-        Object {
-          "partner": "mock",
+      <PartnerSlot
+        model={
+          Object {
+            "partner": "mock",
+          }
         }
-      }
-    />
-  </div>
-</NotificationsDataProvider>
+      />
+    </div>
+  </NotificationsDataProvider>
+</ContextProvider>
 `;
 
 exports[`render GlobalNavigation renders correctly when user or partnerSlot are not defined 1`] = `
-<NotificationsDataProvider
-  isAuthenticated={false}
-  serviceUrl="https://services.wikia.com/"
+<ContextProvider
+  value="designSystem"
 >
-  <div
-    className="wds-global-navigation"
-    onClick={[Function]}
+  <NotificationsDataProvider
+    isAuthenticated={false}
+    serviceUrl="https://services.wikia.com/"
   >
     <div
-      className="wds-global-navigation__content-bar-left"
+      className="wds-global-navigation"
+      onClick={[Function]}
     >
-      <a
-        className="wds-global-navigation__logo"
-        data-tracking-label="logo"
-        href="//fandom.wikia.com/"
-      >
-        <_default
-          className="wds-global-navigation__logo-image"
-        />
-      </a>
-      <nav
-        className="wds-global-navigation__links"
-      >
-        <LinkText
-          isStandaloneLink={true}
-          key="0"
-          link={
-            Object {
-              "href": "//fandom.wikia.com/topics/games",
-              "title": Object {
-                "key": "global-navigation-fandom-overview-link-vertical-games",
-                "type": "translatable-text",
-              },
-              "tracking-label": "link.games",
-              "type": "link-text",
-            }
-          }
-        />
-        <LinkGroup
-          key="2"
-          link={
-            Object {
-              "items": Array [
-                Object {
-                  "href": "//fandom.wikia.com/explore",
-                  "title": Object {
-                    "key": "global-navigation-wikis-explore",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.explore",
-                  "type": "link-text",
-                },
-              ],
-              "title": Object {
-                "key": "global-navigation-wikis-header",
-                "type": "translatable-text",
-              },
-              "tracking-label": "link.wikis",
-              "type": "link-group",
-            }
-          }
-        />
-      </nav>
-    </div>
-    <div
-      className="wds-global-navigation__content-bar-right"
-    >
-      <CommunityBar
-        model={
-          Object {
-            "href": "//fandom.wikia.com/",
-            "image-data": Object {
-              "name": "wds-company-logo-fandom-white",
-              "type": "wds-svg",
-            },
-            "tracking-label": "logo",
-            "type": "link-image",
-          }
-        }
-        siteName={
-          Object {
-            "siteName": "mock",
-          }
-        }
-      />
       <div
-        className="wds-global-navigation__dropdown-controls"
+        className="wds-global-navigation__content-bar-left"
       >
-        <Component
-          isSearchExpanded={false}
+        <a
+          className="wds-global-navigation__logo"
+          data-tracking-label="logo"
+          href="//fandom.wikia.com/"
+        >
+          <_default
+            className="wds-global-navigation__logo-image"
+          />
+        </a>
+        <nav
+          className="wds-global-navigation__links"
+        >
+          <LinkText
+            isStandaloneLink={true}
+            key="0"
+            link={
+              Object {
+                "href": "//fandom.wikia.com/topics/games",
+                "title": Object {
+                  "key": "global-navigation-fandom-overview-link-vertical-games",
+                  "type": "translatable-text",
+                },
+                "tracking-label": "link.games",
+                "type": "link-text",
+              }
+            }
+          />
+          <LinkGroup
+            key="2"
+            link={
+              Object {
+                "items": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/explore",
+                    "title": Object {
+                      "key": "global-navigation-wikis-explore",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.explore",
+                    "type": "link-text",
+                  },
+                ],
+                "title": Object {
+                  "key": "global-navigation-wikis-header",
+                  "type": "translatable-text",
+                },
+                "tracking-label": "link.wikis",
+                "type": "link-group",
+              }
+            }
+          />
+        </nav>
+      </div>
+      <div
+        className="wds-global-navigation__content-bar-right"
+      >
+        <CommunityBar
           model={
             Object {
-              "search": "mock",
+              "href": "//fandom.wikia.com/",
+              "image-data": Object {
+                "name": "wds-company-logo-fandom-white",
+                "type": "wds-svg",
+              },
+              "tracking-label": "logo",
+              "type": "link-image",
             }
           }
-          onRedirectToSearchResults={[Function]}
-          onSearchActivation={[Function]}
-          onSearchClose={[Function]}
-          onSearchSuggestionChosen={[Function]}
-          onSearchSuggestionsImpression={[Function]}
-          track={[Function]}
-        />
-        <User
-          data={
+          siteName={
             Object {
-              "create-wiki": Object {
-                "create-wiki": "mock",
-              },
-              "logo": Object {
-                "href": "//fandom.wikia.com/",
-                "image-data": Object {
-                  "name": "wds-company-logo-fandom-white",
-                  "type": "wds-svg",
-                },
-                "tracking-label": "logo",
-                "type": "link-image",
-              },
-              "main-navigation": Array [
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                },
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.blah",
-                  "type": "link-other",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
-                    },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
-                },
-              ],
-              "notifications": Object {
-                "notifications": "mock",
-              },
-              "partner-slot": null,
-              "search": Object {
-                "search": "mock",
-              },
-              "services-domain": "https://services.wikia.com/",
-              "user": null,
+              "siteName": "mock",
             }
           }
         />
         <div
-          className="wds-global-navigation__start-a-wiki"
+          className="wds-global-navigation__dropdown-controls"
         >
-          <LinkButton
-            link={
-              Object {
-                "create-wiki": "mock",
-              }
-            }
-          />
-        </div>
-      </div>
-      <div
-        className="wds-global-navigation__modal-controls"
-      >
-        <SearchModal
-          isOpen={false}
-          openModal={[Function]}
-        >
-          <Component
-            inSearchModal={true}
+          <Search
+            inSearchModal={false}
             isSearchExpanded={false}
             model={
               Object {
@@ -561,139 +470,240 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
             onSearchSuggestionsImpression={[Function]}
             track={[Function]}
           />
-          <nav
-            className="wds-global-navigation__links"
-          >
-            <LinkText
-              isStandaloneLink={true}
-              key="0"
-              link={
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
+          <User
+            data={
+              Object {
+                "create-wiki": Object {
+                  "create-wiki": "mock",
+                },
+                "logo": Object {
+                  "href": "//fandom.wikia.com/",
+                  "image-data": Object {
+                    "name": "wds-company-logo-fandom-white",
+                    "type": "wds-svg",
                   },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                }
-              }
-            />
-            <LinkGroup
-              key="2"
-              link={
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
+                  "tracking-label": "logo",
+                  "type": "link-image",
+                },
+                "main-navigation": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
                     },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
+                    "tracking-label": "link.games",
+                    "type": "link-text",
                   },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
-                }
-              }
-            />
-          </nav>
-        </SearchModal>
-        <MobileUser
-          data={
-            Object {
-              "create-wiki": Object {
-                "create-wiki": "mock",
-              },
-              "logo": Object {
-                "href": "//fandom.wikia.com/",
-                "image-data": Object {
-                  "name": "wds-company-logo-fandom-white",
-                  "type": "wds-svg",
-                },
-                "tracking-label": "logo",
-                "type": "link-image",
-              },
-              "main-navigation": Array [
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.games",
-                  "type": "link-text",
-                },
-                Object {
-                  "href": "//fandom.wikia.com/topics/games",
-                  "title": Object {
-                    "key": "global-navigation-fandom-overview-link-vertical-games",
-                    "type": "translatable-text",
-                  },
-                  "tracking-label": "link.blah",
-                  "type": "link-other",
-                },
-                Object {
-                  "items": Array [
-                    Object {
-                      "href": "//fandom.wikia.com/explore",
-                      "title": Object {
-                        "key": "global-navigation-wikis-explore",
-                        "type": "translatable-text",
-                      },
-                      "tracking-label": "link.explore",
-                      "type": "link-text",
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
                     },
-                  ],
-                  "title": Object {
-                    "key": "global-navigation-wikis-header",
-                    "type": "translatable-text",
+                    "tracking-label": "link.blah",
+                    "type": "link-other",
                   },
-                  "tracking-label": "link.wikis",
-                  "type": "link-group",
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  },
+                ],
+                "notifications": Object {
+                  "notifications": "mock",
                 },
-              ],
-              "notifications": Object {
-                "notifications": "mock",
-              },
-              "partner-slot": null,
-              "search": Object {
-                "search": "mock",
-              },
-              "services-domain": "https://services.wikia.com/",
-              "user": null,
+                "partner-slot": null,
+                "search": Object {
+                  "search": "mock",
+                },
+                "services-domain": "https://services.wikia.com/",
+                "user": null,
+              }
             }
-          }
-          isOpen={false}
-          openModal={[Function]}
-          track={[Function]}
-        />
-        <Button
-          className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
-          disabled={false}
-          fullwidth={false}
-          href={null}
-          light={false}
-          onClick={[Function]}
-          secondary={false}
-          square={false}
-          text={true}
-        >
-          <Icon
-            className=""
-            name="close"
-            small={false}
-            tiny={false}
           />
-        </Button>
+          <div
+            className="wds-global-navigation__start-a-wiki"
+          >
+            <LinkButton
+              link={
+                Object {
+                  "create-wiki": "mock",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="wds-global-navigation__modal-controls"
+        >
+          <SearchModal
+            isOpen={false}
+            openModal={[Function]}
+          >
+            <Search
+              inSearchModal={true}
+              isSearchExpanded={false}
+              model={
+                Object {
+                  "search": "mock",
+                }
+              }
+              onRedirectToSearchResults={[Function]}
+              onSearchActivation={[Function]}
+              onSearchClose={[Function]}
+              onSearchSuggestionChosen={[Function]}
+              onSearchSuggestionsImpression={[Function]}
+              track={[Function]}
+            />
+            <nav
+              className="wds-global-navigation__links"
+            >
+              <LinkText
+                isStandaloneLink={true}
+                key="0"
+                link={
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.games",
+                    "type": "link-text",
+                  }
+                }
+              />
+              <LinkGroup
+                key="2"
+                link={
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  }
+                }
+              />
+            </nav>
+          </SearchModal>
+          <MobileUser
+            data={
+              Object {
+                "create-wiki": Object {
+                  "create-wiki": "mock",
+                },
+                "logo": Object {
+                  "href": "//fandom.wikia.com/",
+                  "image-data": Object {
+                    "name": "wds-company-logo-fandom-white",
+                    "type": "wds-svg",
+                  },
+                  "tracking-label": "logo",
+                  "type": "link-image",
+                },
+                "main-navigation": Array [
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.games",
+                    "type": "link-text",
+                  },
+                  Object {
+                    "href": "//fandom.wikia.com/topics/games",
+                    "title": Object {
+                      "key": "global-navigation-fandom-overview-link-vertical-games",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.blah",
+                    "type": "link-other",
+                  },
+                  Object {
+                    "items": Array [
+                      Object {
+                        "href": "//fandom.wikia.com/explore",
+                        "title": Object {
+                          "key": "global-navigation-wikis-explore",
+                          "type": "translatable-text",
+                        },
+                        "tracking-label": "link.explore",
+                        "type": "link-text",
+                      },
+                    ],
+                    "title": Object {
+                      "key": "global-navigation-wikis-header",
+                      "type": "translatable-text",
+                    },
+                    "tracking-label": "link.wikis",
+                    "type": "link-group",
+                  },
+                ],
+                "notifications": Object {
+                  "notifications": "mock",
+                },
+                "partner-slot": null,
+                "search": Object {
+                  "search": "mock",
+                },
+                "services-domain": "https://services.wikia.com/",
+                "user": null,
+              }
+            }
+            isOpen={false}
+            openModal={[Function]}
+            track={[Function]}
+          />
+          <Button
+            className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
+            disabled={false}
+            fullwidth={false}
+            href={null}
+            light={false}
+            onClick={[Function]}
+            secondary={false}
+            square={false}
+            text={true}
+          >
+            <Icon
+              className=""
+              name="close"
+              small={false}
+              tiny={false}
+            />
+          </Button>
+        </div>
       </div>
     </div>
-  </div>
-</NotificationsDataProvider>
+  </NotificationsDataProvider>
+</ContextProvider>
 `;

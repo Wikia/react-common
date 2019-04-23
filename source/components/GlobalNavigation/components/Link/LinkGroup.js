@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import List from '../../../List';
 import Dropdown from '../../../Dropdown';
 
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+
 import LinkButton from './LinkButton';
 import LinkText from './LinkText';
-
-import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 /* eslint-disable react/no-array-index-key */
 const LinkGroup = ({ link }) => {

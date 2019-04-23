@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput renders 1`] = `
+<Fragment>
+  <input
+    className="wds-global-navigation__search-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    placeholder="global-navigation-search-placeholder-in-wiki"
+    type="search"
+  />
+  <Button
+    className="wds-global-navigation__search-clear"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    light={false}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+    type="button"
+  >
+    <Icon
+      className="wds-global-navigation__search-clear-icon"
+      name="add"
+      small={true}
+      tiny={false}
+    />
+  </Button>
+  <Button
+    className="wds-global-navigation__search-close"
+    disabled={false}
+    fullwidth={false}
+    href={null}
+    light={false}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={true}
+    type="button"
+  >
+    <Icon
+      className="wds-global-navigation__search-close-icon"
+      name="close-tiny"
+      small={false}
+      tiny={true}
+    />
+  </Button>
+  <Button
+    className="wds-global-navigation__search-submit"
+    data-tracking-label="search"
+    disabled={true}
+    fullwidth={false}
+    href={null}
+    light={false}
+    onClick={[Function]}
+    secondary={false}
+    square={false}
+    text={false}
+    type="submit"
+  >
+    <Icon
+      className="wds-global-navigation__search-submit-icon"
+      name="arrow-small"
+      small={true}
+      tiny={false}
+    />
+  </Button>
+</Fragment>
+`;
