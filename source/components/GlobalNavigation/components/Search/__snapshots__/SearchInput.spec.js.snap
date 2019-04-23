@@ -10,6 +10,7 @@ exports[`SearchInput renders 1`] = `
     onFocus={[Function]}
     placeholder="global-navigation-search-placeholder-in-wiki"
     type="search"
+    value="some query"
   />
   <Button
     className="wds-global-navigation__search-clear"
@@ -52,7 +53,7 @@ exports[`SearchInput renders 1`] = `
   <Button
     className="wds-global-navigation__search-submit"
     data-tracking-label="search"
-    disabled={true}
+    disabled={false}
     fullwidth={false}
     href={null}
     light={false}

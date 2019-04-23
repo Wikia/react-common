@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "8.1.0-i18n-2",
+  "version": "8.1.0-i18n-3",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
@@ -126,8 +126,6 @@
     "/models",
     "/systems",
     "/theme",
-    "/utils",
-    "consts.js",
-    "consts.esm.js"
+    "/utils"
   ]
 }
