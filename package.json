@@ -42,7 +42,7 @@
     "react-dom": "^16.8.3",
     "date-fns": "^1.29.0",
     "design-system": "git://github.com/Wikia/design-system.git#21.1.1",
-    "i18next": "^14.0.1",
+    "i18next": "^15.0.0",
     "immutable": "^4.0.0-rc.12",
     "react-i18next": "^10.0.0",
     "react-redux": "^5.0.7",
