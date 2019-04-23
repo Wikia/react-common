@@ -45,7 +45,7 @@ const defaultProps = {
 function renderShallowComponent(props, options = {}) {
     const computedProps = merge({}, defaultProps, props);
 
-    return shallow(<Search {...computedProps} />, options).dive();
+    return shallow(<Search {...computedProps} />, options);
 }
 
 jest.mock('uuid/v4', () => () => 'imma-very-unique');

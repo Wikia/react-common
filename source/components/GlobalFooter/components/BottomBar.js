@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
+import I18nNamespaceContext from '../context/I18nNamespaceContext';
+
 const BottomBar = ({ model }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <div className="wds-global-footer__bottom-bar">

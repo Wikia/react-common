@@ -4,7 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
-import translation from 'design-system/i18n/en/design-system.json';
+import designSystemTranslations from 'design-system/i18n/en/design-system.json';
 
 import ButtonGroup from '../source/components/ButtonGroup';
 import Button from '../source/components/Button';
@@ -15,12 +15,12 @@ i18n
 .init({
     resources: {
         en: {
-            translation,
+            'designSystem': designSystemTranslations,
         }
     },
+    defaultNS: 'designSystem',
     lng: "en",
     fallbackLng: "en",
-
     interpolation: {
         escapeValue: false,
         prefix: '{',

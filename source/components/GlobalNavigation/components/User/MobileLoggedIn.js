@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Button from '../../../Button';
 import Avatar from '../../../Avatar';
 
-import NotificationsContext from '../../models/NotificationContext';
+import NotificationsContext from '../../context/NotificationContext';
 
 import UserModal from './UserModal';
 

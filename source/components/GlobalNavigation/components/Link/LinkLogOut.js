@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
 import withRedirectUrl from '../../hocs/withRedirectUrl';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 const LinkLogOut = ({ link, redirectUrl, className }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <div id={link.title.key} className={className}>

@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from 'react';
 import PropTypes from 'prop-types';
 
-import NotificationsContext from '../../models/NotificationContext';
+import NotificationsContext from '../../context/NotificationContext';
 
 const CardLink = ({ track, model, children }) => {
     const { markAsRead, goToDestination } = useContext(NotificationsContext);

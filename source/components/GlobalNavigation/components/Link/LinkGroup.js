@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
 import List from '../../../List';
 import Dropdown from '../../../Dropdown';
 
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+
 import LinkButton from './LinkButton';
 import LinkText from './LinkText';
 
 /* eslint-disable react/no-array-index-key */
 const LinkGroup = ({ link }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <Dropdown
