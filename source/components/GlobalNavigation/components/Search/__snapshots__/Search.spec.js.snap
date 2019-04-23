@@ -57,7 +57,7 @@ exports[`render Search renders correctly with default props 1`] = `
             onChange={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
-            placeholder="global-navigation-search-placeholder-in-wiki"
+            placeholder={null}
             type="search"
             value=""
           />
@@ -185,7 +185,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
             onChange={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
-            placeholder="global-navigation-search-placeholder-in-wiki"
+            placeholder={null}
             type="search"
             value="Harr"
           />

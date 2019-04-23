@@ -6,10 +6,6 @@ import { notificationTypes } from '../../models/notificationTypes';
 
 import CardText from './CardText';
 
-jest.mock('react-i18next', () => ({
-    useTranslation: () => [value => value],
-}));
-
 const actorsMock = [
     {
         id: '12345',

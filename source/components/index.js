@@ -23,6 +23,7 @@ export { default as FandomContentWell } from './FandomContentWell';
 export { default as Fieldset } from './Fieldset';
 export { default as FloatingButton } from './FloatingButton';
 export { default as FloatingButtonGroup } from './FloatingButtonGroup';
+export { default as GlobalFooter } from './GlobalFooter';
 export { default as GlobalNavigation } from './GlobalNavigation';
 export { default as HideComponent } from './HideComponent';
 export { default as Icon } from './Icon';

@@ -6,7 +6,7 @@ import AvatarStack from './index';
 
 const defaultProps = {
     avatars: [
-        { src: 'some.url', alt: 'User', link: 'some.link', badge: 'admin' },
+        { src: 'some.url', alt: 'User', link: 'some.link', badge: 'sysop' },
         { src: 'some.other.url', alt: 'Other user', link: 'some.other.link' },
     ],
 };

@@ -59,6 +59,7 @@
       "Fieldset",
       "FloatingButton",
       "FloatingButtonGroup",
+      "GlobalFooter",
       "GlobalNavigation",
       "HideComponent",
       "Icon",
