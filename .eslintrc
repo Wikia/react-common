@@ -65,7 +65,9 @@
       "elements": ["img", "object", "area", "input[type=\"image\"]"],
       "img": ["Image"]
     }],
-    "jest/consistent-test-it": ["error", {"fn": "test"}],
+    "jest/consistent-test-it": ["error", {
+      "fn": "test"
+    }],
     "jest/no-disabled-tests": "error",
     "jest/no-focused-tests": "error",
     "jest/no-hooks": "warn",
