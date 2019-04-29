@@ -28,7 +28,7 @@ const Link = styled.a`
     width: 100%;
 
     &:hover {
-        color: #00acac;
+        color: ${props => props.theme.color.fandom_aqua};
     }
 `;
 
@@ -40,11 +40,11 @@ const Wrapper = styled.div`
     width: ${props => `${props.size}px`};
 
     ${Link} ${DefaultAvatar}:hover {
-        fill: ${props => (props.href ? '#00acac' : '#bed1cf')};
+        fill: ${props => (props.href ? props.theme.color.fandom_aqua : props.theme.color.fandom_mid_light_gray)};
     }
 
     ${Link} ${UserAvatar}:hover {
-        border-color: ${props => (props.href ? '#00acac' : '#bed1cf')};
+        border-color: ${props => (props.href ? props.theme.color.fandom_aqua : props.theme.color.fandom_mid_light_gray)};
     }
 `;
 
@@ -69,7 +69,7 @@ class StyledAvatar extends React.Component {
         const { alt } = this.props;
         const avatarImage = this.state.imageSrc
             ? <UserAvatar borderWidth={borderWidth} src={this.state.imageSrc} alt={alt} title={alt} />
-            : <DefaultAvatar borderWidth={borderWidth} alt={alt} title={alt} />;
+            : <DefaultAvatar size={this.props.size.toString()} borderWidth={borderWidth} alt={alt} title={alt} />;
 
         if (this.props.linkBuilder) {
             return this.props.linkBuilder(avatarImage);
