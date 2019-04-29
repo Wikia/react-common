@@ -13,8 +13,6 @@ const DefaultAvatar = styled(({ borderWidth, size, ...rest }) => <IconAvatar hei
     box-sizing: border-box;
     display: inline-block;
     fill: ${props => props.theme.color.fandom_mid_light_gray};
-    height: 100%;
-    width: 100%;
 `;
 
 DefaultAvatar.defaultProps = {
