@@ -1,585 +1,230 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar renders when incorrect badgePermission is set 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  badge="someIncorrectBadgePermission"
-  size={48}
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
 >
-  <StyledAvatar__Wrapper
+  <StyledAvatar
+    alt="User avatar"
+    badge="someIncorrectBadgePermission"
     size={48}
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "eZFHuz",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <StyledAvatar__Wrapper
       size={48}
     >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-        size={48}
-      >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="3px"
-          className=""
-          title="User avatar"
-        >
-          <StyledComponent
-            alt="User avatar"
-            borderWidth="3px"
-            className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
-            title="User avatar"
-          >
-            <Component
-              alt="User avatar"
-              borderWidth="3px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
-              title="User avatar"
-            >
-              <_default
-                alt="User avatar"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
-                title="User avatar"
-              >
-                <_default
-                  alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
-                  title="User avatar"
-                >
-                  <div
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
-                    title="User avatar"
-                  />
-                </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-        <Badge
-          badge="someIncorrectBadgePermission"
-          className=""
-          diameter={48}
-          size={20.1872}
-        >
-          <StyledComponent
-            badge="someIncorrectBadgePermission"
-            className=""
-            diameter={48}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-1a5ie29-0",
-                  "isStatic": false,
-                  "lastClassName": "cwhJAF",
-                  "rules": Array [
-                    "height:",
-                    [Function],
-                    ";left:",
-                    [Function],
-                    ";line-height:0;min-width:",
-                    [Function],
-                    ";position:absolute;top:",
-                    [Function],
-                    ";width:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "Badge",
-                "foldedComponentIds": Array [],
-                "propTypes": Object {
-                  "className": [Function],
-                  "diameter": [Function],
-                  "size": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "Badge-sc-1a5ie29-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
-            size={20.1872}
-          >
-            <Badge
-              badge="someIncorrectBadgePermission"
-              className="Badge-sc-1a5ie29-0 cwhJAF"
-              diameter={48}
-              size={20.1872}
-            />
-          </StyledComponent>
-        </Badge>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
-`;
-
-exports[`Avatar renders with badge 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  badge="sysop"
-  size={48}
->
-  <StyledAvatar__Wrapper
-    size={48}
-  >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "eZFHuz",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "eZFHuz",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
         }
-      }
-      forwardedRef={null}
-      size={48}
-    >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
+        forwardedRef={null}
         size={48}
       >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="3px"
-          className=""
-          title="User avatar"
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
+          size={48}
         >
-          <StyledComponent
-            alt="User avatar"
-            borderWidth="3px"
-            className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
-            title="User avatar"
-          >
-            <Component
-              alt="User avatar"
-              borderWidth="3px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
-              title="User avatar"
-            >
-              <_default
-                alt="User avatar"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
-                title="User avatar"
-              >
-                <_default
-                  alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
-                  title="User avatar"
-                >
-                  <div
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
-                    title="User avatar"
-                  />
-                </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-        <Badge
-          badge="sysop"
-          className=""
-          diameter={48}
-          size={20.1872}
-        >
-          <StyledComponent
-            badge="sysop"
-            className=""
-            diameter={48}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-1a5ie29-0",
-                  "isStatic": false,
-                  "lastClassName": "cwhJAF",
-                  "rules": Array [
-                    "height:",
-                    [Function],
-                    ";left:",
-                    [Function],
-                    ";line-height:0;min-width:",
-                    [Function],
-                    ";position:absolute;top:",
-                    [Function],
-                    ";width:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "Badge",
-                "foldedComponentIds": Array [],
-                "propTypes": Object {
-                  "className": [Function],
-                  "diameter": [Function],
-                  "size": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "Badge-sc-1a5ie29-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
-            size={20.1872}
-          >
-            <Badge
-              badge="sysop"
-              className="Badge-sc-1a5ie29-0 cwhJAF"
-              diameter={48}
-              size={20.1872}
-            >
-              <span
-                className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
-                title="Community Admin"
-              >
-                <_default>
-                  <_default>
-                    <div />
-                  </_default>
-                </_default>
-              </span>
-            </Badge>
-          </StyledComponent>
-        </Badge>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
-`;
-
-exports[`Avatar renders with default props 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  size={48}
->
-  <StyledAvatar__Wrapper
-    size={48}
-  >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "eZFHuz",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      size={48}
-    >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-        size={48}
-      >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="3px"
-          className=""
-          title="User avatar"
-        >
-          <StyledComponent
-            alt="User avatar"
-            borderWidth="3px"
-            className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
-            title="User avatar"
-          >
-            <Component
-              alt="User avatar"
-              borderWidth="3px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
-              title="User avatar"
-            >
-              <_default
-                alt="User avatar"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
-                title="User avatar"
-              >
-                <_default
-                  alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
-                  title="User avatar"
-                >
-                  <div
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
-                    title="User avatar"
-                  />
-                </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
-`;
-
-exports[`Avatar renders with link builder 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  linkBuilder={[Function]}
-  size={48}
->
-  <StyledAvatar__Wrapper
-    size={48}
-  >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "eZFHuz",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-      size={48}
-    >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-        size={48}
-      >
-        <div>
           <DefaultAvatar
             alt="User avatar"
             borderWidth="3px"
             className=""
+            size="48"
             title="User avatar"
           >
             <StyledComponent
@@ -592,10 +237,12 @@ exports[`Avatar renders with link builder 1`] = `
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": true,
+                    "isStatic": false,
                     "lastClassName": "efwjGj",
                     "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
                     ],
                   },
                   "defaultProps": Object {
@@ -613,28 +260,776 @@ exports[`Avatar renders with link builder 1`] = `
                 }
               }
               forwardedRef={null}
+              size="48"
               title="User avatar"
             >
               <Component
                 alt="User avatar"
                 borderWidth="3px"
                 className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="48"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="48"
                   title="User avatar"
+                  width="48"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="48"
                     title="User avatar"
+                    width="48"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="48"
                       title="User avatar"
+                      width="48"
+                    />
+                  </_default>
+                </_default>
+              </Component>
+            </StyledComponent>
+          </DefaultAvatar>
+          <Badge
+            badge="someIncorrectBadgePermission"
+            className=""
+            diameter={48}
+            size={20.1872}
+          >
+            <StyledComponent
+              badge="someIncorrectBadgePermission"
+              className=""
+              diameter={48}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Badge-sc-1a5ie29-0",
+                    "isStatic": false,
+                    "lastClassName": "cwhJAF",
+                    "rules": Array [
+                      "height:",
+                      [Function],
+                      ";left:",
+                      [Function],
+                      ";line-height:0;min-width:",
+                      [Function],
+                      ";position:absolute;top:",
+                      [Function],
+                      ";width:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "Badge",
+                  "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "className": [Function],
+                    "diameter": [Function],
+                    "size": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "Badge-sc-1a5ie29-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size={20.1872}
+            >
+              <Badge
+                badge="someIncorrectBadgePermission"
+                className="Badge-sc-1a5ie29-0 cwhJAF"
+                diameter={48}
+                size={20.1872}
+              />
+            </StyledComponent>
+          </Badge>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
+`;
+
+exports[`Avatar renders with badge 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledAvatar
+    alt="User avatar"
+    badge="sysop"
+    size={48}
+  >
+    <StyledAvatar__Wrapper
+      size={48}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "eZFHuz",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        size={48}
+      >
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
+          size={48}
+        >
+          <DefaultAvatar
+            alt="User avatar"
+            borderWidth="3px"
+            className=""
+            size="48"
+            title="User avatar"
+          >
+            <StyledComponent
+              alt="User avatar"
+              borderWidth="3px"
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DefaultAvatar-whpo0l-0",
+                    "isStatic": false,
+                    "lastClassName": "efwjGj",
+                    "rules": Array [
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "DefaultAvatar",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DefaultAvatar-whpo0l-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size="48"
+              title="User avatar"
+            >
+              <Component
+                alt="User avatar"
+                borderWidth="3px"
+                className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="48"
+                title="User avatar"
+              >
+                <_default
+                  alt="User avatar"
+                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="48"
+                  title="User avatar"
+                  width="48"
+                >
+                  <_default
+                    alt="User avatar"
+                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="48"
+                    title="User avatar"
+                    width="48"
+                  >
+                    <div
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="48"
+                      title="User avatar"
+                      width="48"
+                    />
+                  </_default>
+                </_default>
+              </Component>
+            </StyledComponent>
+          </DefaultAvatar>
+          <Badge
+            badge="sysop"
+            className=""
+            diameter={48}
+            size={20.1872}
+          >
+            <StyledComponent
+              badge="sysop"
+              className=""
+              diameter={48}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Badge-sc-1a5ie29-0",
+                    "isStatic": false,
+                    "lastClassName": "cwhJAF",
+                    "rules": Array [
+                      "height:",
+                      [Function],
+                      ";left:",
+                      [Function],
+                      ";line-height:0;min-width:",
+                      [Function],
+                      ";position:absolute;top:",
+                      [Function],
+                      ";width:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "Badge",
+                  "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "className": [Function],
+                    "diameter": [Function],
+                    "size": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "Badge-sc-1a5ie29-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size={20.1872}
+            >
+              <Badge
+                badge="sysop"
+                className="Badge-sc-1a5ie29-0 cwhJAF"
+                diameter={48}
+                size={20.1872}
+              >
+                <span
+                  className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
+                  title="Community Admin"
+                >
+                  <_default>
+                    <_default>
+                      <div />
+                    </_default>
+                  </_default>
+                </span>
+              </Badge>
+            </StyledComponent>
+          </Badge>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
+`;
+
+exports[`Avatar renders with default props 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledAvatar
+    alt="User avatar"
+    size={48}
+  >
+    <StyledAvatar__Wrapper
+      size={48}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "eZFHuz",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        size={48}
+      >
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
+          size={48}
+        >
+          <DefaultAvatar
+            alt="User avatar"
+            borderWidth="3px"
+            className=""
+            size="48"
+            title="User avatar"
+          >
+            <StyledComponent
+              alt="User avatar"
+              borderWidth="3px"
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DefaultAvatar-whpo0l-0",
+                    "isStatic": false,
+                    "lastClassName": "efwjGj",
+                    "rules": Array [
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "DefaultAvatar",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DefaultAvatar-whpo0l-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size="48"
+              title="User avatar"
+            >
+              <Component
+                alt="User avatar"
+                borderWidth="3px"
+                className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="48"
+                title="User avatar"
+              >
+                <_default
+                  alt="User avatar"
+                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="48"
+                  title="User avatar"
+                  width="48"
+                >
+                  <_default
+                    alt="User avatar"
+                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="48"
+                    title="User avatar"
+                    width="48"
+                  >
+                    <div
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="48"
+                      title="User avatar"
+                      width="48"
                     />
                   </_default>
                 </_default>
@@ -642,789 +1037,1785 @@ exports[`Avatar renders with link builder 1`] = `
             </StyledComponent>
           </DefaultAvatar>
         </div>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
+`;
+
+exports[`Avatar renders with link builder 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledAvatar
+    alt="User avatar"
+    linkBuilder={[Function]}
+    size={48}
+  >
+    <StyledAvatar__Wrapper
+      size={48}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "eZFHuz",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        size={48}
+      >
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
+          size={48}
+        >
+          <div>
+            <DefaultAvatar
+              alt="User avatar"
+              borderWidth="3px"
+              className=""
+              size="48"
+              title="User avatar"
+            >
+              <StyledComponent
+                alt="User avatar"
+                borderWidth="3px"
+                className=""
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "DefaultAvatar-whpo0l-0",
+                      "isStatic": false,
+                      "lastClassName": "efwjGj",
+                      "rules": Array [
+                        "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                        [Function],
+                        ";height:100%;width:100%;",
+                      ],
+                    },
+                    "defaultProps": Object {
+                      "className": "",
+                    },
+                    "displayName": "DefaultAvatar",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "DefaultAvatar-whpo0l-0",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
+                size="48"
+                title="User avatar"
+              >
+                <Component
+                  alt="User avatar"
+                  borderWidth="3px"
+                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  size="48"
+                  title="User avatar"
+                >
+                  <_default
+                    alt="User avatar"
+                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="48"
+                    title="User avatar"
+                    width="48"
+                  >
+                    <_default
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="48"
+                      title="User avatar"
+                      width="48"
+                    >
+                      <div
+                        alt="User avatar"
+                        className="DefaultAvatar-whpo0l-0 efwjGj"
+                        height="48"
+                        title="User avatar"
+                        width="48"
+                      />
+                    </_default>
+                  </_default>
+                </Component>
+              </StyledComponent>
+            </DefaultAvatar>
+          </div>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
 `;
 
 exports[`Avatar renders with props 1`] = `
-<StyledAvatar
-  alt="alt"
-  badge="sysop"
-  className="class-name"
-  href="href"
-  size={48}
-  src="src"
-  title="title"
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
 >
-  <StyledAvatar__Wrapper
+  <StyledAvatar
+    alt="alt"
+    badge="sysop"
     className="class-name"
     href="href"
     size={48}
+    src="src"
     title="title"
   >
-    <StyledComponent
+    <StyledAvatar__Wrapper
       className="class-name"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "cYlivE",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       href="href"
       size={48}
       title="title"
     >
-      <div
-        className="class-name StyledAvatar__Wrapper-sc-8ufved-1 cYlivE"
+      <StyledComponent
+        className="class-name"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "iqrvil",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
         href="href"
         size={48}
         title="title"
       >
-        <StyledAvatar__Link
+        <div
+          className="class-name StyledAvatar__Wrapper-sc-8ufved-1 iqrvil"
           href="href"
+          size={48}
+          title="title"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "StyledAvatar__Link-sc-8ufved-0",
-                  "isStatic": true,
-                  "lastClassName": "kjnghW",
-                  "rules": Array [
-                    "color:#000;height:100%;width:100%;&:hover{color:#00acac;}",
-                  ],
-                },
-                "displayName": "StyledAvatar__Link",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "StyledAvatar__Link-sc-8ufved-0",
-                "target": "a",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <StyledAvatar__Link
             href="href"
           >
-            <a
-              className="StyledAvatar__Link-sc-8ufved-0 kjnghW"
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledAvatar__Link-sc-8ufved-0",
+                    "isStatic": false,
+                    "lastClassName": "cSTxOC",
+                    "rules": Array [
+                      "color:#000;height:100%;width:100%;&:hover{color:",
+                      [Function],
+                      ";}",
+                    ],
+                  },
+                  "displayName": "StyledAvatar__Link",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledAvatar__Link-sc-8ufved-0",
+                  "target": "a",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
               href="href"
             >
-              <UserAvatar
-                alt="alt"
-                borderWidth="3px"
-                className=""
-                src="src"
-                title="alt"
+              <a
+                className="StyledAvatar__Link-sc-8ufved-0 cSTxOC"
+                href="href"
               >
-                <StyledComponent
+                <UserAvatar
                   alt="alt"
                   borderWidth="3px"
                   className=""
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "UserAvatar-sc-1wud8kz-0",
-                        "isStatic": false,
-                        "lastClassName": "hafqGD",
-                        "rules": Array [
-                          "height:100%;width:100%;border-radius:50%;box-sizing:border-box;display:inline-block;border:",
-                          [Function],
-                          " solid #bed1cf;",
-                        ],
-                      },
-                      "defaultProps": Object {
-                        "className": "",
-                      },
-                      "displayName": "UserAvatar",
-                      "foldedComponentIds": Array [],
-                      "propTypes": Object {
-                        "alt": [Function],
-                        "borderWidth": [Function],
-                        "className": [Function],
-                        "title": [Function],
-                      },
-                      "render": [Function],
-                      "styledComponentId": "UserAvatar-sc-1wud8kz-0",
-                      "target": [Function],
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                      Symbol(Symbol.hasInstance): [Function],
-                    }
-                  }
-                  forwardedRef={null}
                   src="src"
                   title="alt"
                 >
-                  <Component
+                  <StyledComponent
                     alt="alt"
                     borderWidth="3px"
-                    className="UserAvatar-sc-1wud8kz-0 hafqGD"
+                    className=""
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "UserAvatar-sc-1wud8kz-0",
+                          "isStatic": false,
+                          "lastClassName": "hafqGD",
+                          "rules": Array [
+                            "height:100%;width:100%;border-radius:50%;box-sizing:border-box;display:inline-block;border:",
+                            [Function],
+                            " solid #bed1cf;",
+                          ],
+                        },
+                        "defaultProps": Object {
+                          "className": "",
+                        },
+                        "displayName": "UserAvatar",
+                        "foldedComponentIds": Array [],
+                        "propTypes": Object {
+                          "alt": [Function],
+                          "borderWidth": [Function],
+                          "className": [Function],
+                          "title": [Function],
+                        },
+                        "render": [Function],
+                        "styledComponentId": "UserAvatar-sc-1wud8kz-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                        Symbol(Symbol.hasInstance): [Function],
+                      }
+                    }
+                    forwardedRef={null}
                     src="src"
                     title="alt"
                   >
-                    <img
+                    <Component
                       alt="alt"
+                      borderWidth="3px"
                       className="UserAvatar-sc-1wud8kz-0 hafqGD"
                       src="src"
                       title="alt"
-                    />
-                  </Component>
-                </StyledComponent>
-              </UserAvatar>
-            </a>
-          </StyledComponent>
-        </StyledAvatar__Link>
-        <Badge
-          badge="sysop"
-          className=""
-          diameter={48}
-          size={20.1872}
-        >
-          <StyledComponent
+                    >
+                      <img
+                        alt="alt"
+                        className="UserAvatar-sc-1wud8kz-0 hafqGD"
+                        src="src"
+                        title="alt"
+                      />
+                    </Component>
+                  </StyledComponent>
+                </UserAvatar>
+              </a>
+            </StyledComponent>
+          </StyledAvatar__Link>
+          <Badge
             badge="sysop"
             className=""
             diameter={48}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-1a5ie29-0",
-                  "isStatic": false,
-                  "lastClassName": "cwhJAF",
-                  "rules": Array [
-                    "height:",
-                    [Function],
-                    ";left:",
-                    [Function],
-                    ";line-height:0;min-width:",
-                    [Function],
-                    ";position:absolute;top:",
-                    [Function],
-                    ";width:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "Badge",
-                "foldedComponentIds": Array [],
-                "propTypes": Object {
-                  "className": [Function],
-                  "diameter": [Function],
-                  "size": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "Badge-sc-1a5ie29-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
             size={20.1872}
           >
-            <Badge
+            <StyledComponent
               badge="sysop"
-              className="Badge-sc-1a5ie29-0 cwhJAF"
+              className=""
               diameter={48}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Badge-sc-1a5ie29-0",
+                    "isStatic": false,
+                    "lastClassName": "cwhJAF",
+                    "rules": Array [
+                      "height:",
+                      [Function],
+                      ";left:",
+                      [Function],
+                      ";line-height:0;min-width:",
+                      [Function],
+                      ";position:absolute;top:",
+                      [Function],
+                      ";width:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "Badge",
+                  "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "className": [Function],
+                    "diameter": [Function],
+                    "size": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "Badge-sc-1a5ie29-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
               size={20.1872}
             >
-              <span
-                className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
-                title="Community Admin"
+              <Badge
+                badge="sysop"
+                className="Badge-sc-1a5ie29-0 cwhJAF"
+                diameter={48}
+                size={20.1872}
               >
-                <_default>
+                <span
+                  className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
+                  title="Community Admin"
+                >
                   <_default>
-                    <div />
+                    <_default>
+                      <div />
+                    </_default>
                   </_default>
-                </_default>
-              </span>
-            </Badge>
-          </StyledComponent>
-        </Badge>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
+                </span>
+              </Badge>
+            </StyledComponent>
+          </Badge>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
 `;
 
 exports[`Avatar renders with size >= 48px 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  badge="sysop"
-  size="50"
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
 >
-  <StyledAvatar__Wrapper
+  <StyledAvatar
+    alt="User avatar"
+    badge="sysop"
     size="50"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "kywEtC",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <StyledAvatar__Wrapper
       size="50"
     >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 kywEtC"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "kywEtC",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
         size="50"
       >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="3px"
-          className=""
-          title="User avatar"
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 kywEtC"
+          size="50"
         >
-          <StyledComponent
+          <DefaultAvatar
             alt="User avatar"
             borderWidth="3px"
             className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
+            size="50"
             title="User avatar"
           >
-            <Component
+            <StyledComponent
               alt="User avatar"
               borderWidth="3px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DefaultAvatar-whpo0l-0",
+                    "isStatic": false,
+                    "lastClassName": "efwjGj",
+                    "rules": Array [
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "DefaultAvatar",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DefaultAvatar-whpo0l-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size="50"
               title="User avatar"
             >
-              <_default
+              <Component
                 alt="User avatar"
+                borderWidth="3px"
                 className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="50"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="50"
                   title="User avatar"
+                  width="50"
                 >
-                  <div
+                  <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="50"
                     title="User avatar"
-                  />
+                    width="50"
+                  >
+                    <div
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="50"
+                      title="User avatar"
+                      width="50"
+                    />
+                  </_default>
                 </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-        <Badge
-          badge="sysop"
-          className=""
-          diameter={50}
-          size={20.695}
-        >
-          <StyledComponent
+              </Component>
+            </StyledComponent>
+          </DefaultAvatar>
+          <Badge
             badge="sysop"
             className=""
             diameter={50}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-1a5ie29-0",
-                  "isStatic": false,
-                  "lastClassName": "juzlSY",
-                  "rules": Array [
-                    "height:",
-                    [Function],
-                    ";left:",
-                    [Function],
-                    ";line-height:0;min-width:",
-                    [Function],
-                    ";position:absolute;top:",
-                    [Function],
-                    ";width:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "Badge",
-                "foldedComponentIds": Array [],
-                "propTypes": Object {
-                  "className": [Function],
-                  "diameter": [Function],
-                  "size": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "Badge-sc-1a5ie29-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
             size={20.695}
           >
-            <Badge
+            <StyledComponent
               badge="sysop"
-              className="Badge-sc-1a5ie29-0 juzlSY"
+              className=""
               diameter={50}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Badge-sc-1a5ie29-0",
+                    "isStatic": false,
+                    "lastClassName": "juzlSY",
+                    "rules": Array [
+                      "height:",
+                      [Function],
+                      ";left:",
+                      [Function],
+                      ";line-height:0;min-width:",
+                      [Function],
+                      ";position:absolute;top:",
+                      [Function],
+                      ";width:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "Badge",
+                  "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "className": [Function],
+                    "diameter": [Function],
+                    "size": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "Badge-sc-1a5ie29-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
               size={20.695}
             >
-              <span
-                className="wds-avatar__badge Badge-sc-1a5ie29-0 juzlSY"
-                title="Community Admin"
+              <Badge
+                badge="sysop"
+                className="Badge-sc-1a5ie29-0 juzlSY"
+                diameter={50}
+                size={20.695}
               >
-                <_default>
+                <span
+                  className="wds-avatar__badge Badge-sc-1a5ie29-0 juzlSY"
+                  title="Community Admin"
+                >
                   <_default>
-                    <div />
+                    <_default>
+                      <div />
+                    </_default>
                   </_default>
-                </_default>
-              </span>
-            </Badge>
-          </StyledComponent>
-        </Badge>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
+                </span>
+              </Badge>
+            </StyledComponent>
+          </Badge>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
 `;
 
 exports[`Avatar renders with size >= 120px 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  size="124"
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
 >
-  <StyledAvatar__Wrapper
+  <StyledAvatar
+    alt="User avatar"
     size="124"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "gtDpLB",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <StyledAvatar__Wrapper
       size="124"
     >
-      <div
-        className="StyledAvatar__Wrapper-sc-8ufved-1 gtDpLB"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "gtDpLB",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
         size="124"
       >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="4px"
-          className=""
-          title="User avatar"
+        <div
+          className="StyledAvatar__Wrapper-sc-8ufved-1 gtDpLB"
+          size="124"
         >
-          <StyledComponent
+          <DefaultAvatar
             alt="User avatar"
             borderWidth="4px"
             className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
+            size="124"
             title="User avatar"
           >
-            <Component
+            <StyledComponent
               alt="User avatar"
               borderWidth="4px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DefaultAvatar-whpo0l-0",
+                    "isStatic": false,
+                    "lastClassName": "efwjGj",
+                    "rules": Array [
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "DefaultAvatar",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DefaultAvatar-whpo0l-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size="124"
               title="User avatar"
             >
-              <_default
+              <Component
                 alt="User avatar"
+                borderWidth="4px"
                 className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="124"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="124"
                   title="User avatar"
+                  width="124"
                 >
-                  <div
+                  <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="124"
                     title="User avatar"
-                  />
+                    width="124"
+                  >
+                    <div
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="124"
+                      title="User avatar"
+                      width="124"
+                    />
+                  </_default>
                 </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
+              </Component>
+            </StyledComponent>
+          </DefaultAvatar>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
 `;
 
 exports[`Avatar renders with size 30px 1`] = `
-<StyledAvatar
-  alt="User avatar"
-  badge="sysop"
-  className="foo"
-  size="30"
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
 >
-  <StyledAvatar__Wrapper
+  <StyledAvatar
+    alt="User avatar"
+    badge="sysop"
     className="foo"
     size="30"
   >
-    <StyledComponent
+    <StyledAvatar__Wrapper
       className="foo"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "isStatic": false,
-            "lastClassName": "miNBH",
-            "rules": Array [
-              "display:inline-block;height:",
-              [Function],
-              ";min-width:",
-              [Function],
-              ";position:relative;width:",
-              [Function],
-              ";",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".DefaultAvatar-whpo0l-0",
-              ":hover{fill:",
-              [Function],
-              ";}",
-              ".StyledAvatar__Link-sc-8ufved-0",
-              " ",
-              ".UserAvatar-sc-1wud8kz-0",
-              ":hover{border-color:",
-              [Function],
-              ";}",
-            ],
-          },
-          "displayName": "StyledAvatar__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
       size="30"
     >
-      <div
-        className="foo StyledAvatar__Wrapper-sc-8ufved-1 miNBH"
+      <StyledComponent
+        className="foo"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+              "isStatic": false,
+              "lastClassName": "miNBH",
+              "rules": Array [
+                "display:inline-block;height:",
+                [Function],
+                ";min-width:",
+                [Function],
+                ";position:relative;width:",
+                [Function],
+                ";",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".DefaultAvatar-whpo0l-0",
+                ":hover{fill:",
+                [Function],
+                ";}",
+                ".StyledAvatar__Link-sc-8ufved-0",
+                " ",
+                ".UserAvatar-sc-1wud8kz-0",
+                ":hover{border-color:",
+                [Function],
+                ";}",
+              ],
+            },
+            "displayName": "StyledAvatar__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
         size="30"
       >
-        <DefaultAvatar
-          alt="User avatar"
-          borderWidth="2px"
-          className=""
-          title="User avatar"
+        <div
+          className="foo StyledAvatar__Wrapper-sc-8ufved-1 miNBH"
+          size="30"
         >
-          <StyledComponent
+          <DefaultAvatar
             alt="User avatar"
             borderWidth="2px"
             className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "DefaultAvatar-whpo0l-0",
-                  "isStatic": true,
-                  "lastClassName": "efwjGj",
-                  "rules": Array [
-                    "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:#bed1cf;height:100%;width:100%;",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "DefaultAvatar",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "DefaultAvatar-whpo0l-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
+            size="30"
             title="User avatar"
           >
-            <Component
+            <StyledComponent
               alt="User avatar"
               borderWidth="2px"
-              className="DefaultAvatar-whpo0l-0 efwjGj"
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DefaultAvatar-whpo0l-0",
+                    "isStatic": false,
+                    "lastClassName": "efwjGj",
+                    "rules": Array [
+                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
+                      [Function],
+                      ";height:100%;width:100%;",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "DefaultAvatar",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DefaultAvatar-whpo0l-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
+              size="30"
               title="User avatar"
             >
-              <_default
+              <Component
                 alt="User avatar"
+                borderWidth="2px"
                 className="DefaultAvatar-whpo0l-0 efwjGj"
+                size="30"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
+                  height="30"
                   title="User avatar"
+                  width="30"
                 >
-                  <div
+                  <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
+                    height="30"
                     title="User avatar"
-                  />
+                    width="30"
+                  >
+                    <div
+                      alt="User avatar"
+                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      height="30"
+                      title="User avatar"
+                      width="30"
+                    />
+                  </_default>
                 </_default>
-              </_default>
-            </Component>
-          </StyledComponent>
-        </DefaultAvatar>
-        <Badge
-          badge="sysop"
-          className=""
-          diameter={30}
-          size={15.617}
-        >
-          <StyledComponent
+              </Component>
+            </StyledComponent>
+          </DefaultAvatar>
+          <Badge
             badge="sysop"
             className=""
             diameter={30}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Badge-sc-1a5ie29-0",
-                  "isStatic": false,
-                  "lastClassName": "clhjIq",
-                  "rules": Array [
-                    "height:",
-                    [Function],
-                    ";left:",
-                    [Function],
-                    ";line-height:0;min-width:",
-                    [Function],
-                    ";position:absolute;top:",
-                    [Function],
-                    ";width:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "defaultProps": Object {
-                  "className": "",
-                },
-                "displayName": "Badge",
-                "foldedComponentIds": Array [],
-                "propTypes": Object {
-                  "className": [Function],
-                  "diameter": [Function],
-                  "size": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "Badge-sc-1a5ie29-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
-              }
-            }
-            forwardedRef={null}
             size={15.617}
           >
-            <Badge
+            <StyledComponent
               badge="sysop"
-              className="Badge-sc-1a5ie29-0 clhjIq"
+              className=""
               diameter={30}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Badge-sc-1a5ie29-0",
+                    "isStatic": false,
+                    "lastClassName": "clhjIq",
+                    "rules": Array [
+                      "height:",
+                      [Function],
+                      ";left:",
+                      [Function],
+                      ";line-height:0;min-width:",
+                      [Function],
+                      ";position:absolute;top:",
+                      [Function],
+                      ";width:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "defaultProps": Object {
+                    "className": "",
+                  },
+                  "displayName": "Badge",
+                  "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "className": [Function],
+                    "diameter": [Function],
+                    "size": [Function],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "Badge-sc-1a5ie29-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                }
+              }
+              forwardedRef={null}
               size={15.617}
             >
-              <span
-                className="wds-avatar__badge Badge-sc-1a5ie29-0 clhjIq"
-                title="Community Admin"
+              <Badge
+                badge="sysop"
+                className="Badge-sc-1a5ie29-0 clhjIq"
+                diameter={30}
+                size={15.617}
               >
-                <_default>
+                <span
+                  className="wds-avatar__badge Badge-sc-1a5ie29-0 clhjIq"
+                  title="Community Admin"
+                >
                   <_default>
-                    <div />
+                    <_default>
+                      <div />
+                    </_default>
                   </_default>
-                </_default>
-              </span>
-            </Badge>
-          </StyledComponent>
-        </Badge>
-      </div>
-    </StyledComponent>
-  </StyledAvatar__Wrapper>
-</StyledAvatar>
+                </span>
+              </Badge>
+            </StyledComponent>
+          </Badge>
+        </div>
+      </StyledComponent>
+    </StyledAvatar__Wrapper>
+  </StyledAvatar>
+</ThemeProvider>
 `;

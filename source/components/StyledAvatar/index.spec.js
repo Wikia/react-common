@@ -1,4 +1,3 @@
-import { mount } from 'enzyme';
 import React from 'react';
 import sinon from 'sinon';
 import wait from 'waait';
@@ -20,22 +19,22 @@ afterAll(() => {
 });
 
 test('Avatar renders with default props', () => {
-    const component = mount(<StyledAvatar />);
+    const component = mountWithThemeProvider(<StyledAvatar />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size 30px', () => {
-    const component = mount(<StyledAvatar className="foo" size="30" badge="sysop" />);
+    const component = mountWithThemeProvider(<StyledAvatar className="foo" size="30" badge="sysop" />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size >= 48px', () => {
-    const component = mount(<StyledAvatar size="50" badge="sysop" />);
+    const component = mountWithThemeProvider(<StyledAvatar size="50" badge="sysop" />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with size >= 120px', () => {
-    const component = mount(<StyledAvatar size="124" />);
+    const component = mountWithThemeProvider(<StyledAvatar size="124" />);
     expect(component).toMatchSnapshot();
 });
 
@@ -48,12 +47,12 @@ test('Avatar renders with props', () => {
         src: 'src',
         title: 'title',
     };
-    const component = mount(<StyledAvatar {...props} />);
+    const component = mountWithThemeProvider(<StyledAvatar {...props} />);
     expect(component).toMatchSnapshot();
 });
 
 test('Avatar renders with link builder', () => {
-    const component = mount(<StyledAvatar linkBuilder={avatarImage => <div>{avatarImage}</div>} />);
+    const component = mountWithThemeProvider(<StyledAvatar linkBuilder={avatarImage => <div>{avatarImage}</div>} />);
     expect(component).toMatchSnapshot();
 });
 
@@ -61,7 +60,7 @@ test('Avatar renders with badge', () => {
     const props = {
         badge: 'sysop',
     };
-    const component = mount(<StyledAvatar {...props} />);
+    const component = mountWithThemeProvider(<StyledAvatar {...props} />);
     expect(component).toMatchSnapshot();
 });
 
@@ -71,7 +70,7 @@ test('Avatar renders when incorrect badgePermission is set', () => {
     const props = {
         badge: 'someIncorrectBadgePermission',
     };
-    const component = mount(<StyledAvatar {...props} />);
+    const component = mountWithThemeProvider(<StyledAvatar {...props} />);
     consoleStub.restore();
     expect(component).toMatchSnapshot();
 });
@@ -81,13 +80,13 @@ test('Avatar image is fetched when given userId prop', async () => {
     const props = {
         userId,
     };
-    const wrapper = mount(<StyledAvatar {...props} />);
+    const wrapper = mountWithThemeProvider(<StyledAvatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
     await wait(0);
 
-    expect(wrapper.state('imageSrc')).toBe('avatar_url');
+    expect(wrapper.find(StyledAvatar).state('imageSrc')).toBe('avatar_url');
 });
 
 test('Avatar image is fetched when given userId prop (and href)', async () => {
@@ -96,11 +95,11 @@ test('Avatar image is fetched when given userId prop (and href)', async () => {
         userId,
         href: 'http://example.com',
     };
-    const wrapper = mount(<StyledAvatar {...props} />);
+    const wrapper = mountWithThemeProvider(<StyledAvatar {...props} />);
     expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
     await wait(0);
 
-    expect(wrapper.state('imageSrc')).toBe('avatar_url');
+    expect(wrapper.find(StyledAvatar).state('imageSrc')).toBe('avatar_url');
 });
