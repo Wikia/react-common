@@ -238,11 +238,11 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -266,27 +266,27 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="48"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="48"
                       title="User avatar"
                       width="48"
@@ -603,11 +603,11 @@ exports[`Avatar renders with badge 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -631,27 +631,27 @@ exports[`Avatar renders with badge 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="48"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="48"
                       title="User avatar"
                       width="48"
@@ -978,11 +978,11 @@ exports[`Avatar renders with default props 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -1006,27 +1006,27 @@ exports[`Avatar renders with default props 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="48"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="48"
                       title="User avatar"
                       width="48"
@@ -1282,11 +1282,11 @@ exports[`Avatar renders with link builder 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "DefaultAvatar-whpo0l-0",
                       "isStatic": false,
-                      "lastClassName": "efwjGj",
+                      "lastClassName": "buqKGf",
                       "rules": Array [
                         "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                         [Function],
-                        ";height:100%;width:100%;",
+                        ";",
                       ],
                     },
                     "defaultProps": Object {
@@ -1310,27 +1310,27 @@ exports[`Avatar renders with link builder 1`] = `
                 <Component
                   alt="User avatar"
                   borderWidth="3px"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   size="48"
                   title="User avatar"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="48"
                     title="User avatar"
                     width="48"
                   >
                     <_default
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="48"
                       title="User avatar"
                       width="48"
                     >
                       <div
                         alt="User avatar"
-                        className="DefaultAvatar-whpo0l-0 efwjGj"
+                        className="DefaultAvatar-whpo0l-0 buqKGf"
                         height="48"
                         title="User avatar"
                         width="48"
@@ -2001,11 +2001,11 @@ exports[`Avatar renders with size >= 48px 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -2029,27 +2029,27 @@ exports[`Avatar renders with size >= 48px 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="50"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="50"
                   title="User avatar"
                   width="50"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="50"
                     title="User avatar"
                     width="50"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="50"
                       title="User avatar"
                       width="50"
@@ -2376,11 +2376,11 @@ exports[`Avatar renders with size >= 120px 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -2404,27 +2404,27 @@ exports[`Avatar renders with size >= 120px 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="4px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="124"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="124"
                   title="User avatar"
                   width="124"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="124"
                     title="User avatar"
                     width="124"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="124"
                       title="User avatar"
                       width="124"
@@ -2682,11 +2682,11 @@ exports[`Avatar renders with size 30px 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "DefaultAvatar-whpo0l-0",
                     "isStatic": false,
-                    "lastClassName": "efwjGj",
+                    "lastClassName": "buqKGf",
                     "rules": Array [
                       "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
                       [Function],
-                      ";height:100%;width:100%;",
+                      ";",
                     ],
                   },
                   "defaultProps": Object {
@@ -2710,27 +2710,27 @@ exports[`Avatar renders with size 30px 1`] = `
               <Component
                 alt="User avatar"
                 borderWidth="2px"
-                className="DefaultAvatar-whpo0l-0 efwjGj"
+                className="DefaultAvatar-whpo0l-0 buqKGf"
                 size="30"
                 title="User avatar"
               >
                 <_default
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 efwjGj"
+                  className="DefaultAvatar-whpo0l-0 buqKGf"
                   height="30"
                   title="User avatar"
                   width="30"
                 >
                   <_default
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 efwjGj"
+                    className="DefaultAvatar-whpo0l-0 buqKGf"
                     height="30"
                     title="User avatar"
                     width="30"
                   >
                     <div
                       alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 efwjGj"
+                      className="DefaultAvatar-whpo0l-0 buqKGf"
                       height="30"
                       title="User avatar"
                       width="30"
