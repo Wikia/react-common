@@ -6,7 +6,7 @@ import IconAvatar from '../../icons/IconAvatar';
 
 // we have alt prop in rest
 // eslint-disable-next-line jsx-a11y/alt-text
-const DefaultAvatar = styled(({ borderWidth, size, ...rest }) => <IconAvatar hight={size} width={size} {...rest} />)`
+const DefaultAvatar = styled(({ borderWidth, size, ...rest }) => <IconAvatar height={size} width={size} {...rest} />)`
     background-color: #fff;
     border-radius: 50%;
     border: 0;

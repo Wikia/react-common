@@ -273,21 +273,21 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="48"
+                  height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="48"
+                    height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="48"
+                      height="48"
                       title="User avatar"
                       width="48"
                     />
@@ -638,21 +638,21 @@ exports[`Avatar renders with badge 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="48"
+                  height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="48"
+                    height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="48"
+                      height="48"
                       title="User avatar"
                       width="48"
                     />
@@ -1013,21 +1013,21 @@ exports[`Avatar renders with default props 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="48"
+                  height="48"
                   title="User avatar"
                   width="48"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="48"
+                    height="48"
                     title="User avatar"
                     width="48"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="48"
+                      height="48"
                       title="User avatar"
                       width="48"
                     />
@@ -1317,21 +1317,21 @@ exports[`Avatar renders with link builder 1`] = `
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="48"
+                    height="48"
                     title="User avatar"
                     width="48"
                   >
                     <_default
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="48"
+                      height="48"
                       title="User avatar"
                       width="48"
                     >
                       <div
                         alt="User avatar"
                         className="DefaultAvatar-whpo0l-0 efwjGj"
-                        hight="48"
+                        height="48"
                         title="User avatar"
                         width="48"
                       />
@@ -2036,21 +2036,21 @@ exports[`Avatar renders with size >= 48px 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="50"
+                  height="50"
                   title="User avatar"
                   width="50"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="50"
+                    height="50"
                     title="User avatar"
                     width="50"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="50"
+                      height="50"
                       title="User avatar"
                       width="50"
                     />
@@ -2411,21 +2411,21 @@ exports[`Avatar renders with size >= 120px 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="124"
+                  height="124"
                   title="User avatar"
                   width="124"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="124"
+                    height="124"
                     title="User avatar"
                     width="124"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="124"
+                      height="124"
                       title="User avatar"
                       width="124"
                     />
@@ -2717,21 +2717,21 @@ exports[`Avatar renders with size 30px 1`] = `
                 <_default
                   alt="User avatar"
                   className="DefaultAvatar-whpo0l-0 efwjGj"
-                  hight="30"
+                  height="30"
                   title="User avatar"
                   width="30"
                 >
                   <_default
                     alt="User avatar"
                     className="DefaultAvatar-whpo0l-0 efwjGj"
-                    hight="30"
+                    height="30"
                     title="User avatar"
                     width="30"
                   >
                     <div
                       alt="User avatar"
                       className="DefaultAvatar-whpo0l-0 efwjGj"
-                      hight="30"
+                      height="30"
                       title="User avatar"
                       width="30"
                     />
