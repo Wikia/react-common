@@ -155,7 +155,7 @@ exports[`Card renders correctly with default props 1`] = `
           className="wds-notification-card__context-item"
         >
           <Timeago
-            datetime="Wed Feb 20 2019 12:46:19 GMT+0100 (Central European Standard Time)"
+            datetime="2019-02-20T11:46:19.000Z"
           />
         </li>
         <li>
@@ -331,7 +331,7 @@ exports[`Card renders correctly with isUnread set to true 1`] = `
           className="wds-notification-card__context-item"
         >
           <Timeago
-            datetime="Wed Feb 20 2019 12:46:19 GMT+0100 (Central European Standard Time)"
+            datetime="2019-02-20T11:46:19.000Z"
           />
         </li>
         <li>
@@ -512,7 +512,7 @@ exports[`Card renders correctly with no title 1`] = `
           className="wds-notification-card__context-item"
         >
           <Timeago
-            datetime="Wed Feb 20 2019 12:46:19 GMT+0100 (Central European Standard Time)"
+            datetime="2019-02-20T11:46:19.000Z"
           />
         </li>
         <li>
@@ -671,7 +671,7 @@ exports[`Card renders correctly with no title and announcement type 1`] = `
           className="wds-notification-card__context-item"
         >
           <Timeago
-            datetime="Wed Feb 20 2019 12:46:19 GMT+0100 (Central European Standard Time)"
+            datetime="2019-02-20T11:46:19.000Z"
           />
         </li>
         <li>
@@ -847,7 +847,7 @@ exports[`Card renders correctly with two actors 1`] = `
           className="wds-notification-card__context-item"
         >
           <Timeago
-            datetime="Wed Feb 20 2019 12:46:19 GMT+0100 (Central European Standard Time)"
+            datetime="2019-02-20T11:46:19.000Z"
           />
         </li>
         <li>
