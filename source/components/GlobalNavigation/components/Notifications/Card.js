@@ -18,7 +18,7 @@ const Card = ({ model, track }) => {
     const showAvatars = totalUniqueActors > 2 && isDiscussionReply(type);
     const showSnippet = !title && !isAnnouncement(type);
     const showLastActor = isAnnouncement(type);
-    const dateOfCreation = new Date(timestamp * 1000).toTimeString();
+    const dateOfCreation = new Date(timestamp * 1000);
     const avatars = latestActors.map(({ profileUrl, avatarUrl }) => ({ link: profileUrl, src: avatarUrl }));
 
     return (
