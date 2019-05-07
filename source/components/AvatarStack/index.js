@@ -16,9 +16,7 @@ const AvatarStack = ({ avatars, overrideCount, maxStackSize, hideOverflow, class
             {
                 avatars
                     .slice(0, maxStackSize)
-                    .map(({ src, alt, link, badge = '' }, index) => (
-                        <Avatar key={index} src={src} alt={alt} badge={badge} href={link} />
-                    ))
+                    .map((avatarProps, index) => <Avatar key={index} {...avatarProps} />)
             }
             {
                 overflow && (
