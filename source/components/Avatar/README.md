@@ -10,6 +10,7 @@ Defaults:
             </a>
         )}
     />
+    <Avatar userId="9876017" />
 </div>
 ```
 
