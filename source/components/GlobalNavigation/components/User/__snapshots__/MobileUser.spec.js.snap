@@ -2,7 +2,7 @@
 
 exports[`MobileUser renders correctly for anon 1`] = `
 <ComponentWrapper
-  data={
+  model={
     Object {
       "mockedAnon": "mocked-anon-value",
     }
@@ -12,6 +12,7 @@ exports[`MobileUser renders correctly for anon 1`] = `
 
 exports[`MobileUser renders correctly for user 1`] = `
 <MobileLoggedIn
+  header="some-label"
   isOpen={false}
   openModal={[Function]}
   track={[Function]}

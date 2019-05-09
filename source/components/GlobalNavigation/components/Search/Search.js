@@ -2,12 +2,13 @@ import React from 'react';
 import classNames from 'classnames';
 import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
-import uuidv4 from 'uuid/v4';
 import merge from 'lodash/merge';
 
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
 import Icon from '../../../Icon';
+
+import uuidv4 from '../../utils/uuidv4';
 
 import SearchInput from './SearchInput';
 

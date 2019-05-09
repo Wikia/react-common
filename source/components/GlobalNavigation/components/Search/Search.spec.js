@@ -48,7 +48,7 @@ function renderShallowComponent(props, options = {}) {
     return shallow(<Search {...computedProps} />, options);
 }
 
-jest.mock('uuid/v4', () => () => 'imma-very-unique');
+jest.mock('../../utils/uuidv4', () => () => 'imma-very-unique');
 jest.mock('lodash/debounce', () => func => func);
 global.console.error = () => null;
 
