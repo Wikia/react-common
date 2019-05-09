@@ -88,6 +88,10 @@ const StyledCountdown = ({ className, stop, onTick }) => {
     const [value, setValue] = useState(START);
     const timerShouldPlay = !stop && value > 0;
 
+    React.useEffect(() => {
+        setValue(START);
+    }, [onTick]);
+
     useInterval(() => {
         const newValue = value - 1;
         setValue(newValue);
