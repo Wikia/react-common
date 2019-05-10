@@ -108,6 +108,10 @@
         "name": "Vignette",
         "content": "../source/utils/VIGNETTE.md"
       }
+      {
+        "name": "UUID v4",
+        "content": "../source/utils/UUIDV4.md"
+      }
     ]
   },
   {

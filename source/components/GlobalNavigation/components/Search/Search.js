@@ -4,11 +4,11 @@ import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
 import merge from 'lodash/merge';
 
+import uuidv4 from '../../../../utils/uuidv4';
+
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
 import Icon from '../../../Icon';
-
-import uuidv4 from '../../utils/uuidv4';
 
 import SearchInput from './SearchInput';
 
