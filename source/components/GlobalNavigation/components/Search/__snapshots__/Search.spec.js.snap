@@ -8,30 +8,9 @@ exports[`render Search renders correctly with default props 1`] = `
   <div
     className="wds-global-navigation__search"
   >
-    <div
-      className="wds-global-navigation__search-toggle"
+    <SearchToggle
       onClick={[Function]}
-      role="searchbox"
-      tabIndex="0"
-    >
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass-small"
-        small={true}
-        tiny={false}
-      />
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
-        small={false}
-        tiny={false}
-      />
-      <span
-        className="wds-global-navigation__search-toggle-text"
-      >
-        Search
-      </span>
-    </div>
+    />
     <Dropdown
       canFlip={false}
       className="wds-global-navigation__search-dropdown"
@@ -105,30 +84,9 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
   <div
     className="wds-global-navigation__search"
   >
-    <div
-      className="wds-global-navigation__search-toggle"
+    <SearchToggle
       onClick={[Function]}
-      role="searchbox"
-      tabIndex="0"
-    >
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass-small"
-        small={true}
-        tiny={false}
-      />
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
-        small={false}
-        tiny={false}
-      />
-      <span
-        className="wds-global-navigation__search-toggle-text"
-      >
-        Search
-      </span>
-    </div>
+    />
     <Dropdown
       canFlip={false}
       className="wds-global-navigation__search-dropdown"

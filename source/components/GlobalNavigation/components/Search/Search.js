@@ -8,9 +8,9 @@ import uuidv4 from '../../../../utils/uuidv4';
 
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
-import Icon from '../../../Icon';
 
 import SearchInput from './SearchInput';
+import SearchToggle from './SearchToggle';
 
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
@@ -398,18 +398,7 @@ class Search extends React.Component {
         return (
             <form className={computedClass} onKeyDown={this.onKeyDown}>
                 <div className="wds-global-navigation__search">
-                    <div
-                        className="wds-global-navigation__search-toggle"
-                        role="searchbox"
-                        tabIndex="0"
-                        onClick={this.onSearchActivation}
-                    >
-                        <Icon name="magnifying-glass-small" className="wds-global-navigation__search-toggle-icon" small />
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
-                        <span className="wds-global-navigation__search-toggle-text">
-                                Search
-                        </span>
-                    </div>
+                    <SearchToggle onClick={this.onSearchActivation} />
                     <Dropdown
                         className="wds-global-navigation__search-dropdown"
                         toggle={this.renderInput()}
