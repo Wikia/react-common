@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 
 import Icon from '../../../Icon';
 
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+
 const SearchToggle = ({ onClick }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <div
