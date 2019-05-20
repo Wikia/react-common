@@ -47,7 +47,7 @@ const UserAnon = ({ data, getUrlWithRedirect }) => {
                 </li>
                 <li>
                     <div className="wds-global-navigation__user-menu-dropdown-caption">
-                        Don&apos;t have an account?
+                        {t('global-navigation-anon-register-description')}
                     </div>
                     <Button
                         href={getUrlWithRedirect(data.register.href, data.register['param-name'])}

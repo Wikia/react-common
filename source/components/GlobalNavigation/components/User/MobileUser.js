@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import MobileAnon from './MobileAnon';
 import MobileLoggedIn from './MobileLoggedIn';
 
-const MobileUser = ({ data, openModal, isOpen, track }) => {
-    if (data.user) {
+const MobileUser = ({ model, openModal, isOpen, track }) => {
+    if (model.user) {
         return (
             <MobileLoggedIn
-                user={data.user}
+                user={model.user}
+                header={model.notifications.header.title.key}
                 openModal={openModal}
                 isOpen={isOpen}
                 track={track}
@@ -16,16 +17,16 @@ const MobileUser = ({ data, openModal, isOpen, track }) => {
         );
     }
 
-    if (data.anon) {
-        return <MobileAnon data={data.anon} />;
+    if (model.anon) {
+        return <MobileAnon model={model.anon} />;
     }
 
     return null;
 };
 
 MobileUser.propTypes = {
-    data: PropTypes.shape().isRequired,
     isOpen: PropTypes.bool.isRequired,
+    model: PropTypes.shape().isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };

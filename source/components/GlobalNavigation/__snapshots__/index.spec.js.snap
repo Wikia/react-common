@@ -259,7 +259,8 @@ exports[`render GlobalNavigation renders correctly 1`] = `
             </nav>
           </SearchModal>
           <MobileUser
-            data={
+            isOpen={false}
+            model={
               Object {
                 "create-wiki": Object {
                   "create-wiki": "mock",
@@ -327,7 +328,6 @@ exports[`render GlobalNavigation renders correctly 1`] = `
                 },
               }
             }
-            isOpen={false}
             openModal={[Function]}
             track={[Function]}
           />
@@ -615,7 +615,8 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
             </nav>
           </SearchModal>
           <MobileUser
-            data={
+            isOpen={false}
+            model={
               Object {
                 "create-wiki": Object {
                   "create-wiki": "mock",
@@ -679,7 +680,6 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
                 "user": null,
               }
             }
-            isOpen={false}
             openModal={[Function]}
             track={[Function]}
           />

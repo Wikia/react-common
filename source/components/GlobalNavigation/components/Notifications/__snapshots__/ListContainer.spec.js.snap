@@ -13,7 +13,7 @@ exports[`ListContainer renders correctly with default props 1`] = `
   <p
     className="wds-notifications__zero-state"
   >
-    No notifications yet.
+    notifications-no-notifications-message
   </p>
 </React.Fragment>
 `;
@@ -35,7 +35,7 @@ exports[`ListContainer renders correctly with unread counter and custom header 1
   <p
     className="wds-notifications__zero-state"
   >
-    No notifications yet.
+    notifications-no-notifications-message
   </p>
 </React.Fragment>
 `;

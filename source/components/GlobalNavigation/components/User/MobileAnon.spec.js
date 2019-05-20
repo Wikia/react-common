@@ -5,7 +5,7 @@ import merge from 'lodash/merge';
 import MobileAnon from './MobileAnon';
 
 const defaultProps = {
-    data: {
+    model: {
         signin: {
             type: 'link-signin',
             href: 'https://www.wikia.com/signin',

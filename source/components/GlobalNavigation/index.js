@@ -230,7 +230,7 @@ class GlobalNavigation extends React.Component {
                         </nav>
                     </SearchModal>
                     <MobileUser
-                        data={model}
+                        model={model}
                         openModal={this.openModal}
                         isOpen={isUserModalOpen}
                         track={track}

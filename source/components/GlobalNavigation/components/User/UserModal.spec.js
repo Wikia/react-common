@@ -60,6 +60,7 @@ const defaultProps = {
     },
     track: () => null,
     isOpen: false,
+    header: 'some-label',
 };
 
 const mockDefaultContext = { loadFirstPage: () => null };

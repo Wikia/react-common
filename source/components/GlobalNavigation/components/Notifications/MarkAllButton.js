@@ -1,10 +1,13 @@
 import React, { useCallback, useContext } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import NotificationsContext from '../../context/NotificationContext';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 const MarkAllButton = ({ track, header }) => {
     const { markAllAsRead } = useContext(NotificationsContext);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
     const onClick = useCallback(() => {
         track({
             action: 'click',
@@ -22,7 +25,7 @@ const MarkAllButton = ({ track, header }) => {
             }
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a onClick={onClick} className="wds-notifications__mark-all-as-read">
-                Mark all as read
+                {t('notifications-mark-all-as-read')}
             </a>
         </div>
     );
