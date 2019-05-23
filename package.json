@@ -29,7 +29,7 @@
     "release:patch": "yarn git:reset && yarn bump:version patch && yarn build && git add . && yarn create:tag && git push --follow-tags && yarn publish",
     "styleguide:build": "styleguidist build --config ./config/styleguide.config.js",
     "styleguide:watch": "styleguidist server --config ./config/styleguide.config.js",
-    "ci": "yarn lint && yarn test --runInBand",
+    "ci": "yarn lint && yarn coverage --runInBand",
     "test": "jest --config ./config/jest.config.js",
     "test:update": "jest -u --config ./config/jest.config.js",
     "test:watch": "yarn test --watchAll --notify"
