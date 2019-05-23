@@ -24,5 +24,5 @@ describe('Check if show/hide logic works', () => {
 
             expect(component.text()).toBe(testSet.result ? 'test' : null);
         });
-    })
+    });
 });
