@@ -9,7 +9,6 @@ module.exports = {
     snapshotSerializers: [
         'enzyme-to-json/serializer',
     ],
-    collectCoverage: true,
     collectCoverageFrom: [
         'source/components/**/*.js',
         'source/hocs/**/*.js',

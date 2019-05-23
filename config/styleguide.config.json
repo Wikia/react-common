@@ -1,8 +1,6 @@
-[
-  {
+[{
     "name": "Documentation",
-    "sections": [
-      {
+    "sections": [{
         "name": "Introduction",
         "content": "../docs/PREAMBULE.md"
       },
@@ -68,6 +66,7 @@
       "ImagePreloader",
       "Input",
       "List",
+      "Portal",
       "Select",
       "SimpleLocalNavigation",
       "Spinner",
@@ -94,13 +93,13 @@
     "directory": "hooks",
     "items": [
       "useInterval",
-      "useLazyLoad"
+      "useLazyLoad",
+      "usePortal"
     ]
   },
   {
     "name": "Utils",
-    "sections": [
-      {
+    "sections": [{
         "name": "Environment",
         "content": "../source/utils/ENVIRONMENT.md"
       },

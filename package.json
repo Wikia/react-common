@@ -11,7 +11,7 @@
     "build:lib": "yarn clean && yarn lib:build",
     "clean": "node ./scripts/clean.js",
     "coverage": "yarn test --coverage",
-    "coveralls": "yarn test --runInBand && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coveralls": "yarn coverage --runInBand && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dev": "concurrently --names \"SERVER,TESTS\" --prefix \"{time}|{name}\" \"yarn styleguide:watch\" \"yarn test:watch\"",
     "git:reset": "git checkout master && git pull",
     "lib:build": "rollup -c config/rollup.config.js",
@@ -29,7 +29,7 @@
     "release:patch": "yarn git:reset && yarn bump:version patch && yarn build && git add . && yarn create:tag && git push --follow-tags && yarn publish",
     "styleguide:build": "styleguidist build --config ./config/styleguide.config.js",
     "styleguide:watch": "styleguidist server --config ./config/styleguide.config.js",
-    "ci": "yarn lint && yarn test --runInBand",
+    "ci": "yarn lint && yarn coverage --runInBand",
     "test": "jest --config ./config/jest.config.js",
     "test:update": "jest -u --config ./config/jest.config.js",
     "test:watch": "yarn test --watchAll --notify"
