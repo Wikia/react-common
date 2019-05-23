@@ -49,6 +49,7 @@ export default class Input extends React.Component {
         },
         /** Additional class name for the label */
         labelClassName: PropTypes.string,
+        maxLength: PropTypes.number,
         /** Callback for `onBlur` event */
         onBlur: PropTypes.func,
         /**
@@ -109,6 +110,7 @@ export default class Input extends React.Component {
         inputClassName: '',
         label: '',
         labelClassName: '',
+        maxLength: undefined,
         placeholder: null,
         readonly: false,
         resize: false,
@@ -230,6 +232,7 @@ export default class Input extends React.Component {
             placeholder,
             readonly,
             tabIndex,
+            maxLength,
         } = this.props;
 
         return {
@@ -249,6 +252,7 @@ export default class Input extends React.Component {
             disabled,
             tabIndex,
             placeholder,
+            maxLength,
         };
     }
 
