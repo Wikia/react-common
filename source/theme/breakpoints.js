@@ -27,7 +27,7 @@ export const MEDIAQUERIES = Object.freeze({
     xlarge_down: mediaQueryString(`(max-width: ${BREAKPOINTS.xxlarge - 1}px)`),
     xxlarge_down: 'only screen',
     // only breakpoints
-    small_only: mediaQueryString(`(max-width: ${BREAKPOINTS.medium - 1}px`),
+    small_only: mediaQueryString(`(max-width: ${BREAKPOINTS.medium - 1}px)`),
     medium_only: mediaQueryString(`(min-width: ${BREAKPOINTS.medium}px) and (max-width: ${BREAKPOINTS.large - 1}px)`),
     large_only: mediaQueryString(`(min-width: ${BREAKPOINTS.large}px) and (max-width: ${BREAKPOINTS.xlarge - 1}px)`),
     xlarge_only: mediaQueryString(`(min-width: ${BREAKPOINTS.xlarge}px) and (max-width: ${BREAKPOINTS.xxlarge - 1}px)`),
