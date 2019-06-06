@@ -94,7 +94,8 @@
     "items": [
       "useInterval",
       "useLazyLoad",
-      "usePortal"
+      "usePortal",
+      "useOnlyOnce"
     ]
   },
   {

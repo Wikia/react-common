@@ -6,7 +6,7 @@ Automatically handles creating and tearing-down the root elements (no SRR makes 
 ## Usage
 
 ```js static
-import usePortal from '@react-common/hooks/useLazyLoad';
+import usePortal from '@react-common/hooks/usePortal';
 
 function Component({ id, children }) {
     const target = usePortal(id, [id]);
