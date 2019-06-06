@@ -1,7 +1,7 @@
 /**
  * A useEffect wrapper that will run a function once and only once, on the first component render
  */
- import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const registry = {};
 
