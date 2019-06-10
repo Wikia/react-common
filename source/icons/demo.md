@@ -219,6 +219,9 @@ const IconPollTiny = require('./IconPollTiny').default;
 const IconQuestion = require('./IconQuestion').default;
 const IconQuestionSmall = require('./IconQuestionSmall').default;
 const IconQuestionTiny = require('./IconQuestionTiny').default;
+const IconQuiz = require('./IconQuiz').default;
+const IconQuizSmall = require('./IconQuizSmall').default;
+const IconQuizTiny = require('./IconQuizTiny').default;
 const IconQuote = require('./IconQuote').default;
 const IconQuoteSmall = require('./IconQuoteSmall').default;
 const IconQuoteTiny = require('./IconQuoteTiny').default;
@@ -1823,6 +1826,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconQuestionTiny</VariantName>
             <VariantComponent><IconQuestionTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconQuiz</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconQuiz</VariantName>
+            <VariantComponent><IconQuiz style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconQuizSmall</VariantName>
+            <VariantComponent><IconQuizSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconQuizTiny</VariantName>
+            <VariantComponent><IconQuizTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
