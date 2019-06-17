@@ -134,6 +134,12 @@ const IconH2Tiny = require('./IconH2Tiny').default;
 const IconH3 = require('./IconH3').default;
 const IconH3Small = require('./IconH3Small').default;
 const IconH3Tiny = require('./IconH3Tiny').default;
+const IconHeart = require('./IconHeart').default;
+const IconHeartFilled = require('./IconHeartFilled').default;
+const IconHeartFilledSmall = require('./IconHeartFilledSmall').default;
+const IconHeartFilledTiny = require('./IconHeartFilledTiny').default;
+const IconHeartSmall = require('./IconHeartSmall').default;
+const IconHeartTiny = require('./IconHeartTiny').default;
 const IconHome = require('./IconHome').default;
 const IconHomeSmall = require('./IconHomeSmall').default;
 const IconHomeTiny = require('./IconHomeTiny').default;
@@ -216,6 +222,9 @@ const IconPlayTiny = require('./IconPlayTiny').default;
 const IconPoll = require('./IconPoll').default;
 const IconPollSmall = require('./IconPollSmall').default;
 const IconPollTiny = require('./IconPollTiny').default;
+const IconPreformat = require('./IconPreformat').default;
+const IconPreformatSmall = require('./IconPreformatSmall').default;
+const IconPreformatTiny = require('./IconPreformatTiny').default;
 const IconQuestion = require('./IconQuestion').default;
 const IconQuestionSmall = require('./IconQuestionSmall').default;
 const IconQuestionTiny = require('./IconQuestionTiny').default;
@@ -1208,6 +1217,48 @@ const VariantComponent = styled.div`
     </Icon>
 
     <Icon>
+        <IconName>IconHeart</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconHeart</VariantName>
+            <VariantComponent><IconHeart style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconHeartSmall</VariantName>
+            <VariantComponent><IconHeartSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconHeartTiny</VariantName>
+            <VariantComponent><IconHeartTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconHeartFilled</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconHeartFilled</VariantName>
+            <VariantComponent><IconHeartFilled style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconHeartFilledSmall</VariantName>
+            <VariantComponent><IconHeartFilledSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconHeartFilledTiny</VariantName>
+            <VariantComponent><IconHeartFilledTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
         <IconName>IconHome</IconName>
         <Variants>
             
@@ -1805,6 +1856,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconPollTiny</VariantName>
             <VariantComponent><IconPollTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconPreformat</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconPreformat</VariantName>
+            <VariantComponent><IconPreformat style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconPreformatSmall</VariantName>
+            <VariantComponent><IconPreformatSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconPreformatTiny</VariantName>
+            <VariantComponent><IconPreformatTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
