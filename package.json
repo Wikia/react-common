@@ -37,7 +37,7 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "date-fns": "^1.29.0",
-    "design-system": "git://github.com/Wikia/design-system.git#c493d193fda9c88714bbf55364ac17b63cee66d1",
+    "design-system": "git://github.com/Wikia/design-system.git#21.6.0",
     "i18next": "^14.0.1",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",
