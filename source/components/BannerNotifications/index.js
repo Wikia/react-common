@@ -43,13 +43,14 @@ export default class BannerNotifications extends React.Component {
     }
 
     renderNotification({
-        text, type, id, permanent, children
+        text, type, id, permanent, markup, children
     }) {
         const props = {
             key: id,
             type,
             text,
-            children,
+            markup,
+            children
         };
 
         if (permanent) {
