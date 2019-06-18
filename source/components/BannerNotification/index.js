@@ -14,6 +14,7 @@ const BannerNotification = ({ className, type, text, onClose, children, markup }
     <div className={`wds-banner-notification ${getClassName(type)} ${className}`}>
         <div className="wds-banner-notification__icon">{getIcon(type)}</div>
         {markup
+            // eslint-disable-next-line react/no-danger
             ? <span className="wds-banner-notification__text" dangerouslySetInnerHTML={{ __html: markup }} />
             : <span className="wds-banner-notification__text">{children || text}</span>
         }
@@ -26,6 +27,7 @@ BannerNotification.propTypes = {
     children: PropTypes.node,
     /** An additional class name */
     className: PropTypes.string,
+    markup: PropTypes.string,
     onClose: PropTypes.func,
     /** Text to display if there are no children. */
     text: PropTypes.string,
@@ -35,6 +37,7 @@ BannerNotification.propTypes = {
 BannerNotification.defaultProps = {
     children: null,
     className: '',
+    markup: '',
     onClose: null,
     text: '',
 };
