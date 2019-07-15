@@ -1,11 +1,9 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { ellipsis } from '../../utils/cssMixins';
+import { ellipsis } from '../../utils/css';
 
-const LIST_ITEM_PADDING = css`
-    padding: 11px 0;
-`;
+export const LIST_VERTICAL_PADDING = 11;
 
 const StyledList = styled.ul`
     list-style-type: none;
@@ -21,7 +19,7 @@ const StyledList = styled.ul`
         font-size: ${({ theme }) => theme.font_size.s};
         font-weight: normal;
         line-height: 1em;
-        ${LIST_ITEM_PADDING}
+        padding: ${LIST_VERTICAL_PADDING}px 0;
 
         ${({ bigItems }) => bigItems && css`
             font-size: ${({ theme }) => theme.font_size.base};
@@ -54,7 +52,7 @@ const StyledList = styled.ul`
 
             > a {
                 display: block;
-                ${LIST_ITEM_PADDING}
+                padding: ${LIST_VERTICAL_PADDING}px 0;
             }
         `}
     }

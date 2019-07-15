@@ -1,67 +1,59 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
-import IconDropdownTiny from '../../../../icons/IconDropdownTiny';
-import IconMenuControlTiny from '../../../../icons/IconMenuControlTiny';
+import IconDropdownTiny from '../../../icons/IconDropdownTiny';
+import IconMenuControlTiny from '../../../icons/IconMenuControlTiny';
 
-const getToggleIcon = (iconName, isLevel2) => {
-    const iconClassName = isLevel2
-        ? 'wds-dropdown-chevron'
-        : 'wds-dropdown__toggle-chevron';
+export const ChevronIcon = styled(IconMenuControlTiny)`
+    color: inherit;
+    fill: currentColor;
+    height: 12px;
+    width: 12px;
+`;
 
+function getToggleIcon(iconName) {
     return iconName === 'dropdown-tiny'
-        ? <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />
-        : <IconMenuControlTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
-};
+        ? <ChevronIcon as={IconDropdownTiny} />
+        : <ChevronIcon />;
+}
+
+function getToggleContentComponent(toggleContent, iconName) {
+    const icon = getToggleIcon(iconName);
+
+    if (typeof toggleContent === 'function') {
+        return toggleContent(icon);
+    }
+
+    if (typeof toggleContent === 'string') {
+        return (
+            <React.Fragment>
+                <span>{toggleContent}</span>
+                {icon}
+            </React.Fragment>
+        );
+    }
+
+    return toggleContent;
+}
 
 /**
  * Basic DropdownToggle component
  */
-class DropdownToggle extends React.Component {
-    getToggleContentComponent() {
-        const { toggleContent, iconName, isLevel2 } = this.props;
-        const icon = getToggleIcon(iconName, isLevel2);
-        let toggleContentComponent;
+function DropdownToggle({
+    className,
+    onClick,
+    attrs,
+    toggleContent,
+    iconName,
+}) {
+    const Component = attrs.href ? 'a' : 'div';
 
-        if (typeof toggleContent === 'function') {
-            toggleContentComponent = toggleContent(icon);
-        } else if (typeof toggleContent === 'string') {
-            toggleContentComponent = (
-                <React.Fragment>
-                    <span>{toggleContent}</span>
-                    {icon}
-                </React.Fragment>
-            );
-        } else {
-            toggleContentComponent = toggleContent;
-        }
-
-        return toggleContentComponent;
-    }
-
-    render() {
-        const {
-            isLevel2,
-            className,
-            attrs,
-            onClick,
-        } = this.props;
-
-        const fullClassName = classNames([{
-            'wds-dropdown__toggle': !isLevel2,
-            'wds-dropdown-level-2__toggle': isLevel2,
-        }, className]);
-
-        const toggleContentComponent = this.getToggleContentComponent();
-        const Component = attrs.href ? 'a' : 'div';
-
-        return (
-            <Component onClick={onClick} className={fullClassName} {...attrs} role="button">
-                {toggleContentComponent}
-            </Component>
-        );
-    }
+    return (
+        <Component className={className} onClick={onClick} {...attrs} role="button">
+            {getToggleContentComponent(toggleContent, iconName)}
+        </Component>
+    );
 }
 
 DropdownToggle.propTypes = {
@@ -72,14 +64,9 @@ DropdownToggle.propTypes = {
         href: PropTypes.string,
     }),
     /**
-     * Dropdown toggle content
-     */
-    children: PropTypes.node,
-    /**
      * HTML classes
      */
     className: PropTypes.string,
-
     /**
      *  The icon to use for the dropdown chevron
      */
@@ -87,15 +74,6 @@ DropdownToggle.propTypes = {
         'dropdown-tiny',
         'menu-control-tiny',
     ]).isRequired,
-
-    /**
-     * Is it a nested dropdown
-     */
-    isLevel2: PropTypes.bool,
-    /**
-     * Whether or not the dropdown is displayed on touch device
-     */
-    isTouchDevice: PropTypes.bool,
     /**
      * Callback when toggle is clicked
      */
@@ -111,11 +89,10 @@ DropdownToggle.propTypes = {
 };
 
 DropdownToggle.defaultProps = {
-    children: null,
-    isLevel2: false,
     className: '',
     attrs: {},
-    isTouchDevice: false,
 };
 
-export default DropdownToggle;
+export default styled(DropdownToggle)`
+    // this needs to be empty - all the styles are defined in index
+`;

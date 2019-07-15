@@ -1,0 +1,1167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
+<DropdownToggle
+  iconName="menu-control-tiny"
+  isLevel2={true}
+  onClick={[Function]}
+  shouldNotWrap={true}
+  toggleContent=""
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    isLevel2={true}
+    onClick={[Function]}
+    shouldNotWrap={true}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
+      onClick={[Function]}
+      shouldNotWrap={true}
+      toggleContent=""
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with Text inside 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px)",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <DropdownToggle
+    iconName="menu-control-tiny"
+    onClick={[Function]}
+    toggleContent="My toggle content"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "DropdownToggle-sc-1p907bm-1",
+            "isStatic": true,
+            "lastClassName": "ccutBh",
+            "rules": Array [],
+          },
+          "displayName": "DropdownToggle",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      iconName="menu-control-tiny"
+      onClick={[Function]}
+      toggleContent="My toggle content"
+    >
+      <DropdownToggle
+        attrs={Object {}}
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        iconName="menu-control-tiny"
+        onClick={[Function]}
+        toggleContent="My toggle content"
+      >
+        <div
+          className="DropdownToggle-sc-1p907bm-1 ccutBh"
+          onClick={[Function]}
+          role="button"
+        >
+          <span>
+            My toggle content
+          </span>
+          <DropdownToggle__ChevronIcon>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                    "isStatic": true,
+                    "lastClassName": "eZzuHO",
+                    "rules": Array [
+                      "color:inherit;fill:currentColor;height:12px;width:12px;",
+                    ],
+                  },
+                  "displayName": "DropdownToggle__ChevronIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <index
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <IconMenuControlTiny
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                >
+                  <svg
+                    className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </IconMenuControlTiny>
+              </index>
+            </StyledComponent>
+          </DropdownToggle__ChevronIcon>
+        </div>
+      </DropdownToggle>
+    </StyledComponent>
+  </DropdownToggle>
+</ThemeProvider>
+`;
+
+exports[`DropdownToggle renders correctly with a component inside 1`] = `
+<DropdownToggle
+  iconName="menu-control-tiny"
+  onClick={[Function]}
+  toggleContent={
+    <div>
+      My toggle content
+    </div>
+  }
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    onClick={[Function]}
+    toggleContent={
+      <div>
+        My toggle content
+      </div>
+    }
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      onClick={[Function]}
+      toggleContent={
+        <div>
+          My toggle content
+        </div>
+      }
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <div>
+          My toggle content
+        </div>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with a function passed as toggle 1`] = `
+<DropdownToggle
+  iconName="menu-control-tiny"
+  onClick={[Function]}
+  toggleContent={[Function]}
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    onClick={[Function]}
+    toggleContent={[Function]}
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      onClick={[Function]}
+      toggleContent={[Function]}
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <div>
+          My toggle content
+          <DropdownToggle__ChevronIcon>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                    "isStatic": true,
+                    "lastClassName": "eZzuHO",
+                    "rules": Array [
+                      "color:inherit;fill:currentColor;height:12px;width:12px;",
+                    ],
+                  },
+                  "displayName": "DropdownToggle__ChevronIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <index
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <IconMenuControlTiny
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                >
+                  <svg
+                    className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </IconMenuControlTiny>
+              </index>
+            </StyledComponent>
+          </DropdownToggle__ChevronIcon>
+        </div>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with additional attrs 1`] = `
+<DropdownToggle
+  attrs={
+    Object {
+      "attr1": "true",
+    }
+  }
+  iconName="menu-control-tiny"
+  isLevel2={true}
+  onClick={[Function]}
+  toggleContent=""
+>
+  <StyledComponent
+    attrs={
+      Object {
+        "attr1": "true",
+      }
+    }
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    isLevel2={true}
+    onClick={[Function]}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={
+        Object {
+          "attr1": "true",
+        }
+      }
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
+      onClick={[Function]}
+      toggleContent=""
+    >
+      <div
+        attr1="true"
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with additional classNames 1`] = `
+<DropdownToggle
+  classes="first-class second-class"
+  iconName="menu-control-tiny"
+  isLevel2={true}
+  onClick={[Function]}
+  toggleContent=""
+>
+  <StyledComponent
+    classes="first-class second-class"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    isLevel2={true}
+    onClick={[Function]}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      classes="first-class second-class"
+      iconName="menu-control-tiny"
+      isLevel2={true}
+      onClick={[Function]}
+      toggleContent=""
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with default values 1`] = `
+<DropdownToggle
+  iconName="menu-control-tiny"
+  onClick={[Function]}
+  toggleContent=""
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    onClick={[Function]}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      onClick={[Function]}
+      toggleContent=""
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with default values for level 2 1`] = `
+<DropdownToggle
+  iconName="menu-control-tiny"
+  isLevel2={true}
+  onClick={[Function]}
+  toggleContent=""
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    isLevel2={true}
+    onClick={[Function]}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
+      onClick={[Function]}
+      toggleContent=""
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with dropdown-tiny icon 1`] = `
+<DropdownToggle
+  iconName="dropdown-tiny"
+  onClick={[Function]}
+  toggleContent=""
+>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="dropdown-tiny"
+    onClick={[Function]}
+    toggleContent=""
+  >
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="dropdown-tiny"
+      onClick={[Function]}
+      toggleContent=""
+    >
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon
+          as={[Function]}
+        >
+          <StyledComponent
+            as={[Function]}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconDropdownTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <path
+                      d="M6 8.8a.798.798 0 0 1-.565-.234l-3.2-3.2A.8.8 0 0 1 2.8 4h6.4a.8.8 0 0 1 .566 1.366l-3.2 3.2A.798.798 0 0 1 6 8.8z"
+                      id="dropdown-tiny-a"
+                    />
+                  </defs>
+                  <use
+                    fillRule="evenodd"
+                    xlinkHref="#dropdown-tiny-a"
+                  />
+                </svg>
+              </IconDropdownTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;
+
+exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
+<DropdownToggle
+  attrs={
+    Object {
+      "href": "#",
+    }
+  }
+  iconName="menu-control-tiny"
+  onClick={[Function]}
+  toggleContent="My toggle content"
+>
+  <StyledComponent
+    attrs={
+      Object {
+        "href": "#",
+      }
+    }
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    iconName="menu-control-tiny"
+    onClick={[Function]}
+    toggleContent="My toggle content"
+  >
+    <DropdownToggle
+      attrs={
+        Object {
+          "href": "#",
+        }
+      }
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      onClick={[Function]}
+      toggleContent="My toggle content"
+    >
+      <a
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        href="#"
+        onClick={[Function]}
+        role="button"
+      >
+        <span>
+          My toggle content
+        </span>
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <index
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <IconMenuControlTiny
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <svg
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  viewBox="0 0 12 12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </IconMenuControlTiny>
+            </index>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </a>
+    </DropdownToggle>
+  </StyledComponent>
+</DropdownToggle>
+`;

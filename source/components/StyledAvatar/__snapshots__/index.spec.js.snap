@@ -256,7 +256,6 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -344,7 +343,6 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -621,7 +619,6 @@ exports[`Avatar renders with badge 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -709,7 +706,6 @@ exports[`Avatar renders with badge 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -996,7 +992,6 @@ exports[`Avatar renders with default props 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -1300,7 +1295,6 @@ exports[`Avatar renders with link builder 1`] = `
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
-                    Symbol(Symbol.hasInstance): [Function],
                   }
                 }
                 forwardedRef={null}
@@ -1657,7 +1651,6 @@ exports[`Avatar renders with props 1`] = `
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
-                        Symbol(Symbol.hasInstance): [Function],
                       }
                     }
                     forwardedRef={null}
@@ -1731,7 +1724,6 @@ exports[`Avatar renders with props 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2019,7 +2011,6 @@ exports[`Avatar renders with size >= 48px 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2107,7 +2098,6 @@ exports[`Avatar renders with size >= 48px 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2394,7 +2384,6 @@ exports[`Avatar renders with size >= 120px 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2700,7 +2689,6 @@ exports[`Avatar renders with size 30px 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
@@ -2788,7 +2776,6 @@ exports[`Avatar renders with size 30px 1`] = `
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
-                  Symbol(Symbol.hasInstance): [Function],
                 }
               }
               forwardedRef={null}
