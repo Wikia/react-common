@@ -4,10 +4,14 @@ import PropTypes from 'prop-types';
 import Icon from '../../../Icon';
 
 import NotificationsContext from '../../context/NotificationContext';
-import { isAnnouncement, isDiscussionReply } from '../../models/notificationTypes';
+import { isAnnouncement, isDiscussionReply, isPostAtMention, isThreadAtMention } from '../../models/notificationTypes';
+
+function isCommentNotifictionType(type) {
+    return isDiscussionReply(type) || isPostAtMention(type) || isThreadAtMention(type);
+}
 
 function getIconName(type) {
-    if (isDiscussionReply(type)) {
+    if (isCommentNotifictionType(type)) {
         return 'comment-small';
     }
 
