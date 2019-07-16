@@ -10,14 +10,6 @@ import Notification from '../../models/Notification';
 class NotificationsDataProvider extends React.Component {
     isMounted = false;
 
-    supportedContentTypes = [
-        'discussion-upvote',
-        'discussion-post',
-        'announcement-target',
-        'post-at-mention',
-        'thread-at-mention',
-    ];
-
     constructor(props) {
         super(props);
 
@@ -51,10 +43,6 @@ class NotificationsDataProvider extends React.Component {
         this.isMounted = false;
     }
 
-    getContentTypesQueryParams() {
-        return `contentType=${this.supportedContentTypes.join('&contentType=')}`;
-    }
-
     getNextPageLink(data) {
         return get(data, '_links.next') || null;
     }
@@ -76,7 +64,7 @@ class NotificationsDataProvider extends React.Component {
             return;
         }
 
-        this.loadPage(`/notifications?${this.getContentTypesQueryParams()}`);
+        this.loadPage(`/notifications?${NotificationsApi.getContentTypesQueryParams()}`);
     }
 
     loadNextPage() {

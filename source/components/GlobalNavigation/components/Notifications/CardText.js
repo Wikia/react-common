@@ -109,15 +109,15 @@ const getReplyUpvoteMessageBody = (translateFunc, { title, totalUniqueActors, po
     return translateFunc('notifications-reply-upvote-single-user-no-title');
 };
 
-const getPostAtMentionMessageBody = (translateFunc, { postTitle, latestActors }) => {
-    const mentioner = get(latestActors, '[0].name');
-    return translateFunc('notifications-reply-at-mention', { postTitle, mentioner });
-};
+const getPostAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-reply-at-mention', {
+    postTitle: postTitleMarkup,
+    mentioner: get(latestActors, '[0].name'),
+});
 
-const getThreadAtMentionMessageBody = (translateFunc, { postTitle, latestActors }) => {
-    const mentioner = get(latestActors, '[0].name');
-    return translateFunc('notifications-post-at-mention', { postTitle, mentioner });
-};
+const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-post-at-mention', {
+    postTitle: postTitleMarkup,
+    mentioner: get(latestActors, '[0].name'),
+});
 
 const getText = (translateFunc, model) => {
     const { type, snippet, title, totalUniqueActors, latestActors } = model;
@@ -137,10 +137,6 @@ const getText = (translateFunc, model) => {
 
     if (isDiscussionReplyUpvote(type)) {
         return getReplyUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
-    }
-
-    if (isPostAtMention(type)) {
-        return getPostAtMentionMessageBody(translateFunc, { title, postTitleMarkup });
     }
 
     if (isPostAtMention(type)) {
