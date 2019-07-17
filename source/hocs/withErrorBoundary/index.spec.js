@@ -32,14 +32,14 @@ test('Can handle no options', () => {
     const ComponentWithErrorBoundary = withErrorBoundary(ComponentWithError);
     const component = mount(<ComponentWithErrorBoundary />);
 
-    expect(component.html()).toBe(null);
+    expect(component.html()).toBe('');
 });
 
 describe('Should display error state', () => {
     test('Empty error state', () => {
         const component = mountWithErrorBoundary(ComponentWithError);
 
-        expect(component.html()).toBe(null);
+        expect(component.html()).toBe('');
     });
 
     test('StyledErrorDisplayingContent error state', () => {

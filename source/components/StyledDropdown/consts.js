@@ -1,0 +1,9 @@
+
+import { LIST_VERTICAL_PADDING as STYLED_LIST_VERTICAL_PADDING } from '../StyledList';
+
+export const Z_INDEX = 1;
+export const TRANSITION_DURATION = 0.2;
+export const BORDER_WIDTH = 1;
+export const DROPDOWN_HEIGHT = 270;
+export const DROPDOWN_PADDING = 18;
+export const LIST_VERTICAL_PADDING = STYLED_LIST_VERTICAL_PADDING;

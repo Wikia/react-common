@@ -4,6 +4,6 @@ exports[`Renders Timeago component 1`] = `
 <time
   dateTime="Tue Jul 17 2015 23:58:43 GMT+0000"
 >
-  3y
+  4y
 </time>
 `;

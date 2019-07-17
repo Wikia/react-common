@@ -5,7 +5,9 @@ module.exports = {
         '\\.svg$': '<rootDir>/config/jest.fileMock.js',
     },
     testURL: 'http://localhost',
-    setupTestFrameworkScriptFile: '<rootDir>/config/jest.setup.js',
+    setupFilesAfterEnv: [
+        '<rootDir>/config/jest.setup.js',
+    ],
     snapshotSerializers: [
         'enzyme-to-json/serializer',
     ],

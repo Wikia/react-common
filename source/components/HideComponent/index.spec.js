@@ -22,7 +22,7 @@ describe('Check if show/hide logic works', () => {
                 <HideComponent hide={testSet.hide} show={testSet.show}>test</HideComponent>
             );
 
-            expect(component.text()).toBe(testSet.result ? 'test' : null);
+            expect(component.text()).toBe(testSet.result ? 'test' : '');
         });
     });
 });
