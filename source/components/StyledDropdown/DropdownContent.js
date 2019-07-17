@@ -7,7 +7,7 @@ import refPropType from '../../utils/refPropType';
  * Basic DropdownContent component
  */
 const DropdownContent = styled(({ elementRef, ...props }) => <div ref={elementRef} {...props} />)`
-    // this needs to be empty - all the styles are defined in index
+    /* this needs to be empty - all the styles are defined in index.js */
 `;
 
 DropdownContent.propTypes = {
