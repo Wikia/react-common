@@ -87,7 +87,7 @@
     "postcss-modules": "^1.4.1",
     "raw-loader": "^1.0.0",
     "react-docgen": "3.0.0",
-    "react-styleguidist": "^8.0.6",
+    "react-styleguidist": "^9.0.0",
     "react-svg-loader": "^2.1.0",
     "react-test-renderer": "^16.8.3",
     "redux": "^4.0.0",
