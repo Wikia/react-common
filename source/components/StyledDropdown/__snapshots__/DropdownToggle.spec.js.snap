@@ -77,24 +77,17 @@ exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -339,24 +332,17 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
               }
               forwardedRef={null}
             >
-              <index
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <IconMenuControlTiny
+                <_default
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
                 >
-                  <svg
+                  <div
                     className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                    viewBox="0 0 12 12"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </IconMenuControlTiny>
-              </index>
+                  />
+                </_default>
+              </_default>
             </StyledComponent>
           </DropdownToggle__ChevronIcon>
         </div>
@@ -503,24 +489,17 @@ exports[`DropdownToggle renders correctly with a function passed as toggle 1`] =
               }
               forwardedRef={null}
             >
-              <index
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <IconMenuControlTiny
+                <_default
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
                 >
-                  <svg
+                  <div
                     className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                    viewBox="0 0 12 12"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                </IconMenuControlTiny>
-              </index>
+                  />
+                </_default>
+              </_default>
             </StyledComponent>
           </DropdownToggle__ChevronIcon>
         </div>
@@ -619,24 +598,17 @@ exports[`DropdownToggle renders correctly with additional attrs 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -722,24 +694,17 @@ exports[`DropdownToggle renders correctly with additional classNames 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -819,24 +784,17 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -919,24 +877,17 @@ exports[`DropdownToggle renders correctly with default values for level 2 1`] = 
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -1019,31 +970,17 @@ exports[`DropdownToggle renders correctly with dropdown-tiny icon 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconDropdownTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs>
-                    <path
-                      d="M6 8.8a.798.798 0 0 1-.565-.234l-3.2-3.2A.8.8 0 0 1 2.8 4h6.4a.8.8 0 0 1 .566 1.366l-3.2 3.2A.798.798 0 0 1 6 8.8z"
-                      id="dropdown-tiny-a"
-                    />
-                  </defs>
-                  <use
-                    fillRule="evenodd"
-                    xlinkHref="#dropdown-tiny-a"
-                  />
-                </svg>
-              </IconDropdownTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </div>
@@ -1140,24 +1077,17 @@ exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
             }
             forwardedRef={null}
           >
-            <index
+            <_default
               className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
             >
-              <IconMenuControlTiny
+              <_default
                 className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
               >
-                <svg
+                <div
                   className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 3.293a.999.999 0 0 0-1.414 0L6 7.586 1.707 3.293A.999.999 0 1 0 .293 4.707l5 5a.997.997 0 0 0 1.414 0l5-5a.999.999 0 0 0 0-1.414"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </IconMenuControlTiny>
-            </index>
+                />
+              </_default>
+            </_default>
           </StyledComponent>
         </DropdownToggle__ChevronIcon>
       </a>
