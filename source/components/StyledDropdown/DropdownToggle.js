@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import IconDropdownTiny from '../../../icons/IconDropdownTiny';
-import IconMenuControlTiny from '../../../icons/IconMenuControlTiny';
+import IconDropdownTiny from '../../icons/IconDropdownTiny';
+import IconMenuControlTiny from '../../icons/IconMenuControlTiny';
 
 export const ChevronIcon = styled(IconMenuControlTiny)`
     color: inherit;
