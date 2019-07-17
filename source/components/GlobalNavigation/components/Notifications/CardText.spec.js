@@ -210,3 +210,27 @@ describe('Discussion reply upvote', () => {
         })).toMatchSnapshot();
     });
 });
+
+describe('Discussion at mentions', () => {
+    test('CardText renders correctly for post at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.postAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Post with at mention',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for thread at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.threadAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Post with at mention',
+            },
+        })).toMatchSnapshot();
+    });
+});
