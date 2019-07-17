@@ -17,9 +17,9 @@ test('StyledList renders with children inside (default)', () => {
 });
 
 test('StyledList renders with children inside (other styles)', () => {
-    expect(getComponent({bigItems: true})).toMatchSnapshot();
-    expect(getComponent({boldItems: true})).toMatchSnapshot();
-    expect(getComponent({hasEllipsis: true})).toMatchSnapshot();
-    expect(getComponent({isLinked: true})).toMatchSnapshot();
-    expect(getComponent({linesBetween: true})).toMatchSnapshot();
+    expect(getComponent({ bigItems: true })).toMatchSnapshot();
+    expect(getComponent({ boldItems: true })).toMatchSnapshot();
+    expect(getComponent({ hasEllipsis: true })).toMatchSnapshot();
+    expect(getComponent({ isLinked: true })).toMatchSnapshot();
+    expect(getComponent({ linesBetween: true })).toMatchSnapshot();
 });

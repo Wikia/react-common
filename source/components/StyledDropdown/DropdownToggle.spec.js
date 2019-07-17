@@ -28,7 +28,7 @@ test('DropdownToggle renders correctly with default values for level 2', () => {
 
 test('DropdownToggle renders correctly with additional attrs', () => {
     const component = mountWithThemeProvider(
-        <DropdownToggle isLevel2 attrs={{ attr1: "true" }} onClick={() => { }} toggleContent="" iconName="menu-control-tiny" />,
+        <DropdownToggle isLevel2 attrs={{ attr1: 'true' }} onClick={() => { }} toggleContent="" iconName="menu-control-tiny" />,
     ).find(DropdownToggle);
     expect(component).toMatchSnapshot();
 });
