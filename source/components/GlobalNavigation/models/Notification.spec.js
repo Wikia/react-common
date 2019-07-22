@@ -81,6 +81,16 @@ const testCases = [
         expected: getExpected({ type: notificationTypes.announcement }),
     },
     {
+        name: 'post-at-mention notification',
+        given: getNotification({ type: 'post-at-mention-notification' }),
+        expected: getExpected({ type: notificationTypes.postAtMention }),
+    },
+    {
+        name: 'thread-at-mention notification',
+        given: getNotification({ type: 'thread-at-mention-notification' }),
+        expected: getExpected({ type: notificationTypes.threadAtMention }),
+    },
+    {
         name: 'other notification',
         given: getNotification({ type: 'other-notification' }),
         expected: getExpected({ type: null }),

@@ -33,6 +33,28 @@ exports[`CardText renders correctly with unknown type 1`] = `
 />
 `;
 
+exports[`Discussion at mentions CardText renders correctly for post at mention 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-reply-at-mention",
+    }
+  }
+/>
+`;
+
+exports[`Discussion at mentions CardText renders correctly for thread at mention 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-post-at-mention",
+    }
+  }
+/>
+`;
+
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with no title and one actor 1`] = `
 <p
   className="wds-notification-card__text"

@@ -2,6 +2,14 @@ import merge from 'lodash/merge';
 
 import { convertToIsoString } from './isoTime';
 
+const supportedContentTypes = [
+    'discussion-upvote',
+    'discussion-post',
+    'announcement-target',
+    'post-at-mention',
+    'thread-at-mention',
+];
+
 const defaultOptions = {
     credentials: 'include',
 };
@@ -21,6 +29,10 @@ class NotificationsApi {
 
     getNotificationServiceUrl(path) {
         return this.getServiceUrl('on-site-notifications', path);
+    }
+
+    static getContentTypesQueryParams() {
+        return `contentType=${supportedContentTypes.join('&contentType=')}`;
     }
 
     fetchFromOnSiteNotifications(path, options) {
@@ -53,7 +65,7 @@ class NotificationsApi {
     }
 
     loadUnreadNotificationCount() {
-        return this.fetchFromOnSiteNotifications('/notifications/unread-count?contentType=discussion-upvote&contentType=discussion-post&contentType=announcement-target');
+        return this.fetchFromOnSiteNotifications(`/notifications/unread-count?${NotificationsApi.getContentTypesQueryParams()}`);
     }
 
     markAsRead(uri, willUnloadPage) {

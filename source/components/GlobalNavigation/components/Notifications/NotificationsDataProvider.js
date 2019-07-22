@@ -64,7 +64,7 @@ class NotificationsDataProvider extends React.Component {
             return;
         }
 
-        this.loadPage('/notifications?contentType=discussion-upvote&contentType=discussion-post&contentType=announcement-target');
+        this.loadPage(`/notifications?${NotificationsApi.getContentTypesQueryParams()}`);
     }
 
     loadNextPage() {
