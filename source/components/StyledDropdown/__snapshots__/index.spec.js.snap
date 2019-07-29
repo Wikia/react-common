@@ -39,7 +39,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -95,7 +95,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -152,7 +152,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -372,7 +372,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -428,7 +428,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -485,7 +485,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -700,7 +700,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -756,7 +756,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -813,7 +813,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-active is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="is-active is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1028,7 +1028,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1084,7 +1084,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -1141,7 +1141,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 is-sticked-to-parent StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="is-level-2 is-sticked-to-parent StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1356,7 +1356,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1412,7 +1412,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -1469,7 +1469,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1701,7 +1701,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1757,7 +1757,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -1814,7 +1814,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -2045,7 +2045,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "kMjiSZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -2101,7 +2101,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
               ".DropdownToggle-sc-1p907bm-1",
               " > ",
               ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
-              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}$.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
               "1",
               "px;}&::before{border-bottom-color:transparent;border-top-color:",
               [Function],
@@ -2158,7 +2158,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 kMjiSZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
