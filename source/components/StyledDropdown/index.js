@@ -125,7 +125,7 @@ const DropdownComponent = styled.div`
         }
     }
 
-    $.is-flipped {
+    &.is-flipped {
         &::before, &::after {
             bottom: unset;
             top: -${BORDER_WIDTH}px;
