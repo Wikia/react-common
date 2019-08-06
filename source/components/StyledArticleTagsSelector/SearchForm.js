@@ -7,7 +7,9 @@ import IconTagSmall from '../../icons/IconTagSmall';
 import IconAddSmall from '../../icons/IconAddSmall';
 import IconAlertSmall from '../../icons/IconAlertSmall';
 
+import SearchInput from './SearchInput';
 import TagShape from './TagShape';
+import getAccentColor from './getAccentColor';
 
 const ICON_STYLES = css`
     fill: currentColor;
@@ -44,10 +46,6 @@ const Header = styled.div`
     margin-right: 12px;
 `;
 
-function getAccentColor(theme) {
-    return get(theme, 'site.color.accent') || get(theme, 'color.fandom_aqua');
-}
-
 const AddTagButton = styled.span`
     align-items: center;
     color: ${({ theme }) => getAccentColor(theme)};
@@ -83,6 +81,10 @@ function SearchForm({
                 <IconAlert />
                 Maximum 10 tags
             </MaxTagsAdded>
+            <SearchInput
+                communityName={communityName}
+                list={searchResults}
+            />
         </Wrapper>
     );
 }
@@ -90,7 +92,7 @@ function SearchForm({
 SearchForm.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
-    communityName: PropTypes.string,
+    communityName: PropTypes.string.isRequired,
     maxAllowed: PropTypes.number,
     onAddTag: PropTypes.func,
     searchResults: PropTypes.arrayOf(TagShape),
