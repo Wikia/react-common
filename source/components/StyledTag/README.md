@@ -1,13 +1,13 @@
 Defaults:
 
 ```js
-<StyledArticleTag tag="This is a default tag" />
+<StyledTag tag="This is a default tag" />
 ```
 
 With extra options
 
 ```js
-<StyledArticleTag
+<StyledTag
     tag="This is a secondary/removable tag"
     removable
     secondary

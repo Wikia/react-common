@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
-<StyledArticleTag
+exports[`StyledTag renders correctly as secondary and removable 1`] = `
+<StyledTag
   className=""
   onClick={null}
   onRemove={null}
@@ -9,7 +9,7 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
   secondary={true}
   tag="foo"
 >
-  <StyledArticleTag__Wrapper
+  <StyledTag__Wrapper
     className=""
     onClick={null}
     secondary={true}
@@ -21,9 +21,9 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "StyledArticleTag__Wrapper-gxea7p-0",
+            "componentId": "StyledTag__Wrapper-ja2wb4-0",
             "isStatic": false,
-            "lastClassName": "iMfhyl",
+            "lastClassName": "QFtsa",
             "rules": Array [
               "align-items:center;border-radius:25px;border:1px solid ",
               [Function],
@@ -35,10 +35,10 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
               [Function],
             ],
           },
-          "displayName": "StyledArticleTag__Wrapper",
+          "displayName": "StyledTag__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "StyledArticleTag__Wrapper-gxea7p-0",
+          "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -50,11 +50,11 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
       secondary={true}
     >
       <span
-        className="StyledArticleTag__Wrapper-gxea7p-0 iMfhyl"
+        className="StyledTag__Wrapper-ja2wb4-0 QFtsa"
         onClick={null}
       >
         foo
-        <StyledArticleTag__Icon
+        <StyledTag__Icon
           onClick={null}
         >
           <StyledComponent
@@ -63,17 +63,17 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "StyledArticleTag__Icon-gxea7p-1",
+                  "componentId": "StyledTag__Icon-ja2wb4-1",
                   "isStatic": true,
-                  "lastClassName": "bHZlOu",
+                  "lastClassName": "VqIUo",
                   "rules": Array [
                     "cursor:pointer;height:11px;margin-left:5px;width:11px;",
                   ],
                 },
-                "displayName": "StyledArticleTag__Icon",
+                "displayName": "StyledTag__Icon",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "StyledArticleTag__Icon-gxea7p-1",
+                "styledComponentId": "StyledTag__Icon-ja2wb4-1",
                 "target": [Function],
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -84,29 +84,29 @@ exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
             onClick={null}
           >
             <_default
-              className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+              className="StyledTag__Icon-ja2wb4-1 VqIUo"
               onClick={null}
             >
               <_default
-                className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+                className="StyledTag__Icon-ja2wb4-1 VqIUo"
                 onClick={null}
               >
                 <div
-                  className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+                  className="StyledTag__Icon-ja2wb4-1 VqIUo"
                   onClick={null}
                 />
               </_default>
             </_default>
           </StyledComponent>
-        </StyledArticleTag__Icon>
+        </StyledTag__Icon>
       </span>
     </StyledComponent>
-  </StyledArticleTag__Wrapper>
-</StyledArticleTag>
+  </StyledTag__Wrapper>
+</StyledTag>
 `;
 
-exports[`StyledArticleTag renders correctly with default values 1`] = `
-<StyledArticleTag
+exports[`StyledTag renders correctly with default values 1`] = `
+<StyledTag
   className=""
   onClick={null}
   onRemove={null}
@@ -114,7 +114,7 @@ exports[`StyledArticleTag renders correctly with default values 1`] = `
   secondary={false}
   tag="foo"
 >
-  <StyledArticleTag__Wrapper
+  <StyledTag__Wrapper
     className=""
     onClick={null}
     secondary={false}
@@ -126,9 +126,9 @@ exports[`StyledArticleTag renders correctly with default values 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "StyledArticleTag__Wrapper-gxea7p-0",
+            "componentId": "StyledTag__Wrapper-ja2wb4-0",
             "isStatic": false,
-            "lastClassName": "iTCycT",
+            "lastClassName": "fiVpbi",
             "rules": Array [
               "align-items:center;border-radius:25px;border:1px solid ",
               [Function],
@@ -140,10 +140,10 @@ exports[`StyledArticleTag renders correctly with default values 1`] = `
               [Function],
             ],
           },
-          "displayName": "StyledArticleTag__Wrapper",
+          "displayName": "StyledTag__Wrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "StyledArticleTag__Wrapper-gxea7p-0",
+          "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
           "target": "span",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -155,12 +155,12 @@ exports[`StyledArticleTag renders correctly with default values 1`] = `
       secondary={false}
     >
       <span
-        className="StyledArticleTag__Wrapper-gxea7p-0 iTCycT"
+        className="StyledTag__Wrapper-ja2wb4-0 fiVpbi"
         onClick={null}
       >
         foo
       </span>
     </StyledComponent>
-  </StyledArticleTag__Wrapper>
-</StyledArticleTag>
+  </StyledTag__Wrapper>
+</StyledTag>
 `;

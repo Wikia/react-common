@@ -1,46 +1,44 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
 import sinon from 'sinon';
 
-import StyledArticleTag from './index';
+import StyledTag from './index';
 
 /* eslint-disable no-alert */
 
-test('StyledArticleTag renders correctly with default values', () => {
+test('StyledTag renders correctly with default values', () => {
     const component = mountWithThemeProvider(
-        <StyledArticleTag tag="foo" />,
-    ).find(StyledArticleTag);
+        <StyledTag tag="foo" />,
+    ).find(StyledTag);
 
     expect(component).toMatchSnapshot();
 });
 
-test('StyledArticleTag renders correctly as secondary and removable', () => {
+test('StyledTag renders correctly as secondary and removable', () => {
     const component = mountWithThemeProvider(
-        <StyledArticleTag tag="foo" secondary removable />,
-    ).find(StyledArticleTag);
+        <StyledTag tag="foo" secondary removable />,
+    ).find(StyledTag);
 
     expect(component).toMatchSnapshot();
 });
 
-test('StyledArticleTag onClick is clickable', () => {
+test('StyledTag onClick is clickable', () => {
     const mockOnClick = sinon.spy();
     const wrapper = mountWithThemeProvider(
-        <StyledArticleTag tag="foo" onClick={mockOnClick} />,
-    ).find(StyledArticleTag);
+        <StyledTag tag="foo" onClick={mockOnClick} />,
+    ).find(StyledTag);
 
     wrapper.find('span').simulate('click');
 
     expect(mockOnClick.calledOnce).toBe(true);
 });
 
-test('StyledArticleTag onRemove is clickable', () => {
+test('StyledTag onRemove is clickable', () => {
     const onRemove = sinon.spy();
     const wrapper = mountWithThemeProvider(
-        <StyledArticleTag tag="foo" onRemove={onRemove} removable />,
-    ).find(StyledArticleTag);
+        <StyledTag tag="foo" onRemove={onRemove} removable />,
+    ).find(StyledTag);
 
-    wrapper.find('StyledArticleTag__Icon').simulate('click');
+    wrapper.find('StyledTag__Icon').simulate('click');
 
     expect(onRemove.calledOnce).toBe(true);
 });

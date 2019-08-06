@@ -27,7 +27,10 @@ const Icon = styled(IconClose)`
     width: 11px;
 `;
 
-function StyledArticleTag({
+/**
+ * `StyledTag` component. Used mostly as an ArticleTag
+ */
+function StyledTag({
     className,
     onClick,
     onRemove,
@@ -43,7 +46,7 @@ function StyledArticleTag({
     );
 }
 
-StyledArticleTag.propTypes = {
+StyledTag.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
     onClick: PropTypes.func,
@@ -56,7 +59,7 @@ StyledArticleTag.propTypes = {
     tag: PropTypes.string.isRequired,
 };
 
-StyledArticleTag.defaultProps = {
+StyledTag.defaultProps = {
     className: '',
     onClick: null,
     onRemove: null,
@@ -64,4 +67,4 @@ StyledArticleTag.defaultProps = {
     secondary: false,
 };
 
-export default StyledArticleTag;
+export default StyledTag;
