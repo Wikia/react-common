@@ -39,6 +39,7 @@
     "name": "Components",
     "description": "React components",
     "components": [
+      "StyledArticleTag",
       "Avatar",
       "StyledAvatar",
       "AvatarStack",

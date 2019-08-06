@@ -40,6 +40,7 @@ export { default as Switch } from './Switch';
 export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
 export { default as Portal } from './Portal';
+export { default as StyledArticleTag } from './StyledArticleTag';
 
 export { default as StyledErrorDisplayingContent } from './StyledErrorDisplayingContent';
 

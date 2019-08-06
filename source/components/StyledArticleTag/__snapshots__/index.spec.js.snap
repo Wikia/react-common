@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledArticleTag renders correctly as secondary and removable 1`] = `
+<StyledArticleTag
+  className=""
+  onClick={null}
+  onRemove={null}
+  removable={true}
+  secondary={true}
+  tag="foo"
+>
+  <StyledArticleTag__Wrapper
+    className=""
+    onClick={null}
+    secondary={true}
+  >
+    <StyledComponent
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledArticleTag__Wrapper-gxea7p-0",
+            "isStatic": false,
+            "lastClassName": "iMfhyl",
+            "rules": Array [
+              "align-items:center;border-radius:25px;border:1px solid ",
+              [Function],
+              ";cursor:pointer;display:inline-flex;font-size:",
+              [Function],
+              ";line-height:",
+              [Function],
+              ";padding:2px 12px;",
+              [Function],
+            ],
+          },
+          "displayName": "StyledArticleTag__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledArticleTag__Wrapper-gxea7p-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={null}
+      secondary={true}
+    >
+      <span
+        className="StyledArticleTag__Wrapper-gxea7p-0 iMfhyl"
+        onClick={null}
+      >
+        foo
+        <StyledArticleTag__Icon
+          onClick={null}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledArticleTag__Icon-gxea7p-1",
+                  "isStatic": true,
+                  "lastClassName": "bHZlOu",
+                  "rules": Array [
+                    "cursor:pointer;height:11px;margin-left:5px;width:11px;",
+                  ],
+                },
+                "displayName": "StyledArticleTag__Icon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledArticleTag__Icon-gxea7p-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={null}
+          >
+            <_default
+              className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+              onClick={null}
+            >
+              <_default
+                className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+                onClick={null}
+              >
+                <div
+                  className="StyledArticleTag__Icon-gxea7p-1 bHZlOu"
+                  onClick={null}
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </StyledArticleTag__Icon>
+      </span>
+    </StyledComponent>
+  </StyledArticleTag__Wrapper>
+</StyledArticleTag>
+`;
+
+exports[`StyledArticleTag renders correctly with default values 1`] = `
+<StyledArticleTag
+  className=""
+  onClick={null}
+  onRemove={null}
+  removable={false}
+  secondary={false}
+  tag="foo"
+>
+  <StyledArticleTag__Wrapper
+    className=""
+    onClick={null}
+    secondary={false}
+  >
+    <StyledComponent
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledArticleTag__Wrapper-gxea7p-0",
+            "isStatic": false,
+            "lastClassName": "iTCycT",
+            "rules": Array [
+              "align-items:center;border-radius:25px;border:1px solid ",
+              [Function],
+              ";cursor:pointer;display:inline-flex;font-size:",
+              [Function],
+              ";line-height:",
+              [Function],
+              ";padding:2px 12px;",
+              [Function],
+            ],
+          },
+          "displayName": "StyledArticleTag__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledArticleTag__Wrapper-gxea7p-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={null}
+      secondary={false}
+    >
+      <span
+        className="StyledArticleTag__Wrapper-gxea7p-0 iTCycT"
+        onClick={null}
+      >
+        foo
+      </span>
+    </StyledComponent>
+  </StyledArticleTag__Wrapper>
+</StyledArticleTag>
+`;
