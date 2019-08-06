@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlightedText renders with highlight 1`] = `
+<Fragment>
+  <mark>
+    Inv
+  </mark>
+  isibility
+</Fragment>
+`;
+
+exports[`HighlightedText renders without highlight (1) 1`] = `
+<Fragment>
+  Invisibility
+</Fragment>
+`;
+
+exports[`HighlightedText renders without highlight (2) 1`] = `"Invisibility"`;
