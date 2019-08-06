@@ -41,6 +41,7 @@ export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
 export { default as Portal } from './Portal';
 export { default as StyledTag } from './StyledTag';
+export { default as StyledArticleTagsSelector } from './StyledArticleTagsSelector';
 
 export { default as StyledErrorDisplayingContent } from './StyledErrorDisplayingContent';
 
