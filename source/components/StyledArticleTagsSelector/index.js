@@ -63,7 +63,7 @@ function StyledArticleTagsSelector({
 StyledArticleTagsSelector.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
-    communityName: PropTypes.string,
+    communityName: PropTypes.string.isRequired,
     maxAllowed: PropTypes.number,
     onAddTag: PropTypes.func.isRequired,
     onRemoveTag: PropTypes.func.isRequired,
