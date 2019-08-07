@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import get from 'lodash/get';
+import debounce from 'lodash/debounce';
 
 import IconTagSmall from '../../icons/IconTagSmall';
 import IconAddSmall from '../../icons/IconAddSmall';
@@ -38,6 +39,7 @@ const IconAdd = styled(IconAddSmall)`
 
 const Wrapper = styled.div`
     display: flex;
+    height: 24px;
 `;
 
 const Header = styled.div`
@@ -46,12 +48,23 @@ const Header = styled.div`
     margin-right: 12px;
 `;
 
-const AddTagButton = styled.span`
+const AddTagButton = styled.button`
     align-items: center;
+    background: transparent;
+    border: 0;
     color: ${({ theme }) => getAccentColor(theme)};
     cursor: pointer;
     display: inline-flex;
+    font: inherit;
     font-weight: ${({ theme }) => theme.font_weight.medium};
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
 `;
 
 const MaxTagsAdded = styled.div`
@@ -63,28 +76,48 @@ const MaxTagsAdded = styled.div`
 function SearchForm({
     className,
     communityName,
-    maxAllowed,
+    maxNumOfTagsAdded,
     onAddTag,
+    onSearch,
+    query,
     searchResults,
 }) {
+    const [showSearch, setShowSearch] = React.useState(false);
+    const doSearch = debounce(onSearch, 300);
+    const onChange = event => doSearch(event.target.value.trim());
+
     return (
         <Wrapper className={className}>
             <Header>
                 <IconTag />
                 Tag Wiki Pages
             </Header>
-            <AddTagButton>
-                Add Tag
-                <IconAdd />
-            </AddTagButton>
-            <MaxTagsAdded>
-                <IconAlert />
-                Maximum 10 tags
-            </MaxTagsAdded>
-            <SearchInput
-                communityName={communityName}
-                list={searchResults}
-            />
+            {showSearch ? (
+                <SearchInput
+                    communityName={communityName}
+                    list={searchResults}
+                    onAddTag={onAddTag}
+                    onChange={onChange}
+                    onClose={() => setShowSearch(false)}
+                    query={query}
+                />
+            ) : (
+                <React.Fragment>
+                    <AddTagButton
+                        onClick={() => setShowSearch(true)}
+                        disabled={maxNumOfTagsAdded}
+                    >
+                        Add Tag
+                        <IconAdd />
+                    </AddTagButton>
+                    {maxNumOfTagsAdded && (
+                        <MaxTagsAdded>
+                            <IconAlert />
+                            Maximum 10 tags
+                        </MaxTagsAdded>
+                    )}
+                </React.Fragment>
+            )}
         </Wrapper>
     );
 }
@@ -93,14 +126,17 @@ SearchForm.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
     communityName: PropTypes.string.isRequired,
-    maxAllowed: PropTypes.number,
-    onAddTag: PropTypes.func,
+    maxNumOfTagsAdded: PropTypes.bool,
+    onAddTag: PropTypes.func.isRequired,
+    onSearch: PropTypes.func.isRequired,
+    query: PropTypes.string,
     searchResults: PropTypes.arrayOf(TagShape),
 };
 
 SearchForm.defaultProps = {
     className: '',
-    onAddTag: null,
+    maxNumOfTagsAdded: false,
+    query: '',
     searchResults: null,
 };
 

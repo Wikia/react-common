@@ -16,5 +16,8 @@ Defaults:
         { id: '107', title: 'ArdvarkArmy', url: 'http://xkxd02.fandom.com/wiki/ArdvarkArmy' },
         { id: '108', title: 'ArdvarkAnarchy', url: 'http://xkxd02.fandom.com/wiki/ArdvarkAnarchy' },
     ]}
+    onAddTag={(tag) => console.log('onAddTag', tag)}
+    onRemoveTag={(tag) => console.log('onRemoveTag', tag)}
+    onSuggestedTag={(tag) => console.log('onSuggestedTag', tag)}
 />
 ```

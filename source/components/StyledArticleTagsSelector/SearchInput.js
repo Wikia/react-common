@@ -93,28 +93,40 @@ const IconClose = styled(IconCloseSmall)`
 
 function SearchInput({
     className,
+    onChange,
+    onClose,
+    onAddTag,
     communityName,
     list,
+    query,
 }) {
     const ref = React.createRef();
 
     return (
-        <Wrapper>
+        <Wrapper className={className}>
             <IconSearch />
             <Input
                 placeholder={`Searching ${communityName}`}
                 ref={ref}
+                onChange={onChange}
+                autoFocus
             />
             {list && (
                 <List>
                     {list.map(({ id, title }) => (
-                        <li key={id}>
-                            <HighlightedText highlight="ard" text={title} />
+                        <li
+                            key={id}
+                            onClick={() => onAddTag(id)}
+                        >
+                            <HighlightedText
+                                highlight={query}
+                                text={title}
+                            />
                         </li>
                     ))}
                 </List>
             )}
-            <IconClose />
+            <IconClose onClick={onClose} />
         </Wrapper>
     );
 }
@@ -124,11 +136,16 @@ SearchInput.propTypes = {
     className: PropTypes.string,
     communityName: PropTypes.string,
     list: PropTypes.arrayOf(TagShape),
+    onAddTag: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired,
+    query: PropTypes.string,
 };
 
 SearchInput.defaultProps = {
     className: '',
     communityName: '',
+    query: '',
     list: null,
 };
 

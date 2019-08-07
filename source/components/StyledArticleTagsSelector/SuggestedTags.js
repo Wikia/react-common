@@ -32,7 +32,7 @@ function SuggestedTags({
                 {tags.map(({ id, title }) => (
                     <Tag
                         key={id}
-                        onClick={onClick}
+                        onClick={() => onClick(id)}
                         tag={title}
                         secondary
                     />
