@@ -13,19 +13,7 @@ const Wrapper = styled.div`
     font-size: ${({ theme }) => theme.font_size.s};
 `;
 
-function getSearchResults(query) {
-    if (!query) {
-        return null;
-    }
 
-    const count = Math.floor(Math.random() * 3 + 3);
-    const generateEntry = q => ({
-        id: faker.random.number(100).toString(),
-        title: `${q}${faker.random.words(faker.random.number(2) + 1)}`,
-    });
-
-    return (new Array(count)).fill(null).map(() => generateEntry(query));
-}
 
 /**
  * `StyledArticleTagsSelector` component
@@ -36,13 +24,20 @@ function StyledArticleTagsSelector({
     maxAllowed,
     onAddTag,
     onRemoveTag,
+    onSearch,
     onSuggestedTag,
-    // searchResults,
+    searchResults,
     suggestedTags,
     tags,
 }) {
     const [query, setQuery] = React.useState('');
-    const searchResults = getSearchResults(query);
+
+    console.log('searchResults', searchResults);
+
+    const searchCallback = (q) => {
+        setQuery(q);
+        onSearch(q);
+    };
 
     return (
         <Wrapper className={className}>
@@ -51,7 +46,7 @@ function StyledArticleTagsSelector({
                 maxNumOfTagsAdded={tags.length >= maxAllowed}
                 onAddTag={onAddTag}
                 query={query}
-                onSearch={q => setQuery(q)}
+                onSearch={searchCallback}
                 searchResults={searchResults}
             />
             <AddedTags tags={tags} onRemove={onRemoveTag} />
@@ -67,6 +62,7 @@ StyledArticleTagsSelector.propTypes = {
     maxAllowed: PropTypes.number,
     onAddTag: PropTypes.func.isRequired,
     onRemoveTag: PropTypes.func.isRequired,
+    onSearch: PropTypes.func.isRequired,
     onSuggestedTag: PropTypes.func.isRequired,
     searchResults: PropTypes.arrayOf(TagShape),
     suggestedTags: PropTypes.arrayOf(TagShape),
