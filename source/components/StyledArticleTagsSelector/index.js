@@ -32,8 +32,6 @@ function StyledArticleTagsSelector({
 }) {
     const [query, setQuery] = React.useState('');
 
-    console.log('searchResults', searchResults);
-
     const searchCallback = (q) => {
         setQuery(q);
         onSearch(q);
