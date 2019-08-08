@@ -14,6 +14,7 @@ const HighlightedText = ({ highlight, text }) => {
         const newHtml = text.replace(highlightRegex, m => `<mark>${m}</mark>`);
 
         return (
+            // eslint-disable-next-line react/no-danger
             <span dangerouslySetInnerHTML={{ __html: newHtml }} />
         );
     }
