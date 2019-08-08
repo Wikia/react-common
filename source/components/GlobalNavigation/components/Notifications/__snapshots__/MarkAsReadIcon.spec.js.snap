@@ -35,7 +35,7 @@ exports[`MarkAsReadIcon renders correctly for other types 1`] = `
 >
   <Icon
     className=""
-    name="upvote-small"
+    name="heart-small"
     small={false}
     tiny={false}
   />
