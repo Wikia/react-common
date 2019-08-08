@@ -12,7 +12,16 @@ const Wrapper = styled.div`
 `;
 
 /**
- * `StyledArticleTagsSelector` component
+ * `StyledArticleTagsSelector` component.
+ *
+ * **NOTE**: Several props are arrays of `Tag`s - `Tag` is defined as follows:
+ * ```typescript
+ * interface Tag {
+ *   id: string;
+ *   title: string;
+ *   url?: string;
+ * }
+ * ```
  */
 function StyledArticleTagsSelector({
     className,
@@ -65,11 +74,11 @@ StyledArticleTagsSelector.propTypes = {
     onSearch: PropTypes.func.isRequired,
     /** Callback called when clicking on one of the suggested tags; `(id: string) => void` */
     onSuggestedTag: PropTypes.func.isRequired,
-    /** Search result tags; [{id: string, title: string}]; current query will automatically be highlighted */
+    /** Search result tags; `Tag[]` (see above); current query will automatically be highlighted */
     searchResults: PropTypes.arrayOf(TagShape),
-    /** Suggested tags; [{id: string, title: string}] */
+    /** Suggested tags; `Tag[]` (see above) */
     suggestedTags: PropTypes.arrayOf(TagShape),
-    /** Current tags; [{id: string, title: string}] */
+    /** Current tags; `Tag[]` (see above) */
     tags: PropTypes.arrayOf(TagShape),
 };
 
