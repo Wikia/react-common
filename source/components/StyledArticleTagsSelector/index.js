@@ -31,6 +31,7 @@ function StyledArticleTagsSelector({
     tags,
 }) {
     const [query, setQuery] = React.useState('');
+    const maxNumOfTagsAdded = tags && (tags.length >= maxAllowed);
 
     const searchCallback = (q) => {
         setQuery(q);
@@ -41,14 +42,14 @@ function StyledArticleTagsSelector({
         <Wrapper className={className}>
             <SearchForm
                 communityName={communityName}
-                maxNumOfTagsAdded={tags.length >= maxAllowed}
+                maxNumOfTagsAdded={maxNumOfTagsAdded}
                 onAddTag={onAddTag}
                 query={query}
                 onSearch={searchCallback}
                 searchResults={searchResults}
             />
             <AddedTags tags={tags} onRemove={onRemoveTag} />
-            <SuggestedTags tags={suggestedTags} onClick={onSuggestedTag} />
+            {!maxNumOfTagsAdded && <SuggestedTags tags={suggestedTags} onClick={onSuggestedTag} />}
         </Wrapper>
     );
 }

@@ -12,7 +12,6 @@ const Tag = styled(StyledTag)`
 `;
 
 const Wrapper = styled.div`
-    margin-bottom: 30px;
     overflow-x: auto;
 `;
 

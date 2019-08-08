@@ -12,6 +12,7 @@ const Tag = styled(StyledTag)`
 `;
 
 const Wrapper = styled.div`
+    margin-top: 30px;
     padding-top: 8px;
 `;
 
