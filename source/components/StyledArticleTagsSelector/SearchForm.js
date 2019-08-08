@@ -75,6 +75,7 @@ const MaxTagsAdded = styled.div`
 function SearchForm({
     className,
     communityName,
+    maxAllowed,
     maxNumOfTagsAdded,
     onAddTag,
     onSearch,
@@ -112,7 +113,7 @@ function SearchForm({
                     {maxNumOfTagsAdded && (
                         <MaxTagsAdded>
                             <IconAlert />
-                            Maximum 10 tags
+                            {`Maximum ${maxAllowed} tag`}
                         </MaxTagsAdded>
                     )}
                 </React.Fragment>
@@ -125,6 +126,7 @@ SearchForm.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
     communityName: PropTypes.string.isRequired,
+    maxAllowed: PropTypes.number.isRequired,
     maxNumOfTagsAdded: PropTypes.bool,
     onAddTag: PropTypes.func.isRequired,
     onSearch: PropTypes.func.isRequired,

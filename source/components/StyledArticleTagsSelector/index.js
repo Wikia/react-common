@@ -48,6 +48,7 @@ function StyledArticleTagsSelector({
             <SearchForm
                 communityName={communityName}
                 maxNumOfTagsAdded={maxNumOfTagsAdded}
+                maxAllowed={maxAllowed}
                 onAddTag={onAddTag}
                 query={query}
                 onSearch={searchCallback}

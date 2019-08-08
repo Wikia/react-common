@@ -59,7 +59,6 @@ const Wrapper = styled.div`
 
     @media ${({ theme }) => theme.media.medium_up} {
         flex: 1;
-        /* flex-direction: column; */
     }
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import noop from 'lodash/noop';
 
 import StyledTag from '../StyledTag';
 
@@ -47,7 +48,7 @@ AddedTags.propTypes = {
 
 AddedTags.defaultProps = {
     className: '',
-    onRemove: null,
+    onRemove: noop,
     tags: null,
 };
 

@@ -23,3 +23,7 @@ test('HighlightedText renders without highlight (1)', () => {
 test('HighlightedText renders without highlight (2)', () => {
     expectRenderAsHtml({ text: 'Invisibility' }, 'Invisibility');
 });
+
+test('HighlightedText can escape', () => {
+    expectRenderAsHtml({ text: 'I asked - Nani?? O.O - and they responded', highlight: '- Nani?? O.O' }, 'I asked <mark>- Nani?? O.O</mark> - and they responded');
+});

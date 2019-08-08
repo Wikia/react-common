@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import noop from 'lodash/noop';
 
 import StyledTag from '../StyledTag';
 
@@ -54,7 +55,7 @@ SuggestedTags.propTypes = {
 
 SuggestedTags.defaultProps = {
     className: '',
-    onClick: null,
+    onClick: noop,
     tags: null,
 };
 
