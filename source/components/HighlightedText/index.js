@@ -9,21 +9,16 @@ function escapeRegex(text) {
  * `HighlightedText` is a text node with highlighted text.
  */
 const HighlightedText = ({ highlight, text }) => {
-    if (highlight && highlight.length) {
+    if (typeof highlight === 'string' && highlight.length) {
         const highlightRegex = new RegExp(`(${escapeRegex(highlight.trim())})`, 'ig');
-        const match = text.match(highlightRegex);
-        const highlightedPart = match ? match[0] : match;
-        const regularPart = text.replace(highlightRegex, '');
+        const newHtml = text.replace(highlightRegex, m => `<mark>${m}</mark>`);
 
         return (
-            <React.Fragment>
-                {highlightedPart && (<mark>{highlightedPart}</mark>)}
-                {regularPart}
-            </React.Fragment>
+            <span dangerouslySetInnerHTML={{ __html: newHtml }} />
         );
     }
 
-    return text;
+    return <span>{text}</span>;
 };
 
 HighlightedText.propTypes = {
@@ -32,7 +27,7 @@ HighlightedText.propTypes = {
 };
 
 HighlightedText.defaultProps = {
-    highlight: null,
+    highlight: undefined,
 };
 
 
