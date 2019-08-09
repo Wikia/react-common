@@ -61,6 +61,7 @@
       "GlobalFooter",
       "GlobalNavigation",
       "HideComponent",
+      "HighlightedText",
       "Icon",
       "IconSprite",
       "Image",
@@ -75,6 +76,7 @@
       "Switch",
       "Switch.Item",
       "Switch.Wrapper",
+      "StyledTag",
       "Timeago",
       "VideoPlayIcon",
       "StyledErrorDisplayingContent"
