@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import get from 'lodash/get';
@@ -8,7 +8,10 @@ import {
     isDiscussionPostUpvote,
     isDiscussionReply,
     isDiscussionReplyUpvote,
+    isPostAtMention,
+    isThreadAtMention,
 } from '../../models/notificationTypes';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
@@ -106,6 +109,16 @@ const getReplyUpvoteMessageBody = (translateFunc, { title, totalUniqueActors, po
     return translateFunc('notifications-reply-upvote-single-user-no-title');
 };
 
+const getPostAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-reply-at-mention', {
+    postTitle: postTitleMarkup,
+    mentioner: get(latestActors, '[0].name'),
+});
+
+const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-post-at-mention', {
+    postTitle: postTitleMarkup,
+    mentioner: get(latestActors, '[0].name'),
+});
+
 const getText = (translateFunc, model) => {
     const { type, snippet, title, totalUniqueActors, latestActors } = model;
     const postTitleMarkup = `<b>${title}</b>`;
@@ -126,11 +139,19 @@ const getText = (translateFunc, model) => {
         return getReplyUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
     }
 
+    if (isPostAtMention(type)) {
+        return getPostAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+    }
+
+    if (isThreadAtMention(type)) {
+        return getThreadAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+    }
+
     return null;
 };
 
 const CardText = ({ model }) => {
-    const [t] = useTranslation();
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
     const text = getText(t, model);
 
     // eslint-disable-next-line react/no-danger

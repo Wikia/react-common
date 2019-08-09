@@ -23,7 +23,7 @@ exports[`UserModal renders correctly with default params 1`] = `
     className="wds-user-modal__notifications-wrapper"
   >
     <ListContainer
-      header="Notifications"
+      header="some-label"
       track={[Function]}
     />
   </div>
@@ -68,7 +68,7 @@ exports[`UserModal renders correctly with isOpen set as true 1`] = `
     className="wds-user-modal__notifications-wrapper"
   >
     <ListContainer
-      header="Notifications"
+      header="some-label"
       track={[Function]}
     />
   </div>

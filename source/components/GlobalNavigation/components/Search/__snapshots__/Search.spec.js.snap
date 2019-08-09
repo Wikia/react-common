@@ -8,30 +8,9 @@ exports[`render Search renders correctly with default props 1`] = `
   <div
     className="wds-global-navigation__search"
   >
-    <div
-      className="wds-global-navigation__search-toggle"
+    <SearchToggle
       onClick={[Function]}
-      role="searchbox"
-      tabIndex="0"
-    >
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass-small"
-        small={true}
-        tiny={false}
-      />
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
-        small={false}
-        tiny={false}
-      />
-      <span
-        className="wds-global-navigation__search-toggle-text"
-      >
-        Search
-      </span>
-    </div>
+    />
     <Dropdown
       canFlip={false}
       className="wds-global-navigation__search-dropdown"
@@ -50,76 +29,45 @@ exports[`render Search renders correctly with default props 1`] = `
       onClose={null}
       onMouseEnter={null}
       toggle={
-        <React.Fragment>
-          <input
-            className="wds-global-navigation__search-input"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            placeholder="global-navigation-search-placeholder-in-wiki"
-            type="search"
-            value=""
-          />
-          <Button
-            className="wds-global-navigation__search-clear"
-            disabled={false}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={true}
-            type="button"
-          >
-            <Icon
-              className="wds-global-navigation__search-clear-icon"
-              name="add"
-              small={true}
-              tiny={false}
-            />
-          </Button>
-          <Button
-            className="wds-global-navigation__search-close"
-            disabled={false}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={true}
-            type="button"
-          >
-            <Icon
-              className="wds-global-navigation__search-close-icon"
-              name="close-tiny"
-              small={false}
-              tiny={true}
-            />
-          </Button>
-          <Button
-            className="wds-global-navigation__search-submit"
-            data-tracking-label="search"
-            disabled={true}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={false}
-            type="submit"
-          >
-            <Icon
-              className="wds-global-navigation__search-submit-icon"
-              name="arrow-small"
-              small={true}
-              tiny={false}
-            />
-          </Button>
-        </React.Fragment>
+        <ForwardRef
+          model={
+            Object {
+              "placeholder-active": Object {
+                "key": "global-navigation-search-placeholder-in-wiki",
+                "params": Object {
+                  "sitename": Object {
+                    "type": "text",
+                    "value": "Wookieepedia",
+                  },
+                },
+                "type": "translatable-text",
+              },
+              "placeholder-inactive": Object {
+                "key": "global-navigation-search-placeholder-inactive",
+                "type": "translatable-text",
+              },
+              "results": Object {
+                "param-name": "query",
+                "tracking-label": "search",
+                "url": "//starwars.wikia.com/wiki/Special:Search",
+              },
+              "suggestions": Object {
+                "param-name": "query",
+                "tracking-label": "search-suggestion",
+                "url": "/mocks/searchSuggestions.json?",
+              },
+              "type": "search",
+            }
+          }
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onQueryChanged={[Function]}
+          onSearchActivation={[Function]}
+          onSearchClear={[Function]}
+          onSearchClose={[Function]}
+          onSearchSubmit={[Function]}
+          query=""
+        />
       }
       toggleAttrs={Object {}}
       toggleClassName="wds-global-navigation__search-input-wrapper"
@@ -136,30 +84,9 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
   <div
     className="wds-global-navigation__search"
   >
-    <div
-      className="wds-global-navigation__search-toggle"
+    <SearchToggle
       onClick={[Function]}
-      role="searchbox"
-      tabIndex="0"
-    >
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass-small"
-        small={true}
-        tiny={false}
-      />
-      <Icon
-        className="wds-global-navigation__search-toggle-icon"
-        name="magnifying-glass"
-        small={false}
-        tiny={false}
-      />
-      <span
-        className="wds-global-navigation__search-toggle-text"
-      >
-        Search
-      </span>
-    </div>
+    />
     <Dropdown
       canFlip={false}
       className="wds-global-navigation__search-dropdown"
@@ -178,76 +105,45 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
       onClose={null}
       onMouseEnter={null}
       toggle={
-        <React.Fragment>
-          <input
-            className="wds-global-navigation__search-input"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            placeholder="global-navigation-search-placeholder-in-wiki"
-            type="search"
-            value="Harr"
-          />
-          <Button
-            className="wds-global-navigation__search-clear"
-            disabled={false}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={true}
-            type="button"
-          >
-            <Icon
-              className="wds-global-navigation__search-clear-icon"
-              name="add"
-              small={true}
-              tiny={false}
-            />
-          </Button>
-          <Button
-            className="wds-global-navigation__search-close"
-            disabled={false}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={true}
-            type="button"
-          >
-            <Icon
-              className="wds-global-navigation__search-close-icon"
-              name="close-tiny"
-              small={false}
-              tiny={true}
-            />
-          </Button>
-          <Button
-            className="wds-global-navigation__search-submit"
-            data-tracking-label="search"
-            disabled={false}
-            fullwidth={false}
-            href={null}
-            light={false}
-            onClick={[Function]}
-            secondary={false}
-            square={false}
-            text={false}
-            type="submit"
-          >
-            <Icon
-              className="wds-global-navigation__search-submit-icon"
-              name="arrow-small"
-              small={true}
-              tiny={false}
-            />
-          </Button>
-        </React.Fragment>
+        <ForwardRef
+          model={
+            Object {
+              "placeholder-active": Object {
+                "key": "global-navigation-search-placeholder-in-wiki",
+                "params": Object {
+                  "sitename": Object {
+                    "type": "text",
+                    "value": "Wookieepedia",
+                  },
+                },
+                "type": "translatable-text",
+              },
+              "placeholder-inactive": Object {
+                "key": "global-navigation-search-placeholder-inactive",
+                "type": "translatable-text",
+              },
+              "results": Object {
+                "param-name": "query",
+                "tracking-label": "search",
+                "url": "//starwars.wikia.com/wiki/Special:Search",
+              },
+              "suggestions": Object {
+                "param-name": "query",
+                "tracking-label": "search-suggestion",
+                "url": "/mocks/searchSuggestions.json?",
+              },
+              "type": "search",
+            }
+          }
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onQueryChanged={[Function]}
+          onSearchActivation={[Function]}
+          onSearchClear={[Function]}
+          onSearchClose={[Function]}
+          onSearchSubmit={[Function]}
+          query="Harr"
+        />
       }
       toggleAttrs={Object {}}
       toggleClassName="wds-global-navigation__search-input-wrapper"

@@ -3,11 +3,15 @@ import PropTypes from 'prop-types';
 
 import Icon from '../../../Icon';
 
-import NotificationsContext from '../../models/NotificationContext';
-import { isAnnouncement, isDiscussionReply } from '../../models/notificationTypes';
+import NotificationsContext from '../../context/NotificationContext';
+import { isAnnouncement, isDiscussionReply, isPostAtMention, isThreadAtMention } from '../../models/notificationTypes';
+
+function isCommentNotifictionType(type) {
+    return isDiscussionReply(type) || isPostAtMention(type) || isThreadAtMention(type);
+}
 
 function getIconName(type) {
-    if (isDiscussionReply(type)) {
+    if (isCommentNotifictionType(type)) {
         return 'comment-small';
     }
 
@@ -15,7 +19,7 @@ function getIconName(type) {
         return 'flag-small';
     }
 
-    return 'upvote-small';
+    return 'heart-small';
 }
 
 const MarkAsReadIcon = ({ track, model }) => {

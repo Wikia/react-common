@@ -1,13 +1,16 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-import NotificationsContext from '../../models/NotificationContext';
+import NotificationsContext from '../../context/NotificationContext';
+import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 
 import MarkAllButton from './MarkAllButton';
 import List from './List';
 
 const ListContainer = ({ track, header }) => {
     const { unreadCount, notifications, isLoading } = useContext(NotificationsContext);
+    const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
         <React.Fragment>
@@ -26,7 +29,7 @@ const ListContainer = ({ track, header }) => {
                     )
                     : (
                         <p className="wds-notifications__zero-state">
-                            No notifications yet.
+                            {t('notifications-no-notifications-message')}
                         </p>
                     )
             }

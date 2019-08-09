@@ -6,16 +6,15 @@ exports[`AvatarStack renders when there are less avatars than specified by maxSt
 >
   <Avatar
     alt="User"
-    badge="admin"
-    href="some.link"
+    badge="sysop"
     key="0"
+    link="some.link"
     src="some.url"
   />
   <Avatar
     alt="Other user"
-    badge=""
-    href="some.other.link"
     key="1"
+    link="some.other.link"
     src="some.other.url"
   />
   0
@@ -28,9 +27,9 @@ exports[`AvatarStack renders when there are more avatars than specified by maxSt
 >
   <Avatar
     alt="User"
-    badge="admin"
-    href="some.link"
+    badge="sysop"
     key="0"
+    link="some.link"
     src="some.url"
   />
   <div
@@ -47,16 +46,15 @@ exports[`AvatarStack renders with default props 1`] = `
 >
   <Avatar
     alt="User"
-    badge="admin"
-    href="some.link"
+    badge="sysop"
     key="0"
+    link="some.link"
     src="some.url"
   />
   <Avatar
     alt="Other user"
-    badge=""
-    href="some.other.link"
     key="1"
+    link="some.other.link"
     src="some.other.url"
   />
   0
@@ -69,9 +67,9 @@ exports[`AvatarStack renders with hideOverflow set to true 1`] = `
 >
   <Avatar
     alt="User"
-    badge="admin"
-    href="some.link"
+    badge="sysop"
     key="0"
+    link="some.link"
     src="some.url"
   />
 </div>
@@ -83,16 +81,15 @@ exports[`AvatarStack renders with overrideCount 1`] = `
 >
   <Avatar
     alt="User"
-    badge="admin"
-    href="some.link"
+    badge="sysop"
     key="0"
+    link="some.link"
     src="some.url"
   />
   <Avatar
     alt="Other user"
-    badge=""
-    href="some.other.link"
     key="1"
+    link="some.other.link"
     src="some.other.url"
   />
   0

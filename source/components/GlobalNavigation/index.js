@@ -18,6 +18,7 @@ import MobileUser from './components/User/MobileUser';
 import NotificationsDataProvider from './components/Notifications/NotificationsDataProvider';
 import NotificationsDropdown from './components/Notifications/NotificationsDropdown';
 import PartnerSlot from './components/PartnerSlot/PartnerSlot';
+import { I18nNamespaceProvider } from './context/I18nNamespaceContext';
 
 import './styles.scss';
 
@@ -163,8 +164,91 @@ class GlobalNavigation extends React.Component {
         });
     }
 
-    render() {
+    renderLeftBar() {
+        const { model } = this.props;
+
+        return (
+            <div className="wds-global-navigation__content-bar-left">
+                <a
+                    href={model.logo.href}
+                    className="wds-global-navigation__logo"
+                    data-tracking-label={model.logo['tracking-label']}
+                >
+                    <LogoFandomWhite className="wds-global-navigation__logo-image" />
+                </a>
+                <nav className="wds-global-navigation__links">
+                    {this.renderMainNavigation(model['main-navigation'])}
+                </nav>
+            </div>
+        );
+    }
+
+    renderRightBar() {
         const { model, track, siteName } = this.props;
+        const { isSearchModalOpen, isUserModalOpen, isSearchExpanded } = this.state;
+
+        return (
+            <div className="wds-global-navigation__content-bar-right">
+                <CommunityBar model={model.logo} siteName={siteName} />
+                <div className="wds-global-navigation__dropdown-controls">
+                    <Search
+                        model={model.search}
+                        isSearchExpanded={isSearchExpanded}
+                        onSearchActivation={this.onSearchActivation}
+                        onSearchClose={this.onSearchClose}
+                        onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                        onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
+                        onRedirectToSearchResults={this.onRedirectToSearchResults}
+                        track={track}
+                    />
+                    <User data={model} />
+                    {
+                        model.user && <NotificationsDropdown track={track} />
+                    }
+                    <div className="wds-global-navigation__start-a-wiki">
+                        <LinkButton link={model['create-wiki']} />
+                    </div>
+                </div>
+                <div className="wds-global-navigation__modal-controls">
+                    <SearchModal
+                        isOpen={isSearchModalOpen}
+                        openModal={this.openModal}
+                    >
+                        <Search
+                            model={model.search}
+                            isSearchExpanded={isSearchExpanded}
+                            onSearchActivation={this.onSearchActivation}
+                            onSearchClose={this.onSearchClose}
+                            onSearchSuggestionChosen={this.onSearchSuggestionChosen}
+                            onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
+                            onRedirectToSearchResults={this.onRedirectToSearchResults}
+                            track={track}
+                            inSearchModal
+                        />
+                        <nav className="wds-global-navigation__links">
+                            {this.renderMainNavigation(model['main-navigation'])}
+                        </nav>
+                    </SearchModal>
+                    <MobileUser
+                        model={model}
+                        openModal={this.openModal}
+                        isOpen={isUserModalOpen}
+                        track={track}
+                    />
+                    <Button
+                        onClick={this.closeAndDeactivate}
+                        className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
+                        text
+                    >
+                        <Icon name="close" />
+                    </Button>
+                </div>
+            </div>
+        );
+    }
+
+    render() {
+        const { model, i18nNamespace } = this.props;
         const partnerSlotModel = model['partner-slot'];
         const { isSearchModalOpen, isUserModalOpen, isSearchExpanded, isCommunityBarActive } = this.state;
         const containerClass = classNames('wds-global-navigation', {
@@ -175,94 +259,69 @@ class GlobalNavigation extends React.Component {
         });
 
         return (
-            <NotificationsDataProvider isAuthenticated={Boolean(model.user)} serviceUrl={model['services-domain']}>
-                <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
-                    <div className="wds-global-navigation__content-bar-left">
-                        <a
-                            href={model.logo.href}
-                            className="wds-global-navigation__logo"
-                            data-tracking-label={model.logo['tracking-label']}
-                        >
-                            <LogoFandomWhite className="wds-global-navigation__logo-image" />
-                        </a>
-                        <nav className="wds-global-navigation__links">
-                            {this.renderMainNavigation(model['main-navigation'])}
-                        </nav>
+            <I18nNamespaceProvider value={i18nNamespace}>
+                <NotificationsDataProvider isAuthenticated={Boolean(model.user)} serviceUrl={model['services-domain']}>
+                    <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
+                        {this.renderLeftBar()}
+                        {this.renderRightBar()}
+                        {
+                            partnerSlotModel && <PartnerSlot model={partnerSlotModel} />
+                        }
                     </div>
-                    <div className="wds-global-navigation__content-bar-right">
-                        <CommunityBar model={model.logo} siteName={siteName} />
-                        <div className="wds-global-navigation__dropdown-controls">
-                            <Search
-                                model={model.search}
-                                isSearchExpanded={isSearchExpanded}
-                                onSearchActivation={this.onSearchActivation}
-                                onSearchClose={this.onSearchClose}
-                                onSearchSuggestionChosen={this.onSearchSuggestionChosen}
-                                onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
-                                onRedirectToSearchResults={this.onRedirectToSearchResults}
-                                track={track}
-                            />
-                            <User data={model} />
-                            {
-                                model.user && <NotificationsDropdown track={track} />
-                            }
-                            <div className="wds-global-navigation__start-a-wiki">
-                                <LinkButton link={model['create-wiki']} />
-                            </div>
-                        </div>
-                        <div className="wds-global-navigation__modal-controls">
-                            <SearchModal
-                                isOpen={isSearchModalOpen}
-                                openModal={this.openModal}
-                            >
-                                <Search
-                                    model={model.search}
-                                    isSearchExpanded={isSearchExpanded}
-                                    onSearchActivation={this.onSearchActivation}
-                                    onSearchClose={this.onSearchClose}
-                                    onSearchSuggestionChosen={this.onSearchSuggestionChosen}
-                                    onSearchSuggestionsImpression={this.onSearchSuggestionsImpression}
-                                    onRedirectToSearchResults={this.onRedirectToSearchResults}
-                                    track={track}
-                                    inSearchModal
-                                />
-                                <nav className="wds-global-navigation__links">
-                                    {this.renderMainNavigation(model['main-navigation'])}
-                                </nav>
-                            </SearchModal>
-                            <MobileUser
-                                data={model}
-                                openModal={this.openModal}
-                                isOpen={isUserModalOpen}
-                                track={track}
-                            />
-                            <Button
-                                onClick={this.closeAndDeactivate}
-                                className="wds-global-navigation__modal-control wds-global-navigation__modal-control-close"
-                                text
-                            >
-                                <Icon name="close" />
-                            </Button>
-                        </div>
-                    </div>
-                    {
-                        partnerSlotModel && <PartnerSlot model={partnerSlotModel} />
-                    }
-                </div>
-            </NotificationsDataProvider>
+                </NotificationsDataProvider>
+            </I18nNamespaceProvider>
         );
     }
 }
 
 GlobalNavigation.propTypes = {
+    /**
+     * Function called when "search" button is clicked
+     *
+     * accepts:
+     * - [String] query - search query string
+     * */
     goToSearchResults: PropTypes.func,
+    /** i18next namespace for translated strings from Design System */
+    i18nNamespace: PropTypes.string.isRequired,
+    /** data model retrieved from DesignSystem API */
     model: PropTypes.shape().isRequired,
+    /**
+     * Function called when either "search" or "user" modal is opened on mobile
+     *
+     * arguments:
+     * - [String] type - type of modal currently opened
+     * */
     onModalOpen: PropTypes.func,
+    /** Function called when "close" button in search is clicked */
     onSearchCloseClicked: PropTypes.func,
+    /**
+     * Function called when any of the search suggestions is clicked
+     *
+     * arguments:
+     * - [String] clickedSuggestion
+     * - [Array<String>] displayedSuggestions - list of all currently displayed suggestions
+     * - [String] suggestionId - uuidv4 generated id, unique per every search attempt
+     * */
     onSearchSuggestionChosen: PropTypes.func,
+    /**
+     * Function called when search suggestions are displayed
+     *
+     * arguments:
+     * - [Array<String>] suggestions - list of all currently displayed suggestions
+     * - [String] suggestionId - uuidv4 generated id, unique per every search attempt
+     * */
     onSearchSuggestionsImpression: PropTypes.func,
+    /** Function called when search is expanded */
     onSearchToggleClicked: PropTypes.func,
+    /** data model retrieved from DesignSystem API */
     siteName: PropTypes.shape().isRequired,
+    /**
+     * Tracking function
+     *
+     * arguments:
+     * - [Object] object with "action", "category" and "label" keys
+     * */
     track: PropTypes.func,
 };
 

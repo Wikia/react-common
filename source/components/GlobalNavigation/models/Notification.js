@@ -60,6 +60,14 @@ function getNotificationType(apiData) {
         return notificationTypes.announcement;
     }
 
+    if (apiData.type === 'post-at-mention-notification') {
+        return notificationTypes.postAtMention;
+    }
+
+    if (apiData.type === 'thread-at-mention-notification') {
+        return notificationTypes.threadAtMention;
+    }
+
     return null;
 }
 

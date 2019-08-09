@@ -62,6 +62,7 @@ const defaultProps = {
     openModal: () => null,
     track: () => null,
     isOpen: false,
+    header: 'some-label',
 };
 
 function renderComponent(props) {

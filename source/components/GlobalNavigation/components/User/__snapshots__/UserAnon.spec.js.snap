@@ -51,7 +51,7 @@ exports[`UserAnon renders correctly 1`] = `
       <div
         className="wds-global-navigation__user-menu-dropdown-caption"
       >
-        Don't have an account?
+        global-navigation-anon-register-description
       </div>
       <Button
         className=""

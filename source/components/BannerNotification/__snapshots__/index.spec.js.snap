@@ -118,6 +118,32 @@ exports[`BannerNotification renders correctly 5`] = `
 </div>
 `;
 
+exports[`BannerNotification renders correctly 6`] = `
+<div
+  className="wds-banner-notification wds-message "
+>
+  <div
+    className="wds-banner-notification__icon"
+  >
+    <div
+      className="wds-banner-notification__icon-mark"
+    />
+  </div>
+  <span
+    className="wds-banner-notification__text"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Some text with <strong>html</strong>",
+      }
+    }
+  />
+  <div
+    className="wds-banner-notification__close"
+    onClick={[Function]}
+  />
+</div>
+`;
+
 exports[`BannerNotification renders correctly without action 1`] = `
 <div
   className="wds-banner-notification wds-message "

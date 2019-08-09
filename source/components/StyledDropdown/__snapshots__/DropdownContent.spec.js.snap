@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownContent renders correctly with Text inside 1`] = `
+<DropdownContent
+  className=""
+  elementRef={
+    Object {
+      "current": <div
+        class="DropdownContent-sc-1m1tfah-0 jizAHz"
+      >
+        Content
+      </div>,
+    }
+  }
+>
+  <StyledComponent
+    className=""
+    elementRef={
+      Object {
+        "current": <div
+          class="DropdownContent-sc-1m1tfah-0 jizAHz"
+        >
+          Content
+        </div>,
+      }
+    }
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownContent-sc-1m1tfah-0",
+          "isStatic": true,
+          "lastClassName": "jizAHz",
+          "rules": Array [],
+        },
+        "defaultProps": Object {
+          "children": null,
+          "className": "",
+        },
+        "displayName": "DropdownContent",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "children": [Function],
+          "className": [Function],
+          "elementRef": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <Component
+      className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      elementRef={
+        Object {
+          "current": <div
+            class="DropdownContent-sc-1m1tfah-0 jizAHz"
+          >
+            Content
+          </div>,
+        }
+      }
+    >
+      <div
+        className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      >
+        Content
+      </div>
+    </Component>
+  </StyledComponent>
+</DropdownContent>
+`;
+
+exports[`DropdownContent renders correctly with a component inside 1`] = `
+<DropdownContent
+  className=""
+  elementRef={
+    Object {
+      "current": <div
+        class="DropdownContent-sc-1m1tfah-0 jizAHz"
+      >
+        <div>
+          Content
+        </div>
+      </div>,
+    }
+  }
+>
+  <StyledComponent
+    className=""
+    elementRef={
+      Object {
+        "current": <div
+          class="DropdownContent-sc-1m1tfah-0 jizAHz"
+        >
+          <div>
+            Content
+          </div>
+        </div>,
+      }
+    }
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownContent-sc-1m1tfah-0",
+          "isStatic": true,
+          "lastClassName": "jizAHz",
+          "rules": Array [],
+        },
+        "defaultProps": Object {
+          "children": null,
+          "className": "",
+        },
+        "displayName": "DropdownContent",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "children": [Function],
+          "className": [Function],
+          "elementRef": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <Component
+      className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      elementRef={
+        Object {
+          "current": <div
+            class="DropdownContent-sc-1m1tfah-0 jizAHz"
+          >
+            <div>
+              Content
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      >
+        <div>
+          Content
+        </div>
+      </div>
+    </Component>
+  </StyledComponent>
+</DropdownContent>
+`;
+
+exports[`DropdownContent renders correctly with default values 1`] = `
+<DropdownContent
+  className=""
+  elementRef={
+    Object {
+      "current": <div
+        class="DropdownContent-sc-1m1tfah-0 jizAHz"
+      />,
+    }
+  }
+>
+  <StyledComponent
+    className=""
+    elementRef={
+      Object {
+        "current": <div
+          class="DropdownContent-sc-1m1tfah-0 jizAHz"
+        />,
+      }
+    }
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownContent-sc-1m1tfah-0",
+          "isStatic": true,
+          "lastClassName": "jizAHz",
+          "rules": Array [],
+        },
+        "defaultProps": Object {
+          "children": null,
+          "className": "",
+        },
+        "displayName": "DropdownContent",
+        "foldedComponentIds": Array [],
+        "propTypes": Object {
+          "children": [Function],
+          "className": [Function],
+          "elementRef": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <Component
+      className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      elementRef={
+        Object {
+          "current": <div
+            class="DropdownContent-sc-1m1tfah-0 jizAHz"
+          />,
+        }
+      }
+    >
+      <div
+        className="DropdownContent-sc-1m1tfah-0 jizAHz"
+      />
+    </Component>
+  </StyledComponent>
+</DropdownContent>
+`;

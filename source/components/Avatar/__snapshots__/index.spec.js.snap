@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar Avatar renders for "content-moderator" badge permission 1`] = `
+exports[`Avatar renders for "content-moderator" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="content-moderator"
@@ -45,7 +45,41 @@ exports[`Avatar Avatar renders for "content-moderator" badge permission 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders for "global-discussions-moderator" badge permission 1`] = `
+exports[`Avatar renders for "discussion-moderator" badge permission 1`] = `
+<Avatar
+  alt="User avatar"
+  badge="discussion-moderator"
+>
+  <div
+    className="wds-avatar"
+  >
+    <AvatarImage
+      alt="User avatar"
+    >
+      <_default
+        className="wds-avatar__image"
+        title="wds-avatar__image"
+      >
+        <_default
+          className="wds-avatar__image"
+          title="wds-avatar__image"
+        >
+          <div
+            className="wds-avatar__image"
+            title="wds-avatar__image"
+          />
+        </_default>
+      </_default>
+    </AvatarImage>
+    <Badge
+      badge="discussion-moderator"
+      className=""
+    />
+  </div>
+</Avatar>
+`;
+
+exports[`Avatar renders for "global-discussions-moderator" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="global-discussions-moderator"
@@ -90,7 +124,7 @@ exports[`Avatar Avatar renders for "global-discussions-moderator" badge permissi
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders for "helper" badge permission 1`] = `
+exports[`Avatar renders for "helper" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="helper"
@@ -135,7 +169,7 @@ exports[`Avatar Avatar renders for "helper" badge permission 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders for "staff" badge permission 1`] = `
+exports[`Avatar renders for "staff" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="staff"
@@ -180,7 +214,7 @@ exports[`Avatar Avatar renders for "staff" badge permission 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders for "sysop" badge permission 1`] = `
+exports[`Avatar renders for "sysop" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="sysop"
@@ -225,52 +259,7 @@ exports[`Avatar Avatar renders for "sysop" badge permission 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders for "threadmoderator" badge permission 1`] = `
-<Avatar
-  alt="User avatar"
-  badge="threadmoderator"
->
-  <div
-    className="wds-avatar"
-  >
-    <AvatarImage
-      alt="User avatar"
-    >
-      <_default
-        className="wds-avatar__image"
-        title="wds-avatar__image"
-      >
-        <_default
-          className="wds-avatar__image"
-          title="wds-avatar__image"
-        >
-          <div
-            className="wds-avatar__image"
-            title="wds-avatar__image"
-          />
-        </_default>
-      </_default>
-    </AvatarImage>
-    <Badge
-      badge="threadmoderator"
-      className=""
-    >
-      <span
-        className="wds-avatar__badge "
-        title="Discussions Moderator"
-      >
-        <_default>
-          <_default>
-            <div />
-          </_default>
-        </_default>
-      </span>
-    </Badge>
-  </div>
-</Avatar>
-`;
-
-exports[`Avatar Avatar renders for "vstf" badge permission 1`] = `
+exports[`Avatar renders for "vstf" badge permission 1`] = `
 <Avatar
   alt="User avatar"
   badge="vstf"
@@ -315,7 +304,7 @@ exports[`Avatar Avatar renders for "vstf" badge permission 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders when incorrect badgePermission is set 1`] = `
+exports[`Avatar renders when incorrect badgePermission is set 1`] = `
 <Avatar
   alt="User avatar"
   badge="someIncorrectBadgePermission"
@@ -349,7 +338,7 @@ exports[`Avatar Avatar renders when incorrect badgePermission is set 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders with default props 1`] = `
+exports[`Avatar renders with default props 1`] = `
 <Avatar
   alt="User avatar"
 >
@@ -378,7 +367,7 @@ exports[`Avatar Avatar renders with default props 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders with link builder 1`] = `
+exports[`Avatar renders with link builder 1`] = `
 <Avatar
   alt="User avatar"
   linkBuilder={[Function]}
@@ -410,10 +399,10 @@ exports[`Avatar Avatar renders with link builder 1`] = `
 </Avatar>
 `;
 
-exports[`Avatar Avatar renders with props 1`] = `
+exports[`Avatar renders with props 1`] = `
 <Avatar
   alt="alt"
-  badge="admin"
+  badge="sysop"
   className="class-name"
   href="href"
   src="src"
@@ -439,9 +428,20 @@ exports[`Avatar Avatar renders with props 1`] = `
       </AvatarImage>
     </a>
     <Badge
-      badge="admin"
+      badge="sysop"
       className=""
-    />
+    >
+      <span
+        className="wds-avatar__badge "
+        title="Community Admin"
+      >
+        <_default>
+          <_default>
+            <div />
+          </_default>
+        </_default>
+      </span>
+    </Badge>
   </div>
 </Avatar>
 `;

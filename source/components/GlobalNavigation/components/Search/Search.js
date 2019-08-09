@@ -1,15 +1,16 @@
 import React from 'react';
 import classNames from 'classnames';
 import debounce from 'lodash/debounce';
-import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import uuidv4 from 'uuid/v4';
 import merge from 'lodash/merge';
+
+import uuidv4 from '../../../../utils/uuidv4';
 
 import Dropdown from '../../../Dropdown';
 import List from '../../../List';
-import Button from '../../../Button';
-import Icon from '../../../Icon';
+
+import SearchInput from './SearchInput';
+import SearchToggle from './SearchToggle';
 
 const MINIMAL_QUERY_LENGTH = 3;
 const DEBOUNCE_DURATION = 250;
@@ -330,49 +331,22 @@ class Search extends React.Component {
     }
 
     renderInput() {
-        const { t, model } = this.props;
+        const { model } = this.props;
         const { query } = this.state;
-        const placeholderConfig = model['placeholder-active'];
 
         return (
-            <React.Fragment>
-                <input
-                    className="wds-global-navigation__search-input"
-                    placeholder={t(placeholderConfig.key, { sitename: placeholderConfig.params.sitename.value })}
-                    value={query}
-                    onClick={this.onSearchActivation}
-                    ref={this.input}
-                    onChange={this.onQueryChanged}
-                    onFocus={this.onFocus}
-                    onBlur={this.onBlur}
-                    type="search"
-                />
-                <Button
-                    className="wds-global-navigation__search-clear"
-                    type="button"
-                    onClick={this.onSearchClear}
-                    text
-                >
-                    <Icon name="add" small className="wds-global-navigation__search-clear-icon" />
-                </Button>
-                <Button
-                    className="wds-global-navigation__search-close"
-                    type="button"
-                    onClick={this.onSearchClose}
-                    text
-                >
-                    <Icon name="close-tiny" className="wds-global-navigation__search-close-icon" tiny />
-                </Button>
-                <Button
-                    className="wds-global-navigation__search-submit"
-                    type="submit"
-                    disabled={!query}
-                    onClick={this.onSearchSubmit}
-                    data-tracking-label={model.results['tracking-label']}
-                >
-                    <Icon name="arrow-small" className="wds-global-navigation__search-submit-icon" small />
-                </Button>
-            </React.Fragment>
+            <SearchInput
+                ref={this.input}
+                model={model}
+                query={query}
+                onSearchClear={this.onSearchClear}
+                onSearchActivation={this.onSearchActivation}
+                onFocus={this.onFocus}
+                onBlur={this.onBlur}
+                onQueryChanged={this.onQueryChanged}
+                onSearchClose={this.onSearchClose}
+                onSearchSubmit={this.onSearchSubmit}
+            />
         );
     }
 
@@ -424,18 +398,7 @@ class Search extends React.Component {
         return (
             <form className={computedClass} onKeyDown={this.onKeyDown}>
                 <div className="wds-global-navigation__search">
-                    <div
-                        className="wds-global-navigation__search-toggle"
-                        role="searchbox"
-                        tabIndex="0"
-                        onClick={this.onSearchActivation}
-                    >
-                        <Icon name="magnifying-glass-small" className="wds-global-navigation__search-toggle-icon" small />
-                        <Icon name="magnifying-glass" className="wds-global-navigation__search-toggle-icon" />
-                        <span className="wds-global-navigation__search-toggle-text">
-                                Search
-                        </span>
-                    </div>
+                    <SearchToggle onClick={this.onSearchActivation} />
                     <Dropdown
                         className="wds-global-navigation__search-dropdown"
                         toggle={this.renderInput()}
@@ -469,7 +432,6 @@ Search.propTypes = {
     onSearchClose: PropTypes.func.isRequired,
     onSearchSuggestionChosen: PropTypes.func.isRequired,
     onSearchSuggestionsImpression: PropTypes.func.isRequired,
-    t: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,
 };
 
@@ -477,4 +439,4 @@ Search.defaultProps = {
     inSearchModal: false,
 };
 
-export default withTranslation()(Search);
+export default Search;

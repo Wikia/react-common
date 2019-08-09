@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
     messages: state.BannerNotificationsStore.getNotifications().toJS(),
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = /* istanbul ignore next */ dispatch => ({
     onClose(id) {
         // ignore what component will call
         /* istanbul ignore next */

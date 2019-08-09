@@ -6,7 +6,7 @@ import useLazyLoad from '../../../../hooks/useLazyLoad';
 
 import Spinner from '../../../Spinner';
 
-import NotificationsContext from '../../models/NotificationContext';
+import NotificationsContext from '../../context/NotificationContext';
 
 import Card from './Card';
 

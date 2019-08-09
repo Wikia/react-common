@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Button from '../../../Button';
 import Avatar from '../../../Avatar';
 
-import NotificationsContext from '../../models/NotificationContext';
+import NotificationsContext from '../../context/NotificationContext';
 
 import UserModal from './UserModal';
 
-const MobileLoggedIn = ({ user, openModal, isOpen, track }) => {
+const MobileLoggedIn = ({ user, openModal, isOpen, track, header }) => {
     const { unreadCount } = useContext(NotificationsContext);
 
     return (
@@ -27,12 +27,13 @@ const MobileLoggedIn = ({ user, openModal, isOpen, track }) => {
                     )
                 }
             </Button>
-            <UserModal user={user} isOpen={isOpen} track={track} />
+            <UserModal user={user} isOpen={isOpen} track={track} header={header} />
         </React.Fragment>
     );
 };
 
 MobileLoggedIn.propTypes = {
+    header: PropTypes.string.isRequired,
     isOpen: PropTypes.bool.isRequired,
     openModal: PropTypes.func.isRequired,
     track: PropTypes.func.isRequired,

@@ -152,7 +152,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -167,6 +167,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -254,9 +255,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "ktpMdK",
+                    "lastClassName": "hbBtOH",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -266,7 +267,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -277,9 +278,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
               level="high"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ktpMdK"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -292,10 +293,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -307,13 +309,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -324,13 +328,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -493,7 +497,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -508,6 +512,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -595,9 +600,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "ktpMdK",
+                    "lastClassName": "hbBtOH",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -607,7 +612,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -618,9 +623,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
               level="high"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ktpMdK"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -633,10 +638,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -648,13 +654,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -665,13 +673,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -834,7 +842,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -849,6 +857,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -936,9 +945,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "frcLJa",
+                    "lastClassName": "gkmAjv",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -948,7 +957,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -959,9 +968,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
               level="medium"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -974,10 +983,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -989,13 +999,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1006,13 +1018,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -1175,7 +1187,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -1190,6 +1202,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -1277,9 +1290,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "frcLJa",
+                    "lastClassName": "gkmAjv",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -1289,7 +1302,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1300,9 +1313,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
               level="medium"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -1315,10 +1328,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -1330,13 +1344,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1347,13 +1363,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -1516,7 +1532,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -1531,6 +1547,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -1618,9 +1635,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "frcLJa",
+                    "lastClassName": "gkmAjv",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -1630,7 +1647,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1641,9 +1658,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
               level="medium"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -1656,10 +1673,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -1671,13 +1689,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1688,13 +1708,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -1857,7 +1877,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -1872,6 +1892,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -1959,9 +1980,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "frcLJa",
+                    "lastClassName": "gkmAjv",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -1971,7 +1992,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1982,9 +2003,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
               level="medium"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 frcLJa"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -1997,10 +2018,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -2012,13 +2034,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -2029,13 +2053,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -2198,7 +2222,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -2213,6 +2237,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -2300,9 +2325,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "gxpQbv",
+                    "lastClassName": "csuRuC",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -2312,7 +2337,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -2323,9 +2348,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
               level="low"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 gxpQbv"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -2338,10 +2363,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -2353,13 +2379,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -2370,13 +2398,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -2539,7 +2567,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -2554,6 +2582,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -2641,9 +2670,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "gxpQbv",
+                    "lastClassName": "csuRuC",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -2653,7 +2682,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -2664,9 +2693,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
               level="low"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 gxpQbv"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -2679,10 +2708,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -2694,13 +2724,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -2711,13 +2743,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -2880,7 +2912,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -2895,6 +2927,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -2982,9 +3015,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "gxpQbv",
+                    "lastClassName": "csuRuC",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -2994,7 +3027,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -3005,9 +3038,9 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
               level="low"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 gxpQbv"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
               >
-                <StyledCountdown__Circle
+                <StyledCountdown__CircleWithAnimation
                   cx="17"
                   cy="17"
                   r="15"
@@ -3020,10 +3053,11 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "fgfYuj",
                           "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                             "animation:",
                             Keyframes {
                               "id": "sc-keyframes-iucznl",
@@ -3035,13 +3069,15 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
                               ],
                               "toString": [Function],
                             },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            " 10s linear forwards;",
                           ],
                         },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
                         "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
                         "target": "circle",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -3052,13 +3088,13 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
                       cx="17"
                       cy="17"
                       r="15"
                     />
                   </StyledComponent>
-                </StyledCountdown__Circle>
+                </StyledCountdown__CircleWithAnimation>
               </svg>
             </StyledComponent>
           </StyledCountdown__AnimatedProgress>
@@ -3221,7 +3257,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -3236,6 +3272,7 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -3473,7 +3510,7 @@ exports[`StyledCountdown renders correctly 1`] = `
         "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
         "medium_up": "only screen and (min-width: 768px)",
         "small_down": "only screen and (max-width: 767px)",
-        "small_only": "only screen and (max-width: 767px",
+        "small_only": "only screen and (max-width: 767px)",
         "small_up": "only screen",
         "xlarge_down": "only screen and (max-width: 1499px)",
         "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
@@ -3488,6 +3525,7 @@ exports[`StyledCountdown renders correctly 1`] = `
   <StyledCountdown
     className={null}
     onTick={[Function]}
+    stop={false}
   >
     <StyledCountdown__Wrapper
       className={null}
@@ -3575,9 +3613,9 @@ exports[`StyledCountdown renders correctly 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                     "isStatic": false,
-                    "lastClassName": "ktpMdK",
+                    "lastClassName": "hbBtOH",
                     "rules": Array [
                       "height:34px;position:absolute;right:3px;stroke:",
                       [Function],
@@ -3587,7 +3625,7 @@ exports[`StyledCountdown renders correctly 1`] = `
                   "displayName": "StyledCountdown__AnimatedProgress",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-3",
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
                   "target": "svg",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -3598,7 +3636,352 @@ exports[`StyledCountdown renders correctly 1`] = `
               level="high"
             >
               <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-3 ktpMdK"
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
+              >
+                <StyledCountdown__CircleWithAnimation
+                  cx="17"
+                  cy="17"
+                  r="15"
+                >
+                  <StyledComponent
+                    cx="17"
+                    cy="17"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
+                          "isStatic": true,
+                          "lastClassName": "fgfYuj",
+                          "rules": Array [
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            "animation:",
+                            Keyframes {
+                              "id": "sc-keyframes-iucznl",
+                              "inject": [Function],
+                              "name": "iucznl",
+                              "rules": Array [
+                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
+                              ],
+                              "toString": [Function],
+                            },
+                            " 10s linear forwards;",
+                          ],
+                        },
+                        "displayName": "StyledCountdown__CircleWithAnimation",
+                        "foldedComponentIds": Array [
+                          "StyledCountdown__Circle-sc-1oil9oi-2",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
+                        "target": "circle",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    r="15"
+                  >
+                    <circle
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
+                      cx="17"
+                      cy="17"
+                      r="15"
+                    />
+                  </StyledComponent>
+                </StyledCountdown__CircleWithAnimation>
+              </svg>
+            </StyledComponent>
+          </StyledCountdown__AnimatedProgress>
+        </div>
+      </StyledComponent>
+    </StyledCountdown__Wrapper>
+  </StyledCountdown>
+</ThemeProvider>
+`;
+
+exports[`StyledCountdown renders correctly when stopped 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoint_available_width": Object {
+        "large": "988px",
+        "medium": "732px",
+        "xlarge": "1244px",
+        "xxlarge": "1464px",
+      },
+      "breakpoint_available_width_values": Object {
+        "large": 988,
+        "medium": 732,
+        "xlarge": 1244,
+        "xxlarge": 1464,
+      },
+      "breakpoint_values": Object {
+        "large": 1024,
+        "medium": 768,
+        "small": 0,
+        "xlarge": 1280,
+        "xxlarge": 1500,
+      },
+      "color": Object {
+        "alert": "#e81a3f",
+        "black": "#1a1a1a",
+        "blue_gray": "#c5ced9",
+        "books": "#ff7f26",
+        "comics": "#ff5400",
+        "dark_blue": "#092344",
+        "dark_blue_gray": "#39424d",
+        "dark_gray": "#333",
+        "faint_blue_gray": "#f2f6fa",
+        "faint_gray": "#ccc",
+        "fandom_aqua": "#00d6d6",
+        "fandom_black": "#0e191a",
+        "fandom_button_background": "#00cdd0",
+        "fandom_coral": "#ff776d",
+        "fandom_dark_gray": "#5f7a7b",
+        "fandom_light_gray": "#f2f5f5",
+        "fandom_link": "#088488",
+        "fandom_link_hover": "#005252",
+        "fandom_mid_light_gray": "#bed1cf",
+        "fandom_middle_gray": "#7f9998",
+        "fandom_navy": "#002a32",
+        "fandom_purple": "#460084",
+        "fandom_red": "#ee1a41",
+        "fandom_warm_gray": "#eeecdc",
+        "fandom_yellow": "#dfec24",
+        "games": "#94d11f",
+        "gold": "#e3bd00",
+        "lifestyle": "#ffd000",
+        "light_blue": "#1a5eb8",
+        "light_blue_gray": "#e6ebf2",
+        "light_gray": "#999",
+        "link": "#00b7e0",
+        "medium_gray": "#666",
+        "message": "#008c8f",
+        "mist_gray": "#e6e6e6",
+        "movies": "#09d3bf",
+        "music": "#c819ad",
+        "night_sky": "#262626",
+        "off_white": "#f6f6f6",
+        "slate_gray": "#656e78",
+        "social_facebook": "#3b5998",
+        "social_googleplus": "#dd4b39",
+        "social_instagram": "#e02d69",
+        "social_line": "#00c300",
+        "social_linkedin": "#0077b5",
+        "social_meneame": "#ff6400",
+        "social_nk": "#4077a7",
+        "social_odnoklassniki": "#f96900",
+        "social_reddit": "#ff4500",
+        "social_tumblr": "#34465d",
+        "social_twitter": "#1da1f2",
+        "social_vkontakte": "#587ca3",
+        "social_weibo": "#ff8140",
+        "social_wykop": "#fb803f",
+        "social_youtube": "#cd201f",
+        "success": "#018c30",
+        "tv": "#00b7e0",
+        "warning": "#de5e33",
+        "white": "#fff",
+      },
+      "color_theme": Object {
+        "dark": Object {
+          "c1": "#262626",
+          "c2": "#1a1a1a",
+          "c3": undefined,
+          "c4": "#666",
+          "c5": "#999",
+          "c6": "#ccc",
+          "c7": "#fff",
+          "c8": "#e3bd00",
+        },
+        "light": Object {
+          "c1": "#fff",
+          "c2": "#f6f6f6",
+          "c3": "#e6e6e6",
+          "c4": "#ccc",
+          "c5": undefined,
+          "c6": "#333",
+          "c7": "#666",
+          "c8": "#e3bd00",
+        },
+      },
+      "content_well_margin": "18px",
+      "content_well_margin_value": 18,
+      "font_family": "Rubik, Helvetica, Arial, sans-serif",
+      "font_size": Object {
+        "base": "16px",
+        "l": "18px",
+        "s": "14px",
+        "xl": "24px",
+        "xs": "12px",
+        "xxl": "28px",
+        "xxs": "10px",
+        "xxxl": "36px",
+        "xxxxl": "52px",
+      },
+      "font_size_value": Object {
+        "base": 16,
+        "l": 18,
+        "s": 14,
+        "xl": 24,
+        "xs": 12,
+        "xxl": 28,
+        "xxs": 10,
+        "xxxl": 36,
+        "xxxxl": 52,
+      },
+      "font_weight": Object {
+        "black": 900,
+        "bold": 700,
+        "light": 300,
+        "medium": 500,
+        "normal": 400,
+      },
+      "line_height": Object {
+        "loose": 1.75,
+        "none": 1,
+        "normal": 1.5,
+        "tight": 1.25,
+      },
+      "media": Object {
+        "large_down": "only screen and (max-width: 1279px)",
+        "large_only": "only screen and (min-width: 1024px) and (max-width: 1279px)",
+        "large_up": "only screen and (min-width: 1024px)",
+        "medium_down": "only screen and (max-width: 1023px)",
+        "medium_only": "only screen and (min-width: 768px) and (max-width: 1023px)",
+        "medium_up": "only screen and (min-width: 768px)",
+        "small_down": "only screen and (max-width: 767px)",
+        "small_only": "only screen and (max-width: 767px)",
+        "small_up": "only screen",
+        "xlarge_down": "only screen and (max-width: 1499px)",
+        "xlarge_only": "only screen and (min-width: 1280px) and (max-width: 1499px)",
+        "xlarge_up": "only screen and (min-width: 1280px)",
+        "xxlarge_down": "only screen",
+        "xxlarge_only": "only screen and (min-width: 1500px)",
+        "xxlarge_up": "only screen and (min-width: 1500px)",
+      },
+    }
+  }
+>
+  <StyledCountdown
+    className={null}
+    onTick={[Function]}
+    stop={true}
+  >
+    <StyledCountdown__Wrapper
+      className={null}
+    >
+      <StyledComponent
+        className={null}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+              "isStatic": false,
+              "lastClassName": "erWcap",
+              "rules": Array [
+                "align-items:center;background-color:",
+                [Function],
+                ";border-radius:100%;color:",
+                [Function],
+                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
+                [Function],
+                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
+              ],
+            },
+            "displayName": "StyledCountdown__Wrapper",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
+        >
+          <StyledCountdown__Value>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                    "isStatic": false,
+                    "lastClassName": "dnqhKB",
+                    "rules": Array [
+                      "color:",
+                      [Function],
+                      ";font-size:",
+                      [Function],
+                      ";font-weight:",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__Value",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
+              >
+                10
+              </span>
+            </StyledComponent>
+          </StyledCountdown__Value>
+          <StyledCountdown__AnimatedProgress
+            level="high"
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
+                    "isStatic": false,
+                    "lastClassName": "hbBtOH",
+                    "rules": Array [
+                      "height:34px;position:absolute;right:3px;stroke:",
+                      [Function],
+                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
+                    ],
+                  },
+                  "displayName": "StyledCountdown__AnimatedProgress",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
+                  "target": "svg",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              level="high"
+            >
+              <svg
+                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
               >
                 <StyledCountdown__Circle
                   cx="17"
@@ -3615,20 +3998,9 @@ exports[`StyledCountdown renders correctly 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
                           "isStatic": true,
-                          "lastClassName": "dPseaz",
+                          "lastClassName": "lkoahA",
                           "rules": Array [
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
+                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
                           ],
                         },
                         "displayName": "StyledCountdown__Circle",
@@ -3645,7 +4017,7 @@ exports[`StyledCountdown renders correctly 1`] = `
                     r="15"
                   >
                     <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 dPseaz"
+                      className="StyledCountdown__Circle-sc-1oil9oi-2 lkoahA"
                       cx="17"
                       cy="17"
                       r="15"

@@ -6,10 +6,6 @@ import { notificationTypes } from '../../models/notificationTypes';
 
 import CardText from './CardText';
 
-jest.mock('react-i18next', () => ({
-    useTranslation: () => [value => value],
-}));
-
 const actorsMock = [
     {
         id: '12345',
@@ -210,6 +206,30 @@ describe('Discussion reply upvote', () => {
                 type: notificationTypes.discussionUpvoteReply,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
+            },
+        })).toMatchSnapshot();
+    });
+});
+
+describe('Discussion at mentions', () => {
+    test('CardText renders correctly for post at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.postAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Post with at mention',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for thread at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.threadAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Post with at mention',
             },
         })).toMatchSnapshot();
     });

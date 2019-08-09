@@ -1,8 +1,6 @@
-[
-  {
+[{
     "name": "Documentation",
-    "sections": [
-      {
+    "sections": [{
         "name": "Introduction",
         "content": "../docs/PREAMBULE.md"
       },
@@ -53,26 +51,32 @@
       "Countdown",
       "StyledCountdown",
       "Dropdown",
+      "StyledDropdown",
       "ExpandableText",
       "FandomBackgroundImage",
       "FandomContentWell",
       "Fieldset",
       "FloatingButton",
       "FloatingButtonGroup",
+      "GlobalFooter",
       "GlobalNavigation",
       "HideComponent",
+      "HighlightedText",
       "Icon",
       "IconSprite",
       "Image",
       "ImagePreloader",
       "Input",
       "List",
+      "StyledList",
+      "Portal",
       "Select",
       "SimpleLocalNavigation",
       "Spinner",
       "Switch",
       "Switch.Item",
       "Switch.Wrapper",
+      "StyledTag",
       "Timeago",
       "VideoPlayIcon",
       "StyledErrorDisplayingContent"
@@ -93,13 +97,13 @@
     "directory": "hooks",
     "items": [
       "useInterval",
-      "useLazyLoad"
+      "useLazyLoad",
+      "usePortal"
     ]
   },
   {
     "name": "Utils",
-    "sections": [
-      {
+    "sections": [{
         "name": "Environment",
         "content": "../source/utils/ENVIRONMENT.md"
       },
@@ -110,6 +114,10 @@
       {
         "name": "CopyToClipboardOnClick",
         "content": "../source/utils/CLIPBOARD.md"
+      },
+      {
+        "name": "UUID v4",
+        "content": "../source/utils/UUIDV4.md"
       }
     ]
   },

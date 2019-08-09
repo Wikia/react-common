@@ -44,11 +44,14 @@ const circleAnimation = keyframes`
 `;
 
 const Circle = styled.circle`
-    animation: ${circleAnimation} 10s linear forwards;
     fill: none;
     stroke-dasharray: 95px;
     stroke-dashoffset: 0;
     stroke-width: 3px;
+`;
+
+const CircleWithAnimation = styled(Circle)`
+    animation: ${circleAnimation} 10s linear forwards;
 `;
 
 function levelToStrokeColor(level, themeColors) {
@@ -81,14 +84,21 @@ const LOW = 3;
 /**
  * Simple circular, countdown-from-10 component with callback.
  */
-const StyledCountdown = ({ className, onTick }) => {
+const StyledCountdown = ({ className, stop, onTick }) => {
     const [value, setValue] = useState(START);
+    const timerShouldPlay = !stop && value > 0;
+
+    React.useEffect(() => {
+        setValue(START);
+    }, [onTick]);
 
     useInterval(() => {
         const newValue = value - 1;
         setValue(newValue);
         onTick(newValue);
-    }, value > 0 ? ONE_SECOND : null);
+    }, timerShouldPlay ? ONE_SECOND : null);
+
+    const CircleComponent = timerShouldPlay ? CircleWithAnimation : Circle;
 
     // eslint-disable-next-line
     const level = (value <= LOW ? 'low' : (value <= HIGH ? 'medium' : 'high'));
@@ -96,7 +106,7 @@ const StyledCountdown = ({ className, onTick }) => {
     return (
         <Wrapper className={className}>
             <Value>{value}</Value>
-            {value > 0 && <AnimatedProgress level={level}><Circle r="15" cx="17" cy="17" /></AnimatedProgress>}
+            {value > 0 && <AnimatedProgress level={level}><CircleComponent r="15" cx="17" cy="17" /></AnimatedProgress>}
         </Wrapper>
     );
 };
@@ -106,10 +116,13 @@ StyledCountdown.propTypes = {
     className: PropTypes.string,
     /** Callback function that will be called at every tick - 1st param is the value */
     onTick: PropTypes.func.isRequired,
+    /** if `true` the countdown will be stopped */
+    stop: PropTypes.bool,
 };
 
 StyledCountdown.defaultProps = {
     className: null,
+    stop: false,
 };
 
 export default StyledCountdown;

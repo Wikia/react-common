@@ -1,0 +1,2335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown level2 renders correctly with default values 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={true}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="li"
+    className="is-level-2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="li"
+      className="is-level-2"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <li
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={true}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={true}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={true}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                />,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  />,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </li>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown level2 renders correctly with href set 1`] = `
+<StyledDropdown
+  attrs={
+    Object {
+      "href": "#",
+    }
+  }
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={true}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="li"
+    className="is-level-2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="li"
+      className="is-level-2"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <li
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={true}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={true}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={true}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                />,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  />,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </li>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown level2 renders correctly with isActive set 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={true}
+  isLevel2={true}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="li"
+    className="is-active is-level-2"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="li"
+      className="is-active is-level-2"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <li
+        className="is-active is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={true}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={true}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={true}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                />,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  />,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </li>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={true}
+  isNotHoverable={false}
+  isStickedToParent={true}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="li"
+    className="is-level-2 is-sticked-to-parent"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="li"
+      className="is-level-2 is-sticked-to-parent"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <li
+        className="is-level-2 is-sticked-to-parent StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={true}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={true}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={true}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                />,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  />,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </li>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="div"
+    className=""
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="div"
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={false}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={false}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={false}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              >
+                <div>
+                  Content
+                </div>
+              </div>,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                >
+                  <div>
+                    Content
+                  </div>
+                </div>,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  >
+                    <div>
+                      Content
+                    </div>
+                  </div>,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              >
+                <div>
+                  Content
+                </div>
+              </div>
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </div>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and children 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+  toggleIconName="my-icon-name"
+>
+  <StyledDropdown__DropdownComponent
+    as="div"
+    className=""
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="div"
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={false}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={false}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={false}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              >
+                <div>
+                  Content
+                </div>
+              </div>,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                >
+                  <div>
+                    Content
+                  </div>
+                </div>,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  >
+                    <div>
+                      Content
+                    </div>
+                  </div>,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              >
+                <div>
+                  Content
+                </div>
+              </div>
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </div>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;
+
+exports[`Dropdown renders correctly with default values 1`] = `
+<StyledDropdown
+  canFlip={false}
+  className=""
+  contentClassName=""
+  contentScrollable={false}
+  dropdownLeftAligned={false}
+  dropdownRightAligned={false}
+  hasDarkShadow={false}
+  hasShadow={false}
+  iconName="menu-control-tiny"
+  isActive={false}
+  isLevel2={false}
+  isNotHoverable={false}
+  isStickedToParent={false}
+  noChevron={false}
+  onClose={null}
+  onMouseEnter={null}
+  toggle="Toggle"
+  toggleAttrs={Object {}}
+  toggleClassName=""
+>
+  <StyledDropdown__DropdownComponent
+    as="div"
+    className=""
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <StyledComponent
+      as="div"
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+            "isStatic": false,
+            "lastClassName": "jWKOuX",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+              ".DropdownToggle-sc-1p907bm-1",
+              "{cursor:default;position:relative;}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:50%;min-width:70%;padding:",
+              "7",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
+              "1",
+              ";",
+              "border-radius:",
+              "4",
+              "px;",
+              " .dropdown-right-aligned > &{",
+              "left:auto;right:0;transform:none;}",
+              "}.dropdown-left-aligned > &{left:0;transform:none;}.has-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.has-dark-shadow > &{border:0;box-shadow:0 0 10px ",
+              [Function],
+              ";}.scrollable-list > &{",
+              ".StyledList-sc-1t1k18i-0",
+              "{",
+              "background:{image:radial-gradient(farthest-side at 50% 0,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent),radial-gradient(farthest-side at 50% 100%,",
+              "rgba(26, 26, 26, 0.12)",
+              ",transparent);position:0 0,0 100%;repeat:no-repeat;size:100% 9px;}max-height:",
+              "270px",
+              ";overflow-y:auto;position:relative;z-index:1;&::after,&::before{background-color:",
+              "#fff",
+              ";content:'';display:block;height:30px;margin:0 0 -30px;position:relative;z-index:-1;}&::after{background-color:",
+              "#fff",
+              ";margin:-29px 0 0;}",
+              "}}:not(.scrollable-list) > a{",
+              ".StyledList-sc-1t1k18i-0",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "2",
+              ";}&::after{border:8px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-8px;}&::before{border:9px solid transparent;border-bottom-color:",
+              [Function],
+              ";margin-left:-9px;}&.is-active,&:not(.is-touch-device):not(.is-not-hoverable):hover{&:not(.no-chevron){&::before,&::after{display:block;}}& > ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:inline-block;}& > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(180deg);}&.has-shadow,&.has-dark-shadow{&::before{display:none;}}}&.is-flipped{&::before,&::after{bottom:unset;top:-",
+              "1",
+              "px;}&::before{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}&::after{border-bottom-color:transparent;border-top-color:",
+              [Function],
+              ";}",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{bottom:100%;top:unset;}}&.is-level-2{margin-right:0;> a{padding-right:",
+              "18",
+              "px display:flex;justify-content:space-between;}&.is-active > ",
+              ".DropdownToggle-sc-1p907bm-1",
+              " > ",
+              ".DropdownToggle__ChevronIcon-sc-1p907bm-0",
+              "{transform:rotate(-90deg);margin-left:18px;}&.is-sticked-to-parent{position:relative;&.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{top:auto;bottom:-",
+              "8",
+              "px;}}.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{background-color:",
+              [Function],
+              ";border:",
+              "1",
+              "px solid ",
+              [Function],
+              ";display:none;left:100%;padding:",
+              "7",
+              "px 0;position:absolute;top:-",
+              "8",
+              "px;",
+              "border-radius:",
+              "4",
+              "px;",
+              " .wds-list.wds-is-linked > li > a{font-size:",
+              [Function],
+              ";}}&.is-active,&:not(.is-touch-device):hover{.is-level-2 ",
+              ".DropdownContent-sc-1m1tfah-0",
+              "{display:block;}}}",
+            ],
+          },
+          "displayName": "StyledDropdown__DropdownComponent",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <div
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <DropdownToggle
+          attrs={Object {}}
+          className=""
+          iconName="menu-control-tiny"
+          isLevel2={false}
+          isTouchDevice={false}
+          onClick={[Function]}
+          toggleContent="Toggle"
+        >
+          <StyledComponent
+            attrs={Object {}}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle-sc-1p907bm-1",
+                  "isStatic": true,
+                  "lastClassName": "ccutBh",
+                  "rules": Array [],
+                },
+                "displayName": "DropdownToggle",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            iconName="menu-control-tiny"
+            isLevel2={false}
+            isTouchDevice={false}
+            onClick={[Function]}
+            toggleContent="Toggle"
+          >
+            <DropdownToggle
+              attrs={Object {}}
+              className="DropdownToggle-sc-1p907bm-1 ccutBh"
+              iconName="menu-control-tiny"
+              isLevel2={false}
+              isTouchDevice={false}
+              onClick={[Function]}
+              toggleContent="Toggle"
+            >
+              <div
+                className="DropdownToggle-sc-1p907bm-1 ccutBh"
+                onClick={[Function]}
+                role="button"
+              >
+                <span>
+                  Toggle
+                </span>
+                <DropdownToggle__ChevronIcon>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                          "isStatic": true,
+                          "lastClassName": "eZzuHO",
+                          "rules": Array [
+                            "color:inherit;fill:currentColor;height:12px;width:12px;",
+                          ],
+                        },
+                        "displayName": "DropdownToggle__ChevronIcon",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <_default
+                      className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                    >
+                      <_default
+                        className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                      >
+                        <div
+                          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                        />
+                      </_default>
+                    </_default>
+                  </StyledComponent>
+                </DropdownToggle__ChevronIcon>
+              </div>
+            </DropdownToggle>
+          </StyledComponent>
+        </DropdownToggle>
+        <DropdownContent
+          className=""
+          elementRef={
+            Object {
+              "current": <div
+                class="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />,
+            }
+          }
+        >
+          <StyledComponent
+            className=""
+            elementRef={
+              Object {
+                "current": <div
+                  class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                />,
+              }
+            }
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownContent-sc-1m1tfah-0",
+                  "isStatic": true,
+                  "lastClassName": "jizAHz",
+                  "rules": Array [],
+                },
+                "defaultProps": Object {
+                  "children": null,
+                  "className": "",
+                },
+                "displayName": "DropdownContent",
+                "foldedComponentIds": Array [],
+                "propTypes": Object {
+                  "children": [Function],
+                  "className": [Function],
+                  "elementRef": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "DropdownContent-sc-1m1tfah-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <Component
+              className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              elementRef={
+                Object {
+                  "current": <div
+                    class="DropdownContent-sc-1m1tfah-0 jizAHz"
+                  />,
+                }
+              }
+            >
+              <div
+                className="DropdownContent-sc-1m1tfah-0 jizAHz"
+              />
+            </Component>
+          </StyledComponent>
+        </DropdownContent>
+      </div>
+    </StyledComponent>
+  </StyledDropdown__DropdownComponent>
+</StyledDropdown>
+`;

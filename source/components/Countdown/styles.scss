@@ -63,10 +63,13 @@
 	}
 
 	&__animation > circle {
-		animation: countdown-animation 10s linear forwards;
 		fill: none;
 		stroke-dasharray: 95px;
 		stroke-dashoffset: 0;
 		stroke-width: 3px;
+
+		&:not(.is-stopped) {
+			animation: countdown-animation 10s linear forwards;
+		}
 	}
 }

@@ -13,6 +13,14 @@ test('Countdown renders correctly', () => {
     expect(component).toMatchSnapshot();
 });
 
+test('Countdown renders correctly when stopped', () => {
+    const callback = sinon.spy();
+    const component = mount(
+        <Countdown onTick={callback} stop />
+    );
+    expect(component).toMatchSnapshot();
+});
+
 describe('Countdown calls callback 10 times with proper values', () => {
     const callback = sinon.spy();
     const component = mount(<Countdown onTick={callback} />);

@@ -41,6 +41,7 @@ const defaultProps = {
         'partner-slot': { partner: 'mock' },
     },
     siteName: { siteName: 'mock' },
+    i18nNamespace: 'designSystem',
 };
 
 function renderComponent(props, options = {}) {

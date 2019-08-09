@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkBranded renders correctly 1`] = `
+<a
+  className="wds-global-footer__link"
+  href="http://fandom.wikia.com/explore"
+>
+  <div>
+    global-footer-fandom-overview-link-explore-wikis
+  </div>
+</a>
+`;

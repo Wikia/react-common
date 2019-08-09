@@ -4,10 +4,6 @@ import merge from 'lodash/merge';
 
 import Search from './Search';
 
-jest.mock('react-i18next', () => ({
-    withTranslation: () => Component => props => <Component {...props} t={value => value} />,
-}));
-
 const defaultProps = {
     isSearchExpanded: false,
     model: {
@@ -49,10 +45,10 @@ const defaultProps = {
 function renderShallowComponent(props, options = {}) {
     const computedProps = merge({}, defaultProps, props);
 
-    return shallow(<Search {...computedProps} />, options).dive();
+    return shallow(<Search {...computedProps} />, options);
 }
 
-jest.mock('uuid/v4', () => () => 'imma-very-unique');
+jest.mock('../../../../utils/uuidv4', () => () => 'imma-very-unique');
 jest.mock('lodash/debounce', () => func => func);
 global.console.error = () => null;
 

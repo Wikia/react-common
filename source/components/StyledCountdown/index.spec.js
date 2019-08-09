@@ -14,6 +14,15 @@ test('StyledCountdown renders correctly', () => {
     expect(component).toMatchSnapshot();
 });
 
+test('StyledCountdown renders correctly when stopped', () => {
+    const callback = sinon.spy();
+    const component = mountWithThemeProvider(
+        <StyledCountdown onTick={callback} stop />
+    );
+    expect(component).toMatchSnapshot();
+});
+
+
 describe('StyledCountdown calls callback 10 times with proper values', () => {
     const callback = sinon.spy();
     const component = mountWithThemeProvider(<StyledCountdown onTick={callback} />);

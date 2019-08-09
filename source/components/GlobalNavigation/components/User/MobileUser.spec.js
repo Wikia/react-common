@@ -5,7 +5,15 @@ import merge from 'lodash/merge';
 import MobileUser from './MobileUser';
 
 const defaultProps = {
-    data: {},
+    model: {
+        notifications: {
+            header: {
+                title: {
+                    key: 'some-label',
+                },
+            },
+        },
+    },
     openModal: () => null,
     track: () => null,
     isOpen: false,
@@ -18,11 +26,11 @@ function renderComponent(props) {
 }
 
 test('MobileUser renders correctly for user', () => {
-    expect(renderComponent({ data: { user: { mockedUser: 'mocked-user-value' } } })).toMatchSnapshot();
+    expect(renderComponent({ model: { user: { mockedUser: 'mocked-user-value' } } })).toMatchSnapshot();
 });
 
 test('MobileUser renders correctly for anon', () => {
-    expect(renderComponent({ data: { anon: { mockedAnon: 'mocked-anon-value' } } })).toMatchSnapshot();
+    expect(renderComponent({ model: { anon: { mockedAnon: 'mocked-anon-value' } } })).toMatchSnapshot();
 });
 
 test('MobileUser returns null when no data is provided', () => {
