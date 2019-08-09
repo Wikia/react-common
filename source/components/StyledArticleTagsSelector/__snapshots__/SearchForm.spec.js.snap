@@ -127,7 +127,7 @@ exports[`SearchForm renders empty 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchForm__AddTagButton-hq4lki-5",
                   "isStatic": false,
-                  "lastClassName": "cMhJbr",
+                  "lastClassName": "drsdNE",
                   "rules": Array [
                     "align-items:center;background:transparent;border:0;color:",
                     [Function],
@@ -150,7 +150,7 @@ exports[`SearchForm renders empty 1`] = `
             onClick={[Function]}
           >
             <button
-              className="SearchForm__AddTagButton-hq4lki-5 cMhJbr"
+              className="SearchForm__AddTagButton-hq4lki-5 drsdNE"
               disabled={false}
               onClick={[Function]}
             >
@@ -205,6 +205,7 @@ exports[`SearchForm renders empty 1`] = `
 
 exports[`SearchForm renders with props 1`] = `
 <SearchForm
+  accentColor="#00f"
   className="foo"
   communityName="bar"
   maxAllowed={3}
@@ -335,10 +336,12 @@ exports[`SearchForm renders with props 1`] = `
           </StyledComponent>
         </SearchForm__Header>
         <SearchForm__AddTagButton
+          accentColor="#00f"
           disabled={true}
           onClick={[Function]}
         >
           <StyledComponent
+            accentColor="#00f"
             disabled={true}
             forwardedComponent={
               Object {
@@ -347,7 +350,7 @@ exports[`SearchForm renders with props 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchForm__AddTagButton-hq4lki-5",
                   "isStatic": false,
-                  "lastClassName": "cMhJbr",
+                  "lastClassName": "iQayax",
                   "rules": Array [
                     "align-items:center;background:transparent;border:0;color:",
                     [Function],
@@ -370,7 +373,7 @@ exports[`SearchForm renders with props 1`] = `
             onClick={[Function]}
           >
             <button
-              className="SearchForm__AddTagButton-hq4lki-5 cMhJbr"
+              className="SearchForm__AddTagButton-hq4lki-5 iQayax"
               disabled={true}
               onClick={[Function]}
             >
@@ -500,6 +503,7 @@ exports[`SearchForm renders with props 1`] = `
 
 exports[`SearchForm renders with props 2`] = `
 <SearchForm
+  accentColor="#00f"
   className="foo"
   communityName="bar"
   maxAllowed={3}
@@ -630,10 +634,12 @@ exports[`SearchForm renders with props 2`] = `
           </StyledComponent>
         </SearchForm__Header>
         <SearchForm__AddTagButton
+          accentColor="#00f"
           disabled={true}
           onClick={[Function]}
         >
           <StyledComponent
+            accentColor="#00f"
             disabled={true}
             forwardedComponent={
               Object {
@@ -642,7 +648,7 @@ exports[`SearchForm renders with props 2`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchForm__AddTagButton-hq4lki-5",
                   "isStatic": false,
-                  "lastClassName": "cMhJbr",
+                  "lastClassName": "iQayax",
                   "rules": Array [
                     "align-items:center;background:transparent;border:0;color:",
                     [Function],
@@ -665,7 +671,7 @@ exports[`SearchForm renders with props 2`] = `
             onClick={[Function]}
           >
             <button
-              className="SearchForm__AddTagButton-hq4lki-5 cMhJbr"
+              className="SearchForm__AddTagButton-hq4lki-5 iQayax"
               disabled={true}
               onClick={[Function]}
             >

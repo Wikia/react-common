@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { COLORS } from '../../theme/colors';
+
 import TagShape from './TagShape';
 import AddedTags from './AddedTags';
 import SuggestedTags from './SuggestedTags';
@@ -24,6 +26,7 @@ const Wrapper = styled.div`
  * ```
  */
 function StyledArticleTagsSelector({
+    accentColor,
     className,
     communityName,
     maxAllowed,
@@ -46,6 +49,7 @@ function StyledArticleTagsSelector({
     return (
         <Wrapper className={className}>
             <SearchForm
+                accentColor={accentColor}
                 communityName={communityName}
                 maxNumOfTagsAdded={maxNumOfTagsAdded}
                 maxAllowed={maxAllowed}
@@ -61,6 +65,8 @@ function StyledArticleTagsSelector({
 }
 
 StyledArticleTagsSelector.propTypes = {
+    /** Accent color */
+    accentColor: PropTypes.string,
     /** Extra class name */
     className: PropTypes.string,
     /** Name of the current community */
@@ -84,6 +90,8 @@ StyledArticleTagsSelector.propTypes = {
 };
 
 StyledArticleTagsSelector.defaultProps = {
+    // TODO: remove once theming is refactored
+    accentColor: COLORS.fandom_aqua,
     className: '',
     maxAllowed: 10,
     searchResults: null,

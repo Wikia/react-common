@@ -16,6 +16,7 @@ test('ArticleTagsSelector renders empty', () => {
 
 test('ArticleTagsSelector renders with props', () => {
     const component = mountWithThemeProvider(<ArticleTagsSelector
+        accentColor="#00f"
         className="foo"
         communityName="bar"
         maxAllowed={10}

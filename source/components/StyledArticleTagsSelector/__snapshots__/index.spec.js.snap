@@ -2,6 +2,7 @@
 
 exports[`ArticleTagsSelector renders empty 1`] = `
 <StyledArticleTagsSelector
+  accentColor="#00d6d6"
   className=""
   maxAllowed={10}
   searchResults={null}
@@ -43,6 +44,7 @@ exports[`ArticleTagsSelector renders empty 1`] = `
         className="StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0 eyNgBO"
       >
         <SearchForm
+          accentColor="#00d6d6"
           className=""
           maxAllowed={10}
           maxNumOfTagsAdded={null}
@@ -157,10 +159,12 @@ exports[`ArticleTagsSelector renders empty 1`] = `
                   </StyledComponent>
                 </SearchForm__Header>
                 <SearchForm__AddTagButton
+                  accentColor="#00d6d6"
                   disabled={null}
                   onClick={[Function]}
                 >
                   <StyledComponent
+                    accentColor="#00d6d6"
                     disabled={null}
                     forwardedComponent={
                       Object {
@@ -261,6 +265,7 @@ exports[`ArticleTagsSelector renders empty 1`] = `
 
 exports[`ArticleTagsSelector renders with props 1`] = `
 <StyledArticleTagsSelector
+  accentColor="#00f"
   className="foo"
   communityName="bar"
   maxAllowed={10}
@@ -350,6 +355,7 @@ exports[`ArticleTagsSelector renders with props 1`] = `
         className="foo StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0 eyNgBO"
       >
         <SearchForm
+          accentColor="#00f"
           className=""
           communityName="bar"
           maxAllowed={10}
@@ -480,10 +486,12 @@ exports[`ArticleTagsSelector renders with props 1`] = `
                   </StyledComponent>
                 </SearchForm__Header>
                 <SearchForm__AddTagButton
+                  accentColor="#00f"
                   disabled={false}
                   onClick={[Function]}
                 >
                   <StyledComponent
+                    accentColor="#00f"
                     disabled={false}
                     forwardedComponent={
                       Object {
@@ -492,7 +500,7 @@ exports[`ArticleTagsSelector renders with props 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "SearchForm__AddTagButton-hq4lki-5",
                           "isStatic": false,
-                          "lastClassName": "cMhJbr",
+                          "lastClassName": "iQayax",
                           "rules": Array [
                             "align-items:center;background:transparent;border:0;color:",
                             [Function],
@@ -515,7 +523,7 @@ exports[`ArticleTagsSelector renders with props 1`] = `
                     onClick={[Function]}
                   >
                     <button
-                      className="SearchForm__AddTagButton-hq4lki-5 cMhJbr"
+                      className="SearchForm__AddTagButton-hq4lki-5 iQayax"
                       disabled={false}
                       onClick={[Function]}
                     >

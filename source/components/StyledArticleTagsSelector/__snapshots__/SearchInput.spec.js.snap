@@ -196,6 +196,7 @@ exports[`SearchInput renders empty 1`] = `
 
 exports[`SearchInput renders with props 1`] = `
 <SearchInput
+  accentColor="#00f"
   className="foo"
   communityName="bar"
   list={
@@ -352,6 +353,7 @@ exports[`SearchInput renders with props 1`] = `
           </StyledComponent>
         </SearchInput__Input>
         <SearchInput__List
+          accentColor="#00f"
           bigItems={false}
           boldItems={false}
           className=""
@@ -360,6 +362,7 @@ exports[`SearchInput renders with props 1`] = `
           linesBetween={false}
         >
           <StyledComponent
+            accentColor="#00f"
             bigItems={false}
             boldItems={false}
             className=""
@@ -370,7 +373,7 @@ exports[`SearchInput renders with props 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchInput__List-sc-1cm9pl1-0",
                   "isStatic": false,
-                  "lastClassName": "eyHytB",
+                  "lastClassName": "cveBSp",
                   "rules": Array [
                     "list-style-type:none;margin:0;padding:7px 18px;",
                     [Function],
@@ -438,7 +441,7 @@ exports[`SearchInput renders with props 1`] = `
             linesBetween={false}
           >
             <ul
-              className="StyledList-sc-1t1k18i-0 SearchInput__List-sc-1cm9pl1-0 eyHytB"
+              className="StyledList-sc-1t1k18i-0 SearchInput__List-sc-1cm9pl1-0 cveBSp"
             >
               <li
                 key="1"

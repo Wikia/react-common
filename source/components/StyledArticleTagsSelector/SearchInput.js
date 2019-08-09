@@ -12,7 +12,6 @@ import StyledList from '../StyledList';
 import HighlightedText from '../HighlightedText';
 
 import TagShape from './TagShape';
-import getAccentColor from './getAccentColor';
 
 const ICON_STYLES = css`
     fill: currentColor;
@@ -39,7 +38,7 @@ const List = styled(StyledList)`
         padding: 0 10px;
 
         &:hover {
-            background-color: ${({ theme }) => colorWithAlpha(getAccentColor(theme), 0.1)};
+            background-color: ${({ accentColor }) => colorWithAlpha(accentColor, 0.1)};
         }
     }
 
@@ -92,6 +91,7 @@ const IconClose = styled(IconCloseSmall)`
 `;
 
 function SearchInput({
+    accentColor,
     className,
     onChange,
     onClose,
@@ -112,7 +112,7 @@ function SearchInput({
                 autoFocus
             />
             {list && (
-                <List>
+                <List accentColor={accentColor}>
                     {list.map(({ id, title }) => (
                         <li
                             key={id}
@@ -132,13 +132,14 @@ function SearchInput({
 }
 
 SearchInput.propTypes = {
+    accentColor: PropTypes.string.isRequired,
     /** Extra class name */
     className: PropTypes.string,
     communityName: PropTypes.string,
     list: PropTypes.arrayOf(TagShape),
-    onAddTag: PropTypes.func.isRequired,
-    onChange: PropTypes.func.isRequired,
-    onClose: PropTypes.func.isRequired,
+    onAddTag: PropTypes.func,
+    onChange: PropTypes.func,
+    onClose: PropTypes.func,
     query: PropTypes.string,
 };
 

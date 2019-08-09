@@ -16,6 +16,7 @@ test('SearchInput renders empty', () => {
 
 test('SearchInput renders with props', () => {
     const component = mountWithThemeProvider(<SearchInput
+        accentColor="#00f"
         className="foo"
         communityName="bar"
         query="q"

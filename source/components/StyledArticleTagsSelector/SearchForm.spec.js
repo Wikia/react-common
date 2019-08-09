@@ -16,6 +16,7 @@ test('SearchForm renders empty', () => {
 
 test('SearchForm renders with props', () => {
     const component = mountWithThemeProvider(<SearchForm
+        accentColor="#00f"
         className="foo"
         communityName="bar"
         maxAllowed={3}

@@ -10,7 +10,6 @@ import IconAlertSmall from '../../icons/IconAlertSmall';
 
 import SearchInput from './SearchInput';
 import TagShape from './TagShape';
-import getAccentColor from './getAccentColor';
 
 const ICON_STYLES = css`
     fill: currentColor;
@@ -52,7 +51,7 @@ const AddTagButton = styled.button`
     align-items: center;
     background: transparent;
     border: 0;
-    color: ${({ theme }) => getAccentColor(theme)};
+    color: ${({ accentColor }) => accentColor};
     cursor: pointer;
     display: inline-flex;
     font: inherit;
@@ -74,6 +73,7 @@ const MaxTagsAdded = styled.div`
 `;
 
 function SearchForm({
+    accentColor,
     className,
     communityName,
     maxAllowed,
@@ -108,6 +108,7 @@ function SearchForm({
             ) : (
                 <React.Fragment>
                     <AddTagButton
+                        accentColor={accentColor}
                         onClick={/* istanbul ignore next */ () => setShowSearch(true)}
                         disabled={maxNumOfTagsAdded}
                     >
@@ -127,6 +128,7 @@ function SearchForm({
 }
 
 SearchForm.propTypes = {
+    accentColor: PropTypes.string.isRequired,
     /** Extra class name */
     className: PropTypes.string,
     communityName: PropTypes.string.isRequired,
