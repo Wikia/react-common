@@ -20,7 +20,7 @@ module.exports = {
         'utils/eventLogger.js',
         'utils/vignette.js',
         'utils/environment.js',
-        'utils/copyToClipboardOnClick.js',
+        'utils/copyToClipboard.js',
         'utils/uuidv4.js',
     ],
     /**
