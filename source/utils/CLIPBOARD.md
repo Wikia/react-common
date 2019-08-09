@@ -1,12 +1,12 @@
-The `utils/copyToClipboardOnClick.js` utility can copy any string to the users clipboard if it coincides with a click.  
+The `utils/copyToClipboard.js` utility can copy any string to the users clipboard if it coincides with a click.  
 
 Usage:
 
 ```js static
-import copyToClipboardOnClick from '@wikia/react-common/utils/copyToClipboardOnClick';
+import copyToClipboard from '@wikia/react-common/utils/copyToClipboard';
 
 function Component() {
-    return <div onClick={() => copyToClipboardOnClick('string-to-copy')} /> 
+    return <div onClick={() => copyToClipboard('string-to-copy')} /> 
 }
 ```
 
