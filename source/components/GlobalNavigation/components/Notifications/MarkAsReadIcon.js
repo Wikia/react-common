@@ -19,7 +19,7 @@ function getIconName(type) {
         return 'flag-small';
     }
 
-    return 'upvote-small';
+    return 'heart-small';
 }
 
 const MarkAsReadIcon = ({ track, model }) => {

@@ -78,6 +78,7 @@
       "Switch",
       "Switch.Item",
       "Switch.Wrapper",
+      "StyledTag",
       "Timeago",
       "VideoPlayIcon",
       "StyledErrorDisplayingContent"
@@ -111,6 +112,10 @@
       {
         "name": "Vignette",
         "content": "../source/utils/VIGNETTE.md"
+      },
+      {
+        "name": "CopyToClipboard",
+        "content": "../source/utils/CLIPBOARD.md"
       },
       {
         "name": "UUID v4",
