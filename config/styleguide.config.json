@@ -112,6 +112,10 @@
         "content": "../source/utils/VIGNETTE.md"
       },
       {
+        "name": "CopyToClipboard",
+        "content": "../source/utils/CLIPBOARD.md"
+      },
+      {
         "name": "UUID v4",
         "content": "../source/utils/UUIDV4.md"
       }
