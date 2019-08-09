@@ -3,6 +3,7 @@ Non-empty state:
 ```js
 <StyledArticleTagsSelector
     communityName="testCommunity"
+    accentColor="blue"
     tags={[
         { id: '106', title: 'Ardvark' },
         { id: '108', title: 'ArdvarkApple' },

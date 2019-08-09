@@ -99,6 +99,7 @@ function SearchForm({
             {/* istanbul ignore next */ showSearch ? (
                 <SearchInput
                     communityName={communityName}
+                    accentColor={accentColor}
                     list={searchResults}
                     onAddTag={onAddTag}
                     onChange={onChange}

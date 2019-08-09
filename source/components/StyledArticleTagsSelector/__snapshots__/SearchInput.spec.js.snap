@@ -10,7 +10,7 @@ exports[`SearchInput renders empty 1`] = `
   onClose={[Function]}
   query=""
 >
-  <SearchInput__Wrapper
+  <SearchInput__Slider
     className=""
   >
     <StyledComponent
@@ -20,23 +20,23 @@ exports[`SearchInput renders empty 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+            "componentId": "SearchInput__Slider-sc-1cm9pl1-1",
             "isStatic": false,
-            "lastClassName": "bBJnHG",
+            "lastClassName": "kvhtJP",
             "rules": Array [
-              "align-items:center;border-bottom:solid 1px ",
+              "@media ",
               [Function],
-              ";display:flex;position:relative;@media ",
+              "{background-color:",
               [Function],
-              "{}@media ",
+              ";height:100vh;left:0;position:fixed;top:0;width:100vw;z-index:1;}@media ",
               [Function],
               "{flex:1;}",
             ],
           },
-          "displayName": "SearchInput__Wrapper",
+          "displayName": "SearchInput__Slider",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+          "styledComponentId": "SearchInput__Slider-sc-1cm9pl1-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -46,151 +46,189 @@ exports[`SearchInput renders empty 1`] = `
       forwardedRef={null}
     >
       <div
-        className="SearchInput__Wrapper-sc-1cm9pl1-1 bBJnHG"
+        className="SearchInput__Slider-sc-1cm9pl1-1 kvhtJP"
       >
-        <SearchInput__IconSearch>
+        <SearchInput__Wrapper>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
-                  "isStatic": true,
-                  "lastClassName": "qVP",
-                  "rules": Array [
-                    "fill:currentColor;height:16px;width:16px;",
-                    " margin-right:6px;",
-                  ],
-                },
-                "displayName": "SearchInput__IconSearch",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <_default
-              className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
-            >
-              <_default
-                className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
-              >
-                <div
-                  className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
-                />
-              </_default>
-            </_default>
-          </StyledComponent>
-        </SearchInput__IconSearch>
-        <SearchInput__Input
-          autoFocus={true}
-          onChange={[Function]}
-          placeholder="Searching "
-        >
-          <StyledComponent
-            autoFocus={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__Input-sc-1cm9pl1-2",
+                  "componentId": "SearchInput__Wrapper-sc-1cm9pl1-2",
                   "isStatic": false,
-                  "lastClassName": "ffxNmN",
+                  "lastClassName": "eueZky",
                   "rules": Array [
-                    "border:none;line-height:",
+                    "align-items:center;border-bottom:solid 1px ",
                     [Function],
-                    ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                    ";display:flex;position:relative;@media ",
                     [Function],
-                    "{font-size:",
-                    [Function],
-                    ";}&:focus{outline:none;}",
+                    "{margin:13px;}",
                   ],
                 },
-                "displayName": "SearchInput__Input",
+                "displayName": "SearchInput__Wrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "SearchInput__Input-sc-1cm9pl1-2",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={
-              Object {
-                "current": <input
-                  class="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
-                  placeholder="Searching "
-                />,
-              }
-            }
-            onChange={[Function]}
-            placeholder="Searching "
-          >
-            <input
-              autoFocus={true}
-              className="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
-              onChange={[Function]}
-              placeholder="Searching "
-            />
-          </StyledComponent>
-        </SearchInput__Input>
-        <SearchInput__IconClose
-          onClick={[Function]}
-        >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__IconClose-sc-1cm9pl1-4",
-                  "isStatic": true,
-                  "lastClassName": "hSmGuN",
-                  "rules": Array [
-                    "fill:currentColor;height:16px;width:16px;",
-                    " cursor:pointer;",
-                  ],
-                },
-                "displayName": "SearchInput__IconClose",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-4",
-                "target": [Function],
+                "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-2",
+                "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
             }
             forwardedRef={null}
-            onClick={[Function]}
           >
-            <_default
-              className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
-              onClick={[Function]}
+            <div
+              className="SearchInput__Wrapper-sc-1cm9pl1-2 eueZky"
             >
-              <_default
-                className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+              <SearchInput__IconSearch>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__IconSearch-sc-1cm9pl1-4",
+                        "isStatic": true,
+                        "lastClassName": "eEWKDH",
+                        "rules": Array [
+                          "fill:currentColor;height:16px;width:16px;",
+                          " margin-right:6px;",
+                        ],
+                      },
+                      "displayName": "SearchInput__IconSearch",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-4",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <_default
+                    className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                  >
+                    <_default
+                      className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                    >
+                      <div
+                        className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                      />
+                    </_default>
+                  </_default>
+                </StyledComponent>
+              </SearchInput__IconSearch>
+              <SearchInput__Input
+                autoFocus={true}
+                onChange={[Function]}
+                placeholder="Searching "
+              >
+                <StyledComponent
+                  autoFocus={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__Input-sc-1cm9pl1-3",
+                        "isStatic": false,
+                        "lastClassName": "ksdqQb",
+                        "rules": Array [
+                          "border:none;font-size:",
+                          [Function],
+                          ";line-height:",
+                          [Function],
+                          ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                          [Function],
+                          "{font-size:",
+                          [Function],
+                          ";}&:focus{outline:none;}",
+                        ],
+                      },
+                      "displayName": "SearchInput__Input",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__Input-sc-1cm9pl1-3",
+                      "target": "input",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={
+                    Object {
+                      "current": <input
+                        class="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                        placeholder="Searching "
+                      />,
+                    }
+                  }
+                  onChange={[Function]}
+                  placeholder="Searching "
+                >
+                  <input
+                    autoFocus={true}
+                    className="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                    onChange={[Function]}
+                    placeholder="Searching "
+                  />
+                </StyledComponent>
+              </SearchInput__Input>
+              <SearchInput__IconClose
                 onClick={[Function]}
               >
-                <div
-                  className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__IconClose-sc-1cm9pl1-5",
+                        "isStatic": true,
+                        "lastClassName": "fezYfp",
+                        "rules": Array [
+                          "fill:currentColor;height:16px;width:16px;",
+                          " cursor:pointer;",
+                        ],
+                      },
+                      "displayName": "SearchInput__IconClose",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-5",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
                   onClick={[Function]}
-                />
-              </_default>
-            </_default>
+                >
+                  <_default
+                    className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                    onClick={[Function]}
+                  >
+                    <_default
+                      className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                        onClick={[Function]}
+                      />
+                    </_default>
+                  </_default>
+                </StyledComponent>
+              </SearchInput__IconClose>
+            </div>
           </StyledComponent>
-        </SearchInput__IconClose>
+        </SearchInput__Wrapper>
       </div>
     </StyledComponent>
-  </SearchInput__Wrapper>
+  </SearchInput__Slider>
 </SearchInput>
 `;
 
@@ -220,7 +258,7 @@ exports[`SearchInput renders with props 1`] = `
   onClose={[Function]}
   query="q"
 >
-  <SearchInput__Wrapper
+  <SearchInput__Slider
     className="foo"
   >
     <StyledComponent
@@ -230,23 +268,23 @@ exports[`SearchInput renders with props 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+            "componentId": "SearchInput__Slider-sc-1cm9pl1-1",
             "isStatic": false,
-            "lastClassName": "bBJnHG",
+            "lastClassName": "kvhtJP",
             "rules": Array [
-              "align-items:center;border-bottom:solid 1px ",
+              "@media ",
               [Function],
-              ";display:flex;position:relative;@media ",
+              "{background-color:",
               [Function],
-              "{}@media ",
+              ";height:100vh;left:0;position:fixed;top:0;width:100vw;z-index:1;}@media ",
               [Function],
               "{flex:1;}",
             ],
           },
-          "displayName": "SearchInput__Wrapper",
+          "displayName": "SearchInput__Slider",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+          "styledComponentId": "SearchInput__Slider-sc-1cm9pl1-1",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -256,28 +294,31 @@ exports[`SearchInput renders with props 1`] = `
       forwardedRef={null}
     >
       <div
-        className="foo SearchInput__Wrapper-sc-1cm9pl1-1 bBJnHG"
+        className="foo SearchInput__Slider-sc-1cm9pl1-1 kvhtJP"
       >
-        <SearchInput__IconSearch>
+        <SearchInput__Wrapper>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
-                  "isStatic": true,
-                  "lastClassName": "qVP",
+                  "componentId": "SearchInput__Wrapper-sc-1cm9pl1-2",
+                  "isStatic": false,
+                  "lastClassName": "eueZky",
                   "rules": Array [
-                    "fill:currentColor;height:16px;width:16px;",
-                    " margin-right:6px;",
+                    "align-items:center;border-bottom:solid 1px ",
+                    [Function],
+                    ";display:flex;position:relative;@media ",
+                    [Function],
+                    "{margin:13px;}",
                   ],
                 },
-                "displayName": "SearchInput__IconSearch",
+                "displayName": "SearchInput__Wrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
-                "target": [Function],
+                "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-2",
+                "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
@@ -285,266 +326,301 @@ exports[`SearchInput renders with props 1`] = `
             }
             forwardedRef={null}
           >
-            <_default
-              className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+            <div
+              className="SearchInput__Wrapper-sc-1cm9pl1-2 eueZky"
             >
-              <_default
-                className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+              <SearchInput__IconSearch>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__IconSearch-sc-1cm9pl1-4",
+                        "isStatic": true,
+                        "lastClassName": "eEWKDH",
+                        "rules": Array [
+                          "fill:currentColor;height:16px;width:16px;",
+                          " margin-right:6px;",
+                        ],
+                      },
+                      "displayName": "SearchInput__IconSearch",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-4",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <_default
+                    className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                  >
+                    <_default
+                      className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                    >
+                      <div
+                        className="SearchInput__IconSearch-sc-1cm9pl1-4 eEWKDH"
+                      />
+                    </_default>
+                  </_default>
+                </StyledComponent>
+              </SearchInput__IconSearch>
+              <SearchInput__Input
+                autoFocus={true}
+                onChange={[Function]}
+                placeholder="Searching bar"
               >
-                <div
-                  className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
-                />
-              </_default>
-            </_default>
-          </StyledComponent>
-        </SearchInput__IconSearch>
-        <SearchInput__Input
-          autoFocus={true}
-          onChange={[Function]}
-          placeholder="Searching bar"
-        >
-          <StyledComponent
-            autoFocus={true}
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__Input-sc-1cm9pl1-2",
-                  "isStatic": false,
-                  "lastClassName": "ffxNmN",
-                  "rules": Array [
-                    "border:none;line-height:",
-                    [Function],
-                    ";width:100%;background-color:transparent;flex-grow:1;@media ",
-                    [Function],
-                    "{font-size:",
-                    [Function],
-                    ";}&:focus{outline:none;}",
-                  ],
-                },
-                "displayName": "SearchInput__Input",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SearchInput__Input-sc-1cm9pl1-2",
-                "target": "input",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={
-              Object {
-                "current": <input
-                  class="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
+                <StyledComponent
+                  autoFocus={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__Input-sc-1cm9pl1-3",
+                        "isStatic": false,
+                        "lastClassName": "ksdqQb",
+                        "rules": Array [
+                          "border:none;font-size:",
+                          [Function],
+                          ";line-height:",
+                          [Function],
+                          ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                          [Function],
+                          "{font-size:",
+                          [Function],
+                          ";}&:focus{outline:none;}",
+                        ],
+                      },
+                      "displayName": "SearchInput__Input",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__Input-sc-1cm9pl1-3",
+                      "target": "input",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={
+                    Object {
+                      "current": <input
+                        class="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                        placeholder="Searching bar"
+                      />,
+                    }
+                  }
+                  onChange={[Function]}
                   placeholder="Searching bar"
-                />,
-              }
-            }
-            onChange={[Function]}
-            placeholder="Searching bar"
-          >
-            <input
-              autoFocus={true}
-              className="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
-              onChange={[Function]}
-              placeholder="Searching bar"
-            />
-          </StyledComponent>
-        </SearchInput__Input>
-        <SearchInput__List
-          accentColor="#00f"
-          bigItems={false}
-          boldItems={false}
-          className=""
-          hasEllipsis={false}
-          isLinked={false}
-          linesBetween={false}
-        >
-          <StyledComponent
-            accentColor="#00f"
-            bigItems={false}
-            boldItems={false}
-            className=""
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__List-sc-1cm9pl1-0",
-                  "isStatic": false,
-                  "lastClassName": "cveBSp",
-                  "rules": Array [
-                    "list-style-type:none;margin:0;padding:7px 18px;",
-                    [Function],
-                    " > li{font-size:",
-                    [Function],
-                    ";font-weight:normal;line-height:1em;padding:",
-                    "11",
-                    "px 0;",
-                    [Function],
-                    " ",
-                    [Function],
-                    " ",
-                    [Function],
-                    " ",
-                    [Function],
-                    " ",
-                    [Function],
-                    "}",
-                    "background-color:",
-                    [Function],
-                    ";border:1px solid ",
-                    [Function],
-                    ";overflow:hidden;padding:10px 0;position:absolute;width:100%;@media ",
-                    [Function],
-                    "{top:24px;}> li{cursor:pointer;line-height:36px;margin:0 10px;padding:0 10px;&:hover{background-color:",
-                    [Function],
-                    ";}}mark{background-color:transparent;font-weight:",
-                    [Function],
-                    ";}",
-                  ],
-                },
-                "defaultProps": Object {
-                  "bigItems": false,
-                  "boldItems": false,
-                  "children": null,
-                  "className": "",
-                  "hasEllipsis": false,
-                  "isLinked": false,
-                  "linesBetween": false,
-                },
-                "displayName": "SearchInput__List",
-                "foldedComponentIds": Array [
-                  "StyledList-sc-1t1k18i-0",
-                ],
-                "propTypes": Object {
-                  "bigItems": [Function],
-                  "boldItems": [Function],
-                  "children": [Function],
-                  "className": [Function],
-                  "hasEllipsis": [Function],
-                  "isLinked": [Function],
-                  "linesBetween": [Function],
-                },
-                "render": [Function],
-                "styledComponentId": "SearchInput__List-sc-1cm9pl1-0",
-                "target": "ul",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            hasEllipsis={false}
-            isLinked={false}
-            linesBetween={false}
-          >
-            <ul
-              className="StyledList-sc-1t1k18i-0 SearchInput__List-sc-1cm9pl1-0 cveBSp"
-            >
-              <li
-                key="1"
-                onClick={[Function]}
-              >
-                <HighlightedText
-                  highlight="q"
-                  text="Foo"
                 >
-                  <span
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "Foo",
-                      }
-                    }
+                  <input
+                    autoFocus={true}
+                    className="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                    onChange={[Function]}
+                    placeholder="Searching bar"
                   />
-                </HighlightedText>
-              </li>
-              <li
-                key="2"
-                onClick={[Function]}
+                </StyledComponent>
+              </SearchInput__Input>
+              <SearchInput__List
+                accentColor="#00f"
+                bigItems={false}
+                boldItems={false}
+                className=""
+                hasEllipsis={false}
+                isLinked={false}
+                linesBetween={false}
               >
-                <HighlightedText
-                  highlight="q"
-                  text="Bar"
+                <StyledComponent
+                  accentColor="#00f"
+                  bigItems={false}
+                  boldItems={false}
+                  className=""
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__List-sc-1cm9pl1-0",
+                        "isStatic": false,
+                        "lastClassName": "dJayst",
+                        "rules": Array [
+                          "list-style-type:none;margin:0;padding:7px 18px;",
+                          [Function],
+                          " > li{font-size:",
+                          [Function],
+                          ";font-weight:normal;line-height:1em;padding:",
+                          "11",
+                          "px 0;",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          "}",
+                          "background-color:",
+                          [Function],
+                          ";border:1px solid ",
+                          [Function],
+                          ";overflow:hidden;padding:10px 0;position:absolute;width:100%;top:32px;@media ",
+                          [Function],
+                          "{top:24px;}> li{cursor:pointer;line-height:36px;margin:0 10px;padding:0 10px;&:hover{background-color:",
+                          [Function],
+                          ";}}mark{background-color:transparent;font-weight:",
+                          [Function],
+                          ";}",
+                        ],
+                      },
+                      "defaultProps": Object {
+                        "bigItems": false,
+                        "boldItems": false,
+                        "children": null,
+                        "className": "",
+                        "hasEllipsis": false,
+                        "isLinked": false,
+                        "linesBetween": false,
+                      },
+                      "displayName": "SearchInput__List",
+                      "foldedComponentIds": Array [
+                        "StyledList-sc-1t1k18i-0",
+                      ],
+                      "propTypes": Object {
+                        "bigItems": [Function],
+                        "boldItems": [Function],
+                        "children": [Function],
+                        "className": [Function],
+                        "hasEllipsis": [Function],
+                        "isLinked": [Function],
+                        "linesBetween": [Function],
+                      },
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__List-sc-1cm9pl1-0",
+                      "target": "ul",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  hasEllipsis={false}
+                  isLinked={false}
+                  linesBetween={false}
                 >
-                  <span
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "Bar",
-                      }
-                    }
-                  />
-                </HighlightedText>
-              </li>
-              <li
-                key="3"
+                  <ul
+                    className="StyledList-sc-1t1k18i-0 SearchInput__List-sc-1cm9pl1-0 dJayst"
+                  >
+                    <li
+                      key="1"
+                      onClick={[Function]}
+                    >
+                      <HighlightedText
+                        highlight="q"
+                        text="Foo"
+                      >
+                        <span
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "Foo",
+                            }
+                          }
+                        />
+                      </HighlightedText>
+                    </li>
+                    <li
+                      key="2"
+                      onClick={[Function]}
+                    >
+                      <HighlightedText
+                        highlight="q"
+                        text="Bar"
+                      >
+                        <span
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "Bar",
+                            }
+                          }
+                        />
+                      </HighlightedText>
+                    </li>
+                    <li
+                      key="3"
+                      onClick={[Function]}
+                    >
+                      <HighlightedText
+                        highlight="q"
+                        text="FooBar"
+                      >
+                        <span
+                          dangerouslySetInnerHTML={
+                            Object {
+                              "__html": "FooBar",
+                            }
+                          }
+                        />
+                      </HighlightedText>
+                    </li>
+                  </ul>
+                </StyledComponent>
+              </SearchInput__List>
+              <SearchInput__IconClose
                 onClick={[Function]}
               >
-                <HighlightedText
-                  highlight="q"
-                  text="FooBar"
-                >
-                  <span
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "FooBar",
-                      }
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "SearchInput__IconClose-sc-1cm9pl1-5",
+                        "isStatic": true,
+                        "lastClassName": "fezYfp",
+                        "rules": Array [
+                          "fill:currentColor;height:16px;width:16px;",
+                          " cursor:pointer;",
+                        ],
+                      },
+                      "displayName": "SearchInput__IconClose",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-5",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
                     }
-                  />
-                </HighlightedText>
-              </li>
-            </ul>
-          </StyledComponent>
-        </SearchInput__List>
-        <SearchInput__IconClose
-          onClick={[Function]}
-        >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SearchInput__IconClose-sc-1cm9pl1-4",
-                  "isStatic": true,
-                  "lastClassName": "hSmGuN",
-                  "rules": Array [
-                    "fill:currentColor;height:16px;width:16px;",
-                    " cursor:pointer;",
-                  ],
-                },
-                "displayName": "SearchInput__IconClose",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-4",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            onClick={[Function]}
-          >
-            <_default
-              className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
-              onClick={[Function]}
-            >
-              <_default
-                className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
-                onClick={[Function]}
-              >
-                <div
-                  className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                  }
+                  forwardedRef={null}
                   onClick={[Function]}
-                />
-              </_default>
-            </_default>
+                >
+                  <_default
+                    className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                    onClick={[Function]}
+                  >
+                    <_default
+                      className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="SearchInput__IconClose-sc-1cm9pl1-5 fezYfp"
+                        onClick={[Function]}
+                      />
+                    </_default>
+                  </_default>
+                </StyledComponent>
+              </SearchInput__IconClose>
+            </div>
           </StyledComponent>
-        </SearchInput__IconClose>
+        </SearchInput__Wrapper>
       </div>
     </StyledComponent>
-  </SearchInput__Wrapper>
+  </SearchInput__Slider>
 </SearchInput>
 `;

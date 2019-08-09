@@ -26,6 +26,7 @@ const List = styled(StyledList)`
     padding: 10px 0;
     position: absolute;
     width: 100%;
+    top: 32px;
 
     @media ${({ theme }) => theme.media.medium_up} {
         top: 24px;
@@ -48,13 +49,15 @@ const List = styled(StyledList)`
     }
 `;
 
-const Wrapper = styled.div`
-    align-items: center;
-    border-bottom: solid 1px ${({ theme }) => theme.color.black};
-    display: flex;
-    position: relative;
-
+const Slider = styled.div`
     @media ${({ theme }) => theme.media.small_down} {
+        background-color: ${({ theme }) => theme.color.white};
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 1;
     }
 
     @media ${({ theme }) => theme.media.medium_up} {
@@ -62,8 +65,20 @@ const Wrapper = styled.div`
     }
 `;
 
+const Wrapper = styled.div`
+    align-items: center;
+    border-bottom: solid 1px ${({ theme }) => theme.color.black};
+    display: flex;
+    position: relative;
+
+    @media ${({ theme }) => theme.media.small_only} {
+        margin: 13px;
+    }
+`;
+
 const Input = styled.input`
     border: none;
+    font-size: ${({ theme }) => theme.font_size.base};
     line-height: ${({ theme }) => theme.line_height.normal};
     width: 100%;
     background-color: transparent;
@@ -103,31 +118,33 @@ function SearchInput({
     const ref = React.createRef();
 
     return (
-        <Wrapper className={className}>
-            <IconSearch />
-            <Input
-                placeholder={`Searching ${communityName}`}
-                ref={ref}
-                onChange={onChange}
-                autoFocus
-            />
-            {list && (
-                <List accentColor={accentColor}>
-                    {list.map(({ id, title }) => (
-                        <li
-                            key={id}
-                            onClick={/* istanbul ignore next */ () => onAddTag(id)}
-                        >
-                            <HighlightedText
-                                highlight={query}
-                                text={title}
-                            />
-                        </li>
-                    ))}
-                </List>
-            )}
-            <IconClose onClick={onClose} />
-        </Wrapper>
+        <Slider className={className}>
+            <Wrapper>
+                <IconSearch />
+                <Input
+                    placeholder={`Searching ${communityName}`}
+                    ref={ref}
+                    onChange={onChange}
+                    autoFocus
+                />
+                {list && (
+                    <List accentColor={accentColor}>
+                        {list.map(({ id, title }) => (
+                            <li
+                                key={id}
+                                onClick={/* istanbul ignore next */ () => onAddTag(id)}
+                            >
+                                <HighlightedText
+                                    highlight={query}
+                                    text={title}
+                                />
+                            </li>
+                        ))}
+                    </List>
+                )}
+                <IconClose onClick={onClose} />
+            </Wrapper>
+        </Slider>
     );
 }
 
