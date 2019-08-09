@@ -13,7 +13,6 @@ const Wrapper = styled.span`
     font-size: ${({ theme }) => theme.font_size.s};
     line-height:  ${({ theme }) => theme.line_height.tight};
     padding: 2px 12px;
-
     ${({ secondary }) => secondary && css`
         background-color: ${({ theme }) => theme.color.fandom_light_gray};
         border: none;

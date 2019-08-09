@@ -5,6 +5,7 @@
  */
 
 // Components
+export { default as StyledArticleTagsSelector } from './StyledArticleTagsSelector';
 export { default as Avatar } from './Avatar';
 export { default as StyledAvatar } from './StyledAvatar';
 export { default as AvatarStack } from './AvatarStack';
@@ -26,7 +27,6 @@ export { default as FloatingButton } from './FloatingButton';
 export { default as FloatingButtonGroup } from './FloatingButtonGroup';
 export { default as GlobalFooter } from './GlobalFooter';
 export { default as GlobalNavigation } from './GlobalNavigation';
-export { default as HighlightedText } from './HighlightedText';
 export { default as HideComponent } from './HideComponent';
 export { default as HighlightedText } from './HighlightedText';
 export { default as Icon } from './Icon';
@@ -43,8 +43,6 @@ export { default as StyledTag } from './StyledTag';
 export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
 export { default as Portal } from './Portal';
-export { default as StyledTag } from './StyledTag';
-export { default as StyledArticleTagsSelector } from './StyledArticleTagsSelector';
 
 export { default as StyledErrorDisplayingContent } from './StyledErrorDisplayingContent';
 
