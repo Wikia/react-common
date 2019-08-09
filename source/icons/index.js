@@ -70,6 +70,7 @@ export { default as IconCross } from './IconCross';
 export { default as IconDashboardSmall } from './IconDashboardSmall';
 export { default as IconDashboardTiny } from './IconDashboardTiny';
 export { default as IconDashboard } from './IconDashboard';
+export { default as IconDiscord } from './IconDiscord';
 export { default as IconDownloadSmall } from './IconDownloadSmall';
 export { default as IconDownloadTiny } from './IconDownloadTiny';
 export { default as IconDownload } from './IconDownload';

@@ -85,6 +85,7 @@ const IconCrossTiny = require('./IconCrossTiny').default;
 const IconDashboard = require('./IconDashboard').default;
 const IconDashboardSmall = require('./IconDashboardSmall').default;
 const IconDashboardTiny = require('./IconDashboardTiny').default;
+const IconDiscord = require('./IconDiscord').default;
 const IconDownload = require('./IconDownload').default;
 const IconDownloadSmall = require('./IconDownloadSmall').default;
 const IconDownloadTiny = require('./IconDownloadTiny').default;
@@ -865,6 +866,17 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconDashboardTiny</VariantName>
             <VariantComponent><IconDashboardTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconDiscord</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconDiscord</VariantName>
+            <VariantComponent><IconDiscord style={{width: '24px', height: '24px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
