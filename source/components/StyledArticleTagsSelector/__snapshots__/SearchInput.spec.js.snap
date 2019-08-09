@@ -1,0 +1,547 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput renders empty 1`] = `
+<SearchInput
+  className=""
+  communityName=""
+  list={null}
+  onAddTag={[Function]}
+  onChange={[Function]}
+  onClose={[Function]}
+  query=""
+>
+  <SearchInput__Wrapper
+    className=""
+  >
+    <StyledComponent
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+            "isStatic": false,
+            "lastClassName": "bBJnHG",
+            "rules": Array [
+              "align-items:center;border-bottom:solid 1px ",
+              [Function],
+              ";display:flex;position:relative;@media ",
+              [Function],
+              "{}@media ",
+              [Function],
+              "{flex:1;}",
+            ],
+          },
+          "displayName": "SearchInput__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="SearchInput__Wrapper-sc-1cm9pl1-1 bBJnHG"
+      >
+        <SearchInput__IconSearch>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
+                  "isStatic": true,
+                  "lastClassName": "qVP",
+                  "rules": Array [
+                    "fill:currentColor;height:16px;width:16px;",
+                    " margin-right:6px;",
+                  ],
+                },
+                "displayName": "SearchInput__IconSearch",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <_default
+              className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+            >
+              <_default
+                className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+              >
+                <div
+                  className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </SearchInput__IconSearch>
+        <SearchInput__Input
+          autoFocus={true}
+          onChange={[Function]}
+          placeholder="Searching "
+        >
+          <StyledComponent
+            autoFocus={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__Input-sc-1cm9pl1-2",
+                  "isStatic": false,
+                  "lastClassName": "ffxNmN",
+                  "rules": Array [
+                    "border:none;line-height:",
+                    [Function],
+                    ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                    [Function],
+                    "{font-size:",
+                    [Function],
+                    ";}&:focus{outline:none;}",
+                  ],
+                },
+                "displayName": "SearchInput__Input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__Input-sc-1cm9pl1-2",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={
+              Object {
+                "current": <input
+                  class="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
+                  placeholder="Searching "
+                />,
+              }
+            }
+            onChange={[Function]}
+            placeholder="Searching "
+          >
+            <input
+              autoFocus={true}
+              className="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
+              onChange={[Function]}
+              placeholder="Searching "
+            />
+          </StyledComponent>
+        </SearchInput__Input>
+        <SearchInput__IconClose
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__IconClose-sc-1cm9pl1-4",
+                  "isStatic": true,
+                  "lastClassName": "hSmGuN",
+                  "rules": Array [
+                    "fill:currentColor;height:16px;width:16px;",
+                    " cursor:pointer;",
+                  ],
+                },
+                "displayName": "SearchInput__IconClose",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-4",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <_default
+              className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+              onClick={[Function]}
+            >
+              <_default
+                className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                onClick={[Function]}
+              >
+                <div
+                  className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                  onClick={[Function]}
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </SearchInput__IconClose>
+      </div>
+    </StyledComponent>
+  </SearchInput__Wrapper>
+</SearchInput>
+`;
+
+exports[`SearchInput renders with props 1`] = `
+<SearchInput
+  className="foo"
+  communityName="bar"
+  list={
+    Array [
+      Object {
+        "id": "1",
+        "title": "Foo",
+      },
+      Object {
+        "id": "2",
+        "title": "Bar",
+      },
+      Object {
+        "id": "3",
+        "title": "FooBar",
+      },
+    ]
+  }
+  onAddTag={[Function]}
+  onChange={[Function]}
+  onClose={[Function]}
+  query="q"
+>
+  <SearchInput__Wrapper
+    className="foo"
+  >
+    <StyledComponent
+      className="foo"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+            "isStatic": false,
+            "lastClassName": "bBJnHG",
+            "rules": Array [
+              "align-items:center;border-bottom:solid 1px ",
+              [Function],
+              ";display:flex;position:relative;@media ",
+              [Function],
+              "{}@media ",
+              [Function],
+              "{flex:1;}",
+            ],
+          },
+          "displayName": "SearchInput__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "SearchInput__Wrapper-sc-1cm9pl1-1",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="foo SearchInput__Wrapper-sc-1cm9pl1-1 bBJnHG"
+      >
+        <SearchInput__IconSearch>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
+                  "isStatic": true,
+                  "lastClassName": "qVP",
+                  "rules": Array [
+                    "fill:currentColor;height:16px;width:16px;",
+                    " margin-right:6px;",
+                  ],
+                },
+                "displayName": "SearchInput__IconSearch",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__IconSearch-sc-1cm9pl1-3",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <_default
+              className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+            >
+              <_default
+                className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+              >
+                <div
+                  className="SearchInput__IconSearch-sc-1cm9pl1-3 qVP"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </SearchInput__IconSearch>
+        <SearchInput__Input
+          autoFocus={true}
+          onChange={[Function]}
+          placeholder="Searching bar"
+        >
+          <StyledComponent
+            autoFocus={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__Input-sc-1cm9pl1-2",
+                  "isStatic": false,
+                  "lastClassName": "ffxNmN",
+                  "rules": Array [
+                    "border:none;line-height:",
+                    [Function],
+                    ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                    [Function],
+                    "{font-size:",
+                    [Function],
+                    ";}&:focus{outline:none;}",
+                  ],
+                },
+                "displayName": "SearchInput__Input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__Input-sc-1cm9pl1-2",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={
+              Object {
+                "current": <input
+                  class="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
+                  placeholder="Searching bar"
+                />,
+              }
+            }
+            onChange={[Function]}
+            placeholder="Searching bar"
+          >
+            <input
+              autoFocus={true}
+              className="SearchInput__Input-sc-1cm9pl1-2 ffxNmN"
+              onChange={[Function]}
+              placeholder="Searching bar"
+            />
+          </StyledComponent>
+        </SearchInput__Input>
+        <SearchInput__List
+          bigItems={false}
+          boldItems={false}
+          className=""
+          hasEllipsis={false}
+          isLinked={false}
+          linesBetween={false}
+        >
+          <StyledComponent
+            bigItems={false}
+            boldItems={false}
+            className=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__List-sc-1cm9pl1-0",
+                  "isStatic": false,
+                  "lastClassName": "eyHytB",
+                  "rules": Array [
+                    "list-style-type:none;margin:0;padding:7px 18px;",
+                    [Function],
+                    " > li{font-size:",
+                    [Function],
+                    ";font-weight:normal;line-height:1em;padding:",
+                    "11",
+                    "px 0;",
+                    [Function],
+                    " ",
+                    [Function],
+                    " ",
+                    [Function],
+                    " ",
+                    [Function],
+                    " ",
+                    [Function],
+                    "}",
+                    "background-color:",
+                    [Function],
+                    ";border:1px solid ",
+                    [Function],
+                    ";overflow:hidden;padding:10px 0;position:absolute;width:100%;@media ",
+                    [Function],
+                    "{top:24px;}> li{cursor:pointer;line-height:36px;margin:0 10px;padding:0 10px;&:hover{background-color:",
+                    [Function],
+                    ";}}mark{background-color:transparent;font-weight:",
+                    [Function],
+                    ";}",
+                  ],
+                },
+                "defaultProps": Object {
+                  "bigItems": false,
+                  "boldItems": false,
+                  "children": null,
+                  "className": "",
+                  "hasEllipsis": false,
+                  "isLinked": false,
+                  "linesBetween": false,
+                },
+                "displayName": "SearchInput__List",
+                "foldedComponentIds": Array [
+                  "StyledList-sc-1t1k18i-0",
+                ],
+                "propTypes": Object {
+                  "bigItems": [Function],
+                  "boldItems": [Function],
+                  "children": [Function],
+                  "className": [Function],
+                  "hasEllipsis": [Function],
+                  "isLinked": [Function],
+                  "linesBetween": [Function],
+                },
+                "render": [Function],
+                "styledComponentId": "SearchInput__List-sc-1cm9pl1-0",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            hasEllipsis={false}
+            isLinked={false}
+            linesBetween={false}
+          >
+            <ul
+              className="StyledList-sc-1t1k18i-0 SearchInput__List-sc-1cm9pl1-0 eyHytB"
+            >
+              <li
+                key="1"
+                onClick={[Function]}
+              >
+                <HighlightedText
+                  highlight="q"
+                  text="Foo"
+                >
+                  <span
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "Foo",
+                      }
+                    }
+                  />
+                </HighlightedText>
+              </li>
+              <li
+                key="2"
+                onClick={[Function]}
+              >
+                <HighlightedText
+                  highlight="q"
+                  text="Bar"
+                >
+                  <span
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "Bar",
+                      }
+                    }
+                  />
+                </HighlightedText>
+              </li>
+              <li
+                key="3"
+                onClick={[Function]}
+              >
+                <HighlightedText
+                  highlight="q"
+                  text="FooBar"
+                >
+                  <span
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "FooBar",
+                      }
+                    }
+                  />
+                </HighlightedText>
+              </li>
+            </ul>
+          </StyledComponent>
+        </SearchInput__List>
+        <SearchInput__IconClose
+          onClick={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__IconClose-sc-1cm9pl1-4",
+                  "isStatic": true,
+                  "lastClassName": "hSmGuN",
+                  "rules": Array [
+                    "fill:currentColor;height:16px;width:16px;",
+                    " cursor:pointer;",
+                  ],
+                },
+                "displayName": "SearchInput__IconClose",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__IconClose-sc-1cm9pl1-4",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <_default
+              className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+              onClick={[Function]}
+            >
+              <_default
+                className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                onClick={[Function]}
+              >
+                <div
+                  className="SearchInput__IconClose-sc-1cm9pl1-4 hSmGuN"
+                  onClick={[Function]}
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </SearchInput__IconClose>
+      </div>
+    </StyledComponent>
+  </SearchInput__Wrapper>
+</SearchInput>
+`;

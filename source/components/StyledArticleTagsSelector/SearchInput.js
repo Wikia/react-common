@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
+import noop from 'lodash/noop';
 
 import IconMagnifyingGlassSmall from '../../icons/IconMagnifyingGlassSmall';
 import IconCloseSmall from '../../icons/IconCloseSmall';
@@ -115,7 +116,7 @@ function SearchInput({
                     {list.map(({ id, title }) => (
                         <li
                             key={id}
-                            onClick={() => onAddTag(id)}
+                            onClick={/* istanbul ignore next */ () => onAddTag(id)}
                         >
                             <HighlightedText
                                 highlight={query}
@@ -144,8 +145,11 @@ SearchInput.propTypes = {
 SearchInput.defaultProps = {
     className: '',
     communityName: '',
-    query: '',
     list: null,
+    onAddTag: noop,
+    onChange: noop,
+    onClose: noop,
+    query: '',
 };
 
 export default SearchInput;

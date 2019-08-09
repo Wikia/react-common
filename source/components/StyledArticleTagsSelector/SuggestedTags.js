@@ -34,7 +34,7 @@ function SuggestedTags({
                 {tags.map(({ id, title }) => (
                     <Tag
                         key={id}
-                        onClick={() => onClick(id)}
+                        onClick={/* istanbul ignore next */ () => onClick(id)}
                         tag={title}
                         secondary
                     />

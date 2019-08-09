@@ -1,7 +1,8 @@
+import debounce from 'lodash/debounce';
+import noop from 'lodash/noop';
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-import debounce from 'lodash/debounce';
 
 import IconTagSmall from '../../icons/IconTagSmall';
 import IconAddSmall from '../../icons/IconAddSmall';
@@ -82,8 +83,11 @@ function SearchForm({
     query,
     searchResults,
 }) {
+    /* istanbul ignore next  */
     const [showSearch, setShowSearch] = React.useState(false);
+    /* istanbul ignore next  */
     const doSearch = debounce(onSearch, 300);
+    /* istanbul ignore next  */
     const onChange = event => doSearch(event.target.value.trim());
 
     return (
@@ -92,19 +96,19 @@ function SearchForm({
                 <IconTag />
                 Tag Wiki Pages
             </Header>
-            {showSearch ? (
+            {/* istanbul ignore next */ showSearch ? (
                 <SearchInput
                     communityName={communityName}
                     list={searchResults}
                     onAddTag={onAddTag}
                     onChange={onChange}
-                    onClose={() => setShowSearch(false)}
+                    onClose={/* istanbul ignore next */ () => setShowSearch(false)}
                     query={query}
                 />
             ) : (
                 <React.Fragment>
                     <AddTagButton
-                        onClick={() => setShowSearch(true)}
+                        onClick={/* istanbul ignore next */ () => setShowSearch(true)}
                         disabled={maxNumOfTagsAdded}
                     >
                         Add Tag
@@ -128,8 +132,8 @@ SearchForm.propTypes = {
     communityName: PropTypes.string.isRequired,
     maxAllowed: PropTypes.number.isRequired,
     maxNumOfTagsAdded: PropTypes.bool,
-    onAddTag: PropTypes.func.isRequired,
-    onSearch: PropTypes.func.isRequired,
+    onAddTag: PropTypes.func,
+    onSearch: PropTypes.func,
     query: PropTypes.string,
     searchResults: PropTypes.arrayOf(TagShape),
 };
@@ -137,6 +141,8 @@ SearchForm.propTypes = {
 SearchForm.defaultProps = {
     className: '',
     maxNumOfTagsAdded: false,
+    onAddTag: noop,
+    onSearch: noop,
     query: '',
     searchResults: null,
 };

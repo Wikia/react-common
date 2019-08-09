@@ -38,7 +38,7 @@ function StyledArticleTagsSelector({
     const [query, setQuery] = React.useState('');
     const maxNumOfTagsAdded = tags && (tags.length >= maxAllowed);
 
-    const searchCallback = (q) => {
+    const searchCallback = /* istanbul ignore next */ (q) => {
         setQuery(q);
         onSearch(q);
     };

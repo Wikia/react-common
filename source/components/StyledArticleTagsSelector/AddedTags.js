@@ -27,7 +27,7 @@ function AddedTags({
                 {tags.map(({ id, title }) => (
                     <Tag
                         key={id}
-                        onRemove={() => onRemove(id)}
+                        onRemove={/* istanbul ignore next */ () => onRemove(id)}
                         tag={title}
                         removable
                     />
