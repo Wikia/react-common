@@ -1,0 +1,1423 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleTagsSelector renders empty 1`] = `
+<StyledArticleTagsSelector
+  accentColor="#00d6d6"
+  className=""
+  maxAllowed={10}
+  searchResults={null}
+  suggestedTags={null}
+  tags={null}
+>
+  <StyledArticleTagsSelector__Wrapper
+    className=""
+  >
+    <StyledComponent
+      className=""
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0",
+            "isStatic": false,
+            "lastClassName": "eyNgBO",
+            "rules": Array [
+              "font-size:",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "StyledArticleTagsSelector__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0 eyNgBO"
+      >
+        <SearchForm
+          accentColor="#00d6d6"
+          className=""
+          maxAllowed={10}
+          maxNumOfTagsAdded={null}
+          onAddTag={[Function]}
+          onSearch={[Function]}
+          query=""
+          searchResults={null}
+        >
+          <SearchForm__Wrapper
+            className=""
+          >
+            <StyledComponent
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "SearchForm__Wrapper-hq4lki-3",
+                    "isStatic": true,
+                    "lastClassName": "iHdFSK",
+                    "rules": Array [
+                      "display:flex;height:24px;",
+                    ],
+                  },
+                  "displayName": "SearchForm__Wrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "SearchForm__Wrapper-hq4lki-3",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="SearchForm__Wrapper-hq4lki-3 iHdFSK"
+              >
+                <SearchForm__Header>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SearchForm__Header-hq4lki-4",
+                          "isStatic": true,
+                          "lastClassName": "cqgZMA",
+                          "rules": Array [
+                            "display:inline-flex;align-items:center;margin-right:12px;",
+                          ],
+                        },
+                        "displayName": "SearchForm__Header",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SearchForm__Header-hq4lki-4",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="SearchForm__Header-hq4lki-4 cqgZMA"
+                    >
+                      <SearchForm__IconTag>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SearchForm__IconTag-hq4lki-0",
+                                "isStatic": true,
+                                "lastClassName": "kDtdRH",
+                                "rules": Array [
+                                  "fill:currentColor;height:18px;width:18px;",
+                                  " margin-right:6px;",
+                                ],
+                              },
+                              "displayName": "SearchForm__IconTag",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SearchForm__IconTag-hq4lki-0",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <_default
+                            className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                          >
+                            <_default
+                              className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                            >
+                              <div
+                                className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                              />
+                            </_default>
+                          </_default>
+                        </StyledComponent>
+                      </SearchForm__IconTag>
+                      Tag Wiki Pages
+                    </div>
+                  </StyledComponent>
+                </SearchForm__Header>
+                <SearchForm__AddTagButton
+                  accentColor="#00d6d6"
+                  disabled={null}
+                  onClick={[Function]}
+                >
+                  <StyledComponent
+                    accentColor="#00d6d6"
+                    disabled={null}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SearchForm__AddTagButton-hq4lki-5",
+                          "isStatic": false,
+                          "lastClassName": "cMhJbr",
+                          "rules": Array [
+                            "align-items:center;background:transparent;border:0;color:",
+                            [Function],
+                            ";cursor:pointer;display:inline-flex;font:inherit;font-weight:",
+                            [Function],
+                            ";line-height:1;margin:0;padding:0;&:disabled{opacity:.5;pointer-events:none;}",
+                          ],
+                        },
+                        "displayName": "SearchForm__AddTagButton",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SearchForm__AddTagButton-hq4lki-5",
+                        "target": "button",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="SearchForm__AddTagButton-hq4lki-5 cMhJbr"
+                      disabled={null}
+                      onClick={[Function]}
+                    >
+                      Add Tag
+                      <SearchForm__IconAdd>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SearchForm__IconAdd-hq4lki-2",
+                                "isStatic": true,
+                                "lastClassName": "eJupPs",
+                                "rules": Array [
+                                  "fill:currentColor;height:12px;width:12px;margin-left:6px;",
+                                ],
+                              },
+                              "displayName": "SearchForm__IconAdd",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SearchForm__IconAdd-hq4lki-2",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <_default
+                            className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                          >
+                            <_default
+                              className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                            >
+                              <div
+                                className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                              />
+                            </_default>
+                          </_default>
+                        </StyledComponent>
+                      </SearchForm__IconAdd>
+                    </button>
+                  </StyledComponent>
+                </SearchForm__AddTagButton>
+              </div>
+            </StyledComponent>
+          </SearchForm__Wrapper>
+        </SearchForm>
+        <AddedTags
+          className=""
+          onRemove={[Function]}
+          tags={null}
+        />
+        <SuggestedTags
+          className=""
+          onClick={[Function]}
+          tags={null}
+        />
+      </div>
+    </StyledComponent>
+  </StyledArticleTagsSelector__Wrapper>
+</StyledArticleTagsSelector>
+`;
+
+exports[`ArticleTagsSelector renders with props 1`] = `
+<StyledArticleTagsSelector
+  accentColor="#00f"
+  className="foo"
+  communityName="bar"
+  maxAllowed={10}
+  maxNumOfTagsAdded={true}
+  query="q"
+  searchResults={
+    Array [
+      Object {
+        "id": "1",
+        "title": "Foo",
+      },
+      Object {
+        "id": "2",
+        "title": "Bar",
+      },
+      Object {
+        "id": "3",
+        "title": "FooBar",
+      },
+    ]
+  }
+  suggestedTags={
+    Array [
+      Object {
+        "id": "1",
+        "title": "Foo",
+      },
+      Object {
+        "id": "2",
+        "title": "Bar",
+      },
+      Object {
+        "id": "3",
+        "title": "FooBar",
+      },
+    ]
+  }
+  tags={
+    Array [
+      Object {
+        "id": "1",
+        "title": "Foo",
+      },
+      Object {
+        "id": "2",
+        "title": "Bar",
+      },
+      Object {
+        "id": "3",
+        "title": "FooBar",
+      },
+    ]
+  }
+>
+  <StyledArticleTagsSelector__Wrapper
+    className="foo"
+  >
+    <StyledComponent
+      className="foo"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0",
+            "isStatic": false,
+            "lastClassName": "eyNgBO",
+            "rules": Array [
+              "font-size:",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "StyledArticleTagsSelector__Wrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="foo StyledArticleTagsSelector__Wrapper-sc-9gk8qd-0 eyNgBO"
+      >
+        <SearchForm
+          accentColor="#00f"
+          className=""
+          communityName="bar"
+          maxAllowed={10}
+          maxNumOfTagsAdded={false}
+          onAddTag={[Function]}
+          onSearch={[Function]}
+          query=""
+          searchResults={
+            Array [
+              Object {
+                "id": "1",
+                "title": "Foo",
+              },
+              Object {
+                "id": "2",
+                "title": "Bar",
+              },
+              Object {
+                "id": "3",
+                "title": "FooBar",
+              },
+            ]
+          }
+        >
+          <SearchForm__Wrapper
+            className=""
+          >
+            <StyledComponent
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "SearchForm__Wrapper-hq4lki-3",
+                    "isStatic": true,
+                    "lastClassName": "iHdFSK",
+                    "rules": Array [
+                      "display:flex;height:24px;",
+                    ],
+                  },
+                  "displayName": "SearchForm__Wrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "SearchForm__Wrapper-hq4lki-3",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="SearchForm__Wrapper-hq4lki-3 iHdFSK"
+              >
+                <SearchForm__Header>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SearchForm__Header-hq4lki-4",
+                          "isStatic": true,
+                          "lastClassName": "cqgZMA",
+                          "rules": Array [
+                            "display:inline-flex;align-items:center;margin-right:12px;",
+                          ],
+                        },
+                        "displayName": "SearchForm__Header",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SearchForm__Header-hq4lki-4",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="SearchForm__Header-hq4lki-4 cqgZMA"
+                    >
+                      <SearchForm__IconTag>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SearchForm__IconTag-hq4lki-0",
+                                "isStatic": true,
+                                "lastClassName": "kDtdRH",
+                                "rules": Array [
+                                  "fill:currentColor;height:18px;width:18px;",
+                                  " margin-right:6px;",
+                                ],
+                              },
+                              "displayName": "SearchForm__IconTag",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SearchForm__IconTag-hq4lki-0",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <_default
+                            className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                          >
+                            <_default
+                              className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                            >
+                              <div
+                                className="SearchForm__IconTag-hq4lki-0 kDtdRH"
+                              />
+                            </_default>
+                          </_default>
+                        </StyledComponent>
+                      </SearchForm__IconTag>
+                      Tag Wiki Pages
+                    </div>
+                  </StyledComponent>
+                </SearchForm__Header>
+                <SearchForm__AddTagButton
+                  accentColor="#00f"
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <StyledComponent
+                    accentColor="#00f"
+                    disabled={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SearchForm__AddTagButton-hq4lki-5",
+                          "isStatic": false,
+                          "lastClassName": "iQayax",
+                          "rules": Array [
+                            "align-items:center;background:transparent;border:0;color:",
+                            [Function],
+                            ";cursor:pointer;display:inline-flex;font:inherit;font-weight:",
+                            [Function],
+                            ";line-height:1;margin:0;padding:0;&:disabled{opacity:.5;pointer-events:none;}",
+                          ],
+                        },
+                        "displayName": "SearchForm__AddTagButton",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SearchForm__AddTagButton-hq4lki-5",
+                        "target": "button",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="SearchForm__AddTagButton-hq4lki-5 iQayax"
+                      disabled={false}
+                      onClick={[Function]}
+                    >
+                      Add Tag
+                      <SearchForm__IconAdd>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "SearchForm__IconAdd-hq4lki-2",
+                                "isStatic": true,
+                                "lastClassName": "eJupPs",
+                                "rules": Array [
+                                  "fill:currentColor;height:12px;width:12px;margin-left:6px;",
+                                ],
+                              },
+                              "displayName": "SearchForm__IconAdd",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "SearchForm__IconAdd-hq4lki-2",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <_default
+                            className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                          >
+                            <_default
+                              className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                            >
+                              <div
+                                className="SearchForm__IconAdd-hq4lki-2 eJupPs"
+                              />
+                            </_default>
+                          </_default>
+                        </StyledComponent>
+                      </SearchForm__IconAdd>
+                    </button>
+                  </StyledComponent>
+                </SearchForm__AddTagButton>
+              </div>
+            </StyledComponent>
+          </SearchForm__Wrapper>
+        </SearchForm>
+        <AddedTags
+          className=""
+          onRemove={[Function]}
+          tags={
+            Array [
+              Object {
+                "id": "1",
+                "title": "Foo",
+              },
+              Object {
+                "id": "2",
+                "title": "Bar",
+              },
+              Object {
+                "id": "3",
+                "title": "FooBar",
+              },
+            ]
+          }
+        >
+          <AddedTags__Wrapper
+            className=""
+          >
+            <StyledComponent
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "AddedTags__Wrapper-if94vv-1",
+                    "isStatic": true,
+                    "lastClassName": "iuLzxc",
+                    "rules": Array [
+                      "overflow-x:auto;",
+                    ],
+                  },
+                  "displayName": "AddedTags__Wrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "AddedTags__Wrapper-if94vv-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="AddedTags__Wrapper-if94vv-1 iuLzxc"
+              >
+                <AddedTags__Tag
+                  key="1"
+                  onRemove={[Function]}
+                  removable={true}
+                  tag="Foo"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "AddedTags__Tag-if94vv-0",
+                          "isStatic": true,
+                          "lastClassName": "jIRMtf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "AddedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "AddedTags__Tag-if94vv-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onRemove={[Function]}
+                    removable={true}
+                    tag="Foo"
+                  >
+                    <StyledTag
+                      className="AddedTags__Tag-if94vv-0 jIRMtf"
+                      onClick={null}
+                      onRemove={[Function]}
+                      removable={true}
+                      secondary={false}
+                      tag="Foo"
+                    >
+                      <StyledTag__Wrapper
+                        className="AddedTags__Tag-if94vv-0 jIRMtf"
+                        onClick={null}
+                        secondary={false}
+                      >
+                        <StyledComponent
+                          className="AddedTags__Tag-if94vv-0 jIRMtf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={null}
+                          secondary={false}
+                        >
+                          <span
+                            className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
+                            onClick={null}
+                          >
+                            Foo
+                            <StyledTag__Icon
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "StyledTag__Icon-ja2wb4-1",
+                                      "isStatic": true,
+                                      "lastClassName": "VqIUo",
+                                      "rules": Array [
+                                        "cursor:pointer;height:11px;margin-left:5px;width:11px;",
+                                      ],
+                                    },
+                                    "displayName": "StyledTag__Icon",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "StyledTag__Icon-ja2wb4-1",
+                                    "target": [Function],
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <_default
+                                  className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                  onClick={[Function]}
+                                >
+                                  <_default
+                                    className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                      onClick={[Function]}
+                                    />
+                                  </_default>
+                                </_default>
+                              </StyledComponent>
+                            </StyledTag__Icon>
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </AddedTags__Tag>
+                <AddedTags__Tag
+                  key="2"
+                  onRemove={[Function]}
+                  removable={true}
+                  tag="Bar"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "AddedTags__Tag-if94vv-0",
+                          "isStatic": true,
+                          "lastClassName": "jIRMtf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "AddedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "AddedTags__Tag-if94vv-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onRemove={[Function]}
+                    removable={true}
+                    tag="Bar"
+                  >
+                    <StyledTag
+                      className="AddedTags__Tag-if94vv-0 jIRMtf"
+                      onClick={null}
+                      onRemove={[Function]}
+                      removable={true}
+                      secondary={false}
+                      tag="Bar"
+                    >
+                      <StyledTag__Wrapper
+                        className="AddedTags__Tag-if94vv-0 jIRMtf"
+                        onClick={null}
+                        secondary={false}
+                      >
+                        <StyledComponent
+                          className="AddedTags__Tag-if94vv-0 jIRMtf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={null}
+                          secondary={false}
+                        >
+                          <span
+                            className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
+                            onClick={null}
+                          >
+                            Bar
+                            <StyledTag__Icon
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "StyledTag__Icon-ja2wb4-1",
+                                      "isStatic": true,
+                                      "lastClassName": "VqIUo",
+                                      "rules": Array [
+                                        "cursor:pointer;height:11px;margin-left:5px;width:11px;",
+                                      ],
+                                    },
+                                    "displayName": "StyledTag__Icon",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "StyledTag__Icon-ja2wb4-1",
+                                    "target": [Function],
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <_default
+                                  className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                  onClick={[Function]}
+                                >
+                                  <_default
+                                    className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                      onClick={[Function]}
+                                    />
+                                  </_default>
+                                </_default>
+                              </StyledComponent>
+                            </StyledTag__Icon>
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </AddedTags__Tag>
+                <AddedTags__Tag
+                  key="3"
+                  onRemove={[Function]}
+                  removable={true}
+                  tag="FooBar"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "AddedTags__Tag-if94vv-0",
+                          "isStatic": true,
+                          "lastClassName": "jIRMtf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "AddedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "AddedTags__Tag-if94vv-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onRemove={[Function]}
+                    removable={true}
+                    tag="FooBar"
+                  >
+                    <StyledTag
+                      className="AddedTags__Tag-if94vv-0 jIRMtf"
+                      onClick={null}
+                      onRemove={[Function]}
+                      removable={true}
+                      secondary={false}
+                      tag="FooBar"
+                    >
+                      <StyledTag__Wrapper
+                        className="AddedTags__Tag-if94vv-0 jIRMtf"
+                        onClick={null}
+                        secondary={false}
+                      >
+                        <StyledComponent
+                          className="AddedTags__Tag-if94vv-0 jIRMtf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={null}
+                          secondary={false}
+                        >
+                          <span
+                            className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
+                            onClick={null}
+                          >
+                            FooBar
+                            <StyledTag__Icon
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "StyledTag__Icon-ja2wb4-1",
+                                      "isStatic": true,
+                                      "lastClassName": "VqIUo",
+                                      "rules": Array [
+                                        "cursor:pointer;height:11px;margin-left:5px;width:11px;",
+                                      ],
+                                    },
+                                    "displayName": "StyledTag__Icon",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "StyledTag__Icon-ja2wb4-1",
+                                    "target": [Function],
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <_default
+                                  className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                  onClick={[Function]}
+                                >
+                                  <_default
+                                    className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                    onClick={[Function]}
+                                  >
+                                    <div
+                                      className="StyledTag__Icon-ja2wb4-1 VqIUo"
+                                      onClick={[Function]}
+                                    />
+                                  </_default>
+                                </_default>
+                              </StyledComponent>
+                            </StyledTag__Icon>
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </AddedTags__Tag>
+              </div>
+            </StyledComponent>
+          </AddedTags__Wrapper>
+        </AddedTags>
+        <SuggestedTags
+          className=""
+          onClick={[Function]}
+          tags={
+            Array [
+              Object {
+                "id": "1",
+                "title": "Foo",
+              },
+              Object {
+                "id": "2",
+                "title": "Bar",
+              },
+              Object {
+                "id": "3",
+                "title": "FooBar",
+              },
+            ]
+          }
+        >
+          <SuggestedTags__Wrapper
+            className=""
+          >
+            <StyledComponent
+              className=""
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "SuggestedTags__Wrapper-yazuu8-1",
+                    "isStatic": true,
+                    "lastClassName": "ilEcGp",
+                    "rules": Array [
+                      "margin-top:30px;padding-top:8px;",
+                    ],
+                  },
+                  "displayName": "SuggestedTags__Wrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "SuggestedTags__Wrapper-yazuu8-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="SuggestedTags__Wrapper-yazuu8-1 ilEcGp"
+              >
+                <SuggestedTags__SuggestedLabel>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SuggestedTags__SuggestedLabel-yazuu8-2",
+                          "isStatic": false,
+                          "lastClassName": "jEbJfm",
+                          "rules": Array [
+                            "color:",
+                            [Function],
+                            ";font-size:",
+                            [Function],
+                            ";",
+                          ],
+                        },
+                        "displayName": "SuggestedTags__SuggestedLabel",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SuggestedTags__SuggestedLabel-yazuu8-2",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="SuggestedTags__SuggestedLabel-yazuu8-2 jEbJfm"
+                    >
+                      Suggested
+                    </div>
+                  </StyledComponent>
+                </SuggestedTags__SuggestedLabel>
+                <SuggestedTags__Tag
+                  key="1"
+                  onClick={[Function]}
+                  secondary={true}
+                  tag="Foo"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SuggestedTags__Tag-yazuu8-0",
+                          "isStatic": true,
+                          "lastClassName": "eTMnLf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "SuggestedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    secondary={true}
+                    tag="Foo"
+                  >
+                    <StyledTag
+                      className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                      onClick={[Function]}
+                      onRemove={null}
+                      removable={false}
+                      secondary={true}
+                      tag="Foo"
+                    >
+                      <StyledTag__Wrapper
+                        className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                        onClick={[Function]}
+                        secondary={true}
+                      >
+                        <StyledComponent
+                          className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          secondary={true}
+                        >
+                          <span
+                            className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
+                            onClick={[Function]}
+                          >
+                            Foo
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </SuggestedTags__Tag>
+                <SuggestedTags__Tag
+                  key="2"
+                  onClick={[Function]}
+                  secondary={true}
+                  tag="Bar"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SuggestedTags__Tag-yazuu8-0",
+                          "isStatic": true,
+                          "lastClassName": "eTMnLf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "SuggestedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    secondary={true}
+                    tag="Bar"
+                  >
+                    <StyledTag
+                      className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                      onClick={[Function]}
+                      onRemove={null}
+                      removable={false}
+                      secondary={true}
+                      tag="Bar"
+                    >
+                      <StyledTag__Wrapper
+                        className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                        onClick={[Function]}
+                        secondary={true}
+                      >
+                        <StyledComponent
+                          className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          secondary={true}
+                        >
+                          <span
+                            className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
+                            onClick={[Function]}
+                          >
+                            Bar
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </SuggestedTags__Tag>
+                <SuggestedTags__Tag
+                  key="3"
+                  onClick={[Function]}
+                  secondary={true}
+                  tag="FooBar"
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "SuggestedTags__Tag-yazuu8-0",
+                          "isStatic": true,
+                          "lastClassName": "eTMnLf",
+                          "rules": Array [
+                            "margin-right:10px;margin-top:10px;",
+                          ],
+                        },
+                        "displayName": "SuggestedTags__Tag",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    onClick={[Function]}
+                    secondary={true}
+                    tag="FooBar"
+                  >
+                    <StyledTag
+                      className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                      onClick={[Function]}
+                      onRemove={null}
+                      removable={false}
+                      secondary={true}
+                      tag="FooBar"
+                    >
+                      <StyledTag__Wrapper
+                        className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                        onClick={[Function]}
+                        secondary={true}
+                      >
+                        <StyledComponent
+                          className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledTag__Wrapper-ja2wb4-0",
+                                "isStatic": false,
+                                "lastClassName": "QFtsa",
+                                "rules": Array [
+                                  "align-items:center;border-radius:25px;border:1px solid ",
+                                  [Function],
+                                  ";cursor:pointer;display:inline-flex;font-size:",
+                                  [Function],
+                                  ";line-height:",
+                                  [Function],
+                                  ";padding:2px 12px;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "StyledTag__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          secondary={true}
+                        >
+                          <span
+                            className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
+                            onClick={[Function]}
+                          >
+                            FooBar
+                          </span>
+                        </StyledComponent>
+                      </StyledTag__Wrapper>
+                    </StyledTag>
+                  </StyledComponent>
+                </SuggestedTags__Tag>
+              </div>
+            </StyledComponent>
+          </SuggestedTags__Wrapper>
+        </SuggestedTags>
+      </div>
+    </StyledComponent>
+  </StyledArticleTagsSelector__Wrapper>
+</StyledArticleTagsSelector>
+`;
