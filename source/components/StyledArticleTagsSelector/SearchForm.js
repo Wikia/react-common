@@ -69,7 +69,7 @@ const AddTagButton = styled.button`
 const MaxTagsAdded = styled.div`
     display: inline-flex;
     align-items: center;
-    margin-right: 6px;
+    margin-left: 6px;
 `;
 
 function SearchForm({

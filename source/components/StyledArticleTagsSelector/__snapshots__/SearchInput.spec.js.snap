@@ -135,13 +135,13 @@ exports[`SearchInput renders empty 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "SearchInput__Input-sc-1cm9pl1-3",
                         "isStatic": false,
-                        "lastClassName": "ksdqQb",
+                        "lastClassName": "jIiNhg",
                         "rules": Array [
-                          "border:none;font-size:",
+                          "background-color:transparent;border:none;flex-grow:1;font-size:",
                           [Function],
                           ";line-height:",
                           [Function],
-                          ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                          ";width:100%;@media ",
                           [Function],
                           "{font-size:",
                           [Function],
@@ -161,7 +161,7 @@ exports[`SearchInput renders empty 1`] = `
                   forwardedRef={
                     Object {
                       "current": <input
-                        class="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                        class="SearchInput__Input-sc-1cm9pl1-3 jIiNhg"
                         placeholder="Searching "
                       />,
                     }
@@ -171,7 +171,7 @@ exports[`SearchInput renders empty 1`] = `
                 >
                   <input
                     autoFocus={true}
-                    className="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                    className="SearchInput__Input-sc-1cm9pl1-3 jIiNhg"
                     onChange={[Function]}
                     placeholder="Searching "
                   />
@@ -383,13 +383,13 @@ exports[`SearchInput renders with props 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "SearchInput__Input-sc-1cm9pl1-3",
                         "isStatic": false,
-                        "lastClassName": "ksdqQb",
+                        "lastClassName": "jIiNhg",
                         "rules": Array [
-                          "border:none;font-size:",
+                          "background-color:transparent;border:none;flex-grow:1;font-size:",
                           [Function],
                           ";line-height:",
                           [Function],
-                          ";width:100%;background-color:transparent;flex-grow:1;@media ",
+                          ";width:100%;@media ",
                           [Function],
                           "{font-size:",
                           [Function],
@@ -409,7 +409,7 @@ exports[`SearchInput renders with props 1`] = `
                   forwardedRef={
                     Object {
                       "current": <input
-                        class="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                        class="SearchInput__Input-sc-1cm9pl1-3 jIiNhg"
                         placeholder="Searching bar"
                       />,
                     }
@@ -419,7 +419,7 @@ exports[`SearchInput renders with props 1`] = `
                 >
                   <input
                     autoFocus={true}
-                    className="SearchInput__Input-sc-1cm9pl1-3 ksdqQb"
+                    className="SearchInput__Input-sc-1cm9pl1-3 jIiNhg"
                     onChange={[Function]}
                     placeholder="Searching bar"
                   />

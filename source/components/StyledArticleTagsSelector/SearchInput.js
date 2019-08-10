@@ -77,13 +77,12 @@ const Wrapper = styled.div`
 `;
 
 const Input = styled.input`
+    background-color: transparent;
     border: none;
+    flex-grow: 1;
     font-size: ${({ theme }) => theme.font_size.base};
     line-height: ${({ theme }) => theme.line_height.normal};
     width: 100%;
-    background-color: transparent;
-
-    flex-grow: 1;
 
     @media ${({ theme }) => theme.media.medium_up} {
         font-size: ${({ theme }) => theme.font_size.s};

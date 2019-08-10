@@ -25,7 +25,4 @@ test('SearchForm renders with props', () => {
         maxNumOfTagsAdded
     />);
     expect(component.find(SearchForm)).toMatchSnapshot();
-
-    component.find('button').simulate('click');
-    expect(component.find(SearchForm)).toMatchSnapshot();
 });
