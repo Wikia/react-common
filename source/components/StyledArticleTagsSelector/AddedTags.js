@@ -24,11 +24,11 @@ function AddedTags({
     if (Array.isArray(tags) && tags.length > 0) {
         return (
             <Wrapper className={className}>
-                {tags.map(({ id, title }) => (
+                {tags.map(({ articleId, articleTitle }) => (
                     <Tag
-                        key={id}
-                        onRemove={/* istanbul ignore next */ () => onRemove(id)}
-                        tag={title}
+                        key={articleId}
+                        onRemove={/* istanbul ignore next */ () => onRemove(articleId)}
+                        tag={articleTitle}
                         removable
                     />
                 ))}

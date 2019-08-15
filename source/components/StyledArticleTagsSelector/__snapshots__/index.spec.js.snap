@@ -274,48 +274,48 @@ exports[`ArticleTagsSelector renders with props 1`] = `
   searchResults={
     Array [
       Object {
-        "id": "1",
-        "title": "Foo",
+        "articleId": "1",
+        "articleTitle": "Foo",
       },
       Object {
-        "id": "2",
-        "title": "Bar",
+        "articleId": "2",
+        "articleTitle": "Bar",
       },
       Object {
-        "id": "3",
-        "title": "FooBar",
+        "articleId": "3",
+        "articleTitle": "FooBar",
       },
     ]
   }
   suggestedTags={
     Array [
       Object {
-        "id": "1",
-        "title": "Foo",
+        "articleId": "1",
+        "articleTitle": "Foo",
       },
       Object {
-        "id": "2",
-        "title": "Bar",
+        "articleId": "2",
+        "articleTitle": "Bar",
       },
       Object {
-        "id": "3",
-        "title": "FooBar",
+        "articleId": "3",
+        "articleTitle": "FooBar",
       },
     ]
   }
   tags={
     Array [
       Object {
-        "id": "1",
-        "title": "Foo",
+        "articleId": "1",
+        "articleTitle": "Foo",
       },
       Object {
-        "id": "2",
-        "title": "Bar",
+        "articleId": "2",
+        "articleTitle": "Bar",
       },
       Object {
-        "id": "3",
-        "title": "FooBar",
+        "articleId": "3",
+        "articleTitle": "FooBar",
       },
     ]
   }
@@ -366,16 +366,16 @@ exports[`ArticleTagsSelector renders with props 1`] = `
           searchResults={
             Array [
               Object {
-                "id": "1",
-                "title": "Foo",
+                "articleId": "1",
+                "articleTitle": "Foo",
               },
               Object {
-                "id": "2",
-                "title": "Bar",
+                "articleId": "2",
+                "articleTitle": "Bar",
               },
               Object {
-                "id": "3",
-                "title": "FooBar",
+                "articleId": "3",
+                "articleTitle": "FooBar",
               },
             ]
           }
@@ -580,16 +580,16 @@ exports[`ArticleTagsSelector renders with props 1`] = `
           tags={
             Array [
               Object {
-                "id": "1",
-                "title": "Foo",
+                "articleId": "1",
+                "articleTitle": "Foo",
               },
               Object {
-                "id": "2",
-                "title": "Bar",
+                "articleId": "2",
+                "articleTitle": "Bar",
               },
               Object {
-                "id": "3",
-                "title": "FooBar",
+                "articleId": "3",
+                "articleTitle": "FooBar",
               },
             ]
           }
@@ -1050,16 +1050,16 @@ exports[`ArticleTagsSelector renders with props 1`] = `
           tags={
             Array [
               Object {
-                "id": "1",
-                "title": "Foo",
+                "articleId": "1",
+                "articleTitle": "Foo",
               },
               Object {
-                "id": "2",
-                "title": "Bar",
+                "articleId": "2",
+                "articleTitle": "Bar",
               },
               Object {
-                "id": "3",
-                "title": "FooBar",
+                "articleId": "3",
+                "articleTitle": "FooBar",
               },
             ]
           }

@@ -19,8 +19,8 @@ const Wrapper = styled.div`
  * **NOTE**: Several props are arrays of `Tag`s - `Tag` is defined as follows:
  * ```typescript
  * interface Tag {
- *   id: string;
- *   title: string;
+ *   articleId: string;
+ *   articleTitle: string;
  *   url?: string;
  * }
  * ```

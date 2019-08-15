@@ -3,9 +3,9 @@ import React from 'react';
 import SearchInput from './SearchInput';
 
 const tags = [
-    { id: '1', title: 'Foo' },
-    { id: '2', title: 'Bar' },
-    { id: '3', title: 'FooBar' },
+    { articleId: '1', articleTitle: 'Foo' },
+    { articleId: '2', articleTitle: 'Bar' },
+    { articleId: '3', articleTitle: 'FooBar' },
 ];
 
 test('SearchInput renders empty', () => {

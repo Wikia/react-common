@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 const TagShape = PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    articleId: PropTypes.string.isRequired,
+    articleTitle: PropTypes.string.isRequired,
     url: PropTypes.string,
 });
 
