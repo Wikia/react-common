@@ -128,14 +128,14 @@ function SearchInput({
                 />
                 {list && (
                     <List accentColor={accentColor}>
-                        {list.map(({ id, title }) => (
+                        {list.map(({ articleId, articleTitle }) => (
                             <li
-                                key={id}
-                                onClick={/* istanbul ignore next */ () => onAddTag(id)}
+                                key={articleId}
+                                onClick={/* istanbul ignore next */ () => onAddTag(articleId)}
                             >
                                 <HighlightedText
                                     highlight={query}
-                                    text={title}
+                                    text={articleTitle}
                                 />
                             </li>
                         ))}

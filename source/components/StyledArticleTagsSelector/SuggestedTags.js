@@ -31,11 +31,11 @@ function SuggestedTags({
         return (
             <Wrapper className={className}>
                 <SuggestedLabel>Suggested</SuggestedLabel>
-                {tags.map(({ id, title }) => (
+                {tags.map(({ articleId, articleTitle }) => (
                     <Tag
-                        key={id}
-                        onClick={/* istanbul ignore next */ () => onClick(id)}
-                        tag={title}
+                        key={articleId}
+                        onClick={/* istanbul ignore next */ () => onClick(articleId)}
+                        tag={articleTitle}
                         secondary
                     />
                 ))}
