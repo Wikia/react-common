@@ -30,15 +30,15 @@ export function isSandbox() {
         return false;
     }
     // fepo
-    if (isBrowser() && get(window, 'window.fandom.environment.environment', '').indexOf('sandbox') > -1) {
+    if (get(window, 'window.fandom.environment.environment', '').indexOf('sandbox') > -1) {
         return true;
     }
     // mw
-    if (isBrowser() && get(window, 'window.wgTransactionContext.env', '').indexOf('sandbox') > -1) {
+    if (get(window, 'window.wgTransactionContext.env', '').indexOf('sandbox') > -1) {
         return true;
     }
     // upstream
-    if (isBrowser() && get(window, 'window.fandom.config.environment.env', '').indexOf('sandbox') > -1) {
+    if (get(window, 'window.fandom.config.environment.env', '').indexOf('sandbox') > -1) {
         return true;
     }
 
