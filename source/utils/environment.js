@@ -41,6 +41,10 @@ export function isSandbox() {
     if (get(window, 'window.fandom.config.environment.env', '').indexOf('sandbox') > -1) {
         return true;
     }
+    // upstream
+    if (get(window, 'window.upstream.env', '').indexOf('sandbox') > -1) {
+        return true;
+    }
 
     return false;
 }
