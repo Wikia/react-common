@@ -3,7 +3,7 @@ The `utils/environment.js` offers a few environment config helpers including det
 Usage:
 
 ```js static
-import { isBrowser, isFandomCom, getServicesBaseURL, isProduction, getEventLoggerBase } from '@wikia/react-common/utils/environment';
+import { isBrowser, isFandomCom, getServicesBaseURL, isProduction, isSandbox, getEventLoggerBase } from '@wikia/react-common/utils/environment';
 
 isProduction();         // checks if the app was built with the production flag (might not be in a prod env though)
 isBrowser();            // checks if the window global is available
