@@ -41,7 +41,7 @@ describe('Tests for is Sandbox: ', () => {
         expect(isSandbox()).toEqual(true);
     });
 
-    test('It should return true if sandbox is on upstream', () => {
+    test('It should return true if sandbox is on f2', () => {
         // simulate upstream's window object with sandbox environment
         global.window.fandom = {
             config: {

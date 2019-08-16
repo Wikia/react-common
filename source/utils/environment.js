@@ -26,7 +26,7 @@ export function getEventLoggerBase() {
 }
 
 export function isSandbox() {
-    if (!isBrowser() || isProduction()) {
+    if (!isBrowser()) {
         return false;
     }
     // fepo
@@ -37,7 +37,7 @@ export function isSandbox() {
     if (get(window, 'window.wgTransactionContext.env', '').indexOf('sandbox') > -1) {
         return true;
     }
-    // upstream
+    // f2
     if (get(window, 'window.fandom.config.environment.env', '').indexOf('sandbox') > -1) {
         return true;
     }
