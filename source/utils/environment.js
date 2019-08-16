@@ -1,3 +1,5 @@
+import { get } from 'lodash';
+
 export function isBrowser() {
     return typeof window !== 'undefined';
 }
@@ -21,4 +23,28 @@ export function getServicesBaseURL() {
 
 export function getEventLoggerBase() {
     return `${getServicesBaseURL()}event-logger`;
+}
+
+export function isSandbox() {
+    if (!isBrowser()) {
+        return false;
+    }
+    // fepo
+    if (get(window, 'window.fandom.environment.environment', '').indexOf('sandbox') > -1) {
+        return true;
+    }
+    // mw
+    if (get(window, 'window.wgTransactionContext.env', '').indexOf('sandbox') > -1) {
+        return true;
+    }
+    // f2
+    if (get(window, 'window.fandom.config.environment.env', '').indexOf('sandbox') > -1) {
+        return true;
+    }
+    // upstream
+    if (get(window, 'window.upstream.env', '').indexOf('sandbox') > -1) {
+        return true;
+    }
+
+    return false;
 }
