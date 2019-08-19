@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import get from 'lodash/get';
 
 export function isBrowser() {
     return typeof window !== 'undefined';
