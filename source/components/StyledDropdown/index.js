@@ -40,7 +40,7 @@ const DropdownComponent = styled.div`
         /* we assume that there will be regular size .wds-list inside the dropdown content */
         padding: ${DROPDOWN_PADDING - LIST_VERTICAL_PADDING}px 0;
         position: absolute;
-        top: 100%;
+        top: 25px;
         transform: translateX(-50%);
         z-index: ${Z_INDEX};
 
@@ -79,7 +79,7 @@ const DropdownComponent = styled.div`
     }
 
     &::before, &::after {
-        bottom: -${BORDER_WIDTH}px;
+        bottom: -7px;
         content: '';
         display: none;
         height: 0;
