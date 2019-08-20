@@ -1,3 +1,4 @@
+import noop from 'lodash/noop';
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -31,6 +32,7 @@ function StyledArticleTagsSelector({
     communityName,
     maxAllowed,
     onAddTag,
+    onOpenSearch,
     onRemoveTag,
     onSearch,
     onSuggestedTag,
@@ -55,6 +57,7 @@ function StyledArticleTagsSelector({
                 maxAllowed={maxAllowed}
                 onAddTag={onAddTag}
                 query={query}
+                onOpenSearch={onOpenSearch}
                 onSearch={searchCallback}
                 searchResults={searchResults}
             />
@@ -75,6 +78,8 @@ StyledArticleTagsSelector.propTypes = {
     maxAllowed: PropTypes.number,
     /** Callback called when clicking on tags in the "Add Tag" dropdown; `(id: string) => void` */
     onAddTag: PropTypes.func.isRequired,
+    /** Callback called when search is opened/shown */
+    onOpenSearch: PropTypes.func,
     /** Callback called when clicking on X in the current tags list; `(id: string) => void` */
     onRemoveTag: PropTypes.func.isRequired,
     /** Callback called when search should be called; `(query: string) => void` */
@@ -94,6 +99,7 @@ StyledArticleTagsSelector.defaultProps = {
     accentColor: COLORS.fandom_aqua,
     className: '',
     maxAllowed: 10,
+    onOpenSearch: noop,
     searchResults: null,
     suggestedTags: null,
     tags: null,
