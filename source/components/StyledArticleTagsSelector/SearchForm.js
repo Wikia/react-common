@@ -79,6 +79,7 @@ function SearchForm({
     maxAllowed,
     maxNumOfTagsAdded,
     onAddTag,
+    onOpenSearch,
     onSearch,
     query,
     searchResults,
@@ -101,7 +102,7 @@ function SearchForm({
                     communityName={communityName}
                     accentColor={accentColor}
                     list={searchResults}
-                    onAddTag={onAddTag}
+                    onAddTag={/* istanbul ignore next */ (id) => { setShowSearch(false); onAddTag(id); }}
                     onChange={onChange}
                     onClose={/* istanbul ignore next */ () => setShowSearch(false)}
                     query={query}
@@ -110,7 +111,7 @@ function SearchForm({
                 <React.Fragment>
                     <AddTagButton
                         accentColor={accentColor}
-                        onClick={/* istanbul ignore next */ () => setShowSearch(true)}
+                        onClick={/* istanbul ignore next */ () => { onOpenSearch(); setShowSearch(true); }}
                         disabled={maxNumOfTagsAdded}
                     >
                         Add Tag
@@ -136,6 +137,7 @@ SearchForm.propTypes = {
     maxAllowed: PropTypes.number.isRequired,
     maxNumOfTagsAdded: PropTypes.bool,
     onAddTag: PropTypes.func,
+    onOpenSearch: PropTypes.func,
     onSearch: PropTypes.func,
     query: PropTypes.string,
     searchResults: PropTypes.arrayOf(TagShape),
@@ -145,6 +147,7 @@ SearchForm.defaultProps = {
     className: '',
     maxNumOfTagsAdded: false,
     onAddTag: noop,
+    onOpenSearch: noop,
     onSearch: noop,
     query: '',
     searchResults: null,
