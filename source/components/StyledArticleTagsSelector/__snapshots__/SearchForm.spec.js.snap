@@ -21,10 +21,12 @@ exports[`SearchForm renders empty 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "SearchForm__Wrapper-hq4lki-3",
-            "isStatic": true,
-            "lastClassName": "iHdFSK",
+            "isStatic": false,
+            "lastClassName": "pTHsN",
             "rules": Array [
-              "display:flex;height:24px;",
+              "display:flex;height:24px;@media ",
+              [Function],
+              "{justify-content:space-between;}",
             ],
           },
           "displayName": "SearchForm__Wrapper",
@@ -40,7 +42,7 @@ exports[`SearchForm renders empty 1`] = `
       forwardedRef={null}
     >
       <div
-        className="SearchForm__Wrapper-hq4lki-3 iHdFSK"
+        className="SearchForm__Wrapper-hq4lki-3 pTHsN"
       >
         <SearchForm__Header>
           <StyledComponent
@@ -243,10 +245,12 @@ exports[`SearchForm renders with props 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "SearchForm__Wrapper-hq4lki-3",
-            "isStatic": true,
-            "lastClassName": "iHdFSK",
+            "isStatic": false,
+            "lastClassName": "pTHsN",
             "rules": Array [
-              "display:flex;height:24px;",
+              "display:flex;height:24px;@media ",
+              [Function],
+              "{justify-content:space-between;}",
             ],
           },
           "displayName": "SearchForm__Wrapper",
@@ -262,7 +266,7 @@ exports[`SearchForm renders with props 1`] = `
       forwardedRef={null}
     >
       <div
-        className="foo SearchForm__Wrapper-hq4lki-3 iHdFSK"
+        className="foo SearchForm__Wrapper-hq4lki-3 pTHsN"
       >
         <SearchForm__Header>
           <StyledComponent
