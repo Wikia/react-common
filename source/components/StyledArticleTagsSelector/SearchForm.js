@@ -39,6 +39,10 @@ const IconAdd = styled(IconAddSmall)`
 const Wrapper = styled.div`
     display: flex;
     height: 24px;
+    
+    @media ${({ theme }) => theme.media.small_down} {
+        justify-content: space-between;
+    }
 `;
 
 const Header = styled.div`
