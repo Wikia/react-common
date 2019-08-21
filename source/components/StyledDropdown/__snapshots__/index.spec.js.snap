@@ -39,7 +39,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -53,7 +53,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -81,7 +81,9 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -150,7 +152,7 @@ exports[`Dropdown level2 renders correctly with default values 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -370,7 +372,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -384,7 +386,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -412,7 +414,9 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -481,7 +485,7 @@ exports[`Dropdown level2 renders correctly with href set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -696,7 +700,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -710,7 +714,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -738,7 +742,9 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -807,7 +813,7 @@ exports[`Dropdown level2 renders correctly with isActive set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-active is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="is-active is-level-2 StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1022,7 +1028,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1036,7 +1042,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -1064,7 +1070,9 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -1133,7 +1141,7 @@ exports[`Dropdown level2 renders correctly with isStickedToParent set 1`] = `
       onMouseLeave={[Function]}
     >
       <li
-        className="is-level-2 is-sticked-to-parent StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="is-level-2 is-sticked-to-parent StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1348,7 +1356,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1362,7 +1370,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -1390,7 +1398,9 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -1459,7 +1469,7 @@ exports[`Dropdown renders correctly with DropdownToggle and children 1`] = `
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1691,7 +1701,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -1705,7 +1715,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -1733,7 +1743,9 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -1802,7 +1814,7 @@ exports[`Dropdown renders correctly with DropdownToggle, toggleIconName and chil
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -2033,7 +2045,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledDropdown__DropdownComponent-sc-1w57ze8-0",
             "isStatic": false,
-            "lastClassName": "BYEmZ",
+            "lastClassName": "jWKOuX",
             "rules": Array [
               "display:inline-block;position:relative;",
               ".DropdownToggle-sc-1p907bm-1",
@@ -2047,7 +2059,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
               [Function],
               ";display:none;left:50%;min-width:70%;padding:",
               "7",
-              "px 0;position:absolute;top:25px;transform:translateX(-50%);z-index:",
+              "px 0;position:absolute;top:100%;transform:translateX(-50%);z-index:",
               "1",
               ";",
               "border-radius:",
@@ -2075,7 +2087,9 @@ exports[`Dropdown renders correctly with default values 1`] = `
               ";margin:-29px 0 0;}",
               "}}:not(.scrollable-list) > a{",
               ".StyledList-sc-1t1k18i-0",
-              "{position:relative;}}}&::before,&::after{bottom:-7px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
+              "{position:relative;}}}&::before,&::after{bottom:-",
+              "1",
+              "px;content:'';display:none;height:0;left:50%;pointer-events:none;position:absolute;width:0;z-index:",
               "2",
               ";}&::after{border:8px solid transparent;border-bottom-color:",
               [Function],
@@ -2144,7 +2158,7 @@ exports[`Dropdown renders correctly with default values 1`] = `
       onMouseLeave={[Function]}
     >
       <div
-        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 BYEmZ"
+        className="StyledDropdown__DropdownComponent-sc-1w57ze8-0 jWKOuX"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
