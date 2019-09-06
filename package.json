@@ -86,7 +86,7 @@
     "path": "^0.12.7",
     "postcss-modules": "^1.4.1",
     "raw-loader": "^1.0.0",
-    "react-docgen": "3.0.0",
+    "react-docgen": "4.1.1",
     "react-styleguidist": "^8.0.6",
     "react-svg-loader": "^2.1.0",
     "react-test-renderer": "^16.8.3",
