@@ -31,7 +31,6 @@ class Search extends React.Component {
         this.onBlur = this.onBlur.bind(this);
         this.onFocus = this.onFocus.bind(this);
         this.onKeyDown = this.onKeyDown.bind(this);
-        this.onSearchSuggestionClick = this.onSearchSuggestionClick.bind(this);
         this.requestSuggestionsFromAPI = debounce(this.requestSuggestionsFromAPI.bind(this), DEBOUNCE_DURATION);
     }
 
@@ -367,7 +366,7 @@ class Search extends React.Component {
                 <li
                     key={suggestion}
                     className={wrapperClassName}
-                    onClick={this.onSearchSuggestionClick}
+                    onClick={this.onSearchSuggestionClick.bind(this, index)}
                     onMouseEnter={this.onSuggestionHover.bind(this, index)}
                 >
                     <a
