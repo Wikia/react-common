@@ -279,16 +279,25 @@ describe('onSearchSuggestionClick', () => {
         }).setState(stateMock);
         const instance = wrapper.instance();
         const event = {
-            preventDefault: () => {},
+            preventDefault: jest.fn(),
         };
 
         instance.onSearchClose = onSearchCloseMock;
+
+        instance.onSearchSuggestionClick(1);
+
+        expect(onSearchSuggestionChosenMock).toBeCalledWith(suggestionsMock[1], suggestionsMock, suggestionIdMock);
+        expect(onSearchCloseMock).toBeCalledWith();
+        expect(trackMock).toBeCalledWith(expect.any(Object));
+        expect(event.preventDefault).not.toBeCalled();
 
         instance.onSearchSuggestionClick(1, event);
 
         expect(onSearchSuggestionChosenMock).toBeCalledWith(suggestionsMock[1], suggestionsMock, suggestionIdMock);
         expect(onSearchCloseMock).toBeCalledWith();
         expect(trackMock).toBeCalledWith(expect.any(Object));
+        expect(event.preventDefault).toBeCalled();
+
     });
 });
 
