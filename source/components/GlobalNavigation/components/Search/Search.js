@@ -129,7 +129,9 @@ class Search extends React.Component {
             label: 'search-open-suggestion-link',
         });
 
-        event.preventDefault();
+        if (event) {
+            event.preventDefault();
+        }
     }
 
     onSearchActivation() {

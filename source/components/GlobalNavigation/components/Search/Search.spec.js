@@ -278,10 +278,13 @@ describe('onSearchSuggestionClick', () => {
             track: trackMock,
         }).setState(stateMock);
         const instance = wrapper.instance();
+        const event = {
+            preventDefault: () => {},
+        };
 
         instance.onSearchClose = onSearchCloseMock;
 
-        instance.onSearchSuggestionClick(1);
+        instance.onSearchSuggestionClick(1, event);
 
         expect(onSearchSuggestionChosenMock).toBeCalledWith(suggestionsMock[1], suggestionsMock, suggestionIdMock);
         expect(onSearchCloseMock).toBeCalledWith();
