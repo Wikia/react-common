@@ -115,7 +115,7 @@ class Search extends React.Component {
         }
     }
 
-    onSearchSuggestionClick(index) {
+    onSearchSuggestionClick(index, event) {
         const { track, onSearchSuggestionChosen } = this.props;
         const { suggestions, suggestionId } = this.state;
 
@@ -129,7 +129,7 @@ class Search extends React.Component {
             label: 'search-open-suggestion-link',
         });
 
-        return false;
+        event.preventDefault();
     }
 
     onSearchActivation() {
