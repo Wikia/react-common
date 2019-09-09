@@ -297,7 +297,6 @@ describe('onSearchSuggestionClick', () => {
         expect(onSearchCloseMock).toBeCalledWith();
         expect(trackMock).toBeCalledWith(expect.any(Object));
         expect(event.preventDefault).toBeCalled();
-
     });
 });
 
