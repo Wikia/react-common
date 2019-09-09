@@ -128,6 +128,8 @@ class Search extends React.Component {
             category: 'navigation',
             label: 'search-open-suggestion-link',
         });
+
+        return false;
     }
 
     onSearchActivation() {
