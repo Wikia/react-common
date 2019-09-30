@@ -19,7 +19,7 @@ const LinkImage = ({ model }) => {
 
     return (
         <a href={model.href} className="wds-global-footer__link" data-tracking-label={model.tracking_label}>
-            <Svg className="wds-global-footer__image wds-icon" />
+            <Svg className="wds-global-footer__link-image wds-icon" />
         </a>
     );
 };

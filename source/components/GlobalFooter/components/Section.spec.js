@@ -7,7 +7,6 @@ test('Section with links only renders correctly', () => {
     const component = renderer.create(
         <Section
             name="site_overview"
-            parentName="wikia"
             model={{
                 links: [
                     {
@@ -54,7 +53,6 @@ test('Section with header renders correctly', () => {
     const component = renderer.create(
         <Section
             name="site_overview"
-            parentName="wikia"
             model={{
                 header: {
                     type: 'line-text',
@@ -108,7 +106,6 @@ test('Section with description renders correctly', () => {
     const component = renderer.create(
         <Section
             name="site_overview"
-            parentName="wikia"
             model={{
                 description: {
                     type: 'translatable-text',
@@ -135,7 +132,6 @@ test('Section with link-image renders correctly', () => {
     const component = renderer.create(
         <Section
             name="site_overview"
-            parentName="wikia"
             model={{
                 links: [
                     {
@@ -164,7 +160,6 @@ test('Section with link-branded renders correctly', () => {
     const component = renderer.create(
         <Section
             name="site_overview"
-            parentName="wikia"
             model={{
                 links: [
                     {
