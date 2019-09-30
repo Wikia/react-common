@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image with caption renders correctly 1`] = `
+<figure
+  className="wds-global-footer__image"
+>
+  <div
+    className="wds-icon"
+  />
+  <figcaption
+    className="wds-global-footer__image-caption"
+  >
+    global-footer-community-apps-link-app-store
+  </figcaption>
+</figure>
+`;
+
+exports[`Image without caption renders correctly 1`] = `
+<figure
+  className="wds-global-footer__image"
+>
+  <div
+    className="wds-icon"
+  />
+</figure>
+`;

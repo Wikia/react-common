@@ -11,19 +11,17 @@ const svgMap = {
     'wds-company-store-logo-ddb': StoreLogoDdb,
 };
 
-const Image = ({ image }) => {
-    const Svg = svgMap[image.name];
+const Image = ({ name, caption }) => {
+    const Svg = svgMap[name];
     const [t] = useTranslation(useContext(I18nNamespaceContext));
-
-    console.log(image);
 
     return (
         <figure className="wds-global-footer__image">
             <Svg className="wds-icon" />
-            {image.caption
+            {caption
                 && (
                     <figcaption className="wds-global-footer__image-caption">
-                        {t(image.caption.key)}
+                        {t(caption.key)}
                     </figcaption>
                 )
             }
@@ -32,6 +30,12 @@ const Image = ({ image }) => {
 };
 
 Image.propTypes = {
-    image: PropTypes.shape().isRequired,
+    caption: PropTypes.shape(),
+    name: PropTypes.string.isRequired,
 };
+
+Image.defaultProps = {
+    caption: null,
+};
+
 export default Image;

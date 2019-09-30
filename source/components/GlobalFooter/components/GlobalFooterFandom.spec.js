@@ -14,7 +14,7 @@ test('GlobalFooterFandom renders correctly', () => {
                 href: 'http://fandom.wikia.com',
                 title: {
                     type: 'text',
-                    value: 'Fandom powered by Wikia',
+                    value: 'Fandom',
                 },
             },
             company_overview: {
@@ -22,7 +22,7 @@ test('GlobalFooterFandom renders correctly', () => {
                     type: 'line-text',
                     title: {
                         type: 'translatable-text',
-                        key: 'Overview',
+                        key: 'global-footer-company-overview-header',
                     },
                 },
                 links: [
@@ -30,7 +30,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'About',
+                            key: 'global-footer-company-overview-link-about',
                         },
                         href: 'http://www.wikia.com/about',
                     },
@@ -38,7 +38,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Careers',
+                            key: 'global-footer-company-overview-link-careers',
                         },
                         href: 'https://careers.wikia.com',
                     },
@@ -46,7 +46,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Press',
+                            key: 'global-footer-company-overview-link-press',
                         },
                         href: 'http://fandom.wikia.com/press',
                     },
@@ -54,19 +54,15 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Contact',
+                            key: 'global-footer-company-overview-link-contact',
                         },
                         href: 'http://fandom.wikia.com/contact',
                     },
-                ],
-            },
-            site_overview: {
-                links: [
                     {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Terms of Use',
+                            key: 'global-footer-site-overview-link-terms-of-use',
                         },
                         href: 'http://www.wikia.com/Terms_of_use',
                     },
@@ -74,7 +70,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Privacy Policy',
+                            key: 'global-footer-site-overview-link-privacy-policy',
                         },
                         href: 'http://www.wikia.com/Privacy_Policy',
                     },
@@ -82,7 +78,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Global Sitemap',
+                            key: 'global-footer-site-overview-link-global-sitemap',
                         },
                         href: 'http://www.wikia.com/Sitemap',
                     },
@@ -90,49 +86,34 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Local Sitemap',
+                            key: 'global-footer-site-overview-link-local-sitemap',
                         },
                         href: '/wiki/Local_Sitemap',
                     },
                 ],
             },
-            create_wiki: {
-                description: {
-                    type: 'translatable-text',
-                    key: "Can't find a community you love? Create your own and start something epic.",
-                },
-                links: [
-                    {
-                        type: 'link-text',
-                        title: {
-                            type: 'translatable-text',
-                            key: 'Start a wiki',
-                        },
-                        href: 'http://www.wikia.com/Special:CreateNewWiki',
-                    },
-                ],
-            },
-            community_apps: {
+            fandom_apps: {
                 header: {
                     type: 'line-text',
                     title: {
                         type: 'translatable-text',
-                        key: 'Community Apps',
+                        key: 'global-footer-community-apps-header',
                     },
                 },
                 description: {
                     type: 'translatable-text',
-                    key: 'Take your favorite fandoms with you and never miss a beat.',
+                    key: 'global-footer-community-apps-description',
+                },
+            },
+            fandom_stores: {
+                image: {
+                    name: 'wds-company-store-logo-fandom',
                 },
                 links: [
                     {
                         type: 'link-image',
                         'image-data': {
                             name: 'wds-company-store-appstore',
-                        },
-                        title: {
-                            type: 'translatable-text',
-                            key: 'global-footer-community-apps-link-app-store',
                         },
                         href: 'https://itunes.apple.com/developer/wikia-inc./id422467077',
                     },
@@ -141,11 +122,32 @@ test('GlobalFooterFandom renders correctly', () => {
                         'image-data': {
                             name: 'wds-company-store-googleplay',
                         },
-                        title: {
-                            type: 'translatable-text',
-                            key: 'global-footer-community-apps-link-google-play',
-                        },
                         href: 'https://play.google.com/store/apps/developer?id=Wikia,+Inc.',
+                    },
+                ],
+            },
+            ddb_stores: {
+                image: {
+                    name: 'wds-company-store-logo-ddb',
+                    caption: {
+                        type: 'text',
+                        key: 'D&D Beyond',
+                    },
+                },
+                links: [
+                    {
+                        type: 'link-image',
+                        'image-data': {
+                            name: 'wds-company-store-appstore',
+                        },
+                        href: 'https://apps.apple.com/us/app/d-d-beyond/id1263629972',
+                    },
+                    {
+                        type: 'link-image',
+                        'image-data': {
+                            name: 'wds-company-store-googleplay',
+                        },
+                        href: 'https://play.google.com/store/apps/details?id=com.curse.dndbeyond&hl=en',
                     },
                 ],
             },
@@ -154,7 +156,7 @@ test('GlobalFooterFandom renders correctly', () => {
                     type: 'line-text',
                     title: {
                         type: 'translatable-text',
-                        key: 'Advertise',
+                        key: 'global-footer-advertise-header',
                     },
                 },
                 links: [
@@ -162,7 +164,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Media Kit',
+                            key: 'global-footer-advertise-link-media-kit',
                         },
                         href: 'http://fandom.wikia.com/mediakit',
                     },
@@ -170,7 +172,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Contact',
+                            key: 'global-footer-advertise-link-contact',
                         },
                         href: 'http://fandom.wikia.com/mediakit#contact',
                     },
@@ -211,40 +213,44 @@ test('GlobalFooterFandom renders correctly', () => {
                 },
                 links: [
                     {
-                        type: 'link-branded',
-                        brand: 'games',
+                        type: 'link-text',
                         title: {
-                            type: 'translatable-text',
-                            key: 'Games',
+                            type: 'text',
+                            key: 'Fandom',
                         },
-                        href: 'http://fandom.wikia.com/games',
+                        href: 'https://www.fandom.com/',
                     },
                     {
-                        type: 'link-branded',
-                        brand: 'movies',
+                        type: 'link-text',
                         title: {
-                            type: 'translatable-text',
-                            key: 'Movies',
+                            type: 'text',
+                            key: 'Gamepedia',
                         },
-                        href: 'http://fandom.wikia.com/movies',
+                        href: 'https://www.gamepedia.com/',
                     },
                     {
-                        type: 'link-branded',
-                        brand: 'tv',
+                        type: 'link-text',
                         title: {
-                            type: 'translatable-text',
-                            key: 'TV',
+                            type: 'text',
+                            key: 'D&D Beyond',
                         },
-                        href: 'http://fandom.wikia.com/tv',
+                        href: 'https://www.dndbeyond.com/',
                     },
                     {
-                        type: 'link-branded',
-                        brand: 'explore-wikis',
+                        type: 'link-text',
                         title: {
-                            type: 'translatable-text',
-                            key: 'global-footer-fandom-overview-link-explore-wikis',
+                            type: 'text',
+                            key: 'Muthead',
                         },
-                        href: 'http://fandom.wikia.com/explore',
+                        href: 'https://www.muthead.com/',
+                    },
+                    {
+                        type: 'link-text',
+                        title: {
+                            type: 'text',
+                            key: 'Futhead',
+                        },
+                        href: 'https://www.futhead.com/',
                     },
                 ],
             },
@@ -253,7 +259,7 @@ test('GlobalFooterFandom renders correctly', () => {
                     type: 'line-text',
                     title: {
                         type: 'translatable-text',
-                        key: 'Follow Us',
+                        key: 'global-footer-follow-us-header',
                     },
                 },
                 links: [
@@ -296,7 +302,7 @@ test('GlobalFooterFandom renders correctly', () => {
                             type: 'translatable-text',
                             key: 'global-footer-follow-us-link-youtube',
                         },
-                        href: 'https://www.youtube.com/channel/UC988qTQImTjO7lUdPfYabgQ',
+                        href: 'https://www.youtube.com/fandomentertainment',
                         tracking_label: 'follow-us.youtube',
                     },
                     {
@@ -334,7 +340,7 @@ test('GlobalFooterFandom renders correctly', () => {
                     type: 'line-text',
                     title: {
                         type: 'translatable-text',
-                        key: 'Community',
+                        key: 'global-footer-community-header',
                     },
                 },
                 links: [
@@ -342,7 +348,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Community Central',
+                            key: 'global-footer-community-link-community-central',
                         },
                         href: 'http://community.wikia.com/wiki/Community_Central',
                     },
@@ -350,7 +356,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Support',
+                            key: 'global-footer-community-link-support',
                         },
                         href: 'http://community.wikia.com/wiki/Special:Contact',
                     },
@@ -358,23 +364,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'translatable-text',
-                            key: 'Fan Contributor Program',
-                        },
-                        href: 'http://fandom.wikia.com/fan-contributor',
-                    },
-                    {
-                        type: 'link-text',
-                        title: {
-                            type: 'translatable-text',
-                            key: 'WAM Score',
-                        },
-                        href: 'http://www.wikia.com/WAM',
-                    },
-                    {
-                        type: 'link-text',
-                        title: {
-                            type: 'translatable-text',
-                            key: 'Help',
+                            key: 'global-footer-community-link-help',
                         },
                         href: 'http://community.wikia.com/wiki/Help:Contents',
                     },

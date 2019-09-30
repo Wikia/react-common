@@ -3,7 +3,7 @@ Defaults:
 <GlobalFooter 
     i18nNamespace="designSystem"
     model={{
-           "header": {
+       "header": {
             "type": "link-image",
             "image-data": {
                 "name": "wds-company-logo-fandom-white"

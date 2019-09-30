@@ -30,7 +30,7 @@ const Section = ({ model, name }) => {
             {title && <h3 className="wds-global-footer__section-header">{t(title.key)}</h3>}
             {description && <span className="wds-global-footer__section-description">{t(description.key)}</span>}
 
-            {image && <Image image={image} alt={image.name} />}
+            {image && <Image name={image.name} caption={image.caption} alt={image.name} />}
 
             {links && (
                 <ul className="wds-global-footer__links-list">
