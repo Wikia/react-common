@@ -126,7 +126,10 @@ Defaults:
         "ddb_stores": {
             "image": {
                 "name": "wds-company-store-logo-ddb",
-                "caption": "D&D Beyond"
+                "caption": {
+                    "type": "text",
+                    "key": "D&D Beyond"
+                }
             },
             "links": [
                 {

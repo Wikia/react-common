@@ -23,7 +23,7 @@ const Image = ({ image }) => {
             {image.caption
                 && (
                     <figcaption className="wds-global-footer__image-caption">
-                        {t(image.caption)}
+                        {t(image.caption.key)}
                     </figcaption>
                 )
             }
