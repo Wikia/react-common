@@ -14,7 +14,7 @@ Defaults:
                 "value": "Fandom"
             }
         },
-        "company_overview": {
+        "site_overview": {
             "header": {
                 "type": "line-text",
                 "title": {

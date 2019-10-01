@@ -19,7 +19,7 @@ test('GlobalFooter renders correctly for fandom.com sites', () => {
                         value: 'Fandom',
                     },
                 },
-                company_overview: {
+                site_overview: {
                     header: {
                         type: 'line-text',
                         title: {

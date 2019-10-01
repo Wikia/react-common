@@ -27,7 +27,7 @@ const GlobalFooterFandom = ({ model }) => {
                     <Section model={model.follow_us} name="follow-us" />
                 </div>
                 <div className="wds-global-footer__column">
-                    <Section model={model.company_overview} name="company-overview" />
+                    <Section model={model.site_overview} name="site-overview" />
                 </div>
                 <div className="wds-global-footer__column">
                     <Section model={model.community} name="community" />

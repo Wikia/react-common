@@ -17,7 +17,7 @@ test('BottomBar renders correctly', () => {
                     value: 'Fandom powered by Wikia',
                 },
             },
-            company_overview: {
+            site_overview: {
                 header: {
                     type: 'line-text',
                     title: {

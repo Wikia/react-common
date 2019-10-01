@@ -168,7 +168,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
       className="wds-global-footer__column"
     >
       <section
-        className="wds-global-footer__section wds-is-company-overview"
+        className="wds-global-footer__section wds-is-site-overview"
       >
         <h3
           className="wds-global-footer__section-header"
