@@ -62,7 +62,7 @@ function createLowResolutionSrc(src) {
 const LIMBO_IMAGE = '';
 
 const StyledImage = ({ src, srcSet, disableLazy, alt, className, ...rest }) => {
-    const [isLimbo, setIsLimbo] = useState(false);
+    const [isLimbo, setIsLimbo] = React.useState(false);
     const { loadStatus } = usePreloadedImage(src, srcSet);
 
     // limbo is intended to remove the image when the src changes but the image is not yet loaded.
