@@ -131,7 +131,7 @@ test('GlobalFooterFandom renders correctly', () => {
                     name: 'wds-company-store-logo-ddb',
                     caption: {
                         type: 'text',
-                        key: 'D&D Beyond',
+                        value: 'D&D Beyond',
                     },
                 },
                 links: [
@@ -216,7 +216,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'text',
-                            key: 'Fandom',
+                            value: 'Fandom',
                         },
                         href: 'https://www.fandom.com/',
                     },
@@ -224,7 +224,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'text',
-                            key: 'Gamepedia',
+                            value: 'Gamepedia',
                         },
                         href: 'https://www.gamepedia.com/',
                     },
@@ -232,7 +232,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'text',
-                            key: 'D&D Beyond',
+                            value: 'D&D Beyond',
                         },
                         href: 'https://www.dndbeyond.com/',
                     },
@@ -240,7 +240,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'text',
-                            key: 'Muthead',
+                            value: 'Muthead',
                         },
                         href: 'https://www.muthead.com/',
                     },
@@ -248,7 +248,7 @@ test('GlobalFooterFandom renders correctly', () => {
                         type: 'link-text',
                         title: {
                             type: 'text',
-                            key: 'Futhead',
+                            value: 'Futhead',
                         },
                         href: 'https://www.futhead.com/',
                     },

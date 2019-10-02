@@ -128,7 +128,7 @@ Defaults:
                 "name": "wds-company-store-logo-ddb",
                 "caption": {
                     "type": "text",
-                    "key": "D&D Beyond"
+                    "value": "D&D Beyond"
                 }
             },
             "links": [
@@ -213,7 +213,7 @@ Defaults:
                     "type": "link-text",
                     "title": {
                         "type": "text",
-                        "key": "Fandom"
+                        "value": "Fandom"
                     },
                     "href": "https:\/\/www.fandom.com\/"
                 },
@@ -221,7 +221,7 @@ Defaults:
                     "type": "link-text",
                     "title": {
                         "type": "text",
-                        "key": "Gamepedia"
+                        "value": "Gamepedia"
                     },
                     "href": "https:\/\/www.gamepedia.com\/"
                 },
@@ -229,7 +229,7 @@ Defaults:
                     "type": "link-text",
                     "title": {
                         "type": "text",
-                        "key": "D&D Beyond"
+                        "value": "D&D Beyond"
                     },
                     "href": "https:\/\/www.dndbeyond.com\/"
                 },
@@ -237,7 +237,7 @@ Defaults:
                     "type": "link-text",
                     "title": {
                         "type": "text",
-                        "key": "Muthead"
+                        "value": "Muthead"
                     },
                     "href": "https:\/\/www.muthead.com\/"
                 },
@@ -245,7 +245,7 @@ Defaults:
                     "type": "link-text",
                     "title": {
                         "type": "text",
-                        "key": "Futhead"
+                        "value": "Futhead"
                     },
                     "href": "https:\/\/www.futhead.com\/"
                 }

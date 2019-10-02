@@ -22,6 +22,7 @@ const Image = ({ name, caption }) => {
                 && (
                     <figcaption className="wds-global-footer__image-caption">
                         {t(caption.key)}
+                        {caption.type === 'translatable-text' ? t(caption.key) : caption.value}
                     </figcaption>
                 )
             }
