@@ -71,6 +71,7 @@ const StyledImage = ({ src, srcSet, disableLazy, alt, className, ...rest }) => {
     }, [src]);
     // this is odd but it allows us to quickly flush the src when an image src is swapped but react is able to use
     // the same DOM element. The other option would be to use keys but then react can't be as efficient.
+    // todo maybe wrap in a timeout to make sure it doesn't get batched
     setIsLimbo(false);
 
     // Show low resolution image
