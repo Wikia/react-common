@@ -25,7 +25,7 @@ function usePreloadedImage(src, srcSet) {
     };
 
     React.useEffect(() => {
-        if (requestId) {
+        if (requestId !== null) {
             cancelAnimationFrame(requestId);
         }
 
