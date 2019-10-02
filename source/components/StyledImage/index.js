@@ -80,9 +80,7 @@ const StyledImage = ({ src, srcSet, disableLazy, alt, className, ...rest }) => {
     }
 
     return (
-        <React.Fragment>
-            <img className={className} src={src} srcSet={isLimbo ? LIMBO_IMAGE : srcSet} alt={alt} {...rest} />
-        </React.Fragment>
+        <img className={className} src={src} srcSet={isLimbo ? LIMBO_IMAGE : srcSet} alt={alt} {...rest} />
     );
 };
 
