@@ -38,7 +38,7 @@
     "classnames": "^2.2.6",
     "color": "^3.1.2",
     "date-fns": "^1.29.0",
-    "design-system": "git://github.com/Wikia/design-system.git#66d572aad4622b20ec028f55cb05565ee85b0756",
+    "design-system": "git://github.com/Wikia/design-system.git#dd4c9738abaee2b41aecd8905090402d01ee1a1b",
     "i18next": "^14.0.1",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",
