@@ -7,6 +7,7 @@ import I18nNamespaceContext from '../context/I18nNamespaceContext';
 import LinkImage from './LinkImage';
 import LinkBranded from './LinkBranded';
 import LinkText from './LinkText';
+import Image from './Image';
 
 const renderLink = (type, model) => {
     switch (type) {
@@ -19,26 +20,28 @@ const renderLink = (type, model) => {
     }
 };
 
-const Section = ({ model, name, parentName }) => {
+const Section = ({ model, name }) => {
     const title = model.header ? model.header.title : '';
-    const { description } = model;
-    const { links } = model;
+    const { description, links, image } = model;
     const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
-        <section className={`wds-global-footer__${parentName}-section wds-is-${name}`}>
+        <section className={`wds-global-footer__section wds-is-${name}`}>
             {title && <h3 className="wds-global-footer__section-header">{t(title.key)}</h3>}
             {description && <span className="wds-global-footer__section-description">{t(description.key)}</span>}
 
-            <ul className="wds-global-footer__links-list">
-                {links.map((link, index) => (
-                    // eslint-disable-next-line react/no-array-index-key
-                    <li className="wds-global-footer__links-list-item" key={index}>
-                        {renderLink(link.type, link)}
-                    </li>
-                ))}
+            {image && <Image name={image.name} caption={image.caption} alt={image.name} />}
 
-            </ul>
+            {links && (
+                <ul className="wds-global-footer__links-list">
+                    {links.map((link, index) => (
+                    // eslint-disable-next-line react/no-array-index-key
+                        <li className="wds-global-footer__links-list-item" key={index}>
+                            {renderLink(link.type, link)}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </section>
     );
 };
@@ -46,7 +49,6 @@ const Section = ({ model, name, parentName }) => {
 Section.propTypes = {
     model: PropTypes.shape().isRequired,
     name: PropTypes.string.isRequired,
-    parentName: PropTypes.string.isRequired,
 };
 
 export default Section;

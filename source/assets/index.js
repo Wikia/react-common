@@ -13,3 +13,5 @@ export { default as LogoWikiaOrg } from './LogoWikiaOrg';
 export { default as LogoWikia } from './LogoWikia';
 export { default as StoreAppstore } from './StoreAppstore';
 export { default as StoreGoogleplay } from './StoreGoogleplay';
+export { default as StoreLogoDdb } from './StoreLogoDdb';
+export { default as StoreLogoFandom } from './StoreLogoFandom';

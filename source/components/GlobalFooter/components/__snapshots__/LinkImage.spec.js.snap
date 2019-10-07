@@ -6,7 +6,7 @@ exports[`LinkImage renders correctly 1`] = `
   href="https://itunes.apple.com/developer/wikia-inc./id422467077"
 >
   <div
-    className="wds-global-footer__image wds-icon"
+    className="wds-global-footer__link-image wds-icon"
   />
 </a>
 `;

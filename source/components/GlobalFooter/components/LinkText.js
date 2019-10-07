@@ -13,7 +13,7 @@ const LinkText = ({ model }) => {
             className="wds-global-footer__link"
             data-tracking-label={model.tracking_label}
         >
-            {t(model.title.key)}
+            {model.title.type === 'translatable-text' ? t(model.title.key) : model.title.value}
         </a>
     );
 };

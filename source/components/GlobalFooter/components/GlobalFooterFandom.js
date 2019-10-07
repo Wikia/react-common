@@ -22,49 +22,21 @@ const GlobalFooterFandom = ({ model }) => {
             )
             }
             <div className="wds-global-footer__main">
-                <div className="wds-global-footer__fandom-sections">
-                    <Section
-                        model={model.fandom_overview}
-                        name="fandom-overview"
-                        parentName="fandom"
-                    />
-                    <Section
-                        model={model.follow_us}
-                        name="follow-us"
-                        parentName="fandom"
-                    />
+                <div className="wds-global-footer__column">
+                    <Section model={model.fandom_overview} name="fandom-overview" />
+                    <Section model={model.follow_us} name="follow-us" />
                 </div>
-                <div className="wds-global-footer__wikia-sections">
-                    <Section
-                        model={model.company_overview}
-                        name="company-overview"
-                        parentName="wikia"
-                    />
-                    <Section
-                        model={model.site_overview}
-                        name="site-overview"
-                        parentName="wikia"
-                    />
-                    <Section
-                        model={model.community}
-                        name="community"
-                        parentName="wikia"
-                    />
-                    <Section
-                        model={model.create_wiki}
-                        name="create-wiki"
-                        parentName="wikia"
-                    />
-                    <Section
-                        model={model.community_apps}
-                        name="community-apps"
-                        parentName="wikia"
-                    />
-                    <Section
-                        model={model.advertise}
-                        name="advertise"
-                        parentName="wikia"
-                    />
+                <div className="wds-global-footer__column">
+                    <Section model={model.site_overview} name="site-overview" />
+                </div>
+                <div className="wds-global-footer__column">
+                    <Section model={model.community} name="community" />
+                    <Section model={model.advertise} name="advertise" />
+                </div>
+                <div className="wds-global-footer__column">
+                    <Section model={model.fandom_apps} name="fandom-apps" />
+                    <Section model={model.fandom_stores} name="fandom-stores" />
+                    <Section model={model.ddb_stores} name="ddb-stores" />
                 </div>
             </div>
             <BottomBar model={model} />

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image with non-translated caption renders correctly 1`] = `
+<figure
+  className="wds-global-footer__image"
+>
+  <div
+    className="wds-icon"
+  />
+  <figcaption
+    className="wds-global-footer__image-caption"
+  >
+    Whatever
+  </figcaption>
+</figure>
+`;
+
+exports[`Image with translatable caption renders correctly 1`] = `
+<figure
+  className="wds-global-footer__image"
+>
+  <div
+    className="wds-icon"
+  />
+  <figcaption
+    className="wds-global-footer__image-caption"
+  >
+    global-footer-community-apps-link-app-store
+    global-footer-community-apps-link-app-store
+  </figcaption>
+</figure>
+`;
+
+exports[`Image without caption renders correctly 1`] = `
+<figure
+  className="wds-global-footer__image"
+>
+  <div
+    className="wds-icon"
+  />
+</figure>
+`;

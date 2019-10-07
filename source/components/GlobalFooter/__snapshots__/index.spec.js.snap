@@ -9,7 +9,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
   >
     <a
       href="http://fandom.wikia.com"
-      title="Fandom powered by Wikia"
+      title="Fandom"
     >
       <div
         className="wds-global-footer__header-logo"
@@ -20,10 +20,10 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
     className="wds-global-footer__main"
   >
     <div
-      className="wds-global-footer__fandom-sections"
+      className="wds-global-footer__column"
     >
       <section
-        className="wds-global-footer__fandom-section wds-is-fandom-overview"
+        className="wds-global-footer__section wds-is-fandom-overview"
       >
         <h3
           className="wds-global-footer__section-header"
@@ -38,11 +38,9 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
           >
             <a
               className="wds-global-footer__link"
-              href="http://fandom.wikia.com/games"
+              href="https://www.fandom.com/"
             >
-              <div>
-                Games
-              </div>
+              Fandom
             </a>
           </li>
           <li
@@ -50,11 +48,9 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
           >
             <a
               className="wds-global-footer__link"
-              href="http://fandom.wikia.com/movies"
+              href="https://www.gamepedia.com/"
             >
-              <div>
-                Movies
-              </div>
+              Gamepedia
             </a>
           </li>
           <li
@@ -62,11 +58,9 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
           >
             <a
               className="wds-global-footer__link"
-              href="http://fandom.wikia.com/tv"
+              href="https://www.dndbeyond.com/"
             >
-              <div>
-                TV
-              </div>
+              D&D Beyond
             </a>
           </li>
           <li
@@ -74,22 +68,30 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
           >
             <a
               className="wds-global-footer__link"
-              href="http://fandom.wikia.com/explore"
+              href="https://www.muthead.com/"
             >
-              <div>
-                global-footer-fandom-overview-link-explore-wikis
-              </div>
+              Muthead
+            </a>
+          </li>
+          <li
+            className="wds-global-footer__links-list-item"
+          >
+            <a
+              className="wds-global-footer__link"
+              href="https://www.futhead.com/"
+            >
+              Futhead
             </a>
           </li>
         </ul>
       </section>
       <section
-        className="wds-global-footer__fandom-section wds-is-follow-us"
+        className="wds-global-footer__section wds-is-follow-us"
       >
         <h3
           className="wds-global-footer__section-header"
         >
-          Follow Us
+          global-footer-follow-us-header
         </h3>
         <ul
           className="wds-global-footer__links-list"
@@ -103,7 +105,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               href="#"
             >
               <div
-                className="wds-global-footer__image wds-icon"
+                className="wds-global-footer__link-image wds-icon"
               />
             </a>
           </li>
@@ -116,7 +118,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               href="https://twitter.com/getfandom"
             >
               <div
-                className="wds-global-footer__image wds-icon"
+                className="wds-global-footer__link-image wds-icon"
               />
             </a>
           </li>
@@ -126,10 +128,10 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
             <a
               className="wds-global-footer__link"
               data-tracking-label="follow-us.youtube"
-              href="https://www.youtube.com/channel/UC988qTQImTjO7lUdPfYabgQ"
+              href="https://www.youtube.com/fandomentertainment"
             >
               <div
-                className="wds-global-footer__image wds-icon"
+                className="wds-global-footer__link-image wds-icon"
               />
             </a>
           </li>
@@ -142,7 +144,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               href="https://www.instagram.com/getfandom/"
             >
               <div
-                className="wds-global-footer__image wds-icon"
+                className="wds-global-footer__link-image wds-icon"
               />
             </a>
           </li>
@@ -155,7 +157,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               href="https://www.linkedin.com/company/157252"
             >
               <div
-                className="wds-global-footer__image wds-icon"
+                className="wds-global-footer__link-image wds-icon"
               />
             </a>
           </li>
@@ -163,15 +165,15 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
       </section>
     </div>
     <div
-      className="wds-global-footer__wikia-sections"
+      className="wds-global-footer__column"
     >
       <section
-        className="wds-global-footer__wikia-section wds-is-company-overview"
+        className="wds-global-footer__section wds-is-site-overview"
       >
         <h3
           className="wds-global-footer__section-header"
         >
-          Overview
+          global-footer-company-overview-header
         </h3>
         <ul
           className="wds-global-footer__links-list"
@@ -183,7 +185,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://www.wikia.com/about"
             >
-              About
+              global-footer-company-overview-link-about
             </a>
           </li>
           <li
@@ -193,7 +195,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="https://careers.wikia.com"
             >
-              Careers
+              global-footer-company-overview-link-careers
             </a>
           </li>
           <li
@@ -203,7 +205,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://fandom.wikia.com/press"
             >
-              Press
+              global-footer-company-overview-link-press
             </a>
           </li>
           <li
@@ -213,18 +215,9 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://fandom.wikia.com/contact"
             >
-              Contact
+              global-footer-company-overview-link-contact
             </a>
           </li>
-        </ul>
-      </section>
-      <section
-        className="wds-global-footer__wikia-section wds-is-site-overview"
-      >
-        
-        <ul
-          className="wds-global-footer__links-list"
-        >
           <li
             className="wds-global-footer__links-list-item"
           >
@@ -232,7 +225,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://www.wikia.com/Terms_of_use"
             >
-              Terms of Use
+              global-footer-site-overview-link-terms-of-use
             </a>
           </li>
           <li
@@ -242,7 +235,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://www.wikia.com/Privacy_Policy"
             >
-              Privacy Policy
+              global-footer-site-overview-link-privacy-policy
             </a>
           </li>
           <li
@@ -252,7 +245,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://www.wikia.com/Sitemap"
             >
-              Global Sitemap
+              global-footer-site-overview-link-global-sitemap
             </a>
           </li>
           <li
@@ -262,18 +255,22 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="/wiki/Local_Sitemap"
             >
-              Local Sitemap
+              global-footer-site-overview-link-local-sitemap
             </a>
           </li>
         </ul>
       </section>
+    </div>
+    <div
+      className="wds-global-footer__column"
+    >
       <section
-        className="wds-global-footer__wikia-section wds-is-community"
+        className="wds-global-footer__section wds-is-community"
       >
         <h3
           className="wds-global-footer__section-header"
         >
-          Community
+          global-footer-community-header
         </h3>
         <ul
           className="wds-global-footer__links-list"
@@ -285,7 +282,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://community.wikia.com/wiki/Community_Central"
             >
-              Community Central
+              global-footer-community-link-community-central
             </a>
           </li>
           <li
@@ -295,27 +292,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://community.wikia.com/wiki/Special:Contact"
             >
-              Support
-            </a>
-          </li>
-          <li
-            className="wds-global-footer__links-list-item"
-          >
-            <a
-              className="wds-global-footer__link"
-              href="http://fandom.wikia.com/fan-contributor"
-            >
-              Fan Contributor Program
-            </a>
-          </li>
-          <li
-            className="wds-global-footer__links-list-item"
-          >
-            <a
-              className="wds-global-footer__link"
-              href="http://www.wikia.com/WAM"
-            >
-              WAM Score
+              global-footer-community-link-support
             </a>
           </li>
           <li
@@ -325,84 +302,18 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://community.wikia.com/wiki/Help:Contents"
             >
-              Help
+              global-footer-community-link-help
             </a>
           </li>
         </ul>
       </section>
       <section
-        className="wds-global-footer__wikia-section wds-is-create-wiki"
-      >
-        
-        <span
-          className="wds-global-footer__section-description"
-        >
-          Can't find a community you love? Create your own and start something epic.
-        </span>
-        <ul
-          className="wds-global-footer__links-list"
-        >
-          <li
-            className="wds-global-footer__links-list-item"
-          >
-            <a
-              className="wds-global-footer__link"
-              href="http://www.wikia.com/Special:CreateNewWiki"
-            >
-              Start a wiki
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section
-        className="wds-global-footer__wikia-section wds-is-community-apps"
+        className="wds-global-footer__section wds-is-advertise"
       >
         <h3
           className="wds-global-footer__section-header"
         >
-          Community Apps
-        </h3>
-        <span
-          className="wds-global-footer__section-description"
-        >
-          Take your favorite fandoms with you and never miss a beat.
-        </span>
-        <ul
-          className="wds-global-footer__links-list"
-        >
-          <li
-            className="wds-global-footer__links-list-item"
-          >
-            <a
-              className="wds-global-footer__link"
-              href="https://itunes.apple.com/developer/wikia-inc./id422467077"
-            >
-              <div
-                className="wds-global-footer__image wds-icon"
-              />
-            </a>
-          </li>
-          <li
-            className="wds-global-footer__links-list-item"
-          >
-            <a
-              className="wds-global-footer__link"
-              href="https://play.google.com/store/apps/developer?id=Wikia,+Inc."
-            >
-              <div
-                className="wds-global-footer__image wds-icon"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section
-        className="wds-global-footer__wikia-section wds-is-advertise"
-      >
-        <h3
-          className="wds-global-footer__section-header"
-        >
-          Advertise
+          global-footer-advertise-header
         </h3>
         <ul
           className="wds-global-footer__links-list"
@@ -414,7 +325,7 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://fandom.wikia.com/mediakit"
             >
-              Media Kit
+              global-footer-advertise-link-media-kit
             </a>
           </li>
           <li
@@ -424,7 +335,110 @@ exports[`GlobalFooter renders correctly for fandom.com sites 1`] = `
               className="wds-global-footer__link"
               href="http://fandom.wikia.com/mediakit#contact"
             >
-              Contact
+              global-footer-advertise-link-contact
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div
+      className="wds-global-footer__column"
+    >
+      <section
+        className="wds-global-footer__section wds-is-fandom-apps"
+      >
+        <h3
+          className="wds-global-footer__section-header"
+        >
+          global-footer-community-apps-header
+        </h3>
+        <span
+          className="wds-global-footer__section-description"
+        >
+          global-footer-community-apps-description
+        </span>
+      </section>
+      <section
+        className="wds-global-footer__section wds-is-fandom-stores"
+      >
+        
+        <figure
+          className="wds-global-footer__image"
+        >
+          <div
+            className="wds-icon"
+          />
+        </figure>
+        <ul
+          className="wds-global-footer__links-list"
+        >
+          <li
+            className="wds-global-footer__links-list-item"
+          >
+            <a
+              className="wds-global-footer__link"
+              href="https://itunes.apple.com/developer/wikia-inc./id422467077"
+            >
+              <div
+                className="wds-global-footer__link-image wds-icon"
+              />
+            </a>
+          </li>
+          <li
+            className="wds-global-footer__links-list-item"
+          >
+            <a
+              className="wds-global-footer__link"
+              href="https://play.google.com/store/apps/developer?id=Wikia,+Inc."
+            >
+              <div
+                className="wds-global-footer__link-image wds-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section
+        className="wds-global-footer__section wds-is-ddb-stores"
+      >
+        
+        <figure
+          className="wds-global-footer__image"
+        >
+          <div
+            className="wds-icon"
+          />
+          <figcaption
+            className="wds-global-footer__image-caption"
+          >
+            D&D Beyond
+          </figcaption>
+        </figure>
+        <ul
+          className="wds-global-footer__links-list"
+        >
+          <li
+            className="wds-global-footer__links-list-item"
+          >
+            <a
+              className="wds-global-footer__link"
+              href="https://apps.apple.com/us/app/d-d-beyond/id1263629972"
+            >
+              <div
+                className="wds-global-footer__link-image wds-icon"
+              />
+            </a>
+          </li>
+          <li
+            className="wds-global-footer__links-list-item"
+          >
+            <a
+              className="wds-global-footer__link"
+              href="https://play.google.com/store/apps/details?id=com.curse.dndbeyond&hl=en"
+            >
+              <div
+                className="wds-global-footer__link-image wds-icon"
+              />
             </a>
           </li>
         </ul>

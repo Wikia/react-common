@@ -2,7 +2,7 @@
 
 exports[`Section with description renders correctly 1`] = `
 <section
-  className="wds-global-footer__wikia-section wds-is-site_overview"
+  className="wds-global-footer__section wds-is-site_overview"
 >
   
   <span
@@ -29,7 +29,7 @@ exports[`Section with description renders correctly 1`] = `
 
 exports[`Section with header renders correctly 1`] = `
 <section
-  className="wds-global-footer__wikia-section wds-is-site_overview"
+  className="wds-global-footer__section wds-is-site_overview"
 >
   <h3
     className="wds-global-footer__section-header"
@@ -85,7 +85,7 @@ exports[`Section with header renders correctly 1`] = `
 
 exports[`Section with link-branded renders correctly 1`] = `
 <section
-  className="wds-global-footer__wikia-section wds-is-site_overview"
+  className="wds-global-footer__section wds-is-site_overview"
 >
   
   <ul
@@ -109,7 +109,7 @@ exports[`Section with link-branded renders correctly 1`] = `
 
 exports[`Section with link-image renders correctly 1`] = `
 <section
-  className="wds-global-footer__wikia-section wds-is-site_overview"
+  className="wds-global-footer__section wds-is-site_overview"
 >
   
   <ul
@@ -124,7 +124,7 @@ exports[`Section with link-image renders correctly 1`] = `
         href="#"
       >
         <div
-          className="wds-global-footer__image wds-icon"
+          className="wds-global-footer__link-image wds-icon"
         />
       </a>
     </li>
@@ -134,7 +134,7 @@ exports[`Section with link-image renders correctly 1`] = `
 
 exports[`Section with links only renders correctly 1`] = `
 <section
-  className="wds-global-footer__wikia-section wds-is-site_overview"
+  className="wds-global-footer__section wds-is-site_overview"
 >
   
   <ul
