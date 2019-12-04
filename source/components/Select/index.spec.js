@@ -208,3 +208,30 @@ test('custom className is at root level', () => {
     const wrapper = mount(<Select className="custom-select" />);
     expect(wrapper.find('.fandom-select__wrapper.custom-select')).toHaveLength(1);
 });
+
+test('Select renders with grouped options', () => {
+    const component = renderer.create(
+        <Select
+            value={4}
+            options={[
+                {
+                    label: 'group 1',
+                    options: [
+                        Select.createOption(1, 'label1'),
+                        Select.createOption(2, 'label2'),
+                        Select.createOption(3, 'label3'),
+                    ],
+                },
+                {
+                    label: 'group 2',
+                    options: [
+                        Select.createOption(4, 'label4'),
+                        Select.createOption(5, 'label5'),
+                        Select.createOption(6, 'label6'),
+                    ],
+                },
+            ]}
+        />
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});

@@ -21,7 +21,10 @@ export default class Input extends React.Component {
         /** Force focus flag */
         forceFocus: PropTypes.bool,
         /** Hint to display */
-        hint: PropTypes.string,
+        hint: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.node,
+        ]),
         /** Additional class name for the hint  */
         hintClassName: PropTypes.string,
         /** ID of the element - by default it's generated automatically */

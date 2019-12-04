@@ -58,7 +58,11 @@ export default class Select extends React.Component {
         /** options to display. Use `createOption` exported from this module to create options */
         options: PropTypes.arrayOf(PropTypes.shape({
             label: PropTypes.string.isRequired,
-            value: PropTypes.any.isRequired,
+            options: PropTypes.arrayOf(PropTypes.shape({
+                label: PropTypes.string.isRequired,
+                value: PropTypes.any.isRequired,
+            })),
+            value: PropTypes.any,
         })),
         /** Placeholder text used when no value is selected */
         placeholder: PropTypes.string,
@@ -141,8 +145,19 @@ export default class Select extends React.Component {
         }
     }
 
+    getFlatOptions = () => {
+        const { options } = this.props;
+
+        return options.reduce((acc, option) => {
+            if (option.options) {
+                return [...acc, ...option.options];
+            }
+            return [...acc, option];
+        }, []);
+    }
+
     getValueFromProps() {
-        const { value, options } = this.props;
+        const { value } = this.props;
 
         if (!value) {
             return undefined;
@@ -154,7 +169,7 @@ export default class Select extends React.Component {
         }
 
         valuesWithLabels = valuesWithLabels
-            .map(v => options.find(o => o.value === v))
+            .map(v => this.getFlatOptions().find(o => o.value === v))
             .filter(Boolean);
 
         if (valuesWithLabels.length === 0) {
