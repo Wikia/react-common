@@ -177,14 +177,6 @@ export default class Input extends React.Component {
 
         const { isEmpty, isFocused } = this.state;
 
-        let statusClass = null;
-
-        if (isFocused) {
-            statusClass = 'is-focused';
-        } else if (isEmpty) {
-            statusClass = 'is-empty';
-        }
-
         return [
             'wds-input',
             disabled ? 'is-disabled' : null,
@@ -192,7 +184,8 @@ export default class Input extends React.Component {
             status === 'error' ? 'has-error' : null,
             typeof resize === 'boolean' && resize ? 'is-resize' : null,
             hint ? 'has-hint' : null,
-            statusClass,
+            isEmpty ? 'is-empty' : null,
+            isFocused ? 'is-focused' : null,
             className,
         ]
             .filter(Boolean)
