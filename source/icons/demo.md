@@ -156,6 +156,9 @@ const IconIndentLeftTiny = require('./IconIndentLeftTiny').default;
 const IconIndentRight = require('./IconIndentRight').default;
 const IconIndentRightSmall = require('./IconIndentRightSmall').default;
 const IconIndentRightTiny = require('./IconIndentRightTiny').default;
+const IconInfo = require('./IconInfo').default;
+const IconInfoSmall = require('./IconInfoSmall').default;
+const IconInfoTiny = require('./IconInfoTiny').default;
 const IconInstagram = require('./IconInstagram').default;
 const IconItalics = require('./IconItalics').default;
 const IconItalicsSmall = require('./IconItalicsSmall').default;
@@ -1371,6 +1374,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconIndentRightTiny</VariantName>
             <VariantComponent><IconIndentRightTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconInfo</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconInfo</VariantName>
+            <VariantComponent><IconInfo style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconInfoSmall</VariantName>
+            <VariantComponent><IconInfoSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconInfoTiny</VariantName>
+            <VariantComponent><IconInfoTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
