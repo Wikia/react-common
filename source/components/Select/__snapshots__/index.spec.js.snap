@@ -717,3 +717,101 @@ exports[`Select renders correctly 8`] = `
   />
 </div>
 `;
+
+exports[`Select renders with grouped options 1`] = `
+<div
+  className="fandom-select__wrapper"
+>
+  <div
+    className="css-1pcexqc-container fandom-select"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-bg1rzq-control fandom-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--has-value"
+      >
+        <div
+          className="css-dvua67-singleValue fandom-select__single-value"
+        >
+          label4
+        </div>
+        <div
+          className="css-1g6gooi"
+        >
+          <div
+            className="fandom-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="fandom-select-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1wy0on6 fandom-select__indicators"
+      >
+        <div
+          aria-hidden="true"
+          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <div
+            className="search-dropdown-indicator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

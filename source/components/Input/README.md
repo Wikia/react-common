@@ -3,11 +3,18 @@ An empty input:
 <Input label="An empty input" />
 ```
 
-An empty email input with hint:
+An empty `email` input with hint:
 ```js
 <Input label="E-mail" type="email" hint="Type your e-mail" />
 ```
+
 Other available types are: `text` (default), `number`, `email`, `search`, `tel`, `url` and `password`.
+
+
+An empty email input with hint (node):
+```js
+<Input label="Text" hint={<strong>STRONG hint</strong>} />
+```
 
 A non-empty input:
 ```js

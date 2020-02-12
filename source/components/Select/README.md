@@ -16,6 +16,32 @@ Basic usage:
 />
 ```
 
+Grouped options:
+```js
+<Select
+    onBlur={(val, label) => console.log('blur', val, label)}
+    onChange={(val, label) => console.log('change', val, label)}
+    options={[
+        {
+            label: 'group 1',
+            options: [
+                Select.createOption(1, 'label1'),
+                Select.createOption(2, 'label2'),
+                Select.createOption(3, 'label3'),
+            ],
+        },
+        {
+            label: 'group 2',
+            options: [
+                Select.createOption(4, 'label4'),
+                Select.createOption(5, 'label5'),
+                Select.createOption(6, 'label6'),
+            ],
+        },
+    ]}
+/>
+```
+
 Non-searchable:
 ```js
 <Select
