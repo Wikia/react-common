@@ -12,12 +12,10 @@ const getToggleIcon = (iconName, isLevel2) => {
         : 'wds-dropdown__toggle-chevron';
 
     switch(iconName) {
-        case 'dropdown-tiny':
-            return <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
-            break;
         case 'dropdown-more':
             return <IconMoreSmall className="wds-icon wds-icon-small wds-dropdown__more" />;
-            break;
+        case 'dropdown-tiny':
+            return <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
         default:
             return <IconMenuControlTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
     }
@@ -92,6 +90,7 @@ DropdownToggle.propTypes = {
      *  The icon to use for the dropdown chevron
      */
     iconName: PropTypes.oneOf([
+        'dropdown-more',
         'dropdown-tiny',
         'menu-control-tiny',
     ]).isRequired,
