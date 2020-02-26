@@ -15,7 +15,7 @@ Dropdown using dropdown-tiny chevron:
 
 Dropdown using more-small button:
 ```js
-<Dropdown toggle="More button" iconName="dropdown-more">
+<Dropdown toggle="More button" iconName="more">
     <p style={{padding: '12px'}}>I am a text inside dropdown!</p>
 </Dropdown>
 ```

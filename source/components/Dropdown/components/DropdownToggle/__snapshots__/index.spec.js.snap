@@ -159,7 +159,7 @@ exports[`DropdownToggle renders correctly with more button icon 1`] = `
     
   </span>
   <div
-    className="wds-icon wds-icon-small wds-dropdown__more"
+    className="wds-icon wds-icon-small wds-dropdown__toggle-chevron"
   />
 </div>
 `;

@@ -23,7 +23,7 @@ test('DropdownToggle renders correctly with dropdown-tiny icon', () => {
 
 test('DropdownToggle renders correctly with more button icon', () => {
     const component = renderer.create(
-        <DropdownToggle onClick={() => {}} toggleContent="" iconName="dropdown-more" />,
+        <DropdownToggle onClick={() => {}} toggleContent="" iconName="more" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
 });
