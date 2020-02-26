@@ -148,3 +148,18 @@ exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
   />
 </a>
 `;
+
+exports[`DropdownToggle renders correctly with more button icon 1`] = `
+<div
+  className="wds-dropdown__toggle"
+  onClick={[Function]}
+  role="button"
+>
+  <span>
+    
+  </span>
+  <div
+    className="wds-icon wds-icon-small wds-dropdown__toggle-chevron"
+  />
+</div>
+`;

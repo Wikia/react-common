@@ -21,6 +21,13 @@ test('DropdownToggle renders correctly with dropdown-tiny icon', () => {
     expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('DropdownToggle renders correctly with more button icon', () => {
+    const component = renderer.create(
+        <DropdownToggle onClick={() => {}} toggleContent="" iconName="more" />,
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('DropdownToggle renders correctly with default values for level 2', () => {
     const component = renderer.create(
         <DropdownToggle isLevel2 onClick={() => {}} toggleContent="" iconName="menu-control-tiny" />,
