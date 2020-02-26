@@ -11,13 +11,16 @@ const getToggleIcon = (iconName, isLevel2) => {
         ? 'wds-dropdown-chevron'
         : 'wds-dropdown__toggle-chevron';
 
-    if (iconName === 'dropdown-more') {
-        return <IconMoreSmall className="wds-icon wds-icon-small wds-dropdown__more" />;
+    switch(iconName) {
+        case 'dropdown-tiny':
+            return <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
+            break;
+        case 'dropdown-more':
+            return <IconMoreSmall className="wds-icon wds-icon-small wds-dropdown__more" />;
+            break;
+        default:
+            return <IconMenuControlTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
     }
-
-    return iconName === 'dropdown-tiny'
-        ? <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />
-        : <IconMenuControlTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />;
 };
 
 /**
