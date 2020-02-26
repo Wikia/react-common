@@ -11,7 +11,7 @@ const getToggleIcon = (iconName, isLevel2) => {
         ? 'wds-dropdown-chevron'
         : 'wds-dropdown__toggle-chevron';
 
-    switch(iconName) {
+    switch (iconName) {
         case 'dropdown-more':
             return <IconMoreSmall className="wds-icon wds-icon-small wds-dropdown__more" />;
         case 'dropdown-tiny':
