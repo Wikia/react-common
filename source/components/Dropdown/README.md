@@ -13,6 +13,13 @@ Dropdown using dropdown-tiny chevron:
 </Dropdown>
 ```
 
+Dropdown using more-small button:
+```js
+<Dropdown toggle="More button" iconName="dropdown-more">
+    <p style={{padding: '12px'}}>I am a text inside dropdown!</p>
+</Dropdown>
+```
+
 Nested dropdown:
 
 ```js

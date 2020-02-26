@@ -4,11 +4,16 @@ import classNames from 'classnames';
 
 import IconDropdownTiny from '../../../../icons/IconDropdownTiny';
 import IconMenuControlTiny from '../../../../icons/IconMenuControlTiny';
+import IconMoreSmall from '../../../../icons/IconMoreSmall';
 
 const getToggleIcon = (iconName, isLevel2) => {
     const iconClassName = isLevel2
         ? 'wds-dropdown-chevron'
         : 'wds-dropdown__toggle-chevron';
+
+    if (iconName === 'dropdown-more') {
+        return <IconMoreSmall className="wds-icon wds-icon-small wds-dropdown__more" />;
+    }
 
     return iconName === 'dropdown-tiny'
         ? <IconDropdownTiny className={`wds-icon wds-icon-tiny ${iconClassName}`} />
