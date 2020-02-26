@@ -228,6 +228,7 @@ Dropdown.propTypes = {
      *  The icon to use for the dropdown chevron
      */
     iconName: PropTypes.oneOf([
+        'more',
         'dropdown-tiny',
         'menu-control-tiny',
     ]),
