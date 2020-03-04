@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-import LogoWikiaOrgWhite from '../../../assets/LogoWikiaOrgWhite';
+import LogoWikiaOrg from '../../../assets/LogoWikiaOrg';
 
 import I18nNamespaceContext from '../context/I18nNamespaceContext';
 
@@ -16,7 +16,7 @@ const GlobalFooterWikiaOrg = ({ model }) => {
             && (
                 <h2 className="wds-global-footer-wikia-org__header">
                     <a href={model.header.href} title={model.header.title.value}>
-                        <LogoWikiaOrgWhite className="wds-global-footer__header-logo" />
+                        <LogoWikiaOrg className="wds-global-footer__header-logo" />
                     </a>
                 </h2>
             )
