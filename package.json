@@ -85,7 +85,7 @@
     "node-sass": "^4.10.0",
     "path": "^0.12.7",
     "postcss-modules": "^1.4.1",
-    "raw-loader": "^1.0.0",
+    "raw-loader": "^4.0.0",
     "react-docgen": "3.0.0",
     "react-styleguidist": "^8.0.6",
     "react-svg-loader": "^2.1.0",
