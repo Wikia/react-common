@@ -4,8 +4,7 @@ import { shallow } from 'enzyme';
 import Timeago from './index';
 
 test('Renders Timeago component', () => {
-    const datetime = Date.now() - 365 * 3600 * 1000;
-    const component = shallow(<Timeago datetime={datetime} />);
+    const component = shallow(<Timeago datetime={1582205173526} />);
 
     expect(component).toMatchSnapshot();
 });
