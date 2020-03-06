@@ -2,7 +2,10 @@
 
 exports[`SearchForm renders empty 1`] = `
 <SearchForm
+  accentColor="#00f"
   className=""
+  communityName=""
+  maxAllowed={10}
   maxNumOfTagsAdded={false}
   onAddTag={[Function]}
   onOpenSearch={[Function]}
@@ -118,10 +121,12 @@ exports[`SearchForm renders empty 1`] = `
           </StyledComponent>
         </SearchForm__Header>
         <SearchForm__AddTagButton
+          accentColor="#00f"
           disabled={false}
           onClick={[Function]}
         >
           <StyledComponent
+            accentColor="#00f"
             disabled={false}
             forwardedComponent={
               Object {
@@ -130,7 +135,7 @@ exports[`SearchForm renders empty 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchForm__AddTagButton-hq4lki-5",
                   "isStatic": false,
-                  "lastClassName": "drsdNE",
+                  "lastClassName": "iQayax",
                   "rules": Array [
                     "align-items:center;background:transparent;border:0;color:",
                     [Function],
@@ -153,7 +158,7 @@ exports[`SearchForm renders empty 1`] = `
             onClick={[Function]}
           >
             <button
-              className="SearchForm__AddTagButton-hq4lki-5 drsdNE"
+              className="SearchForm__AddTagButton-hq4lki-5 iQayax"
               disabled={false}
               onClick={[Function]}
             >

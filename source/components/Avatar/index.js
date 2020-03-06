@@ -14,6 +14,7 @@ class Avatar extends React.Component {
 
     componentDidMount() {
         if (!this.state.imageSrc && this.props.userId) {
+            // eslint-disable-next-line
             fetch(`https://services.wikia.com/user-attribute/user/${this.props.userId}/attr/avatar`)
                 .then(response => response.json())
                 .then(data => this.setState({ imageSrc: data.value }));

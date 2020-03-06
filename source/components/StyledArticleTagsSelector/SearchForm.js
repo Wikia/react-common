@@ -39,7 +39,7 @@ const IconAdd = styled(IconAddSmall)`
 const Wrapper = styled.div`
     display: flex;
     height: 24px;
-    
+
     @media ${({ theme }) => theme.media.small_down} {
         justify-content: space-between;
     }
@@ -137,8 +137,8 @@ SearchForm.propTypes = {
     accentColor: PropTypes.string.isRequired,
     /** Extra class name */
     className: PropTypes.string,
-    communityName: PropTypes.string.isRequired,
-    maxAllowed: PropTypes.number.isRequired,
+    communityName: PropTypes.string,
+    maxAllowed: PropTypes.number,
     maxNumOfTagsAdded: PropTypes.bool,
     onAddTag: PropTypes.func,
     onOpenSearch: PropTypes.func,
@@ -149,6 +149,8 @@ SearchForm.propTypes = {
 
 SearchForm.defaultProps = {
     className: '',
+    communityName: '',
+    maxAllowed: 10,
     maxNumOfTagsAdded: false,
     onAddTag: noop,
     onOpenSearch: noop,

@@ -2,6 +2,7 @@
 
 exports[`SearchInput renders empty 1`] = `
 <SearchInput
+  accentColor="#00f"
   className=""
   communityName=""
   list={null}

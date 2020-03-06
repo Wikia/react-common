@@ -4,10 +4,10 @@ One second ago:
 <Timeago datetime={`${Date.now() - 1000}`} />
 ```
 
-Few seconds ago:
+Few minutes ago:
 
 ```js
-<Timeago datetime={`${Date.now() - 14*1000}`} />
+<Timeago datetime={`${Date.now() - 14*60*1000}`} />
 ```
 
 Few days ago:

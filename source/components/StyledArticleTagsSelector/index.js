@@ -73,19 +73,19 @@ StyledArticleTagsSelector.propTypes = {
     /** Extra class name */
     className: PropTypes.string,
     /** Name of the current community */
-    communityName: PropTypes.string.isRequired,
+    communityName: PropTypes.string,
     /** How many tags are allowed */
     maxAllowed: PropTypes.number,
     /** Callback called when clicking on tags in the "Add Tag" dropdown; `(id: string) => void` */
-    onAddTag: PropTypes.func.isRequired,
+    onAddTag: PropTypes.func,
     /** Callback called when search is opened/shown */
     onOpenSearch: PropTypes.func,
     /** Callback called when clicking on X in the current tags list; `(id: string) => void` */
-    onRemoveTag: PropTypes.func.isRequired,
+    onRemoveTag: PropTypes.func,
     /** Callback called when search should be called; `(query: string) => void` */
-    onSearch: PropTypes.func.isRequired,
+    onSearch: PropTypes.func,
     /** Callback called when clicking on one of the suggested tags; `(id: string) => void` */
-    onSuggestedTag: PropTypes.func.isRequired,
+    onSuggestedTag: PropTypes.func,
     /** Search result tags; `Tag[]` (see above); current query will automatically be highlighted */
     searchResults: PropTypes.arrayOf(TagShape),
     /** Suggested tags; `Tag[]` (see above) */
@@ -98,8 +98,13 @@ StyledArticleTagsSelector.defaultProps = {
     // TODO: remove once theming is refactored
     accentColor: COLORS.fandom_aqua,
     className: '',
+    communityName: '',
     maxAllowed: 10,
     onOpenSearch: noop,
+    onAddTag: noop,
+    onRemoveTag: noop,
+    onSearch: noop,
+    onSuggestedTag: noop,
     searchResults: null,
     suggestedTags: null,
     tags: null,

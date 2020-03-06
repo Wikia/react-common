@@ -1,11 +1,11 @@
 import fs from 'fs-extra';
 import glob from 'glob';
 import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import postprocess from 'rollup-plugin-postprocess';
 import sass from 'rollup-plugin-sass';
-import commonjs from 'rollup-plugin-commonjs';
-import string from 'rollup-plugin-string/dist/rollup-plugin-string';
+import commonjs from '@rollup/plugin-commonjs';
+import { string } from 'rollup-plugin-string';
 import svg from 'rollup-plugin-react-svg';
 
 const config = require('./config');

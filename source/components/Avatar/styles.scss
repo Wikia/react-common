@@ -1,6 +1,7 @@
 @import "~design-system/dist/scss/wds-mixins/index.scss";
 @import "~design-system/dist/scss/wds-variables/index.scss";
 @import "~design-system/dist/scss/wds-components/_avatar.scss";
+
 .wds-avatar {
 	@include wds-avatar(48px, $wds-fandom-color-mid-light-gray, $wds-fandom-color-mid-light-gray);
 }

@@ -47,7 +47,7 @@ export default class ExpandableText extends React.Component {
         };
     }
 
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
         const shortText = makeShortText(newProps.text, newProps.characterLimit);
 
         this.setState({

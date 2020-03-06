@@ -166,7 +166,7 @@ test('onNoOptions tests', () => {
 
     let stateManager = wrapper.find('StateManager').at(0);
     stateManager.setState({ menuIsOpen: true });
-    const optionRenderer = wrapper.find('.fandom-select__menu-notice--no-options');
+    const optionRenderer = wrapper.find('.fandom-select__menu-notice--no-options').at(0);
     expect(optionRenderer.text()).toEqual('☹️');
 
     const onNoOptionsSpy = sinon.spy();

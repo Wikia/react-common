@@ -4,8 +4,13 @@ exports[`ArticleTagsSelector renders empty 1`] = `
 <StyledArticleTagsSelector
   accentColor="#00d6d6"
   className=""
+  communityName=""
   maxAllowed={10}
+  onAddTag={[Function]}
   onOpenSearch={[Function]}
+  onRemoveTag={[Function]}
+  onSearch={[Function]}
+  onSuggestedTag={[Function]}
   searchResults={null}
   suggestedTags={null}
   tags={null}
@@ -47,6 +52,7 @@ exports[`ArticleTagsSelector renders empty 1`] = `
         <SearchForm
           accentColor="#00d6d6"
           className=""
+          communityName=""
           maxAllowed={10}
           maxNumOfTagsAdded={null}
           onAddTag={[Function]}
@@ -274,7 +280,11 @@ exports[`ArticleTagsSelector renders with props 1`] = `
   communityName="bar"
   maxAllowed={10}
   maxNumOfTagsAdded={true}
+  onAddTag={[Function]}
   onOpenSearch={[Function]}
+  onRemoveTag={[Function]}
+  onSearch={[Function]}
+  onSuggestedTag={[Function]}
   query="q"
   searchResults={
     Array [

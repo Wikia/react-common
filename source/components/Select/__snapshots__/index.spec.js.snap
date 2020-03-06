@@ -5,24 +5,24 @@ exports[`Select renders correctly 1`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container"
+        className="fandom-select__value-container css-1hwfws3"
       >
         <div
-          className="css-151xaom-placeholder fandom-select__placeholder"
+          className="fandom-select__placeholder css-1wa3eu0-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -80,11 +80,11 @@ exports[`Select renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -103,24 +103,24 @@ exports[`Select renders correctly 2`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--has-value"
+        className="fandom-select__value-container fandom-select__value-container--has-value css-1hwfws3"
       >
         <div
-          className="css-dvua67-singleValue fandom-select__single-value"
+          className="fandom-select__single-value css-1uccc91-singleValue"
         >
           label1
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -178,11 +178,11 @@ exports[`Select renders correctly 2`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -201,19 +201,19 @@ exports[`Select renders correctly 3`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--is-multi fandom-select__value-container--has-value"
+        className="fandom-select__value-container fandom-select__value-container--is-multi fandom-select__value-container--has-value css-1hwfws3"
       >
         <div
-          className="css-es53b3-multiValue fandom-select__multi-value"
+          className="css-1rhbuit-multiValue fandom-select__multi-value"
         >
           <div
             className="css-12jo7m5 fandom-select__multi-value__label"
@@ -221,14 +221,14 @@ exports[`Select renders correctly 3`] = `
             label1
           </div>
           <div
-            className="css-1alnv5e fandom-select__multi-value__remove"
+            className="css-xb97g8 fandom-select__multi-value__remove"
             onClick={[Function]}
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
             <svg
               aria-hidden="true"
-              className="css-19bqh2r"
+              className="css-6q0nyr-Svg"
               focusable="false"
               height={14}
               viewBox="0 0 20 20"
@@ -241,7 +241,7 @@ exports[`Select renders correctly 3`] = `
           </div>
         </div>
         <div
-          className="css-es53b3-multiValue fandom-select__multi-value"
+          className="css-1rhbuit-multiValue fandom-select__multi-value"
         >
           <div
             className="css-12jo7m5 fandom-select__multi-value__label"
@@ -249,14 +249,14 @@ exports[`Select renders correctly 3`] = `
             label3
           </div>
           <div
-            className="css-1alnv5e fandom-select__multi-value__remove"
+            className="css-xb97g8 fandom-select__multi-value__remove"
             onClick={[Function]}
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
             <svg
               aria-hidden="true"
-              className="css-19bqh2r"
+              className="css-6q0nyr-Svg"
               focusable="false"
               height={14}
               viewBox="0 0 20 20"
@@ -269,7 +269,7 @@ exports[`Select renders correctly 3`] = `
           </div>
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -327,11 +327,11 @@ exports[`Select renders correctly 3`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -350,24 +350,24 @@ exports[`Select renders correctly 4`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container"
+        className="fandom-select__value-container css-1hwfws3"
       >
         <div
-          className="css-151xaom-placeholder fandom-select__placeholder"
+          className="fandom-select__placeholder css-1wa3eu0-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -425,11 +425,11 @@ exports[`Select renders correctly 4`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -448,24 +448,24 @@ exports[`Select renders correctly 5`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container"
+        className="fandom-select__value-container css-1hwfws3"
       >
         <div
-          className="css-151xaom-placeholder fandom-select__placeholder"
+          className="fandom-select__placeholder css-1wa3eu0-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -523,11 +523,11 @@ exports[`Select renders correctly 5`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -546,24 +546,24 @@ exports[`Select renders correctly 6`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container"
+        className="fandom-select__value-container css-1hwfws3"
       >
         <div
-          className="css-151xaom-placeholder fandom-select__placeholder"
+          className="fandom-select__placeholder css-1wa3eu0-placeholder"
         >
           Select...
         </div>
         <input
-          className="css-gj7qu5-dummyInput"
+          className="css-62g3xt-dummyInput"
           disabled={false}
           id="fandom-select-input"
           onBlur={[Function]}
@@ -575,11 +575,11 @@ exports[`Select renders correctly 6`] = `
         />
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -598,24 +598,24 @@ exports[`Select renders correctly 7`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-ssi0ig-container fandom-select fandom-select--is-disabled"
+    className="fandom-select fandom-select--is-disabled css-14jk2my-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-14ojxsb-control fandom-select__control fandom-select__control--is-disabled"
+      className="fandom-select__control fandom-select__control--is-disabled css-1fhf3k1-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container"
+        className="fandom-select__value-container css-1hwfws3"
       >
         <div
-          className="css-151xaom-placeholder fandom-select__placeholder"
+          className="fandom-select__placeholder css-1wa3eu0-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -673,7 +673,7 @@ exports[`Select renders correctly 7`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           className="fandom-spinner"
@@ -711,7 +711,9 @@ exports[`Select renders correctly 7`] = `
 `;
 
 exports[`Select renders correctly 8`] = `
-<div>
+<div
+  className="css-hbt8bd-DropdownIndicator"
+>
   <div
     className="default-dropdown-indicator is-focused"
   />
@@ -723,24 +725,24 @@ exports[`Select renders with grouped options 1`] = `
   className="fandom-select__wrapper"
 >
   <div
-    className="css-1pcexqc-container fandom-select"
+    className="fandom-select css-2b097c-container"
     onKeyDown={[Function]}
   >
     <div
-      className="css-bg1rzq-control fandom-select__control"
+      className="fandom-select__control css-yk16xz-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 fandom-select__value-container fandom-select__value-container--has-value"
+        className="fandom-select__value-container fandom-select__value-container--has-value css-1hwfws3"
       >
         <div
-          className="css-dvua67-singleValue fandom-select__single-value"
+          className="fandom-select__single-value css-1uccc91-singleValue"
         >
           label4
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-b8ldur-Input"
         >
           <div
             className="fandom-select__input"
@@ -798,11 +800,11 @@ exports[`Select renders with grouped options 1`] = `
         </div>
       </div>
       <div
-        className="css-1wy0on6 fandom-select__indicators"
+        className="fandom-select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer fandom-select__indicator fandom-select__dropdown-indicator"
+          className="fandom-select__indicator fandom-select__dropdown-indicator css-tlfecz-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
