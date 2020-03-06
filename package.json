@@ -108,7 +108,7 @@
     "sinon": "^7.1.1",
     "stylelint": "^9.8.0",
     "stylelint-config-fandom": "git://github.com/Wikia/stylelint-config-fandom.git#0.0.1",
-    "stylelint-order": "^2.0.0",
+    "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.4.0",
     "waait": "^1.0.4",
     "webpack": "^4.26.0",
