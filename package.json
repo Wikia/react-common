@@ -81,7 +81,7 @@
     "glob": "^7.1.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "node-sass": "^4.10.0",
     "path": "^0.12.7",
     "postcss-modules": "^1.4.1",
