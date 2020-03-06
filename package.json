@@ -39,7 +39,7 @@
     "color": "^3.1.2",
     "date-fns": "^1.29.0",
     "design-system": "git://github.com/Wikia/design-system.git#22.8.0",
-    "i18next": "^14.0.1",
+    "i18next": "^19.0.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
