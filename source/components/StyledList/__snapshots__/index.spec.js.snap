@@ -9,85 +9,19 @@ exports[`StyledList renders with children inside (default) 1`] = `
   isLinked={false}
   linesBetween={false}
 >
-  <StyledComponent
-    bigItems={false}
-    boldItems={false}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "cneeAW",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={false}
-    isLinked={false}
-    linesBetween={false}
+  <ul
+    className="StyledList-sc-1t1k18i-0 fTqTVq"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 cneeAW"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
 
@@ -100,85 +34,19 @@ exports[`StyledList renders with children inside (other styles) 1`] = `
   isLinked={false}
   linesBetween={false}
 >
-  <StyledComponent
-    bigItems={true}
-    boldItems={false}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "cmGtyt",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={false}
-    isLinked={false}
-    linesBetween={false}
+  <ul
+    className="StyledList-sc-1t1k18i-0 dBUNMX"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 cmGtyt"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
 
@@ -191,85 +59,19 @@ exports[`StyledList renders with children inside (other styles) 2`] = `
   isLinked={false}
   linesBetween={false}
 >
-  <StyledComponent
-    bigItems={false}
-    boldItems={true}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "hQwhYe",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={false}
-    isLinked={false}
-    linesBetween={false}
+  <ul
+    className="StyledList-sc-1t1k18i-0 bCbWXc"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 hQwhYe"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
 
@@ -282,85 +84,19 @@ exports[`StyledList renders with children inside (other styles) 3`] = `
   isLinked={false}
   linesBetween={false}
 >
-  <StyledComponent
-    bigItems={false}
-    boldItems={false}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "boKHDr",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={true}
-    isLinked={false}
-    linesBetween={false}
+  <ul
+    className="StyledList-sc-1t1k18i-0 ldYGGv"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 boKHDr"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
 
@@ -373,85 +109,19 @@ exports[`StyledList renders with children inside (other styles) 4`] = `
   isLinked={true}
   linesBetween={false}
 >
-  <StyledComponent
-    bigItems={false}
-    boldItems={false}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "fowYtT",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={false}
-    isLinked={true}
-    linesBetween={false}
+  <ul
+    className="StyledList-sc-1t1k18i-0 Hya-DR"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 fowYtT"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
 
@@ -464,84 +134,18 @@ exports[`StyledList renders with children inside (other styles) 5`] = `
   isLinked={false}
   linesBetween={true}
 >
-  <StyledComponent
-    bigItems={false}
-    boldItems={false}
-    className=""
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "StyledList-sc-1t1k18i-0",
-          "isStatic": false,
-          "lastClassName": "eZhWAK",
-          "rules": Array [
-            "list-style-type:none;margin:0;padding:7px 18px;",
-            [Function],
-            " > li{font-size:",
-            [Function],
-            ";font-weight:normal;line-height:1em;padding:",
-            "11",
-            "px 0;",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            " ",
-            [Function],
-            "}",
-          ],
-        },
-        "defaultProps": Object {
-          "bigItems": false,
-          "boldItems": false,
-          "children": null,
-          "className": "",
-          "hasEllipsis": false,
-          "isLinked": false,
-          "linesBetween": false,
-        },
-        "displayName": "StyledList",
-        "foldedComponentIds": Array [],
-        "propTypes": Object {
-          "bigItems": [Function],
-          "boldItems": [Function],
-          "children": [Function],
-          "className": [Function],
-          "hasEllipsis": [Function],
-          "isLinked": [Function],
-          "linesBetween": [Function],
-        },
-        "render": [Function],
-        "styledComponentId": "StyledList-sc-1t1k18i-0",
-        "target": "ul",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-    hasEllipsis={false}
-    isLinked={false}
-    linesBetween={true}
+  <ul
+    className="StyledList-sc-1t1k18i-0 gEEGjg"
   >
-    <ul
-      className="StyledList-sc-1t1k18i-0 eZhWAK"
-    >
-      <li>
-        First one
-      </li>
-      <li>
-        Second one
-      </li>
-      <li>
-        Third one
-      </li>
-    </ul>
-  </StyledComponent>
+    <li>
+      First one
+    </li>
+    <li>
+      Second one
+    </li>
+    <li>
+      Third one
+    </li>
+  </ul>
 </StyledList>
 `;
