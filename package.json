@@ -101,7 +101,7 @@
     "rollup-plugin-postprocess": "^1.0.2",
     "rollup-plugin-react-svg": "^2.1.0",
     "rollup-plugin-sass": "^1.0.0",
-    "rollup-plugin-string": "^2.0.2",
+    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-svg": "^1.0.1",
     "sass-loader": "^7.1.0",
     "semver": "^5.6.0",
