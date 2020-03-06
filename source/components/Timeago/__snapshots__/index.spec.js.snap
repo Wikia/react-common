@@ -2,8 +2,8 @@
 
 exports[`Renders Timeago component 1`] = `
 <time
-  dateTime={1583516781185}
+  dateTime={1582204316527}
 >
-  14m
+  2/20/2020
 </time>
 `;
