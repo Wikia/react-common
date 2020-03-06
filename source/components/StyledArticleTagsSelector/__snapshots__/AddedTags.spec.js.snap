@@ -24,451 +24,148 @@ exports[`AddedTags renders with default props 1`] = `
   <AddedTags__Wrapper
     className="foo"
   >
-    <StyledComponent
-      className="foo"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "AddedTags__Wrapper-if94vv-1",
-            "isStatic": true,
-            "lastClassName": "iuLzxc",
-            "rules": Array [
-              "overflow-x:auto;",
-            ],
-          },
-          "displayName": "AddedTags__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "AddedTags__Wrapper-if94vv-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="AddedTags__Wrapper-if94vv-1 jnTuhh foo"
     >
-      <div
-        className="foo AddedTags__Wrapper-if94vv-1 iuLzxc"
+      <AddedTags__Tag
+        key="1"
+        onRemove={[Function]}
+        removable={true}
+        tag="Foo"
       >
-        <AddedTags__Tag
-          key="1"
+        <StyledTag
+          className="AddedTags__Tag-if94vv-0 drIHtZ"
+          onClick={null}
           onRemove={[Function]}
           removable={true}
+          secondary={false}
           tag="Foo"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "AddedTags__Tag-if94vv-0",
-                  "isStatic": true,
-                  "lastClassName": "jIRMtf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "AddedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "AddedTags__Tag-if94vv-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            onRemove={[Function]}
-            removable={true}
-            tag="Foo"
+          <StyledTag__Wrapper
+            className="AddedTags__Tag-if94vv-0 drIHtZ"
+            onClick={null}
+            secondary={false}
           >
-            <StyledTag
-              className="AddedTags__Tag-if94vv-0 jIRMtf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 icisQT AddedTags__Tag-if94vv-0 drIHtZ"
               onClick={null}
-              onRemove={[Function]}
-              removable={true}
-              secondary={false}
-              tag="Foo"
             >
-              <StyledTag__Wrapper
-                className="AddedTags__Tag-if94vv-0 jIRMtf"
-                onClick={null}
-                secondary={false}
+              Foo
+              <StyledTag__Icon
+                onClick={[Function]}
               >
-                <StyledComponent
-                  className="AddedTags__Tag-if94vv-0 jIRMtf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "fiVpbi",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={null}
-                  secondary={false}
+                <_default
+                  className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                  onClick={[Function]}
                 >
-                  <span
-                    className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
-                    onClick={null}
+                  <_default
+                    className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                    onClick={[Function]}
                   >
-                    Foo
-                    <StyledTag__Icon
+                    <div
+                      className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
                       onClick={[Function]}
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "StyledTag__Icon-ja2wb4-1",
-                              "isStatic": true,
-                              "lastClassName": "VqIUo",
-                              "rules": Array [
-                                "cursor:pointer;height:11px;margin-left:5px;width:11px;",
-                              ],
-                            },
-                            "displayName": "StyledTag__Icon",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "StyledTag__Icon-ja2wb4-1",
-                            "target": [Function],
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        onClick={[Function]}
-                      >
-                        <_default
-                          className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                          onClick={[Function]}
-                        >
-                          <_default
-                            className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                            onClick={[Function]}
-                          >
-                            <div
-                              className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                              onClick={[Function]}
-                            />
-                          </_default>
-                        </_default>
-                      </StyledComponent>
-                    </StyledTag__Icon>
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </AddedTags__Tag>
-        <AddedTags__Tag
-          key="2"
+                    />
+                  </_default>
+                </_default>
+              </StyledTag__Icon>
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </AddedTags__Tag>
+      <AddedTags__Tag
+        key="2"
+        onRemove={[Function]}
+        removable={true}
+        tag="Bar"
+      >
+        <StyledTag
+          className="AddedTags__Tag-if94vv-0 drIHtZ"
+          onClick={null}
           onRemove={[Function]}
           removable={true}
+          secondary={false}
           tag="Bar"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "AddedTags__Tag-if94vv-0",
-                  "isStatic": true,
-                  "lastClassName": "jIRMtf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "AddedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "AddedTags__Tag-if94vv-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            onRemove={[Function]}
-            removable={true}
-            tag="Bar"
+          <StyledTag__Wrapper
+            className="AddedTags__Tag-if94vv-0 drIHtZ"
+            onClick={null}
+            secondary={false}
           >
-            <StyledTag
-              className="AddedTags__Tag-if94vv-0 jIRMtf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 icisQT AddedTags__Tag-if94vv-0 drIHtZ"
               onClick={null}
-              onRemove={[Function]}
-              removable={true}
-              secondary={false}
-              tag="Bar"
             >
-              <StyledTag__Wrapper
-                className="AddedTags__Tag-if94vv-0 jIRMtf"
-                onClick={null}
-                secondary={false}
+              Bar
+              <StyledTag__Icon
+                onClick={[Function]}
               >
-                <StyledComponent
-                  className="AddedTags__Tag-if94vv-0 jIRMtf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "fiVpbi",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={null}
-                  secondary={false}
+                <_default
+                  className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                  onClick={[Function]}
                 >
-                  <span
-                    className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
-                    onClick={null}
+                  <_default
+                    className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                    onClick={[Function]}
                   >
-                    Bar
-                    <StyledTag__Icon
+                    <div
+                      className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
                       onClick={[Function]}
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "StyledTag__Icon-ja2wb4-1",
-                              "isStatic": true,
-                              "lastClassName": "VqIUo",
-                              "rules": Array [
-                                "cursor:pointer;height:11px;margin-left:5px;width:11px;",
-                              ],
-                            },
-                            "displayName": "StyledTag__Icon",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "StyledTag__Icon-ja2wb4-1",
-                            "target": [Function],
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        onClick={[Function]}
-                      >
-                        <_default
-                          className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                          onClick={[Function]}
-                        >
-                          <_default
-                            className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                            onClick={[Function]}
-                          >
-                            <div
-                              className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                              onClick={[Function]}
-                            />
-                          </_default>
-                        </_default>
-                      </StyledComponent>
-                    </StyledTag__Icon>
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </AddedTags__Tag>
-        <AddedTags__Tag
-          key="3"
+                    />
+                  </_default>
+                </_default>
+              </StyledTag__Icon>
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </AddedTags__Tag>
+      <AddedTags__Tag
+        key="3"
+        onRemove={[Function]}
+        removable={true}
+        tag="FooBar"
+      >
+        <StyledTag
+          className="AddedTags__Tag-if94vv-0 drIHtZ"
+          onClick={null}
           onRemove={[Function]}
           removable={true}
+          secondary={false}
           tag="FooBar"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "AddedTags__Tag-if94vv-0",
-                  "isStatic": true,
-                  "lastClassName": "jIRMtf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "AddedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "AddedTags__Tag-if94vv-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            onRemove={[Function]}
-            removable={true}
-            tag="FooBar"
+          <StyledTag__Wrapper
+            className="AddedTags__Tag-if94vv-0 drIHtZ"
+            onClick={null}
+            secondary={false}
           >
-            <StyledTag
-              className="AddedTags__Tag-if94vv-0 jIRMtf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 icisQT AddedTags__Tag-if94vv-0 drIHtZ"
               onClick={null}
-              onRemove={[Function]}
-              removable={true}
-              secondary={false}
-              tag="FooBar"
             >
-              <StyledTag__Wrapper
-                className="AddedTags__Tag-if94vv-0 jIRMtf"
-                onClick={null}
-                secondary={false}
+              FooBar
+              <StyledTag__Icon
+                onClick={[Function]}
               >
-                <StyledComponent
-                  className="AddedTags__Tag-if94vv-0 jIRMtf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "fiVpbi",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={null}
-                  secondary={false}
+                <_default
+                  className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                  onClick={[Function]}
                 >
-                  <span
-                    className="AddedTags__Tag-if94vv-0 jIRMtf StyledTag__Wrapper-ja2wb4-0 fiVpbi"
-                    onClick={null}
+                  <_default
+                    className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
+                    onClick={[Function]}
                   >
-                    FooBar
-                    <StyledTag__Icon
+                    <div
+                      className="StyledTag__Icon-ja2wb4-1 lfRuQJ"
                       onClick={[Function]}
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "StyledTag__Icon-ja2wb4-1",
-                              "isStatic": true,
-                              "lastClassName": "VqIUo",
-                              "rules": Array [
-                                "cursor:pointer;height:11px;margin-left:5px;width:11px;",
-                              ],
-                            },
-                            "displayName": "StyledTag__Icon",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "StyledTag__Icon-ja2wb4-1",
-                            "target": [Function],
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        onClick={[Function]}
-                      >
-                        <_default
-                          className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                          onClick={[Function]}
-                        >
-                          <_default
-                            className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                            onClick={[Function]}
-                          >
-                            <div
-                              className="StyledTag__Icon-ja2wb4-1 VqIUo"
-                              onClick={[Function]}
-                            />
-                          </_default>
-                        </_default>
-                      </StyledComponent>
-                    </StyledTag__Icon>
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </AddedTags__Tag>
-      </div>
-    </StyledComponent>
+                    />
+                  </_default>
+                </_default>
+              </StyledTag__Icon>
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </AddedTags__Tag>
+    </div>
   </AddedTags__Wrapper>
 </AddedTags>
 `;

@@ -24,353 +24,101 @@ exports[`SuggestedTags renders with default props 1`] = `
   <SuggestedTags__Wrapper
     className="foo"
   >
-    <StyledComponent
-      className="foo"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "SuggestedTags__Wrapper-yazuu8-1",
-            "isStatic": true,
-            "lastClassName": "ilEcGp",
-            "rules": Array [
-              "margin-top:30px;padding-top:8px;",
-            ],
-          },
-          "displayName": "SuggestedTags__Wrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "SuggestedTags__Wrapper-yazuu8-1",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="SuggestedTags__Wrapper-yazuu8-1 kDEEhr foo"
     >
-      <div
-        className="foo SuggestedTags__Wrapper-yazuu8-1 ilEcGp"
+      <SuggestedTags__SuggestedLabel>
+        <div
+          className="SuggestedTags__SuggestedLabel-yazuu8-2 iTNNRu"
+        >
+          Suggested
+        </div>
+      </SuggestedTags__SuggestedLabel>
+      <SuggestedTags__Tag
+        key="1"
+        onClick={[Function]}
+        secondary={true}
+        tag="Foo"
       >
-        <SuggestedTags__SuggestedLabel>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SuggestedTags__SuggestedLabel-yazuu8-2",
-                  "isStatic": false,
-                  "lastClassName": "jEbJfm",
-                  "rules": Array [
-                    "color:",
-                    [Function],
-                    ";font-size:",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "displayName": "SuggestedTags__SuggestedLabel",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SuggestedTags__SuggestedLabel-yazuu8-2",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="SuggestedTags__SuggestedLabel-yazuu8-2 jEbJfm"
-            >
-              Suggested
-            </div>
-          </StyledComponent>
-        </SuggestedTags__SuggestedLabel>
-        <SuggestedTags__Tag
-          key="1"
+        <StyledTag
+          className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
           onClick={[Function]}
+          onRemove={null}
+          removable={false}
           secondary={true}
           tag="Foo"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SuggestedTags__Tag-yazuu8-0",
-                  "isStatic": true,
-                  "lastClassName": "eTMnLf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "SuggestedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <StyledTag__Wrapper
+            className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
             onClick={[Function]}
             secondary={true}
-            tag="Foo"
           >
-            <StyledTag
-              className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 iWktsc SuggestedTags__Tag-yazuu8-0 bOGtrE"
               onClick={[Function]}
-              onRemove={null}
-              removable={false}
-              secondary={true}
-              tag="Foo"
             >
-              <StyledTag__Wrapper
-                className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                onClick={[Function]}
-                secondary={true}
-              >
-                <StyledComponent
-                  className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "QFtsa",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={[Function]}
-                  secondary={true}
-                >
-                  <span
-                    className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
-                    onClick={[Function]}
-                  >
-                    Foo
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </SuggestedTags__Tag>
-        <SuggestedTags__Tag
-          key="2"
+              Foo
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </SuggestedTags__Tag>
+      <SuggestedTags__Tag
+        key="2"
+        onClick={[Function]}
+        secondary={true}
+        tag="Bar"
+      >
+        <StyledTag
+          className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
           onClick={[Function]}
+          onRemove={null}
+          removable={false}
           secondary={true}
           tag="Bar"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SuggestedTags__Tag-yazuu8-0",
-                  "isStatic": true,
-                  "lastClassName": "eTMnLf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "SuggestedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <StyledTag__Wrapper
+            className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
             onClick={[Function]}
             secondary={true}
-            tag="Bar"
           >
-            <StyledTag
-              className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 iWktsc SuggestedTags__Tag-yazuu8-0 bOGtrE"
               onClick={[Function]}
-              onRemove={null}
-              removable={false}
-              secondary={true}
-              tag="Bar"
             >
-              <StyledTag__Wrapper
-                className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                onClick={[Function]}
-                secondary={true}
-              >
-                <StyledComponent
-                  className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "QFtsa",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={[Function]}
-                  secondary={true}
-                >
-                  <span
-                    className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
-                    onClick={[Function]}
-                  >
-                    Bar
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </SuggestedTags__Tag>
-        <SuggestedTags__Tag
-          key="3"
+              Bar
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </SuggestedTags__Tag>
+      <SuggestedTags__Tag
+        key="3"
+        onClick={[Function]}
+        secondary={true}
+        tag="FooBar"
+      >
+        <StyledTag
+          className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
           onClick={[Function]}
+          onRemove={null}
+          removable={false}
           secondary={true}
           tag="FooBar"
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "SuggestedTags__Tag-yazuu8-0",
-                  "isStatic": true,
-                  "lastClassName": "eTMnLf",
-                  "rules": Array [
-                    "margin-right:10px;margin-top:10px;",
-                  ],
-                },
-                "displayName": "SuggestedTags__Tag",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "SuggestedTags__Tag-yazuu8-0",
-                "target": [Function],
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
+          <StyledTag__Wrapper
+            className="SuggestedTags__Tag-yazuu8-0 bOGtrE"
             onClick={[Function]}
             secondary={true}
-            tag="FooBar"
           >
-            <StyledTag
-              className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
+            <span
+              className="StyledTag__Wrapper-ja2wb4-0 iWktsc SuggestedTags__Tag-yazuu8-0 bOGtrE"
               onClick={[Function]}
-              onRemove={null}
-              removable={false}
-              secondary={true}
-              tag="FooBar"
             >
-              <StyledTag__Wrapper
-                className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                onClick={[Function]}
-                secondary={true}
-              >
-                <StyledComponent
-                  className="SuggestedTags__Tag-yazuu8-0 eTMnLf"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledTag__Wrapper-ja2wb4-0",
-                        "isStatic": false,
-                        "lastClassName": "QFtsa",
-                        "rules": Array [
-                          "align-items:center;border-radius:25px;border:1px solid ",
-                          [Function],
-                          ";cursor:pointer;display:inline-flex;font-size:",
-                          [Function],
-                          ";line-height:",
-                          [Function],
-                          ";padding:2px 12px;",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "StyledTag__Wrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledTag__Wrapper-ja2wb4-0",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  onClick={[Function]}
-                  secondary={true}
-                >
-                  <span
-                    className="SuggestedTags__Tag-yazuu8-0 eTMnLf StyledTag__Wrapper-ja2wb4-0 QFtsa"
-                    onClick={[Function]}
-                  >
-                    FooBar
-                  </span>
-                </StyledComponent>
-              </StyledTag__Wrapper>
-            </StyledTag>
-          </StyledComponent>
-        </SuggestedTags__Tag>
-      </div>
-    </StyledComponent>
+              FooBar
+            </span>
+          </StyledTag__Wrapper>
+        </StyledTag>
+      </SuggestedTags__Tag>
+    </div>
   </SuggestedTags__Wrapper>
 </SuggestedTags>
 `;

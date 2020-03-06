@@ -172,192 +172,63 @@ exports[`Avatar renders when incorrect badgePermission is set 1`] = `
     <StyledAvatar__Wrapper
       size={48}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "eZFHuz",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 kFekPP"
         size={48}
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-          size={48}
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="3px"
+          className=""
+          size="48"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="3px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="48"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="3px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="48"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="48"
               title="User avatar"
+              width="48"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="48"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="48"
                 title="User avatar"
+                width="48"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="48"
                   title="User avatar"
                   width="48"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="48"
-                    title="User avatar"
-                    width="48"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="48"
-                      title="User avatar"
-                      width="48"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+        <Badge
+          badge="someIncorrectBadgePermission"
+          className=""
+          diameter={48}
+          size={20.1872}
+        >
           <Badge
             badge="someIncorrectBadgePermission"
-            className=""
+            className="Badge-sc-1a5ie29-0 eZJYUV"
             diameter={48}
             size={20.1872}
-          >
-            <StyledComponent
-              badge="someIncorrectBadgePermission"
-              className=""
-              diameter={48}
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Badge-sc-1a5ie29-0",
-                    "isStatic": false,
-                    "lastClassName": "cwhJAF",
-                    "rules": Array [
-                      "height:",
-                      [Function],
-                      ";left:",
-                      [Function],
-                      ";line-height:0;min-width:",
-                      [Function],
-                      ";position:absolute;top:",
-                      [Function],
-                      ";width:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "Badge",
-                  "foldedComponentIds": Array [],
-                  "propTypes": Object {
-                    "className": [Function],
-                    "diameter": [Function],
-                    "size": [Function],
-                  },
-                  "render": [Function],
-                  "styledComponentId": "Badge-sc-1a5ie29-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size={20.1872}
-            >
-              <Badge
-                badge="someIncorrectBadgePermission"
-                className="Badge-sc-1a5ie29-0 cwhJAF"
-                diameter={48}
-                size={20.1872}
-              />
-            </StyledComponent>
-          </Badge>
-        </div>
-      </StyledComponent>
+          />
+        </Badge>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -535,203 +406,74 @@ exports[`Avatar renders with badge 1`] = `
     <StyledAvatar__Wrapper
       size={48}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "eZFHuz",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 kFekPP"
         size={48}
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-          size={48}
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="3px"
+          className=""
+          size="48"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="3px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="48"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="3px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="48"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="48"
               title="User avatar"
+              width="48"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="48"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="48"
                 title="User avatar"
+                width="48"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="48"
                   title="User avatar"
                   width="48"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="48"
-                    title="User avatar"
-                    width="48"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="48"
-                      title="User avatar"
-                      width="48"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+        <Badge
+          badge="sysop"
+          className=""
+          diameter={48}
+          size={20.1872}
+        >
           <Badge
             badge="sysop"
-            className=""
+            className="Badge-sc-1a5ie29-0 eZJYUV"
             diameter={48}
             size={20.1872}
           >
-            <StyledComponent
-              badge="sysop"
-              className=""
-              diameter={48}
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Badge-sc-1a5ie29-0",
-                    "isStatic": false,
-                    "lastClassName": "cwhJAF",
-                    "rules": Array [
-                      "height:",
-                      [Function],
-                      ";left:",
-                      [Function],
-                      ";line-height:0;min-width:",
-                      [Function],
-                      ";position:absolute;top:",
-                      [Function],
-                      ";width:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "Badge",
-                  "foldedComponentIds": Array [],
-                  "propTypes": Object {
-                    "className": [Function],
-                    "diameter": [Function],
-                    "size": [Function],
-                  },
-                  "render": [Function],
-                  "styledComponentId": "Badge-sc-1a5ie29-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size={20.1872}
+            <span
+              className="wds-avatar__badge Badge-sc-1a5ie29-0 eZJYUV"
+              title="Community Admin"
             >
-              <Badge
-                badge="sysop"
-                className="Badge-sc-1a5ie29-0 cwhJAF"
-                diameter={48}
-                size={20.1872}
-              >
-                <span
-                  className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
-                  title="Community Admin"
-                >
-                  <_default>
-                    <_default>
-                      <div />
-                    </_default>
-                  </_default>
-                </span>
-              </Badge>
-            </StyledComponent>
+              <_default>
+                <_default>
+                  <div />
+                </_default>
+              </_default>
+            </span>
           </Badge>
-        </div>
-      </StyledComponent>
+        </Badge>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -908,131 +650,50 @@ exports[`Avatar renders with default props 1`] = `
     <StyledAvatar__Wrapper
       size={48}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "eZFHuz",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 kFekPP"
         size={48}
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-          size={48}
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="3px"
+          className=""
+          size="48"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="3px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="48"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="3px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="48"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="48"
               title="User avatar"
+              width="48"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="48"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="48"
                 title="User avatar"
+                width="48"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="48"
                   title="User avatar"
                   width="48"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="48"
-                    title="User avatar"
-                    width="48"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="48"
-                      title="User avatar"
-                      width="48"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
-        </div>
-      </StyledComponent>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -1210,133 +871,52 @@ exports[`Avatar renders with link builder 1`] = `
     <StyledAvatar__Wrapper
       size={48}
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "eZFHuz",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 kFekPP"
         size={48}
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 eZFHuz"
-          size={48}
-        >
-          <div>
-            <DefaultAvatar
+        <div>
+          <DefaultAvatar
+            alt="User avatar"
+            borderWidth="3px"
+            className=""
+            size="48"
+            title="User avatar"
+          >
+            <Component
               alt="User avatar"
               borderWidth="3px"
-              className=""
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
               size="48"
               title="User avatar"
             >
-              <StyledComponent
+              <_default
                 alt="User avatar"
-                borderWidth="3px"
-                className=""
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "DefaultAvatar-whpo0l-0",
-                      "isStatic": false,
-                      "lastClassName": "buqKGf",
-                      "rules": Array [
-                        "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "defaultProps": Object {
-                      "className": "",
-                    },
-                    "displayName": "DefaultAvatar",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "DefaultAvatar-whpo0l-0",
-                    "target": [Function],
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                size="48"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="48"
                 title="User avatar"
+                width="48"
               >
-                <Component
+                <_default
                   alt="User avatar"
-                  borderWidth="3px"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
-                  size="48"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
+                  height="48"
                   title="User avatar"
+                  width="48"
                 >
-                  <_default
+                  <div
                     alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
+                    className="DefaultAvatar-whpo0l-0 jIIhnk"
                     height="48"
                     title="User avatar"
                     width="48"
-                  >
-                    <_default
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="48"
-                      title="User avatar"
-                      width="48"
-                    >
-                      <div
-                        alt="User avatar"
-                        className="DefaultAvatar-whpo0l-0 buqKGf"
-                        height="48"
-                        title="User avatar"
-                        width="48"
-                      />
-                    </_default>
-                  </_default>
-                </Component>
-              </StyledComponent>
-            </DefaultAvatar>
-          </div>
+                  />
+                </_default>
+              </_default>
+            </Component>
+          </DefaultAvatar>
         </div>
-      </StyledComponent>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -1521,235 +1101,68 @@ exports[`Avatar renders with props 1`] = `
       size={48}
       title="title"
     >
-      <StyledComponent
-        className="class-name"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "iqrvil",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 RGNCD class-name"
         href="href"
         size={48}
         title="title"
       >
-        <div
-          className="class-name StyledAvatar__Wrapper-sc-8ufved-1 iqrvil"
+        <StyledAvatar__Link
           href="href"
-          size={48}
-          title="title"
         >
-          <StyledAvatar__Link
+          <a
+            className="StyledAvatar__Link-sc-8ufved-0 dsDxPS"
             href="href"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledAvatar__Link-sc-8ufved-0",
-                    "isStatic": false,
-                    "lastClassName": "cSTxOC",
-                    "rules": Array [
-                      "color:#000;height:100%;width:100%;&:hover{color:",
-                      [Function],
-                      ";}",
-                    ],
-                  },
-                  "displayName": "StyledAvatar__Link",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledAvatar__Link-sc-8ufved-0",
-                  "target": "a",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              href="href"
+            <UserAvatar
+              alt="alt"
+              borderWidth="3px"
+              className=""
+              src="src"
+              title="alt"
             >
-              <a
-                className="StyledAvatar__Link-sc-8ufved-0 cSTxOC"
-                href="href"
+              <Component
+                alt="alt"
+                borderWidth="3px"
+                className="UserAvatar-sc-1wud8kz-0 cimYbm"
+                src="src"
+                title="alt"
               >
-                <UserAvatar
+                <img
                   alt="alt"
-                  borderWidth="3px"
-                  className=""
+                  className="UserAvatar-sc-1wud8kz-0 cimYbm"
                   src="src"
                   title="alt"
-                >
-                  <StyledComponent
-                    alt="alt"
-                    borderWidth="3px"
-                    className=""
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "UserAvatar-sc-1wud8kz-0",
-                          "isStatic": false,
-                          "lastClassName": "hafqGD",
-                          "rules": Array [
-                            "height:100%;width:100%;border-radius:50%;box-sizing:border-box;display:inline-block;border:",
-                            [Function],
-                            " solid #bed1cf;",
-                          ],
-                        },
-                        "defaultProps": Object {
-                          "className": "",
-                        },
-                        "displayName": "UserAvatar",
-                        "foldedComponentIds": Array [],
-                        "propTypes": Object {
-                          "alt": [Function],
-                          "borderWidth": [Function],
-                          "className": [Function],
-                          "title": [Function],
-                        },
-                        "render": [Function],
-                        "styledComponentId": "UserAvatar-sc-1wud8kz-0",
-                        "target": [Function],
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    src="src"
-                    title="alt"
-                  >
-                    <Component
-                      alt="alt"
-                      borderWidth="3px"
-                      className="UserAvatar-sc-1wud8kz-0 hafqGD"
-                      src="src"
-                      title="alt"
-                    >
-                      <img
-                        alt="alt"
-                        className="UserAvatar-sc-1wud8kz-0 hafqGD"
-                        src="src"
-                        title="alt"
-                      />
-                    </Component>
-                  </StyledComponent>
-                </UserAvatar>
-              </a>
-            </StyledComponent>
-          </StyledAvatar__Link>
+                />
+              </Component>
+            </UserAvatar>
+          </a>
+        </StyledAvatar__Link>
+        <Badge
+          badge="sysop"
+          className=""
+          diameter={48}
+          size={20.1872}
+        >
           <Badge
             badge="sysop"
-            className=""
+            className="Badge-sc-1a5ie29-0 eZJYUV"
             diameter={48}
             size={20.1872}
           >
-            <StyledComponent
-              badge="sysop"
-              className=""
-              diameter={48}
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Badge-sc-1a5ie29-0",
-                    "isStatic": false,
-                    "lastClassName": "cwhJAF",
-                    "rules": Array [
-                      "height:",
-                      [Function],
-                      ";left:",
-                      [Function],
-                      ";line-height:0;min-width:",
-                      [Function],
-                      ";position:absolute;top:",
-                      [Function],
-                      ";width:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "Badge",
-                  "foldedComponentIds": Array [],
-                  "propTypes": Object {
-                    "className": [Function],
-                    "diameter": [Function],
-                    "size": [Function],
-                  },
-                  "render": [Function],
-                  "styledComponentId": "Badge-sc-1a5ie29-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size={20.1872}
+            <span
+              className="wds-avatar__badge Badge-sc-1a5ie29-0 eZJYUV"
+              title="Community Admin"
             >
-              <Badge
-                badge="sysop"
-                className="Badge-sc-1a5ie29-0 cwhJAF"
-                diameter={48}
-                size={20.1872}
-              >
-                <span
-                  className="wds-avatar__badge Badge-sc-1a5ie29-0 cwhJAF"
-                  title="Community Admin"
-                >
-                  <_default>
-                    <_default>
-                      <div />
-                    </_default>
-                  </_default>
-                </span>
-              </Badge>
-            </StyledComponent>
+              <_default>
+                <_default>
+                  <div />
+                </_default>
+              </_default>
+            </span>
           </Badge>
-        </div>
-      </StyledComponent>
+        </Badge>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -1927,203 +1340,74 @@ exports[`Avatar renders with size >= 48px 1`] = `
     <StyledAvatar__Wrapper
       size="50"
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "kywEtC",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 dEqPDa"
         size="50"
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 kywEtC"
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="3px"
+          className=""
           size="50"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="3px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="50"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="3px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="50"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="50"
               title="User avatar"
+              width="50"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="3px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="50"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="50"
                 title="User avatar"
+                width="50"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="50"
                   title="User avatar"
                   width="50"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="50"
-                    title="User avatar"
-                    width="50"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="50"
-                      title="User avatar"
-                      width="50"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+        <Badge
+          badge="sysop"
+          className=""
+          diameter={50}
+          size={20.695}
+        >
           <Badge
             badge="sysop"
-            className=""
+            className="Badge-sc-1a5ie29-0 dshYrH"
             diameter={50}
             size={20.695}
           >
-            <StyledComponent
-              badge="sysop"
-              className=""
-              diameter={50}
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Badge-sc-1a5ie29-0",
-                    "isStatic": false,
-                    "lastClassName": "juzlSY",
-                    "rules": Array [
-                      "height:",
-                      [Function],
-                      ";left:",
-                      [Function],
-                      ";line-height:0;min-width:",
-                      [Function],
-                      ";position:absolute;top:",
-                      [Function],
-                      ";width:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "Badge",
-                  "foldedComponentIds": Array [],
-                  "propTypes": Object {
-                    "className": [Function],
-                    "diameter": [Function],
-                    "size": [Function],
-                  },
-                  "render": [Function],
-                  "styledComponentId": "Badge-sc-1a5ie29-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size={20.695}
+            <span
+              className="wds-avatar__badge Badge-sc-1a5ie29-0 dshYrH"
+              title="Community Admin"
             >
-              <Badge
-                badge="sysop"
-                className="Badge-sc-1a5ie29-0 juzlSY"
-                diameter={50}
-                size={20.695}
-              >
-                <span
-                  className="wds-avatar__badge Badge-sc-1a5ie29-0 juzlSY"
-                  title="Community Admin"
-                >
-                  <_default>
-                    <_default>
-                      <div />
-                    </_default>
-                  </_default>
-                </span>
-              </Badge>
-            </StyledComponent>
+              <_default>
+                <_default>
+                  <div />
+                </_default>
+              </_default>
+            </span>
           </Badge>
-        </div>
-      </StyledComponent>
+        </Badge>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -2300,131 +1584,50 @@ exports[`Avatar renders with size >= 120px 1`] = `
     <StyledAvatar__Wrapper
       size="124"
     >
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "gtDpLB",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 kuyVbc"
         size="124"
       >
-        <div
-          className="StyledAvatar__Wrapper-sc-8ufved-1 gtDpLB"
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="4px"
+          className=""
           size="124"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="4px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="124"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="4px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="124"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="124"
               title="User avatar"
+              width="124"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="4px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="124"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="124"
                 title="User avatar"
+                width="124"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="124"
                   title="User avatar"
                   width="124"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="124"
-                    title="User avatar"
-                    width="124"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="124"
-                      title="User avatar"
-                      width="124"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
-        </div>
-      </StyledComponent>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>
@@ -2604,204 +1807,74 @@ exports[`Avatar renders with size 30px 1`] = `
       className="foo"
       size="30"
     >
-      <StyledComponent
-        className="foo"
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-              "isStatic": false,
-              "lastClassName": "miNBH",
-              "rules": Array [
-                "display:inline-block;height:",
-                [Function],
-                ";min-width:",
-                [Function],
-                ";position:relative;width:",
-                [Function],
-                ";",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".DefaultAvatar-whpo0l-0",
-                ":hover{fill:",
-                [Function],
-                ";}",
-                ".StyledAvatar__Link-sc-8ufved-0",
-                " ",
-                ".UserAvatar-sc-1wud8kz-0",
-                ":hover{border-color:",
-                [Function],
-                ";}",
-              ],
-            },
-            "displayName": "StyledAvatar__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledAvatar__Wrapper-sc-8ufved-1",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledAvatar__Wrapper-sc-8ufved-1 lgYbQA foo"
         size="30"
       >
-        <div
-          className="foo StyledAvatar__Wrapper-sc-8ufved-1 miNBH"
+        <DefaultAvatar
+          alt="User avatar"
+          borderWidth="2px"
+          className=""
           size="30"
+          title="User avatar"
         >
-          <DefaultAvatar
+          <Component
             alt="User avatar"
             borderWidth="2px"
-            className=""
+            className="DefaultAvatar-whpo0l-0 jIIhnk"
             size="30"
             title="User avatar"
           >
-            <StyledComponent
+            <_default
               alt="User avatar"
-              borderWidth="2px"
-              className=""
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "DefaultAvatar-whpo0l-0",
-                    "isStatic": false,
-                    "lastClassName": "buqKGf",
-                    "rules": Array [
-                      "background-color:#fff;border-radius:50%;border:0;box-sizing:border-box;display:inline-block;fill:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "DefaultAvatar",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "DefaultAvatar-whpo0l-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size="30"
+              className="DefaultAvatar-whpo0l-0 jIIhnk"
+              height="30"
               title="User avatar"
+              width="30"
             >
-              <Component
+              <_default
                 alt="User avatar"
-                borderWidth="2px"
-                className="DefaultAvatar-whpo0l-0 buqKGf"
-                size="30"
+                className="DefaultAvatar-whpo0l-0 jIIhnk"
+                height="30"
                 title="User avatar"
+                width="30"
               >
-                <_default
+                <div
                   alt="User avatar"
-                  className="DefaultAvatar-whpo0l-0 buqKGf"
+                  className="DefaultAvatar-whpo0l-0 jIIhnk"
                   height="30"
                   title="User avatar"
                   width="30"
-                >
-                  <_default
-                    alt="User avatar"
-                    className="DefaultAvatar-whpo0l-0 buqKGf"
-                    height="30"
-                    title="User avatar"
-                    width="30"
-                  >
-                    <div
-                      alt="User avatar"
-                      className="DefaultAvatar-whpo0l-0 buqKGf"
-                      height="30"
-                      title="User avatar"
-                      width="30"
-                    />
-                  </_default>
-                </_default>
-              </Component>
-            </StyledComponent>
-          </DefaultAvatar>
+                />
+              </_default>
+            </_default>
+          </Component>
+        </DefaultAvatar>
+        <Badge
+          badge="sysop"
+          className=""
+          diameter={30}
+          size={15.617}
+        >
           <Badge
             badge="sysop"
-            className=""
+            className="Badge-sc-1a5ie29-0 jTRLlH"
             diameter={30}
             size={15.617}
           >
-            <StyledComponent
-              badge="sysop"
-              className=""
-              diameter={30}
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Badge-sc-1a5ie29-0",
-                    "isStatic": false,
-                    "lastClassName": "clhjIq",
-                    "rules": Array [
-                      "height:",
-                      [Function],
-                      ";left:",
-                      [Function],
-                      ";line-height:0;min-width:",
-                      [Function],
-                      ";position:absolute;top:",
-                      [Function],
-                      ";width:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "defaultProps": Object {
-                    "className": "",
-                  },
-                  "displayName": "Badge",
-                  "foldedComponentIds": Array [],
-                  "propTypes": Object {
-                    "className": [Function],
-                    "diameter": [Function],
-                    "size": [Function],
-                  },
-                  "render": [Function],
-                  "styledComponentId": "Badge-sc-1a5ie29-0",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              size={15.617}
+            <span
+              className="wds-avatar__badge Badge-sc-1a5ie29-0 jTRLlH"
+              title="Community Admin"
             >
-              <Badge
-                badge="sysop"
-                className="Badge-sc-1a5ie29-0 clhjIq"
-                diameter={30}
-                size={15.617}
-              >
-                <span
-                  className="wds-avatar__badge Badge-sc-1a5ie29-0 clhjIq"
-                  title="Community Admin"
-                >
-                  <_default>
-                    <_default>
-                      <div />
-                    </_default>
-                  </_default>
-                </span>
-              </Badge>
-            </StyledComponent>
+              <_default>
+                <_default>
+                  <div />
+                </_default>
+              </_default>
+            </span>
           </Badge>
-        </div>
-      </StyledComponent>
+        </Badge>
+      </div>
     </StyledAvatar__Wrapper>
   </StyledAvatar>
 </ThemeProvider>

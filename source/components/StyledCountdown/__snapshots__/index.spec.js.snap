@@ -172,174 +172,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #0 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                9
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="high"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "hbBtOH",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="high"
+            9
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="high"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hNYCkg"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -517,174 +380,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #1 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                8
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="high"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "hbBtOH",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="high"
+            8
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="high"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hNYCkg"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -862,174 +588,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #2 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                7
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="medium"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "gkmAjv",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="medium"
+            7
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="medium"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 fStdUE"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -1207,174 +796,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #3 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                6
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="medium"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "gkmAjv",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="medium"
+            6
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="medium"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 fStdUE"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -1552,174 +1004,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #4 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                5
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="medium"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "gkmAjv",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="medium"
+            5
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="medium"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 fStdUE"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -1897,174 +1212,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #5 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                4
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="medium"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "gkmAjv",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="medium"
+            4
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="medium"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 fStdUE"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 gkmAjv"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -2242,174 +1420,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #6 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                3
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="low"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "csuRuC",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="low"
+            3
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="low"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 czFhup"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -2587,174 +1628,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #7 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                2
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="low"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "csuRuC",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="low"
+            2
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="low"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 czFhup"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -2932,174 +1836,37 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #8 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                1
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="low"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "csuRuC",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="low"
+            1
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="low"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 czFhup"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 csuRuC"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -3277,82 +2044,17 @@ exports[`StyledCountdown calls callback 10 times with proper values Callback #9 
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                0
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-        </div>
-      </StyledComponent>
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
+          >
+            0
+          </span>
+        </StyledCountdown__Value>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -3530,174 +2232,37 @@ exports[`StyledCountdown renders correctly 1`] = `
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                10
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="high"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "hbBtOH",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="high"
+            10
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="high"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hNYCkg"
+          >
+            <StyledCountdown__CircleWithAnimation
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
-              >
-                <StyledCountdown__CircleWithAnimation
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                          "isStatic": true,
-                          "lastClassName": "fgfYuj",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                            "animation:",
-                            Keyframes {
-                              "id": "sc-keyframes-iucznl",
-                              "inject": [Function],
-                              "name": "iucznl",
-                              "rules": Array [
-                                "@-webkit-keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                                "@keyframes iucznl{from{stroke-dashoffset:0;}to{stroke-dashoffset:95px;}}",
-                              ],
-                              "toString": [Function],
-                            },
-                            " 10s linear forwards;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__CircleWithAnimation",
-                        "foldedComponentIds": Array [
-                          "StyledCountdown__Circle-sc-1oil9oi-2",
-                        ],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__CircleWithAnimation-sc-1oil9oi-3",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 fgfYuj"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__CircleWithAnimation>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 StyledCountdown__CircleWithAnimation-sc-1oil9oi-3 ZXNUt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__CircleWithAnimation>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
@@ -3875,160 +2440,37 @@ exports[`StyledCountdown renders correctly when stopped 1`] = `
     <StyledCountdown__Wrapper
       className={null}
     >
-      <StyledComponent
-        className={null}
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-              "isStatic": false,
-              "lastClassName": "erWcap",
-              "rules": Array [
-                "align-items:center;background-color:",
-                [Function],
-                ";border-radius:100%;color:",
-                [Function],
-                ";display:inline-flex;height:40px;justify-content:center;position:relative;width:40px;&::after{border:1px solid ",
-                [Function],
-                ";border-radius:100%;content:' ';height:30px;left:4px;position:absolute;top:4px;width:30px;}",
-              ],
-            },
-            "displayName": "StyledCountdown__Wrapper",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "StyledCountdown__Wrapper-sc-1oil9oi-0",
-            "target": "div",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
-        }
-        forwardedRef={null}
+      <div
+        className="StyledCountdown__Wrapper-sc-1oil9oi-0 hvhDFI"
       >
-        <div
-          className="StyledCountdown__Wrapper-sc-1oil9oi-0 erWcap"
-        >
-          <StyledCountdown__Value>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                    "isStatic": false,
-                    "lastClassName": "dnqhKB",
-                    "rules": Array [
-                      "color:",
-                      [Function],
-                      ";font-size:",
-                      [Function],
-                      ";font-weight:",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__Value",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__Value-sc-1oil9oi-1",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="StyledCountdown__Value-sc-1oil9oi-1 dnqhKB"
-              >
-                10
-              </span>
-            </StyledComponent>
-          </StyledCountdown__Value>
-          <StyledCountdown__AnimatedProgress
-            level="high"
+        <StyledCountdown__Value>
+          <span
+            className="StyledCountdown__Value-sc-1oil9oi-1 kVILWS"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                    "isStatic": false,
-                    "lastClassName": "hbBtOH",
-                    "rules": Array [
-                      "height:34px;position:absolute;right:3px;stroke:",
-                      [Function],
-                      ";top:3px;transform:rotateY(-180deg) rotateZ(-90deg);width:34px;z-index:1;",
-                    ],
-                  },
-                  "displayName": "StyledCountdown__AnimatedProgress",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledCountdown__AnimatedProgress-sc-1oil9oi-4",
-                  "target": "svg",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              level="high"
+            10
+          </span>
+        </StyledCountdown__Value>
+        <StyledCountdown__AnimatedProgress
+          level="high"
+        >
+          <svg
+            className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hNYCkg"
+          >
+            <StyledCountdown__Circle
+              cx="17"
+              cy="17"
+              r="15"
             >
-              <svg
-                className="StyledCountdown__AnimatedProgress-sc-1oil9oi-4 hbBtOH"
-              >
-                <StyledCountdown__Circle
-                  cx="17"
-                  cy="17"
-                  r="15"
-                >
-                  <StyledComponent
-                    cx="17"
-                    cy="17"
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "StyledCountdown__Circle-sc-1oil9oi-2",
-                          "isStatic": true,
-                          "lastClassName": "lkoahA",
-                          "rules": Array [
-                            "fill:none;stroke-dasharray:95px;stroke-dashoffset:0;stroke-width:3px;",
-                          ],
-                        },
-                        "displayName": "StyledCountdown__Circle",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "StyledCountdown__Circle-sc-1oil9oi-2",
-                        "target": "circle",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                    r="15"
-                  >
-                    <circle
-                      className="StyledCountdown__Circle-sc-1oil9oi-2 lkoahA"
-                      cx="17"
-                      cy="17"
-                      r="15"
-                    />
-                  </StyledComponent>
-                </StyledCountdown__Circle>
-              </svg>
-            </StyledComponent>
-          </StyledCountdown__AnimatedProgress>
-        </div>
-      </StyledComponent>
+              <circle
+                className="StyledCountdown__Circle-sc-1oil9oi-2 ggtQdt"
+                cx="17"
+                cy="17"
+                r="15"
+              />
+            </StyledCountdown__Circle>
+          </svg>
+        </StyledCountdown__AnimatedProgress>
+      </div>
     </StyledCountdown__Wrapper>
   </StyledCountdown>
 </ThemeProvider>
