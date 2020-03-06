@@ -9,7 +9,7 @@ const tags = [
 ];
 
 test('SearchForm renders empty', () => {
-    const component = mountWithThemeProvider(<SearchForm />);
+    const component = mountWithThemeProvider(<SearchForm accentColor="#00f" />);
     expect(component.find(SearchForm)).toMatchSnapshot();
 });
 

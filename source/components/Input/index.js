@@ -154,7 +154,7 @@ export default class Input extends React.Component {
         }
     }
 
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
         const id = newProps.id || generateId();
 
         this.setState({
