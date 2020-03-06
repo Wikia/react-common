@@ -104,7 +104,7 @@
     "rollup-plugin-string": "^2.0.2",
     "rollup-plugin-svg": "^1.0.1",
     "sass-loader": "^7.1.0",
-    "semver": "^5.6.0",
+    "semver": "^7.0.0",
     "sinon": "^7.1.1",
     "stylelint": "^9.8.0",
     "stylelint-config-fandom": "git://github.com/Wikia/stylelint-config-fandom.git#0.0.1",
