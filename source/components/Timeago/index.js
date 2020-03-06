@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/* istanbul ignore next */
 function getTimeDistanceString(datetime) {
     const date = new Date(parseInt(datetime, 10));
     const now = Date.now();
