@@ -2,7 +2,7 @@
 
 exports[`Renders Timeago component 1`] = `
 <time
-  dateTime={1582204316527}
+  datetime={1582205173526}
 >
   2/20/2020
 </time>

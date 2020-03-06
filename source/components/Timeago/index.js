@@ -61,7 +61,7 @@ export default class Timeago extends React.Component {
         const { display } = this.state;
 
         return (
-            <time dateTime={datetime}>
+            <time datetime={datetime}>
                 {display}
             </time>
         );
