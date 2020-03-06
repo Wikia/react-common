@@ -1,8 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import distanceInWordsStrict from 'date-fns/distance_in_words_strict';
 
-import buildDistanceInWordsLocale from './buildDistanceInWordsLocale';
+function getTimeDistanceString(datetime) {
+    const date = new Date(parseInt(datetime, 10));
+    const now = Date.now();
+    const diffInSeconds = (now - date) / 1000;
+
+    if (diffInSeconds > 432000) {
+        // more than 5 days ago - show date
+        return date.toLocaleDateString();
+    }
+
+    if (diffInSeconds > 86400) {
+        // more than a day ago
+        return `${Math.round(diffInSeconds / 60 / 60 / 24)}d`;
+    }
+
+    if (diffInSeconds > 3600) {
+        // more than an hour ago
+        return `${Math.round(diffInSeconds / 60 / 60)}h`;
+    }
+
+    if (diffInSeconds < 60) {
+        // less than a minute ago
+        return 'now';
+    }
+
+    return `${Math.round(diffInSeconds / 60)}m`;
+}
 
 /**
  * The Timeago component is a small component that
@@ -27,11 +52,7 @@ export default class Timeago extends React.Component {
         const { datetime } = this.props;
 
         this.setState({
-            display: distanceInWordsStrict(Date.now(), datetime, {
-                locale: {
-                    distanceInWords: buildDistanceInWordsLocale(),
-                },
-            }),
+            display: getTimeDistanceString(datetime),
         });
     }
 
