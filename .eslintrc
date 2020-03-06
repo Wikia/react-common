@@ -18,11 +18,17 @@
     }
   },
   "rules": {
+    "template-curly-spacing": [
+      "off"
+    ],
     "indent": [
       "error",
       4,
       {
-        "SwitchCase": 1
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "TemplateLiteral"
+        ]
       }
     ],
     "comma-dangle": [
