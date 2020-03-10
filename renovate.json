@@ -6,5 +6,8 @@
   "nvm": false,
   "prConcurrentLimit": 5,
   "prCreation": "not-pending",
-  "rangeStrategy": "replace"
+  "rangeStrategy": "replace",
+  "labels": [
+    "renovate"
+  ]
 }
