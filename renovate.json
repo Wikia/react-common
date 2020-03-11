@@ -8,6 +8,6 @@
   "prCreation": "not-pending",
   "rangeStrategy": "replace",
   "labels": [
-    "renovate"
+    "panda-ignore"
   ]
 }
