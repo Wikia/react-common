@@ -48,6 +48,8 @@
       "Button",
       "ButtonGroup",
       "Checkbox",
+      "Radio",
+      "RadioGroup",
       "ContentWell",
       "Countdown",
       "StyledCountdown",

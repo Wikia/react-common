@@ -1,0 +1,23 @@
+@import "../../../node_modules/design-system/dist/scss/wds-variables/index";
+
+.wds-radio {
+	display: inline-flex;
+
+	&__input {
+		display: none;
+	}
+
+	&__label {
+		cursor: pointer;
+		display: inline-flex;
+	}
+
+	&__icon,
+	&__lock-icon {
+		margin-right: 13px;
+	}
+
+	&__input[disabled] + .wds-radio__label {
+		color: $wds-fandom-color-middle-gray;
+	}
+}
