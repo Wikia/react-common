@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup renders correctly with default values 1`] = `
+<fieldset
+  className="wds-radio-group"
+>
+  <div
+    aria-label="group"
+    role="radiogroup"
+  >
+    Content
+  </div>
+</fieldset>
+`;
+
+exports[`RadioGroup renders correctly with title 1`] = `
+<fieldset
+  className="wds-radio-group"
+>
+  <legend
+    className="wds-radio-group__legend"
+  >
+    Hello world
+  </legend>
+  <div
+    aria-label="group"
+    role="radiogroup"
+  >
+    Content with title
+  </div>
+</fieldset>
+`;

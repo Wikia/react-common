@@ -17,7 +17,7 @@ export default function RadioGroup({ name, children, title, ...restProps }) {
 RadioGroup.propTypes = {
     children: PropTypes.node.isRequired,
     name: PropTypes.string.isRequired,
-    title: PropTypes.string,
+    title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 };
 
 RadioGroup.defaultProps = {

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders correctly checked (and with label and class name) 1`] = `
+<label
+  className="wds-radio checked-box"
+>
+  <input
+    checked={true}
+    className="wds-radio__input"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+    value="val"
+  />
+  <span
+    className="wds-radio__label"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-radio__icon"
+    />
+    a Radio
+  </span>
+</label>
+`;
+
+exports[`Radio renders correctly when disabled 1`] = `
+<label
+  className="wds-radio"
+>
+  <input
+    checked={false}
+    className="wds-radio__input"
+    disabled={true}
+    onChange={[Function]}
+    type="radio"
+    value="val"
+  />
+  <span
+    className="wds-radio__label"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-radio__lock-icon"
+    />
+    disabled radio
+  </span>
+</label>
+`;
+
+exports[`Radio renders correctly with default values 1`] = `
+<label
+  className="wds-radio"
+>
+  <input
+    checked={false}
+    className="wds-radio__input"
+    disabled={false}
+    onChange={[Function]}
+    type="radio"
+    value="val"
+  />
+  <span
+    className="wds-radio__label"
+  >
+    <div
+      className="wds-icon wds-icon-small wds-radio__icon"
+    />
+  </span>
+</label>
+`;

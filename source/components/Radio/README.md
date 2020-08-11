@@ -1,5 +1,6 @@
-Each radio must have a value assigned to it. Defaults:
+Each radio must have a value assigned to it.
 
+Defaults:
 ```jsx
 initialState = {
     checked: undefined
@@ -19,6 +20,20 @@ initialState = {
         onChange={() => setState({ checked: 'two' })}
      >
         Two
+    </Radio>
+</div>
+```
+
+Disabled:
+```jsx
+<div>
+    <Radio
+        value="one"
+        disabled
+        checked={false}
+        onChange={() => {}}
+     >
+        Disabled
     </Radio>
 </div>
 ```
