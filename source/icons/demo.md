@@ -31,6 +31,9 @@ const IconAvatarTiny = require('./IconAvatarTiny').default;
 const IconBell = require('./IconBell').default;
 const IconBellSmall = require('./IconBellSmall').default;
 const IconBellTiny = require('./IconBellTiny').default;
+const IconBlocks = require('./IconBlocks').default;
+const IconBlocksSmall = require('./IconBlocksSmall').default;
+const IconBlocksTiny = require('./IconBlocksTiny').default;
 const IconBold = require('./IconBold').default;
 const IconBoldActive = require('./IconBoldActive').default;
 const IconBoldActiveSmall = require('./IconBoldActiveSmall').default;
@@ -491,6 +494,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconBellTiny</VariantName>
             <VariantComponent><IconBellTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconBlocks</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconBlocks</VariantName>
+            <VariantComponent><IconBlocks style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconBlocksSmall</VariantName>
+            <VariantComponent><IconBlocksSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconBlocksTiny</VariantName>
+            <VariantComponent><IconBlocksTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
