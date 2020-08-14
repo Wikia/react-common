@@ -18,7 +18,11 @@ exports[`Radio renders correctly checked (and with label and class name) 1`] = `
     <div
       className="wds-icon wds-icon-small wds-radio__icon"
     />
-    a Radio
+    <span
+      className="wds-radio__label-text"
+    >
+      a Radio
+    </span>
   </span>
 </label>
 `;
@@ -41,7 +45,11 @@ exports[`Radio renders correctly when disabled 1`] = `
     <div
       className="wds-icon wds-icon-small wds-radio__lock-icon"
     />
-    disabled radio
+    <span
+      className="wds-radio__label-text"
+    >
+      disabled radio
+    </span>
   </span>
 </label>
 `;
@@ -63,6 +71,9 @@ exports[`Radio renders correctly with default values 1`] = `
   >
     <div
       className="wds-icon wds-icon-small wds-radio__icon"
+    />
+    <span
+      className="wds-radio__label-text"
     />
   </span>
 </label>
