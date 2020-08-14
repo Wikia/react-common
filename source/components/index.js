@@ -43,6 +43,8 @@ export { default as StyledTag } from './StyledTag';
 export { default as Timeago } from './Timeago';
 export { default as VideoPlayIcon } from './VideoPlayIcon';
 export { default as Portal } from './Portal';
+export { default as Radio } from './Radio';
+export { default as RadioGroup } from './RadioGroup';
 
 export { default as StyledErrorDisplayingContent } from './StyledErrorDisplayingContent';
 
