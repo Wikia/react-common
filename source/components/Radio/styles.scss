@@ -8,8 +8,13 @@
 	}
 
 	&__label {
+		align-items: center;
 		cursor: pointer;
 		display: inline-flex;
+	}
+
+	&__label-text {
+		line-height: normal;
 	}
 
 	&__icon,

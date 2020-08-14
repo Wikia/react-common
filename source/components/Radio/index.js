@@ -23,7 +23,7 @@ export default function Radio({ children, className, checked, disabled, ...restP
                 {checked && !disabled && <IconRadioActiveSmall className="wds-icon wds-icon-small wds-radio__icon" />}
                 {!checked && !disabled && <IconRadioEmptySmall className="wds-icon wds-icon-small wds-radio__icon" />}
                 {disabled && <IconLockSmall className="wds-icon wds-icon-small wds-radio__lock-icon" />}
-                {children}
+                <span className="wds-radio__label-text">{children}</span>
             </span>
         </label>
     );
