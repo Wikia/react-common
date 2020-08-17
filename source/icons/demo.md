@@ -197,6 +197,9 @@ const IconMessageTiny = require('./IconMessageTiny').default;
 const IconMore = require('./IconMore').default;
 const IconMoreSmall = require('./IconMoreSmall').default;
 const IconMoreTiny = require('./IconMoreTiny').default;
+const IconMove = require('./IconMove').default;
+const IconMoveSmall = require('./IconMoveSmall').default;
+const IconMoveTiny = require('./IconMoveTiny').default;
 const IconNk = require('./IconNk').default;
 const IconNumberedList = require('./IconNumberedList').default;
 const IconNumberedListSmall = require('./IconNumberedListSmall').default;
@@ -1684,6 +1687,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconMoreTiny</VariantName>
             <VariantComponent><IconMoreTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconMove</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconMove</VariantName>
+            <VariantComponent><IconMove style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconMoveSmall</VariantName>
+            <VariantComponent><IconMoveSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconMoveTiny</VariantName>
+            <VariantComponent><IconMoveTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
