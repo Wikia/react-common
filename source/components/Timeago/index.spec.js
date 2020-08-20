@@ -4,14 +4,22 @@ import MockDate from 'mockdate';
 
 import Timeago from './index';
 
-const getNowDate = () => new Date('Tue Sep 17 2018 12:58:43 GMT+0000');
+const getNowDate = () => new Date('Tue Sep 17 2018 12:58:43');
+
+const RealDate = Date;
 
 beforeAll(() => {
     MockDate.set(getNowDate());
+    Date.prototype = Object.assign(Date.prototype, {
+        toLocaleString() {
+            return this.toISOString();
+        },
+    });
 });
 
 afterAll(() => {
     MockDate.reset();
+    global.Date = RealDate;
 });
 
 describe('Timeago', () => {
