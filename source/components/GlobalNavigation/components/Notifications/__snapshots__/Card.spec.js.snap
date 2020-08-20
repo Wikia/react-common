@@ -156,6 +156,11 @@ exports[`Card renders correctly with default props 1`] = `
         >
           <Timeago
             datetime="2019-02-20T11:46:19.000Z"
+            renderDate={null}
+            renderDays={null}
+            renderHours={null}
+            renderMinutes={null}
+            renderNow={null}
           />
         </li>
         <li>
@@ -332,6 +337,11 @@ exports[`Card renders correctly with isUnread set to true 1`] = `
         >
           <Timeago
             datetime="2019-02-20T11:46:19.000Z"
+            renderDate={null}
+            renderDays={null}
+            renderHours={null}
+            renderMinutes={null}
+            renderNow={null}
           />
         </li>
         <li>
@@ -513,6 +523,11 @@ exports[`Card renders correctly with no title 1`] = `
         >
           <Timeago
             datetime="2019-02-20T11:46:19.000Z"
+            renderDate={null}
+            renderDays={null}
+            renderHours={null}
+            renderMinutes={null}
+            renderNow={null}
           />
         </li>
         <li>
@@ -672,6 +687,11 @@ exports[`Card renders correctly with no title and announcement type 1`] = `
         >
           <Timeago
             datetime="2019-02-20T11:46:19.000Z"
+            renderDate={null}
+            renderDays={null}
+            renderHours={null}
+            renderMinutes={null}
+            renderNow={null}
           />
         </li>
         <li>
@@ -848,6 +868,11 @@ exports[`Card renders correctly with two actors 1`] = `
         >
           <Timeago
             datetime="2019-02-20T11:46:19.000Z"
+            renderDate={null}
+            renderDays={null}
+            renderHours={null}
+            renderMinutes={null}
+            renderNow={null}
           />
         </li>
         <li>
