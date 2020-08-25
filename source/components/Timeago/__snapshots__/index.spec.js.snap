@@ -1,9 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders Timeago component 1`] = `
-<span
-  title={1582205173526}
+exports[`Timeago now should render custom string 1`] = `
+<time
+  dateTime="2018-09-17T12:58:43.000Z"
+  title="2018-09-17T12:58:43.000Z"
 >
-  2/20/2020
-</span>
+  customMessage
+</time>
+`;
+
+exports[`Timeago now should render custom string 2`] = `
+<time
+  dateTime="2018-09-17T12:58:43.000Z"
+  title="2018-09-17T12:58:43.000Z"
+>
+  customMessage
+</time>
+`;
+
+exports[`Timeago now should render default string 1`] = `
+<time
+  dateTime="2018-09-17T12:58:43.000Z"
+  title="2018-09-17T12:58:43.000Z"
+>
+  now
+</time>
+`;
+
+exports[`Timeago now should render default string 2`] = `
+<time
+  dateTime="2018-09-17T12:58:43.000Z"
+  title="2018-09-17T12:58:43.000Z"
+>
+  now
+</time>
 `;
