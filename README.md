@@ -10,4 +10,4 @@ Wikia's reusable React parts.
 
 ## Dependencies
 - `i18next` and `react-i18next` are listed as `peerDependency` to make sure single instance of `i18next` is used.
-So far they're incldued in `GlobalNav` and `GlobalFooter` components so if you're not using them you can omit warnings.
+So far they're included in `GlobalNav` and `GlobalFooter` components so if you're not using them you can omit warnings.
