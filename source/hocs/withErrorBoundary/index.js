@@ -21,8 +21,8 @@ class ErrorBoundary extends React.Component {
 
         if (!this.props.skipLog) {
             logErrorEvent(this.props.appName, this.props.appVersion, `error-boundary-${this.props.name}`, {
-                errorStack: error.stack.substr(0, 1000), // too much prevents the log from showing up
                 errorMessage: error.message,
+                errorStack: error.stack.substr(0, 1000), // too much prevents the log from showing up
             });
         }
     }
