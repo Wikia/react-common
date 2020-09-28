@@ -19,6 +19,7 @@ import NotificationsDataProvider from './components/Notifications/NotificationsD
 import NotificationsDropdown from './components/Notifications/NotificationsDropdown';
 import PartnerSlot from './components/PartnerSlot/PartnerSlot';
 import { I18nNamespaceProvider } from './context/I18nNamespaceContext';
+import UserContext from './context/UserContext';
 
 import './styles.scss';
 
@@ -261,13 +262,15 @@ class GlobalNavigation extends React.Component {
         return (
             <I18nNamespaceProvider value={i18nNamespace}>
                 <NotificationsDataProvider isAuthenticated={Boolean(model.user)} serviceUrl={model['services-domain']}>
-                    <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
-                        {this.renderLeftBar()}
-                        {this.renderRightBar()}
-                        {
-                            partnerSlotModel && <PartnerSlot model={partnerSlotModel} />
-                        }
-                    </div>
+                    <UserContext.Provider value={model.user}>
+                        <div className={containerClass} onClick={this.onTrackingLabelClick} ref={this.nav}>
+                            {this.renderLeftBar()}
+                            {this.renderRightBar()}
+                            {
+                                partnerSlotModel && <PartnerSlot model={partnerSlotModel} />
+                            }
+                        </div>
+                    </UserContext.Provider>
                 </NotificationsDataProvider>
             </I18nNamespaceProvider>
         );

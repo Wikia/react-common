@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import get from 'lodash/get';
 
 import {
-    isAnnouncement, isArticleCommentReply,
+    isAnnouncement, isArticleCommentAtMention, isArticleCommentReply, isArticleCommentReplyAtMention,
     isDiscussionPostUpvote,
     isDiscussionReply,
     isDiscussionReplyUpvote,
@@ -120,7 +120,7 @@ const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestA
     mentioner: get(latestActors, '[0].name'),
 });
 
-const getArticleCommentReplyMessageBody = (translateFunc, { userData, refersToAuthorId, latestActors, title }) => {
+function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, latestActors, title }) {
     const currentUserId = userData?.id;
     const user = get(latestActors, '[0].name');
 
@@ -128,8 +128,18 @@ const getArticleCommentReplyMessageBody = (translateFunc, { userData, refersToAu
         ? 'notifications-article-comment-reply-own-comment'
         : 'notifications-article-comment-reply-followed-comment';
 
-    return translateFunc(messageKey, { user, articleTitle: title });
-};
+    return t(messageKey, { user, articleTitle: title });
+}
+
+function getArticleCommentAtMentionMessageBody(t, { latestActors, title }) {
+    const user = get(latestActors, '[0].name');
+    return t('notifications-article-comment-comment-mention', { user, articleTitle: title });
+}
+
+function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) {
+    const user = get(latestActors, '[0].name');
+    return t('notifications-article-comment-reply-mention', { user, articleTitle: title });
+}
 
 const getText = (translateFunc, model, userData) => {
     const { type, snippet, title, totalUniqueActors, latestActors, refersToAuthorId } = model;
@@ -161,6 +171,14 @@ const getText = (translateFunc, model, userData) => {
 
     if (isArticleCommentReply(type)) {
         return getArticleCommentReplyMessageBody(translateFunc, { userData, latestActors, title, refersToAuthorId });
+    }
+
+    if (isArticleCommentAtMention(type)) {
+        return getArticleCommentAtMentionMessageBody(translateFunc, { latestActors, title });
+    }
+
+    if (isArticleCommentReplyAtMention(type)) {
+        return getArticleCommentReplyAtMentionMessageBody(translateFunc, { latestActors, title });
     }
 
     return null;
