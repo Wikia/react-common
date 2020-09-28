@@ -1,0 +1,61 @@
+@keyframes countdown-animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 95px;
+  }
+}
+.countdown__wrapper {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  color: #1a1a1a;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+}
+.countdown__wrapper::after {
+  border: 1px solid #7f9998;
+  border-radius: 100%;
+  content: " ";
+  height: 30px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 30px;
+}
+.countdown__value {
+  color: #002a32;
+  font-size: 18px;
+  font-weight: 700;
+}
+.countdown__animation {
+  height: 34px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+  width: 34px;
+  z-index: 1;
+}
+.countdown__animation.is-low {
+  stroke: #e81a3f;
+}
+.countdown__animation.is-medium {
+  stroke: #de5e33;
+}
+.countdown__animation.is-high {
+  stroke: #018c30;
+}
+.countdown__animation > circle {
+  fill: none;
+  stroke-dasharray: 95px;
+  stroke-dashoffset: 0;
+  stroke-width: 3px;
+}
+.countdown__animation > circle:not(.is-stopped) {
+  animation: countdown-animation 10s linear forwards;
+}

@@ -73,12 +73,12 @@ typings/
 package-lock.json
 
 # TODO remove this list
-/assets
-/components
-/hocs
-/hooks
-/icons
-/models
-/systems
-/theme
-/utils
+#/assets
+#/components
+#/hocs
+#/hooks
+#/icons
+#/models
+#/systems
+#/theme
+#/utils

@@ -1,0 +1,30 @@
+'use strict';
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = _interopDefault(require('react'));
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+var IconReplySmall = (({
+  styles = {},
+  ...props
+}) => React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  xmlnsXlink: "http://www.w3.org/1999/xlink",
+  viewBox: "0 0 18 18"
+}, props), React.createElement("defs", null, React.createElement("path", {
+  id: "reply-small",
+  d: "M17 18a1 1 0 01-1-1c0-4.963-4.037-9-9-9H3.414l4.293 4.293a.999.999 0 11-1.414 1.414l-6-6A.993.993 0 010 7.003v-.006a.988.988 0 01.293-.704l6-6a.999.999 0 111.414 1.414L3.414 6H7c6.065 0 11 4.935 11 11a1 1 0 01-1 1"
+})), React.createElement("use", {
+  fillRule: "evenodd",
+  xlinkHref: "#reply-small"
+})));
+
+// This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var index = (function (props) {
+  return React.createElement(IconReplySmall, props);
+});
+
+module.exports = index;

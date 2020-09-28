@@ -1,0 +1,70 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-avatar-stack {
+  align-items: center;
+  display: flex;
+  margin: 8px 18px 6px 40px;
+}
+.wds-avatar-stack__overflow {
+  border: 0;
+  font-size: 12px;
+  padding-left: 6px;
+  width: auto;
+}
+.wds-avatar-stack .wds-avatar:nth-child(1) {
+  position: relative;
+  z-index: 6;
+}
+.wds-avatar-stack .wds-avatar:nth-child(2) {
+  position: relative;
+  z-index: 5;
+  margin-left: -10px;
+}
+.wds-avatar-stack .wds-avatar:nth-child(3) {
+  position: relative;
+  z-index: 4;
+  margin-left: -10px;
+}
+.wds-avatar-stack .wds-avatar:nth-child(4) {
+  position: relative;
+  z-index: 3;
+  margin-left: -10px;
+}
+.wds-avatar-stack .wds-avatar:nth-child(5) {
+  position: relative;
+  z-index: 2;
+  margin-left: -10px;
+}
+.wds-avatar-stack .wds-avatar:nth-child(6) {
+  position: relative;
+  z-index: 1;
+  margin-left: -10px;
+}

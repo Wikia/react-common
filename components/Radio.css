@@ -1,0 +1,20 @@
+.wds-radio {
+  display: inline-flex;
+}
+.wds-radio__input {
+  display: none;
+}
+.wds-radio__label {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+}
+.wds-radio__label-text {
+  line-height: normal;
+}
+.wds-radio__icon, .wds-radio__lock-icon {
+  margin-right: 13px;
+}
+.wds-radio__input[disabled] + .wds-radio__label {
+  color: #7f9998;
+}

@@ -1,0 +1,91 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-fandom-content-well {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+  .wds-fandom-content-well {
+    margin: 0 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wds-fandom-content-well {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wds-fandom-content-well {
+    width: 732px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wds-fandom-content-well {
+    width: 988px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .wds-fandom-content-well {
+    width: 1244px;
+  }
+}
+
+.simple-local-navigation {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+.simple-local-navigation__item {
+  align-items: center;
+  border-bottom: 5px solid transparent;
+  color: #002a32;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  justify-content: center;
+  letter-spacing: 0.2px;
+  padding-top: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.simple-local-navigation__item:not(:last-child) {
+  margin-right: 24px;
+}
+.simple-local-navigation__item:visited, .simple-local-navigation__item:active {
+  color: inherit;
+}
+.simple-local-navigation__item:hover {
+  color: #005252;
+}
+.simple-local-navigation__item.is-active {
+  border-color: #088488;
+  color: #088488;
+}

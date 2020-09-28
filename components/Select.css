@@ -1,0 +1,43 @@
+.fandom-select__wrapper {
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.fandom-select__wrapper .fandom-select__control {
+  background-color: inherit;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 0;
+}
+.fandom-select__wrapper .fandom-select__control--is-disabled {
+  background-color: inherit;
+}
+.fandom-select__wrapper .fandom-select__value-container {
+  min-height: 27px;
+  padding: 0;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator {
+  padding: 0;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .default-dropdown-indicator {
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .default-dropdown-indicator.is-focused {
+  transform: rotate(180deg);
+}
+.fandom-select__wrapper .fandom-select__dropdown-indicator > .search-dropdown-indicator {
+  fill: currentColor;
+  height: 16px;
+  width: 16px;
+}
+.fandom-select__wrapper .fandom-select__menu {
+  border-top: 1px solid #1a1a1a;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+  z-index: 10000;
+}

@@ -1,0 +1,97 @@
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+/**
+* Implemenation taken from http://www.antimath.info/css/sass-sqrt-function/
+*/
+/**
+* Implementation taken from http://alienryderflex.com/hsp.html
+*/
+.wds-button-group {
+  align-items: stretch;
+  display: inline-flex;
+  justify-content: flex-start;
+}
+.wds-button-group > .wds-button:not(.wds-is-secondary):not(:last-child) {
+  border-right-color: #fff;
+}
+.wds-button-group > .wds-button:not(.wds-is-secondary):not(:first-child) {
+  border-left-color: #fff;
+}
+.wds-button-group > .wds-dropdown:not(:last-child) .wds-button {
+  border-right-color: #fff;
+}
+.wds-button-group > .wds-dropdown:not(:first-child) .wds-button {
+  border-left-color: #fff;
+}
+.wds-button-group > .wds-button {
+  border-radius: 0;
+  height: auto;
+  margin-left: auto;
+  margin-right: -1px;
+  padding: 7px 12px;
+}
+.wds-button-group > .wds-button:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wds-button-group > .wds-button:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wds-button-group > .wds-button:hover {
+  z-index: 1;
+}
+.wds-button-group > .wds-button:not(.wds-is-secondary):not(:last-child) {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.wds-button-group > .wds-button:not(.wds-is-secondary):not(:first-child) {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+.wds-button-group > .wds-dropdown:first-child .wds-button {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.wds-button-group > .wds-dropdown:last-child .wds-button {
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.wds-button-group > .wds-dropdown:not(:last-child) .wds-button {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.wds-button-group > .wds-dropdown:not(:first-child) .wds-button {
+  border-left-width: 1px;
+  border-left-style: solid;
+}

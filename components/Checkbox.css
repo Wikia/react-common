@@ -1,0 +1,16 @@
+.wds-checkbox {
+  display: inline-flex;
+}
+.wds-checkbox__input {
+  display: none;
+}
+.wds-checkbox__label {
+  cursor: pointer;
+  display: inline-flex;
+}
+.wds-checkbox__icon, .wds-checkbox__lock-icon {
+  margin-right: 13px;
+}
+.wds-checkbox__input[disabled] + .wds-checkbox__label {
+  color: #7f9998;
+}

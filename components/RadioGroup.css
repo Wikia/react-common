@@ -1,0 +1,8 @@
+.wds-radio-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.wds-radio-group__legend {
+  margin-bottom: 8px;
+}

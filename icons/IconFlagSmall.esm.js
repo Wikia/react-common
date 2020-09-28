@@ -1,0 +1,26 @@
+import React from 'react';
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+var IconFlagSmall = (({
+  styles = {},
+  ...props
+}) => React.createElement("svg", _extends({
+  xmlns: "http://www.w3.org/2000/svg",
+  xmlnsXlink: "http://www.w3.org/1999/xlink",
+  viewBox: "0 0 18 18"
+}, props), React.createElement("defs", null, React.createElement("path", {
+  id: "flag-small",
+  d: "M3 11h10.586l-3.293-3.293a.999.999 0 010-1.414L13.586 3H3v8zm-1 7a1 1 0 01-1-1V1a1 1 0 012 0h13a1.002 1.002 0 01.707 1.707L12.414 7l4.293 4.293A1 1 0 0116 13H3v4a1 1 0 01-1 1z"
+})), React.createElement("use", {
+  fillRule: "evenodd",
+  xlinkHref: "#flag-small"
+})));
+
+// This file is generated automatically via extract-assets-from-ds.js
+/** @component */
+
+var index = (function (props) {
+  return React.createElement(IconFlagSmall, props);
+});
+
+export default index;
