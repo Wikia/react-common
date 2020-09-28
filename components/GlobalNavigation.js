@@ -5514,6 +5514,12 @@ var isThreadAtMention = function isThreadAtMention(type) {
 var isArticleCommentReply = function isArticleCommentReply(type) {
   return type === notificationTypes.articleCommentReply;
 };
+var isArticleCommentAtMention = function isArticleCommentAtMention(type) {
+  return type === notificationTypes.articleCommentAtMention;
+};
+var isArticleCommentReplyAtMention = function isArticleCommentReplyAtMention(type) {
+  return type === notificationTypes.articleCommentReplyAtMention;
+};
 
 function isCommentNotifictionType(type) {
   return isDiscussionReply(type) || isPostAtMention(type) || isThreadAtMention(type);
@@ -5703,7 +5709,7 @@ var getThreadAtMentionMessageBody = function getThreadAtMentionMessageBody(trans
   });
 };
 
-var getArticleCommentReplyMessageBody = function getArticleCommentReplyMessageBody(translateFunc, _ref6) {
+function getArticleCommentReplyMessageBody(t, _ref6) {
   var userData = _ref6.userData,
       refersToAuthorId = _ref6.refersToAuthorId,
       latestActors = _ref6.latestActors,
@@ -5711,11 +5717,31 @@ var getArticleCommentReplyMessageBody = function getArticleCommentReplyMessageBo
   var currentUserId = userData === null || userData === void 0 ? void 0 : userData.id;
   var user = get_1(latestActors, '[0].name');
   var messageKey = refersToAuthorId === currentUserId ? 'notifications-article-comment-reply-own-comment' : 'notifications-article-comment-reply-followed-comment';
-  return translateFunc(messageKey, {
+  return t(messageKey, {
     user: user,
     articleTitle: title
   });
-};
+}
+
+function getArticleCommentAtMentionMessageBody(t, _ref7) {
+  var latestActors = _ref7.latestActors,
+      title = _ref7.title;
+  var user = get_1(latestActors, '[0].name');
+  return t('notifications-article-comment-comment-mention', {
+    user: user,
+    articleTitle: title
+  });
+}
+
+function getArticleCommentReplyAtMentionMessageBody(t, _ref8) {
+  var latestActors = _ref8.latestActors,
+      title = _ref8.title;
+  var user = get_1(latestActors, '[0].name');
+  return t('notifications-article-comment-reply-mention', {
+    user: user,
+    articleTitle: title
+  });
+}
 
 var getText = function getText(translateFunc, model, userData) {
   var type = model.type,
@@ -5778,11 +5804,25 @@ var getText = function getText(translateFunc, model, userData) {
     });
   }
 
+  if (isArticleCommentAtMention(type)) {
+    return getArticleCommentAtMentionMessageBody(translateFunc, {
+      latestActors: latestActors,
+      title: title
+    });
+  }
+
+  if (isArticleCommentReplyAtMention(type)) {
+    return getArticleCommentReplyAtMentionMessageBody(translateFunc, {
+      latestActors: latestActors,
+      title: title
+    });
+  }
+
   return null;
 };
 
-var CardText = function CardText(_ref7) {
-  var model = _ref7.model;
+var CardText = function CardText(_ref9) {
+  var model = _ref9.model;
 
   var _useTranslation = reactI18next.useTranslation(React.useContext(I18nNamespaceContext)),
       _useTranslation2 = _slicedToArray(_useTranslation, 1),
@@ -6967,13 +7007,15 @@ var GlobalNavigation = /*#__PURE__*/function (_React$Component) {
       }, React__default.createElement(NotificationsDataProvider, {
         isAuthenticated: Boolean(model.user),
         serviceUrl: model['services-domain']
+      }, React__default.createElement(UserContext.Provider, {
+        value: model.user
       }, React__default.createElement("div", {
         className: containerClass,
         onClick: this.onTrackingLabelClick,
         ref: this.nav
       }, this.renderLeftBar(), this.renderRightBar(), partnerSlotModel && React__default.createElement(PartnerSlot, {
         model: partnerSlotModel
-      }))));
+      })))));
     }
   }]);
 
