@@ -8,6 +8,9 @@ const supportedContentTypes = [
     'announcement-target',
     'post-at-mention',
     'thread-at-mention',
+    'article-comment-reply',
+    'article-comment-at-mention',
+    'article-comment-reply-at-mention',
 ];
 
 const defaultOptions = {
