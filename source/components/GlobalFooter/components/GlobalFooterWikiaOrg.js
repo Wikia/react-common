@@ -7,7 +7,6 @@ import LogoWikiaOrgWhite from '../../../assets/LogoWikiaOrgWhite';
 import I18nNamespaceContext from '../context/I18nNamespaceContext';
 
 const GlobalFooterWikiaOrg = ({ model }) => {
-    const year = new Date().getFullYear();
     const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
