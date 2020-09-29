@@ -22,9 +22,6 @@ const GlobalFooterWikiaOrg = ({ model }) => {
             )
             }
             <ul className="wds-global-footer-wikia-org__links">
-                <li className="wds-global-footer-wikia-org__link">
-                    {t('global-footer-site-overview-link-wikia-inc', { year })}
-                </li>
                 {model.site_overview.links.map((link, index) => (
                     // eslint-disable-next-line react/no-array-index-key
                     <li className="wds-global-footer-wikia-org__link" key={index}>

@@ -8,36 +8,91 @@ exports[`DropdownToggle renders correctly when shouldNotWrap is set 1`] = `
   shouldNotWrap={true}
   toggleContent=""
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     isLevel2={true}
     onClick={[Function]}
     shouldNotWrap={true}
     toggleContent=""
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
       onClick={[Function]}
-      role="button"
+      shouldNotWrap={true}
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -210,36 +265,89 @@ exports[`DropdownToggle renders correctly with Text inside 1`] = `
     onClick={[Function]}
     toggleContent="My toggle content"
   >
-    <DropdownToggle
-      attrs={Object {}}
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "DropdownToggle-sc-1p907bm-1",
+            "isStatic": true,
+            "lastClassName": "ccutBh",
+            "rules": Array [],
+          },
+          "displayName": "DropdownToggle",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       iconName="menu-control-tiny"
       onClick={[Function]}
       toggleContent="My toggle content"
     >
-      <div
-        className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+      <DropdownToggle
+        attrs={Object {}}
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        iconName="menu-control-tiny"
         onClick={[Function]}
-        role="button"
+        toggleContent="My toggle content"
       >
-        <span>
-          My toggle content
-        </span>
-        <DropdownToggle__ChevronIcon>
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-          >
-            <_default
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+        <div
+          className="DropdownToggle-sc-1p907bm-1 ccutBh"
+          onClick={[Function]}
+          role="button"
+        >
+          <span>
+            My toggle content
+          </span>
+          <DropdownToggle__ChevronIcon>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                    "isStatic": true,
+                    "lastClassName": "eZzuHO",
+                    "rules": Array [
+                      "color:inherit;fill:currentColor;height:12px;width:12px;",
+                    ],
+                  },
+                  "displayName": "DropdownToggle__ChevronIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
             >
-              <div
-                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-              />
-            </_default>
-          </_default>
-        </DropdownToggle__ChevronIcon>
-      </div>
-    </DropdownToggle>
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <_default
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                >
+                  <div
+                    className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  />
+                </_default>
+              </_default>
+            </StyledComponent>
+          </DropdownToggle__ChevronIcon>
+        </div>
+      </DropdownToggle>
+    </StyledComponent>
   </DropdownToggle>
 </ThemeProvider>
 `;
@@ -254,9 +362,28 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
     </div>
   }
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     onClick={[Function]}
     toggleContent={
@@ -265,16 +392,28 @@ exports[`DropdownToggle renders correctly with a component inside 1`] = `
       </div>
     }
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
       onClick={[Function]}
-      role="button"
+      toggleContent={
+        <div>
+          My toggle content
+        </div>
+      }
     >
-      <div>
-        My toggle content
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <div>
+          My toggle content
+        </div>
       </div>
-    </div>
-  </DropdownToggle>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -284,36 +423,89 @@ exports[`DropdownToggle renders correctly with a function passed as toggle 1`] =
   onClick={[Function]}
   toggleContent={[Function]}
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     onClick={[Function]}
     toggleContent={[Function]}
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
       onClick={[Function]}
-      role="button"
+      toggleContent={[Function]}
     >
-      <div>
-        My toggle content
-        <DropdownToggle__ChevronIcon>
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-          >
-            <_default
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <div>
+          My toggle content
+          <DropdownToggle__ChevronIcon>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                    "isStatic": true,
+                    "lastClassName": "eZzuHO",
+                    "rules": Array [
+                      "color:inherit;fill:currentColor;height:12px;width:12px;",
+                    ],
+                  },
+                  "displayName": "DropdownToggle__ChevronIcon",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
             >
-              <div
-                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-              />
-            </_default>
-          </_default>
-        </DropdownToggle__ChevronIcon>
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <_default
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                >
+                  <div
+                    className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                  />
+                </_default>
+              </_default>
+            </StyledComponent>
+          </DropdownToggle__ChevronIcon>
+        </div>
       </div>
-    </div>
-  </DropdownToggle>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -329,40 +521,99 @@ exports[`DropdownToggle renders correctly with additional attrs 1`] = `
   onClick={[Function]}
   toggleContent=""
 >
-  <DropdownToggle
+  <StyledComponent
     attrs={
       Object {
         "attr1": "true",
       }
     }
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     isLevel2={true}
     onClick={[Function]}
     toggleContent=""
   >
-    <div
-      attr1="true"
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={
+        Object {
+          "attr1": "true",
+        }
+      }
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
       onClick={[Function]}
-      role="button"
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        attr1="true"
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -374,36 +625,91 @@ exports[`DropdownToggle renders correctly with additional classNames 1`] = `
   onClick={[Function]}
   toggleContent=""
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
     classes="first-class second-class"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     isLevel2={true}
     onClick={[Function]}
     toggleContent=""
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      classes="first-class second-class"
+      iconName="menu-control-tiny"
+      isLevel2={true}
       onClick={[Function]}
-      role="button"
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -413,34 +719,87 @@ exports[`DropdownToggle renders correctly with default values 1`] = `
   onClick={[Function]}
   toggleContent=""
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     onClick={[Function]}
     toggleContent=""
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
       onClick={[Function]}
-      role="button"
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -451,35 +810,89 @@ exports[`DropdownToggle renders correctly with default values for level 2 1`] = 
   onClick={[Function]}
   toggleContent=""
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     isLevel2={true}
     onClick={[Function]}
     toggleContent=""
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
+      isLevel2={true}
       onClick={[Function]}
-      role="button"
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
+      >
+        <span />
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -489,36 +902,90 @@ exports[`DropdownToggle renders correctly with dropdown-tiny icon 1`] = `
   onClick={[Function]}
   toggleContent=""
 >
-  <DropdownToggle
-    attrs={Object {}}
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="dropdown-tiny"
     onClick={[Function]}
     toggleContent=""
   >
-    <div
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    <DropdownToggle
+      attrs={Object {}}
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="dropdown-tiny"
       onClick={[Function]}
-      role="button"
+      toggleContent=""
     >
-      <span />
-      <DropdownToggle__ChevronIcon
-        as={[Function]}
+      <div
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        onClick={[Function]}
+        role="button"
       >
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+        <span />
+        <DropdownToggle__ChevronIcon
+          as={[Function]}
         >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+          <StyledComponent
+            as={[Function]}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </div>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </div>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
 
@@ -533,40 +1000,98 @@ exports[`DropdownToggle renders correctly with href passed in attrs 1`] = `
   onClick={[Function]}
   toggleContent="My toggle content"
 >
-  <DropdownToggle
+  <StyledComponent
     attrs={
       Object {
         "href": "#",
       }
     }
-    className="DropdownToggle-sc-1p907bm-1 gvIzNe"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "DropdownToggle-sc-1p907bm-1",
+          "isStatic": true,
+          "lastClassName": "ccutBh",
+          "rules": Array [],
+        },
+        "displayName": "DropdownToggle",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "DropdownToggle-sc-1p907bm-1",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     iconName="menu-control-tiny"
     onClick={[Function]}
     toggleContent="My toggle content"
   >
-    <a
-      className="DropdownToggle-sc-1p907bm-1 gvIzNe"
-      href="#"
+    <DropdownToggle
+      attrs={
+        Object {
+          "href": "#",
+        }
+      }
+      className="DropdownToggle-sc-1p907bm-1 ccutBh"
+      iconName="menu-control-tiny"
       onClick={[Function]}
-      role="button"
+      toggleContent="My toggle content"
     >
-      <span>
-        My toggle content
-      </span>
-      <DropdownToggle__ChevronIcon>
-        <_default
-          className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-        >
-          <_default
-            className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
+      <a
+        className="DropdownToggle-sc-1p907bm-1 ccutBh"
+        href="#"
+        onClick={[Function]}
+        role="button"
+      >
+        <span>
+          My toggle content
+        </span>
+        <DropdownToggle__ChevronIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                  "isStatic": true,
+                  "lastClassName": "eZzuHO",
+                  "rules": Array [
+                    "color:inherit;fill:currentColor;height:12px;width:12px;",
+                  ],
+                },
+                "displayName": "DropdownToggle__ChevronIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "DropdownToggle__ChevronIcon-sc-1p907bm-0",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <div
-              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 IqZgt"
-            />
-          </_default>
-        </_default>
-      </DropdownToggle__ChevronIcon>
-    </a>
-  </DropdownToggle>
+            <_default
+              className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+            >
+              <_default
+                className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+              >
+                <div
+                  className="DropdownToggle__ChevronIcon-sc-1p907bm-0 eZzuHO"
+                />
+              </_default>
+            </_default>
+          </StyledComponent>
+        </DropdownToggle__ChevronIcon>
+      </a>
+    </DropdownToggle>
+  </StyledComponent>
 </DropdownToggle>
 `;
