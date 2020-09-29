@@ -5529,6 +5529,14 @@ function getIconName(type) {
     return 'flag-small';
   }
 
+  if (isArticleCommentReply(type)) {
+    return 'reply-small';
+  }
+
+  if (isArticleCommentAtMention(type) || isArticleCommentReplyAtMention(type)) {
+    return 'mention-small';
+  }
+
   return 'heart-small';
 }
 
