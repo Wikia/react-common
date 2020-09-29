@@ -479,11 +479,6 @@ exports[`GlobalFooter renders correctly for wikia.org 1`] = `
     <li
       className="wds-global-footer-wikia-org__link"
     >
-      global-footer-site-overview-link-wikia-inc
-    </li>
-    <li
-      className="wds-global-footer-wikia-org__link"
-    >
       <a
         data-tracking-label="site-overview.terms-of-use"
         href="https://www.fandom.com/terms-of-use"
