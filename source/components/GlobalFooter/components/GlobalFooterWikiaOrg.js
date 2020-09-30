@@ -7,7 +7,6 @@ import LogoWikiaOrgWhite from '../../../assets/LogoWikiaOrgWhite';
 import I18nNamespaceContext from '../context/I18nNamespaceContext';
 
 const GlobalFooterWikiaOrg = ({ model }) => {
-    const year = new Date().getFullYear();
     const [t] = useTranslation(useContext(I18nNamespaceContext));
 
     return (
@@ -22,9 +21,6 @@ const GlobalFooterWikiaOrg = ({ model }) => {
             )
             }
             <ul className="wds-global-footer-wikia-org__links">
-                <li className="wds-global-footer-wikia-org__link">
-                    {t('global-footer-site-overview-link-wikia-inc', { year })}
-                </li>
                 {model.site_overview.links.map((link, index) => (
                     // eslint-disable-next-line react/no-array-index-key
                     <li className="wds-global-footer-wikia-org__link" key={index}>
