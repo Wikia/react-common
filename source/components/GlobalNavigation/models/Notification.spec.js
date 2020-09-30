@@ -49,6 +49,7 @@ const getExpected = config => merge({}, {
     communityId: '1619010',
     isUnread: true,
     totalUniqueActors: 1,
+    refersToAuthorId: '33027931',
     latestActors: [{
         id: '12315543',
         name: 'QATestsStaff2',
@@ -94,6 +95,21 @@ const testCases = [
         name: 'other notification',
         given: getNotification({ type: 'other-notification' }),
         expected: getExpected({ type: null }),
+    },
+    {
+        name: 'article-comment-reply notification',
+        given: getNotification({ type: 'article-comment-reply-notification' }),
+        expected: getExpected({ type: notificationTypes.articleCommentReply }),
+    },
+    {
+        name: 'article-comment-at-mention notification',
+        given: getNotification({ type: 'article-comment-at-mention-notification' }),
+        expected: getExpected({ type: notificationTypes.articleCommentAtMention }),
+    },
+    {
+        name: 'article-comment-reply-at-mention notification',
+        given: getNotification({ type: 'article-comment-reply-at-mention-notification' }),
+        expected: getExpected({ type: notificationTypes.articleCommentReplyAtMention }),
     },
 ];
 

@@ -3,6 +3,7 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import merge from 'lodash/merge';
 
 import { notificationTypes } from '../../models/notificationTypes';
+import { useUserData } from '../../context/UserContext';
 
 import CardText from './CardText';
 
@@ -29,6 +30,10 @@ const actorsMock = [
         src: 'https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75',
     },
 ];
+
+jest.mock('../../context/UserContext', () => ({
+    useUserData: jest.fn(),
+}));
 
 const defaultProps = {
     track: () => null,
@@ -230,6 +235,66 @@ describe('Discussion at mentions', () => {
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
                 title: 'Post with at mention',
+            },
+        })).toMatchSnapshot();
+    });
+});
+
+describe('Article Comments', () => {
+    test('CardText renders correctly for article comment reply', () => {
+        const someMockAuthor = actorsMock[1];
+        useUserData.mockReturnValue({ id: someMockAuthor.id });
+
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.articleCommentReply,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Article Title',
+                refersToAuthorId: someMockAuthor.id,
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for article comment reply (for followed comment)', () => {
+        // Id that's not the same as in actorsMock[0].id
+        useUserData.mockReturnValue({ id: '22222' });
+
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.articleCommentReply,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Article Title',
+                refersToAuthorId: '11111',
+            },
+        })).toMatchSnapshot();
+    });
+});
+
+describe('Article Comments at mentions', () => {
+    beforeEach(() => {
+        useUserData.mockReturnValue({ id: '123' });
+    });
+
+    test('CardText renders correctly for article comment at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.articleCommentAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Article Title',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for article comment reply at mention', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.articleCommentReplyAtMention,
+                latestActors: actorsMock.slice(0, 1),
+                totalUniqueActors: 1,
+                title: 'Article Title',
             },
         })).toMatchSnapshot();
     });
