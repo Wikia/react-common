@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import get from 'lodash/get';
 
 import {
-    isAnnouncement,
+    isAnnouncement, isArticleCommentAtMention, isArticleCommentReply, isArticleCommentReplyAtMention,
     isDiscussionPostUpvote,
     isDiscussionReply,
     isDiscussionReplyUpvote,
@@ -12,6 +12,7 @@ import {
     isThreadAtMention,
 } from '../../models/notificationTypes';
 import I18nNamespaceContext from '../../context/I18nNamespaceContext';
+import { useUserData } from '../../context/UserContext';
 
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
@@ -119,8 +120,29 @@ const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestA
     mentioner: get(latestActors, '[0].name'),
 });
 
-const getText = (translateFunc, model) => {
-    const { type, snippet, title, totalUniqueActors, latestActors } = model;
+function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, latestActors, title }) {
+    const currentUserId = userData?.id;
+    const user = get(latestActors, '[0].name');
+
+    const messageKey = refersToAuthorId === currentUserId
+        ? 'notifications-article-comment-reply-own-comment'
+        : 'notifications-article-comment-reply-followed-comment';
+
+    return t(messageKey, { user, articleTitle: title });
+}
+
+function getArticleCommentAtMentionMessageBody(t, { latestActors, title }) {
+    const user = get(latestActors, '[0].name');
+    return t('notifications-article-comment-comment-mention', { user, articleTitle: title });
+}
+
+function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) {
+    const user = get(latestActors, '[0].name');
+    return t('notifications-article-comment-reply-mention', { user, articleTitle: title });
+}
+
+const getText = (translateFunc, model, userData) => {
+    const { type, snippet, title, totalUniqueActors, latestActors, refersToAuthorId } = model;
     const postTitleMarkup = `<b>${title}</b>`;
 
     if (isAnnouncement(type)) {
@@ -147,12 +169,25 @@ const getText = (translateFunc, model) => {
         return getThreadAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
     }
 
+    if (isArticleCommentReply(type)) {
+        return getArticleCommentReplyMessageBody(translateFunc, { userData, latestActors, title, refersToAuthorId });
+    }
+
+    if (isArticleCommentAtMention(type)) {
+        return getArticleCommentAtMentionMessageBody(translateFunc, { latestActors, title });
+    }
+
+    if (isArticleCommentReplyAtMention(type)) {
+        return getArticleCommentReplyAtMentionMessageBody(translateFunc, { latestActors, title });
+    }
+
     return null;
 };
 
 const CardText = ({ model }) => {
     const [t] = useTranslation(useContext(I18nNamespaceContext));
-    const text = getText(t, model);
+    const userData = useUserData();
+    const text = getText(t, model, userData);
 
     // eslint-disable-next-line react/no-danger
     return <p className="wds-notification-card__text" dangerouslySetInnerHTML={{ __html: text }} />;

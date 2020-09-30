@@ -24,6 +24,7 @@ function mapData(notificationData) {
         title: get(notificationData, 'refersTo.title'),
         snippet: get(notificationData, 'refersTo.snippet'),
         uri: get(notificationData, 'refersTo.uri'),
+        refersToAuthorId: get(notificationData, 'refersTo.createdBy'),
         latestEventUri: get(notificationData, 'events.latestEvent.uri'),
         timestamp: convertToTimestamp(get(notificationData, 'events.latestEvent.when')),
         communityName: get(notificationData, 'community.name'),
@@ -44,31 +45,28 @@ function getProfileUrl(name) {
 }
 
 function getNotificationType(apiData) {
-    if (apiData.type === 'upvote-notification') {
-        if (apiData.refersTo.type === 'discussion-post') {
-            return notificationTypes.discussionUpvoteReply;
-        }
-
-        return notificationTypes.discussionUpvotePost;
+    switch (apiData.type) {
+        case 'upvote-notification':
+            return apiData.refersTo.type === 'discussion-post'
+                ? notificationTypes.discussionUpvoteReply
+                : notificationTypes.discussionUpvotePost;
+        case 'replies-notification':
+            return notificationTypes.discussionReply;
+        case 'announcement-notification':
+            return notificationTypes.announcement;
+        case 'post-at-mention-notification':
+            return notificationTypes.postAtMention;
+        case 'thread-at-mention-notification':
+            return notificationTypes.threadAtMention;
+        case 'article-comment-reply-notification':
+            return notificationTypes.articleCommentReply;
+        case 'article-comment-at-mention-notification':
+            return notificationTypes.articleCommentAtMention;
+        case 'article-comment-reply-at-mention-notification':
+            return notificationTypes.articleCommentReplyAtMention;
+        default:
+            return null;
     }
-
-    if (apiData.type === 'replies-notification') {
-        return notificationTypes.discussionReply;
-    }
-
-    if (apiData.type === 'announcement-notification') {
-        return notificationTypes.announcement;
-    }
-
-    if (apiData.type === 'post-at-mention-notification') {
-        return notificationTypes.postAtMention;
-    }
-
-    if (apiData.type === 'thread-at-mention-notification') {
-        return notificationTypes.threadAtMention;
-    }
-
-    return null;
 }
 
 class Notification {

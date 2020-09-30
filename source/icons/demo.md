@@ -185,6 +185,9 @@ const IconMap = require('./IconMap').default;
 const IconMapSmall = require('./IconMapSmall').default;
 const IconMapTiny = require('./IconMapTiny').default;
 const IconMeneame = require('./IconMeneame').default;
+const IconMention = require('./IconMention').default;
+const IconMentionSmall = require('./IconMentionSmall').default;
+const IconMentionTiny = require('./IconMentionTiny').default;
 const IconMenu = require('./IconMenu').default;
 const IconMenuControl = require('./IconMenuControl').default;
 const IconMenuControlSmall = require('./IconMenuControlSmall').default;
@@ -1603,6 +1606,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconMeneame</VariantName>
             <VariantComponent><IconMeneame style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconMention</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconMention</VariantName>
+            <VariantComponent><IconMention style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconMentionSmall</VariantName>
+            <VariantComponent><IconMentionSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconMentionTiny</VariantName>
+            <VariantComponent><IconMentionTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>

@@ -11,6 +11,50 @@ exports[`Announcement CardText renders correctly for announcement 1`] = `
 />
 `;
 
+exports[`Article Comments CardText renders correctly for article comment reply (for followed comment) 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-article-comment-reply-followed-comment",
+    }
+  }
+/>
+`;
+
+exports[`Article Comments CardText renders correctly for article comment reply 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-article-comment-reply-own-comment",
+    }
+  }
+/>
+`;
+
+exports[`Article Comments at mentions CardText renders correctly for article comment at mention 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-article-comment-comment-mention",
+    }
+  }
+/>
+`;
+
+exports[`Article Comments at mentions CardText renders correctly for article comment reply at mention 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-article-comment-reply-mention",
+    }
+  }
+/>
+`;
+
 exports[`CardText renders correctly with default props 1`] = `
 <p
   className="wds-notification-card__text"

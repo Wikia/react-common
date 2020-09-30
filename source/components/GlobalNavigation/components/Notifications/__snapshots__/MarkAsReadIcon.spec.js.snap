@@ -14,6 +14,48 @@ exports[`MarkAsReadIcon renders correctly for announcement 1`] = `
 </div>
 `;
 
+exports[`MarkAsReadIcon renders correctly for article-comment-at-mention 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="mention-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for article-comment-reply 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="reply-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for article-comment-reply-at-mention 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="mention-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
 exports[`MarkAsReadIcon renders correctly for discussion-reply 1`] = `
 <div
   className="wds-notification-card__icon-wrapper"
