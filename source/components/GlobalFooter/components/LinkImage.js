@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { StoreAppstore, StoreGoogleplay } from '../../../assets';
-import { IconFacebook, IconInstagram, IconLinkedin, IconTwitter, IconYoutube } from '../../../icons';
+import {
+    IconFacebook,
+    IconInstagram,
+    IconLinkedin,
+    IconTwitter,
+    IconYoutube,
+    IconVkontakte,
+} from '../../../icons';
 
 const svgMap = {
     'wds-company-store-appstore': StoreAppstore,
@@ -12,6 +19,7 @@ const svgMap = {
     'wds-icons-youtube': IconYoutube,
     'wds-icons-instagram': IconInstagram,
     'wds-icons-linkedin': IconLinkedin,
+    'wds-icons-vkontakte': IconVkontakte,
 };
 
 const LinkImage = ({ model }) => {
