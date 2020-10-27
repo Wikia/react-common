@@ -14,6 +14,10 @@ import {
 import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 import { useUserData } from '../../context/UserContext';
 
+function bold(text) {
+    return `<b>${text}</b>`;
+}
+
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
     const hasThreeOrMoreUsers = totalUniqueActors > 2;
@@ -128,17 +132,17 @@ function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, late
         ? 'notifications-article-comment-reply-own-comment'
         : 'notifications-article-comment-reply-followed-comment';
 
-    return t(messageKey, { user, articleTitle: title });
+    return t(messageKey, { user, articleTitle: bold(title) });
 }
 
 function getArticleCommentAtMentionMessageBody(t, { latestActors, title }) {
     const user = get(latestActors, '[0].name');
-    return t('notifications-article-comment-comment-mention', { user, articleTitle: title });
+    return t('notifications-article-comment-comment-mention', { user, articleTitle: bold(title) });
 }
 
 function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) {
     const user = get(latestActors, '[0].name');
-    return t('notifications-article-comment-reply-mention', { user, articleTitle: title });
+    return t('notifications-article-comment-reply-mention', { user, articleTitle: bold(title) });
 }
 
 const getText = (translateFunc, model, userData) => {
