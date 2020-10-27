@@ -1,6 +1,6 @@
 {
   "name": "@wikia/react-common",
-  "version": "12.6.1",
+  "version": "12.7.0",
   "description": "Wikia's reusable React parts",
   "repository": "git@github.com:Wikia/react-common.git",
   "license": "UNLICENSED",
