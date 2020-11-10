@@ -124,9 +124,13 @@ const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestA
     mentioner: get(latestActors, '[0].name'),
 });
 
+function getArticleCommentNotificationUsername(t, latestActors) {
+    return get(latestActors, '[0].name') ?? t('notifications-anon-user');
+}
+
 function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, latestActors, title }) {
     const currentUserId = userData?.id;
-    const user = get(latestActors, '[0].name');
+    const user = getArticleCommentNotificationUsername(t, latestActors);
 
     const messageKey = refersToAuthorId === currentUserId
         ? 'notifications-article-comment-reply-own-comment'
@@ -136,12 +140,12 @@ function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, late
 }
 
 function getArticleCommentAtMentionMessageBody(t, { latestActors, title }) {
-    const user = get(latestActors, '[0].name');
+    const user = getArticleCommentNotificationUsername(t, latestActors);
     return t('notifications-article-comment-comment-mention', { user, articleTitle: bold(title) });
 }
 
 function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) {
-    const user = get(latestActors, '[0].name');
+    const user = getArticleCommentNotificationUsername(t, latestActors);
     return t('notifications-article-comment-reply-mention', { user, articleTitle: bold(title) });
 }
 
