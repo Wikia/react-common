@@ -24,7 +24,7 @@
     "bump:version": "node ./scripts/bump-version.js",
     "create:tag": "node ./scripts/create-tag.js",
     "release": "yarn release:patch",
-    "release:local-test": "yarn git:reset && yarn bump:version test && yarn build && yarn publish",
+    "release:local-test": "yarn bump:version test && yarn publish",
     "release:major": "yarn git:reset && yarn bump:version major && yarn build && git add . && yarn create:tag && git push --follow-tags && yarn publish",
     "release:minor": "yarn git:reset && yarn bump:version minor && yarn build && git add . && yarn create:tag && git push --follow-tags && yarn publish",
     "release:patch": "yarn git:reset && yarn bump:version patch && yarn build && git add . && yarn create:tag && git push --follow-tags && yarn publish",
