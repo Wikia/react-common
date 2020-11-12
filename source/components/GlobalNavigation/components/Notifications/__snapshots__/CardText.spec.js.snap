@@ -33,6 +33,17 @@ exports[`Article Comments CardText renders correctly for article comment reply 1
 />
 `;
 
+exports[`Article Comments at mentions CardText renders correctly for anon user 1`] = `
+<p
+  className="wds-notification-card__text"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "notifications-article-comment-reply-mention",
+    }
+  }
+/>
+`;
+
 exports[`Article Comments at mentions CardText renders correctly for article comment at mention 1`] = `
 <p
   className="wds-notification-card__text"

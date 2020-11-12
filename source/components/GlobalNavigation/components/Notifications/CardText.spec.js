@@ -298,4 +298,15 @@ describe('Article Comments at mentions', () => {
             },
         })).toMatchSnapshot();
     });
+
+    test('CardText renders correctly for anon user', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.articleCommentReplyAtMention,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article Title',
+            },
+        })).toMatchSnapshot();
+    });
 });
