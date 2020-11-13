@@ -8,6 +8,8 @@ export { default as AvatarBadgeVstf } from './AvatarBadgeVstf';
 export { default as LogoFandomHeart } from './LogoFandomHeart';
 export { default as LogoFandomWhite } from './LogoFandomWhite';
 export { default as LogoFandom } from './LogoFandom';
+export { default as LogoGamepediaBook } from './LogoGamepediaBook';
+export { default as LogoGamepedia } from './LogoGamepedia';
 export { default as LogoWikiaOrgWhite } from './LogoWikiaOrgWhite';
 export { default as LogoWikiaOrg } from './LogoWikiaOrg';
 export { default as LogoWikia } from './LogoWikia';
