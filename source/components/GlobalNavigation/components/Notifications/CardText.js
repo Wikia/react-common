@@ -19,6 +19,10 @@ function bold(text) {
 }
 
 function escapeHtml(unsafe) {
+    if (!unsafe) {
+        return unsafe;
+    }
+
     return unsafe
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
@@ -159,9 +163,9 @@ function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) 
 }
 
 const getText = (translateFunc, model, userData) => {
-    const { type, snippet, title, totalUniqueActors, latestActors, refersToAuthorId } = model;
-    const escapedTitle = escapeHtml(title);
-    const postTitleMarkup = `<b>${escapedTitle}</b>`;
+    const { type, snippet, title: dangerousTitle, totalUniqueActors, latestActors, refersToAuthorId } = model;
+    const title = escapeHtml(dangerousTitle);
+    const postTitleMarkup = `<b>${title}</b>`;
 
     if (isAnnouncement(type)) {
         return snippet;
