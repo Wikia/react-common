@@ -1,5 +1,4 @@
 import React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
 import merge from 'lodash/merge';
 import { render } from '@testing-library/react';
 
@@ -38,9 +37,7 @@ jest.mock('../../context/UserContext', () => ({
 
 jest.mock('react-i18next', () => ({
     ...jest.requireActual('react-i18next'),
-    useTranslation: () => [jest.fn((key, params) => {
-        return `${key}${params ? JSON.stringify(params) : ''}`;
-    })],
+    useTranslation: () => [jest.fn((key, params) => `${key}${params ? JSON.stringify(params) : ''}`)],
 }));
 
 const defaultProps = {
@@ -63,7 +60,7 @@ const defaultProps = {
 function renderComponent(props) {
     const computedProps = merge({}, defaultProps, props);
 
-    const {container} = render(<CardText {...computedProps} />);
+    const { container } = render(<CardText {...computedProps} />);
 
     return container.firstChild;
 }
