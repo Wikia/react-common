@@ -3,263 +3,285 @@
 exports[`Announcement CardText renders correctly for announcement 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "some snippet",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    some snippet
+  </Trans>
+</p>
 `;
 
 exports[`Article Comments CardText renders correctly for article comment reply (for followed comment) 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-article-comment-reply-followed-comment",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-article-comment-reply-followed-comment
+  </Trans>
+</p>
 `;
 
 exports[`Article Comments CardText renders correctly for article comment reply 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-article-comment-reply-own-comment",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-article-comment-reply-own-comment
+  </Trans>
+</p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for anon user 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-article-comment-reply-mention",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-article-comment-reply-mention
+  </Trans>
+</p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for article comment at mention 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-article-comment-comment-mention",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-article-comment-comment-mention
+  </Trans>
+</p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for article comment reply at mention 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-article-comment-reply-mention",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-article-comment-reply-mention
+  </Trans>
+</p>
 `;
 
 exports[`CardText renders correctly with default props 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-multiple-users-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-multiple-users-with-title
+  </Trans>
+</p>
 `;
 
 exports[`CardText renders correctly with unknown type 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": null,
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  />
+</p>
 `;
 
 exports[`Discussion at mentions CardText renders correctly for post at mention 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-reply-at-mention",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-reply-at-mention
+  </Trans>
+</p>
 `;
 
 exports[`Discussion at mentions CardText renders correctly for thread at mention 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-post-at-mention",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-post-at-mention
+  </Trans>
+</p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with no title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-post-upvote-single-user-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-post-upvote-single-user-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with no title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-post-upvote-multiple-users-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-post-upvote-multiple-users-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-post-upvote-single-user-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-post-upvote-single-user-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-post-upvote-multiple-users-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-post-upvote-multiple-users-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-multiple-users-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-multiple-users-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and two actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-two-users-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-two-users-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-multiple-users-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-multiple-users-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and two actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-replied-by-two-users-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-replied-by-two-users-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with no title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-reply-upvote-single-user-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-reply-upvote-single-user-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with no title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-reply-upvote-multiple-users-no-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-reply-upvote-multiple-users-no-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with title and one actor 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-reply-upvote-single-user-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-reply-upvote-single-user-with-title
+  </Trans>
+</p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with title and three actors 1`] = `
 <p
   className="wds-notification-card__text"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "notifications-reply-upvote-multiple-users-with-title",
-    }
-  }
-/>
+>
+  <Trans
+    t={[Function]}
+  >
+    notifications-reply-upvote-multiple-users-with-title
+  </Trans>
+</p>
 `;
