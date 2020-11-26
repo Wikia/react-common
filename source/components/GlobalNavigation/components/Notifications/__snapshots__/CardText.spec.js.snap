@@ -2,286 +2,250 @@
 
 exports[`Announcement CardText renders correctly for announcement 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    some snippet
-  </Trans>
+  some snippet
 </p>
 `;
 
 exports[`Article Comments CardText renders correctly for article comment reply (for followed comment) 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-article-comment-reply-followed-comment
-  </Trans>
+  notifications-article-comment-reply-followed-comment{"user":"ATO&lt;b&gt;B&lt;/b&gt;","articleTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Article Comments CardText renders correctly for article comment reply 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-article-comment-reply-own-comment
-  </Trans>
+  notifications-article-comment-reply-own-comment{"user":"ATO&lt;b&gt;B&lt;/b&gt;","articleTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for anon user 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-article-comment-reply-mention
-  </Trans>
+  notifications-article-comment-reply-mention{"user":"notifications-anon-user","articleTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for article comment at mention 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-article-comment-comment-mention
-  </Trans>
+  notifications-article-comment-comment-mention{"user":"ATO&lt;b&gt;B&lt;/b&gt;","articleTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Article Comments at mentions CardText renders correctly for article comment reply at mention 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-article-comment-reply-mention
-  </Trans>
+  notifications-article-comment-reply-mention{"user":"ATO&lt;b&gt;B&lt;/b&gt;","articleTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`CardText renders correctly with default props 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-multiple-users-with-title
-  </Trans>
+  notifications-replied-by-multiple-users-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  ","mostRecentUser":"ATO&lt;b&gt;B&lt;/b&gt;","number":2}
 </p>
 `;
 
 exports[`CardText renders correctly with unknown type 1`] = `
 <p
-  className="wds-notification-card__text"
->
-  <Trans
-    t={[Function]}
-  />
-</p>
+  class="wds-notification-card__text"
+/>
 `;
 
 exports[`Discussion at mentions CardText renders correctly for post at mention 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-reply-at-mention
-  </Trans>
+  notifications-reply-at-mention{"postTitle":"
+  <b>
+    Post with at &lt;b&gt;mention&lt;/b&gt;
+  </b>
+  ","mentioner":"ATO&lt;b&gt;B&lt;/b&gt;"}
 </p>
 `;
 
 exports[`Discussion at mentions CardText renders correctly for thread at mention 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-post-at-mention
-  </Trans>
+  notifications-post-at-mention{"postTitle":"
+  <b>
+    Post with at &lt;b&gt;mention&lt;/b&gt;
+  </b>
+  ","mentioner":"ATO&lt;b&gt;B&lt;/b&gt;"}
 </p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with no title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-post-upvote-single-user-no-title
-  </Trans>
+  notifications-post-upvote-single-user-no-title
 </p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with no title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-post-upvote-multiple-users-no-title
-  </Trans>
+  notifications-post-upvote-multiple-users-no-title{"number":3}
 </p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-post-upvote-single-user-with-title
-  </Trans>
+  notifications-post-upvote-single-user-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Discussion post upvote CardText renders correctly for discussion post upvote with title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-post-upvote-multiple-users-with-title
-  </Trans>
+  notifications-post-upvote-multiple-users-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  ","number":3}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-no-title
-  </Trans>
+  notifications-replied-by-no-title{"user":"ATO&lt;b&gt;B&lt;/b&gt;"}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-multiple-users-no-title
-  </Trans>
+  notifications-replied-by-multiple-users-no-title{"mostRecentUser":"ATO&lt;b&gt;B&lt;/b&gt;","number":2}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with no title and two actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-two-users-no-title
-  </Trans>
+  notifications-replied-by-two-users-no-title{"firstUser":"ATO&lt;b&gt;B&lt;/b&gt;","secondUser":"BTOA"}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-with-title
-  </Trans>
+  notifications-replied-by-with-title{"user":"ATO&lt;b&gt;B&lt;/b&gt;","postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-multiple-users-with-title
-  </Trans>
+  notifications-replied-by-multiple-users-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  ","mostRecentUser":"ATO&lt;b&gt;B&lt;/b&gt;","number":2}
 </p>
 `;
 
 exports[`Discussion reply CardText renders correctly for discussion reply with title and two actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-replied-by-two-users-with-title
-  </Trans>
+  notifications-replied-by-two-users-with-title{"firstUser":"ATO&lt;b&gt;B&lt;/b&gt;","secondUser":"BTOA","postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with no title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-reply-upvote-single-user-no-title
-  </Trans>
+  notifications-reply-upvote-single-user-no-title
 </p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with no title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-reply-upvote-multiple-users-no-title
-  </Trans>
+  notifications-reply-upvote-multiple-users-no-title{"number":3}
 </p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with title and one actor 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-reply-upvote-single-user-with-title
-  </Trans>
+  notifications-reply-upvote-single-user-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  "}
 </p>
 `;
 
 exports[`Discussion reply upvote CardText renders correctly for discussion reply upvote with title and three actors 1`] = `
 <p
-  className="wds-notification-card__text"
+  class="wds-notification-card__text"
 >
-  <Trans
-    t={[Function]}
-  >
-    notifications-reply-upvote-multiple-users-with-title
-  </Trans>
+  notifications-reply-upvote-multiple-users-with-title{"postTitle":"
+  <b>
+    MOAR &lt;b&gt;LIKES&lt;/b&gt;
+  </b>
+  ","number":2}
 </p>
 `;

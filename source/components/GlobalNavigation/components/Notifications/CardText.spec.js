@@ -1,6 +1,6 @@
 import React from 'react';
-import ShallowRenderer from 'react-test-renderer/shallow';
 import merge from 'lodash/merge';
+import { render } from '@testing-library/react';
 
 import { notificationTypes } from '../../models/notificationTypes';
 import { useUserData } from '../../context/UserContext';
@@ -10,7 +10,7 @@ import CardText from './CardText';
 const actorsMock = [
     {
         id: '12345',
-        name: 'ATOB',
+        name: 'ATO<b>B</b>',
         avatarUrl: 'https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75',
         profileUrl: 'http://localhost:6060/wiki/User:ATOB',
         src: 'https://static.wikia.nocookie.net/458a839b-8f84-42c2-b9d1-cf8c5a21bd75',
@@ -35,6 +35,11 @@ jest.mock('../../context/UserContext', () => ({
     useUserData: jest.fn(),
 }));
 
+jest.mock('react-i18next', () => ({
+    ...jest.requireActual('react-i18next'),
+    useTranslation: () => [jest.fn((key, params) => `${key}${params ? JSON.stringify(params) : ''}`)],
+}));
+
 const defaultProps = {
     track: () => null,
     model: {
@@ -45,7 +50,7 @@ const defaultProps = {
         latestEventUri: 'http://xkxd.wikia.com/d/p/3100000000000001096/r/3086787452863005635',
         snippet: 'some snippet',
         timestamp: 1550663179,
-        title: 'MOAR LIKES',
+        title: 'MOAR <b>LIKES</b>',
         type: notificationTypes.discussionReply,
         totalUniqueActors: actorsMock.length,
         uri: 'http://xkxd.wikia.com/d/p/3100000000000001096',
@@ -53,12 +58,11 @@ const defaultProps = {
 };
 
 function renderComponent(props) {
-    const renderer = new ShallowRenderer();
     const computedProps = merge({}, defaultProps, props);
 
-    renderer.render(<CardText {...computedProps} />);
+    const { container } = render(<CardText {...computedProps} />);
 
-    return renderer.getRenderOutput();
+    return container.firstChild;
 }
 
 test('CardText renders correctly with default props', () => {
@@ -223,7 +227,7 @@ describe('Discussion at mentions', () => {
                 type: notificationTypes.postAtMention,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Post with at mention',
+                title: 'Post with at <b>mention</b>',
             },
         })).toMatchSnapshot();
     });
@@ -234,7 +238,7 @@ describe('Discussion at mentions', () => {
                 type: notificationTypes.threadAtMention,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Post with at mention',
+                title: 'Post with at <b>mention</b>',
             },
         })).toMatchSnapshot();
     });
@@ -250,7 +254,7 @@ describe('Article Comments', () => {
                 type: notificationTypes.articleCommentReply,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Article Title',
+                title: 'Article <b>Title</b>',
                 refersToAuthorId: someMockAuthor.id,
             },
         })).toMatchSnapshot();
@@ -265,7 +269,7 @@ describe('Article Comments', () => {
                 type: notificationTypes.articleCommentReply,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Article Title',
+                title: 'Article <b>Title</b>',
                 refersToAuthorId: '11111',
             },
         })).toMatchSnapshot();
@@ -283,7 +287,7 @@ describe('Article Comments at mentions', () => {
                 type: notificationTypes.articleCommentAtMention,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Article Title',
+                title: 'Article <b>Title</b>',
             },
         })).toMatchSnapshot();
     });
@@ -294,7 +298,7 @@ describe('Article Comments at mentions', () => {
                 type: notificationTypes.articleCommentReplyAtMention,
                 latestActors: actorsMock.slice(0, 1),
                 totalUniqueActors: 1,
-                title: 'Article Title',
+                title: 'Article <b>Title</b>',
             },
         })).toMatchSnapshot();
     });
@@ -305,7 +309,7 @@ describe('Article Comments at mentions', () => {
                 type: notificationTypes.articleCommentReplyAtMention,
                 latestActors: [{ id: 0, name: null }],
                 totalUniqueActors: 1,
-                title: 'Article Title',
+                title: 'Article <b>Title</b>',
             },
         })).toMatchSnapshot();
     });
