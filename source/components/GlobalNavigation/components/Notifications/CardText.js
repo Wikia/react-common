@@ -18,10 +18,19 @@ function bold(text) {
     return `<b>${text}</b>`;
 }
 
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
     const hasThreeOrMoreUsers = totalUniqueActors > 2;
-    const firstReplierName = get(latestActors, '[0].name');
+    const firstReplierName = escapeHtml(get(latestActors, '[0].name'));
 
     if (title) {
         if (hasThreeOrMoreUsers) {
@@ -35,7 +44,7 @@ const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestAc
         if (hasTwoUsers) {
             return translateFunc('notifications-replied-by-two-users-with-title', {
                 firstUser: firstReplierName,
-                secondUser: get(latestActors, '[1].name'),
+                secondUser: escapeHtml(get(latestActors, '[1].name')),
                 postTitle: postTitleMarkup,
             });
         }
@@ -55,7 +64,7 @@ const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestAc
     if (hasTwoUsers) {
         return translateFunc('notifications-replied-by-two-users-no-title', {
             firstUser: firstReplierName,
-            secondUser: get(latestActors, '[1].name'),
+            secondUser: escapeHtml(get(latestActors, '[1].name')),
         });
     }
 
@@ -116,16 +125,16 @@ const getReplyUpvoteMessageBody = (translateFunc, { title, totalUniqueActors, po
 
 const getPostAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-reply-at-mention', {
     postTitle: postTitleMarkup,
-    mentioner: get(latestActors, '[0].name'),
+    mentioner: escapeHtml(get(latestActors, '[0].name')),
 });
 
 const getThreadAtMentionMessageBody = (translateFunc, { postTitleMarkup, latestActors }) => translateFunc('notifications-post-at-mention', {
     postTitle: postTitleMarkup,
-    mentioner: get(latestActors, '[0].name'),
+    mentioner: escapeHtml(get(latestActors, '[0].name')),
 });
 
 function getArticleCommentNotificationUsername(t, latestActors) {
-    return get(latestActors, '[0].name') ?? t('notifications-anon-user');
+    return escapeHtml(get(latestActors, '[0].name')) ?? t('notifications-anon-user');
 }
 
 function getArticleCommentReplyMessageBody(t, { userData, refersToAuthorId, latestActors, title }) {
@@ -151,7 +160,8 @@ function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) 
 
 const getText = (translateFunc, model, userData) => {
     const { type, snippet, title, totalUniqueActors, latestActors, refersToAuthorId } = model;
-    const postTitleMarkup = `<b>${title}</b>`;
+    const escapedTitle = escapeHtml(title);
+    const postTitleMarkup = `<b>${escapedTitle}</b>`;
 
     if (isAnnouncement(type)) {
         return snippet;
