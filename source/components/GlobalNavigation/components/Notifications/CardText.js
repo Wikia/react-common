@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import get from 'lodash/get';
 
 import {
@@ -197,7 +197,8 @@ const CardText = ({ model }) => {
     const userData = useUserData();
     const text = getText(t, model, userData);
 
-    return <p className="wds-notification-card__text"><Trans t={t}>{text}</Trans></p>;
+    // eslint-disable-next-line react/no-danger
+    return <p className="wds-notification-card__text" dangerouslySetInnerHTML={{ __html: text }} />;
 };
 
 CardText.propTypes = {
