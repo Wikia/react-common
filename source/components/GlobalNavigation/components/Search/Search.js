@@ -78,28 +78,27 @@ class Search extends React.Component {
 
         event.stopPropagation();
 
-        switch (event.keyCode) {
-            // down arrow
-            case 40:
+        switch (event.key) {
+            case "Down":
+            case "ArrowDown":
                 if (selectedSuggestionIndex < suggestions.length - 1) {
                     this.setState({ selectedSuggestionIndex: selectedSuggestionIndex + 1 });
                 }
 
                 break;
-            // up arrow
-            case 30:
+            case "Up":
+            case "ArrowUp":
                 if (suggestions.length && selectedSuggestionIndex > -1) {
                     this.setState(({ selectedSuggestionIndex: selectedSuggestionIndex - 1 }));
                 }
 
                 break;
-            // ESC key
-            case 27:
+            case "Esc":
+            case "Escape":
                 this.onSearchClose();
 
                 break;
-            // ENTER key
-            case 13:
+            case "Enter":
                 if (selectedSuggestionIndex !== -1) {
                     onSearchSuggestionChosen(suggestions[selectedSuggestionIndex], suggestions, suggestionId);
                     this.input.current.blur();
