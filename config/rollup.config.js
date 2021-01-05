@@ -68,7 +68,7 @@ const buildConfig = file => {
         external: isThisExternalDependency,
         plugins: [
             string({
-                include: 'node_modules/design-system/dist/svg/sprite.svg',
+                include: 'node_modules/@fandom/design-system/dist/svg/sprite.svg',
             }),
             resolve({
                 module: true,
@@ -96,7 +96,7 @@ const buildConfig = file => {
                         },
                     ],
                 },
-                exclude: 'node_modules/design-system/dist/svg/sprite.svg',
+                exclude: 'node_modules/@fandom/design-system/dist/svg/sprite.svg',
             }),
             babel(babelConfig),
             commonjs({

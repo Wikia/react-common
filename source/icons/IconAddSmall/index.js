@@ -1,6 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
 import React from 'react';
-import IconAddSmall from 'design-system/dist/svg/wds-icons-add-small.svg';
+import IconAddSmall from '@fandom/design-system/dist/svg/wds-icons-add-small.svg';
 
 /** @component */
 export default props => <IconAddSmall {...props} />;

@@ -4,7 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import i18n from 'i18next';
 import { initReactI18next } from "react-i18next";
-import designSystemTranslations from 'design-system/i18n/en/design-system.json';
+import designSystemTranslations from '@fandom/design-system/i18n/en/design-system.json';
 
 import ButtonGroup from '../source/components/ButtonGroup';
 import Button from '../source/components/Button';

@@ -1,6 +1,6 @@
 // This file is generated automatically via extract-assets-from-ds.js
 import React from 'react';
-import IconUserTiny from 'design-system/dist/svg/wds-icons-user-tiny.svg';
+import IconUserTiny from '@fandom/design-system/dist/svg/wds-icons-user-tiny.svg';
 
 /** @component */
 export default props => <IconUserTiny {...props} />;

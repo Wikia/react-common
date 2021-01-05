@@ -275,12 +275,18 @@ const IconSoundOffSmall = require('./IconSoundOffSmall').default;
 const IconSoundOffTiny = require('./IconSoundOffTiny').default;
 const IconSoundSmall = require('./IconSoundSmall').default;
 const IconSoundTiny = require('./IconSoundTiny').default;
+const IconStar = require('./IconStar').default;
+const IconStarSmall = require('./IconStarSmall').default;
+const IconStarTiny = require('./IconStarTiny').default;
 const IconTag = require('./IconTag').default;
 const IconTagSmall = require('./IconTagSmall').default;
 const IconTagTiny = require('./IconTagTiny').default;
 const IconText = require('./IconText').default;
 const IconTextSmall = require('./IconTextSmall').default;
 const IconTextTiny = require('./IconTextTiny').default;
+const IconToc = require('./IconToc').default;
+const IconTocSmall = require('./IconTocSmall').default;
+const IconTocTiny = require('./IconTocTiny').default;
 const IconTrash = require('./IconTrash').default;
 const IconTrashOpen = require('./IconTrashOpen').default;
 const IconTrashOpenSmall = require('./IconTrashOpenSmall').default;
@@ -2253,6 +2259,27 @@ const VariantComponent = styled.div`
     </Icon>
 
     <Icon>
+        <IconName>IconStar</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconStar</VariantName>
+            <VariantComponent><IconStar style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconStarSmall</VariantName>
+            <VariantComponent><IconStarSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconStarTiny</VariantName>
+            <VariantComponent><IconStarTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
         <IconName>IconTag</IconName>
         <Variants>
             
@@ -2290,6 +2317,27 @@ const VariantComponent = styled.div`
         <IconVariant>
             <VariantName>IconTextTiny</VariantName>
             <VariantComponent><IconTextTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
+        </IconVariant>
+        </Variants>
+    </Icon>
+
+    <Icon>
+        <IconName>IconToc</IconName>
+        <Variants>
+            
+        <IconVariant>
+            <VariantName>IconToc</VariantName>
+            <VariantComponent><IconToc style={{width: '24px', height: '24px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconTocSmall</VariantName>
+            <VariantComponent><IconTocSmall style={{width: '18px', height: '18px'}}/></VariantComponent>
+        </IconVariant>
+        
+        <IconVariant>
+            <VariantName>IconTocTiny</VariantName>
+            <VariantComponent><IconTocTiny style={{width: '12px', height: '12px'}}/></VariantComponent>
         </IconVariant>
         </Variants>
     </Icon>
