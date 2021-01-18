@@ -1910,10 +1910,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fandom/design-system@^23.24.0":
-  version "23.24.0"
-  resolved "https://artifactory.wikia-inc.com:443/artifactory/api/npm/wikia-npm/@fandom/design-system/-/@fandom/design-system-23.24.0.tgz#6d52b9c3f89caf9d237849c424e6fe72c707c61b"
-  integrity sha1-bVK5w/icr50jeEnEJOb+cscHxhs=
+"@fandom/design-system@^23.26.0":
+  version "23.26.0"
+  resolved "https://artifactory.wikia-inc.com:443/artifactory/api/npm/wikia-npm/@fandom/design-system/-/@fandom/design-system-23.26.0.tgz#d0b76bcc74ceb1e1e636cf6962fd77ed97df4985"
+  integrity sha1-0LdrzHTOseHmNs9pYv137ZffSYU=
   dependencies:
     ember-autoresize "1.3.2"
     ember-cli-babel "7.2.0"
