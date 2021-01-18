@@ -4,7 +4,8 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install: bash scripts/add-artifactory-token.sh
+before_install:
+  - echo "//artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/:_authToken=\${ARTIFACTORY_NPM_TOKEN}" >> .npmrc
 script:
   - yarn
   - yarn ci
