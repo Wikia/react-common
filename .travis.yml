@@ -5,6 +5,7 @@ cache:
   directories:
     - node_modules
 script:
+  - bash scripts/add-artifactory-token.sh
   - yarn
   - yarn ci
   - yarn coveralls
