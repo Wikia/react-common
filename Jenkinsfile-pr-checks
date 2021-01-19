@@ -1,5 +1,4 @@
 def gitCommit = "${params.commit}"
-def labels = "${params.labels}"
 
 def postStatus(state, context, gitCommit) {
     def description = "Jenkins pipeline for React Common"
