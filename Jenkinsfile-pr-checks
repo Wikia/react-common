@@ -41,7 +41,7 @@ node('qa-executors') {
                 postStatus("pending", "3. Run coverage", gitCommit)
 
                 try {
-                    sh 'yarn jenkins:test'
+                    sh 'yarn coveralls'
                     postStatus("success", "3. Run coverage", gitCommit)
                 } catch (e) {
                     postStatus("failure", "3. Run coverage", gitCommit)
