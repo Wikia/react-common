@@ -8,7 +8,7 @@ def postStatus(state, context, gitCommit) {
 
 node('qa-executors') {
     stage('Clone repo and start PR checks') {
-        git credentialsId: 'bd3cf712-39a7-4b16-979e-ff86208ab2ea', url: 'git@github.com:Wikia/react-common.git', branch: "${branch}"
+        git credentialsId: 'bd3cf712-39a7-4b16-979e-ff86208ab2ea', url: 'git@github.com:Wikia/react-common.git', branch: "${params.branch}"
 
         nodejs('v12 LTS') {
             currentBuild.description = "branch: ${params.branch}, commit: ${params.commit}, PR: ${params.pull_num}"
