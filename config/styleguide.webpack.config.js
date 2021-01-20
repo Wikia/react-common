@@ -16,7 +16,7 @@ module.exports = () => {
                 },
                 {
                     test: /\.svg$/,
-                    exclude: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
+                    exclude: /node_modules\/@fandom\/design-system\/dist\/svg\/sprite\.svg$/,
                     use: [
                         {
                             loader: 'babel-loader',
@@ -39,7 +39,7 @@ module.exports = () => {
                     ],
                 },
                 {
-                    test: /node_modules\/design-system\/dist\/svg\/sprite\.svg$/,
+                    test: /node_modules\/@fandom\/design-system\/dist\/svg\/sprite\.svg$/,
                     loader: 'raw-loader',
                 },
             ],

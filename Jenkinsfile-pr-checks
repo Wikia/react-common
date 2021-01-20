@@ -1,0 +1,53 @@
+def gitCommit = "${params.commit}"
+
+def postStatus(state, context, gitCommit) {
+    def description = "Jenkins pipeline for React Common"
+    def payload = "{\"state\": \"${state}\", \"description\": \"${description}\", \"context\": \"${context}\", \"target_url\": \"${build_url}\""
+    sh "/usr/bin/curl -s -X POST -H 'Authorization: token ${GITHUB_TOKEN}' -d '${payload}' https://api.github.com/repos/Wikia/react-common/statuses/${gitCommit}"
+}
+
+node('qa-executors') {
+    stage('Clone repo and start PR checks') {
+        git credentialsId: 'bd3cf712-39a7-4b16-979e-ff86208ab2ea', url: 'git@github.com:Wikia/react-common.git', branch: "${params.branch}"
+
+        nodejs('v12 LTS') {
+            currentBuild.description = "branch: ${params.branch}, commit: ${params.commit}, PR: ${params.pull_num}"
+
+            stage('Install dependencies') {
+                postStatus("pending", "1. Install dependencies", gitCommit)
+
+                try {
+                    sh 'yarn install --frozen-lockfile'
+                    postStatus("success", "1. Install dependencies", gitCommit)
+                } catch (e) {
+                    postStatus("failure", "1. Install dependencies", gitCommit)
+                    error 'FAIL' // sh "exit 1" - this makes this stage fail
+                }
+            }
+
+            stage('Run Linter') {
+                postStatus("pending", "2. Run Linter", gitCommit)
+
+                try {
+                    sh 'yarn ci'
+                    postStatus("success", "2. Run Linter", gitCommit)
+                } catch (e) {
+                    postStatus("failure", "2. Run Linter", gitCommit)
+                    error 'FAIL' // sh "exit 1" - this makes this stage fail
+                }
+            }
+
+            stage('Run tests with coverage') {
+                postStatus("pending", "3. Run tests & coverage", gitCommit)
+
+                try {
+                    sh 'yarn coverage'
+                    postStatus("success", "3. Run tests & coverage", gitCommit)
+                } catch (e) {
+                    postStatus("failure", "3. Run tests & coverage", gitCommit)
+                    error 'FAIL' // sh "exit 1" - this makes this stage fail
+                }
+            }
+        }
+    }
+}

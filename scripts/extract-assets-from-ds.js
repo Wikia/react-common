@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp');
 const rimraf = require('rimraf');
 const uniq = require('lodash/uniq');
 
-const sourceDir = 'design-system/dist/svg/';
+const sourceDir = '@fandom/design-system/dist/svg/';
 
 /**
  * 0) Remove all previously generated directories
