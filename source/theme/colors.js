@@ -4,6 +4,8 @@
  */
 export const COLORS = Object.freeze({
     // ## Corporate Colors
+    voidy: '#000',
+
     blue_gray: '#c5ced9',
     dark_blue_gray: '#39424d',
     dark_blue: '#092344',
