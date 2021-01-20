@@ -10,7 +10,7 @@ node('qa-executors') {
     stage('Clone repo and start PR checks') {
         git credentialsId: 'bd3cf712-39a7-4b16-979e-ff86208ab2ea', url: 'git@github.com:Wikia/react-common.git', branch: "${params.branch}"
 
-        nodejs('v12 LTS') {
+        nodejs('v14 LTS') {
             currentBuild.description = "branch: ${params.branch}, commit: ${params.commit}, PR: ${params.pull_num}"
 
             stage('Install dependencies') {
@@ -37,14 +37,14 @@ node('qa-executors') {
                 }
             }
 
-            stage('Run coverage') {
-                postStatus("pending", "3. Run coverage", gitCommit)
+            stage('Run tests with coverage') {
+                postStatus("pending", "3. Run tests & coverage", gitCommit)
 
                 try {
-                    sh 'yarn coveralls'
-                    postStatus("success", "3. Run coverage", gitCommit)
+                    sh 'yarn coverage'
+                    postStatus("success", "3. Run tests & coverage", gitCommit)
                 } catch (e) {
-                    postStatus("failure", "3. Run coverage", gitCommit)
+                    postStatus("failure", "3. Run tests & coverage", gitCommit)
                     error 'FAIL' // sh "exit 1" - this makes this stage fail
                 }
             }
