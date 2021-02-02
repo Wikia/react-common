@@ -6,6 +6,7 @@ This setup will work for both `yarn` and `npm`. If you run into issues consult [
 
 ```js static
 $> npm config set @wikia:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/
+$> npm config set @fandom:registry https://artifactory.wikia-inc.com/artifactory/api/npm/wikia-npm/
 ```
 
 ### 1.2. Add the package to `package.json`
