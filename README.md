@@ -1,3 +1,7 @@
+# ⛔️ DEPRECATED
+
+This package was moved to new **@fandom-frontend** monorepo. From now on, please use [@fandom-frontend/react-common](https://github.com/Wikia/fandom-frontend/tree/master/packages/react-common) package instead.
+
 # @Wikia/react-common
 
 [![Travis](https://img.shields.io/travis/Wikia/react-common/master.svg?style=flat-square)](https://travis-ci.org/Wikia/react-common)
