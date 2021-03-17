@@ -374,7 +374,7 @@ class Search extends React.Component {
                     onMouseEnter={this.onSuggestionHover.bind(this, index)}
                 >
                     <a
-                        href={this.normalizeToUnderscore(suggestion)}
+                        href={`${window.location.origin}/${this.normalizeToUnderscore(suggestion)}`}
                         className="wds-global-navigation__dropdown-link"
                         data-tracking-label={model.suggestions['tracking-label']}
                     >
