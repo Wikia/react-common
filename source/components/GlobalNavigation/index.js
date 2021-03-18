@@ -185,7 +185,7 @@ class GlobalNavigation extends React.Component {
     }
 
     renderRightBar() {
-        const { model, track, siteName } = this.props;
+        const { model, track, siteName, communityBasePath } = this.props;
         const { isSearchModalOpen, isUserModalOpen, isSearchExpanded } = this.state;
 
         return (
@@ -193,6 +193,7 @@ class GlobalNavigation extends React.Component {
                 <CommunityBar model={model.logo} siteName={siteName} />
                 <div className="wds-global-navigation__dropdown-controls">
                     <Search
+                        communityBasePath={communityBasePath}
                         model={model.search}
                         isSearchExpanded={isSearchExpanded}
                         onSearchActivation={this.onSearchActivation}
@@ -216,6 +217,7 @@ class GlobalNavigation extends React.Component {
                         openModal={this.openModal}
                     >
                         <Search
+                            communityBasePath={communityBasePath}
                             model={model.search}
                             isSearchExpanded={isSearchExpanded}
                             onSearchActivation={this.onSearchActivation}
@@ -278,6 +280,10 @@ class GlobalNavigation extends React.Component {
 }
 
 GlobalNavigation.propTypes = {
+    /**
+     * Base path of community, e.g. https://starwars.fandom.com
+     */
+    communityBasePath: PropTypes.string.isRequired,
     /**
      * Function called when "search" button is clicked
      *

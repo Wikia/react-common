@@ -355,7 +355,7 @@ class Search extends React.Component {
 
     renderSuggestions() {
         const { suggestions, query, selectedSuggestionIndex } = this.state;
-        const { model } = this.props;
+        const { model, communityBasePath } = this.props;
         const highlightRegex = new RegExp(`(${this.escapeRegex(query)})`, 'ig');
 
         return suggestions.map((suggestion, index) => {
@@ -374,7 +374,7 @@ class Search extends React.Component {
                     onMouseEnter={this.onSuggestionHover.bind(this, index)}
                 >
                     <a
-                        href={`${window.location.origin}/${this.normalizeToUnderscore(suggestion)}`}
+                        href={`${communityBasePath}/wiki/${this.normalizeToUnderscore(suggestion)}`}
                         className="wds-global-navigation__dropdown-link"
                         data-tracking-label={model.suggestions['tracking-label']}
                     >
@@ -427,6 +427,7 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
+    communityBasePath: PropTypes.string.isRequired,
     inSearchModal: PropTypes.bool,
     isSearchExpanded: PropTypes.bool.isRequired,
     model: PropTypes.shape().isRequired,
