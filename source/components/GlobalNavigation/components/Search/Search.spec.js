@@ -5,6 +5,7 @@ import merge from 'lodash/merge';
 import Search from './Search';
 
 const defaultProps = {
+    communityBasePath: 'https://starwars.fandom.com',
     isSearchExpanded: false,
     model: {
         type: 'search',

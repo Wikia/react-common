@@ -165,7 +165,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           <a
             className="wds-global-navigation__dropdown-link"
             data-tracking-label="search-suggestion"
-            href="Harry_Pottah"
+            href="https://starwars.fandom.com/wiki/Harry_Pottah"
           >
             <span
               className="wds-global-navigation__search-suggestion-highlight"
@@ -184,7 +184,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           <a
             className="wds-global-navigation__dropdown-link"
             data-tracking-label="search-suggestion"
-            href="Frodo"
+            href="https://starwars.fandom.com/wiki/Frodo"
           >
             Frodo
           </a>
@@ -198,7 +198,7 @@ exports[`render Search renders correctly with suggestions and query 1`] = `
           <a
             className="wds-global-navigation__dropdown-link"
             data-tracking-label="search-suggestion"
-            href="Your_mom"
+            href="https://starwars.fandom.com/wiki/Your_mom"
           >
             Your mom
           </a>
