@@ -161,7 +161,7 @@ describe('loadNextPage', () => {
 
         instance.loadNextPage();
 
-        expect(loadPageMock).toBeCalledWith(nextPageMock);
+        expect(loadPageMock).toBeCalledWith(expect.any(String));
     });
 
     test('does not call loadPage when nextPage in state is null', () => {
