@@ -33,6 +33,7 @@ function mapData(notificationData) {
         totalUniqueActors: get(notificationData, 'events.totalUniqueActors'),
         latestActors: createActors(get(notificationData, 'events.latestActors')),
         type: getNotificationType(notificationData),
+        metadata: getMetadata(notificationData),
     };
 }
 
@@ -73,6 +74,11 @@ function getNotificationType(apiData) {
         default:
             return null;
     }
+}
+
+function getMetadata(notificationData) {
+    const metadata = get(notificationData, 'metadata');
+    return metadata ? JSON.parse(metadata) : null;
 }
 
 class Notification {

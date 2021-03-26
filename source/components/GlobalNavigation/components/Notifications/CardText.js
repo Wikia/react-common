@@ -34,6 +34,15 @@ function escapeHtml(unsafe) {
         .replace(/'/g, '&#039;');
 }
 
+function getMessageWallUser(url) {
+    const regex = /\/Message_Wall:(.+?)([?#/].*)?$/i;
+    const result = regex.exec(url);
+    if (!result || !result[1]) {
+        return null;
+    }
+    return result[1];
+}
+
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
     const hasTwoUsers = totalUniqueActors === 2;
     const hasThreeOrMoreUsers = totalUniqueActors > 2;
@@ -165,8 +174,42 @@ function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) 
     return t('notifications-article-comment-reply-mention', { user, articleTitle: bold(title) });
 }
 
+function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri }) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    console.log('wallOwnerName', typeof metadata);
+    let wallOwner = metadata && metadata.wallOwnerName;
+
+    if (!wallOwner) {
+        // Fallback
+        wallOwner = getMessageWallUser(uri);
+    }
+
+    const isOwnWall = wallOwner === user;
+    const args = {
+        postTitle: bold(escapeHtml(title)),
+        wallOwner: escapeHtml(wallOwner),
+    };
+    if (isOwnWall) {
+        return t('notifications-own-wall-post', {
+            user,
+            ...args,
+        });
+    }
+
+    return t('notifications-wall-post', { firstUser: user, ...args });
+}
+
 const getText = (translateFunc, model, userData) => {
-    const { type, snippet, title: dangerousTitle, totalUniqueActors, latestActors, refersToAuthorId } = model;
+    const {
+        type,
+        snippet,
+        title: dangerousTitle,
+        totalUniqueActors,
+        latestActors,
+        refersToAuthorId,
+        metadata,
+        uri,
+    } = model;
     const title = escapeHtml(dangerousTitle);
     const postTitleMarkup = `<b>${title}</b>`;
 
@@ -175,39 +218,74 @@ const getText = (translateFunc, model, userData) => {
     }
 
     if (isDiscussionReply(type)) {
-        return getReplyMessageBody(translateFunc, { title, latestActors, postTitleMarkup, totalUniqueActors });
+        return getReplyMessageBody(translateFunc, {
+            title,
+            latestActors,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isDiscussionPostUpvote(type)) {
-        return getPostUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
+        return getPostUpvoteMessageBody(translateFunc, {
+            title,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isDiscussionReplyUpvote(type)) {
-        return getReplyUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
+        return getReplyUpvoteMessageBody(translateFunc, {
+            title,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isPostAtMention(type)) {
-        return getPostAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+        return getPostAtMentionMessageBody(translateFunc, {
+            postTitleMarkup,
+            latestActors,
+        });
     }
 
     if (isThreadAtMention(type)) {
-        return getThreadAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+        return getThreadAtMentionMessageBody(translateFunc, {
+            postTitleMarkup,
+            latestActors,
+        });
     }
 
     if (isArticleCommentReply(type)) {
-        return getArticleCommentReplyMessageBody(translateFunc, { userData, latestActors, title, refersToAuthorId });
+        return getArticleCommentReplyMessageBody(translateFunc, {
+            userData,
+            latestActors,
+            title,
+            refersToAuthorId,
+        });
     }
 
     if (isArticleCommentAtMention(type)) {
-        return getArticleCommentAtMentionMessageBody(translateFunc, { latestActors, title });
+        return getArticleCommentAtMentionMessageBody(translateFunc, {
+            latestActors,
+            title,
+        });
     }
 
     if (isArticleCommentReplyAtMention(type)) {
-        return getArticleCommentReplyAtMentionMessageBody(translateFunc, { latestActors, title });
+        return getArticleCommentReplyAtMentionMessageBody(translateFunc, {
+            latestActors,
+            title,
+        });
     }
 
     if (isMessageWallThread(type)) {
-        return 'message wall thread';
+        return getMessageWallThreadMessageBody(translateFunc, {
+            latestActors,
+            title,
+            metadata,
+            uri,
+        });
     }
 
     if (isMessageWallPost(type)) {
