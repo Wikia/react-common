@@ -119,19 +119,18 @@ class Search extends React.Component {
         const { track, onSearchSuggestionChosen } = this.props;
         const { suggestions, suggestionId } = this.state;
 
-        onSearchSuggestionChosen(suggestions[index], suggestions, suggestionId);
-
-        this.onSearchClose();
+        // Handle click except "Ctrl + click" and "Cmd + click"
+        if (!event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            onSearchSuggestionChosen(suggestions[index], suggestions, suggestionId);
+            this.onSearchClose();
+        }
 
         track({
             action: 'click',
             category: 'navigation',
             label: 'search-open-suggestion-link',
         });
-
-        if (event) {
-            event.preventDefault();
-        }
     }
 
     onSearchActivation() {
