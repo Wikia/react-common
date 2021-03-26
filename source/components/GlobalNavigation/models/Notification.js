@@ -64,6 +64,12 @@ function getNotificationType(apiData) {
             return notificationTypes.articleCommentAtMention;
         case 'article-comment-reply-at-mention-notification':
             return notificationTypes.articleCommentReplyAtMention;
+        case 'talk-page-notification':
+            return notificationTypes.talkPageMessage;
+        case 'message-wall-post-notification':
+            return notificationTypes.messageWallThread;
+        case 'message-wall-reply-notification':
+            return notificationTypes.messageWallPost;
         default:
             return null;
     }

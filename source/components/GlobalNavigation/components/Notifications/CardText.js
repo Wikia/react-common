@@ -10,6 +10,9 @@ import {
     isDiscussionReplyUpvote,
     isPostAtMention,
     isThreadAtMention,
+    isMessageWallPost,
+    isMessageWallThread,
+    isTalkPageMessage,
 } from '../../models/notificationTypes';
 import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 import { useUserData } from '../../context/UserContext';
@@ -201,6 +204,18 @@ const getText = (translateFunc, model, userData) => {
 
     if (isArticleCommentReplyAtMention(type)) {
         return getArticleCommentReplyAtMentionMessageBody(translateFunc, { latestActors, title });
+    }
+
+    if (isMessageWallThread(type)) {
+        return 'message wall thread';
+    }
+
+    if (isMessageWallPost(type)) {
+        return 'message wall post';
+    }
+
+    if (isTalkPageMessage(type)) {
+        return 'talk page message';
     }
 
     return null;
