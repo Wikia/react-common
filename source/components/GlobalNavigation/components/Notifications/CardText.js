@@ -174,16 +174,17 @@ function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) 
     return t('notifications-article-comment-reply-mention', { user, articleTitle: bold(title) });
 }
 
-function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri }) {
+function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri, userData }) {
     const user = getArticleCommentNotificationUsername(t, latestActors);
-    console.log('wallOwnerName', typeof metadata);
+    const currentUserName = userData?.username;
+
     let wallOwner = metadata && metadata.wallOwnerName;
 
     if (!wallOwner) {
         wallOwner = getMessageWallUser(uri);
     }
 
-    const isOwnWall = wallOwner === user;
+    const isOwnWall = wallOwner === currentUserName;
     const args = {
         postTitle: bold(escapeHtml(title)),
         wallOwner: escapeHtml(wallOwner),
@@ -198,15 +199,24 @@ function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri
     return t('notifications-wall-post', { firstUser: user, ...args });
 }
 
-function getMessageWallPostMessageBody(t, { latestActors, title, metadata, uri, totalUniqueActors, refersToAuthorName }) {
+function getMessageWallPostMessageBody(t, {
+    latestActors,
+    title,
+    metadata,
+    uri,
+    totalUniqueActors,
+    refersToAuthorName,
+    userData,
+}) {
     const user = getArticleCommentNotificationUsername(t, latestActors);
+    const currentUserName = userData?.username;
     let wallOwner = metadata && metadata.wallOwnerName;
 
     if (!wallOwner) {
         wallOwner = this.getMessageWallUser(uri);
     }
 
-    const isOwnWall = wallOwner === user;
+    const isOwnWall = wallOwner === currentUserName;
     const args = {
         postTitle: bold(escapeHtml(title)),
         wallOwner: escapeHtml(wallOwner),
@@ -336,6 +346,7 @@ const getText = (translateFunc, model, userData) => {
             title,
             metadata,
             uri,
+            userData,
         });
     }
 
@@ -347,6 +358,7 @@ const getText = (translateFunc, model, userData) => {
             uri,
             totalUniqueActors,
             refersToAuthorName,
+            userData,
         });
     }
 
