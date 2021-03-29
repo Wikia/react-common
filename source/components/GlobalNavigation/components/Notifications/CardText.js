@@ -244,6 +244,11 @@ function getMessageWallPostMessageBody(t, { latestActors, title, metadata, uri, 
     return t('notifications-wall-reply', args);
 }
 
+function getTalkPageMessageBody(t, { latestActors }) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    return t('notifications-talk-page-message', { user });
+}
+
 const getText = (translateFunc, model, userData) => {
     const {
         type,
@@ -346,7 +351,7 @@ const getText = (translateFunc, model, userData) => {
     }
 
     if (isTalkPageMessage(type)) {
-        return 'talk page message';
+        return getTalkPageMessageBody(translateFunc, { latestActors });
     }
 
     return null;
