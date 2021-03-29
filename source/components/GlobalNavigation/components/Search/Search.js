@@ -119,9 +119,9 @@ class Search extends React.Component {
         const { track, onSearchSuggestionChosen } = this.props;
         const { suggestions, suggestionId } = this.state;
 
-        // Handle click except "Ctrl + click" and "Cmd + click"
-        if (!event.ctrlKey && !event.metaKey) {
-            event.preventDefault();
+        const isOpenInNewTabClick = event && (event.ctrlKey || event.metaKey);
+
+        if (!isOpenInNewTabClick) {
             onSearchSuggestionChosen(suggestions[index], suggestions, suggestionId);
             this.onSearchClose();
         }
@@ -131,6 +131,10 @@ class Search extends React.Component {
             category: 'navigation',
             label: 'search-open-suggestion-link',
         });
+
+        if (event && !isOpenInNewTabClick) {
+            event.preventDefault();
+        }
     }
 
     onSearchActivation() {

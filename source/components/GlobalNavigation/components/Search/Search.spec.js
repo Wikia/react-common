@@ -281,6 +281,8 @@ describe('onSearchSuggestionClick', () => {
         const instance = wrapper.instance();
         const event = {
             preventDefault: jest.fn(),
+            ctrlKey: false,
+            metaKey: false,
         };
 
         instance.onSearchClose = onSearchCloseMock;
@@ -298,6 +300,34 @@ describe('onSearchSuggestionClick', () => {
         expect(onSearchCloseMock).toBeCalledWith();
         expect(trackMock).toBeCalledWith(expect.any(Object));
         expect(event.preventDefault).toBeCalled();
+    });
+
+    test('handle ctrl + click', () => {
+        const suggestionsMock = ['a', 'b'];
+        const suggestionIdMock = 'h41l-s4t4n';
+        const stateMock = { suggestions: suggestionsMock, suggestionId: suggestionIdMock };
+        const onSearchSuggestionChosenMock = jest.fn();
+        const onSearchCloseMock = jest.fn();
+        const trackMock = jest.fn();
+        const wrapper = renderShallowComponent({
+            onSearchSuggestionChosen: onSearchSuggestionChosenMock,
+            track: trackMock,
+        }).setState(stateMock);
+        const instance = wrapper.instance();
+        const event = {
+            preventDefault: jest.fn(),
+            ctrlKey: true,
+            metaKey: false,
+        };
+
+        instance.onSearchClose = onSearchCloseMock;
+
+        instance.onSearchSuggestionClick(1, event);
+
+        expect(onSearchSuggestionChosenMock).not.toBeCalled();
+        expect(onSearchCloseMock).not.toBeCalled();
+        expect(trackMock).toBeCalledWith(expect.any(Object));
+        expect(event.preventDefault).not.toBeCalled();
     });
 });
 
