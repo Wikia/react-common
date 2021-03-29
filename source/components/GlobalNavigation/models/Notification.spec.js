@@ -12,6 +12,7 @@ const getNotification = config => merge({}, {
     refersTo: {
         uri: 'http://xkxd.fandom.com/d/p/3100000000000001095/r/3086787452863005630',
         createdBy: '33027931',
+        createdByName: 'Test',
         type: 'discussion-post',
         snippet: 'gimme',
     },
@@ -44,12 +45,14 @@ const getExpected = config => merge({}, {
     snippet: 'gimme',
     uri: 'http://xkxd.fandom.com/d/p/3100000000000001095/r/3086787452863005630',
     latestEventUri: 'http://xkxd.fandom.com/d/p/3100000000000001095/r/3086787452863005630#12315543',
+    metadata: null,
     timestamp: 1551422928,
     communityName: 'Xkxd Wiki',
     communityId: '1619010',
     isUnread: true,
     totalUniqueActors: 1,
     refersToAuthorId: '33027931',
+    refersToAuthorName: 'Test',
     latestActors: [{
         id: '12315543',
         name: 'QATestsStaff2',
