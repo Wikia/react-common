@@ -314,3 +314,45 @@ describe('Article Comments at mentions', () => {
         })).toMatchSnapshot();
     });
 });
+
+describe('Wall thread', () => {
+    beforeEach(() => {
+        useUserData.mockReturnValue({ id: '123', username: 'Test' });
+    });
+
+    test('CardText renders correctly when metadata is missing', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for own wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for others wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 321, name: 'Test2' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test2',
+            },
+        })).toMatchSnapshot();
+    });
+});

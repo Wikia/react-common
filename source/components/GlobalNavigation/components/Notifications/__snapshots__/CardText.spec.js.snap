@@ -249,3 +249,39 @@ exports[`Discussion reply upvote CardText renders correctly for discussion reply
   ","number":2}
 </p>
 `;
+
+exports[`Wall thread CardText renders correctly for others wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-post{"firstUser":"Test2","postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test2"}
+</p>
+`;
+
+exports[`Wall thread CardText renders correctly for own wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-own-wall-post{"user":"Test","postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test"}
+</p>
+`;
+
+exports[`Wall thread CardText renders correctly when metadata is missing 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-own-wall-post{"user":"notifications-anon-user","postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test"}
+</p>
+`;
