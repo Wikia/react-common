@@ -250,6 +250,14 @@ exports[`Discussion reply upvote CardText renders correctly for discussion reply
 </p>
 `;
 
+exports[`Talk page CardText renders correctly 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-talk-page-message{"user":"Test"}
+</p>
+`;
+
 exports[`Wall post CardText renders correctly for multiple replies on others wall 1`] = `
 <p
   class="wds-notification-card__text"

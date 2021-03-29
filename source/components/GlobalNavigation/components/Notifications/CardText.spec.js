@@ -462,3 +462,14 @@ describe('Wall post', () => {
         })).toMatchSnapshot();
     });
 });
+
+describe('Talk page', () => {
+    test('CardText renders correctly', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.talkPageMessage,
+                latestActors: [{ id: 123, name: 'Test' }],
+            },
+        })).toMatchSnapshot();
+    });
+});
