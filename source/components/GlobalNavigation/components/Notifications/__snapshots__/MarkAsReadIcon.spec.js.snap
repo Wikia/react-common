@@ -70,6 +70,34 @@ exports[`MarkAsReadIcon renders correctly for discussion-reply 1`] = `
 </div>
 `;
 
+exports[`MarkAsReadIcon renders correctly for message-wall-post 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="comment-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for message-wall-thread 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="comment-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
 exports[`MarkAsReadIcon renders correctly for other types 1`] = `
 <div
   className="wds-notification-card__icon-wrapper"
@@ -78,6 +106,20 @@ exports[`MarkAsReadIcon renders correctly for other types 1`] = `
   <Icon
     className=""
     name="heart-small"
+    small={false}
+    tiny={false}
+  />
+</div>
+`;
+
+exports[`MarkAsReadIcon renders correctly for talk-page-message 1`] = `
+<div
+  className="wds-notification-card__icon-wrapper"
+  role="presentation"
+>
+  <Icon
+    className=""
+    name="bubble-small"
     small={false}
     tiny={false}
   />

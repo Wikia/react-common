@@ -63,6 +63,18 @@ test('MarkAsReadIcon renders correctly for article-comment-reply-at-mention', ()
     expect(renderComponent({ model: { type: notificationTypes.articleCommentReplyAtMention } })).toMatchSnapshot();
 });
 
+test('MarkAsReadIcon renders correctly for talk-page-message', () => {
+    expect(renderComponent({ model: { type: notificationTypes.talkPageMessage } })).toMatchSnapshot();
+});
+
+test('MarkAsReadIcon renders correctly for message-wall-thread', () => {
+    expect(renderComponent({ model: { type: notificationTypes.messageWallThread } })).toMatchSnapshot();
+});
+
+test('MarkAsReadIcon renders correctly for message-wall-post', () => {
+    expect(renderComponent({ model: { type: notificationTypes.messageWallPost } })).toMatchSnapshot();
+});
+
 test('MarkAsReadIcon calls track and markAsRead on click when isUnread is true', () => {
     const markAsReadMock = jest.fn();
     const trackMock = jest.fn();

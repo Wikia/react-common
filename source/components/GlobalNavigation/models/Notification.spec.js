@@ -38,6 +38,7 @@ const getNotification = config => merge({}, {
         },
     },
     read: false,
+    metadata: '{}',
 }, config);
 
 const getExpected = config => merge({}, {
@@ -45,7 +46,7 @@ const getExpected = config => merge({}, {
     snippet: 'gimme',
     uri: 'http://xkxd.fandom.com/d/p/3100000000000001095/r/3086787452863005630',
     latestEventUri: 'http://xkxd.fandom.com/d/p/3100000000000001095/r/3086787452863005630#12315543',
-    metadata: null,
+    metadata: {},
     timestamp: 1551422928,
     communityName: 'Xkxd Wiki',
     communityId: '1619010',
@@ -113,6 +114,26 @@ const testCases = [
         name: 'article-comment-reply-at-mention notification',
         given: getNotification({ type: 'article-comment-reply-at-mention-notification' }),
         expected: getExpected({ type: notificationTypes.articleCommentReplyAtMention }),
+    },
+    {
+        name: 'message-wall-thread notification',
+        given: getNotification({ type: 'message-wall-post-notification' }),
+        expected: getExpected({ type: notificationTypes.messageWallThread }),
+    },
+    {
+        name: 'message-wall-post notification',
+        given: getNotification({ type: 'message-wall-reply-notification' }),
+        expected: getExpected({ type: notificationTypes.messageWallPost }),
+    },
+    {
+        name: 'talk-page-message notification',
+        given: getNotification({ type: 'talk-page-notification' }),
+        expected: getExpected({ type: notificationTypes.talkPageMessage }),
+    },
+    {
+        name: 'empty metadata',
+        given: getNotification({ metadata: null }),
+        expected: getExpected({ metadata: null }),
     },
 ];
 

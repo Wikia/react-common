@@ -342,6 +342,18 @@ exports[`Wall post CardText renders correctly when metadata is missing 1`] = `
 </p>
 `;
 
+exports[`Wall post CardText renders correctly when wall URL is invalid 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-reply{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":null,"firstUser":"notifications-anon-user","secondUser":"Test"}
+</p>
+`;
+
 exports[`Wall thread CardText renders correctly for others wall 1`] = `
 <p
   class="wds-notification-card__text"

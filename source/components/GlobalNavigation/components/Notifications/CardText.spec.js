@@ -378,6 +378,20 @@ describe('Wall post', () => {
         })).toMatchSnapshot();
     });
 
+    test('CardText renders correctly when wall URL is invalid', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Test',
+                refersToAuthorName: 'Test',
+                metadata: {},
+            },
+        })).toMatchSnapshot();
+    });
+
     test('CardText renders correctly for multiple replies on own wall', () => {
         expect(renderComponent({
             model: {
