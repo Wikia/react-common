@@ -250,6 +250,90 @@ exports[`Discussion reply upvote CardText renders correctly for discussion reply
 </p>
 `;
 
+exports[`Wall post CardText renders correctly for multiple replies on others wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-reply-multiple-users{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"TestOther","number":"2","firstUser":"Test","secondUser":"TestOther"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly for multiple replies on own wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-own-wall-reply-multiple-users{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test","number":"2","user":"notifications-anon-user"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly for reply to own message when multiple actors 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-reply-multiple-users-own-message{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"TestOther","number":"2","firstUser":"Test"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly for single reply on others wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-reply{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"TestOther","firstUser":"Test","secondUser":"TestOther"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly for single reply on own wall 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-own-wall-reply{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test","user":"Test"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly for single reply to own message 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-wall-reply-own-message{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"TestOther","user":"Test"}
+</p>
+`;
+
+exports[`Wall post CardText renders correctly when metadata is missing 1`] = `
+<p
+  class="wds-notification-card__text"
+>
+  notifications-own-wall-reply{"postTitle":"
+  <b>
+    Article &lt;b&gt;Title&lt;/b&gt;
+  </b>
+  ","wallOwner":"Test","user":"notifications-anon-user"}
+</p>
+`;
+
 exports[`Wall thread CardText renders correctly for others wall 1`] = `
 <p
   class="wds-notification-card__text"

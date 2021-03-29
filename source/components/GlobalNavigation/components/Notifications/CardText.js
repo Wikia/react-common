@@ -213,7 +213,7 @@ function getMessageWallPostMessageBody(t, {
     let wallOwner = metadata && metadata.wallOwnerName;
 
     if (!wallOwner) {
-        wallOwner = this.getMessageWallUser(uri);
+        wallOwner = getMessageWallUser(uri);
     }
 
     const isOwnWall = wallOwner === currentUserName;
