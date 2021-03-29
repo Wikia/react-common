@@ -25,6 +25,7 @@ function mapData(notificationData) {
         snippet: get(notificationData, 'refersTo.snippet'),
         uri: get(notificationData, 'refersTo.uri'),
         refersToAuthorId: get(notificationData, 'refersTo.createdBy'),
+        refersToAuthorName: get(notificationData, 'refersTo.createdByName'),
         latestEventUri: get(notificationData, 'events.latestEvent.uri'),
         timestamp: convertToTimestamp(get(notificationData, 'events.latestEvent.when')),
         communityName: get(notificationData, 'community.name'),

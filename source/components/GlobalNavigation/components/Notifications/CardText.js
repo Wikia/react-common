@@ -180,7 +180,6 @@ function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri
     let wallOwner = metadata && metadata.wallOwnerName;
 
     if (!wallOwner) {
-        // Fallback
         wallOwner = getMessageWallUser(uri);
     }
 
@@ -199,6 +198,52 @@ function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri
     return t('notifications-wall-post', { firstUser: user, ...args });
 }
 
+function getMessageWallPostMessageBody(t, { latestActors, title, metadata, uri, totalUniqueActors, refersToAuthorName }) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    let wallOwner = metadata && metadata.wallOwnerName;
+
+    if (!wallOwner) {
+        wallOwner = this.getMessageWallUser(uri);
+    }
+
+    const isOwnWall = wallOwner === user;
+    const args = {
+        postTitle: bold(escapeHtml(title)),
+        wallOwner: escapeHtml(wallOwner),
+    };
+
+    if (totalUniqueActors > 1) {
+        args.number = escape(totalUniqueActors - 1);
+
+        if (isOwnWall) {
+            args.user = user;
+            return t('notifications-own-wall-reply-multiple-users', args);
+        }
+        args.firstUser = user;
+
+        if (refersToAuthorName === user) {
+            return t('notifications-wall-reply-multiple-users-own-message', args);
+        }
+
+        args.secondUser = escape(refersToAuthorName);
+        return t('notifications-wall-reply-multiple-users', args);
+    }
+
+    if (isOwnWall) {
+        args.user = user;
+        return t('notifications-own-wall-reply', args);
+    }
+
+    if (refersToAuthorName === user) {
+        args.user = user;
+        return t('notifications-wall-reply-own-message', args);
+    }
+
+    args.firstUser = user;
+    args.secondUser = escape(refersToAuthorName);
+    return t('notifications-wall-reply', args);
+}
+
 const getText = (translateFunc, model, userData) => {
     const {
         type,
@@ -209,6 +254,7 @@ const getText = (translateFunc, model, userData) => {
         refersToAuthorId,
         metadata,
         uri,
+        refersToAuthorName,
     } = model;
     const title = escapeHtml(dangerousTitle);
     const postTitleMarkup = `<b>${title}</b>`;
@@ -289,7 +335,14 @@ const getText = (translateFunc, model, userData) => {
     }
 
     if (isMessageWallPost(type)) {
-        return 'message wall post';
+        return getMessageWallPostMessageBody(translateFunc, {
+            latestActors,
+            title,
+            metadata,
+            uri,
+            totalUniqueActors,
+            refersToAuthorName,
+        });
     }
 
     if (isTalkPageMessage(type)) {
