@@ -25,6 +25,7 @@ function mapData(notificationData) {
         snippet: get(notificationData, 'refersTo.snippet'),
         uri: get(notificationData, 'refersTo.uri'),
         refersToAuthorId: get(notificationData, 'refersTo.createdBy'),
+        refersToAuthorName: get(notificationData, 'refersTo.createdByName'),
         latestEventUri: get(notificationData, 'events.latestEvent.uri'),
         timestamp: convertToTimestamp(get(notificationData, 'events.latestEvent.when')),
         communityName: get(notificationData, 'community.name'),
@@ -33,6 +34,7 @@ function mapData(notificationData) {
         totalUniqueActors: get(notificationData, 'events.totalUniqueActors'),
         latestActors: createActors(get(notificationData, 'events.latestActors')),
         type: getNotificationType(notificationData),
+        metadata: getMetadata(notificationData),
     };
 }
 
@@ -64,9 +66,20 @@ function getNotificationType(apiData) {
             return notificationTypes.articleCommentAtMention;
         case 'article-comment-reply-at-mention-notification':
             return notificationTypes.articleCommentReplyAtMention;
+        case 'talk-page-notification':
+            return notificationTypes.talkPageMessage;
+        case 'message-wall-post-notification':
+            return notificationTypes.messageWallThread;
+        case 'message-wall-reply-notification':
+            return notificationTypes.messageWallPost;
         default:
             return null;
     }
+}
+
+function getMetadata(notificationData) {
+    const metadata = get(notificationData, 'metadata');
+    return metadata ? JSON.parse(metadata) : null;
 }
 
 class Notification {

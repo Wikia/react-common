@@ -74,7 +74,7 @@ class NotificationsDataProvider extends React.Component {
             return;
         }
 
-        this.loadPage(nextPage);
+        this.loadPage(`${nextPage}&${NotificationsApi.getContentTypesQueryParams()}`);
     }
 
     loadPage(pageLink) {

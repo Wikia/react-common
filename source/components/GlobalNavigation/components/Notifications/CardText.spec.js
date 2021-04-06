@@ -314,3 +314,176 @@ describe('Article Comments at mentions', () => {
         })).toMatchSnapshot();
     });
 });
+
+describe('Wall thread', () => {
+    beforeEach(() => {
+        useUserData.mockReturnValue({ id: '123', username: 'Test' });
+    });
+
+    test('CardText renders correctly when metadata is missing', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for own wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+                metadata: { wallOwnerName: 'Test' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for others wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallThread,
+                latestActors: [{ id: 321, name: 'Test2' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test2',
+                metadata: { wallOwnerName: 'Test2' },
+            },
+        })).toMatchSnapshot();
+    });
+});
+
+describe('Wall post', () => {
+    beforeEach(() => {
+        useUserData.mockReturnValue({ id: '123', username: 'Test' });
+    });
+
+    test('CardText renders correctly when metadata is missing', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+                refersToAuthorName: 'Test',
+                metadata: {},
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly when wall URL is invalid', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Test',
+                refersToAuthorName: 'Test',
+                metadata: {},
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for multiple replies on own wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 0, name: null }],
+                totalUniqueActors: 3,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+                refersToAuthorName: 'TestOther',
+                metadata: { wallOwnerName: 'Test' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for reply to own message when multiple actors', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 3,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:TestOther',
+                refersToAuthorName: 'Test',
+                metadata: { wallOwnerName: 'TestOther' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for multiple replies on others wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 3,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:TestOther',
+                refersToAuthorName: 'TestOther',
+                metadata: { wallOwnerName: 'TestOther' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for single reply on own wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:Test',
+                refersToAuthorName: 'TestOther',
+                metadata: { wallOwnerName: 'Test' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for single reply to own message', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:TestOther',
+                refersToAuthorName: 'Test',
+                metadata: { wallOwnerName: 'TestOther' },
+            },
+        })).toMatchSnapshot();
+    });
+
+    test('CardText renders correctly for single reply on others wall', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.messageWallPost,
+                latestActors: [{ id: 123, name: 'Test' }],
+                totalUniqueActors: 1,
+                title: 'Article <b>Title</b>',
+                uri: 'https://elo.test.com/wiki/Message_Wall:TestOther',
+                refersToAuthorName: 'TestOther',
+                metadata: { wallOwnerName: 'TestOther' },
+            },
+        })).toMatchSnapshot();
+    });
+});
+
+describe('Talk page', () => {
+    test('CardText renders correctly', () => {
+        expect(renderComponent({
+            model: {
+                type: notificationTypes.talkPageMessage,
+                latestActors: [{ id: 123, name: 'Test' }],
+            },
+        })).toMatchSnapshot();
+    });
+});

@@ -10,6 +10,9 @@ import {
     isDiscussionReplyUpvote,
     isPostAtMention,
     isThreadAtMention,
+    isMessageWallPost,
+    isMessageWallThread,
+    isTalkPageMessage,
 } from '../../models/notificationTypes';
 import I18nNamespaceContext from '../../context/I18nNamespaceContext';
 import { useUserData } from '../../context/UserContext';
@@ -29,6 +32,15 @@ function escapeHtml(unsafe) {
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#039;');
+}
+
+function getMessageWallUser(url) {
+    const regex = /\/Message_Wall:(.+?)([?#/].*)?$/i;
+    const result = regex.exec(url);
+    if (!result || !result[1]) {
+        return null;
+    }
+    return result[1];
 }
 
 const getReplyMessageBody = (translateFunc, { title, totalUniqueActors, latestActors, postTitleMarkup }) => {
@@ -162,8 +174,103 @@ function getArticleCommentReplyAtMentionMessageBody(t, { latestActors, title }) 
     return t('notifications-article-comment-reply-mention', { user, articleTitle: bold(title) });
 }
 
+function getMessageWallThreadMessageBody(t, { latestActors, title, metadata, uri, userData }) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    const currentUserName = userData?.username;
+
+    let wallOwner = metadata && metadata.wallOwnerName;
+
+    if (!wallOwner) {
+        wallOwner = getMessageWallUser(uri);
+    }
+
+    const isOwnWall = wallOwner === currentUserName;
+    const args = {
+        postTitle: bold(escapeHtml(title)),
+        wallOwner: escapeHtml(wallOwner),
+    };
+    if (isOwnWall) {
+        return t('notifications-own-wall-post', {
+            user,
+            ...args,
+        });
+    }
+
+    return t('notifications-wall-post', { firstUser: user, ...args });
+}
+
+function getMessageWallPostMessageBody(t, {
+    latestActors,
+    title,
+    metadata,
+    uri,
+    totalUniqueActors,
+    refersToAuthorName,
+    userData,
+}) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    const currentUserName = userData?.username;
+    let wallOwner = metadata && metadata.wallOwnerName;
+
+    if (!wallOwner) {
+        wallOwner = getMessageWallUser(uri);
+    }
+
+    const isOwnWall = wallOwner === currentUserName;
+    const args = {
+        postTitle: bold(escapeHtml(title)),
+        wallOwner: escapeHtml(wallOwner),
+    };
+
+    if (totalUniqueActors > 1) {
+        args.number = escape(totalUniqueActors - 1);
+
+        if (isOwnWall) {
+            args.user = user;
+            return t('notifications-own-wall-reply-multiple-users', args);
+        }
+        args.firstUser = user;
+
+        if (refersToAuthorName === user) {
+            return t('notifications-wall-reply-multiple-users-own-message', args);
+        }
+
+        args.secondUser = escape(refersToAuthorName);
+        return t('notifications-wall-reply-multiple-users', args);
+    }
+
+    if (isOwnWall) {
+        args.user = user;
+        return t('notifications-own-wall-reply', args);
+    }
+
+    if (refersToAuthorName === user) {
+        args.user = user;
+        return t('notifications-wall-reply-own-message', args);
+    }
+
+    args.firstUser = user;
+    args.secondUser = escape(refersToAuthorName);
+    return t('notifications-wall-reply', args);
+}
+
+function getTalkPageMessageBody(t, { latestActors }) {
+    const user = getArticleCommentNotificationUsername(t, latestActors);
+    return t('notifications-talk-page-message', { user });
+}
+
 const getText = (translateFunc, model, userData) => {
-    const { type, snippet, title: dangerousTitle, totalUniqueActors, latestActors, refersToAuthorId } = model;
+    const {
+        type,
+        snippet,
+        title: dangerousTitle,
+        totalUniqueActors,
+        latestActors,
+        refersToAuthorId,
+        metadata,
+        uri,
+        refersToAuthorName,
+    } = model;
     const title = escapeHtml(dangerousTitle);
     const postTitleMarkup = `<b>${title}</b>`;
 
@@ -172,35 +279,91 @@ const getText = (translateFunc, model, userData) => {
     }
 
     if (isDiscussionReply(type)) {
-        return getReplyMessageBody(translateFunc, { title, latestActors, postTitleMarkup, totalUniqueActors });
+        return getReplyMessageBody(translateFunc, {
+            title,
+            latestActors,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isDiscussionPostUpvote(type)) {
-        return getPostUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
+        return getPostUpvoteMessageBody(translateFunc, {
+            title,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isDiscussionReplyUpvote(type)) {
-        return getReplyUpvoteMessageBody(translateFunc, { title, postTitleMarkup, totalUniqueActors });
+        return getReplyUpvoteMessageBody(translateFunc, {
+            title,
+            postTitleMarkup,
+            totalUniqueActors,
+        });
     }
 
     if (isPostAtMention(type)) {
-        return getPostAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+        return getPostAtMentionMessageBody(translateFunc, {
+            postTitleMarkup,
+            latestActors,
+        });
     }
 
     if (isThreadAtMention(type)) {
-        return getThreadAtMentionMessageBody(translateFunc, { postTitleMarkup, latestActors });
+        return getThreadAtMentionMessageBody(translateFunc, {
+            postTitleMarkup,
+            latestActors,
+        });
     }
 
     if (isArticleCommentReply(type)) {
-        return getArticleCommentReplyMessageBody(translateFunc, { userData, latestActors, title, refersToAuthorId });
+        return getArticleCommentReplyMessageBody(translateFunc, {
+            userData,
+            latestActors,
+            title,
+            refersToAuthorId,
+        });
     }
 
     if (isArticleCommentAtMention(type)) {
-        return getArticleCommentAtMentionMessageBody(translateFunc, { latestActors, title });
+        return getArticleCommentAtMentionMessageBody(translateFunc, {
+            latestActors,
+            title,
+        });
     }
 
     if (isArticleCommentReplyAtMention(type)) {
-        return getArticleCommentReplyAtMentionMessageBody(translateFunc, { latestActors, title });
+        return getArticleCommentReplyAtMentionMessageBody(translateFunc, {
+            latestActors,
+            title,
+        });
+    }
+
+    if (isMessageWallThread(type)) {
+        return getMessageWallThreadMessageBody(translateFunc, {
+            latestActors,
+            title,
+            metadata,
+            uri,
+            userData,
+        });
+    }
+
+    if (isMessageWallPost(type)) {
+        return getMessageWallPostMessageBody(translateFunc, {
+            latestActors,
+            title,
+            metadata,
+            uri,
+            totalUniqueActors,
+            refersToAuthorName,
+            userData,
+        });
+    }
+
+    if (isTalkPageMessage(type)) {
+        return getTalkPageMessageBody(translateFunc, { latestActors });
     }
 
     return null;

@@ -12,6 +12,9 @@ import {
     isDiscussionReply,
     isPostAtMention,
     isThreadAtMention,
+    isMessageWallPost,
+    isMessageWallThread,
+    isTalkPageMessage,
 } from '../../models/notificationTypes';
 
 function isCommentNotifictionType(type) {
@@ -19,7 +22,7 @@ function isCommentNotifictionType(type) {
 }
 
 function getIconName(type) {
-    if (isCommentNotifictionType(type)) {
+    if (isCommentNotifictionType(type) || isMessageWallPost(type) || isMessageWallThread(type)) {
         return 'comment-small';
     }
 
@@ -34,6 +37,11 @@ function getIconName(type) {
     if (isArticleCommentAtMention(type) || isArticleCommentReplyAtMention(type)) {
         return 'mention-small';
     }
+
+    if (isTalkPageMessage(type)) {
+        return 'bubble-small';
+    }
+
 
     return 'heart-small';
 }
