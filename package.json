@@ -75,7 +75,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-redux": "^0.2.1",
     "enzyme-to-json": "^3.4.4",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jest": "^23.8.2",
