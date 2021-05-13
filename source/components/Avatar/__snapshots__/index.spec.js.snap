@@ -422,6 +422,7 @@ exports[`Avatar renders with props 1`] = `
         <img
           alt="alt"
           className="wds-avatar__image"
+          loading="lazy"
           src="src"
           title="alt"
         />

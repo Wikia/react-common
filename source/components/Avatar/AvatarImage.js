@@ -6,7 +6,7 @@ import IconAvatar from '../../icons/IconAvatar';
 const AvatarImage = ({ src, alt }) => {
     const className = 'wds-avatar__image';
     return src
-        ? <img src={src} alt={alt} title={alt} className={className} />
+        ? <img src={src} alt={alt} title={alt} className={className} loading="lazy" />
         : <IconAvatar className="wds-avatar__image" title={className} />;
 };
 
