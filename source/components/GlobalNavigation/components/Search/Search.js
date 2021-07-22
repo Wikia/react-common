@@ -279,7 +279,7 @@ class Search extends React.Component {
 
         this.setState({ requestsInProgress: { ...requestsInProgress, [query]: true } });
 
-        return fetch(`${model.suggestions.url}&query=${query}`)
+        return fetch(`${model.suggestions.url}&${model.suggestions['param-name']}=${query}`)
             .then((response) => {
                 if (response.ok) {
                     /* istanbul ignore next */
@@ -303,8 +303,15 @@ class Search extends React.Component {
                     return;
                 }
 
-                this.setSuggestions(response.suggestions);
-                this.cacheResult(query, response.suggestions);
+                // Depending on which api we query for data, response schema may differ
+                if (response.suggestions) {
+                    this.setSuggestions(response.suggestions);
+                    this.cacheResult(query, response.suggestions);
+                } else if (response.query.prefixsearch) {
+                    const suggestions = response.query.prefixsearch.map(s => s.title);
+                    this.setSuggestions(suggestions);
+                    this.cacheResult(query, suggestions);
+                }
             })
             .catch((reason) => {
                 console.error('Search suggestions error', reason);
