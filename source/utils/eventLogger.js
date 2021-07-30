@@ -10,7 +10,7 @@ export default function logErrorEvent(app, version, name, data = {}) {
     // this API endpoint was decommissioned
     return;
 
-    /* eslint-disable no-alert, no-unreachable */
+    /* eslint-disable no-unreachable */
     fetch(`${getEventLoggerBase()}/error`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, cors, *same-origin
@@ -27,6 +27,7 @@ export default function logErrorEvent(app, version, name, data = {}) {
             client_version: version,
         }), // body data type must match "Content-Type" header
     }).catch(() => { console.error('Event logging error'); });
-    /* eslint-enable no-alert, no-unreachable */
+    /* eslint-enable no-unreachable */
 
+    // eslint-disable-next-line padded-blocks
 }
