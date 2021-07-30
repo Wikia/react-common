@@ -7,6 +7,9 @@ export default function logErrorEvent(app, version, name, data = {}) {
         return;
     }
 
+    // this API endpoint was decommissioned and will be removed in https://github.com/Wikia/pandora/pull/10678
+	return;
+
     fetch(`${getEventLoggerBase()}/error`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, cors, *same-origin
