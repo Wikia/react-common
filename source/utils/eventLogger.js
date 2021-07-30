@@ -7,7 +7,7 @@ export default function logErrorEvent(app, version, name, data = {}) {
         return;
     }
 
-    // this API endpoint was decommissioned and will be removed in https://github.com/Wikia/pandora/pull/10678
+    // this API endpoint was decommissioned
     return;
 
     /* eslint-disable no-alert, no-unreachable */
