@@ -14769,9 +14769,10 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-"stylelint-config-fandom@https://github.com/Wikia/stylelint-config-fandom.git#0.0.1":
+"stylelint-config-fandom@https://github.com/Wikia/stylelint-config-fandom.git#0.0.2":
   version "0.0.1"
-  resolved "https://github.com/Wikia/stylelint-config-fandom.git#d254d4e5ecc07120d70520d3502a3dca00f323ab"
+  uid "77f79df6e9a4f3e92d143c1ecba35540e37aa93b"
+  resolved "https://github.com/Wikia/stylelint-config-fandom.git#77f79df6e9a4f3e92d143c1ecba35540e37aa93b"
   dependencies:
     stylelint "^8.1.1"
     stylelint-config-standard "^17.0.0"
