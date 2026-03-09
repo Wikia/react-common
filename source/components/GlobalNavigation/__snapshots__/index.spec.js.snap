@@ -6,7 +6,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
 >
   <NotificationsDataProvider
     isAuthenticated={true}
-    serviceUrl="https://services.wikia.com/"
+    serviceUrl="https://services.fandom.com/"
   >
     <ContextProvider
       value={
@@ -177,7 +177,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
                   "search": Object {
                     "search": "mock",
                   },
-                  "services-domain": "https://services.wikia.com/",
+                  "services-domain": "https://services.fandom.com/",
                   "user": Object {
                     "user": "mock",
                   },
@@ -329,7 +329,7 @@ exports[`render GlobalNavigation renders correctly 1`] = `
                   "search": Object {
                     "search": "mock",
                   },
-                  "services-domain": "https://services.wikia.com/",
+                  "services-domain": "https://services.fandom.com/",
                   "user": Object {
                     "user": "mock",
                   },
@@ -377,7 +377,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
 >
   <NotificationsDataProvider
     isAuthenticated={false}
-    serviceUrl="https://services.wikia.com/"
+    serviceUrl="https://services.fandom.com/"
   >
     <ContextProvider
       value={null}
@@ -542,7 +542,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
                   "search": Object {
                     "search": "mock",
                   },
-                  "services-domain": "https://services.wikia.com/",
+                  "services-domain": "https://services.fandom.com/",
                   "user": null,
                 }
               }
@@ -687,7 +687,7 @@ exports[`render GlobalNavigation renders correctly when user or partnerSlot are 
                   "search": Object {
                     "search": "mock",
                   },
-                  "services-domain": "https://services.wikia.com/",
+                  "services-domain": "https://services.fandom.com/",
                   "user": null,
                 }
               }

@@ -71,7 +71,7 @@ test('Avatar image is fetched when given userId prop', async () => {
         userId,
     };
     const wrapper = mount(<Avatar {...props} />);
-    expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
+    expect(window.fetch).toBeCalledWith(`https://services.fandom.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
     await wait(0);
@@ -86,7 +86,7 @@ test('Avatar image is fetched when given userId prop (and href)', async () => {
         href: 'http://example.com',
     };
     const wrapper = mount(<Avatar {...props} />);
-    expect(window.fetch).toBeCalledWith(`https://services.wikia.com/user-attribute/user/${userId}/attr/avatar`);
+    expect(window.fetch).toBeCalledWith(`https://services.fandom.com/user-attribute/user/${userId}/attr/avatar`);
 
     // wait 0ms (resolve promise in fetch in componentDidMount)
     await wait(0);

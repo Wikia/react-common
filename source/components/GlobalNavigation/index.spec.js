@@ -37,7 +37,7 @@ const defaultProps = {
         }],
         user: { user: 'mock' },
         notifications: { notifications: 'mock' },
-        'services-domain': 'https://services.wikia.com/',
+        'services-domain': 'https://services.fandom.com/',
         'partner-slot': { partner: 'mock' },
     },
     siteName: { siteName: 'mock' },
